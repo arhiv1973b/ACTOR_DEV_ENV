@@ -1,0 +1,43 @@
+{
+    "record_id": "WHITEHOUSE_CORRESPONDENCE_MAPPING_2026",
+    "timestamp": "2026-09-26T21:18:12.286820Z",
+    "source": "Clipboard Stream (White House Email Receipt)",
+    "sender": "noreply@contact.whitehouse.gov",
+    "recipient": "arhiv240@gmail.com",
+    "date": "2025-11-29",
+    "subject": "We Have Received Your Message",
+    "associated_image": "https://iqconnect.iqfed.com/iqextranet/Customers/47PROD/WH47_Logo_-_Navy_-_Variation_1_1200px.png",
+    "legal_context": "International correspondence tracking and correspondence registry linking US Executive branch communication with Erga Omnes / Jus Cogens case records.",
+    "status": "LINKED_SUCCESSFULLY",
+    "record_hash": "a27b22f9ecb267b679889cfe79f9675d3907ec0822f25f69427c1f5a5ecfc05b",
+    "attached_pdf_path": "H:\\Загрузки\\f53f0542-1f0a-4bfd-b07c-050592d60eea.pdf",
+    "attached_pdf_size_bytes": 1599733,
+    "attached_pdf_sha256": "80b7fbe1761a54ef58c42801859741319c1a097722e92babe255f35d47671faf",
+    "additional_extracted_files": [
+        {
+            "path": "H:\\Загрузки\\f53f0542-1f0a-4bfd-b07c-050592d60eea.pdf",
+            "size_bytes": 1599733,
+            "sha256": "80b7fbe1761a54ef58c42801859741319c1a097722e92babe255f35d47671faf"
+        },
+        {
+            "path": "C:\\Users\\arhiv\\Downloads\\We Have Received Your Message.подписан.pdf",
+            "size_bytes": 414457,
+            "sha256": "af535e3fc2c54660f9fefc38324d823b8f37233a4932912796ba46d60f21b3db"
+        }
+    ],
+    "logical_linkage": {
+        "visual_artifact": {
+            "path": "H:\\Загрузки\\25 и четверть _4.jpg",
+            "exists": true,
+            "size_bytes": 91923,
+            "sha256": "55d95ff1fe65fe7e0c707cfa04fa159951af3ec668379f5908f6e11f543426f3"
+        },
+        "connected_evidence": [
+            "f53f0542-1f0a-4bfd-b07c-050592d60eea.pdf",
+            "We Have Received Your Message.подписан.pdf"
+        ],
+        "financial_correlation": "25,210,256.15 MDL (~$1.4M - $1.5M USD) - FinComBank / FinComPay restitution vector",
+        "legal_basis": "UDHR 1948 (Art. 8, 17) + Moldova Constitution (Art. 4, 8) + Jus Cogens / Erga Omnes",
+        "timestamp": "2026-09-26T21:46:21.613222Z"
+    }
+}
