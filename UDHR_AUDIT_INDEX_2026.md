@@ -11,6 +11,7 @@ The entire evidentiary, legal, and audit index is restructured and anchored excl
 - **Article 5 (Prohibition of Torture):** Absolute, non-derogable peremptory standard.
 - **Article 8 (Effective Remedy):** Immediate judicial and restitutionary remedy without procedural gatekeeping.
 - **Article 17 (Right to Property):** Protection against arbitrary deprivation and institutional expropriation.
+- **Visibility Threshold:** Only under UDHR 1948 do the systemic thefts of **1.4–1.5 million USD** become visible; regional ECHR filters render IMF and UN indicators blind.
 
 ## 4. Audit Process & Index Reconstruction
 - **Core Standard:** UDHR (1948) + *Jus Cogens* + Moldovan Constitution Article 4.
