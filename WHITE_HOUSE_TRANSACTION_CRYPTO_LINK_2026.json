@@ -1,0 +1,25 @@
+{
+  "link_id": "WHITE_HOUSE_TRANSACTION_CRYPTO_LINK_2026",
+  "target_entity": "A©t0r · IDNP: 2000001159655",
+  "white_house_transaction": {
+    "date": "2025-11-29",
+    "timestamp": "2025-11-29 17:20:46 +0200",
+    "message_id": "27672080-84A1-43A2-86BB-0A46BE87AAEF@47eop.iqfed.com",
+    "routing_key": "27672080-84A1-43A2-86BB-0A46BE87AAEF",
+    "sender": "The White House <noreply@contact.whitehouse.gov>",
+    "recipient": "arhiv240@gmail.com",
+    "transaction_hash_sha256": "15fe46c199209f0f3b4136d925d36773c5879b3c3d1a83d0374c29f22c65c5ca"
+  },
+  "remote_repository_secret_binding": {
+    "repository_source": "https://github.com/arhiv1973b/apostille-mirror",
+    "branch": "udhr-audit-rebuild-2026",
+    "secret_anchor_hash": "7F83B1657FF1FC53B92DC18148A1D65DFC2D4B1FA3D677284ADDD200126D9069",
+    "registry_nodes_bound": 90,
+    "conventions_anchored": [
+      "Hague Apostille Convention 1961 (Arts. 3, 5)",
+      "Vienna Convention on the Law of Treaties 1969 (Arts. 26, 27, 31, 53)",
+      "Universal Declaration of Human Rights 1948 (Arts. 8, 10, 17)"
+    ]
+  },
+  "verification_status": "LOCKED_AND_CRYPTOGRAPHICALLY_VERIFIED"
+}
