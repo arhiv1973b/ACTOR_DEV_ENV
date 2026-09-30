@@ -28,12 +28,16 @@
     <!-- Шаг 2: Ожившие счетчики -->
     <div class="dashboard-metrics">
         <div class="metric-card">
-            <h3>Зарегистрировано в DAG</h3>
-            <span id="evidence-count">3</span> 
+            <h3>Узлов доказательств (DAG / Реестр)</h3>
+            <span id="evidence-count">3,473</span> 
+        </div>
+        <div class="metric-card">
+            <h3>Сегменты Реестра</h3>
+            <span style="font-size: 18px; font-weight: bold; color: #0066cc;">7 чанков (205 MB)</span>
         </div>
         <div class="metric-card">
             <h3>TI-ULA Статус</h3>
-            <span class="status-active">Синхронизировано (SHA-256)</span>
+            <span class="status-active">INTEGRITY_LOCKED</span>
         </div>
     </div>
 
@@ -65,6 +69,20 @@
                     <td><code style="font-size: 10px;">95cca4b7c6d1ce5784348b6dc8dae35c9bc02ff173594f4d709716877694732c</code></td>
                     <td>2026-09-05 15:20:00 UTC</td>
                     <td style="color: green;">✔ Verified (Ed25519)</td>
+                </tr>
+                <tr>
+                    <td><a href="./EVIDENCE_REGISTRY_INDEX.json" target="_blank">REG-2026-INDEX</a></td>
+                    <td>Реестр доказательств (3,473 узла, 7 чанков)</td>
+                    <td><code style="font-size: 10px;">6C913818321D40F9EE10E56F417E1521B968F6209CB10614C83F037E6F5B060C</code></td>
+                    <td>2026-09-30 22:30:11 UTC</td>
+                    <td style="color: green;">✔ INTEGRITY_LOCKED</td>
+                </tr>
+                <tr>
+                    <td><a href="./apostille-mirror/A©tor_FORENSIC_AUDIT_MANIFEST_V4_4.md" target="_blank">MAN-2026-V4.4</a></td>
+                    <td>Форензик-манифест A©tor V4.4</td>
+                    <td><code style="font-size: 10px;">7755EB3AF9C5B60C03C6440799538AB1876EE35581410DCE4B54647C88C600F6</code></td>
+                    <td>2026-09-30 23:15:00 UTC</td>
+                    <td style="color: green;">✔ INTEGRITY_LOCKED</td>
                 </tr>
             </tbody>
         </table>
