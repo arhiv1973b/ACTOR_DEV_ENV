@@ -1,1 +1,0 @@
-EVIDENCE_REGISTRY_INDEX.json filter=lfs diff=lfs merge=lfs -text
