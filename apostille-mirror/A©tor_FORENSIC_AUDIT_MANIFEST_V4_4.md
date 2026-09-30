@@ -34,3 +34,9 @@
 ---
 **Выдано системой:** A©tor Forensic Audit System
 Для включения в `A©tor_FORENSIC_AUDIT_MANIFEST_V4_4.md`
+
+
+## Криптографическая привязка DAG Manifest
+* **DAG Manifest SHA-256:** 6C913818321D40F9EE10E56F417E1521B968F6209CB10614C83F037E6F5B060C
+* **Статус:** INTEGRITY_LOCKED (Верифицировано 14 июня 2026)
+
