@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-01T14:29:34.221466+00:00",
-  "total_entries": 350,
+  "updated_at": "2026-10-01T14:46:39.919270+00:00",
+  "total_entries": 351,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -4961,6 +4961,44 @@
       },
       "node_hash": "7ea4ca9950b89ca775c82c85f5eaaa199dd2116ff28b744fbfc4886161f02439",
       "signature_ed25519": "51116d7748f94b950fc7bbd6e855edf6abc255887dfcddafcde7aa67d2cfb32340fdd3764e3e31d9e32c2a9d00022016bdf9b0aaabebfc48ac2832fc88606806"
+    },
+    {
+      "previous_hash": "7ea4ca9950b89ca775c82c85f5eaaa199dd2116ff28b744fbfc4886161f02439",
+      "payload": {
+        "case_id": "CASE-MACHERET-1997-2026",
+        "manifest_file": "DEMERS_SUP_FINCOMBANK_30092026.json",
+        "registration_date": "2026-10-01T14:46:39.912798+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case CASE-MACHERET-1997-2026",
+        "manifest_data": {
+          "document_type": "DEMERS_SUPLIMENTAR_PRECIZARE_ACTIUNII",
+          "court": "Judecătoria Chișinău (sediul Centru)",
+          "date": "2026-09-30",
+          "claimant": {
+            "name": "Maceret Alexei",
+            "idnp": "2000001159655",
+            "address": "str. Andrei Doga, nr. 30, ap. 38, Chișinău, MD-2024"
+          },
+          "defendant": {
+            "name": "FinComBank S.A.",
+            "idno": "1002600005347",
+            "address": "str. A. Pușkin, nr. 26, Chișinău"
+          },
+          "advocate": {
+            "name": "Alexei Kebeș",
+            "mandate": "Decizia CNAJGS nr. 2924/ACC din 03.09.2026"
+          },
+          "subject": "Clarificarea circumstanțelor aferente tranșei Finanțării Externe (noiembrie 2025) și blocării soldului de 25.210.256,15 MDL",
+          "case_number": "CASE-MACHERET-1997-2026",
+          "claims": [
+            "Admiterea demersului de precizare a acțiunii",
+            "Obligarea FinComBank S.A. să prezinte extrasul de cont detaliat și istoricul complet al fluxurilor financiare pentru suma de 25.210.256,15 MDL",
+            "Sesizarea organelor de urmărire penală (Inspectoratul de Poliție Centru) privind deteriorarea circuitului fondurilor internaționale"
+          ]
+        }
+      },
+      "node_hash": "6de024c6651d8afbc459ee3d9b552efe332f78c7581a733881349c26a6d6db16",
+      "signature_ed25519": "07f919b8d6f887680b475ec94f927189398f9a850ce2a41dc8b66050d1d8a626ab2b798489c003f4e4b0a6265f139e2b399de7f0d44b873ce2eb6d64979f800e"
     }
   ]
 }
