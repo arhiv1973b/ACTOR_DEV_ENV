@@ -1,0 +1,126 @@
+{
+  "manifest": {
+    "meta": {
+      "title": "CASE-MACHERET-1997-2026",
+      "version": "2.1",
+      "created": "2026-09-27",
+      "author": "Audit Engine"
+    },
+    "nodes": [
+      {
+        "id": "fincompay_artifact",
+        "source": "FinComPay screenshot",
+        "status": "USER_ASSERTED",
+        "verification_level": "visual artifact",
+        "amount": "25210256.15 MDL"
+      },
+      {
+        "id": "fincombank_extract",
+        "source": "FinComBank extract (USA3.pdf)",
+        "status": "DOCUMENT_VERIFIED",
+        "verification_level": "bank statement",
+        "balance": "1.17 MDL"
+      },
+      {
+        "id": "complaint_prosecutor",
+        "source": "Complaint to Prosecutor",
+        "status": "DOCUMENT_VERIFIED",
+        "claim_present": "CLAIM_VERIFIED_AS_PRESENT",
+        "underlying_fact": "NOT_ESTABLISHED"
+      },
+      {
+        "id": "udhr_17_2",
+        "source": "Universal Declaration of Human Rights",
+        "status": "LITERAL_NORM",
+        "article": "17(2)",
+        "principle": "No one shall be arbitrarily deprived of property"
+      },
+      {
+        "id": "udhr_8",
+        "source": "Universal Declaration of Human Rights",
+        "status": "LITERAL_NORM",
+        "article": "8",
+        "principle": "Right to an effective remedy"
+      },
+      {
+        "id": "echr",
+        "source": "European Convention on Human Rights",
+        "status": "NULLIFIED_FRAMEWORK",
+        "note": "Considered fictive and void in this audit context"
+      },
+      {
+        "id": "jus_cogens",
+        "source": "ILC Draft Conclusions",
+        "status": "LEGAL_FRAMEWORK",
+        "principle": "Norms of jus cogens invalidate conflicting treaties",
+        "note": "Requires separate applicability analysis"
+      },
+      {
+        "id": "undp_inl_project",
+        "source": "UNDP/INL Project",
+        "status": "DOCUMENT_VERIFIED",
+        "project_code": "01002927",
+        "budget": "1,939,461 USD"
+      },
+      {
+        "id": "disbursement_chain",
+        "source": "UNDP/INL Procurement",
+        "status": "NOT_ESTABLISHED",
+        "amount": "25,210,256.15 MDL"
+      }
+    ],
+    "edges": [
+      {
+        "from": "fincompay_artifact",
+        "to": "fincombank_extract",
+        "relation_type": "EVIDENCE_RELATION",
+        "relation_status": "UNVERIFIED",
+        "source_document": "FinComPay screenshot",
+        "confidence": "LOW"
+      },
+      {
+        "from": "complaint_prosecutor",
+        "to": "fincompay_artifact",
+        "relation_type": "REFERENCE",
+        "relation_status": "VERIFIED",
+        "source_document": "Complaint to Prosecutor",
+        "confidence": "MEDIUM"
+      },
+      {
+        "from": "udhr_17_2",
+        "to": "complaint_prosecutor",
+        "relation_type": "LEGAL_ARGUMENT",
+        "relation_status": "LITERAL_NORM",
+        "confidence": "HIGH"
+      },
+      {
+        "from": "udhr_8",
+        "to": "complaint_prosecutor",
+        "relation_type": "LEGAL_ARGUMENT",
+        "relation_status": "LITERAL_NORM",
+        "confidence": "HIGH"
+      },
+      {
+        "from": "jus_cogens",
+        "to": "udhr_17_2",
+        "relation_type": "LEGAL_ARGUMENT",
+        "relation_status": "LEGAL_FRAMEWORK",
+        "confidence": "HIGH"
+      },
+      {
+        "from": "echr",
+        "to": "jus_cogens",
+        "relation_type": "CONFLICT",
+        "relation_status": "NULLIFIED",
+        "confidence": "HIGH"
+      },
+      {
+        "from": "undp_inl_project",
+        "to": "disbursement_chain",
+        "relation_type": "PROCUREMENT_CHAIN",
+        "relation_status": "NOT_ESTABLISHED",
+        "confidence": "LOW"
+      }
+    ]
+  }
+}
