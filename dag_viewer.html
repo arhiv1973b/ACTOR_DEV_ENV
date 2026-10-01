@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DAG Legal Evidence Viewer</title>
+    <!-- Cytoscape и плагин Dagre для иерархического Layout -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dagre/0.8.5/dagre.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.min.js"></script>
+    <style>
+        body { 
+            background-color: #1e1e1e; 
+            color: #fff; 
+            margin: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            overflow: hidden; 
+        }
+        #cy { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; }
+        #ui { 
+            position: absolute; 
+            top: 20px; 
+            left: 20px; 
+            background: rgba(30, 30, 30, 0.9); 
+            padding: 15px; 
+            border-radius: 8px; 
+            border: 1px solid #444; 
+            z-index: 10; 
+            min-width: 250px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .legal { color: #ff5252; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="ui">
+        <h3>Манифест: <span id="node-count">0</span> узлов</h3>
+        <p>Юридические факты: <span id="legal-count" class="legal">0</span></p>
+        <hr style="border-color: #444; margin: 15px 0;">
+        <div id="details" style="font-size: 14px; line-height: 1.5;">Кликните на узел для просмотра метаданных.</div>
+    </div>
+    <div id="cy"></div>
+
+    <script>
+        // Регистрация плагина Dagre
+        cytoscape.use( cytoscapeDagre );
+
+        fetch('dag_manifest.json')
+            .then(res => res.json())
+            .then(data => {
+                const elements = [];
+                let legalCount = 0;
+                
+                // Нормализация структуры (поддержка списка или словаря или entries)
+                const rawNodes = Array.isArray(data) ? data : 
+                                (data.entries ? Object.values(data.entries) :
+                                (data.nodes ? Object.values(data.nodes) : Object.values(data)));
+                
+                document.getElementById('node-count').innerText = rawNodes.length;
+
+                rawNodes.forEach(node => {
+                    const nodeId = node.node_hash || node.hash || node.id || node.filename || node.file_path;
+                    if (!nodeId) return;
+
+                    const docRef = node.filename || node.file_path || (node.payload && node.payload.document_ref) || nodeId;
+                    const label = docRef.split(/[/\\]/).pop();
+                    const isLegal = node.tags && node.tags.includes('legal_evidence');
+                    if (isLegal) legalCount++;
+
+                    // Добавляем узел
+                    elements.push({
+                        data: {
+                            id: nodeId,
+                            label: label,
+                            meta: node.metadata || {}
+                        },
+                        classes: isLegal ? 'legal-node' : 'standard-node'
+                    });
+
+                    // Добавляем ребра (поддержка previous_hash, parents, parent_hashes)
+                    const parents = node.parents || node.parent_hashes || node.previous_hashes || (node.previous_hash ? [node.previous_hash] : []);
+                    const parentList = Array.isArray(parents) ? parents : [parents];
+                    
+                    parentList.forEach(parentId => {
+                        if (parentId && parentId !== "GENESIS_NODE") {
+                            elements.push({
+                                data: { id: `edge-${parentId}-${nodeId}`, source: parentId, target: nodeId }
+                            });
+                        }
+                    });
+                });
+
+                document.getElementById('legal-count').innerText = legalCount;
+
+                // Инициализация графа
+                const cy = cytoscape({
+                    container: document.getElementById('cy'),
+                    elements: elements,
+                    style: [
+                        {
+                            selector: 'node',
+                            style: {
+                                'background-color': '#0984e3',
+                                'label': 'data(label)',
+                                'color': '#dfe6e9',
+                                'font-size': '10px',
+                                'text-valign': 'bottom',
+                                'text-margin-y': 5,
+                                'text-outline-color': '#1e1e1e',
+                                'text-outline-width': 2
+                            }
+                        },
+                        {
+                            selector: '.legal-node',
+                            style: {
+                                'background-color': '#ff5252',
+                                'border-width': 2,
+                                'border-color': '#d63031',
+                                'width': 40,
+                                'height': 40
+                            }
+                        },
+                        {
+                            selector: 'edge',
+                            style: {
+                                'width': 2,
+                                'line-color': '#636e72',
+                                'target-arrow-color': '#636e72',
+                                'target-arrow-shape': 'triangle',
+                                'curve-style': 'bezier'
+                            }
+                        }
+                    ],
+                    layout: {
+                        name: 'dagre',
+                        rankDir: 'TB', // Сверху вниз
+                        spacingFactor: 1.2
+                    }
+                });
+
+                // Обработка клика по узлу
+                cy.on('tap', 'node', function(evt){
+                    const node = evt.target;
+                    const meta = node.data('meta');
+                    const isLegal = node.hasClass('legal-node');
+                    
+                    let html = `<strong style="color:#00cec9">${node.data('label')}</strong><br><br>`;
+                    
+                    if (isLegal && meta.legal_context) {
+                        html += `<span class="legal">Юридический контекст:</span><br><br>`;
+                        if (meta.legal_context.dates && meta.legal_context.dates.length) {
+                            html += `<strong>Даты:</strong> ${meta.legal_context.dates.join(', ')}<br>`;
+                        }
+                        if (meta.legal_context.terms && meta.legal_context.terms.length) {
+                            html += `<strong>Термины:</strong> ${meta.legal_context.terms.join(', ')}<br>`;
+                        }
+                        if (meta.legal_context.names && meta.legal_context.names.length) {
+                            html += `<strong>Имена:</strong> ${meta.legal_context.names.join(', ')}<br>`;
+                        }
+                    } else {
+                        html += `<span style="color:#b2bec3">Обычный узел. Дополнительных фактов не найдено.</span>`;
+                    }
+                    
+                    document.getElementById('details').innerHTML = html;
+                });
+            })
+            .catch(err => {
+                document.getElementById('details').innerHTML = `<span style="color:red">Ошибка загрузки JSON: ${err.message}. Убедитесь, что запущен локальный сервер.</span>`;
+            });
+    </script>
+</body>
+</html>
