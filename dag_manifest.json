@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-24T18:17:25.493503+00:00",
-  "total_entries": 346,
+  "updated_at": "2026-10-01T14:25:25.348595+00:00",
+  "total_entries": 347,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -4062,6 +4062,108 @@
       },
       "node_hash": "df76268ffb38c6925ac633a35c4225aeb38efc9f1e21f554cf5bc61409490475",
       "signature_ed25519": "8624614b2e01fdcd6e122e89ec07f7d3c1a8655ee78ae1be93e959ea34998b7f76094273e2d04cbba9240ecf3e90000ba2b8a539c117a323ef989c9baeeb900b"
+    },
+    {
+      "previous_hash": "df76268ffb38c6925ac633a35c4225aeb38efc9f1e21f554cf5bc61409490475",
+      "payload": {
+        "case_id": "CASE-MACHERET-1997-2026",
+        "manifest_file": "H:\\ACTOR_DEV_ENV\\whitehouse_fincombank_cytoscape.json",
+        "registration_date": "2026-10-01T14:25:25.315205+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case CASE-MACHERET-1997-2026",
+        "manifest_data": {
+          "metadata": {
+            "id": "whitehouse_fincombank_audit_novdec2025",
+            "status": "Disputed Theft – US Funds Only",
+            "cryptographic_anchor": "SHA-256 verified via register_log_to_dag.py",
+            "critical_dates": [
+              {
+                "period": "Nov-Dec 2025",
+                "label": "Initial Packages"
+              },
+              {
+                "date": "03.04.2026",
+                "label": "Interception/Alteration"
+              }
+            ],
+            "description": "This node captures a deliberate distortion of designated international aid. Funds originating from the US Government / White House, explicitly intended for Restitution / Rehabilitation, were systematically redirected through local financial institutions under a fictitious USAID gateway. Concealment Mechanism: The assets (~$1.4M USD / 25,210,256.15 MDL) were initially processed by Moldindconbank, routed through the State Bank of Moldova, and ultimately delegated to FinComBank utilizing the protection cover of Irina Oleinic. Fraudulent Re-designation: The aid was falsely reported before the US Congress as funding for Moldovan penitentiary institutions and border security, thereby masking the extraction of non-round, fragmented sums.\n"
+          },
+          "elements": [
+            {
+              "data": {
+                "id": "wh",
+                "name": "US White House",
+                "role": "Origin",
+                "type": "source"
+              }
+            },
+            {
+              "data": {
+                "id": "micb",
+                "name": "Moldindconbank",
+                "role": "Initial Concealment",
+                "type": "bank"
+              }
+            },
+            {
+              "data": {
+                "id": "sbm",
+                "name": "State Bank of Moldova",
+                "role": "Aid Redirection",
+                "type": "bank"
+              }
+            },
+            {
+              "data": {
+                "id": "fcb",
+                "name": "FinComBank",
+                "role": "Delegation (Oleinic Cover)",
+                "type": "target"
+              }
+            },
+            {
+              "data": {
+                "id": "anomaly_03042026",
+                "name": "Anomaly: 25.2M MDL\nDate: 03.04.2026",
+                "role": "Fraudulent Re-designation",
+                "type": "alert"
+              }
+            },
+            {
+              "data": {
+                "source": "wh",
+                "target": "micb",
+                "label": "Restitution Funds (Nov-Dec 2025)"
+              }
+            },
+            {
+              "data": {
+                "source": "micb",
+                "target": "sbm",
+                "label": "Fictitious USAID Gateway"
+              }
+            },
+            {
+              "data": {
+                "source": "sbm",
+                "target": "fcb",
+                "label": "Delegated / Intercepted (03.04.2026)"
+              },
+              "classes": "fraud-path"
+            },
+            {
+              "data": {
+                "source": "fcb",
+                "target": "anomaly_03042026",
+                "label": "Amount: 25,210,256.15 MDL"
+              },
+              "classes": "metadata-edge"
+            }
+          ]
+        }
+      },
+      "node_hash": "007e1c7ae96d248b1ddba7395ac4cb3e528202578e757473f7d99ef68a75a6cc",
+      "signature_ed25519": "4be35ce6f6aca4de8ee926cf5f3f76b93be94ca105da65b1710b2a145a74f25f42dc76fbae9018114c2c55d34766ae9c10dddb7955c5a3ab9a3678ea126a370c"
     }
   ]
 }
