@@ -1,0 +1,16 @@
+{
+  "manifest_id": "EVIDENCE_IDNP_CORRELATION_AND_CENTRAL_COURT_2026",
+  "date": "2026-10-01",
+  "case": "CASE-MACHERET-1997-2026",
+  "files": [
+    {
+      "filename": "ИДНП корреляции фамилии .pdf",
+      "description": "IDNP and surname correlation evidence (Macheret / Мачерет / Macheret)"
+    },
+    {
+      "filename": "Центральный Суд Молдовы _1.pdf",
+      "description": "Central Court of Moldova filing (Demers Suplimentar against FinComBank, 25.21M MDL)"
+    }
+  ],
+  "verification_standard": "UDHR 1948 (Arts. 5, 8, 17) + Jus Cogens + Moldovan Constitution Art. 4"
+}
