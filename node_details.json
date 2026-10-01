@@ -1,0 +1,42 @@
+{
+    "entries": {
+        "previous_hash": "2bdc8219dadc553364592f6aaa642afdbcca9c3126b10701c5d85eb8aa01b8e6",
+        "payload": {
+            "case_id": "MACHERET-1997-2026",
+            "manifest_file": "transaction_image_map.json",
+            "registration_date": "2026-09-19T13:20:33.790950+00:00",
+            "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+            "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+            "manifest_data": {
+                "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+                "DateTime": "2026-04-03T10:55:00",
+                "Sender": "FinComBank S.A.",
+                "Receiver": "Moldindconbank S.A.",
+                "Amount": {
+                    "MDL": 25210256.15,
+                    "USD": 1400000
+                },
+                "WalletToken": "MD-APPLEPAY-6089-20260403",
+                "CardConflict": {
+                    "Blocked": "5929",
+                    "Displayed": "6089"
+                },
+                "Image": {
+                    "FileName": "0-02-05-16ff2207bac47ccc430dc4cb26edbf9a852ffe2d797d8e6f9d48db130705d607_faecfcd82230d698.jpg",
+                    "LocalPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\viber_faecfcd8_2dc2fcf5.jpg",
+                    "SHA256": "2dc2fcf5f5ac90dd2dbed76789cf6edd37eac0be7fb10f9d186ed43418dc42ac",
+                    "SizeBytes": 247438
+                },
+                "DAGNode": "b5b9f5cc13267dfa7aa7de63a66abd576d60ba42060dc813b80817853a01b983",
+                "GitHubRelease": "https://github.com/arhiv1973b/apostille-mirror/releases/tag/evidence-linked-c99741-faecfcd8-20260403",
+                "Case": "MACHERET-1997-2026",
+                "LegalCharacterization": "Disputed Theft – US Funds Only",
+                "RecordStatus": "USER_ASSERTED / DISPUTED",
+                "EvidenceStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
+                "IntegrityLock": "AIPS-2025"
+            }
+        },
+        "node_hash": "dcb7849379e2995dfd8f1e45eba6d4cca6f211c84ad663ae0ffd04ef92de9fc3",
+        "signature_ed25519": "2ff7f25a7f5b10d4d89a70e8fd46a3e34c0dafd44f76aa508a361b24367dfcf6327a8392499eb8bd8a971c612d01d2531a948675fa826dffc7d4362f8c1f2e07"
+    }
+}
