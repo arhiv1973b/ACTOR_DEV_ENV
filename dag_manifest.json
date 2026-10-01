@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-01T14:46:39.919270+00:00",
-  "total_entries": 351,
+  "updated_at": "2026-10-01T15:09:54.306306+00:00",
+  "total_entries": 352,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -4999,6 +4999,32 @@
       },
       "node_hash": "6de024c6651d8afbc459ee3d9b552efe332f78c7581a733881349c26a6d6db16",
       "signature_ed25519": "07f919b8d6f887680b475ec94f927189398f9a850ce2a41dc8b66050d1d8a626ab2b798489c003f4e4b0a6265f139e2b399de7f0d44b873ce2eb6d64979f800e"
+    },
+    {
+      "previous_hash": "6de024c6651d8afbc459ee3d9b552efe332f78c7581a733881349c26a6d6db16",
+      "payload": {
+        "case_id": "CASE-MACHERET-1997-2026",
+        "manifest_file": "AVIZ_FILOLOGIE_ROMANA_01102026.json",
+        "registration_date": "2026-10-01T15:09:54.302187+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case CASE-MACHERET-1997-2026",
+        "manifest_data": {
+          "document_type": "AVIZ_STIINTIFIC_ONOMASTIC",
+          "issuer": "Institutul de Filologie Română „Bogdan Petriceicu-Hasdeu”",
+          "number": "269",
+          "date": "2026-10-01",
+          "subject": "Etimologizarea și identificarea numelui/prenumelui (Macheret / Мачерет)",
+          "person": {
+            "name": "Maceret Alexei (Artur)",
+            "idnp": "2000001159655"
+          },
+          "conclusion": "Numele MACERET, МАЧЕРЕТ și MACHERET sunt echivalente antroponimice (nume identice, purtate de membrii uneia și aceleiași familii).",
+          "signer": "Lidia Vieru, cercetător științific",
+          "case_number": "CASE-MACHERET-1997-2026"
+        }
+      },
+      "node_hash": "568fd53363c8969683150f68bbc9df5713942caab3f9c1755c05b111ab41ed4d",
+      "signature_ed25519": "56f37d73b70e26aa9084888f4d448389e1c1bd0ad1a5abee4a3772ec3311dee65307218ab1036026da0e7425920ef24068c761aa60f9b77243f0824d3eac0a0b"
     }
   ]
 }
