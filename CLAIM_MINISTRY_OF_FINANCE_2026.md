@@ -11,7 +11,7 @@ Subsemnatul, Alexei Macheret (IDNP: 2000001159655), formulez prezenta cerere pri
 I. Baza Faptică și Probatorie (FORENSIC LOCK MATRIX)
 În condițiile refuzului organelor naționale de a investiga falsificarea identității (crearea IDNP-ului fantomă ...555 în 2006 și "corectarea" tacită la ...655 în 2020 fără dosar penal conf. Art. 332 CP RM), probele au fost securizate prin algoritm criptografic SHA-256 în arhiva A©t0r Integrity Engine (GitHub: CASE-MACHERET-1997-2026).
 
-Faptele sunt confirmate irevocabil prin MERKLE ROOT: 7F83B1657FF1FC53B92DC18148A1D65DFC2D4B1FA3D677284ADDD200126D9069, care leagă:
+Faptele sunt confirmate irevocabil prin MERKLE ROOT: 7F83B1657FF1FC53B92DC18148A1D65DFC2D4B1FA3D677284ADDD200126D9069, რომელიც leagă:
 1. Falsul instituțional: Traseul IDNP ...555 utilizat pentru spălarea datoriilor și exproprierea activelor (Commit 94b277b4).
 2. Anomalia fiscală: Exproprierea a 25.21M MDL orchestrată cu implicarea FinComPay/Moldindconbank la data de 25.04.2026 (Commit 90655f14).
 3. Statutul Suveran: Tranzacțiile și corespondența Casei Albe (S.U.A.) care validează statutul meu fiscal internațional, imun la falsurile jurisdicției locale (Hash 8D969EEF...).
