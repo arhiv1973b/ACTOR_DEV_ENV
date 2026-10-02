@@ -5148,6 +5148,22 @@
             },
             "node_hash": "0de3ac9db1a906ef54b2e90d32f5efa2d5cec9afc709c71845f46eb287d0de97",
             "signature_ed25519": "58fd2921744b5e292c8cab69eced6cab43f494441ff149c8483f2db32999dd1aa92700248097d12b3f9f4a99ec1f386f89a18fc7239278de3bbe0f9d307a470b"
+        },
+        {
+            "node_id": "faab31e8d6cfc7e5",
+            "filename": "Документ (3) (8).pdf",
+            "vault_path": "H:\\ACTOR_DEV_ENV\\evidence_vault\\Документ (3) (8).pdf",
+            "sha256": "faab31e8d6cfc7e5cc0509b16cb37c1077479d53cddb083ac50d8314086ff8f4",
+            "ingested_at": "2026-10-02T11:11:42.011894Z",
+            "bindings": [
+                {
+                    "framework": "UDHR",
+                    "article": "17.2",
+                    "anchor": "90655f14",
+                    "amount": "25210256.15 MDL",
+                    "violation_status": "ACTIVE"
+                }
+            ]
         }
     ],
     "90655f14": {
