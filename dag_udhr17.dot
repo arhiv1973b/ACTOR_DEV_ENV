@@ -1,0 +1,11 @@
+digraph EvidenceGraph {
+    rankdir=LR;
+    node [fontname="Consolas", shape=box, style=filled, fillcolor="#2b2b2b", color="#555555", fontcolor="#ffffff"];
+    edge [fontname="Consolas", color="#888888"];
+    bgcolor="#1e1e1e";
+
+    "90655f14" [label="ANCHOR: 90655f14\nEXPROPRIATED ASSETS\n25,210,256.15 MDL", fillcolor="#8b0000", style="filled,bold", color="#ff0000"];
+    "UDHR_17_2" [label="UDHR Art. 17.2\n«Никто не должен быть произвольно\nлишен своего имущества»", fillcolor="#004080", style="filled,bold", color="#00aaff"];
+
+    "90655f14" -> "UDHR_17_2" [label=" DIRECT VIOLATION", color="#ff0000", penwidth=3.0, fontcolor="#ff4444"];
+}
