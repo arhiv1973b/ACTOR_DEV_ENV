@@ -5149,5 +5149,28 @@
             "node_hash": "0de3ac9db1a906ef54b2e90d32f5efa2d5cec9afc709c71845f46eb287d0de97",
             "signature_ed25519": "58fd2921744b5e292c8cab69eced6cab43f494441ff149c8483f2db32999dd1aa92700248097d12b3f9f4a99ec1f386f89a18fc7239278de3bbe0f9d307a470b"
         }
-    ]
+    ],
+    "90655f14": {
+        "node_id": "90655f14",
+        "type": "STOLEN_ASSETS_ANCHOR",
+        "attributes": {
+            "amount": "25210256.15",
+            "currency": "MDL",
+            "status": "EXPROPRIATED"
+        },
+        "bindings": [
+            {
+                "framework": "UDHR",
+                "article": "17.2",
+                "text": "Никто не должен быть произвольно лишен своего имущества.",
+                "violation_status": "ACTIVE"
+            }
+        ],
+        "edges": [
+            {
+                "target": "UDHR_17.2",
+                "relation": "DIRECT_VIOLATION"
+            }
+        ]
+    }
 }
