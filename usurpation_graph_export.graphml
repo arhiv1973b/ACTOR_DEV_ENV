@@ -3,23 +3,31 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
   
-  <!-- GraphML Keys for Styling and Metadata -->
+  <!-- GraphML Keys for Node Styling and Metadata -->
   <key id="nodeType" for="node" attr.name="nodeType" attr.type="string"/>
   <key id="title" for="node" attr.name="title" attr.type="string"/>
   <key id="description" for="node" attr.name="description" attr.type="string"/>
   <key id="color" for="node" attr.name="color" attr.type="string"/>
+
+  <!-- GraphML Keys for Edge Styling and Metadata -->
   <key id="relation" for="edge" attr.name="relation" attr.type="string"/>
+  <key id="edgeColor" for="edge" attr.name="edgeColor" attr.type="string"/>
+  <key id="edgeWidth" for="edge" attr.name="edgeWidth" attr.type="string"/>
 
   <graph id="TI-ULA-Usurpation-Graph" edgedefault="directed">
 
-    <!-- Nodes: Constitution (Color: #ff4d4d - Red) -->
+    <!-- ======================================================================= -->
+    <!-- NODES                                                                   -->
+    <!-- ======================================================================= -->
+
+    <!-- Constitution (Color: #ff4d4d - Red) -->
     <node id="ConstitutionArticle_2">
       <data key="nodeType">ConstitutionArticle</data>
       <data key="title">Узурпация государственной власти (Ст. 2 РМ)</data>
       <data key="color">#ff4d4d</data>
     </node>
 
-    <!-- Nodes: Human Rights / UDHR (Color: #ffa500 - Orange) -->
+    <!-- Human Rights / UDHR (Color: #ffa500 - Orange) -->
     <node id="HumanRight_5">
       <data key="nodeType">HumanRight</data>
       <data key="title">Статья 5: Запрет пыток</data>
@@ -46,7 +54,7 @@
       <data key="color">#ffa500</data>
     </node>
 
-    <!-- Nodes: Evidence Case O (Color: #3399ff - Blue) -->
+    <!-- Evidence Case O (Color: #3399ff - Blue) -->
     <node id="Evidence_O">
       <data key="nodeType">Evidence</data>
       <data key="title">Дело O (Мачерет)</data>
@@ -54,7 +62,7 @@
       <data key="color">#3399ff</data>
     </node>
 
-    <!-- Nodes: Digital Traces (Color: #2ecc71 - Green) -->
+    <!-- Digital Traces (Color: #2ecc71 - Green) -->
     <node id="DT_OTP_DELETED">
       <data key="nodeType">DigitalTrace</data>
       <data key="title">OTP_DELETED</data>
@@ -92,66 +100,106 @@
       <data key="color">#2ecc71</data>
     </node>
 
-    <!-- Edges: Evidence -> Constitution -->
+    <!-- ======================================================================= -->
+    <!-- EDGES                                                                   -->
+    <!-- ======================================================================= -->
+
+    <!-- Edges: USURPS (Red: #ff4d4d, Width: 3.0) -->
     <edge source="Evidence_O" target="ConstitutionArticle_2">
       <data key="relation">USURPS</data>
+      <data key="edgeColor">#ff4d4d</data>
+      <data key="edgeWidth">3.0</data>
     </edge>
 
-    <!-- Edges: Evidence -> Human Rights -->
+    <!-- Edges: VIOLATES - Case O to Human Rights (Orange: #ffa500, Width: 2.0) -->
     <edge source="Evidence_O" target="HumanRight_5">
       <data key="relation">VIOLATES</data>
+      <data key="edgeColor">#ffa500</data>
+      <data key="edgeWidth">2.0</data>
     </edge>
     <edge source="Evidence_O" target="HumanRight_8">
       <data key="relation">VIOLATES</data>
+      <data key="edgeColor">#ffa500</data>
+      <data key="edgeWidth">2.0</data>
     </edge>
     <edge source="Evidence_O" target="HumanRight_10">
       <data key="relation">VIOLATES</data>
+      <data key="edgeColor">#ffa500</data>
+      <data key="edgeWidth">2.0</data>
     </edge>
     <edge source="Evidence_O" target="HumanRight_12">
       <data key="relation">VIOLATES</data>
+      <data key="edgeColor">#ffa500</data>
+      <data key="edgeWidth">2.0</data>
     </edge>
     <edge source="Evidence_O" target="HumanRight_17">
       <data key="relation">VIOLATES</data>
+      <data key="edgeColor">#ffa500</data>
+      <data key="edgeWidth">2.0</data>
     </edge>
 
-    <!-- Edges: Evidence -> Digital Traces -->
+    <!-- Edges: EVIDENCES - Case O to Digital Traces (Green: #2ecc71, Width: 1.5) -->
     <edge source="Evidence_O" target="DT_OTP_DELETED">
       <data key="relation">EVIDENCES</data>
+      <data key="edgeColor">#2ecc71</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
     <edge source="Evidence_O" target="DT_PROPERTY_SEIZED">
       <data key="relation">EVIDENCES</data>
+      <data key="edgeColor">#2ecc71</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
     <edge source="Evidence_O" target="DT_CYBER_HARASSMENT">
       <data key="relation">EVIDENCES</data>
+      <data key="edgeColor">#2ecc71</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
     <edge source="Evidence_O" target="DT_BANK_FUNDS_BLOCKED">
       <data key="relation">EVIDENCES</data>
+      <data key="edgeColor">#2ecc71</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
     <edge source="Evidence_O" target="DT_ILLEGAL_SURVEILLANCE">
       <data key="relation">EVIDENCES</data>
+      <data key="edgeColor">#2ecc71</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
     <edge source="Evidence_O" target="DT_QUESTION_MARK_BLOCKED">
       <data key="relation">EVIDENCES</data>
+      <data key="edgeColor">#2ecc71</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
 
-    <!-- Edges: Direct Digital Trace -> Human Rights Violations -->
+    <!-- Edges: VIOLATES - Digital Traces to Human Rights (Orange: #ffa500, Width: 1.5) -->
     <edge source="DT_OTP_DELETED" target="HumanRight_8">
       <data key="relation">VIOLATES</data>
+      <data key="edgeColor">#ffa500</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
     <edge source="DT_PROPERTY_SEIZED" target="HumanRight_12">
       <data key="relation">VIOLATES</data>
+      <data key="edgeColor">#ffa500</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
     <edge source="DT_CYBER_HARASSMENT" target="HumanRight_5">
       <data key="relation">VIOLATES</data>
+      <data key="edgeColor">#ffa500</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
     <edge source="DT_BANK_FUNDS_BLOCKED" target="HumanRight_17">
       <data key="relation">VIOLATES</data>
+      <data key="edgeColor">#ffa500</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
     <edge source="DT_ILLEGAL_SURVEILLANCE" target="HumanRight_12">
       <data key="relation">VIOLATES</data>
+      <data key="edgeColor">#ffa500</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
     <edge source="DT_QUESTION_MARK_BLOCKED" target="HumanRight_10">
       <data key="relation">VIOLATES</data>
+      <data key="edgeColor">#ffa500</data>
+      <data key="edgeWidth">1.5</data>
     </edge>
 
   </graph>
