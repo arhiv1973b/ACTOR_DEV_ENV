@@ -1,0 +1,21 @@
+{
+  "dependency_graph": {
+    "nodes": [
+      { "id": "manifest", "trigger": "JUS_COGENS_GLOBAL_MANIFEST_2026.md", "type": "sequential" },
+      { "id": "hash", "trigger": "JUS_COGENS_GLOBAL_MANIFEST_2026.md", "type": "sequential" },
+      { "id": "evidence_update", "trigger": "evidence_ledger_sha256.log", "type": "sequential" },
+      { "id": "commit_push", "trigger": ["JUS_COGENS_GLOBAL_MANIFEST_2026.md", "evidence_ledger_sha256.log"], "type": "synchronization" },
+      { "id": "graph_ingest", "trigger": "evidence_ledger_sha256.log", "type": "parallel" },
+      { "id": "graph_export", "trigger": "evidence_ledger_sha256.log", "type": "parallel" }
+    ],
+    "edges": [
+      { "from": "manifest", "to": "hash" },
+      { "from": "hash", "to": "evidence_update" },
+      { "from": "evidence_update", "to": "commit_push" },
+      { "from": "commit_push", "to": "graph_ingest" },
+      { "from": "graph_ingest", "to": "graph_export" }
+    ]
+  },
+  "status": "EXECUTION_GRAPH_SECURED",
+  "signature": "# ⚖ A©tor Declaration"
+}
