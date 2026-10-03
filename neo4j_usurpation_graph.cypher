@@ -1,5 +1,5 @@
 // ============================================================================
-// NEO4J CYPHER SCRIPT: UNIFIED USURPATION & HUMAN RIGHTS VIOLATION GRAPH MODEL
+// NEO4J CYPHER SCRIPT: ULTIMATE UNIFIED USURPATION & DIGITAL TRACE GRAPH MODEL
 // Protocol: TI-ULA / A©tor Protocol (Case Macheret / Case O)
 // ============================================================================
 
@@ -21,17 +21,32 @@ MATCH (c:ConstitutionArticle {number:"2"}), (e:Evidence {case:"O"})
 MERGE (e)-[:USURPS]->(c);
 
 // Связи нарушений ВДПЧ
-MATCH (h5:HumanRight {number:"5"}), (e:Evidence {case:"O"})
-MERGE (e)-[:VIOLATES]->(h5);
+MATCH (e:Evidence {case:"O"})
+MERGE (e)-[:VIOLATES]->(:HumanRight {number:"5"})
+MERGE (e)-[:VIOLATES]->(:HumanRight {number:"8"})
+MERGE (e)-[:VIOLATES]->(:HumanRight {number:"10"})
+MERGE (e)-[:VIOLATES]->(:HumanRight {number:"12"})
+MERGE (e)-[:VIOLATES]->(:HumanRight {number:"17"});
 
-MATCH (h8:HumanRight {number:"8"}), (e:Evidence {case:"O"})
-MERGE (e)-[:VIOLATES]->(h8);
+// Узлы DigitalTrace (технические артефакты)
+MERGE (:DigitalTrace {type:"OTP_DELETED", description:"Удаление OTP-кодов"});
+MERGE (:DigitalTrace {type:"PROPERTY_SEIZED", description:"Рейдерский захват квартиры"});
+MERGE (:DigitalTrace {type:"CYBER_HARASSMENT", description:"Психологический террор и киберхарассмент"});
+MERGE (:DigitalTrace {type:"BANK_FUNDS_BLOCKED", description:"Искусственное ограничение доступа к счетам"});
+MERGE (:DigitalTrace {type:"ILLEGAL_SURVEILLANCE", description:"Попытка установки аппаратных жучков"});
 
-MATCH (h10:HumanRight {number:"10"}), (e:Evidence {case:"O"})
-MERGE (e)-[:VIOLATES]->(h10);
+// Связи Evidence ↔ DigitalTrace
+MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"OTP_DELETED"})
+MERGE (e)-[:EVIDENCES]->(dt);
 
-MATCH (h12:HumanRight {number:"12"}), (e:Evidence {case:"O"})
-MERGE (e)-[:VIOLATES]->(h12);
+MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"PROPERTY_SEIZED"})
+MERGE (e)-[:EVIDENCES]->(dt);
 
-MATCH (h17:HumanRight {number:"17"}), (e:Evidence {case:"O"})
-MERGE (e)-[:VIOLATES]->(h17);
+MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"CYBER_HARASSMENT"})
+MERGE (e)-[:EVIDENCES]->(dt);
+
+MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"BANK_FUNDS_BLOCKED"})
+MERGE (e)-[:EVIDENCES]->(dt);
+
+MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"ILLEGAL_SURVEILLANCE"})
+MERGE (e)-[:EVIDENCES]->(dt);
