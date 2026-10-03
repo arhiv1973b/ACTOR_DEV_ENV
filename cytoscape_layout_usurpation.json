@@ -1,0 +1,258 @@
+{
+  "format_version": "1.0",
+  "generated_by": "TI-ULA / A©tor Protocol - Cytoscape Hierarchical Layout",
+  "target_cytoscapejs_version": "~3.21",
+  "elements": {
+    "nodes": [
+      {
+        "data": {
+          "id": "const_2",
+          "label": "Ст. 2 Конституции РМ: Узурпация власти",
+          "group": "Constitution",
+          "color": "#E74C3C"
+        },
+        "position": { "x": 0, "y": -300 }
+      },
+      {
+        "data": {
+          "id": "udhr_5",
+          "label": "ВДПЧ Ст. 5: Запрет пыток",
+          "group": "HumanRights",
+          "color": "#E67E22"
+        },
+        "position": { "x": -400, "y": -150 }
+      },
+      {
+        "data": {
+          "id": "udhr_8",
+          "label": "ВДПЧ Ст. 8: Эффективное средство",
+          "group": "HumanRights",
+          "color": "#E67E22"
+        },
+        "position": { "x": -200, "y": -150 }
+      },
+      {
+        "data": {
+          "id": "udhr_10",
+          "label": "ВДПЧ Ст. 10: Справедливый суд",
+          "group": "HumanRights",
+          "color": "#E67E22"
+        },
+        "position": { "x": 0, "y": -150 }
+      },
+      {
+        "data": {
+          "id": "udhr_12",
+          "label": "ВДПЧ Ст. 12: Неприкосновенность жилища",
+          "group": "HumanRights",
+          "color": "#E67E22"
+        },
+        "position": { "x": 200, "y": -150 }
+      },
+      {
+        "data": {
+          "id": "udhr_17",
+          "label": "ВДПЧ Ст. 17: Право собственности",
+          "group": "HumanRights",
+          "color": "#E67E22"
+        },
+        "position": { "x": 400, "y": -150 }
+      },
+      {
+        "data": {
+          "id": "evidence_o",
+          "label": "Дело «O»: Комплекс доказательств",
+          "group": "Evidence",
+          "color": "#3498DB"
+        },
+        "position": { "x": 0, "y": 0 }
+      },
+      {
+        "data": {
+          "id": "dt_otp",
+          "label": "OTP_DELETED: Удаление OTP",
+          "group": "DigitalTrace",
+          "color": "#2ECC71"
+        },
+        "position": { "x": -500, "y": 200 }
+      },
+      {
+        "data": {
+          "id": "dt_prop",
+          "label": "PROPERTY_SEIZED: Захват квартиры (Нантой)",
+          "group": "DigitalTrace",
+          "color": "#2ECC71"
+        },
+        "position": { "x": -300, "y": 200 }
+      },
+      {
+        "data": {
+          "id": "dt_cyber",
+          "label": "CYBER_HARASSMENT: Киберхарассмент",
+          "group": "DigitalTrace",
+          "color": "#2ECC71"
+        },
+        "position": { "x": -100, "y": 200 }
+      },
+      {
+        "data": {
+          "id": "dt_bank",
+          "label": "BANK_FUNDS_BLOCKED: Блокировка (180 лей)",
+          "group": "DigitalTrace",
+          "color": "#2ECC71"
+        },
+        "position": { "x": 100, "y": 200 }
+      },
+      {
+        "data": {
+          "id": "dt_surv",
+          "label": "ILLEGAL_SURVEILLANCE: Жучки / Счётчики",
+          "group": "DigitalTrace",
+          "color": "#2ECC71"
+        },
+        "position": { "x": 300, "y": 200 }
+      },
+      {
+        "data": {
+          "id": "dt_qmark",
+          "label": "QUESTION_MARK_BLOCKED: Блокировка «?»",
+          "group": "DigitalTrace",
+          "color": "#2ECC71"
+        },
+        "position": { "x": 500, "y": 200 }
+      }
+    ],
+    "edges": [
+      {
+        "data": {
+          "id": "e1",
+          "source": "evidence_o",
+          "target": "const_2",
+          "label": "USURPS",
+          "color": "#C0392B",
+          "width": 3.0
+        }
+      },
+      {
+        "data": {
+          "id": "e2",
+          "source": "evidence_o",
+          "target": "udhr_5",
+          "label": "VIOLATES",
+          "color": "#D35400",
+          "width": 2.0
+        }
+      },
+      {
+        "data": {
+          "id": "e3",
+          "source": "evidence_o",
+          "target": "udhr_8",
+          "label": "VIOLATES",
+          "color": "#D35400",
+          "width": 2.0
+        }
+      },
+      {
+        "data": {
+          "id": "e4",
+          "source": "evidence_o",
+          "target": "udhr_10",
+          "label": "VIOLATES",
+          "color": "#D35400",
+          "width": 2.0
+        }
+      },
+      {
+        "data": {
+          "id": "e5",
+          "source": "evidence_o",
+          "target": "udhr_12",
+          "label": "VIOLATES",
+          "color": "#D35400",
+          "width": 2.0
+        }
+      },
+      {
+        "data": {
+          "id": "e6",
+          "source": "evidence_o",
+          "target": "udhr_17",
+          "label": "VIOLATES",
+          "color": "#D35400",
+          "width": 2.0
+        }
+      },
+      {
+        "data": {
+          "id": "e7",
+          "source": "evidence_o",
+          "target": "dt_otp",
+          "label": "EVIDENCES",
+          "color": "#27AE60",
+          "width": 1.5
+        }
+      },
+      {
+        "data": {
+          "id": "e8",
+          "source": "evidence_o",
+          "target": "dt_prop",
+          "label": "EVIDENCES",
+          "color": "#27AE60",
+          "width": 1.5
+        }
+      },
+      {
+        "data": {
+          "id": "e9",
+          "source": "evidence_o",
+          "target": "dt_cyber",
+          "label": "EVIDENCES",
+          "color": "#27AE60",
+          "width": 1.5
+        }
+      },
+      {
+        "data": {
+          "id": "e10",
+          "source": "evidence_o",
+          "target": "dt_bank",
+          "label": "EVIDENCES",
+          "color": "#27AE60",
+          "width": 1.5
+        }
+      },
+      {
+        "data": {
+          "id": "e11",
+          "source": "evidence_o",
+          "target": "dt_surv",
+          "label": "EVIDENCES",
+          "color": "#27AE60",
+          "width": 1.5
+        }
+      },
+      {
+        "data": {
+          "id": "e12",
+          "source": "evidence_o",
+          "target": "dt_qmark",
+          "label": "EVIDENCES",
+          "color": "#27AE60",
+          "width": 1.5
+        }
+      },
+      {
+        "data": {
+          "id": "e13",
+          "source": "dt_qmark",
+          "target": "udhr_10",
+          "label": "VIOLATES",
+          "color": "#8E44AD",
+          "width": 2.0
+        }
+      }
+    ]
+  }
+}
