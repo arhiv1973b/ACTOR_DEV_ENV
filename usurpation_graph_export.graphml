@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  
+  <!-- GraphML Keys for Styling and Metadata -->
+  <key id="nodeType" for="node" attr.name="nodeType" attr.type="string"/>
+  <key id="title" for="node" attr.name="title" attr.type="string"/>
+  <key id="description" for="node" attr.name="description" attr.type="string"/>
+  <key id="color" for="node" attr.name="color" attr.type="string"/>
+  <key id="relation" for="edge" attr.name="relation" attr.type="string"/>
+
+  <graph id="TI-ULA-Usurpation-Graph" edgedefault="directed">
+
+    <!-- Nodes: Constitution (Color: #ff4d4d - Red) -->
+    <node id="ConstitutionArticle_2">
+      <data key="nodeType">ConstitutionArticle</data>
+      <data key="title">Узурпация государственной власти (Ст. 2 РМ)</data>
+      <data key="color">#ff4d4d</data>
+    </node>
+
+    <!-- Nodes: Human Rights / UDHR (Color: #ffa500 - Orange) -->
+    <node id="HumanRight_5">
+      <data key="nodeType">HumanRight</data>
+      <data key="title">Статья 5: Запрет пыток</data>
+      <data key="color">#ffa500</data>
+    </node>
+    <node id="HumanRight_8">
+      <data key="nodeType">HumanRight</data>
+      <data key="title">Статья 8: Эффективное средство защиты</data>
+      <data key="color">#ffa500</data>
+    </node>
+    <node id="HumanRight_10">
+      <data key="nodeType">HumanRight</data>
+      <data key="title">Статья 10: Справедливый суд</data>
+      <data key="color">#ffa500</data>
+    </node>
+    <node id="HumanRight_12">
+      <data key="nodeType">HumanRight</data>
+      <data key="title">Статья 12: Неприкосновенность жилища</data>
+      <data key="color">#ffa500</data>
+    </node>
+    <node id="HumanRight_17">
+      <data key="nodeType">HumanRight</data>
+      <data key="title">Статья 17: Право собственности</data>
+      <data key="color">#ffa500</data>
+    </node>
+
+    <!-- Nodes: Evidence Case O (Color: #3399ff - Blue) -->
+    <node id="Evidence_O">
+      <data key="nodeType">Evidence</data>
+      <data key="title">Дело O (Мачерет)</data>
+      <data key="description">Рейдерский захват, блокировка правосудия, хищение средств, психологический террор</data>
+      <data key="color">#3399ff</data>
+    </node>
+
+    <!-- Nodes: Digital Traces (Color: #2ecc71 - Green) -->
+    <node id="DT_OTP_DELETED">
+      <data key="nodeType">DigitalTrace</data>
+      <data key="title">OTP_DELETED</data>
+      <data key="description">Удаление OTP-кодов</data>
+      <data key="color">#2ecc71</data>
+    </node>
+    <node id="DT_PROPERTY_SEIZED">
+      <data key="nodeType">DigitalTrace</data>
+      <data key="title">PROPERTY_SEIZED</data>
+      <data key="description">Рейдерский захват квартиры (Мирон Костин 13/3)</data>
+      <data key="color">#2ecc71</data>
+    </node>
+    <node id="DT_CYBER_HARASSMENT">
+      <data key="nodeType">DigitalTrace</data>
+      <data key="title">CYBER_HARASSMENT</data>
+      <data key="description">Психологический террор и удаленный контроль клавиатуры</data>
+      <data key="color">#2ecc71</data>
+    </node>
+    <node id="DT_BANK_FUNDS_BLOCKED">
+      <data key="nodeType">DigitalTrace</data>
+      <data key="title">BANK_FUNDS_BLOCKED</data>
+      <data key="description">Искусственное ограничение счетов (180 MDL / 25.2 mln MDL)</data>
+      <data key="color">#2ecc71</data>
+    </node>
+    <node id="DT_ILLEGAL_SURVEILLANCE">
+      <data key="nodeType">DigitalTrace</data>
+      <data key="title">ILLEGAL_SURVEILLANCE</data>
+      <data key="description">Попытка установки аппаратных жучков под видом замены счетчиков</data>
+      <data key="color">#2ecc71</data>
+    </node>
+    <node id="DT_QUESTION_MARK_BLOCKED">
+      <data key="nodeType">DigitalTrace</data>
+      <data key="title">QUESTION_MARK_BLOCKED</data>
+      <data key="description">Блокировка символа '?' как подавление права на вопросы и оспаривание</data>
+      <data key="color">#2ecc71</data>
+    </node>
+
+    <!-- Edges: Evidence -> Constitution -->
+    <edge source="Evidence_O" target="ConstitutionArticle_2">
+      <data key="relation">USURPS</data>
+    </edge>
+
+    <!-- Edges: Evidence -> Human Rights -->
+    <edge source="Evidence_O" target="HumanRight_5">
+      <data key="relation">VIOLATES</data>
+    </edge>
+    <edge source="Evidence_O" target="HumanRight_8">
+      <data key="relation">VIOLATES</data>
+    </edge>
+    <edge source="Evidence_O" target="HumanRight_10">
+      <data key="relation">VIOLATES</data>
+    </edge>
+    <edge source="Evidence_O" target="HumanRight_12">
+      <data key="relation">VIOLATES</data>
+    </edge>
+    <edge source="Evidence_O" target="HumanRight_17">
+      <data key="relation">VIOLATES</data>
+    </edge>
+
+    <!-- Edges: Evidence -> Digital Traces -->
+    <edge source="Evidence_O" target="DT_OTP_DELETED">
+      <data key="relation">EVIDENCES</data>
+    </edge>
+    <edge source="Evidence_O" target="DT_PROPERTY_SEIZED">
+      <data key="relation">EVIDENCES</data>
+    </edge>
+    <edge source="Evidence_O" target="DT_CYBER_HARASSMENT">
+      <data key="relation">EVIDENCES</data>
+    </edge>
+    <edge source="Evidence_O" target="DT_BANK_FUNDS_BLOCKED">
+      <data key="relation">EVIDENCES</data>
+    </edge>
+    <edge source="Evidence_O" target="DT_ILLEGAL_SURVEILLANCE">
+      <data key="relation">EVIDENCES</data>
+    </edge>
+    <edge source="Evidence_O" target="DT_QUESTION_MARK_BLOCKED">
+      <data key="relation">EVIDENCES</data>
+    </edge>
+
+    <!-- Edges: Direct Digital Trace -> Human Rights Violations -->
+    <edge source="DT_OTP_DELETED" target="HumanRight_8">
+      <data key="relation">VIOLATES</data>
+    </edge>
+    <edge source="DT_PROPERTY_SEIZED" target="HumanRight_12">
+      <data key="relation">VIOLATES</data>
+    </edge>
+    <edge source="DT_CYBER_HARASSMENT" target="HumanRight_5">
+      <data key="relation">VIOLATES</data>
+    </edge>
+    <edge source="DT_BANK_FUNDS_BLOCKED" target="HumanRight_17">
+      <data key="relation">VIOLATES</data>
+    </edge>
+    <edge source="DT_ILLEGAL_SURVEILLANCE" target="HumanRight_12">
+      <data key="relation">VIOLATES</data>
+    </edge>
+    <edge source="DT_QUESTION_MARK_BLOCKED" target="HumanRight_10">
+      <data key="relation">VIOLATES</data>
+    </edge>
+
+  </graph>
+</graphml>
