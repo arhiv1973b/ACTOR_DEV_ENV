@@ -1,5 +1,5 @@
 // ============================================================================
-// NEO4J CYPHER SCRIPT: ULTIMATE UNIFIED USURPATION & DIGITAL TRACE GRAPH MODEL
+// NEO4J CYPHER SCRIPT: FINAL OPTIMIZED USURPATION & DIGITAL TRACE GRAPH MODEL
 // Protocol: TI-ULA / A©tor Protocol (Case Macheret / Case O)
 // ============================================================================
 
@@ -20,41 +20,33 @@ MERGE (:Evidence {case:"O", description:"Рейдерский захват, бл
 MATCH (c:ConstitutionArticle {number:"2"}), (e:Evidence {case:"O"})
 MERGE (e)-[:USURPS]->(c);
 
-// Связи нарушений ВДПЧ
-MATCH (e:Evidence {case:"O"})
-MERGE (e)-[:VIOLATES]->(:HumanRight {number:"5"})
-MERGE (e)-[:VIOLATES]->(:HumanRight {number:"8"})
-MERGE (e)-[:VIOLATES]->(:HumanRight {number:"10"})
-MERGE (e)-[:VIOLATES]->(:HumanRight {number:"12"})
-MERGE (e)-[:VIOLATES]->(:HumanRight {number:"17"});
-
 // Узлы DigitalTrace (технические артефакты)
 MERGE (:DigitalTrace {type:"OTP_DELETED", description:"Удаление OTP-кодов"});
 MERGE (:DigitalTrace {type:"PROPERTY_SEIZED", description:"Рейдерский захват квартиры"});
 MERGE (:DigitalTrace {type:"CYBER_HARASSMENT", description:"Психологический террор и киберхарассмент"});
 MERGE (:DigitalTrace {type:"BANK_FUNDS_BLOCKED", description:"Искусственное ограничение доступа к счетам"});
 MERGE (:DigitalTrace {type:"ILLEGAL_SURVEILLANCE", description:"Попытка установки аппаратных жучков"});
-MERGE (:DigitalTrace {type:"QUESTION_MARK_BLOCKED", description:"Блокировка символа '?' как подавление права на вопросы и оспаривание решений по ст. 313 УПК РМ"});
+MERGE (:DigitalTrace {type:"QUESTION_MARK_BLOCKED", description:"Блокировка символа '?' как подавление права на вопросы"});
 
 // Связи Evidence ↔ DigitalTrace
-MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"OTP_DELETED"})
+MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace)
 MERGE (e)-[:EVIDENCES]->(dt);
 
-MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"PROPERTY_SEIZED"})
-MERGE (e)-[:EVIDENCES]->(dt);
+// Прямая юридическая квалификация DigitalTrace ↔ HumanRight
+MATCH (dt:DigitalTrace {type:"OTP_DELETED"}), (h:HumanRight {number:"8"})
+MERGE (dt)-[:VIOLATES]->(h);
 
-MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"CYBER_HARASSMENT"})
-MERGE (e)-[:EVIDENCES]->(dt);
+MATCH (dt:DigitalTrace {type:"PROPERTY_SEIZED"}), (h:HumanRight {number:"12"})
+MERGE (dt)-[:VIOLATES]->(h);
 
-MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"BANK_FUNDS_BLOCKED"})
-MERGE (e)-[:EVIDENCES]->(dt);
+MATCH (dt:DigitalTrace {type:"CYBER_HARASSMENT"}), (h:HumanRight {number:"5"})
+MERGE (dt)-[:VIOLATES]->(h);
 
-MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"ILLEGAL_SURVEILLANCE"})
-MERGE (e)-[:EVIDENCES]->(dt);
+MATCH (dt:DigitalTrace {type:"BANK_FUNDS_BLOCKED"}), (h:HumanRight {number:"17"})
+MERGE (dt)-[:VIOLATES]->(h);
 
-MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"QUESTION_MARK_BLOCKED"})
-MERGE (e)-[:EVIDENCES]->(dt);
+MATCH (dt:DigitalTrace {type:"ILLEGAL_SURVEILLANCE"}), (h:HumanRight {number:"12"})
+MERGE (dt)-[:VIOLATES]->(h);
 
-// Прямая квалификация нарушения для блокировки вопросительного знака
 MATCH (dt:DigitalTrace {type:"QUESTION_MARK_BLOCKED"}), (h:HumanRight {number:"10"})
 MERGE (dt)-[:VIOLATES]->(h);
