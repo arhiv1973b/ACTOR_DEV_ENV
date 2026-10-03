@@ -140,3 +140,13 @@
     "timestamp":  "1790942078.01529",
     "event":  "system_reboot"
 }
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791020474.70171",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791021634.04135",
+    "event":  "system_reboot"
+}
