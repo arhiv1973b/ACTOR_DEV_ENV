@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  
+  <!-- Определение атрибутов узлов -->
+  <key id="node_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="node_color" for="node" attr.name="color" attr.type="string"/>
+  <key id="node_group" for="node" attr.name="group" attr.type="string"/>
+  
+  <!-- Определение атрибутов рёбер (стили и цвета) -->
+  <key id="edge_label" for="edge" attr.name="label" attr.type="string"/>
+  <key id="edge_color" for="edge" attr.name="color" attr.type="string"/>
+  <key id="edge_width" for="edge" attr.name="width" attr.type="double"/>
+  <key id="arrow_shape" for="edge" attr.name="arrow_shape" attr.type="string"/>
+
+  <graph id="UsurpationGraphStyled" edgedefault="directed">
+    
+    <!-- ==================== УЗЛЫ (NODES) ==================== -->
+    
+    <!-- Конституция РМ -->
+    <node id="const_2">
+      <data key="node_label">Ст. 2 Конституции РМ: Узурпация власти</data>
+      <data key="node_color">#E74C3C</data>
+      <data key="node_group">Constitution</data>
+    </node>
+    
+    <!-- Статьи ВДПЧ -->
+    <node id="udhr_5">
+      <data key="node_label">ВДПЧ Ст. 5: Запрет пыток</data>
+      <data key="node_color">#E67E22</data>
+      <data key="node_group">HumanRights</data>
+    </node>
+    <node id="udhr_8">
+      <data key="node_label">ВДПЧ Ст. 8: Эффективное средство</data>
+      <data key="node_color">#E67E22</data>
+      <data key="node_group">HumanRights</data>
+    </node>
+    <node id="udhr_10">
+      <data key="node_label">ВДПЧ Ст. 10: Справедливый суд</data>
+      <data key="node_color">#E67E22</data>
+      <data key="node_group">HumanRights</data>
+    </node>
+    <node id="udhr_12">
+      <data key="node_label">ВДПЧ Ст. 12: Неприкосновенность жилища</data>
+      <data key="node_color">#E67E22</data>
+      <data key="node_group">HumanRights</data>
+    </node>
+    <node id="udhr_17">
+      <data key="node_label">ВДПЧ Ст. 17: Право собственности</data>
+      <data key="node_color">#E67E22</data>
+      <data key="node_group">HumanRights</data>
+    </node>
+    
+    <!-- Основное доказательство (Дело O) -->
+    <node id="evidence_o">
+      <data key="node_label">Дело «O»: Комплекс доказательств</data>
+      <data key="node_color">#3498DB</data>
+      <data key="node_group">Evidence</data>
+    </node>
+    
+    <!-- Цифровые артефакты (Digital Traces) -->
+    <node id="dt_otp">
+      <data key="node_label">OTP_DELETED: Удаление OTP</data>
+      <data key="node_color">#2ECC71</data>
+      <data key="node_group">DigitalTrace</data>
+    </node>
+    <node id="dt_prop">
+      <data key="node_label">PROPERTY_SEIZED: Захват квартиры (Нантой)</data>
+      <data key="node_color">#2ECC71</data>
+      <data key="node_group">DigitalTrace</data>
+    </node>
+    <node id="dt_cyber">
+      <data key="node_label">CYBER_HARASSMENT: Киберхарассмент (Клавиатура)</data>
+      <data key="node_color">#2ECC71</data>
+      <data key="node_group">DigitalTrace</data>
+    </node>
+    <node id="dt_bank">
+      <data key="node_label">BANK_FUNDS_BLOCKED: Блокировка (180 лей)</data>
+      <data key="node_color">#2ECC71</data>
+      <data key="node_group">DigitalTrace</data>
+    </node>
+    <node id="dt_surv">
+      <data key="node_label">ILLEGAL_SURVEILLANCE: Жучки / Счётчики</data>
+      <data key="node_color">#2ECC71</data>
+      <data key="node_group">DigitalTrace</data>
+    </node>
+    <node id="dt_qmark">
+      <data key="node_label">QUESTION_MARK_BLOCKED: Блокировка «?» (Ст. 313)</data>
+      <data key="node_color">#2ECC71</data>
+      <data key="node_group">DigitalTrace</data>
+    </node>
+
+    <!-- ==================== РЁБРА (EDGES С АТРИБУТАМИ СТИЛЯ) ==================== -->
+    
+    <!-- Связь с узурпацией -->
+    <edge id="e1" source="evidence_o" target="const_2">
+      <data key="edge_label">USURPS</data>
+      <data key="edge_color">#C0392B</data>
+      <data key="edge_width">3.0</data>
+      <data key="arrow_shape">standard</data>
+    </edge>
+    
+    <!-- Связи нарушений ВДПЧ -->
+    <edge id="e2" source="evidence_o" target="udhr_5">
+      <data key="edge_label">VIOLATES</data>
+      <data key="edge_color">#D35400</data>
+      <data key="edge_width">2.0</data>
+      <data key="arrow_shape">standard</data>
+    </edge>
+    <edge id="e3" source="evidence_o" target="udhr_8">
+      <data key="edge_label">VIOLATES</data>
+      <data key="edge_color">#D35400</data>
+      <data key="edge_width">2.0</data>
+      <data key="arrow_shape">standard</data>
+    </edge>
+    <edge id="e4" source="evidence_o" target="udhr_10">
+      <data key="edge_label">VIOLATES</data>
+      <data key="edge_color">#D35400</data>
+      <data key="edge_width">2.0</data>
+      <data key="arrow_shape">standard</data>
+    </edge>
+    <edge id="e5" source="evidence_o" target="udhr_12">
+      <data key="edge_label">VIOLATES</data>
+      <data key="edge_color">#D35400</data>
+      <data key="edge_width">2.0</data>
+      <data key="arrow_shape">standard</data>
+    </edge>
+    <edge id="e6" source="evidence_o" target="udhr_17">
+      <data key="edge_label">VIOLATES</data>
+      <data key="edge_color">#D35400</data>
+      <data key="edge_width">2.0</data>
+      <data key="arrow_shape">standard</data>
+    </edge>
+    
+    <!-- Связи цифровых артефактов с доказательствами -->
+    <edge id="e7" source="evidence_o" target="dt_otp">
+      <data key="edge_label">EVIDENCES</data>
+      <data key="edge_color">#27AE60</data>
+      <data key="edge_width">1.5</data>
+      <data key="arrow_shape">delta</data>
+    </edge>
+    <edge id="e8" source="evidence_o" target="dt_prop">
+      <data key="edge_label">EVIDENCES</data>
+      <data key="edge_color">#27AE60</data>
+      <data key="edge_width">1.5</data>
+      <data key="arrow_shape">delta</data>
+    </edge>
+    <edge id="e9" source="evidence_o" target="dt_cyber">
+      <data key="edge_label">EVIDENCES</data>
+      <data key="edge_color">#27AE60</data>
+      <data key="edge_width">1.5</data>
+      <data key="arrow_shape">delta</data>
+    </edge>
+    <edge id="e10" source="evidence_o" target="dt_bank">
+      <data key="edge_label">EVIDENCES</data>
+      <data key="edge_color">#27AE60</data>
+      <data key="edge_width">1.5</data>
+      <data key="arrow_shape">delta</data>
+    </edge>
+    <edge id="e11" source="evidence_o" target="dt_surv">
+      <data key="edge_label">EVIDENCES</data>
+      <data key="edge_color">#27AE60</data>
+      <data key="edge_width">1.5</data>
+      <data key="arrow_shape">delta</data>
+    </edge>
+    <edge id="e12" source="evidence_o" target="dt_qmark">
+      <data key="edge_label">EVIDENCES</data>
+      <data key="edge_color">#27AE60</data>
+      <data key="edge_width">1.5</data>
+      <data key="arrow_shape">delta</data>
+    </edge>
+    
+    <!-- Прямое нарушение ст. 10 ВДПЧ блокировкой вопросительного знака -->
+    <edge id="e13" source="dt_qmark" target="udhr_10">
+      <data key="edge_label">VIOLATES</data>
+      <data key="edge_color">#8E44AD</data>
+      <data key="edge_width">2.0</data>
+      <data key="arrow_shape">standard</data>
+    </edge>
+    
+  </graph>
+</graphml>
