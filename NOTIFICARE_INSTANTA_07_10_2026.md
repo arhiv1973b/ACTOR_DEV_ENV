@@ -1,5 +1,5 @@
 # NOTIFICARE URGENTĂ CĂTRE INSTANȚA DE JUDECATĂ
-**Privind actele de sabotaj cibernetic, blocajul hardware și încălcarea gravă a Art. 8 și 10 din Declarația Universală a Drepturilor Omului (UDHR)**
+**Privind actele de sabotaj cibernetic, intruziunea fizică sub pretextul "schimbării contoarelor" (Irina Oleynik) și încălcarea gravă a Art. 8, 10 și 12 din Declarația Universală a Drepturilor Omului (UDHR)**
 
 **CĂTRE:** Judecătoria Chișinău (sediul Ciocana)  
 **DOMNULUI JUDECĂTOR:** Sergiu Ciobanu  
@@ -19,7 +19,8 @@ Aceste acțiuni de harrassment cibernetic au scopul direct de a paraliza capacit
 3. **Necesitatea sesizării Curții Constituționale:** Având în vedere circumstanțele excepționale ale acestui dosar (care se intersectează cu tăinuirea crimelor anterioare și refuzul de a asigura egalitatea armelor), solicităm în mod imperativ:
    - **Amânarea ședinței din 07.10.2026** în vederea restabilirii securităţii sistemelor de comunicare şi a prezenţei obligatorii a părților;
    - **Admiterea excepției de neconstituționalitate** a prevederilor art. 313 CPP RM în partea ce permite examinarea abuzivă a plângerilor în lipsa și fără citarea corespunzătoare a părților vătămate;
-   - **Sesizarea Curții Constituționale a Republici Moldova**.
+   - **Sesizarea Curții Constituțională a Republici Moldova**.
+4. **Физическое вторжение и аппаратные закладки:** Информирую инстанцию, что кибер-саботаж (блокировка клавиатуры) стал следствием несанкционированного физического проникновения на территорию проживания заявителя под фиктивным предлогом «замены счетчиков» (оформленным на имя Ирины Олейник). Эти действия являются частью скоординированного кибертеррора и прямо препятствуют участию в справедливом судебном разбирательстве (нарушение ст. 10 и 12 ВДПЧ).
 
 **Data:** 03.10.2026  
 **Petent:** Alexei Macheret (A©tor)  
