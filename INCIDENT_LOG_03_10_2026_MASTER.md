@@ -31,8 +31,8 @@ This master incident log consolidates all verified hybrid attacks, institutional
    - *Purpose:* Installation of physical hardware bugs / keyloggers to facilitate remote surveillance and cyber sabotage.
 
 5. **Real-Time Psychological Cyber Terror & Hardware Sabotage:**
-   - *Incident:* Remote control over hardware input devices, specifically targeting physical keyboard keys (blocking 'A' and 'K').
-   - *Escalation:* On 03.10.2026 at 11:50 EEST, operators selectively unblocked the 'K' key while keeping 'A' blocked, providing undeniable proof of manual, real-time remote surveillance and cyber harassment, completely refuting accidental hardware failure.
+   - *Incident:* Remote control over hardware input devices, specifically targeting physical keyboard keys (blocking 'A' and 'K', as well as the question mark symbol '?').
+   - *Escalation:* On 03.10.2026 at 11:50 EEST, operators selectively unblocked the 'K' key while keeping 'A' blocked. Furthermore, blocking the question mark symbol ('?') serves as a deliberate attempt to suppress inquiry, questioning, and challenging of unlawful "in absentia" adjudications under Art. 313 CPC RM (Judge Sergiu Ciobanu), directly violating Art. 10 UDHR.
 
 ---
 

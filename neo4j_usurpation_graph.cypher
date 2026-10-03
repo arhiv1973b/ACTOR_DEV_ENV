@@ -34,6 +34,7 @@ MERGE (:DigitalTrace {type:"PROPERTY_SEIZED", description:"Рейдерский 
 MERGE (:DigitalTrace {type:"CYBER_HARASSMENT", description:"Психологический террор и киберхарассмент"});
 MERGE (:DigitalTrace {type:"BANK_FUNDS_BLOCKED", description:"Искусственное ограничение доступа к счетам"});
 MERGE (:DigitalTrace {type:"ILLEGAL_SURVEILLANCE", description:"Попытка установки аппаратных жучков"});
+MERGE (:DigitalTrace {type:"QUESTION_MARK_BLOCKED", description:"Блокировка символа '?' как подавление права на вопросы и оспаривание решений по ст. 313 УПК РМ"});
 
 // Связи Evidence ↔ DigitalTrace
 MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"OTP_DELETED"})
@@ -50,3 +51,10 @@ MERGE (e)-[:EVIDENCES]->(dt);
 
 MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"ILLEGAL_SURVEILLANCE"})
 MERGE (e)-[:EVIDENCES]->(dt);
+
+MATCH (e:Evidence {case:"O"}), (dt:DigitalTrace {type:"QUESTION_MARK_BLOCKED"})
+MERGE (e)-[:EVIDENCES]->(dt);
+
+// Прямая квалификация нарушения для блокировки вопросительного знака
+MATCH (dt:DigitalTrace {type:"QUESTION_MARK_BLOCKED"}), (h:HumanRight {number:"10"})
+MERGE (dt)-[:VIOLATES]->(h);
