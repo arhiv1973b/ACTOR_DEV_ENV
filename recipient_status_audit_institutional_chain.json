@@ -1,0 +1,24 @@
+{
+  "title": "AuditRun Institutional Chain",
+  "query": "MATCH (a:AuditRun)-[:COMPARES]->(s:DeliveryStatus) OPTIONAL MATCH (s)-[:PREVIOUS_STATUS*]->(old:DeliveryStatus) OPTIONAL MATCH (r:Recipient)-[:HAS_STATUS]->(s)-[:BELONGS_TO]->(inst) OPTIONAL MATCH (inst)-[:REFERENCES]->(u:LegalReference) RETURN a, s, old, r, inst, u",
+  "visualization": {
+    "type": "timeline",
+    "entity": "DeliveryStatus",
+    "timeField": "checked_at",
+    "groupBy": "inst",
+    "labelFields": ["sent","delivered","acknowledged"],
+    "highlight": {
+      "AuditRun": "hexagon-blue",
+      "DeliveryStatus": "square-orange",
+      "Recipient": "circle-green",
+      "Court": "triangle-purple",
+      "Prosecutor": "triangle-yellow",
+      "Police": "triangle-gray",
+      "LegalReference": "diamond-red"
+    },
+    "layers": {
+      "Institutional": ["Court","Prosecutor","Police"],
+      "Legal": ["LegalReference"]
+    }
+  }
+}
