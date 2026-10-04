@@ -1,18 +1,28 @@
-// CourtDecision → Recipient → Institution → LegalReference
+// Судебное определение
 MERGE (cd:CourtDecision {
   case_no: "3-3107/2021",
   date: date("2021-12-30"),
   judge: "Tatiana Avasilae",
-  sector: "Riscani Court"
+  sector: "Riscani Court",
+  type: "Determination"
 })
-MERGE (r:Recipient { name: "Macheret Alexei" })
-MERGE (inst:Institution { name: "Riscani Court", type: "Court" })
-MERGE (lr:LegalReference { source: "Vienna Convention 1969", article: "53,64" })
 
+// Заявитель
+MERGE (r:Recipient { name: "Macheret Alexei", status: "Applicant" })
 MERGE (cd)-[:ADDRESSES]->(r)
-MERGE (cd)-[:ISSUED_BY]->(inst)
+
+// Институт: Рышкановский суд
+MERGE (inst_court:Institution { name: "Riscani Court", type: "Court" })
+MERGE (cd)-[:ISSUED_BY]->(inst_court)
+
+// Институт: Венецианская комиссия
+MERGE (inst_vc:Institution { name: "Venetian Commission", type: "Commission" })
+MERGE (cd)-[:CHALLENGES]->(inst_vc)
+
+// Юридическая ссылка
+MERGE (lr:LegalReference { source: "Vienna Convention 1969", articles: "53,64", category: "Jus Cogens" })
 MERGE (cd)-[:REFERENCES]->(lr)
 
-// Дополнительно: связь с AuditRun
-MERGE (ar:AuditRun { run_id: "audit-2021-12-30" })
+// Интеграция в аудит
+MERGE (ar:AuditRun { run_id: "audit-courtdecision-20211230" })
 MERGE (ar)-[:VERIFIES]->(cd)
