@@ -1,0 +1,69 @@
+name: Publish Bloom Manifest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 4 * * *"   # ежедневный запуск в 04:00
+
+jobs:
+  publish-manifest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Compute SHA-256 and update manifest with links
+        run: |
+          TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
+          echo "## Bloom Exports Manifest" > Bloom_Exports_Manifest.md
+          echo "" >> Bloom_Exports_Manifest.md
+          echo "**Generated at:** $TIMESTAMP" >> Bloom_Exports_Manifest.md
+          echo "" >> Bloom_Exports_Manifest.md
+          echo "| File | SHA-256 | Link |" >> Bloom_Exports_Manifest.md
+          echo "|------|---------|------|" >> Bloom_Exports_Manifest.md
+
+          for f in exports/*.png exports/*.svg; do
+            if [ -f "$f" ]; then
+              HASH=$(sha256sum "$f" | awk '{print $1}')
+              LINK="https://arhiv1973b.github.io/ACTOR_DEV_ENV/$f"
+              echo "| $f | $HASH | [View]($LINK) |" >> Bloom_Exports_Manifest.md
+            fi
+          done
+
+      - name: Configure GPG
+        run: |
+          if [ -n "${{ secrets.GPG_PRIVATE_KEY }}" ]; then
+            echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import || true
+          fi
+          git config --global user.name "AuditBot"
+          git config --global user.email "auditbot@example.com"
+          if [ -n "${{ secrets.GPG_KEY_ID }}" ]; then
+            git config --global user.signingkey "${{ secrets.GPG_KEY_ID }}"
+            git config --global commit.gpgsign true
+          fi
+
+      - name: Commit and push manifest with GPG signature
+        run: |
+          git add Bloom_Exports_Manifest.md
+          git commit -m "Bloom Manifest update with SHA-256 and links" || echo "No changes to commit"
+          git push origin feature/cyber-sabotage-audit-10-2026 || true
+
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          force_orphan: false
+
+      - name: Generate diff report
+        run: |
+          git diff HEAD~1 HEAD -- Bloom_Exports_Manifest.md > Bloom_Manifest_Diff.txt || true
+          echo "## Diff Report" >> Bloom_Exports_Manifest.md
+          echo "" >> Bloom_Exports_Manifest.md
+          echo '```diff' >> Bloom_Exports_Manifest.md
+          cat Bloom_Manifest_Diff.txt >> Bloom_Exports_Manifest.md
+          echo '```' >> Bloom_Exports_Manifest.md
+          git add Bloom_Exports_Manifest.md
+          git commit -m "Append diff report to Bloom Manifest" || echo "No changes to commit"
+          git push origin feature/cyber-sabotage-audit-10-2026 || true
