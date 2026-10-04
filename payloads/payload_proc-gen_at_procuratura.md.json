@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-MACHERET-1997-2026",
+  "audit_run_id": "AuditRun-20261004-1511-3",
+  "target_institution": "Prosecutor",
+  "recipient_email": "proc-gen@procuratura.md",
+  "cryptographic_proof": {
+    "document_hash_sha256": "e61b0c3ab002476ab35890314afc0cf7c07c9d21b92fcbd8ef5d47ff04815581",
+    "delivery_receipt_hash": "809881a5db8f6b2609f37c1d55fa4db2b532422bc884251460009be460c94e2b"
+  },
+  "delivery_status": {
+    "sent": true,
+    "delivered": true,
+    "acknowledged": false
+  },
+  "legal_violation_trigger": [
+    "UDHR Art. 8",
+    "UDHR Art. 17(2)",
+    "Constitution RM Art. 4"
+  ]
+}

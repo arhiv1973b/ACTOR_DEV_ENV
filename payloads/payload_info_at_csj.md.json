@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-MACHERET-1997-2026",
+  "audit_run_id": "AuditRun-20261004-1511-2",
+  "target_institution": "Court",
+  "recipient_email": "info@csj.md",
+  "cryptographic_proof": {
+    "document_hash_sha256": "e61b0c3ab002476ab35890314afc0cf7c07c9d21b92fcbd8ef5d47ff04815581",
+    "delivery_receipt_hash": "28953bf629d99297481d792a2798103f05fef65d166bdcfa8af629876b72da46"
+  },
+  "delivery_status": {
+    "sent": true,
+    "delivered": true,
+    "acknowledged": false
+  },
+  "legal_violation_trigger": [
+    "UDHR Art. 8",
+    "UDHR Art. 17(2)",
+    "Constitution RM Art. 4"
+  ]
+}
