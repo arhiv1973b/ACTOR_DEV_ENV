@@ -1,0 +1,73 @@
+{
+  "title": "Audit Institutional Perspective",
+  "nodes": {
+    "AuditRun": {
+      "color": "blue",
+      "icon": "hexagon",
+      "layer": "Audit"
+    },
+    "DeliveryStatus": {
+      "color": "orange",
+      "icon": "square",
+      "layer": "Timeline"
+    },
+    "Recipient": {
+      "color": "green",
+      "icon": "circle",
+      "layer": "Actors"
+    },
+    "Court": {
+      "color": "purple",
+      "icon": "triangle",
+      "layer": "Institutional"
+    },
+    "Prosecutor": {
+      "color": "yellow",
+      "icon": "triangle",
+      "layer": "Institutional"
+    },
+    "Police": {
+      "color": "gray",
+      "icon": "triangle",
+      "layer": "Institutional"
+    },
+    "LegalReference": {
+      "color": "red",
+      "icon": "diamond",
+      "layer": "Legal"
+    }
+  },
+  "relationships": {
+    "COMPARES": {
+      "color": "blue",
+      "style": "solid"
+    },
+    "PREVIOUS_STATUS": {
+      "color": "orange",
+      "style": "dashed"
+    },
+    "HAS_STATUS": {
+      "color": "green",
+      "style": "solid"
+    },
+    "BELONGS_TO": {
+      "color": "purple",
+      "style": "solid"
+    },
+    "REFERENCES": {
+      "color": "red",
+      "style": "dotted"
+    },
+    "HAS_REFERENCE": {
+      "color": "red",
+      "style": "solid"
+    }
+  },
+  "layers": {
+    "Audit": ["AuditRun"],
+    "Timeline": ["DeliveryStatus"],
+    "Actors": ["Recipient"],
+    "Institutional": ["Court", "Prosecutor", "Police"],
+    "Legal": ["LegalReference"]
+  }
+}
