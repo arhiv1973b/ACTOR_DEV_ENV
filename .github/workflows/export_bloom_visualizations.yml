@@ -1,0 +1,35 @@
+name: Export Bloom Visualizations
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *"   # ежедневный запуск в 02:00
+
+jobs:
+  export-bloom-graphs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Neo4j Bloom CLI
+        run: |
+          curl -L https://neo4j.com/bloom-cli/latest/bloom-cli.tar.gz | tar xz
+          sudo mv bloom-cli /usr/local/bin/bloom-cli
+
+      - name: Run Bloom Saved Query and export PNG/SVG
+        run: |
+          TIMESTAMP=$(date +"%Y%m%d_%H%M")
+          mkdir -p exports
+          bloom-cli run-query recipient_status_audit_institutional_chain.json \
+            --export-png exports/Bloom_AuditRun_${TIMESTAMP}.png \
+            --export-svg exports/Bloom_AuditRun_${TIMESTAMP}.svg
+
+      - name: Commit and push exports
+        run: |
+          git config --global user.name "AuditBot"
+          git config --global user.email "auditbot@example.com"
+          git add exports/*.png exports/*.svg
+          git commit -m "Bloom visualization export ${TIMESTAMP}"
+          git push origin feature/cyber-sabotage-audit-10-2026
