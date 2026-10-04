@@ -1,0 +1,14 @@
+[
+  {
+    "index": 1,
+    "timestamp": "2026-10-04T14:51:33.782946+00:00",
+    "previous_block_hash": "GENESIS_BLOCK_CASE_MACHERET_1997_2026",
+    "artifacts": {
+      "External_Verification_Report.md": "99856a70575484ddfa2b30b26d5f6050a97f589565d2214253a3c126ac7974ec",
+      "DeliveryStatus_PointDiff_Log.md": "a27c332d534cfd8d8241d738e4dfc2c4683ddb9c4adf3e63c1d3315fb3d2206c",
+      "MASTER_RECIPIENTS_REGISTRY_RM_2026.md": "5bbbc69fc2493eea408bd3586e7968ceb640154823e19e16be3f6c5fa530a3c3",
+      "TI_ULA_EVIDENCE_PACKAGE_DISPATCH_2026.md": "5b973b239a8a436a5f22d63a1f61db2194121391f72d2d7796ebfa8cea4a0dd9"
+    },
+    "block_hash": "e61b0c3ab002476ab35890314afc0cf7c07c9d21b92fcbd8ef5d47ff04815581"
+  }
+]
