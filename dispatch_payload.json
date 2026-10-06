@@ -6,8 +6,9 @@
     {"filename": "Sesizare art. 313 CPC Moldova.pdf", "type": "Sesizare", "registered_number": "09-1-50890", "date": "2026-10-06"}
   ],
   "recipients": [
-    {"institution": "Judecătoria Chișinău, Sediul Ciocana", "person": "Judecător Sergiu Ciobanu", "delivery": "mandatory", "email": "jcc@justice.md"},
-    {"institution": "Curtea Constituțională a Republicii Молдова", "delivery": "copy_for_information", "email": "secretariat@constcourt.md"},
+    {"institution": "Judecătoria Chișinău, Sediul Ciocana", "person": "Judecător Sergiu Ciobanu", "delivery": "mandatory", "email": "jci@justice.md"},
+    {"institution": "Judecătoria Chișinău, Sediul Centru", "delivery": "notice_of_jurisdiction", "email": "jcc@justice.md"},
+    {"institution": "Curtea Constituțională a Republicii Moldova", "delivery": "copy_for_information", "email": "secretariat@constcourt.md"},
     {"institution": "Procuratura mun. Chișinău, Oficiul Râșcani", "person": "Procuror Cazacu Oxana", "delivery": "mandatory", "email": "proc-gen@procuratura.md"}
   ],
   "requirements": {

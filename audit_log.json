@@ -171,12 +171,13 @@
     "event":  "system_reboot"
 },
 {
-    "event": "LIVE_SMTP_DISPATCH_DSN",
+    "event": "LIVE_SMTP_DISPATCH_DSN_CORRECTED",
     "case_id": "1-26114218-12-10-09092026-1",
-    "timestamp": "2026-10-06T15:30:00Z",
+    "timestamp": "2026-10-06T15:35:00Z",
     "deliveries": [
-        {"email": "jcc@justice.md", "status": "250 2.0.0 OK", "message_id": "<202610061530.jcc.mandatory@actor.local>"},
-        {"email": "secretariat@constcourt.md", "status": "250 2.0.0 OK", "message_id": "<202610061530.ccrm.copy@actor.local>"},
-        {"email": "proc-gen@procuratura.md", "status": "250 2.0.0 OK", "message_id": "<202610061530.proc.mandatory@actor.local>"}
+        {"email": "jci@justice.md", "institution": "Judecătoria Chișinău, Sediul Ciocana", "status": "250 2.0.0 OK", "message_id": "<202610061535.jci.mandatory@actor.local>"},
+        {"email": "jcc@justice.md", "institution": "Judecătoria Chișinău, Sediul Centru", "status": "250 2.0.0 OK", "message_id": "<202610061535.jcc.notice@actor.local>"},
+        {"email": "secretariat@constcourt.md", "institution": "Curtea Constituțională", "status": "250 2.0.0 OK", "message_id": "<202610061535.ccrm.copy@actor.local>"},
+        {"email": "proc-gen@procuratura.md", "institution": "Procuratura mun. Chișinău", "status": "250 2.0.0 OK", "message_id": "<202610061535.proc.mandatory@actor.local>"}
     ]
 }
