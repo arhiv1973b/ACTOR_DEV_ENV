@@ -1,0 +1,33 @@
+name: Verify Dashboard Links and Evidence Files
+
+on:
+  push:
+    branches: [ main, feature/cyber-sabotage-audit-10-2026 ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Verify Consolidated Public Dashboard Exists
+        run: |
+          if [ ! -f "consolidated_public_dashboard.html" ]; then
+            echo "[ERROR] consolidated_public_dashboard.html is missing!"
+            exit 1
+          else
+            echo "[OK] consolidated_public_dashboard.html exists."
+          fi
+
+      - name: Scan for Broken Dashboard References
+        run: |
+          echo "Scanning markdown files for incorrect dashboard URLs..."
+          if grep -rn "consolidqr_public_dashboard.html" . --include="*.md" --include="*.html"; then
+            echo "[ERROR] Found outdated or misspelled dashboard URL (consolidqr_public_dashboard.html)!"
+            exit 1
+          else
+            echo "[OK] No broken dashboard URLs found."
+          fi
