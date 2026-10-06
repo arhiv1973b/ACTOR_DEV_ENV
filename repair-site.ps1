@@ -41,7 +41,7 @@ Get-ChildItem -Path $RepoRoot -Include *.html, *.md, *.json -Recurse -Exclude ".
 Write-Host "[OK] Все временные метки синхронизированы с текущей датой." -ForegroundColor Green
 
 # 4. Восстановление недостающих страниц/активов из архива Google Диска (Ф:\)
-Write-Host "`n[ЭТАPS 3/5] Интеграция недостающих файлов из архивов Ф:\..." -ForegroundColor Yellow
+Write-Host "`n[ЭТАП 3/5] Интеграция недостающих файлов из архивов Ф:\..." -ForegroundColor Yellow
 if (Test-Path $DriveArchive) {
     $TargetAssets = @("isapi_modules.html", "variables.css", "court_dashboard.html")
     foreach ($asset in $TargetAssets) {
@@ -68,6 +68,7 @@ Set-Location $RepoRoot
 git add .
 $CommitMsg = "fix(site): auto-repair missing pages, actualize counters ($CurrentDate) and restore from F:\ archive [AI CLI]"
 git commit -m $CommitMsg
+git push origin main
 git push origin feature/cyber-sabotage-audit-10-2026
 
 Write-Host "================================================================================" -ForegroundColor Green
