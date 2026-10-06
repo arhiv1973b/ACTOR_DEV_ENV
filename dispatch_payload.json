@@ -1,0 +1,19 @@
+{
+  "action": "deliver_notice",
+  "case_id": "1-26114218-12-10-09092026-1",
+  "documents": [
+    {"filename": "Atunci!! Constituționale Sesizare.pdf", "type": "Avertisment Oficial", "registered_number": "09-1-50888", "date": "2026-10-07"},
+    {"filename": "Sesizare art. 313 CPC Moldova.pdf", "type": "Sesizare", "registered_number": "09-1-50890", "date": "2026-10-06"}
+  ],
+  "recipients": [
+    {"institution": "Judecătoria Chișinău, Sediul Ciocana", "person": "Judecător Sergiu Ciobanu", "delivery": "mandatory", "email": "jcc@justice.md"},
+    {"institution": "Curtea Constituțională a Republicii Молдова", "delivery": "copy_for_information", "email": "secretariat@constcourt.md"},
+    {"institution": "Procuratura mun. Chișinău, Oficiul Râșcani", "person": "Procuror Cazacu Oxana", "delivery": "mandatory", "email": "proc-gen@procuratura.md"}
+  ],
+  "requirements": {
+    "acknowledgment": true,
+    "delivery_receipt": true,
+    "suspension_of_case": true,
+    "constitutional_review": true
+  }
+}
