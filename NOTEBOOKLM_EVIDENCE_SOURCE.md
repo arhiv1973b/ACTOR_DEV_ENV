@@ -15,4 +15,4 @@ This workspace serves as the primary AI-grounded source hub for generating:
 
 ---
 **Verified Notebook Record:** A©tor Protocol / TI-ULA  
-**Public Access Dashboard:** `https://arhiv1973b.github.io/ACTOR_DEV_ENV/consolidqr_public_dashboard.html`
+**Public Access Dashboard:** `https://arhiv1973b.github.io/ACTOR_DEV_ENV/consolidated_public_dashboard.html`
