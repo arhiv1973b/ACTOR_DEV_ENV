@@ -1,7 +1,7 @@
 # 📓 GOOGLE NOTEBOOKLM MASTER WORKSPACE & ARTIFACT LINKS
 ## CASE REFERENCE: CASE-MACHERET-1997-2026
 **Subject / A©tor:** Alexei Macheret  
-**Immutable Ledger Anchor:** GitHub Repository (`arhiv1973b/ACTOR_DEV_ENV`), commit `df72efec2`.  
+**Immutable Ledger Anchor:** GitHub Repository (`arhiv1973b/ACTOR_DEV_ENV`), commit `1181fb955`.  
 
 ---
 
@@ -10,6 +10,7 @@
 * **Artifact 1 (Consolidated Evidence Register):** [Сводный реестр доказательств](https://notebooklm.link.google/Sv58JRFLaA9E)
 * **Artifact 2 (Legal Contour & Register):** [Правовой контур и реестр доказательств](https://notebooklm.link.google/t09q546NFF9B)
 * **Artifact 3 (Human Rights via DevOps):** [Защита прав человека методами DevOps](https://notebooklm.link.google/uMskQhTJau8j)
+* **Artifact 4 (Cryptographic Legal Protocol):** [Case Macheret Cryptographic Legal Protocol](https://notebooklm.link.google/ZMOqEXpKPEbc)
 
 ---
 
