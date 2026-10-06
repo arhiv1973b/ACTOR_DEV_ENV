@@ -1,6 +1,6 @@
 # OFFICIAL DELIVERY STATUS & EVIDENCE REPORT
 ## CASE REFERENCE: CASE-MACHERET-1997-2026
-**Generated:** 2026-10-06 16:30:25 UTC  
+**Generated:** 2026-10-06 16:37:58 UTC  
 **Legal Doctrine:** Direct Application of Article 4 of the Constitution of the Republic of Moldova & Universal Declaration of Human Rights (DUDO, Art. 17). ECHR Jurisdiction Strictly Bypassed (*Jus Cogens* / *Erga Omnes*).  
 
 ---
