@@ -1,6 +1,6 @@
 # OFFICIAL DELIVERY STATUS & EVIDENCE REPORT
 ## CASE REFERENCE: CASE-MACHERET-1997-2026
-**Generated:** 2026-10-06 16:20:10 UTC  
+**Generated:** 2026-10-06 16:30:25 UTC  
 **Legal Doctrine:** Direct Application of Article 4 of the Constitution of the Republic of Moldova & Universal Declaration of Human Rights (DUDO, Art. 17). ECHR Jurisdiction Strictly Bypassed (*Jus Cogens* / *Erga Omnes*).  
 
 ---
@@ -12,7 +12,7 @@ This official Delivery Status Report compiles and certifies the delivery of lega
 
 ### II. CRYPTOGRAPHIC INTEGRITY & LEDGER ANCHOR
 * **Payload Manifest:** `dispatch_payload.json`
-* **SHA-256 Cryptographic Hash:** `3d0271847be592731660f68776cda9d7555f1c29862b0edc7d6ece133cc8a174`
+* **SHA-256 Cryptographic Hash:** `﻿3d0271847be592731660f68776cda9d7555f1c29862b0edc7d6ece133cc8a174`
 * **Immutable Ledger Anchor:** GitHub Repository (`arhiv1973b/ACTOR_DEV_ENV`), commits `461c7fecb` & `b079ce4b9`.
 * **GPG Signature Status:** Sealed and verified.
 
