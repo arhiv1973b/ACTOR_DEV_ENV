@@ -1,5 +1,5 @@
 {
-  "action": "deliver_notice",
+  "action": "deliver_notice_and_diplomatic_escalation",
   "case_id": "1-26114218-12-10-09092026-1",
   "doctrine": "Universal Declaration of Human Rights (DUDO) as Supreme Privilege destroying impunity and Usurpation of Power in Moldova (Art. 4 Const. RM)",
   "audit": {
@@ -17,13 +17,16 @@
   "notifications": {
     "constitutional_court": "auto-forward copy",
     "prosecutor_ack": "mandatory receipt",
-    "judicial_registry": "update master registry"
+    "us_diplomatic_mission": "mandatory escalation memorandum"
   },
   "documents": [
+    {"filename": "US_EMBASSY_DIPLOMATIC_MEMORANDUM_2026.md", "type": "Diplomatic Memorandum & Cover Letter", "registered_number": "US-DISP-2026-10", "date": "2026-10-06"},
     {"filename": "Atunci!! Constituționale Sesizare.pdf", "type": "Avertisment Oficial", "registered_number": "09-1-50888", "date": "2026-10-07"},
     {"filename": "Sesizare art. 313 CPC Moldova.pdf", "type": "Sesizare", "registered_number": "09-1-50890", "date": "2026-10-06"}
   ],
   "recipients": [
+    {"institution": "Embassy of the United States of America in Moldova", "person": "Chisinau Diplomatic Protocol", "delivery": "mandatory_escalation", "email": "chisinauprotocol@state.gov"},
+    {"institution": "The White House Communications", "person": "Executive Office", "delivery": "international_notice", "email": "communications@mail.whitehouse.gov"},
     {"institution": "Judecătoria Chișinău, Sediul Ciocana", "person": "Judecător Sergiu Ciobanu", "delivery": "mandatory", "email": "jci@justice.md"},
     {"institution": "Judecătoria Chișinău, Sediul Centru", "delivery": "notice_of_jurisdiction", "email": "jcc@justice.md"},
     {"institution": "Curtea Constituțională a Republicii Moldova", "delivery": "copy_for_information", "email": "secretariat@constcourt.md"},
