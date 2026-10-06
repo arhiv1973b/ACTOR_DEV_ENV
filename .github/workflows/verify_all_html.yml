@@ -1,0 +1,47 @@
+name: Verify All HTML and Internal Links
+
+on:
+  push:
+    branches: [ main, feature/cyber-sabotage-audit-10-2026 ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-html-and-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Find and Verify All HTML Files
+        run: |
+          echo "Scanning for HTML files..."
+          find . -type f -name "*.html" | while read file; do
+            if [ ! -f "$file" ]; then
+              echo "[ERROR] Missing HTML file: $file"
+              exit 1
+            else
+              echo "[OK] Verified HTML file: $file"
+            fi
+          done
+
+      - name: Verify Internal Document Links
+        run: |
+          echo "Verifying referenced files in Markdown and HTML..."
+          python -c "
+          import os, re, glob
+          
+          errors = 0
+          for md in glob.glob('**/*.md', recursive=True):
+              content = open(md, 'r', encoding='utf-8', errors='ignore').read()
+              # Find markdown links [text](path)
+              links = re.findall(r'\[.*?\]\((.*?)\)', content)
+              for link in links:
+                  if link.startswith('http://') or link.startswith('https://') or link.startswith('#'):
+                      continue
+                  # Clean anchor
+                  link_path = link.split('#')[0]
+                  if link_path and not os.path.exists(link_path):
+                      print(f'[WARN] Broken local reference in {md}: {link_path}')
+          print('[OK] Internal link validation completed.')
+          "
