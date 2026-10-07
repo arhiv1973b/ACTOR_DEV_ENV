@@ -1,0 +1,98 @@
+{
+  "manifest_schema": "TI-ULA/1.0",
+  "project_id": "CASE-MACHERET-1997-2026",
+  "timestamp": "2026-10-07T11:55:57.179261+00:00",
+  "evidence_items": [
+    {
+      "path": "H:\\Загрузки\\25 _7.jpg",
+      "filename": "25 _7.jpg",
+      "sha256": "7d64038b79ed4c6ac679876588c54d73e27ae44a54bb4e0c9549958289bfd7e0",
+      "size_bytes": 90349,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\25 и четверть _7.pdf",
+      "filename": "25 и четверть _7.pdf",
+      "sha256": "56bfae760f5da1661e14889ffee867bf973f8f04f38344c60cb9bdf44cecd9a5",
+      "size_bytes": 104491,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\25 и четверть _8.jpg",
+      "filename": "25 и четверть _8.jpg",
+      "sha256": "55d95ff1fe65fe7e0c707cfa04fa159951af3ec668379f5908f6e11f543426f3",
+      "size_bytes": 91923,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\25 мл 2_3.pdf",
+      "filename": "25 мл 2_3.pdf",
+      "sha256": "a24ad5618cccfb5530dfc0e4b330bac6e7e224d2a0a7e4678d3beb694723ef07",
+      "size_bytes": 109809,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\25 мл 2_4.jpg",
+      "filename": "25 мл 2_4.jpg",
+      "sha256": "c2d168377db9596f0c7a5be17dc08d02b376ed798525cd7f20de24aa44f74401",
+      "size_bytes": 98844,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\1500 $ 2_1.pdf",
+      "filename": "1500 $ 2_1.pdf",
+      "sha256": "161375d88b129f4cab0746113b491249d4e348506276019073e68be9d08417e6",
+      "size_bytes": 87518,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\20260716140348300_3.pdf",
+      "filename": "20260716140348300_3.pdf",
+      "sha256": "8151eb357ed2097c6ac4fa3c99e335dd35b5aff84be76ef86a22e264cbe394b7",
+      "size_bytes": 2877201,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\Atunci!! Constituționale Sesizare.pdf",
+      "filename": "Atunci!! Constituționale Sesizare.pdf",
+      "sha256": "4fe8700f42fc9610f54b76d19bd80100a5a688b39041191b284c8e32a8d52b0c",
+      "size_bytes": 221379,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\Aviza.pdf",
+      "filename": "Aviza.pdf",
+      "sha256": "a5998977c97279c8f0ed3078d24d108ba67c7c9c31d4e23290179bfa735e7f39",
+      "size_bytes": 438440,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\We Have Received Your Message_6.подписан 2.pdf",
+      "filename": "We Have Received Your Message_6.подписан 2.pdf",
+      "sha256": "af535e3fc2c54660f9fefc38324d823b8f37233a4932912796ba46d60f21b3db",
+      "size_bytes": 414457,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\Кебеш в отношении кражи_1.pdf",
+      "filename": "Кебеш в отношении кражи_1.pdf",
+      "sha256": "85b69ea52aff836d174b2cbae8f9ef87ca256aa8ca544d03d62b81e23639a958",
+      "size_bytes": 5594508,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\Кража средстств выделенных по личному распоряжению Президента США Мистер Дональда Трампа_2.pdf",
+      "filename": "Кража средстств выделенных по личному распоряжению Президента США Мистер Дональда Трампа_2.pdf",
+      "sha256": "300143188d6e895e05868e1997ea83bdf9b4b06e9d4d48a2e787b60c9a090767",
+      "size_bytes": 15350912,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\Фамилия_5.signed.signed.signed.signed.pdf",
+      "filename": "Фамилия_5.signed.signed.signed.signed.pdf",
+      "sha256": "a68ca1338b94f7129e9a266de62a6d3c4f3a0bab5f8f6661ee7a7307574046d7",
+      "size_bytes": 775688,
+      "status": "verified_exists"
+    }
+  ]
+}
