@@ -1,43 +1,8 @@
 {
   "manifest_schema": "TI-ULA/1.0",
   "project_id": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-07T11:55:57.179261+00:00",
+  "timestamp": "2026-10-07T14:42:18.386964+00:00",
   "evidence_items": [
-    {
-      "path": "H:\\Загрузки\\25 _7.jpg",
-      "filename": "25 _7.jpg",
-      "sha256": "7d64038b79ed4c6ac679876588c54d73e27ae44a54bb4e0c9549958289bfd7e0",
-      "size_bytes": 90349,
-      "status": "verified_exists"
-    },
-    {
-      "path": "H:\\Загрузки\\25 и четверть _7.pdf",
-      "filename": "25 и четверть _7.pdf",
-      "sha256": "56bfae760f5da1661e14889ffee867bf973f8f04f38344c60cb9bdf44cecd9a5",
-      "size_bytes": 104491,
-      "status": "verified_exists"
-    },
-    {
-      "path": "H:\\Загрузки\\25 и четверть _8.jpg",
-      "filename": "25 и четверть _8.jpg",
-      "sha256": "55d95ff1fe65fe7e0c707cfa04fa159951af3ec668379f5908f6e11f543426f3",
-      "size_bytes": 91923,
-      "status": "verified_exists"
-    },
-    {
-      "path": "H:\\Загрузки\\25 мл 2_3.pdf",
-      "filename": "25 мл 2_3.pdf",
-      "sha256": "a24ad5618cccfb5530dfc0e4b330bac6e7e224d2a0a7e4678d3beb694723ef07",
-      "size_bytes": 109809,
-      "status": "verified_exists"
-    },
-    {
-      "path": "H:\\Загрузки\\25 мл 2_4.jpg",
-      "filename": "25 мл 2_4.jpg",
-      "sha256": "c2d168377db9596f0c7a5be17dc08d02b376ed798525cd7f20de24aa44f74401",
-      "size_bytes": 98844,
-      "status": "verified_exists"
-    },
     {
       "path": "H:\\Загрузки\\1500 $ 2_1.pdf",
       "filename": "1500 $ 2_1.pdf",
@@ -64,6 +29,34 @@
       "filename": "Aviza.pdf",
       "sha256": "a5998977c97279c8f0ed3078d24d108ba67c7c9c31d4e23290179bfa735e7f39",
       "size_bytes": 438440,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\Brauzer.pdf",
+      "filename": "Brauzer.pdf",
+      "sha256": "503de730ae153d41c5e6583cfda6c2e7a67571a0017be0f3a75f7f32ba63b9c0",
+      "size_bytes": 51608,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\Extras din 01.06.2026-10.09.2026.signed.pdf",
+      "filename": "Extras din 01.06.2026-10.09.2026.signed.pdf",
+      "sha256": "4594650a83e12e92f90f4d893586675388360f27dcb44ff7dd009d8c9542d8b5",
+      "size_bytes": 159187,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\Raspuns 06.10.2026 PDF.pdf",
+      "filename": "Raspuns 06.10.2026 PDF.pdf",
+      "sha256": "ac4e95ad19be1dda5954b3b88553e4f98dda35154980915c8267b0d5ae2c189b",
+      "size_bytes": 599185,
+      "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\Raspuns de la Fincombak SA.pdf",
+      "filename": "Raspuns de la Fincombak SA.pdf",
+      "sha256": "379fbd44248f39451c3a38b84b657856612dc045a6855088d056ba5b09a335f4",
+      "size_bytes": 79460,
       "status": "verified_exists"
     },
     {
