@@ -1,6 +1,7 @@
 # EVIDENCE RECORD: TRUTH SOCIAL STATEMENT BY PRESIDENT DONALD J. TRUMP
 **Date/Time:** October 7, 2026, 6:15 PM EEST  
 **Source Platform:** Truth Social (`@realDonaldTrump`)  
+**Direct URL:** `https://truthsocial.com/@realDonaldTrump/117400280030146024`  
 **Case Reference:** CASE-MACHERET-1997-2026  
 
 ---
