@@ -12,11 +12,21 @@ permissions:
   id-token: write
 
 jobs:
-  upload-perspective:
+  validate-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Validate Bloom Perspective JSON with jq
+        run: |
+          jq . artifacts/reabilitare/bloom_perspective_macheret_audit.json > /dev/null
+          jq . neo4j_import/forensic_evidence_perspective.json > /dev/null
+
+      - name: Validate Bloom Perspective JSON with Python
+        run: |
+          python -m json.tool artifacts/reabilitare/bloom_perspective_macheret_audit.json > /dev/null
+          python -m json.tool neo4j_import/forensic_evidence_perspective.json > /dev/null
 
       - name: Upload Bloom Perspective JSON Artifacts
         uses: actions/upload-artifact@v4
@@ -42,7 +52,7 @@ jobs:
           path: public
 
   deploy-pages:
-    needs: upload-perspective
+    needs: validate-and-publish
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
