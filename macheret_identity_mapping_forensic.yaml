@@ -1,0 +1,53 @@
+schema:
+  name: "MACHERET_IDENTITY_AND_ANTHROPONYMIC_MAPPING_AUDITED"
+  version: "2.0.0"
+  classification: "CONTROLLED_FORENSIC_ARTIFACT"
+
+identity_anchor:
+  idnp: "2000001159655"
+  idnp_role: "PRIMARY_STATE_ASSIGNED_IDENTITY_IDENTIFIER"
+  binding_status: "SOURCE_DEPENDENT"
+  binding_principle: "The IDNP is the identity anchor used to correlate differently spelled records. It does not by itself establish the linguistic equivalence of surnames."
+
+anthroponymic_layer:
+  surname_variants:
+    - value: "MACERET"
+      language: "ro"
+      status: "SOURCE_DEPENDENT"
+    - value: "MACHERET"
+      language: "en"
+      status: "SOURCE_DEPENDENT"
+    - value: "МАЧЕРЕТ"
+      language: "ru"
+      status: "SOURCE_DEPENDENT"
+  equivalence_rule: "Surname variants are treated as candidate records associated with the identity anchor. Equivalence must be established through documentary evidence and must not be inferred from spelling alone."
+
+identity_verification:
+  idnp_binding: "DOCUMENT_DEPENDENT"
+  personal_identity: "DOCUMENT_DEPENDENT"
+  linguistic_equivalence: "SOURCE_DEPENDENT"
+  official_expertise: "NOT_VERIFIED_IN_THIS_RECORD"
+  required_evidence:
+    - "official civil-status record"
+    - "identity document"
+    - "official registry record"
+    - "court decision where applicable"
+    - "official linguistic/onomastic expertise where applicable"
+
+financial_correlation:
+  enabled: true
+  purpose: "Correlation of financial records containing different anthroponymic forms with the same identity anchor."
+  correlation_rule: "A financial record shall not be attributed to the identity anchor solely because the surname resembles one of the indexed variants. Attribution requires documentary or institutional linkage."
+  statuses:
+    - "IDENTITY_ANCHOR_MATCH"
+    - "DOCUMENTARY_LINK_VERIFIED"
+    - "SOURCE_DEPENDENT"
+    - "NOT_VERIFIED"
+    - "DISPUTED"
+
+forensic_principle:
+  state_record_name_change: "MUST_NOT_ERASE_HISTORICAL_VARIANTS"
+  historical_record_preservation: true
+  identity_continuity: "MUST_BE_TESTED_AGAINST_IDNP_AND_PRIMARY_DOCUMENTS"
+  financial_record_correlation: "MUST_BE_AUDITABLE"
+  unsupported_identity_inference: false
