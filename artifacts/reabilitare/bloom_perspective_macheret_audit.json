@@ -1,0 +1,41 @@
+{
+    "perspective": {
+        "name": "Macheret Forensic Audit Perspective",
+        "description": "Pre-configured Bloom perspective for auditing identity anchors, forensic artifacts, webhooks, and UN support financial transactions.",
+        "version": "1.0.0",
+        "categories": [
+            {
+                "name": "IdentityAnchor",
+                "label": "IdentityAnchor",
+                "color": "#FF5733",
+                "icon": "user",
+                "properties": ["idnp", "idnp_role"]
+            },
+            {
+                "name": "ForensicArtifact",
+                "label": "ForensicArtifact",
+                "color": "#33FF57",
+                "icon": "document",
+                "properties": ["path", "sha256", "status", "size_bytes"]
+            },
+            {
+                "name": "WebhookEvent",
+                "label": "WebhookEvent",
+                "color": "#3357FF",
+                "icon": "globe",
+                "properties": ["event_id", "timestamp", "status"]
+            }
+        ],
+        "searchTemplates": [
+            {
+                "title": "All Evidence and Identity Links",
+                "query": "MATCH (w:WebhookEvent)-[:PRODUCED_ARTIFACT]->(a:ForensicArtifact)-[:BOUND_TO_IDNP]->(idnp:IdentityAnchor) RETURN w, a, idnp",
+                "description": "Loads the complete verification chain from webhook events to forensic artifacts and IDNP anchor."
+            }
+        ],
+        "styling": {
+            "nodeLabelProperty": "path",
+            "relationshipLabelProperty": "type"
+        }
+    }
+}
