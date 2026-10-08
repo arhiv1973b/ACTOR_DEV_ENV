@@ -1,0 +1,21 @@
+schema:
+  name: "ICLOUD_PHOTOS_EVIDENCE_ARCHIVE"
+  version: "1.0.0"
+  classification: "CONTROLLED_FORENSIC_EVIDENCE"
+
+evidence_source:
+  provider: "Apple iCloud Photos"
+  shared_url: "https://share.icloud.com/photos/058o77E5I287qz0AVeCiDcimA"
+  user_name: "Alexei Maceret"
+  local_archive_reference: "Фотографии iCloud от этого пользователя (Alexei Maceret)"
+
+identity_link:
+  full_name: "Alexei Maceret / Alexei Macheret / Alexei Macheret"
+  idnp: "2000001159655"
+  identity_anchor: "IDNP:2000001159655"
+
+forensic_status:
+  financial_event_status: "FINANCIAL_EVENT_UNDER_INVESTIGATION"
+  legal_characterization: "NOT_YET_ESTABLISHED"
+  provenance: "ICLOUD_SHARED_ARCHIVE_VERIFIED"
+  verification_rule: "Photographic and metadata evidence from iCloud share linking personal identity with visual documentation of case records and property."
