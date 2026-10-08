@@ -1,0 +1,29 @@
+schema:
+  name: "MATERIAL_EVIDENCE_IDENTITY_AND_FINANCIAL_BALANCE"
+  version: "1.0.0"
+  classification: "CONTROLLED_FORENSIC_EVIDENCE"
+
+evidence_source:
+  file_name: "25 мл 2_3.pdf"
+  path: "H:\\Загрузки\\25 мл 2_3.pdf"
+  description: "Composite visual evidence showing Moldovan Provisional Identity Card and FinComPay mobile banking application interface."
+
+identity_data:
+  full_name: "MACERET ALEXEI"
+  idnp: "2000001159655"
+  date_of_birth: "23.06.1973"
+  issuing_authority: "ASP (Agenția Servicii Publice, Republica Moldova)"
+  validity_period: "03.04.2026 – 03.04.2027"
+  authorized_official: "IRINA CEBANICA"
+
+financial_data:
+  application: "FinComPay"
+  observed_balance: "25,210,258,15 MDL"
+  currency: "MDL"
+  card_expiry: "04/30"
+
+forensic_status:
+  financial_event_status: "FINANCIAL_EVENT_UNDER_INVESTIGATION"
+  legal_characterization: "NOT_YET_ESTABLISHED"
+  provenance: "PRIMARY_DOCUMENT_VERIFIED"
+  verification_rule: "Direct visual linkage between Identity Anchor (IDNP 2000001159655) and FinComPay account balance display. Must be corroborated with raw server logs and API traffic dumps."
