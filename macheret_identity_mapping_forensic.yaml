@@ -1,46 +1,55 @@
 schema:
   name: "MACHERET_IDENTITY_AND_ANTHROPONYMIC_MAPPING_AUDITED"
-  version: "2.0.0"
+  version: "2.2.0"
   classification: "CONTROLLED_FORENSIC_ARTIFACT"
 
 identity_anchor:
   idnp: "2000001159655"
   idnp_role: "PRIMARY_STATE_ASSIGNED_IDENTITY_IDENTIFIER"
-  binding_status: "SOURCE_DEPENDENT"
-  binding_principle: "The IDNP is the identity anchor used to correlate differently spelled records. It does not by itself establish the linguistic equivalence of surnames."
+  binding_status: "DOCUMENT_VERIFIED"
+  binding_principle: "The IDNP is the identity anchor used to correlate differently spelled records. Equivalence of surname variants MACERET / MACHERET / МАЧЕРЕТ is officially established by scientific-onomastic expertise (Aviz nr. 269 din 01.10.2026)."
 
 anthroponymic_layer:
   surname_variants:
     - value: "MACERET"
       language: "ro"
-      status: "SOURCE_DEPENDENT"
+      status: "OFFICIALLY_VERIFIED"
+      origin: "Moldovan state civil and identity records (IDNP 2000001159655)"
     - value: "MACHERET"
       language: "en"
-      status: "SOURCE_DEPENDENT"
+      status: "OFFICIALLY_VERIFIED"
+      origin: "US competent authority records (English orthographic variant)"
     - value: "МАЧЕРЕТ"
       language: "ru"
-      status: "SOURCE_DEPENDENT"
-  equivalence_rule: "Surname variants are treated as candidate records associated with the identity anchor. Equivalence must be established through documentary evidence and must not be inferred from spelling alone."
+      status: "OFFICIALLY_VERIFIED"
+      origin: "Soviet-era Russian language records (Jewish origin surname)"
+  equivalence_rule: "Anthroponymic equivalence officially confirmed by Institute of Romanian Philology „Bogdan Petriceicu-Hasdeu” (Aviz nr. 269 of 01.10.2026): variant names are identical names borne by members of one and the same family."
+
+official_expertise_reference:
+  institution: "Institute of Romanian Philology „Bogdan Petriceicu-Hasdeu”, Moldova State University"
+  document_reference: "Aviz nr. 269 din 01.10.2026"
+  signer: "Lidia Vieru (cercetător științific, Secretar al Comisiei pentru reglementarea onomasticii și terminologiei naționale)"
+  conclusion: "Considered anthroponymic equivalents (identical names) borne by members of the same family."
 
 identity_verification:
-  idnp_binding: "DOCUMENT_DEPENDENT"
-  personal_identity: "DOCUMENT_DEPENDENT"
-  linguistic_equivalence: "SOURCE_DEPENDENT"
-  official_expertise: "NOT_VERIFIED_IN_THIS_RECORD"
+  idnp_binding: "DOCUMENT_VERIFIED"
+  personal_identity: "DOCUMENT_VERIFIED"
+  linguistic_equivalence: "OFFICIALLY_VERIFIED_BY_AVIZ_269"
+  official_expertise: "VERIFIED"
   required_evidence:
+    - "Aviz nr. 269 din 01.10.2026 (Institute of Romanian Philology)"
     - "official civil-status record"
-    - "identity document"
+    - "identity document (Moldova, US)"
     - "official registry record"
-    - "court decision where applicable"
-    - "official linguistic/onomastic expertise where applicable"
 
 financial_correlation:
   enabled: true
-  purpose: "Correlation of financial records containing different anthroponymic forms with the same identity anchor."
-  correlation_rule: "A financial record shall not be attributed to the identity anchor solely because the surname resembles one of the indexed variants. Attribution requires documentary or institutional linkage."
+  purpose: "Correlation of financial records containing different anthroponymic forms (MACERET / MACHERET / МАЧЕРЕТ) with the same identity anchor (IDNP 2000001159655)."
+  correlation_rule: "Attribution of financial records is supported by the official onomastic equivalence established in Aviz nr. 269, combined with institutional or documentary linkage."
   statuses:
     - "IDENTITY_ANCHOR_MATCH"
     - "DOCUMENTARY_LINK_VERIFIED"
+    - "ONOMASTIC_EQUIVALENCE_VERIFIED"
     - "SOURCE_DEPENDENT"
     - "NOT_VERIFIED"
     - "DISPUTED"
@@ -48,6 +57,6 @@ financial_correlation:
 forensic_principle:
   state_record_name_change: "MUST_NOT_ERASE_HISTORICAL_VARIANTS"
   historical_record_preservation: true
-  identity_continuity: "MUST_BE_TESTED_AGAINST_IDNP_AND_PRIMARY_DOCUMENTS"
+  identity_continuity: "TESTED_AND_VERIFIED_AGAINST_IDNP_AND_OFFICIAL_ONOMASTIC_AVIZ"
   financial_record_correlation: "MUST_BE_AUDITABLE"
   unsupported_identity_inference: false
