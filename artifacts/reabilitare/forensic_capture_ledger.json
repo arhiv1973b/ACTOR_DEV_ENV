@@ -1,0 +1,32 @@
+{
+    "macheret_identity_mapping_forensic.json": {
+        "status": "VERIFIED",
+        "sha256": "1013a0c08a0cba2c723a0e3a4c384ae17b4cc5fc383666e370e03fa07d243926",
+        "size_bytes": 3697
+    },
+    "macheret_identity_mapping_forensic.yaml": {
+        "status": "VERIFIED",
+        "sha256": "06fdde2bc8e065b24c2b8106b9afc6479d103d96f308c4fad7197a524a303629",
+        "size_bytes": 3016
+    },
+    "artifacts/reabilitare/macheret_identity_mapping_forensic.json": {
+        "status": "VERIFIED",
+        "sha256": "1013a0c08a0cba2c723a0e3a4c384ae17b4cc5fc383666e370e03fa07d243926",
+        "size_bytes": 3697
+    },
+    "artifacts/reabilitare/macheret_identity_mapping_forensic.yaml": {
+        "status": "VERIFIED",
+        "sha256": "0a60ad24768465419c16aa78ae95ae03ee79cc01cb68f3ee88a9eed48e575402",
+        "size_bytes": 3018
+    },
+    "artifacts/reabilitare/FINANCIAL_TRANSACTION_UN_SUPPORT_02MAY2025.yaml": {
+        "status": "VERIFIED",
+        "sha256": "76d126c52bb8c4687f9cffbbfdafbb1e77213a03761e10e4b9770521c61bb6b4",
+        "size_bytes": 689
+    },
+    "artifacts/reabilitare/EVIDENCE_POINTER_UN_SUPPORT_02MAY2025.json": {
+        "status": "VERIFIED",
+        "sha256": "7b30fe21fa31baaee12a177cdfc93da61ddf0583025d56642a299f4699b8961f",
+        "size_bytes": 858
+    }
+}
