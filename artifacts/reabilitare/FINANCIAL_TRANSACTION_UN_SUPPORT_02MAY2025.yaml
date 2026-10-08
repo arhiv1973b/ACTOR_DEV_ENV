@@ -1,0 +1,19 @@
+schema:
+  name: "FINANCIAL_TRANSACTION_AUDIT_RECORD"
+  version: "1.0.0"
+  classification: "CONTROLLED_FORENSIC_ARTIFACT"
+
+transaction_details:
+  date: "02.05.2025"
+  amount: "5 000.00"
+  currency: "MDL"
+  description_ro: "ELIBERAREA PRESTATIEI SUPORT UN"
+  description_ru: "Выплата поддержки ООН"
+  card_masked: "432617******4177"
+  identity_anchor: "IDNP:2000001159655"
+
+forensic_status:
+  financial_event_status: "FINANCIAL_EVENT_UNDER_INVESTIGATION"
+  legal_characterization: "NOT_YET_ESTABLISHED"
+  provenance: "SOURCE_DEPENDENT"
+  verification_rule: "Must be correlated with institutional bank statement and IDNP anchoring without unsupported identity inferences."
