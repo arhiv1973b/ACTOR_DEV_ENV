@@ -1,0 +1,50 @@
+name: Publish Bloom Perspective
+
+on:
+  push:
+    branches:
+      - feature/cyber-sabotage-audit-10-2026
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  upload-perspective:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Upload Bloom Perspective JSON Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: bloom-perspective
+          path: |
+            artifacts/reabilitare/bloom_perspective_macheret_audit.json
+            neo4j_import/forensic_evidence_perspective.json
+
+      - name: Prepare Pages Directory
+        run: |
+          mkdir -p public/perspectives
+          cp artifacts/reabilitare/bloom_perspective_macheret_audit.json public/perspectives/
+          cp neo4j_import/forensic_evidence_perspective.json public/perspectives/
+          echo "<html><body><h1>Macheret Forensic Audit - Bloom Perspectives</h1><ul><li><a href='bloom_perspective_macheret_audit.json'>bloom_perspective_macheret_audit.json</a></li><li><a href='forensic_evidence_perspective.json'>forensic_evidence_perspective.json</a></li></ul></body></html>" > public/index.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy-pages:
+    needs: upload-perspective
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
