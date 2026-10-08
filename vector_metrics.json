@@ -1,0 +1,43 @@
+{
+    "audit_timestamp_utc": "2026-10-08T20:00:00Z",
+    "total_files_analyzed": 5,
+    "systemic_health_index": 0.42,
+    "has_critical_violations": true,
+    "vectors": [
+        {
+            "vector_name": "Torture (Art. 5 / Jus Cogens)",
+            "severity": "CRITICAL",
+            "frequency": 2,
+            "weight": 1.0,
+            "threshold": 0
+        },
+        {
+            "vector_name": "Arbitrary Arrest (Art. 9)",
+            "severity": "HIGH",
+            "frequency": 3,
+            "weight": 0.8,
+            "threshold": 0
+        },
+        {
+            "vector_name": "Fair Trial (Art. 10)",
+            "severity": "HIGH",
+            "frequency": 4,
+            "weight": 0.85,
+            "threshold": 0
+        },
+        {
+            "vector_name": "Slavery (Art. 4 / Jus Cogens)",
+            "severity": "CRITICAL",
+            "frequency": 1,
+            "weight": 1.0,
+            "threshold": 0
+        },
+        {
+            "vector_name": "Privacy/Family (Art. 12)",
+            "severity": "MEDIUM",
+            "frequency": 2,
+            "weight": 0.6,
+            "threshold": 1
+        }
+    ]
+}

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jus Cogens Forensic Dashboard</title>
+    <title>Jus Cogens Forensic & Vector Metrics Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f5f7; color: #333; margin: 0; padding: 20px; }
-        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .container { max-width: 1100px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
         .status-shield { padding: 15px; border-radius: 5px; font-weight: bold; margin-bottom: 20px; text-align: center; font-size: 1.2em; }
         .shield-pass { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
@@ -17,133 +17,131 @@
         table { width: 100%; border-collapse: collapse; margin-top: 15px; }
         th, td { text-align: left; padding: 10px; border-bottom: 1px solid #ddd; }
         th { background-color: #f8f9fa; }
-        .tag-rejected { background: #e74c3c; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.8em; }
-        .tag-valid { background: #2ecc71; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.8em; }
+        .tag-critical { background: #e74c3c; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.8em; font-weight: bold; }
+        .tag-high { background: #e67e22; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.8em; }
+        .tag-medium { background: #f1c40f; color: #333; padding: 3px 8px; border-radius: 12px; font-size: 0.8em; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Квантовый Аудит: Jus Cogens & ВДПЧ</h1>
+        <h1>Квантовый Аудит: Векторная Аналитика Jus Cogens & ВДПЧ</h1>
         
         <div id="shieldBanner" class="status-shield shield-pass">
-            Процедурный Щит: АНАЛИЗ...
+            Процедурный Щит: ЗАГРУЗКА МЕТРИК...
         </div>
 
         <div class="grid">
             <div class="card">
-                <h3>Статистика по Векторам</h3>
-                <canvas id="vectorsChart"></canvas>
+                <h3>Частота Врубовых Векторов (Bar)</h3>
+                <canvas id="vectorsBarChart"></canvas>
             </div>
             <div class="card">
-                <h3>Сводка Досье</h3>
-                <p><strong>Последняя проверка:</strong> <span id="auditDate">-</span></p>
-                <p><strong>Проверено документов:</strong> <span id="totalDocs">-</span></p>
-                <p><strong>Нарушений найдено:</strong> <span id="totalViolations">-</span></p>
+                <h3>Распределение Сверити (Doughnut)</h3>
+                <canvas id="vectorsPieChart"></canvas>
             </div>
         </div>
 
         <div class="card" style="margin-top: 20px;">
-            <h3>Реестр Проверенных Документов</h3>
-            <table id="docsTable">
+            <h3>Системный Реестр Векторных Метрик (vector_metrics.json)</h3>
+            <table id="metricsTable">
                 <thead>
                     <tr>
-                        <th>Файл</th>
-                        <th>Статус</th>
-                        <th>Макс. Вес</th>
-                        <th>Триггеры (Векторы)</th>
+                        <th>Вектор Нарушения</th>
+                        <th>Уровень (Severity)</th>
+                        <th>Частота</th>
+                        <th>Вес</th>
+                        <th>Порог</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Данные будут загружены динамически -->
+                    <!-- Данные загружаются через fetch -->
                 </tbody>
             </table>
         </div>
     </div>
 
     <script>
-        const mockData = {
-            "audit_timestamp_utc": "2026-10-08T19:21:29Z",
-            "total_files_checked": 3,
-            "has_violations": true,
-            "results": [
-                {
-                    "filename": "sample_court_decision.txt",
-                    "status": "REJECTED_CONDITIONAL",
-                    "max_weight": 0.85,
-                    "triggered_vectors": [{"vector_name": "Fair Trial", "weight": 0.85}]
-                },
-                {
-                    "filename": "contract_01.txt",
-                    "status": "VALID",
-                    "max_weight": 0.0,
-                    "triggered_vectors": []
-                },
-                {
-                    "filename": "illegal_decree.txt",
-                    "status": "REJECTED",
-                    "max_weight": 1.0,
-                    "triggered_vectors": [{"vector_name": "Torture", "weight": 1.0}, {"vector_name": "Arbitrary Arrest", "weight": 0.8}]
-                }
-            ]
-        };
+        async function loadMetrics() {
+            try {
+                const response = await fetch('vector_metrics.json');
+                const data = await response.json();
+                renderDashboard(data);
+            } catch (error) {
+                console.error('Failed to load vector_metrics.json:', error);
+                document.getElementById('shieldBanner').className = 'status-shield shield-fail';
+                document.getElementById('shieldBanner').innerText = 'ОШИБКА ЗАГРУЗКИ vector_metrics.json';
+            }
+        }
 
         function renderDashboard(data) {
             const shield = document.getElementById('shieldBanner');
-            if (data.has_violations) {
+            if (data.has_critical_violations) {
                 shield.className = 'status-shield shield-fail';
-                shield.innerText = 'ПРОЦЕДУРНЫЙ ЩИТ: ОБНАРУЖЕНО НАРУШЕНИЕ ИМПЕРАТИВНЫХ НОРМ (СЛИЯНИЕ ЗАБЛОКИРОВАНО)';
+                shield.innerText = 'ПРОЦЕДУРНЫЙ ЩИТ: КРИТИЧЕСКИЕ НАРУШЕНИЯ JUS COGENS ПРЕВЫШАЮТ ПОРОГ НУЛЬ-ТЕРПИМОСТИ';
             } else {
                 shield.className = 'status-shield shield-pass';
-                shield.innerText = 'ПРОЦЕДУРНЫЙ ЩИТ: АРТЕФАКТЫ ВАЛИДНЫ (jus cogens соблюдены)';
+                shield.innerText = 'ПРОЦЕДУРНЫЙ ЩИТ: ВСЕ ВЕКТОРЫ В ПРЕДЕЛАХ ДОПУСКА';
             }
 
-            document.getElementById('auditDate').innerText = new Date(data.audit_timestamp_utc).toLocaleString('ru-RU');
-            document.getElementById('totalDocs').innerText = data.total_files_checked;
-            
-            let violationCount = data.results.filter(r => r.status.includes('REJECTED')).length;
-            document.getElementById('totalViolations').innerText = violationCount;
+            const tbody = document.querySelector('#metricsTable tbody');
+            tbody.innerHTML = '';
 
-            const tbody = document.querySelector('#docsTable tbody');
-            let vectorCounts = {};
+            let labels = [];
+            let frequencies = [];
+            let severityCounts = { "CRITICAL": 0, "HIGH": 0, "MEDIUM": 0 };
 
-            data.results.forEach(doc => {
+            data.vectors.forEach(v => {
+                labels.push(v.vector_name);
+                frequencies.push(v.frequency);
+                severityCounts[v.severity] = (severityCounts[v.severity] || 0) + v.frequency;
+
                 const tr = document.createElement('tr');
-                const tagClass = doc.status.includes('REJECTED') ? 'tag-rejected' : 'tag-valid';
-                const vectorsStr = doc.triggered_vectors.map(v => v.vector_name).join(', ') || 'Нет';
-                
+                let tagClass = 'tag-medium';
+                if (v.severity === 'CRITICAL') tagClass = 'tag-critical';
+                else if (v.severity === 'HIGH') tagClass = 'tag-high';
+
                 tr.innerHTML = `
-                    <td>${doc.filename}</td>
-                    <td><span class="${tagClass}">${doc.status}</span></td>
-                    <td>${doc.max_weight}</td>
-                    <td>${vectorsStr}</td>
+                    <td>${v.vector_name}</td>
+                    <td><span class="${tagClass}">${v.severity}</span></td>
+                    <td>${v.frequency}</td>
+                    <td>${v.weight}</td>
+                    <td>${v.threshold}</td>
                 `;
                 tbody.appendChild(tr);
-
-                doc.triggered_vectors.forEach(v => {
-                    vectorCounts[v.vector_name] = (vectorCounts[v.vector_name] || 0) + 1;
-                });
             });
 
-            const ctx = document.getElementById('vectorsChart').getContext('2d');
-            new Chart(ctx, {
+            // Bar Chart
+            const ctxBar = document.getElementById('vectorsBarChart').getContext('2d');
+            new Chart(ctxBar, {
                 type: 'bar',
                 data: {
-                    labels: Object.keys(vectorCounts),
+                    labels: labels,
                     datasets: [{
-                        label: 'Количество срабатываний векторов',
-                        data: Object.values(vectorCounts),
-                        backgroundColor: 'rgba(52, 152, 219, 0.6)',
-                        borderColor: 'rgba(41, 128, 185, 1)',
+                        label: 'Частота срабатывания',
+                        data: frequencies,
+                        backgroundColor: 'rgba(231, 76, 60, 0.6)',
+                        borderColor: 'rgba(192, 57, 43, 1)',
                         borderWidth: 1
                     }]
                 },
-                options: {
-                    scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
+                options: { scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } } }
+            });
+
+            // Pie/Doughnut Chart
+            const ctxPie = document.getElementById('vectorsPieChart').getContext('2d');
+            new Chart(ctxPie, {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(severityCounts),
+                    datasets: [{
+                        data: Object.values(severityCounts),
+                        backgroundColor: ['#e74c3c', '#e67e22', '#f1c40f']
+                    }]
                 }
             });
         }
 
-        renderDashboard(mockData);
+        loadMetrics();
     </script>
 </body>
 </html>
