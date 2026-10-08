@@ -1,0 +1,13 @@
+{
+    "evidence_id": "EV-UN-SUPPORT-02MAY2025",
+    "description": "Material-factual evidence link for UN support payment (02.05.2025, 5000 MDL, card 432617******4177)",
+    "local_path": "H:/ACTOR_DEV_ENV/artifacts/reabilitare/FINANCIAL_TRANSACTION_UN_SUPPORT_02MAY2025.yaml",
+    "github_raw_url": "https://raw.githubusercontent.com/arhiv1973b/ACTOR_DEV_ENV/feature/cyber-sabotage-audit-10-2026/artifacts/reabilitare/FINANCIAL_TRANSACTION_UN_SUPPORT_02MAY2025.yaml",
+    "github_blob_url": "https://github.com/arhiv1973b/ACTOR_DEV_ENV/blob/feature/cyber-sabotage-audit-10-2026/artifacts/reabilitare/FINANCIAL_TRANSACTION_UN_SUPPORT_02MAY2025.yaml",
+    "tunnel_vector": {
+        "protocol": "HTTPS_GITHUB_RAW",
+        "socket_binding": ".actor_socket",
+        "delegated_access": "VERIFIED_AUDIT_NODE",
+        "cryptographic_anchor": "SHA-256"
+    }
+}
