@@ -86,6 +86,13 @@
       "sha256": "a68ca1338b94f7129e9a266de62a6d3c4f3a0bab5f8f6661ee7a7307574046d7",
       "size_bytes": 775688,
       "status": "verified_exists"
+    },
+    {
+      "path": "H:\\Загрузки\\Aviza..pdf",
+      "filename": "Aviza..pdf",
+      "sha256": "df40edfc896420077494edad8750eb63cd22ff320e61028e849e9c4d7d027050",
+      "size_bytes": 170747,
+      "status": "verified_exists"
     }
   ]
 }
