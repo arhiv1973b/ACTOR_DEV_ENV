@@ -1,0 +1,966 @@
+{
+  "actor_jus_cogens_engine.json": [
+    "MACERET",
+    "Maceret",
+    "Мачерет",
+    "Macheret"
+  ],
+  "ACTOR_JUS_COGENS_SEARCH_PROMPT_roundtrip.json": [
+    "macheret",
+    "MACHERET"
+  ],
+  "apostille_candidates_manifest.json": [
+    "Macheret",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "MACERET",
+    "macheret",
+    "Maceret",
+    "Мачерет",
+    "maceret"
+  ],
+  "APPEAL_TO_PRESIDENT_TRUMP_2026_CANONICAL.json": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "APPELLATION_COMPLAINT_BABALAU_2025.md": [
+    "Мачерет",
+    "MACHERET"
+  ],
+  "APPELLATION_COMPLAINT_BABALAU_SUMMARY.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "ARCHITECTURE_PASSPORT_2026.md": [
+    "MACHERET"
+  ],
+  "Auditor_Report_Current.md": [
+    "MACHERET"
+  ],
+  "AUDIT_JUS_COGENS_REPORT.md": [
+    "macheret",
+    "MACHERET"
+  ],
+  "AUTOMATED_DISPATCH_REPORT.md": [
+    "MACHERET"
+  ],
+  "aviza_extracted_text.txt": [
+    "MA qEPET",
+    "MACERET",
+    "MACHERET"
+  ],
+  "AVIZ_FILOLOGIE_ROMANA_01102026.json": [
+    "Macheret",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "MACERET",
+    "Maceret",
+    "Мачерет"
+  ],
+  "AVIZ_FILOLOGIE_ROMANA_01102026.md": [
+    "МАЧЕРЕТ",
+    "MACERET",
+    "MACHERET"
+  ],
+  "batch_evidence_processed.json": [
+    "Maceret"
+  ],
+  "CANONICAL_JUS_COGENS_MASTER_2026.json": [
+    "macheret",
+    "MACHERET"
+  ],
+  "CASCADE_REHABILITATION_FRAMEWORK_2026.md": [
+    "MACHERET"
+  ],
+  "CASE_MACHERET_1997_2026_DOSSIER.md": [
+    "macheret",
+    "Macheret",
+    "MACHERET",
+    "Maceret"
+  ],
+  "CASE_MACHERET_1997_2026_manifest.json": [
+    "MACHERET"
+  ],
+  "CASE_MACHERET_ENTITY_GRAPH_2026.md": [
+    "MACHERET"
+  ],
+  "CASE_MACHERET_MASTER_SUMMARY_2026.md": [
+    "Мачерет",
+    "MACHERET"
+  ],
+  "CASE_TRUMP_APPEAL_CANONICAL.json": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "causality_kernel.json": [
+    "Maceret",
+    "Мачерет"
+  ],
+  "causality_swarm_execution_report.json": [
+    "Maceret"
+  ],
+  "CHISINAU_COURTS_EMAIL_REGISTRY.md": [
+    "MACHERET"
+  ],
+  "CLAIM_MINISTRY_OF_FINANCE_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "cloud_id_manifest_full.json": [
+    "Macheret",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "MACERET",
+    "macheret",
+    "Maceret",
+    "Мачерет",
+    "maceret"
+  ],
+  "compliance_matrix.json": [
+    "MACHERET"
+  ],
+  "CONSOLIDATED_MASTER_PUBLIC_PACKAGE.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "CONSTITUTIONAL_SYNTHESIS_USURPATION_2026.md": [
+    "Мачерет",
+    "Macheret"
+  ],
+  "COURT_SUBMISSION_WHITE_HOUSE_VERIFICATION.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "COVER_LETTER_USURPATION_2026.md": [
+    "Мачерет"
+  ],
+  "CYBER_METER_REPLACEMENT_OLEYNIK_2026.md": [
+    "Мачерет",
+    "Macheret"
+  ],
+  "CYBER_SABOTAGE_CALL_CENTERS_2026.md": [
+    "Мачерет",
+    "Macheret"
+  ],
+  "dag_manifest.json": [
+    "Macheret",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "MACERET",
+    "Maceret",
+    "Мачерет"
+  ],
+  "dag_manifest_backup_20261001_215110.json": [
+    "Macheret",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "MACERET",
+    "Maceret",
+    "Мачерет"
+  ],
+  "dag_manifest_backup_20261001_220254.json": [
+    "Macheret",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "MACERET",
+    "Maceret",
+    "Мачерет"
+  ],
+  "database_integrity_lock.json": [
+    "MACHERET"
+  ],
+  "DECLARATIE_ACTIUNE_DIRECTA_CONSTITUTIE_2026.md": [
+    "Maceret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "DeliveryStatus_Audit.md": [
+    "MACHERET"
+  ],
+  "DeliveryStatus_Audit_prev.md": [
+    "MACHERET"
+  ],
+  "DeliveryStatus_PointDiff_Log.md": [
+    "MACHERET"
+  ],
+  "Delivery_Status_Report_CASE_MACHERET.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "DEMERS_SUP_FINCOMBANK_30092026.json": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "DEMERS_SUP_FINCOMBANK_30092026.md": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "DIPLOMATIC_APPEAL_TO_PRESIDENT_TRUMP_07102026.md": [
+    "Мачерет",
+    "Macheret",
+    "MACHERET"
+  ],
+  "DISPATCH_LOG_03092026.md": [
+    "maceret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "dispatch_template.txt": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "DONALD_TRUMP_APPEAL_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "downloads_evidence_manifest_07102026.json": [
+    "MACHERET"
+  ],
+  "ECHR_Claim_Memorandum.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "ECHR_IMPUNITY_DAG_SCHEMA.json": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "ECHR_IMPUNITY_README.md": [
+    "Macheret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "ERGA_OMNES_JUS_COGENS_CONTINUING_CONSEQUENCES_ANALYSIS.md": [
+    "MACHERET"
+  ],
+  "ERGA_OMNES_NOTIFICATION_2026.md": [
+    "Macheret"
+  ],
+  "ERGA_OMNES_NOTIFICATION_FRAMEWORK.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "ESCALATION_TIMELINE_VISUALIZATION.md": [
+    "MACHERET"
+  ],
+  "ETS_No_2_Venetian_Commission_Legal_Note.md": [
+    "MACHERET"
+  ],
+  "ETS_NR_2_ANCHOR.md": [
+    "MACHERET"
+  ],
+  "EU_DELEGATION_REPORT_NANTOI_2026.md": [
+    "Macheret"
+  ],
+  "evidence_0ab9ee12.json": [
+    "MACHERET"
+  ],
+  "evidence_0dbe7fd3.json": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "evidence_29705e62.json": [
+    "MACHERET"
+  ],
+  "evidence_8948bbce.json": [
+    "MACHERET"
+  ],
+  "evidence_9f050edd.json": [
+    "MACHERET"
+  ],
+  "evidence_amount_correlation_batch.json": [
+    "MACHERET"
+  ],
+  "evidence_c99741.json": [
+    "MACHERET"
+  ],
+  "evidence_c99741_faecfcd8_linked.json": [
+    "MACHERET"
+  ],
+  "EVIDENCE_CATALOG.md": [
+    "MACHERET"
+  ],
+  "evidence_dag.json": [
+    "Maceret",
+    "Macheret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "evidence_fabrication_analysis.json": [
+    "MACHERET"
+  ],
+  "evidence_faecfcd8.json": [
+    "MACHERET"
+  ],
+  "evidence_faeff89c.json": [
+    "MACHERET"
+  ],
+  "evidence_idnp_court_manifest.json": [
+    "Macheret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "EVIDENCE_INDEX_SUMMARY.md": [
+    "MACHERET"
+  ],
+  "evidence_kebes_complaint.json": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "EVIDENCE_KUSHNOVA_KEPTYA_MARKOVA_2027.md": [
+    "Мачерет"
+  ],
+  "EVIDENCE_KUSHNOV_KEPTCH_MARKOVA_2027.md": [
+    "Мачерет",
+    "Macheret"
+  ],
+  "Evidence_Ledger.json": [
+    "MACHERET"
+  ],
+  "evidence_timeline.json": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "EXECUTIVE_MEMORANDUM_MANIFEST_2026.json": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "External_Verification_Report.md": [
+    "MACHERET"
+  ],
+  "final_evidence_report.md": [
+    "MACHERET"
+  ],
+  "financial_anomaly_analysis_25m_mdl.md": [
+    "MACHERET"
+  ],
+  "fincombank_25m_trace.json": [
+    "Мачерет",
+    "MACHERET"
+  ],
+  "FINCOMBANK_REFUSAL_6387.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "FINCOMBANK_SWIFT_MSMTP_ANCHOR.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "FORENSIC_AUDIT_REPORT.md": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "FORENSIC_FINCOM_ANALYSIS.md": [
+    "Maceret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "gemini-code-1779622358688.json": [
+    "MACHERET"
+  ],
+  "gemini-code-1779622598383.json": [
+    "MACHERET"
+  ],
+  "gemini-code-1779632842856.json": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "gemini-code-1779634169853.json": [
+    "Maceret"
+  ],
+  "gemini-code-1779643197946.json": [
+    "MACERET",
+    "maceret",
+    "MACHERET"
+  ],
+  "gemini-code-1779706151917.json": [
+    "MACHERET"
+  ],
+  "gemini-code-1780416851555.json": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "gemini-code-1780417133891.json": [
+    "MACERET",
+    "Мачерет",
+    "Macheret"
+  ],
+  "gemini-code-1780417577219.json": [
+    "MACERET",
+    "Maceret",
+    "Мачерет",
+    "Macheret"
+  ],
+  "gureev_forgery_protocol.json": [
+    "MACHERET"
+  ],
+  "HAGUE_CONVENTION_SIGNATURE_VIOLATIONS_AUDIT.md": [
+    "MACHERET"
+  ],
+  "HEARING_REHEARSAL_EXECUTION_LOG.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "HELIOS_30YEAR_RESILIENT_MANIFEST.md": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "IDENTITY_DISTORTION_GRAPH.md": [
+    "MACERET",
+    "Maceret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "IDENTITY_DISTORTION_SEARCH_REPORT.md": [
+    "Macheret",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "MACERET",
+    "macheret",
+    "Maceret",
+    "Мачерет",
+    "maceret"
+  ],
+  "IDNP_2006_CLUSTER_ANALYSIS.md": [
+    "Maceret"
+  ],
+  "IDNP_2006_CLUSTER_ANALYSIS.v2.md": [
+    "Maceret"
+  ],
+  "INCIDENT_LOG_03_10_2026_MASTER.md": [
+    "Macheret"
+  ],
+  "INCIDENT_REPORT_FINCOMBANK_CIOCANA_07102026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "INCIDENT_REPORT_REDERIT_03092026.md": [
+    "Мачерет",
+    "MACHERET"
+  ],
+  "INFOGRAPHIC_LAYOUT_MACRO.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "INTEGRITY_WITNESS.json": [
+    "MACHERET"
+  ],
+  "international_sanctions_matrix.json": [
+    "MACHERET"
+  ],
+  "INTERPOL_CYBER_REPORT_2026.md": [
+    "Maceret",
+    "Мачерет",
+    "Macheret"
+  ],
+  "investigation_matrix.json": [
+    "MACHERET"
+  ],
+  "Jus_Cogens_AIPS-2025_Manifest.txt": [
+    "Macheret"
+  ],
+  "JUS_COGENS_ARTICLE_313_MACHERET_1998.md": [
+    "Мачерет",
+    "Macheret"
+  ],
+  "JUS_COGENS_CACHE_MATRIX.json": [
+    "MACHERET"
+  ],
+  "JUS_COGENS_DOCUMENT_REGISTRY.md": [
+    "Мачерет"
+  ],
+  "JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "legal_findings_contextual.json": [
+    "Macheret",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "MACERET",
+    "macheret",
+    "Maceret",
+    "Мачерет"
+  ],
+  "LEGAL_MEMORANDUM_ECHR.md": [
+    "MACHERET"
+  ],
+  "legal_memorandum_fincombank_03092026.md": [
+    "Мачерет",
+    "MACHERET"
+  ],
+  "LEGAL_MEMORANDUM_MACHERET_2026.md": [
+    "Maceret",
+    "Macheret",
+    "MACHERET"
+  ],
+  "LEGAL_OBJECTION_OUTLOOK.md": [
+    "Maceret",
+    "Macheret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "LETTER_TO_DONALD_TRUMP_2026-09-15.md": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "manifest_03092026.json": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "manifest_temp_state.json": [
+    "MACHERET"
+  ],
+  "MASTER_CASE_INDEX_1997_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "MASTER_DASHBOARD_REPORT_FINAL.md": [
+    "MACHERET"
+  ],
+  "MASTER_EVIDENCE_MATRIX.md": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "MASTER_PROMPT_SYSTEM_CIRCUIT.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "MASTER_RECIPIENTS_REGISTRY_RM_2026.md": [
+    "MACHERET"
+  ],
+  "MASTER_UDHR_EVIDENCE_MATRIX.md": [
+    "MACHERET"
+  ],
+  "MATHEMATICAL_LEGAL_PROOF_JUS_COGENS.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "MEMORANDUM_IMPUTED_LIABILITY_RM_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "MEMORANDUM_REABILITAREA_CASCADA_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "MERKLE_ROOT_HASH.txt": [
+    "MACHERET"
+  ],
+  "MULTILINGUAL_SYNCHRONOUS_GLOSSARY_ART85.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "MULTILINGUAL_VIENNA_CONVENTION_SLIDES_ART85.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "NEUROPROTOCOL_POSTAL_RECORD_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "node_details.json": [
+    "MACHERET"
+  ],
+  "NODE_LEGAL_BASIS_JUS_COGENS.json": [
+    "MACHERET"
+  ],
+  "NOTEBOOKLM_EVIDENCE_SOURCE.md": [
+    "MACHERET"
+  ],
+  "NOTEBOOKLM_MASTER_LINK.md": [
+    "Macheret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "NOTIFICARE_INSTANTA_07_10_2026.md": [
+    "Maceret",
+    "Macheret"
+  ],
+  "NOTIFICARE_INSTANTA_07_10_2026.txt": [
+    "Maceret",
+    "Macheret"
+  ],
+  "ocr_manifest.json": [
+    "MACERET",
+    "Maceret",
+    "Мачерет"
+  ],
+  "ofac_magnitsky_petition_2026.md": [
+    "MACHERET"
+  ],
+  "official_submission_sealed.json": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "Opredelenie_Grigoras_05.08.2024.md": [
+    "Macheret"
+  ],
+  "ORAL_BRIEFING_PITCH_3_MIN.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "pdf_manifest.json": [
+    "Macheret",
+    "MaqepeT",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "MACERET",
+    "macheret",
+    "Maceret",
+    "Мачерет",
+    "MA qEPET",
+    "maceret",
+    "мачерет"
+  ],
+  "PHYSICAL_FILING_PACKAGE_INSTRUCTIONS.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "PLANGERE_INTRUZIUNE_CONTOARE_2026.md": [
+    "Мачерет",
+    "Macheret"
+  ],
+  "POLICE_REFUSAL_GHEORGHE_COCIU_04102026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "PRESENTATION_PACKAGE_USURPATION_2026.md": [
+    "Мачерет"
+  ],
+  "PRESENTATION_SLIDES_USURPATION_2026.md": [
+    "Мачерет"
+  ],
+  "PROCEDURAL_REQUIREMENT_JUS_COGENS_2026.md": [
+    "Мачерет",
+    "MACHERET"
+  ],
+  "PUBLIC_BRIEFING_STATEMENT_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "PUBLIC_DEMO_PACKAGE.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "PUBLIC_PRESENTATION_SLIDES.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "README.md": [
+    "Maceret"
+  ],
+  "RECORD_OF_STATE_002.txt": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "REHEARSAL_STAGE_COACHING_GUIDE.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "release_case_macheret_2026.md": [
+    "MACHERET"
+  ],
+  "RESTITUTIO_IN_INTEGRUM_CHECKLIST.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "RESTITUTIO_TIMELINE_VISUALIZATION.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "RESTORATION_COMPLETE_REPORT.md": [
+    "MACHERET"
+  ],
+  "ROOT_MANIFEST_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "Sabotage_Timeline.md": [
+    "MACHERET"
+  ],
+  "SLIDE_DECK_WITH_INTEGRATED_GLOSSARY.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "statement_prosecutor_general_03092026.md": [
+    "Мачерет"
+  ],
+  "sub_manifest.json": [
+    "Maceret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "SURNAME_SYNTHESIS_TABLE_07102026.md": [
+    "Macheret",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "MACERET",
+    "Мачерет"
+  ],
+  "SWARM_EVOLUTION_MAP.md": [
+    "Мачерет"
+  ],
+  "SWARM_RETHINKING_FLOW.md": [
+    "Мачерет"
+  ],
+  "system_inventory_report.json": [
+    "macheret",
+    "maceret",
+    "MACHERET"
+  ],
+  "SYSTEM_LEGAL_FRAMEWORK_2026.md": [
+    "MACHERET"
+  ],
+  "tabs.json": [
+    "Macheret"
+  ],
+  "TEMPORAL_ANOMALY_REPORT.md": [
+    "macheret",
+    "Мачерет",
+    "Macheret",
+    "Maceret"
+  ],
+  "temp_page1.jpg_ocr_result.txt": [
+    "Мачерет"
+  ],
+  "TI-ULA_MANIFEST.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "TIMED_PRESENTATION_RUNBOOK.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "TI_ULA_BROADCAST_MANIFEST.md": [
+    "MACHERET"
+  ],
+  "ti_ula_cas_manifest.json": [
+    "MACHERET",
+    "MACERET",
+    "Maceret",
+    "Мачерет",
+    "maceret"
+  ],
+  "ti_ula_cas_registry.md": [
+    "MACHERET",
+    "MACERET",
+    "Maceret",
+    "Мачерет",
+    "maceret"
+  ],
+  "ti_ula_convergence_cycle_ii.json": [
+    "Macheret",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "macheret",
+    "Maceret",
+    "Мачерет",
+    "maceret"
+  ],
+  "ti_ula_convergence_cycle_iii.json": [
+    "MACHERET"
+  ],
+  "ti_ula_crypto_manifest.json": [
+    "MACHERET"
+  ],
+  "TI_ULA_DYNAMIC_LOOP.md": [
+    "MACHERET"
+  ],
+  "TI_ULA_EVIDENCE_PACKAGE_DISPATCH_2026.md": [
+    "Macheret"
+  ],
+  "TI_ULA_IRON_RULE_ARCHITECTURE.md": [
+    "macheret",
+    "MACHERET"
+  ],
+  "TOPOGRAPHY_OF_IMPUNITY_ANALYSIS.md": [
+    "MACHERET"
+  ],
+  "TOPOGRAPHY_OF_IMPUNITY_DOCUMENT.md": [
+    "MACHERET"
+  ],
+  "transaction_c99741_master_record.json": [
+    "MACHERET"
+  ],
+  "transaction_image_map.csv": [
+    "MACHERET"
+  ],
+  "transaction_image_map.json": [
+    "MACHERET"
+  ],
+  "TRANSLATOR_AGENT_SPIRAL_LIFECYCLE.md": [
+    "Мачерет"
+  ],
+  "TRUTH_SOCIAL_POST_TRUMP_07102026.md": [
+    "MACHERET"
+  ],
+  "TRUTH_SOCIAL_POST_TRUMP_LACIVITA_07102026.md": [
+    "MACHERET"
+  ],
+  "UDHR_AUDIT_INDEX_2026.md": [
+    "MACHERET"
+  ],
+  "udhr_claim_manifest.json": [
+    "MACHERET"
+  ],
+  "UDHR_EVIDENCE_MAPPING_2026.md": [
+    "MACHERET"
+  ],
+  "UDHR_TI_ULA_BROADCAST_MANIFEST.md": [
+    "MACHERET"
+  ],
+  "uncat_kernel.json": [
+    "MACHERET"
+  ],
+  "uncat_kernel_en.json": [
+    "MACHERET"
+  ],
+  "uncat_kernel_ru.json": [
+    "MACHERET"
+  ],
+  "UNIVERSAL_ERGA_JUS_EXTENSION.md": [
+    "MACHERET"
+  ],
+  "UNIVERSAL_LEGAL_PACKAGE_UDHR_2026.md": [
+    "MACHERET"
+  ],
+  "UNIVERSAL_NOTEBOOK_CASE_MACHERET.md": [
+    "Maceret",
+    "maceret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "UN_CAT_COVER_LETTER_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "UN_CAT_SUBMISSION_MANIFEST_2026.json": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "UN_SPECIAL_RAPPORTEURS_SUBMISSIONS_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "USURPATION_MIRON_COSTIN_NANTOI_2026.md": [
+    "Мачерет",
+    "Macheret"
+  ],
+  "US_EMBASSY_DIPLOMATIC_MEMORANDUM_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "VAKARCHUK_FINCOMBANK_IMPUNITY_LINKAGE.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "VENICE_COMMISSION_VS_VIENNA_CONVENTION.md": [
+    "Macheret"
+  ],
+  "VERIFY_PAGES_DEPLOYMENT.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "VIBER_DOWNLOADS_SOURCE_MAP.md": [
+    "macheret",
+    "MACHERET"
+  ],
+  "MASTER_DOSSIER\\00_Cover_Letter.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "MASTER_DOSSIER\\01_Topology_TI-ULA.md": [
+    "MACHERET"
+  ],
+  "MASTER_DOSSIER\\02_Legal_Memorandum.md": [
+    "Maceret",
+    "Macheret",
+    "MACHERET"
+  ],
+  "MASTER_DOSSIER\\03_DigitalTrace_Block.md": [
+    "MACHERET"
+  ],
+  "MASTER_DOSSIER\\05_Cryptographic_Anchors.md": [
+    "MACHERET"
+  ],
+  "MASTER_DOSSIER\\06_Timeline_Restitutio.md": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "evidence\\ANCHOR_CALIBRATION_AND_STABILIZER_BRACKET.md": [
+    "Мачерет"
+  ],
+  "evidence\\cloud_id_manifest_full.json": [
+    "Macheret",
+    "MACHERET",
+    "МАЧЕРЕТ",
+    "MACERET",
+    "macheret",
+    "Maceret",
+    "Мачерет",
+    "maceret"
+  ],
+  "evidence\\FORGERY_CONTRADICTION_LOG_2026.json": [
+    "Macheret"
+  ],
+  "evidence\\INTEGRITY_WITNESS.json": [
+    "MACHERET"
+  ],
+  "evidence\\NODE_BRACKET_STABILIZER_2026.md": [
+    "Мачерет"
+  ],
+  "evidence\\ti_ula_jus_cogens_evidence_manifest.json": [
+    "MACHERET"
+  ],
+  "evidence\\UNIFIED_JUS_COGENS_MEMORANDUM_2026.md": [
+    "Macheret"
+  ],
+  "evidence\\WhiteHouse_Integration_Summary.md": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "evidence\\fincombank-financial-traces\\BANK_REFUSAL_6387.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "evidence\\fincombank-financial-traces\\FORENSIC_FINCOM_ANALYSIS.md": [
+    "Maceret",
+    "Мачерет",
+    "MACHERET"
+  ],
+  "evidence\\fincombank-financial-traces\\JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md": [
+    "Maceret",
+    "MACHERET"
+  ],
+  "evidence\\fincombank-financial-traces\\LEGAL_MEMORANDUM_ECHR.md": [
+    "MACHERET"
+  ],
+  "evidence\\fincombank-financial-traces\\LINKS.md": [
+    "MACHERET"
+  ],
+  "evidence\\fincombank-financial-traces\\ti_ula_crypto_manifest.json": [
+    "MACHERET"
+  ],
+  "artifacts\\IDNP_2006_CLUSTER_ANALYSIS.v2.md": [
+    "Maceret"
+  ],
+  "artifacts\\reabilitare\\NODE_LEGAL_BASIS_JUS_COGENS.json": [
+    "MACHERET"
+  ],
+  "Registrul_documentelor_Dosarul_Jus_Cogens_Maceret_si_Oleinik\\MASTER_CASE_INDEX_1997_2026.md": [
+    "Macheret",
+    "MACHERET"
+  ],
+  "Registrul_documentelor_Dosarul_Jus_Cogens_Maceret_si_Oleinik\\Registrul_Documentelor.md": [
+    "Macheret"
+  ],
+  "Registrul_documentelor_Dosarul_Jus_Cogens_Maceret_si_Oleinik\\1. Dosarul_nr_21-40_2021_judecatorul_Stambol_si_actele_CSJ\\apostile.1ra-834_09_extracted.txt": [
+    "Maceret"
+  ],
+  "Registrul_documentelor_Dosarul_Jus_Cogens_Maceret_si_Oleinik\\1. Dosarul_nr_21-40_2021_judecatorul_Stambol_si_actele_CSJ\\Grigoras.txt": [
+    "Maceret"
+  ],
+  "Registrul_documentelor_Dosarul_Jus_Cogens_Maceret_si_Oleinik\\1. Dosarul_nr_21-40_2021_judecatorul_Stambol_si_actele_CSJ\\Opredelenie_Grigoras_05.08.2024.md": [
+    "Мачерет"
+  ]
+}
