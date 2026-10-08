@@ -1,0 +1,13 @@
+[
+    {
+        "filename": "sample_aviz.txt",
+        "sha256": "f6f2ae4da167bf44fd8306def4f67a4ef3386d48b235aee643664b6a8145406a",
+        "idnp_verified": true,
+        "matched_variants": [
+            "MACERET",
+            "MACHERET",
+            "\u041c\u0410\u0427\u0415\u0420\u0415\u0422"
+        ],
+        "archived_to": "MASTER_DOSSIER\\sample_aviz.txt"
+    }
+]
