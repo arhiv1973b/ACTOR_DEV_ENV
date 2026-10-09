@@ -1,0 +1,49 @@
+metadata:
+  project: "MACHERET-MACERET-ONIM"
+  description: "Unified antroponymic equivalents mapping bound to personal IDNP 2000001159655"
+  legal_basis:
+    - "Aviz științific nr. 269 din 01.10.2026, Institutul de Filologie Română 'Bogdan Petriceicu-Hasdeu'"
+    - "Legea cu privire la funcționarea limbilor vorbite pe teritoriul Republicii Moldova din 31 august 1989"
+
+subject:
+  full_name: "Алексей Артурович Мачерет / Alexei Macheret / Alexei Maceret"
+  idnp: "2000001159655"
+  primary_surname_variants:
+    - "MACHERET"
+    - "MACERET"
+    - "МАЧЕРЕТ"
+  variants:
+    - surname: "MACERET"
+      name: "ALEXEI"
+      jurisdiction: "Republica Moldova"
+      document_types:
+        - "act de naştere"
+        - "buletin de identitate"
+        - "paşaport"
+      idnp: "2000001159655"
+      language: "română"
+    - surname: "MACHERET"
+      name: "ARTUR"
+      jurisdiction: "Statele Unite ale Americii (USA)"
+      document_types:
+        - "official civil and identity records"
+      idnp_reference: "2000001159655"
+      language: "engleză"
+    - surname: "МАЧЕРЕТ"
+      name: "АЛЕКСЕЙ"
+      jurisdiction: "USSR / Soviet period"
+      document_types:
+        - "historical acts issued in Russian"
+      idnp_reference: "2000001159655"
+      language: "rusă"
+  equivalence_rule: "MACHERET, MACERET, and МАЧЕРЕТ under IDNP 2000001159655 are anthroponymic equivalents representing the same person and family lineage across multilingual jurisdictions."
+
+github_search_config:
+  repository_query: "macheret OR maceret OR мачерет OR 2000001159655"
+  code_search_patterns:
+    - "MACERET"
+    - "MACHERET"
+    - "МАЧЕРЕТ"
+    - "2000001159655"
+  normalization_rules:
+    display_standard: "MACHERET / MACERET (IDNP: 2000001159655)"

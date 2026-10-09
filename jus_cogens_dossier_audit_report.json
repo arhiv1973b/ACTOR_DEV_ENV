@@ -1,0 +1,384 @@
+{
+  "timestamp": "2026-10-08T20:46:07.720496+00:00",
+  "total_documents_scanned": 44,
+  "evaluations": [
+    {
+      "document": "00_Cover_Letter.md",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60"
+    },
+    {
+      "document": "01_Topology_TI-ULA.md",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60"
+    },
+    {
+      "document": "02_Legal_Memorandum.md",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60"
+    },
+    {
+      "document": "03_DigitalTrace_Block.md",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60"
+    },
+    {
+      "document": "05_Cryptographic_Anchors.md",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60"
+    },
+    {
+      "document": "06_Timeline_Restitutio.md",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60"
+    },
+    {
+      "document": "ingestion_ledger.json",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60"
+    },
+    {
+      "document": "package_sha256.txt",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60"
+    },
+    {
+      "document": "sample_aviz.txt",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60"
+    },
+    {
+      "document": "1694731618376873 2.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "7A81DCFEA66CB2EC7EB38FA353C136641895CA3D9CCB3DBBF56F58E0688FAA24",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "officemobile-20240221-1535.log",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "FC025172EECE3DC395D5A2EEA733F1E7D07F2153489CE3988B0A6FB10E50EFC5",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Директору Валентине Пислару.подписан.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "89D917F3E207B15953CF731B6C87A412151330B2B2E97B2F2A3612138FC797F6",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "790 2.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "CF7C090C833916DB3E4994C6FA6138D91CC6863C01F8745F77DBBC0F9C19A323",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Направление взятое Нантой в Хоспис вместо больницы.подписан 2.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "A47FC8A2587A64714D7E7F2344F013C0887FB16478CFDFCECBC3765E1290BD18",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Направление взятое Нантой в Хоспис вместо больницы.подписан (1).pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "A47FC8A2587A64714D7E7F2344F013C0887FB16478CFDFCECBC3765E1290BD18",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Направление взятое Нантой в Хоспис вместо больницы.подписан 3.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "A47FC8A2587A64714D7E7F2344F013C0887FB16478CFDFCECBC3765E1290BD18",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Направление взятое Нантой в Хоспис вместо больницы.подписан.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "A47FC8A2587A64714D7E7F2344F013C0887FB16478CFDFCECBC3765E1290BD18",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Не достиг лимита 2.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "C79394CAE67918E89B8F5ACF695AEE15425FF7E105F15925769DD23ABBFFB274",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Не достиг лимита 3.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "C09095DB888AF69E8A0D97FD60C0FE701B22D09610EE9FB1EBA9ED0E795DEFCB",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Не достиг лимита (1).pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "3B54AC4052D487F232C10FB7E639326A78EF37FB597B1F2195C166829FF375B7",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Не достиг лимита.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "3B54AC4052D487F232C10FB7E639326A78EF37FB597B1F2195C166829FF375B7",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Curtea de Apel  Maceret si Marcova protiv Oazu Nantoi.подписан.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "7A7550DB167C4969D37D238D9E569A8D861D412D4B20462DC2A32600A7BD0413",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Curtea de Apel  Maceret si Marcova protiv Oazu Nantoi.подписан (1).pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "7A7550DB167C4969D37D238D9E569A8D861D412D4B20462DC2A32600A7BD0413",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Recurs Maceret Alexei.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "DE09BB11988255C759AE85FC86FF36FAF48C50C270DD1858F627A80DA5F110F3",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "ePass2003-Castle-mac-20210127.dmg",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "9C4AA56D4689B58B4B7956BE8D1D00CAFAD86630F2EAF08D9F4B786D6B0EDAF4",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "ePass2003-Castle-mac-20210127-1.dmg",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "9C4AA56D4689B58B4B7956BE8D1D00CAFAD86630F2EAF08D9F4B786D6B0EDAF4",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Jus_Cogens_Legal_Review_Archive.zip",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "688A794065924571FCEBA3F9310A2931C70119ED01F085722510CE8A15AAE771",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Jus_Cogens_Legal_Review_Archive_Complete.zip",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "791142489B30FA2D9C94E37FE03F3F2EDD2F1EE5E7046BDEE8E8DB6F637E8735",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Jus_Cogens_International_Package.zip",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "92F7FFDAB1407783E4183D48D2C1FE7ED8FACF8EB1A5189369D11B4D47901483",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "TI-ULA_UN_Submission_Article60 2.zip",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "743C9E9FE714697DFA74FA62296CA8FFDFB77552F0A51575C4243F2DA17E6A0B",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "TI-ULA_UN_Submission_Article60.zip",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "743C9E9FE714697DFA74FA62296CA8FFDFB77552F0A51575C4243F2DA17E6A0B",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "дело Олейник 1-983 от 2007 года.semnat.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "3BA0A15168E3E5A9068228ACCA79079C8E2BE62BE15786ED8582A877FFA27C0A",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Отсканированный документ.pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "6C74C89589119E912E8ECD04E10DFF42D3A9C651307A749BAF05DF7CF3AFB3DE",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "IMG_3347 (1).MOV",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "40773D48B104FCF501EBF47CA6AA9F60FC8D950BAA2F9F21FB8E67598A1D546A",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "IMG_0094.MOV",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "E19D32936F896C4668CC33093DA3C41B740B16F041C5582E82F6CA627D700DA7",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "rus.traineddata 2",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "681BE2C2BEAD1BC7BD235DF88C44E8E60AE73AE866840C0AD4E3B4C247BD37C2",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "rus.traineddata",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "681BE2C2BEAD1BC7BD235DF88C44E8E60AE73AE866840C0AD4E3B4C247BD37C2",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Донос вышестоящему Прокурору на Прокурора Афанасий -  USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1).pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "24CF1E690027B04EE952CE95C81B0F3AB98F8BB45196F471D2B50904638444F8",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Полный текст по Гушану - Прецендент_распознан (1).pdf",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "BBC1704A64C8D55D4868A412E53A7C99E0027EDCE2A7C07B7ACE6638196CD72E",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Авасилае  архив.zip",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "1A7C046BAB042F8D632ADC4D8B9BEAEFFC80DFB9F4353562BF8956636E777AF9",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "Plangere_Focsa_Executie_Gusanu.zip",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "D5A5A756434881F55F52D3BDB03C3EB2A82983500A645CC02B0EBB3DB0A87949",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "RuStore.apk",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "A4E5DE6332E5D00C69C712A287CF616F897CD23EEE4BF315F932C9EDC76828BD",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "chat 2.html",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "CD74D8E45801EDAA22CE25B7FB53575C0FE2C6301A9ADE1FDB088DFE36885D9A",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    },
+    {
+      "document": "chat.html",
+      "status": "VALID",
+      "violations_detected": [],
+      "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)",
+      "actor_recognition": "Individual active standing under Art. 60",
+      "sha256": "CD74D8E45801EDAA22CE25B7FB53575C0FE2C6301A9ADE1FDB088DFE36885D9A",
+      "source_mode": "REMOTE_DRIVE_METADATA_ONLY"
+    }
+  ]
+}

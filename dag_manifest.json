@@ -1,6 +1,6 @@
 {
-    "updated_at": "2026-10-01T15:19:30.334668+00:00",
-    "total_entries": 353,
+    "updated_at": "2026-10-09T19:33:31.536268",
+    "total_entries": 436,
     "entries": [
         {
             "previous_hash": "GENESIS_NODE",
@@ -5164,29 +5164,786 @@
                     "violation_status": "ACTIVE"
                 }
             ]
-        }
-    ],
-    "90655f14": {
-        "node_id": "90655f14",
-        "type": "STOLEN_ASSETS_ANCHOR",
-        "attributes": {
-            "amount": "25210256.15",
-            "currency": "MDL",
-            "status": "EXPROPRIATED"
         },
-        "bindings": [
-            {
-                "framework": "UDHR",
-                "article": "17.2",
-                "text": "Никто не должен быть произвольно лишен своего имущества.",
-                "violation_status": "ACTIVE"
-            }
-        ],
-        "edges": [
-            {
-                "target": "UDHR_17.2",
-                "relation": "DIRECT_VIOLATION"
-            }
-        ]
-    }
+        {
+            "filename": "0-02-05-03f713fafff67ab1be9a9194cfff7492729d9f23aef1aee4e4b1015ce92b2904_be320b4848447e14.jpg",
+            "path": "./ViberDownloads/0-02-05-03f713fafff67ab1be9a9194cfff7492729d9f23aef1aee4e4b1015ce92b2904_be320b4848447e14.jpg",
+            "node_hash": "ec6752a12c42e01699029528f2d263fec8d48a42c66fd4a8c4e79105950a92dd",
+            "timestamp": "2026-09-29T12:05:38.050918",
+            "size_bytes": 206399,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-06cd39d518e558344f430f91a0a506c1305b3da6b2af1698f61130e71895ad19_1ddd6a42c2cf920.jpg",
+            "path": "./ViberDownloads/0-02-05-06cd39d518e558344f430f91a0a506c1305b3da6b2af1698f61130e71895ad19_1ddd6a42c2cf920.jpg",
+            "node_hash": "305fd1cb5a6d02731fa0e0dd2f55bd37fcebbfbdd31e1ebecd465d95c20ce0b2",
+            "timestamp": "2026-10-09T21:45:04.263970",
+            "size_bytes": 196408,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-09f2c6b730e52421af6f32a79d85ee7a94e0cb91f2265ed34aae09f41c5dfe6b_802e719730412e95.jpg",
+            "path": "./ViberDownloads/0-02-05-09f2c6b730e52421af6f32a79d85ee7a94e0cb91f2265ed34aae09f41c5dfe6b_802e719730412e95.jpg",
+            "node_hash": "39ad59a2a6890d71fee1b6669e4d216943dedd08b5eaa3a79a4b799788c83bc3",
+            "timestamp": "2026-10-09T21:24:25.985130",
+            "size_bytes": 235043,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-0ce2df3478889a0ee76b2cd70150d3fc065e63bb4addde85cb0acb5c60e92f37_c8e058cba6219989.jpg",
+            "path": "./ViberDownloads/0-02-05-0ce2df3478889a0ee76b2cd70150d3fc065e63bb4addde85cb0acb5c60e92f37_c8e058cba6219989.jpg",
+            "node_hash": "2ba1aad92f0c55e7bff0840f7ea4d2c5c94f0823925d29eff76634169fd85c15",
+            "timestamp": "2026-10-09T14:42:02.074576",
+            "size_bytes": 169597,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-1113fff6cb78c8fb3f5a8b3613cb5bb5646cc814a9f8aaa80a695f7233fef933_a77484fd3fce8eb0.jpg",
+            "path": "./ViberDownloads/0-02-05-1113fff6cb78c8fb3f5a8b3613cb5bb5646cc814a9f8aaa80a695f7233fef933_a77484fd3fce8eb0.jpg",
+            "node_hash": "68a190784c0fd8cf9eda3ec82d9de3c61cf23771cb10fe13ab2a1687f1d10378",
+            "timestamp": "2026-10-09T19:16:28.994445",
+            "size_bytes": 255666,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-12b58c188767a360995966f8ab1c25b6bc92ea94fb50ebc57b31ebc568af0b57_23be1f8a0a0ca436.jpg",
+            "path": "./ViberDownloads/0-02-05-12b58c188767a360995966f8ab1c25b6bc92ea94fb50ebc57b31ebc568af0b57_23be1f8a0a0ca436.jpg",
+            "node_hash": "f448b952e25d152171f2971fb0ee954f4b7869dcfe12ac4ac341e5c5237fd87c",
+            "timestamp": "2026-09-20T12:14:12.079504",
+            "size_bytes": 246553,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-160cfb651eac84f286f1dd847838d02edcb0f65e3c860dd091c7da7a13283089_fe759c7a8720fa17.jpg",
+            "path": "./ViberDownloads/0-02-05-160cfb651eac84f286f1dd847838d02edcb0f65e3c860dd091c7da7a13283089_fe759c7a8720fa17.jpg",
+            "node_hash": "27a2bb2bacc8790a1621b0c655a8712d5e722ce96d6e0a2e4330f22692586a15",
+            "timestamp": "2026-10-09T19:16:16.022958",
+            "size_bytes": 254486,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-16ff2207bac47ccc430dc4cb26edbf9a852ffe2d797d8e6f9d48db130705d607_faecfcd82230d698.jpg",
+            "path": "./ViberDownloads/0-02-05-16ff2207bac47ccc430dc4cb26edbf9a852ffe2d797d8e6f9d48db130705d607_faecfcd82230d698.jpg",
+            "node_hash": "2dc2fcf5f5ac90dd2dbed76789cf6edd37eac0be7fb10f9d186ed43418dc42ac",
+            "timestamp": "2026-09-18T12:15:28.136884",
+            "size_bytes": 247438,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-16ff2207bac47ccc430dc4cb26edbf9a852ffe2d797d8e6f9d48db130705d607_faecfcd82230d698.pdf",
+            "path": "./ViberDownloads/0-02-05-16ff2207bac47ccc430dc4cb26edbf9a852ffe2d797d8e6f9d48db130705d607_faecfcd82230d698.pdf",
+            "node_hash": "f1b399e7742ad57c2db0702129643aa9d7d14e74dd75628d1cfd50cfc8c3b31d",
+            "timestamp": "2026-09-18T12:17:40.147633",
+            "size_bytes": 255754,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-1d1d8f48cea7f8643d0b0204bd433bc6ba5eaa6f4d6b702d3cdaac8331bc641d_8d9fc58a05e33c11.jpg",
+            "path": "./ViberDownloads/0-02-05-1d1d8f48cea7f8643d0b0204bd433bc6ba5eaa6f4d6b702d3cdaac8331bc641d_8d9fc58a05e33c11.jpg",
+            "node_hash": "927cc152a0d087af15a1c18c99de2a2e1d67eed43b1d9382879850e6f2d81289",
+            "timestamp": "2026-09-21T23:06:40.869658",
+            "size_bytes": 174149,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-212031058e75b1c81051f04d8614981ae101709d5a73d8d1eec2e4773f59bffa_8e5e60b2f5c5c9c9.jpg",
+            "path": "./ViberDownloads/0-02-05-212031058e75b1c81051f04d8614981ae101709d5a73d8d1eec2e4773f59bffa_8e5e60b2f5c5c9c9.jpg",
+            "node_hash": "6aba7c9f6633f4e10dff924fbaa2402bd6911f2764e341907dbd7f3506300ccb",
+            "timestamp": "2026-09-29T12:05:19.683132",
+            "size_bytes": 248369,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-213e89cea18005c7592479c8418c0703ed774d1488cdb3dc574d6eac3104f9ef_e743f37987d4ac36.jpg",
+            "path": "./ViberDownloads/0-02-05-213e89cea18005c7592479c8418c0703ed774d1488cdb3dc574d6eac3104f9ef_e743f37987d4ac36.jpg",
+            "node_hash": "b8b68cac5ed3b849ba3c2e2d6456f1a4a0636d25909804977c56153b5fe954d3",
+            "timestamp": "2026-10-09T21:47:04.668106",
+            "size_bytes": 209669,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-21b50abaa8c22a9c255a01e845af1b84c5037f297a3b8530e7656ab5ccc9172d_a415f48b4875839e.jpg",
+            "path": "./ViberDownloads/0-02-05-21b50abaa8c22a9c255a01e845af1b84c5037f297a3b8530e7656ab5ccc9172d_a415f48b4875839e.jpg",
+            "node_hash": "466d23f0d0501f5d0a7b611b58674ae9f91a34a16004c053625a13b296626f11",
+            "timestamp": "2026-09-20T12:14:11.758583",
+            "size_bytes": 202539,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-28af243c141692220c265370ca42662abd44b51aacbb577b0bddf39a27b782ca_c99a87f40f00f5df.jpg",
+            "path": "./ViberDownloads/0-02-05-28af243c141692220c265370ca42662abd44b51aacbb577b0bddf39a27b782ca_c99a87f40f00f5df.jpg",
+            "node_hash": "583af45506cc49e59bd11b884f12f0acd23ea8e96f1647e12f64ba3c87e096c3",
+            "timestamp": "2026-09-29T12:04:49.535079",
+            "size_bytes": 249852,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-2a5ac369f46e93c875fac3accb1df0a2740ec4c1435ee01b0e5ec4a84a4528b4_e69cea5d37c2bdc2.jpg",
+            "path": "./ViberDownloads/0-02-05-2a5ac369f46e93c875fac3accb1df0a2740ec4c1435ee01b0e5ec4a84a4528b4_e69cea5d37c2bdc2.jpg",
+            "node_hash": "74133598ef9bc1cdc4924e6aa506a634961799033b1610b306f6eb9689bfd950",
+            "timestamp": "2026-09-20T12:14:11.015752",
+            "size_bytes": 219283,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-2f170ac372a112ae3a3b38def15dbdbb20ad673c95e662ea257b9e73a6ef988e_613546036651dd36.jpg",
+            "path": "./ViberDownloads/0-02-05-2f170ac372a112ae3a3b38def15dbdbb20ad673c95e662ea257b9e73a6ef988e_613546036651dd36.jpg",
+            "node_hash": "544e46420bfe5cc3b4c74907e44d14aa0a5edd57fda5bf38307132243de70974",
+            "timestamp": "2026-09-20T12:14:11.142073",
+            "size_bytes": 203322,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-31be07f1d06728ab4cb8d0519eeca075f168e3ac3561cc5723cd5c86e6857331_fe095a1ab4ee3b8b.jpg",
+            "path": "./ViberDownloads/0-02-05-31be07f1d06728ab4cb8d0519eeca075f168e3ac3561cc5723cd5c86e6857331_fe095a1ab4ee3b8b.jpg",
+            "node_hash": "dcd544ea04b128ce7885af98602c1e760fcca725ab09ab9c273343cd33635863",
+            "timestamp": "2026-09-20T12:14:11.428706",
+            "size_bytes": 216865,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-35ef2ba915afd979f512d4e180c902e7016c94413d48b9fde10b0810d7dea384_cde72ff40b09fd31.jpg",
+            "path": "./ViberDownloads/0-02-05-35ef2ba915afd979f512d4e180c902e7016c94413d48b9fde10b0810d7dea384_cde72ff40b09fd31.jpg",
+            "node_hash": "9fca18faa5bfdaed592d367a2fce314fe09b9951d839504c2072081858fd4351",
+            "timestamp": "2026-10-09T21:47:04.343215",
+            "size_bytes": 218031,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-37b6d6ccbed9c9b67982bc1629e88b1aab8806db55e300c5cee5202441555d4a_b952fbf7f45ce192.jpg",
+            "path": "./ViberDownloads/0-02-05-37b6d6ccbed9c9b67982bc1629e88b1aab8806db55e300c5cee5202441555d4a_b952fbf7f45ce192.jpg",
+            "node_hash": "e3416a879f1593c51729364871816d5423235ba70cd0a595833d49ac78a7f0f6",
+            "timestamp": "2026-10-09T21:23:47.068242",
+            "size_bytes": 207575,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-3ff771b20beb1bafa3d135549b0933bf1bd12f78257b138401edd6e8c9227eb9_abc3e98dd3b86a4b.jpg",
+            "path": "./ViberDownloads/0-02-05-3ff771b20beb1bafa3d135549b0933bf1bd12f78257b138401edd6e8c9227eb9_abc3e98dd3b86a4b.jpg",
+            "node_hash": "65694d05cbd95d949272587a467d943fcb0280643ad34c6af56cd8e55565f7f3",
+            "timestamp": "2026-09-20T12:14:10.752090",
+            "size_bytes": 209908,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-47bb71027feee22da3628b44f04ab624717af3cc97ae31ef440c4f72446d41f6_5a8754aeb1530cdf.jpg",
+            "path": "./ViberDownloads/0-02-05-47bb71027feee22da3628b44f04ab624717af3cc97ae31ef440c4f72446d41f6_5a8754aeb1530cdf.jpg",
+            "node_hash": "09f4838852c5e858f876db1d81d08ad8045d2e137bedc28e71f7beb83d2d6b09",
+            "timestamp": "2026-10-09T19:31:57.907275",
+            "size_bytes": 118805,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-4cbd51a20e2d6e079fb0643da463353710d9a3a9a5dcc647ff89de347bb930e4_c49cea79ee99f099.jpg",
+            "path": "./ViberDownloads/0-02-05-4cbd51a20e2d6e079fb0643da463353710d9a3a9a5dcc647ff89de347bb930e4_c49cea79ee99f099.jpg",
+            "node_hash": "5cf562dae304a0f33d25f0bb31c7870320b6210e770006ccccb55e80b8031ce1",
+            "timestamp": "2026-10-02T16:31:36.363904",
+            "size_bytes": 196297,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-4e3a9357817da1e5c92e54f5c6294d5c09039e0a49833f79d7b0207e59176e8a_ce900f8996d6e3e1.jpg",
+            "path": "./ViberDownloads/0-02-05-4e3a9357817da1e5c92e54f5c6294d5c09039e0a49833f79d7b0207e59176e8a_ce900f8996d6e3e1.jpg",
+            "node_hash": "79f7597c24010ed51ffdbb3c2ae398e47420135a0ef275c4be2c8278e051cba8",
+            "timestamp": "2026-09-18T09:03:20.461479",
+            "size_bytes": 212381,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-5085b6576d1b5ef324fed593ea9991ce92ec363d68d94f7bdddc22a17f4e432c_b8d2921258648513.jpg",
+            "path": "./ViberDownloads/0-02-05-5085b6576d1b5ef324fed593ea9991ce92ec363d68d94f7bdddc22a17f4e432c_b8d2921258648513.jpg",
+            "node_hash": "5814f06f892d6a6eb909b52782027df7e38791153949b7d33fd83b5630b4fdcb",
+            "timestamp": "2026-09-29T12:06:37.017633",
+            "size_bytes": 241617,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-534315d86cb1570a051ff4a27cd819519adf71e1812bd10d726ea9dea8e26b2f_bf55352a9add48f6.jpg",
+            "path": "./ViberDownloads/0-02-05-534315d86cb1570a051ff4a27cd819519adf71e1812bd10d726ea9dea8e26b2f_bf55352a9add48f6.jpg",
+            "node_hash": "a848c619050f405c91901e579397543507fb9ee58a0d72e675b2180a603984b9",
+            "timestamp": "2026-10-07T18:22:02.227905",
+            "size_bytes": 238389,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-574aedb6dfde6906ab03b7e4302aa2519731f3bc48347854ae8827a2bf31bfcb_f443183406cf8691.jpg",
+            "path": "./ViberDownloads/0-02-05-574aedb6dfde6906ab03b7e4302aa2519731f3bc48347854ae8827a2bf31bfcb_f443183406cf8691.jpg",
+            "node_hash": "114ffab758fd77c3d23a2c0ebfac57de033b7f0c3b94a441651cdea6dc2facf7",
+            "timestamp": "2026-10-09T21:23:40.444608",
+            "size_bytes": 232683,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-58bfb56cef97fc6b0b0c31300b13edb9bd5e4379ce745bbaaf3f17f80daa5384_8fd87172d7c1b03.jpg",
+            "path": "./ViberDownloads/0-02-05-58bfb56cef97fc6b0b0c31300b13edb9bd5e4379ce745bbaaf3f17f80daa5384_8fd87172d7c1b03.jpg",
+            "node_hash": "36dacc53dbd7b44ac311f2c74ae514aae8afeb2c7e8fb2c3f028adfaac672fac",
+            "timestamp": "2026-10-09T21:47:03.655412",
+            "size_bytes": 233490,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-5e95ca6ac4382738878632a6f6e933aae157be5d9253fbc2f3d449ead5bcde53_b668fae3f68e1fab.jpg",
+            "path": "./ViberDownloads/0-02-05-5e95ca6ac4382738878632a6f6e933aae157be5d9253fbc2f3d449ead5bcde53_b668fae3f68e1fab.jpg",
+            "node_hash": "5a1ebab83911b9fbf2e27db45c71797f6944692fb148e745da307eec4c4ef7ee",
+            "timestamp": "2026-10-07T17:42:43.792725",
+            "size_bytes": 218259,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-60d9b8b39b3b4a942b4e2b186920cffefa39d48204cf6dca4532a38d2fa3a84a_1a3fd19036e1923.jpg",
+            "path": "./ViberDownloads/0-02-05-60d9b8b39b3b4a942b4e2b186920cffefa39d48204cf6dca4532a38d2fa3a84a_1a3fd19036e1923.jpg",
+            "node_hash": "f148ff00f17523e807b55b1239c09685856c0708c19fb0818856fb327bc12399",
+            "timestamp": "2026-10-09T19:16:27.762072",
+            "size_bytes": 183962,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-6102fa6ce8b223b8b906ab0a42a540ba4da4d9715bd091aac07fcf0ade8d3ac4_513530b8ed10ae5f.jpg",
+            "path": "./ViberDownloads/0-02-05-6102fa6ce8b223b8b906ab0a42a540ba4da4d9715bd091aac07fcf0ade8d3ac4_513530b8ed10ae5f.jpg",
+            "node_hash": "bf871cd4071d76d06af6c01f3e7768f9ed92c28052b9b778c1bfbef05a0e221f",
+            "timestamp": "2026-10-09T19:31:58.212003",
+            "size_bytes": 103221,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-6346ec93e93e284539c0d346c3fc201c6787654c15012ebd316a0f9c83bd3ab9_5669d5ce2877b158.jpg",
+            "path": "./ViberDownloads/0-02-05-6346ec93e93e284539c0d346c3fc201c6787654c15012ebd316a0f9c83bd3ab9_5669d5ce2877b158.jpg",
+            "node_hash": "3310e3d49032b491f81a8f00eda3251d22a33c3ea2aa970478cb24ca06917e7a",
+            "timestamp": "2026-09-16T22:04:19.633875",
+            "size_bytes": 208173,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-64280c8902b7e6fed8447912296ac321a0daa6bc72617514ff291ef230c839cf_14fbd7a37ededd05.jpg",
+            "path": "./ViberDownloads/0-02-05-64280c8902b7e6fed8447912296ac321a0daa6bc72617514ff291ef230c839cf_14fbd7a37ededd05.jpg",
+            "node_hash": "7c45509f8b014a6ce53f6d5bddfad0eb4c8343856cf465a371338305ed9de389",
+            "timestamp": "2026-09-18T09:04:10.368498",
+            "size_bytes": 197681,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-6946a4a2737c4c4ae819e822a8fa070226387df9eb00ec40ff0d3ce624622e12_9cf0f0d89196dfd8.jpg",
+            "path": "./ViberDownloads/0-02-05-6946a4a2737c4c4ae819e822a8fa070226387df9eb00ec40ff0d3ce624622e12_9cf0f0d89196dfd8.jpg",
+            "node_hash": "9920bafdbf9bf734ec8b2cf9a61eda7e140c3814980d559cca523b5ce1868e9e",
+            "timestamp": "2026-10-09T21:47:04.003862",
+            "size_bytes": 218294,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-6a573c05db9c9186dbf963d7f943233bcc924a59a2aa5c8f4aa01d43465dd836_3f7cf6c5b350c64a.jpg",
+            "path": "./ViberDownloads/0-02-05-6a573c05db9c9186dbf963d7f943233bcc924a59a2aa5c8f4aa01d43465dd836_3f7cf6c5b350c64a.jpg",
+            "node_hash": "0354e77d49b470b6e10fe35bfae98348ac2b9ee6f1bd46f7ea96f82d5a7b6ea5",
+            "timestamp": "2026-10-09T21:23:45.147438",
+            "size_bytes": 247235,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-786fc567840ef6c9918f0efa54fae0a370b03ef7e7e0fb6c67164a89c0ac89e1_f74d3aee5c5bd481.jpg",
+            "path": "./ViberDownloads/0-02-05-786fc567840ef6c9918f0efa54fae0a370b03ef7e7e0fb6c67164a89c0ac89e1_f74d3aee5c5bd481.jpg",
+            "node_hash": "04cbcbc34deb6006845ef9c3bcb83fd768522e7505fc39eca576beae0ed2bd86",
+            "timestamp": "2026-09-27T15:11:42.520818",
+            "size_bytes": 212432,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-7982800914b990defabd4265ee49e1d62c2729c6e1b86f75cdb32aa6d0ec382b_372959db2d9596e6.jpg",
+            "path": "./ViberDownloads/0-02-05-7982800914b990defabd4265ee49e1d62c2729c6e1b86f75cdb32aa6d0ec382b_372959db2d9596e6.jpg",
+            "node_hash": "3245c692b1916efc7efd7f8e932f6fe0dd48e417cecb2aa1dda112624d5af6a5",
+            "timestamp": "2026-10-09T19:16:29.306320",
+            "size_bytes": 235228,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-819c2ec6d4443854b19fa656b1ad408d8260c9bf91f8394409e1698551f732aa_caa403f8481d10d8.jpg",
+            "path": "./ViberDownloads/0-02-05-819c2ec6d4443854b19fa656b1ad408d8260c9bf91f8394409e1698551f732aa_caa403f8481d10d8.jpg",
+            "node_hash": "1b66f7ca9cea57b182046e918d96e7e4281cefa187aa69412853fed202c2d3b5",
+            "timestamp": "2026-10-09T19:16:29.638120",
+            "size_bytes": 229754,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-82d2c16c6722093b0fca5d0ee8281e361207d69d33e8ba483f997d131d4f1207_30ae7d72a69cdfa.jpg",
+            "path": "./ViberDownloads/0-02-05-82d2c16c6722093b0fca5d0ee8281e361207d69d33e8ba483f997d131d4f1207_30ae7d72a69cdfa.jpg",
+            "node_hash": "ab76d6f7346ebbb04a01806c2fe4b336c21edc43fa37743e77e5163a0083d241",
+            "timestamp": "2026-10-09T19:16:28.271777",
+            "size_bytes": 235223,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-8d1b22d5f50347b3a4ed0e93a812ceb2ea0bde8ad25251a419c0d8a52b407fbf_3b75ce28b8552c97.jpg",
+            "path": "./ViberDownloads/0-02-05-8d1b22d5f50347b3a4ed0e93a812ceb2ea0bde8ad25251a419c0d8a52b407fbf_3b75ce28b8552c97.jpg",
+            "node_hash": "faeff89ceff24cb3870f43e7cf1bbc7ace1dd45b74822a237bf874ade4ce11c0",
+            "timestamp": "2026-09-18T11:50:35.803411",
+            "size_bytes": 232220,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-9076910df216be7e0bad66df968d43e3133e69595b0ac8f23d3f1dc01af54ff2_ac2d6f2a0feb09ab.jpg",
+            "path": "./ViberDownloads/0-02-05-9076910df216be7e0bad66df968d43e3133e69595b0ac8f23d3f1dc01af54ff2_ac2d6f2a0feb09ab.jpg",
+            "node_hash": "6b7a7495c9733df5afb1680d2b56784d4a3a0fd0deb75bca00d45c8a551e047c",
+            "timestamp": "2026-09-20T12:14:12.067965",
+            "size_bytes": 256628,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-93f44d91423ecb8443719f0c4edd4bc19f46546bbc4c1218f94038e3ccabbe4c_d0ac3cc912ca7a5d.jpg",
+            "path": "./ViberDownloads/0-02-05-93f44d91423ecb8443719f0c4edd4bc19f46546bbc4c1218f94038e3ccabbe4c_d0ac3cc912ca7a5d.jpg",
+            "node_hash": "c0105a537bc0e52fff0829b2797be410bacf343b5f0f10d5bd9ac3c6da8292c9",
+            "timestamp": "2026-10-09T19:31:58.785207",
+            "size_bytes": 130308,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-94a60b15500ceedadcadf342d4b39e9164aca47c552f1d134fb2e7f3bb9fff79_eac08e604f561438.jpg",
+            "path": "./ViberDownloads/0-02-05-94a60b15500ceedadcadf342d4b39e9164aca47c552f1d134fb2e7f3bb9fff79_eac08e604f561438.jpg",
+            "node_hash": "2930278a9457ab65b2f9059ee24730aa200dbd3fb8b9ca394ed1cda7a7a5b21c",
+            "timestamp": "2026-10-09T19:16:27.059642",
+            "size_bytes": 236852,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-9c2ee83af0b0a692c4c35145261202331f134d1043c2901f730273c89d8dda5c_a09f345a14f6bcaf.jpg",
+            "path": "./ViberDownloads/0-02-05-9c2ee83af0b0a692c4c35145261202331f134d1043c2901f730273c89d8dda5c_a09f345a14f6bcaf.jpg",
+            "node_hash": "0336f6ff47ae616696b73b2da903d23ca5949ccdae85be18ec52d69ab4e25996",
+            "timestamp": "2026-09-16T20:13:32.891638",
+            "size_bytes": 220760,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-9d441b3343c907e0df0db2f9779a35d910cd631d3a70a9d1e0594e95405b953e_a6628673ef481d94.jpg",
+            "path": "./ViberDownloads/0-02-05-9d441b3343c907e0df0db2f9779a35d910cd631d3a70a9d1e0594e95405b953e_a6628673ef481d94.jpg",
+            "node_hash": "1554b3eb55f9d1fc28fc1fda30adef4bbebcc4b01170340f941fd7257fadcb84",
+            "timestamp": "2026-09-07T18:07:09.623003",
+            "size_bytes": 234350,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-9f042a3880575dd97784af04e9ad6d00a360463cfaa9ae115ce291fc740b12cd_b41a6901e156aae.jpg",
+            "path": "./ViberDownloads/0-02-05-9f042a3880575dd97784af04e9ad6d00a360463cfaa9ae115ce291fc740b12cd_b41a6901e156aae.jpg",
+            "node_hash": "fdf6fcde183f0838437de3b67d59a4825de9ea87bc245751508f142f17754a0d",
+            "timestamp": "2026-09-18T09:03:05.597061",
+            "size_bytes": 234861,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-a24f0984568051fdadd30d03c6f4aad49a5dca4264ebcd37287ad1c0a5eff484_a6e7192bff978bb6.jpg",
+            "path": "./ViberDownloads/0-02-05-a24f0984568051fdadd30d03c6f4aad49a5dca4264ebcd37287ad1c0a5eff484_a6e7192bff978bb6.jpg",
+            "node_hash": "b3465faabc1fc7dcb0965dc49bdc74a95ff675495c01e12724a7597950974aa0",
+            "timestamp": "2026-09-29T12:04:04.223515",
+            "size_bytes": 12493,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-a472100784bdd2ea56927b50425420309fabb2d869dd0e83c14d5674180bb0f2_9753ed0576814ebe.jpg",
+            "path": "./ViberDownloads/0-02-05-a472100784bdd2ea56927b50425420309fabb2d869dd0e83c14d5674180bb0f2_9753ed0576814ebe.jpg",
+            "node_hash": "b4cbe71f0ad59574fc9a835cb236ee356d51871760fc3ff4c4f1a716c10eb602",
+            "timestamp": "2026-09-18T09:03:52.596274",
+            "size_bytes": 227349,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-a5c22fbd8a602bb5ac4c9f3e0c944c1267183b39330f1fdd90f31e362fbd6fb1_1dc1062e89a84b4a.jpg",
+            "path": "./ViberDownloads/0-02-05-a5c22fbd8a602bb5ac4c9f3e0c944c1267183b39330f1fdd90f31e362fbd6fb1_1dc1062e89a84b4a.jpg",
+            "node_hash": "004794c8401a45ab5b6478952ac9c68c3a523eb4cdd781bfcde6c34370f3f526",
+            "timestamp": "2026-09-29T12:06:53.552015",
+            "size_bytes": 115608,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-ac322faddb16279b841c5d9010d89c02dcc68a89f8f153efb30fb8fc8492c818_db60273cf76b1aa9.jpg",
+            "path": "./ViberDownloads/0-02-05-ac322faddb16279b841c5d9010d89c02dcc68a89f8f153efb30fb8fc8492c818_db60273cf76b1aa9.jpg",
+            "node_hash": "238b213abf9d9dff4e3aed3a8e7827c38cc19bb68de7ab2205be01d0b5c9b37c",
+            "timestamp": "2026-10-09T19:31:55.608241",
+            "size_bytes": 256188,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-b4bb4df9de42632de046ae81b58e6e73aaf698d0782e878beafa7e47385d5136_55bc1e1c2de74e7.jpg",
+            "path": "./ViberDownloads/0-02-05-b4bb4df9de42632de046ae81b58e6e73aaf698d0782e878beafa7e47385d5136_55bc1e1c2de74e7.jpg",
+            "node_hash": "97e026c6ebfd1260b459b81203691e0979aef0ed793cbc2082dcc1a4222f6d1a",
+            "timestamp": "2026-09-20T12:14:11.789203",
+            "size_bytes": 211502,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-b5a867562f31dd4f006bb815b7b75490b55fcd3bf962ff9e8eaaaf0557bae033_53fbd9b8542aae10.jpg",
+            "path": "./ViberDownloads/0-02-05-b5a867562f31dd4f006bb815b7b75490b55fcd3bf962ff9e8eaaaf0557bae033_53fbd9b8542aae10.jpg",
+            "node_hash": "ea1ce80d29da721d3415004b62904f0e8c3ac3d5d357414692bbfdf1b3cd8a6b",
+            "timestamp": "2026-09-29T12:04:35.685978",
+            "size_bytes": 236136,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-b85bcf1c8a82b5ec3e774346a740763823cd5012e0fc409834bd99778717507e_efd1066bead1b3f9.jpg",
+            "path": "./ViberDownloads/0-02-05-b85bcf1c8a82b5ec3e774346a740763823cd5012e0fc409834bd99778717507e_efd1066bead1b3f9.jpg",
+            "node_hash": "203c635fd283d7e8185eb65e821579f1f054dfe1489f2ec41edacbecf3fc3bb5",
+            "timestamp": "2026-10-02T16:31:36.685801",
+            "size_bytes": 235889,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-bce4c3e03cdb9b30bac9a894504666de48434b45aadad815a52d43d723337e8f_566b75f651130af2.jpg",
+            "path": "./ViberDownloads/0-02-05-bce4c3e03cdb9b30bac9a894504666de48434b45aadad815a52d43d723337e8f_566b75f651130af2.jpg",
+            "node_hash": "1487a72a44d59f42ee0c2bda59cadb9922d25be6d0b60c453d882c2580784e13",
+            "timestamp": "2026-09-20T12:14:10.847927",
+            "size_bytes": 219717,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-c14cc75ff785491d8d7e6774d0f7215a90f423906a608179ccc46ac11f564aee_63305fd7517597e0.jpg",
+            "path": "./ViberDownloads/0-02-05-c14cc75ff785491d8d7e6774d0f7215a90f423906a608179ccc46ac11f564aee_63305fd7517597e0.jpg",
+            "node_hash": "305607f5a219e6c9ad58ecd58fcd569995023dd06cbb60dd21223c20aa08b470",
+            "timestamp": "2026-09-27T15:12:19.366683",
+            "size_bytes": 211060,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-cbc4b0a60b2850ed656e76630b95d30b791bc7735ebbf34a2d74618efc0bc58b_9c01edf03be50323.jpg",
+            "path": "./ViberDownloads/0-02-05-cbc4b0a60b2850ed656e76630b95d30b791bc7735ebbf34a2d74618efc0bc58b_9c01edf03be50323.jpg",
+            "node_hash": "6a12e2b44f314e5d5565aedd365bbbc6e6668566c557907fa38959a43782f8be",
+            "timestamp": "2026-10-09T19:31:58.500644",
+            "size_bytes": 116140,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-cd1d81829a3d5188d31f36399c38d4631899a22b2239b80c08ec3cd2a176721a_ff2c36c65dc84277.jpg",
+            "path": "./ViberDownloads/0-02-05-cd1d81829a3d5188d31f36399c38d4631899a22b2239b80c08ec3cd2a176721a_ff2c36c65dc84277.jpg",
+            "node_hash": "edd6cfda89ef7264a1aaa2ed61f4db714b53fb503344ba33a128757051b77fed",
+            "timestamp": "2026-10-09T21:23:52.769655",
+            "size_bytes": 214905,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-d203088c5b55286bc346bb4e467364e633fb6db033157f2664abb253bf5a3278_5efa3c86698df3ea.jpg",
+            "path": "./ViberDownloads/0-02-05-d203088c5b55286bc346bb4e467364e633fb6db033157f2664abb253bf5a3278_5efa3c86698df3ea.jpg",
+            "node_hash": "d7ea519feee51979a0d5fbc9ee686e02ff2b1c66650fa90ef147303abfa1ad8f",
+            "timestamp": "2026-09-16T20:17:02.963585",
+            "size_bytes": 241355,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-d5232a024b10aede0cb4f85174323a17d1b8a797956c6ceb60785bb99913a615_7e0359d33fd67ffd.jpg",
+            "path": "./ViberDownloads/0-02-05-d5232a024b10aede0cb4f85174323a17d1b8a797956c6ceb60785bb99913a615_7e0359d33fd67ffd.jpg",
+            "node_hash": "a80964efef3536ff243f43a9129bade575fe086b101c5874e700ba71d967aab9",
+            "timestamp": "2026-10-09T19:17:02.735223",
+            "size_bytes": 256294,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-d660a1e3d0b7b500aa22cb0d3f3a2cdfddcecc9ed4334c1ef414f4a46d60e652_27749ecbe4008fa3.jpg",
+            "path": "./ViberDownloads/0-02-05-d660a1e3d0b7b500aa22cb0d3f3a2cdfddcecc9ed4334c1ef414f4a46d60e652_27749ecbe4008fa3.jpg",
+            "node_hash": "1fa8dd9a984b44d44db6df287f89bb5aa4a7b45c078e8d69910a16c7f1e0a972",
+            "timestamp": "2026-09-13T04:04:35.907625",
+            "size_bytes": 220299,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-d80c9e3d0b5086c2bd59424a6e6b01bc426774ac70de61850786874061738cca_9fc5cdd496c13f3c.jpg",
+            "path": "./ViberDownloads/0-02-05-d80c9e3d0b5086c2bd59424a6e6b01bc426774ac70de61850786874061738cca_9fc5cdd496c13f3c.jpg",
+            "node_hash": "2775b058ec570128fe0238538eed95caf32bd1ef33573c6774b7b12c16029322",
+            "timestamp": "2026-09-20T12:14:11.409582",
+            "size_bytes": 254822,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-d8d047b81fd5c7833e805ea067c0f432c1ea5117c20f3875954ced7475018be6_749b6b244593833.jpg",
+            "path": "./ViberDownloads/0-02-05-d8d047b81fd5c7833e805ea067c0f432c1ea5117c20f3875954ced7475018be6_749b6b244593833.jpg",
+            "node_hash": "39ffb3c57958bda27d0cf94b7a62226a5c21753189e4b84b349a19ddd59ba8be",
+            "timestamp": "2026-10-09T19:16:27.990527",
+            "size_bytes": 225838,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-e02065b3629063f1a521963cb182c6f51200b789eb5b93dbaec758d367318366_11fd8b0a586fac2d.jpg",
+            "path": "./ViberDownloads/0-02-05-e02065b3629063f1a521963cb182c6f51200b789eb5b93dbaec758d367318366_11fd8b0a586fac2d.jpg",
+            "node_hash": "4707e311a0b5282e1e85b82ad6f07cec58063f8a6c6b9c7ee7652f6ef288b86c",
+            "timestamp": "2026-09-09T18:52:59.170056",
+            "size_bytes": 203896,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-e1185113e57237d4f0dbb4da03342cd9ba27433fa789012d4a94030031c085ca_4099111c94ee8001.jpg",
+            "path": "./ViberDownloads/0-02-05-e1185113e57237d4f0dbb4da03342cd9ba27433fa789012d4a94030031c085ca_4099111c94ee8001.jpg",
+            "node_hash": "71968d81fbc1e8656d96294f9503ddbc5c33e020ca7912a4b394c4f5133e0205",
+            "timestamp": "2026-10-09T21:46:48.158241",
+            "size_bytes": 212303,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-e8f25e00725d41c92ba7dcc55d81499cda3d831fc731ad718e88e28fa424dc2a_571c8c75ff3a0b7d.jpg",
+            "path": "./ViberDownloads/0-02-05-e8f25e00725d41c92ba7dcc55d81499cda3d831fc731ad718e88e28fa424dc2a_571c8c75ff3a0b7d.jpg",
+            "node_hash": "93ae1c5375aebf91e50c8332d190ba1fd5d3110cd467765063ce1c5e11a4be3a",
+            "timestamp": "2026-10-09T19:16:26.758641",
+            "size_bytes": 224581,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-eb48f0774ed0cd046641b68c59dd367541175642ae97d482aa75c68baa0f167f_274465cf00984ca5.jpg",
+            "path": "./ViberDownloads/0-02-05-eb48f0774ed0cd046641b68c59dd367541175642ae97d482aa75c68baa0f167f_274465cf00984ca5.jpg",
+            "node_hash": "15116459dccdb28645d68a4ef8c0c3950f1efc6f0ad1dc8c1553eead1224417f",
+            "timestamp": "2026-09-16T22:54:39.344683",
+            "size_bytes": 220421,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-ef55d286e5f8101842f36d82c6ed5672c2d2d58fe3fea4e9a4937bac704e4cc7_e3cfc47dd1b15703.jpg",
+            "path": "./ViberDownloads/0-02-05-ef55d286e5f8101842f36d82c6ed5672c2d2d58fe3fea4e9a4937bac704e4cc7_e3cfc47dd1b15703.jpg",
+            "node_hash": "e2bd75ac4a4f40170291a1723eba452478c7a517c0a7daef6e1f3446bdf43b93",
+            "timestamp": "2026-10-09T19:16:29.890744",
+            "size_bytes": 256342,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-f2d1ca4e1e91b399cff4d6bf14d857d4ede131c3353e239a1f3dabd154e68b06_7c1b9408860f4070.jpg",
+            "path": "./ViberDownloads/0-02-05-f2d1ca4e1e91b399cff4d6bf14d857d4ede131c3353e239a1f3dabd154e68b06_7c1b9408860f4070.jpg",
+            "node_hash": "418bfeed6823facb0b64a78f8165d99c848ae06d6b3227210b0738baf6db4ee4",
+            "timestamp": "2026-10-09T21:46:44.872421",
+            "size_bytes": 211124,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-f5367090d4bca8c14d1ff11fc8528473118095127276bdff669c17d61469c088_c9616fc8d6734949.jpg",
+            "path": "./ViberDownloads/0-02-05-f5367090d4bca8c14d1ff11fc8528473118095127276bdff669c17d61469c088_c9616fc8d6734949.jpg",
+            "node_hash": "b7e448113ec5db241a20bb49b9ef0bffc9d461d589dcdcf7459feaccb0e9591e",
+            "timestamp": "2026-09-18T09:04:32.803665",
+            "size_bytes": 226755,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-f737a1db82511be4e9fb1662dda4e7ef83dc806bf83342c0aa120b2fb1cd2999_54ef500aba16285a.jpg",
+            "path": "./ViberDownloads/0-02-05-f737a1db82511be4e9fb1662dda4e7ef83dc806bf83342c0aa120b2fb1cd2999_54ef500aba16285a.jpg",
+            "node_hash": "6223236213ae4c6b6a589cb78b5e13cbc7d10d5f88697515eb4b13f9547c6365",
+            "timestamp": "2026-09-27T15:08:34.442572",
+            "size_bytes": 251334,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-fb14b2be3e7cdd59b4e0c7c872c5d3201688701b789205037178a62736dacdec_5caff98d33c0746d.jpg",
+            "path": "./ViberDownloads/0-02-05-fb14b2be3e7cdd59b4e0c7c872c5d3201688701b789205037178a62736dacdec_5caff98d33c0746d.jpg",
+            "node_hash": "b35e0552ea5cad305a8d1de14db7586ddb2074c390000484f4f44706093e7c09",
+            "timestamp": "2026-10-09T19:16:27.378794",
+            "size_bytes": 162994,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-fbbace05f1a0b7d20c7112fffd0024e3cdfe846a51269195f29ee17808bf536c_ff7b17db1bc75b54.jpg",
+            "path": "./ViberDownloads/0-02-05-fbbace05f1a0b7d20c7112fffd0024e3cdfe846a51269195f29ee17808bf536c_ff7b17db1bc75b54.jpg",
+            "node_hash": "1ee25037a59d103c7b73ecaa184ee39835d98018a9824a08fd31411c032939e4",
+            "timestamp": "2026-09-20T12:14:09.121598",
+            "size_bytes": 195534,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "0-02-05-fe251457785bc9fb7cde4f13a20137d7ff638e3f8ee970cec6a7d2d5fdbf3ad6_76320ae0da0662ec.jpg",
+            "path": "./ViberDownloads/0-02-05-fe251457785bc9fb7cde4f13a20137d7ff638e3f8ee970cec6a7d2d5fdbf3ad6_76320ae0da0662ec.jpg",
+            "node_hash": "a4565584b1426c083591c8215412e309b706d8042f175d6060fd41e792fa0525",
+            "timestamp": "2026-10-09T21:24:05.408764",
+            "size_bytes": 253482,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "20251112151802229.semnat.zip",
+            "path": "./ViberDownloads/20251112151802229.semnat.zip",
+            "node_hash": "48aa876467496672fe8c828a8d6d5f3abe7a253cd85b0fba035ebce4e8d61e2a",
+            "timestamp": "2026-09-16T00:18:44.380398",
+            "size_bytes": 2764507,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "NOTIFICARE.pdf",
+            "path": "./ViberDownloads/NOTIFICARE.pdf",
+            "node_hash": "e03d8ab1cf7b120c9f237bf0acdcdcc5e25729bf71f998ad5eabdc8dfcdf0e16",
+            "timestamp": "2026-09-19T21:50:50.598459",
+            "size_bytes": 12576005,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "filename": "чеканы дело о 25 милионаз.pdf",
+            "path": "./ViberDownloads/чеканы дело о 25 милионаз.pdf",
+            "node_hash": "9f050edd0cf235342e40cc07f7eb1c42ea570e4025180691496d24ac79c63a6c",
+            "timestamp": "2026-09-18T12:18:34.521884",
+            "size_bytes": 78488,
+            "signature_ed25519": true,
+            "source": "ViberDownloads"
+        },
+        {
+            "previous_hash": "9f050edd0cf235342e40cc07f7eb1c42ea570e4025180691496d24ac79c63a6c",
+            "payload": {
+                "case_id": "JUS-COGENS-SUPERPOSITION-2026",
+                "document_ref": "jus-cogens-7.csv",
+                "jus_cogens_conclusion": "10. Недействительность договора, противоречащего императивной норме",
+                "vienna_convention": "Ст. 53: договор недействителен, если противоречит jus cogens",
+                "udhr_article": "Ст. 3: право на жизнь и свободу",
+                "superposition_meaning": "Любой договор, нарушающий базовые права, «коллапсирует» и теряет силу.",
+                "registration_date": "2026-10-09T19:33:31.535979Z",
+                "protocol": "A©tor Key / TI-ULA Jurisprudence"
+            },
+            "node_hash": "7e031dc28b2038a5f0c50ede06ad5511876efb47c527bf04b924999e0c95cafb",
+            "signature_ed25519": "verified_jus_cogens_matrix"
+        },
+        {
+            "previous_hash": "7e031dc28b2038a5f0c50ede06ad5511876efb47c527bf04b924999e0c95cafb",
+            "payload": {
+                "case_id": "JUS-COGENS-SUPERPOSITION-2026",
+                "document_ref": "jus-cogens-7.csv",
+                "jus_cogens_conclusion": "11. Делимость положений",
+                "vienna_convention": "Ст. 44: делимость договорных положений",
+                "udhr_article": "Ст. 4–5: запрет рабства и пыток",
+                "superposition_meaning": "Попытка сохранить часть договора невозможна, если она затрагивает фундаментальные права.",
+                "registration_date": "2026-10-09T19:33:31.536066Z",
+                "protocol": "A©tor Key / TI-ULA Jurisprudence"
+            },
+            "node_hash": "7a1f4986f7c69170ec979f481393ad21929165c5e74674266cfd48afbdd0867c",
+            "signature_ed25519": "verified_jus_cogens_matrix"
+        },
+        {
+            "previous_hash": "7a1f4986f7c69170ec979f481393ad21929165c5e74674266cfd48afbdd0867c",
+            "payload": {
+                "case_id": "JUS-COGENS-SUPERPOSITION-2026",
+                "document_ref": "jus-cogens-7.csv",
+                "jus_cogens_conclusion": "12. Устранение последствий недействительного договора",
+                "vienna_convention": "Ст. 69: последствия недействительности",
+                "udhr_article": "Ст. 8: право на восстановление в правах",
+                "superposition_meaning": "Все акты, совершённые на основании ничтожного договора, должны быть устранены.",
+                "registration_date": "2026-10-09T19:33:31.536087Z",
+                "protocol": "A©tor Key / TI-ULA Jurisprudence"
+            },
+            "node_hash": "34707bc6ee7ca724769af3b27ae474af863de02c12def98e6a7ad539f426b4c2",
+            "signature_ed25519": "verified_jus_cogens_matrix"
+        },
+        {
+            "previous_hash": "34707bc6ee7ca724769af3b27ae474af863de02c12def98e6a7ad539f426b4c2",
+            "payload": {
+                "case_id": "JUS-COGENS-SUPERPOSITION-2026",
+                "document_ref": "jus-cogens-7.csv",
+                "jus_cogens_conclusion": "13. Воздействие на оговорки",
+                "vienna_convention": "Ст. 19–21: оговорки и их пределы",
+                "udhr_article": "Ст. 2: равенство прав без различий",
+                "superposition_meaning": "Оговорка не может исключить действие нормы высшего порядка — права человека остаются неизменными.",
+                "registration_date": "2026-10-09T19:33:31.536107Z",
+                "protocol": "A©tor Key / TI-ULA Jurisprudence"
+            },
+            "node_hash": "6bb5e190ed76428f019dcb83f654e3536c2addadbc42ef69855df1b73c3ed302",
+            "signature_ed25519": "verified_jus_cogens_matrix"
+        },
+        {
+            "previous_hash": "6bb5e190ed76428f019dcb83f654e3536c2addadbc42ef69855df1b73c3ed302",
+            "payload": {
+                "case_id": "JUS-COGENS-SUPERPOSITION-2026",
+                "document_ref": "jus-cogens-7.csv",
+                "jus_cogens_conclusion": "17. Резолюции международных организаций",
+                "vienna_convention": "Ст. 5: договоры в рамках организаций",
+                "udhr_article": "Ст. 30: недопустимость уничтожения прав",
+                "superposition_meaning": "Даже резолюции Совбеза ООН ничтожны, если они противоречат правам человека.",
+                "registration_date": "2026-10-09T19:33:31.536121Z",
+                "protocol": "A©tor Key / TI-ULA Jurisprudence"
+            },
+            "node_hash": "dbba8e054d1b92ca8479ce1a706a3622d948a9e44a581845947fb6df4aa2f10e",
+            "signature_ed25519": "verified_jus_cogens_matrix"
+        },
+        {
+            "previous_hash": "dbba8e054d1b92ca8479ce1a706a3622d948a9e44a581845947fb6df4aa2f10e",
+            "payload": {
+                "case_id": "JUS-COGENS-SUPERPOSITION-2026",
+                "document_ref": "jus-cogens-7.csv",
+                "jus_cogens_conclusion": "18. Обязательства erga omnes",
+                "vienna_convention": "Ст. 60: прекращение договора при нарушении",
+                "udhr_article": "Ст. 1: все люди рождаются свободными и равными",
+                "superposition_meaning": "Нарушение прав человека касается всех государств — обязательство универсально.",
+                "registration_date": "2026-10-09T19:33:31.536136Z",
+                "protocol": "A©tor Key / TI-ULA Jurisprudence"
+            },
+            "node_hash": "eeac4ca6eb24a261d7c6c2e6eb9e26fe0b97e649566d2f921338750322bad5a4",
+            "signature_ed25519": "verified_jus_cogens_matrix"
+        },
+        {
+            "previous_hash": "eeac4ca6eb24a261d7c6c2e6eb9e26fe0b97e649566d2f921338750322bad5a4",
+            "payload": {
+                "case_id": "JUS-COGENS-SUPERPOSITION-2026",
+                "document_ref": "jus-cogens-7.csv",
+                "jus_cogens_conclusion": "23. Недопустимость ссылки на должность и иммунитет",
+                "vienna_convention": "Ст. 7–8: полномочия и ответственность",
+                "udhr_article": "Ст. 6: право на признание правосубъектности",
+                "superposition_meaning": "Иммунитет не спасает от ответственности за нарушение фундаментальных прав.",
+                "registration_date": "2026-10-09T19:33:31.536153Z",
+                "protocol": "A©tor Key / TI-ULA Jurisprudence"
+            },
+            "node_hash": "556478705b0f3d0206fcf21911c8a9df505a58463e1dd1346fd24f26be8ec26c",
+            "signature_ed25519": "verified_jus_cogens_matrix"
+        }
+    ]
 }

@@ -123,10 +123,15 @@ def dispatch_document(doc_path, category="JUDICIAL", dry_run=True):
 
 if __name__ == "__main__":
     print("--- ERGA OMNES MAIL DISPATCHER & EVIDENCE GATEWAY ---")
+    execute_mode = "--execute" in sys.argv
     sample_doc = os.path.join(
         DEFAULT_DOWNLOADS, "⚖ Ator Declaration_Casatia Lege.подписан.pdf"
     )
+    if not os.path.exists(sample_doc):
+        # Fallback to local test document or public PDF if sample not in Downloads
+        sample_doc = "court_dashboard.html"
+
     if os.path.exists(sample_doc):
-        dispatch_document(sample_doc, category="JUDICIAL", dry_run=True)
+        dispatch_document(sample_doc, category="JUDICIAL", dry_run=not execute_mode)
     else:
-        print("[*] Sample document not found in Downloads, running status check.")
+        print("[*] Sample document not found, running status check.")

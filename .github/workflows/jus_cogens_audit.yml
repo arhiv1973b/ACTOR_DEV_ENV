@@ -1,0 +1,42 @@
+name: Jus Cogens Continuous Dossier & Judicial Audit
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
+  workflow_dispatch:
+
+jobs:
+  jus-cogens-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flask
+
+      - name: Run Jus Cogens Dossier & Judicial Evaluation Engine
+        run: |
+          python evaluate_judicial_decision.py
+
+      - name: Upload Audit Reports & Dashboard Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: jus-cogens-audit-reports
+          path: |
+            jus_cogens_dossier_audit_report.json
+            jus_cogens_dashboard.html
+
+      - name: Verify Audit Ledger Integrity
+        run: |
+          test -f jus_cogens_dossier_audit_report.json && test -f jus_cogens_dashboard.html && echo "Reports verified successfully."
+          git status

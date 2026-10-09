@@ -233,3 +233,19 @@
         }
     ]
 }
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791451465.25183",
+    "event":  "system_reboot"
+}
+{"event": "JUS_COGENS_JUDICIAL_EVALUATION", "timestamp": "2026-10-08T19:10:01.471387+00:00", "document_title": "Ordonanța Judecătoria Chișinău / Fabricated Fine & Asset Freeze", "status": "VALID", "violations_detected": [], "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)", "actor_recognition": "Individual active standing under Art. 60"}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791531958.13332",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791592638.13503",
+    "event":  "system_reboot"
+}

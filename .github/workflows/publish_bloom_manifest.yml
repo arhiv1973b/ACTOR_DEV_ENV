@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Compute SHA-256 and update manifest with links
         run: |
@@ -23,13 +25,15 @@ jobs:
           echo "| File | SHA-256 | Link |" >> Bloom_Exports_Manifest.md
           echo "|------|---------|------|" >> Bloom_Exports_Manifest.md
 
-          for f in exports/*.png exports/*.svg; do
-            if [ -f "$f" ]; then
-              HASH=$(sha256sum "$f" | awk '{print $1}')
-              LINK="https://arhiv1973b.github.io/ACTOR_DEV_ENV/$f"
-              echo "| $f | $HASH | [View]($LINK) |" >> Bloom_Exports_Manifest.md
-            fi
-          done
+          if [ -d "exports" ]; then
+            for f in exports/*.png exports/*.svg; do
+              if [ -f "$f" ]; then
+                HASH=$(sha256sum "$f" | awk '{print $1}')
+                LINK="https://arhiv1973b.github.io/ACTOR_DEV_ENV/$f"
+                echo "| $f | $HASH | [View]($LINK) |" >> Bloom_Exports_Manifest.md
+              fi
+            done
+          fi
 
       - name: Configure GPG
         run: |
