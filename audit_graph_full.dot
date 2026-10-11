@@ -5,9 +5,9 @@ digraph ApostilleAuditMaster {
     node [shape=box, style="filled,rounded", fontname="Arial", fontsize=10];
     edge [fontname="Arial", fontsize=8];
 
-    # ==========================================
-    # VALID NODES (Full Identification Chain)
-    # ==========================================
+    // ==========================================
+    // VALID NODES (Full Identification Chain)
+    // ==========================================
     subgraph cluster_valid {
         label="VALID APOSTILLES\n(Fully Identified Signatories / Legal Certainty)";
         style="dashed,bold";
@@ -18,21 +18,21 @@ digraph ApostilleAuditMaster {
         VALID_9T3M953ZBUHO4 [label="9T3M953ZBUHO4\n[VALID]\nSigner: Guzun Corneliu\nCase: 29244", fillcolor="#c8e6c9", color="#2e7d32"];
     }
 
-    # ==========================================
-    # DEFECTIVE NODES (Captured State / Anonymized)
-    # ==========================================
+    // ==========================================
+    // DEFECTIVE NODES (Captured State / Anonymized)
+    // ==========================================
     subgraph cluster_defective {
         label="DEFECTIVE APOSTILLES (13 Archive Nodes)\n(Anonymized Signature / Captured State Anomalies / Jus Cogens Defect)";
         style="dashed,bold";
         color="darkred";
         bgcolor="#fff0f0";
 
-        # Primary Exemplars
+        // Primary Exemplars
         DEF_68_DFVMD2FQLW5N3 [label="#68 | DFVMD2FQLW5N3\n[DEFECTIVE]\nRegistry: semnătura indescifrabilă\nSource Doc: Maia Flenchea (Physical)", fillcolor="#ffcdd2", color="#c62828"];
         DEF_36_DLTP7B8ZHWGQ7 [label="#36 | DLTP7B8ZHWGQ7\n[DEFECTIVE]\nRegistry: unclear signature\nCase: 1-989/06", fillcolor="#ffcdd2", color="#c62828"];
         DEF_41_CG0T6Y1TBUEL7 [label="#41 | CG0T6Y1TBUEL7\n[DEFECTIVE]\nRegistry: unclear signature\nSec: 2013074491511", fillcolor="#ffcdd2", color="#c62828"];
 
-        # Additional 10 Archive Defective Nodes
+        // Additional 10 Archive Defective Nodes
         DEF_69_IMTQ930Z8U4N7 [label="#69 | IMTQ930Z8U4N7\n[DEFECTIVE]\nRegistry: unclear signature\nSHA256: 87797efa...", fillcolor="#ffe0b2", color="#e65100"];
         DEF_70_HQ7X9W62GUJL9 [label="#70 | HQ7X9W62GUJL9\n[DEFECTIVE]\nRegistry: unclear signature\nSHA256: c0abbc94...", fillcolor="#ffe0b2", color="#e65100"];
         DEF_71_BS7XCZF1EUJG3 [label="#71 | BS7XCZF1EUJG3\n[DEFECTIVE]\nRegistry: unclear signature\nSHA256: d282b3de...", fillcolor="#ffe0b2", color="#e65100"];
@@ -45,13 +45,35 @@ digraph ApostilleAuditMaster {
         DEF_96_IHW093CZ8U8R7 [label="#96 | IHW093CZ8U8R7\n[DEFECTIVE]\nRegistry: unclear signature\nSHA256: 6ce1d06a...", fillcolor="#ffe0b2", color="#e65100"];
     }
 
-    # ==========================================
-    # AUDIT RELATIONSHIPS & CONTRADICTIONS
-    # ==========================================
+    // ==========================================
+    // VISUAL LEGEND SUBGRAPH
+    // ==========================================
+    subgraph cluster_legend {
+        label="EXPLANATORY LEGEND / AUDIT ARCHITECTURE";
+        style="solid,bold";
+        color="black";
+        bgcolor="#fcfcfc";
+
+        node [shape=plaintext, fontsize=9, fontname="Arial"];
+
+        LEGEND_BOX [label=<
+            <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+              <TR><TD BGCOLOR="#c8e6c9"><B>VALID Node</B></TD><TD>Full identification chain; signer and officer verified (Hague Art. 3 compliant).</TD></TR>
+              <TR><TD BGCOLOR="#ffcdd2"><B>DEFECTIVE Primary</B></TD><TD>Core exemplar with physical signature present but anonymized in registry.</TD></TR>
+              <TR><TD BGCOLOR="#ffe0b2"><B>DEFECTIVE Archive</B></TD><TD>10 additional archive nodes with SHA-256 anchors and 'unclear signature' defect.</TD></TR>
+              <TR><TD><FONT COLOR="blue"><B>Solid Blue Edge</B></FONT></TD><TD>Audit contrast: direct comparison between valid identification and state masking.</TD></TR>
+              <TR><TD><FONT COLOR="red"><B>Dotted Red Edge</B></FONT></TD><TD>Systemic pattern linking captured state anomalies across the archive.</TD></TR>
+            </TABLE>
+        >];
+    }
+
+    // ==========================================
+    // AUDIT RELATIONSHIPS & CONTRADICTIONS
+    // ==========================================
     VALID_9OVS71FRKM4S3 -> DEF_68_DFVMD2FQLW5N3 [label="Audit Contrast: Full Name vs. Anonymized", color="blue", style="bold"];
     VALID_9T3M953ZBUHO4 -> DEF_36_DLTP7B8ZHWGQ7 [label="Audit Contrast: Verified Signer vs. Masked", color="blue", style="bold"];
 
-    # Shared Structural Defect Cluster Connections
+    // Shared Structural Defect Cluster Connections
     DEF_68_DFVMD2FQLW5N3 -> DEF_69_IMTQ930Z8U4N7 [style="dotted", color="red", label="Systemic Pattern"];
     DEF_68_DFVMD2FQLW5N3 -> DEF_70_HQ7X9W62GUJL9 [style="dotted", color="red"];
     DEF_68_DFVMD2FQLW5N3 -> DEF_71_BS7XCZF1EUJG3 [style="dotted", color="red"];
