@@ -1,0 +1,11 @@
+{
+  "framework": "TI-ULA (Transcendent Integrity - Universal Legal Architecture)",
+  "case": "CASE-MACHERET-1997-2026",
+  "actor": "Alexei Macheret (A©tor)",
+  "idnp": "2000001159655",
+  "transliterations": ["MACERET", "MACHERET", "Мачерет"],
+  "signature_standard": "Ed25519 / GPG Clearsign SHA256",
+  "key_id": "87B7956E898ED56D74EDD1D05B1948C896CCCECE",
+  "status": "VERIFIED & ANCHORED",
+  "jurisdiction": "Jus Cogens & Erga Omnes"
+}
