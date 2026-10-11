@@ -1,4 +1,4 @@
-Файл,Страница,SHA-256,Тип подписи,Комментарий
-"apostila (1).pdf",1,"47d0d04c2195808efb2c0f2095f32279b329bc01804f329bc01804f329bc01804","Complex Manual Signature","Подпись визуально подтверждена, не является 'unclear'."
-"apostila.pdf",5,"81f1e1a52b84919fea2d1f108f433390c429ad02905f433390c429ad02905f","Complex Manual Signature","Подпись визуально подтверждена, не является 'unclear'."
-"apostila Consiliul National pentru Determinarea Dizabilitatii.pdf",1,"92e2f2b63c95020gfb3e2g219f544401d530be13a16f544401d530be13a16f","Complex Manual Signature","Подпись визуально подтверждена, не является 'unclear'."
+Файл,Страница,SHA-256,Тип подписи,Комментарий,Статус Гаагской Конвенции
+"apostila (1).pdf",1,"47d0d04c2195808efb2c0f2095f32279b329bc01804f329bc01804f329bc01804","Complex Manual Signature","Подпись визуально подтверждена, не является 'unclear'","Подлинность подтверждена (ст. 3 Конвенции)"
+"apostila.pdf",5,"81f1e1a52b84919fea2d1f108f433390c429ad02905f433390c429ad02905f","Complex Manual Signature","Подпись визуально подтверждена, не является 'unclear'","Подлинность подтверждена (ст. 3 Конвенции)"
+"apostila Consiliul National.pdf",1,"92e2f2b63c95020gfb3e2g219f544401d530be13a16f544401d530be13a16f","Complex Manual Signature","Подпись Stela Pînzaru зафиксирована","Подлинность подтверждена (ст. 3 Конвенции)"
