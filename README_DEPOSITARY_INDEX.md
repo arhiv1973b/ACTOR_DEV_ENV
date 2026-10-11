@@ -1,12 +1,11 @@
-# ⚖️ ACTOR_MASTER_EVIDENCE_PACKAGE_1997-2026
-
-## Depositary Index & Master Manifest
-
-This package represents the complete, cryptographically secured, and verified master evidence package for **Case-Macheret-1997-2026**, operating under the sovereign authority of **A©tor** (`A©TOR_KEY="# [⚖ A©tor Declaration]"`) and the principles of **Jus Cogens & Erga Omnes**.
+# ACTOR_MASTER_EVIDENCE_PACKAGE (1997–2026)
+**Framework:** TI-ULA (Transcendent Integrity - Universal Legal Architecture)  
+**Subject:** A©tor (IDNP: 2000001159655)  
+**Legal Standard:** Jus Cogens, Erga Omnes, Hague Convention 1961, ECHR Art. 3 & 5, ICCPR.
 
 ---
 
-## Directory Structure
+## Structure & Contents
 
 ```text
 ACTOR_MASTER_EVIDENCE_PACKAGE_1997-2026/
@@ -45,10 +44,7 @@ ACTOR_MASTER_EVIDENCE_PACKAGE_1997-2026/
 └── README_DEPOSITARY_INDEX.md                  # Главный сопроводительный паспорт пакета
 ```
 
----
-
-## Verification & Integrity Standards
-
-- **Cryptographic Anchor:** SHA-256 and GPG key `F54CD174314CE6FA383916E4C84F7CC81D40EEC9` (`arhiv1973b <arhiv240@gmail.com>`).
-- **Legal Force:** Enforced under Hague Convention 1961, UDHR 1948, Rome Statute Art. 17, and Jus Cogens anti-torture and rehabilitation mandates.
-- **Revocation Policy:** Any deviation from Jus Cogens norms nullifies delegated agent rights and rolls back calculations to the penultimate valid state.
+## Verification & Integrity
+- All evidence files are immutably anchored via SHA-256 hashes and signed under GPG/Ed25519.
+- Verified against unlawful procedural obstacles, artificial IDNP transliteration collisions (`MACERET` vs `MACHERET`), and administrative concealments in Moldovan courts (Curtea de Apel Chișinău, Judecătoria Chișinău sediul Centru).
+- Public Repository Mirror: `https://arhiv1973b.github.io/apostille-archive-english/`
