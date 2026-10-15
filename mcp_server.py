@@ -46,6 +46,11 @@ def get_daily_escalation_report():
     """Returns daily load and escalation statistics report grouped by date."""
     return db_manager.get_daily_load_report()
 
+@mcp.tool()
+def get_weekly_escalation_report():
+    """Returns aggregated weekly cohort report for analyzing escalation trends."""
+    return db_manager.get_weekly_load_report()
+
 # Запуск в тихом режиме
 if __name__ == "__main__":
     mcp.run()

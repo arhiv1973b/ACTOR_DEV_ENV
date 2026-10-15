@@ -264,6 +264,84 @@ class DatabaseManager:
             """)
             return [dict(row) for row in cursor.fetchall()]
 
+    def get_weekly_load_report(self) -> list:
+        """Возвращает агрегированный отчет за неделю (или когорты по неделям) для анализа трендов эскалаций."""
+        with self.lock, self.get_connection() as conn:
+            cursor = conn.execute("""
+                SELECT 
+                    strftime('%Y-%W', updated_at) AS weekly_cohort,
+                    MIN(updated_at) AS cohort_start,
+                    MAX(updated_at) AS cohort_end,
+                    COUNT(*) AS total_processed,
+                    SUM(CASE WHEN json_extract(metadata, '$.escalated') IN ('true', 1) THEN 1 ELSE 0 END) AS escalated_count,
+                    ROUND(
+                        100.0 * SUM(CASE WHEN json_extract(metadata, '$.escalated') IN ('true', 1) THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0), 
+                        2
+                    ) AS escalation_percentage,
+                    ROUND(AVG(CAST(json_extract(metadata, '$.initial_confidence') AS REAL)), 3) AS avg_initial_confidence,
+                    ROUND(
+                        AVG(
+                            CASE 
+                                WHEN json_extract(metadata, '$.escalated') IN ('true', 1) 
+                                THEN CAST(json_extract(metadata, '$.initial_confidence') AS REAL) 
+                            END
+                        ), 3
+                    ) AS avg_confidence_on_escalated
+                FROM files
+                WHERE status = 'COMPLETED'
+                GROUP BY weekly_cohort
+                ORDER BY weekly_cohort ASC;
+            """)
+            return [dict(row) for row in cursor.fetchall()]
+
+    def get_monthly_load_report(self) -> list:
+        """Возвращает агрегированный отчет за месяц для анализа широкой динамики эскалаций."""
+        with self.lock, self.get_connection() as conn:
+            cursor = conn.execute("""
+                SELECT 
+                    strftime('%Y-%m', updated_at) AS monthly_cohort,
+                    MIN(updated_at) AS cohort_start,
+                    MAX(updated_at) AS cohort_end,
+                    COUNT(*) AS total_processed,
+                    SUM(CASE WHEN json_extract(metadata, '$.escalated') IN ('true', 1) THEN 1 ELSE 0 END) AS escalated_count,
+                    ROUND(
+                        100.0 * SUM(CASE WHEN json_extract(metadata, '$.escalated') IN ('true', 1) THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0), 
+                        2
+                    ) AS escalation_percentage,
+                    ROUND(AVG(CAST(json_extract(metadata, '$.initial_confidence') AS REAL)), 3) AS avg_initial_confidence,
+                    ROUND(
+                        AVG(
+                            CASE 
+                                WHEN json_extract(metadata, '$.escalated') IN ('true', 1) 
+                                THEN CAST(json_extract(metadata, '$.initial_confidence') AS REAL) 
+                            END
+                        ), 3
+                    ) AS avg_confidence_on_escalated
+                FROM files
+                WHERE status = 'COMPLETED'
+                GROUP BY monthly_cohort
+                ORDER BY monthly_cohort ASC;
+            """)
+            return [dict(row) for row in cursor.fetchall()]
+
+    def get_category_distribution_report(self) -> list:
+        """Возвращает распределение обработанных файлов по категориям (классификации)."""
+        with self.lock, self.get_connection() as conn:
+            cursor = conn.execute("""
+                SELECT 
+                    COALESCE(classification, 'uncategorized') AS category,
+                    COUNT(*) AS count,
+                    ROUND(
+                        100.0 * COUNT(*) / NULLIF((SELECT COUNT(*) FROM files WHERE status = 'COMPLETED'), 0), 
+                        2
+                    ) AS percentage
+                FROM files
+                WHERE status = 'COMPLETED'
+                GROUP BY category
+                ORDER BY count DESC;
+            """)
+            return [dict(row) for row in cursor.fetchall()]
+
 
 class DiskScanner:
     r"""Сканировщик диска (I/O Worker) с поддержкой Lazy Hashing и Retry Policy для F:\ (Google Drive)."""
