@@ -19,10 +19,15 @@ import threading
 import logging
 import time
 import re
+import traceback
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, Generator, Optional, Tuple
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import (
+    ThreadPoolExecutor,
+    as_completed,
+    TimeoutError as FuturesTimeoutError,
+)
 
 # Ensure proper UTF-8 handling for standard output/logging on Windows / diacritics
 if sys.platform == "win32":
@@ -342,6 +347,47 @@ class DatabaseManager:
             """)
             return [dict(row) for row in cursor.fetchall()]
 
+    def get_queue_stats(self) -> dict:
+        """Возвращает текущую статистику очереди по статусам (PENDING, PROCESSING, COMPLETED, FAILED)."""
+        with self.lock, self.get_connection() as conn:
+            cursor = conn.execute("""
+                SELECT status, COUNT(*) as count 
+                FROM files 
+                GROUP BY status;
+            """)
+            stats = {row["status"]: row["count"] for row in cursor.fetchall()}
+            total_cursor = conn.execute("SELECT COUNT(*) FROM files;")
+            total_files = total_cursor.fetchone()[0]
+            return {
+                "total_files": total_files,
+                "pending": stats.get("PENDING", 0),
+                "processing": stats.get("PROCESSING", 0),
+                "completed": stats.get("COMPLETED", 0),
+                "failed": stats.get("FAILED", 0),
+                "timestamp": datetime.now().isoformat(),
+            }
+
+
+def save_progress_report(
+    db: DatabaseManager, report_path: str = "progress_report.json"
+) -> dict:
+    stats = db.get_queue_stats()
+    path = Path(report_path)
+    reports = []
+    if path.exists():
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                reports = json.load(f)
+                if not isinstance(reports, list):
+                    reports = [reports]
+        except:
+            reports = []
+    reports.append(stats)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(reports, f, ensure_ascii=False, indent=4)
+    logger.info(f"Progress report saved to {path}: {stats}")
+    return stats
+
 
 class DiskScanner:
     r"""Сканировщик диска (I/O Worker) с поддержкой Lazy Hashing и Retry Policy для F:\ (Google Drive)."""
@@ -383,10 +429,13 @@ class DiskScanner:
     def scan(self):
         logger.info(f"Starting lazy disk scan on: {self.root_path}")
         count = 0
+        cloud_stubs = {".gdoc", ".gsheet", ".gslides", ".gform"}
         try:
             for entry in self._iter_dir(self.root_path):
                 if entry.is_file():
                     path_str = str(entry.path)
+                    if Path(path_str).suffix.lower() in cloud_stubs:
+                        continue  # Игнорируем облачные ярлыки Google Workspace (.gdoc, .gsheet и др.)
                     try:
                         stat = entry.stat()
                         size = stat.st_size
@@ -405,13 +454,15 @@ class DiskScanner:
         logger.info(f"Lazy disk scan completed. Total files registered: {count}")
 
     def _iter_dir(self, path: Path) -> Generator[os.DirEntry, None, None]:
+        cloud_stubs = {".gdoc", ".gsheet", ".gslides", ".gform", ".gshortcut"}
         try:
             with os.scandir(path) as scanner:
                 for entry in scanner:
                     if entry.is_dir(follow_symlinks=False):
                         yield from self._iter_dir(Path(entry.path))
                     else:
-                        yield entry
+                        if Path(entry.name).suffix.lower() not in cloud_stubs:
+                            yield entry
         except PermissionError:
             logger.warning(f"Permission denied: {path}")
         except Exception as e:
@@ -456,21 +507,24 @@ class InferenceOrchestrator:
 
 
 class DriveWorkerPool:
-    r"""Пул воркеров с многоязычным коммутатором, расширенными критическими ключевыми словами и ленивым хэшированием."""
+    r"""Пул воркеров с таймаутом задачи (Timeout Guard), многоязычным коммутатором, расширенными критическими ключевыми словами и ленивым хэшированием."""
 
     def __init__(
         self,
         db_manager: DatabaseManager,
         orchestrator: InferenceOrchestrator,
-        max_workers: int = 4,
+        max_workers: int = 2,
+        task_timeout: int = 60,
     ):
         self.db = db_manager
         self.orchestrator = orchestrator
         self.max_workers = max_workers
+        self.task_timeout = task_timeout
         self.scanner = DiskScanner(
             "", db_manager
         )  # Для доступа к репликации хэша/retry
         self.heavy_extensions = {".pdf", ".docx", ".doc", ".json", ".db", ".sqlite"}
+        self.cloud_stubs = {".gdoc", ".gsheet", ".gslides", ".gform"}
 
         # Расширенный словарь критических терминов (включая румынские юридические и административные)
         self.critical_keywords = {
@@ -506,12 +560,16 @@ class DriveWorkerPool:
             return True
         return False
 
-    def process_file_task(self, file_item: dict, worker_id: str):
+    def process_file_task(self, file_item: dict, worker_id: str = "worker-1"):
         path = file_item["path"]
+        if Path(path).suffix.lower() in self.cloud_stubs:
+            return  # Пропускаем облачные ярлыки Google Workspace (.gdoc, .gsheet и др.)
         if not self.db.acquire_lock(path, worker_id):
             return  # Уже обрабатывается другим воркером
 
-        try:
+        print(f"[{worker_id}] START processing: {path}")
+
+        def _execute_pipeline():
             # Отложенное вычисление SHA-256 (Lazy Hashing при переходе в активную обработку)
             file_sha256 = file_item.get("sha256")
             if not file_sha256:
@@ -570,22 +628,58 @@ class DriveWorkerPool:
                 except:
                     pass
 
-            self.db.release_lock(
-                path,
-                worker_id,
-                status="COMPLETED",
-                classification=classification,
-                metadata={
+            return {
+                "classification": classification,
+                "metadata": {
                     "language": lang_code,
                     "model_used": model_used,
                     "initial_confidence": confidence,
                     "escalated": needs_escalation,
                     "raw_response": final_response,
                 },
+            }
+
+        with ThreadPoolExecutor(max_workers=1) as executor:
+            future = executor.submit(_execute_pipeline)
+            try:
+                res = future.result(timeout=self.task_timeout)
+                self.db.release_lock(
+                    path,
+                    worker_id,
+                    status="COMPLETED",
+                    classification=res["classification"],
+                    metadata=res["metadata"],
+                )
+                print(f"[{worker_id}] COMPLETED: {path}")
+
+            except FuturesTimeoutError:
+                err_msg = f"TIMEOUT: Task exceeded {self.task_timeout}s limit"
+                print(f"[!] {worker_id} ERROR on {path}: {err_msg}")
+                self._mark_as_failed(path, err_msg, worker_id)
+
+            except Exception as e:
+                err_msg = f"{type(e).__name__}: {str(e)}"
+                print(
+                    f"[!] {worker_id} ERROR on {path}: {err_msg}\n{traceback.format_exc()}"
+                )
+                self._mark_as_failed(path, err_msg, worker_id)
+
+    def _mark_as_failed(self, path, error_reason, worker_id):
+        try:
+            with self.db.get_connection() as conn:
+                conn.execute(
+                    "DELETE FROM file_locks WHERE path = ? AND worker_id = ?",
+                    (path, worker_id),
+                )
+                conn.execute(
+                    "UPDATE files SET status = 'FAILED', metadata = ?, updated_at = CURRENT_TIMESTAMP WHERE path = ?",
+                    (json.dumps({"error": error_reason}, ensure_ascii=False), path),
+                )
+                conn.commit()
+        except Exception as db_err:
+            logger.error(
+                f"[!] Critical DB error while marking task as FAILED: {db_err}"
             )
-        except Exception as e:
-            logger.error(f"Worker {worker_id} error processing {path}: {e}")
-            self.db.release_lock(path, worker_id, status="FAILED")
 
     def run_pool(self, batch_limit: int = 200):
         pending = self.db.get_pending_files(batch_limit)
