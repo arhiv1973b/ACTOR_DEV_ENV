@@ -169,7 +169,7 @@
     "message":  "System rebooted. Gemini CLI auto-audit activated.",
     "timestamp":  "1791277776.21949",
     "event":  "system_reboot"
-},
+}
 {
     "event": "LIVE_SMTP_DISPATCH_DSN_CORRECTED",
     "case_id": "1-26114218-12-10-09092026-1",
