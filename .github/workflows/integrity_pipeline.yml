@@ -48,7 +48,7 @@ jobs:
           echo "Validated $JSON_COUNT JSON/NDJSON files successfully."
           echo "JSON_COUNT=$JSON_COUNT" >> $GITHUB_ENV
 
-      - name: Step 4 - Generate Comprehensive Audit Summary with Temporal Analysis (integrity-summary.md)
+      - name: Step 4 - Generate Comprehensive Audit Summary with ASCII Trend Chart (integrity-summary.md)
         if: always()
         run: |
           python3 -c '
@@ -87,7 +87,7 @@ jobs:
           else:
               mismatch_section = "## ⚠️ Detected SHA-256 Hash Mismatches\nNo hash mismatches detected ✅"
 
-          # Audit Log Events aggregation & Temporal Analysis
+          # Audit Log Events aggregation & Temporal Analysis & ASCII Chart
           audit_log_path = Path("audit_log.json")
           total_audit_events = 0
           system_reboots = 0
@@ -135,6 +135,16 @@ jobs:
           timeline_rows = [f"| `{date}` | {cnt} |" for date, cnt in sorted(timeline_counts.items(), reverse=True)]
           timeline_table = "| Date (UTC) | Event Count |\n|:---|:---|\n" + ("\n".join(timeline_rows) if timeline_rows else "| (No timestamps) | 0 |")
 
+          # ASCII Trend Chart Generation
+          max_count = max(timeline_counts.values()) if timeline_counts else 1
+          bar_max_width = 30
+          ascii_lines = []
+          for date_str, cnt in sorted(timeline_counts.items()):
+              bar_len = int((cnt / max_count) * bar_max_width) if max_count > 0 else 0
+              bar = "█" * bar_len
+              ascii_lines.append(f"`{date_str}` | {cnt:3d} | {bar}")
+          ascii_chart = "```text\n" + ("\n".join(ascii_lines) if ascii_lines else "No data") + "\n```"
+
           table_rows = []
           for r in records:
               table_rows.append(f"| {r.get(\"id\")} | `{r.get(\"code\")}` | {r.get(\"status\")} | {r.get(\"sha256\") or \"null\"} | {r.get(\"notes\")} |")
@@ -176,6 +186,9 @@ jobs:
 ## 📈 Temporal Analysis & Event Distribution (UTC)
 {timeline_table}
 
+### 📊 Event Trend Visualization (ASCII Chart)
+{ascii_chart}
+
 ## 📑 Apostille Ledger Records Table
 | ID | Code | Status | SHA-256 | Notes |
 |:---|:---|:---|:---|:---|
@@ -185,7 +198,7 @@ jobs:
 *Generated automatically by GitHub Actions Unified Integrity Pipeline.*
 """
           Path("integrity-summary.md").write_text(summary_content, encoding="utf-8")
-          print("Successfully generated integrity-summary.md with temporal analysis.")
+          print("Successfully generated integrity-summary.md with ASCII trend chart.")
           '
 
       - name: Step 5 - Upload Integrity Audit Report & Summary
