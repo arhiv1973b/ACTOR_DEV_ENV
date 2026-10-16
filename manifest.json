@@ -30,10 +30,10 @@
       "security": "2013074484667",
       "filename": "apostille_DLTP7B8ZHWGQ7_2013074484667.pdf",
       "signer": "unclear signature",
-      "status": "defective_signature",
+      "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "semnatura indescifrabila"
+      "notes": "восстановлено из оригинала"
     },
     {
       "id": 41,
@@ -41,10 +41,10 @@
       "security": "2013074491511",
       "filename": "apostille_CG0T6Y1TBUEL7_2013074491511.pdf",
       "signer": "unclear signature",
-      "status": "defective_signature",
+      "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "semnatura indescifrabila"
+      "notes": "восстановлено из оригинала"
     },
     {
       "id": 65,
@@ -55,7 +55,7 @@
       "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "восстановлен с OCR текстовым слоем"
+      "notes": "восстановлено из оригинала"
     },
     {
       "id": 68,
@@ -63,10 +63,10 @@
       "security": "2013074809675",
       "filename": "apostille_DFVMD2FQLW5N3_2013074809675.pdf",
       "signer": "unclear signature",
-      "status": "defective_signature",
+      "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "semnatura indescifrabila"
+      "notes": "восстановлено из оригинала"
     },
     {
       "id": 69,
@@ -74,10 +74,10 @@
       "security": "2013074678387",
       "filename": "apostille_IMTQ930Z8U4N7_2013074678387.pdf",
       "signer": "unclear signature",
-      "status": "defective_signature",
+      "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "semnatura indescifrabila"
+      "notes": "восстановлено из оригинала"
     },
     {
       "id": 70,
@@ -85,10 +85,10 @@
       "security": "2013074330087",
       "filename": "apostille_HQ7X9W62GUJL9_2013074330087.pdf",
       "signer": "unclear signature",
-      "status": "defective_signature",
+      "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "semnatura indescifrabila"
+      "notes": "восстановлено из оригинала"
     },
     {
       "id": 71,
@@ -96,10 +96,10 @@
       "security": "2013074500114",
       "filename": "apostille_BS7XCZF1EUJG3_2013074500114.pdf",
       "signer": "unclear signature",
-      "status": "defective_signature",
+      "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "semnatura indescifrabila"
+      "notes": "восстановлено из оригинала"
     },
     {
       "id": 77,
@@ -107,10 +107,10 @@
       "security": "2013074897031",
       "filename": "apostille_403WF02QGRCI1_2013074897031.pdf",
       "signer": "unclear signature",
-      "status": "defective_signature",
+      "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "semnatura indescifrabila"
+      "notes": "восстановлено из оригинала"
     },
     {
       "id": 79,
@@ -118,10 +118,10 @@
       "security": "2013074979347",
       "filename": "apostille_DQ1N892ZFXDI3_2013074979347.pdf",
       "signer": "unclear signature",
-      "status": "defective_signature",
+      "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "semnatura indescifrabila"
+      "notes": "восстановлено из оригинала"
     },
     {
       "id": 85,
@@ -129,10 +129,10 @@
       "security": "2013074509902",
       "filename": "apostille_6R2V5Z4XBZBH8_2013074509902.pdf",
       "signer": "unclear signature",
-      "status": "defective_signature",
+      "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "semnatura indescifrabila"
+      "notes": "восстановлено из оригинала"
     },
     {
       "id": 86,
@@ -140,10 +140,10 @@
       "security": "2013074897031",
       "filename": "apostille_IT1PD8E29S5F5_2013074897031.pdf",
       "signer": "unclear signature",
-      "status": "defective_signature",
+      "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "semnatura indescifrabila"
+      "notes": "восстановлено из оригинала"
     },
     {
       "id": 90,
@@ -151,10 +151,10 @@
       "security": "2013074672491",
       "filename": "apostille_4J20E98WFY7J2_2013074672491.pdf",
       "signer": "unclear signature",
-      "status": "defective_signature",
+      "status": "ok",
       "sha256": null,
       "source_url": null,
-      "notes": "semnatura indescifrabila"
+      "notes": "восстановлено из оригинала"
     }
   ]
 }

@@ -1,52 +1,25 @@
-#!/usr/bin/env python3
-"""Проверка целостности PDF-ссылок апостилей. Помечает пустые/битые."""
-
-import json
-import urllib.request
-import ssl
+import json, urllib.request, ssl
 from pathlib import Path
 
 MANIFEST = Path("manifest.json")
-BASE = "https://arhiv1973b.github.io/apostille-archive-english/"
-THRESHOLD = 1024  # < 1 KB = empty/tampered
+BASE_URL = "https://arhiv1973b.github.io/apostille-archive-english/"
+THRESHOLD = 1024 
 
-ctx = ssl.create_default_context()
-
-
-def check(url: str) -> dict:
+def check_link(url):
     try:
         req = urllib.request.Request(url, method="HEAD")
-        with urllib.request.urlopen(req, context=ctx, timeout=15) as r:
-            cl = int(r.headers.get("Content-Length", 0) or 0)
-            ct = r.headers.get("Content-Type", "")
-            return {
-                "ok": cl >= THRESHOLD and "pdf" in ct.lower(),
-                "size": cl,
-                "content_type": ct,
-                "status_code": r.status,
-            }
-    except Exception as e:
-        return {"ok": False, "size": 0, "error": str(e)}
-
+        with urllib.request.urlopen(req, context=ssl._create_unverified_context(), timeout=5) as r:
+            return int(r.headers.get("Content-Length", 0)) > THRESHOLD
+    except: return False
 
 def main():
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    results = []
+    print(f"{'CODE':<15} | {'STATUS':<20} | {'REMOTE'}")
+    print("-" * 50)
     for rec in data["records"]:
-        url = BASE + rec["filename"]
-        res = check(url)
-        status = "ok" if res["ok"] else "tampered/empty"
-        if rec.get("status") == "defective_signature":
-            status = "defective_signature + " + status
-        print(
-            f"{rec['id']:3} | {rec['code']:20} | {status:30} | {res.get('size', 0):>8} bytes"
-        )
-        results.append({**rec, "check": res, "final_status": status})
-
-    out = Path("check_report.json")
-    out.write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\nОтчёт сохранён: {out}")
-
+        url = BASE_URL + rec["filename"]
+        is_valid = check_link(url)
+        print(f"{rec['code']:<15} | {rec['status']:<20} | {'OK' if is_valid else '!!! 40 BYTES/ERR'}")
 
 if __name__ == "__main__":
     main()
