@@ -44,14 +44,15 @@ jobs:
             echo "Validating: $file"
             python3 scripts/validate_ndjson.py "$file"
             JSON_COUNT=$((JSON_COUNT + 1))
+          done
           echo "Validated $JSON_COUNT JSON/NDJSON files successfully."
           echo "JSON_COUNT=$JSON_COUNT" >> $GITHUB_ENV
 
-      - name: Step 4 - Generate Comprehensive Audit Summary with Dynamic Table (integrity-summary.md)
+      - name: Step 4 - Generate Comprehensive Audit Summary with SHA-256 & Dynamic Table (integrity-summary.md)
         if: always()
         run: |
           python3 -c '
-          import json, datetime
+          import json, datetime, hashlib
           from pathlib import Path
 
           manifest_path = Path("manifest.json")
@@ -64,9 +65,24 @@ jobs:
           tampered_records = sum(1 for r in records if "tampered" in r.get("status", "").lower())
           other_records = total_records - (ok_records + tampered_records)
 
+          # SHA-256 Ledger checks
+          populated_sha256 = sum(1 for r in records if r.get("sha256"))
+          null_sha256 = sum(1 for r in records if not r.get("sha256"))
+          hash_mismatches = 0
+
+          for r in records:
+              expected_hash = r.get("sha256")
+              filename = r.get("filename")
+              if expected_hash and filename:
+                  p = Path(filename)
+                  if p.exists():
+                      file_hash = hashlib.sha256(p.read_bytes()).hexdigest()
+                      if file_hash.lower() != expected_hash.lower():
+                          hash_mismatches += 1
+
           table_rows = []
           for r in records:
-              table_rows.append(f"| {r.get(\"id\")} | `{r.get(\"code\")}` | {r.get(\"status\")} | {r.get(\"notes\")} |")
+              table_rows.append(f"| {r.get(\"id\")} | `{r.get(\"code\")}` | {r.get(\"status\")} | {r.get(\"sha256\") or \"null\"} | {r.get(\"notes\")} |")
 
           timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
           status = "${{ job.status }}"
@@ -80,7 +96,7 @@ jobs:
 - **Manifest Version**: {manifest.get("version", "N/A")}
 - **Base URL**: {manifest.get("base_url", "N/A")}
 
-## 📊 Aggregated Totals
+## 📊 Aggregated Totals & Ledger Statistics
 - **Total Records in Manifest**: {total_records}
 - **OK / Valid**: {ok_records}
 - **Baseline / Etalon**: {etalon_records}
@@ -89,16 +105,21 @@ jobs:
 - **Other**: {other_records}
 - **JSON Files Checked**: ${{ env.JSON_COUNT }}
 
+## 🔐 SHA-256 Hash Integrity Summary
+- **Populated SHA-256 Hashes**: {populated_sha256}
+- **Null SHA-256 Hashes**: {null_sha256}
+- **Hash Mismatches Detected**: {hash_mismatches}
+
 ## 📑 Apostille Ledger Records Table
-| ID | Code | Status | Notes |
-|:---|:---|:---|:---|
+| ID | Code | Status | SHA-256 | Notes |
+|:---|:---|:---|:---|:---|
 """ + "\n".join(table_rows) + f"""
 
 ---
 *Generated automatically by GitHub Actions Unified Integrity Pipeline.*
 """
           Path("integrity-summary.md").write_text(summary_content, encoding="utf-8")
-          print("Successfully generated integrity-summary.md with dynamic table.")
+          print("Successfully generated integrity-summary.md with SHA-256 summary and table.")
           '
 
       - name: Step 5 - Upload Integrity Audit Report & Summary
