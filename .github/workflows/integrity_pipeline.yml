@@ -48,7 +48,7 @@ jobs:
           echo "Validated $JSON_COUNT JSON/NDJSON files successfully."
           echo "JSON_COUNT=$JSON_COUNT" >> $GITHUB_ENV
 
-      - name: Step 4 - Generate Comprehensive Audit Summary with Detailed Mismatches (integrity-summary.md)
+      - name: Step 4 - Generate Comprehensive Audit Summary with Audit Log Stats (integrity-summary.md)
         if: always()
         run: |
           python3 -c '
@@ -87,6 +87,35 @@ jobs:
           else:
               mismatch_section = "## ⚠️ Detected SHA-256 Hash Mismatches\nNo hash mismatches detected ✅"
 
+          # Audit Log Events aggregation
+          audit_log_path = Path("audit_log.json")
+          total_audit_events = 0
+          system_reboots = 0
+          event_breakdown = {}
+
+          if audit_log_path.exists():
+              content = audit_log_path.read_text(encoding="utf-8")
+              decoder = json.JSONDecoder()
+              pos = 0
+              while pos < len(content):
+                  while pos < len(content) and content[pos].isspace():
+                      pos += 1
+                  if pos >= len(content):
+                      break
+                  try:
+                      obj, idx = decoder.raw_decode(content, pos)
+                      pos = idx
+                      total_audit_events += 1
+                      ev = obj.get("event") or obj.get("category") or "general_log"
+                      if ev == "system_reboot":
+                          system_reboots += 1
+                      event_breakdown[ev] = event_breakdown.get(ev, 0) + 1
+                  except Exception:
+                      break
+
+          event_rows = [f"| `{ev}` | {cnt} |" for ev, cnt in event_breakdown.items()]
+          event_table = "| Event Type | Count |\n|:---|:---|\n" + ("\n".join(event_rows) if event_rows else "| (None) | 0 |")
+
           table_rows = []
           for r in records:
               table_rows.append(f"| {r.get(\"id\")} | `{r.get(\"code\")}` | {r.get(\"status\")} | {r.get(\"sha256\") or \"null\"} | {r.get(\"notes\")} |")
@@ -119,6 +148,12 @@ jobs:
 
 {mismatch_section}
 
+## 📜 Audit Log Events Summary (`audit_log.json`)
+- **Total Logged Events**: {total_audit_events}
+- **System Reboots Recorded**: {system_reboots}
+
+{event_table}
+
 ## 📑 Apostille Ledger Records Table
 | ID | Code | Status | SHA-256 | Notes |
 |:---|:---|:---|:---|:---|
@@ -128,7 +163,7 @@ jobs:
 *Generated automatically by GitHub Actions Unified Integrity Pipeline.*
 """
           Path("integrity-summary.md").write_text(summary_content, encoding="utf-8")
-          print("Successfully generated integrity-summary.md with detailed mismatch breakdown.")
+          print("Successfully generated integrity-summary.md with audit log statistics.")
           '
 
       - name: Step 5 - Upload Integrity Audit Report & Summary
