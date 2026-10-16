@@ -48,31 +48,52 @@ jobs:
           echo "Validated $JSON_COUNT JSON/NDJSON files successfully."
           echo "JSON_COUNT=$JSON_COUNT" >> $GITHUB_ENV
 
-      - name: Step 4 - Generate Summary Report (integrity-summary.md)
+      - name: Step 4 - Generate Comprehensive Audit Summary (integrity-summary.md)
         if: always()
         run: |
-          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-          STATUS="${{ job.status }}"
-          CAT_STATUS="Passed"
-          if [ "$STATUS" != "success" ]; then
-            CAT_STATUS="Failed"
-          fi
-          
-          cat <<EOF > integrity-summary.md
-          # 🛡️ Integrity Pipeline Summary Report
-          
-          - **Timestamp**: $TIMESTAMP
-          - **Python Version**: ${{ matrix.python-version }}
-          - **Overall Status**: $CAT_STATUS
-          
-          ## 📊 Execution Details
-          1. **Link Repair (`repair_broken_links.py`)**: Completed successfully.
-          2. **Link Check (`check_links.py`)**: Verified apostille archive records & remote headers.
-          3. **JSON / NDJSON Validation**: Validated all repository JSON files (Total checked: ${JSON_COUNT:-unknown}).
-          
-          ---
-          *Generated automatically by GitHub Actions Unified Integrity Pipeline.*
-          EOF
+          python3 -c '
+          import json, datetime
+          from pathlib import Path
+
+          manifest_path = Path("manifest.json")
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else {}
+          records = manifest.get("records", [])
+          total_records = len(records)
+          ok_records = sum(1 for r in records if r.get("status") == "ok")
+          restored_records = sum(1 for r in records if "восстановлено" in r.get("notes", "").lower())
+          etalon_records = sum(1 for r in records if "эталон" in r.get("notes", "").lower())
+          other_records = total_records - ok_records
+
+          timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+          status = "${{ job.status }}"
+          cat_status = "Passed ✅" if status == "success" else "Failed ❌"
+
+          summary_content = f"""# 🛡️ Unified Integrity & Audit Summary Report
+
+- **Timestamp**: {timestamp}
+- **Python Version**: ${{ matrix.python-version }}
+- **Pipeline Status**: {cat_status}
+- **Manifest Version**: {manifest.get("version", "N/A")}
+- **Base URL**: {manifest.get("base_url", "N/A")}
+
+## 📊 Apostille & Evidence Ledger Statistics
+- **Total Records in Manifest**: {total_records}
+- **Status OK / Valid**: {ok_records}
+- **Baseline / Etalon Records**: {etalon_records}
+- **Restored from Original**: {restored_records}
+- **Tampered / Other**: {other_records}
+
+## 🔍 Execution Pipeline Steps
+1. **Link Repair (`repair_broken_links.py`)**: Completed successfully.
+2. **Link & Header Verification (`check_links.py`)**: Executed against remote GitHub Pages mirror.
+3. **JSON & NDJSON Validation**: Validated all repository JSON/NDJSON files (${{ env.JSON_COUNT }} files checked).
+
+---
+*Generated automatically by GitHub Actions Unified Integrity Pipeline.*
+"""
+          Path("integrity-summary.md").write_text(summary_content, encoding="utf-8")
+          print("Successfully generated integrity-summary.md")
+          '
 
       - name: Step 5 - Upload Integrity Audit Report & Summary
         if: always()
