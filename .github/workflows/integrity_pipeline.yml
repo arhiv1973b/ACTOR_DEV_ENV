@@ -48,7 +48,7 @@ jobs:
           echo "Validated $JSON_COUNT JSON/NDJSON files successfully."
           echo "JSON_COUNT=$JSON_COUNT" >> $GITHUB_ENV
 
-      - name: Step 4 - Generate Comprehensive Audit Summary with Audit Log Stats (integrity-summary.md)
+      - name: Step 4 - Generate Comprehensive Audit Summary with Temporal Analysis (integrity-summary.md)
         if: always()
         run: |
           python3 -c '
@@ -87,11 +87,12 @@ jobs:
           else:
               mismatch_section = "## ⚠️ Detected SHA-256 Hash Mismatches\nNo hash mismatches detected ✅"
 
-          # Audit Log Events aggregation
+          # Audit Log Events aggregation & Temporal Analysis
           audit_log_path = Path("audit_log.json")
           total_audit_events = 0
           system_reboots = 0
           event_breakdown = {}
+          timeline_counts = {}
 
           if audit_log_path.exists():
               content = audit_log_path.read_text(encoding="utf-8")
@@ -110,11 +111,29 @@ jobs:
                       if ev == "system_reboot":
                           system_reboots += 1
                       event_breakdown[ev] = event_breakdown.get(ev, 0) + 1
+
+                      # Temporal parsing
+                      ts_raw = obj.get("timestamp")
+                      dt_str = "Unknown"
+                      if ts_raw is not None:
+                          try:
+                              if isinstance(ts_raw, (int, float)) or (isinstance(ts_raw, str) and ts_raw.replace(".", "", 1).isdigit()):
+                                  dt = datetime.datetime.utcfromtimestamp(float(ts_raw))
+                                  dt_str = dt.strftime("%Y-%m-%d")
+                              elif isinstance(ts_raw, str):
+                                  dt = datetime.datetime.fromisoformat(ts_raw.replace("Z", "+00:00").split("+")[0])
+                                  dt_str = dt.strftime("%Y-%m-%d")
+                          except Exception:
+                              dt_str = "Invalid/Other"
+                      timeline_counts[dt_str] = timeline_counts.get(dt_str, 0) + 1
                   except Exception:
                       break
 
           event_rows = [f"| `{ev}` | {cnt} |" for ev, cnt in event_breakdown.items()]
           event_table = "| Event Type | Count |\n|:---|:---|\n" + ("\n".join(event_rows) if event_rows else "| (None) | 0 |")
+
+          timeline_rows = [f"| `{date}` | {cnt} |" for date, cnt in sorted(timeline_counts.items(), reverse=True)]
+          timeline_table = "| Date (UTC) | Event Count |\n|:---|:---|\n" + ("\n".join(timeline_rows) if timeline_rows else "| (No timestamps) | 0 |")
 
           table_rows = []
           for r in records:
@@ -154,6 +173,9 @@ jobs:
 
 {event_table}
 
+## 📈 Temporal Analysis & Event Distribution (UTC)
+{timeline_table}
+
 ## 📑 Apostille Ledger Records Table
 | ID | Code | Status | SHA-256 | Notes |
 |:---|:---|:---|:---|:---|
@@ -163,7 +185,7 @@ jobs:
 *Generated automatically by GitHub Actions Unified Integrity Pipeline.*
 """
           Path("integrity-summary.md").write_text(summary_content, encoding="utf-8")
-          print("Successfully generated integrity-summary.md with audit log statistics.")
+          print("Successfully generated integrity-summary.md with temporal analysis.")
           '
 
       - name: Step 5 - Upload Integrity Audit Report & Summary
