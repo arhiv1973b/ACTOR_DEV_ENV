@@ -1,0 +1,56 @@
+name: Unified Integrity Pipeline
+
+on:
+  push:
+    branches: [ "*" ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ "*" ]
+  workflow_dispatch:
+
+jobs:
+  integrity-pipeline:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Step 1 - Repair Broken Links & Mirror PDFs
+        run: |
+          set -e
+          echo "=== Running repair_broken_links.py ==="
+          python3 scripts/repair_broken_links.py
+
+      - name: Step 2 - Verify Manifest and PDF Links
+        run: |
+          set -e
+          echo "=== Running check_links.py ==="
+          python3 check_links.py
+
+      - name: Step 3 - Validate All JSON and NDJSON Files
+        run: |
+          set -e
+          echo "=== Running universal JSON / NDJSON Validator ==="
+          FILES=$(find . -type f \( -name "*.json" -o -name "*.ndjson" \) -not -path "*/.*" -not -path "./node_modules/*")
+          for file in $FILES; do
+            echo "Validating: $file"
+            python3 scripts/validate_ndjson.py "$file"
+          done
+
+      - name: Step 4 - Upload Integrity Audit Report & Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: integrity-audit-report-py${{ matrix.python-version }}
+          path: |
+            manifest.json
+            audit_log.json
+            check_report.json
+          if-no-files-found: ignore
