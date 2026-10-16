@@ -48,7 +48,7 @@ jobs:
           echo "Validated $JSON_COUNT JSON/NDJSON files successfully."
           echo "JSON_COUNT=$JSON_COUNT" >> $GITHUB_ENV
 
-      - name: Step 4 - Generate Comprehensive Audit Summary with SHA-256 & Dynamic Table (integrity-summary.md)
+      - name: Step 4 - Generate Comprehensive Audit Summary with Detailed Mismatches (integrity-summary.md)
         if: always()
         run: |
           python3 -c '
@@ -65,10 +65,11 @@ jobs:
           tampered_records = sum(1 for r in records if "tampered" in r.get("status", "").lower())
           other_records = total_records - (ok_records + tampered_records)
 
-          # SHA-256 Ledger checks
+          # SHA-256 Ledger checks & Mismatch tracking
           populated_sha256 = sum(1 for r in records if r.get("sha256"))
           null_sha256 = sum(1 for r in records if not r.get("sha256"))
           hash_mismatches = 0
+          mismatch_rows = []
 
           for r in records:
               expected_hash = r.get("sha256")
@@ -79,6 +80,12 @@ jobs:
                       file_hash = hashlib.sha256(p.read_bytes()).hexdigest()
                       if file_hash.lower() != expected_hash.lower():
                           hash_mismatches += 1
+                          mismatch_rows.append(f"| {r.get(\"id\")} | `{r.get(\"code\")}` | `{expected_hash}` | `{file_hash}` |")
+
+          if mismatch_rows:
+              mismatch_section = "## ⚠️ Detected SHA-256 Hash Mismatches\n| ID | Code | Expected SHA-256 | Actual SHA-256 |\n|:---|:---|:---|:---|\n" + "\n".join(mismatch_rows)
+          else:
+              mismatch_section = "## ⚠️ Detected SHA-256 Hash Mismatches\nNo hash mismatches detected ✅"
 
           table_rows = []
           for r in records:
@@ -110,6 +117,8 @@ jobs:
 - **Null SHA-256 Hashes**: {null_sha256}
 - **Hash Mismatches Detected**: {hash_mismatches}
 
+{mismatch_section}
+
 ## 📑 Apostille Ledger Records Table
 | ID | Code | Status | SHA-256 | Notes |
 |:---|:---|:---|:---|:---|
@@ -119,7 +128,7 @@ jobs:
 *Generated automatically by GitHub Actions Unified Integrity Pipeline.*
 """
           Path("integrity-summary.md").write_text(summary_content, encoding="utf-8")
-          print("Successfully generated integrity-summary.md with SHA-256 summary and table.")
+          print("Successfully generated integrity-summary.md with detailed mismatch breakdown.")
           '
 
       - name: Step 5 - Upload Integrity Audit Report & Summary
