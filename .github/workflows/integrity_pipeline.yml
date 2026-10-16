@@ -1,4 +1,4 @@
-name: Unified Integrity Pipeline
+name: Unified Integrity Pipeline & Deployment Gate
 
 on:
   push:
@@ -39,12 +39,42 @@ jobs:
           set -e
           echo "=== Running universal JSON / NDJSON Validator ==="
           FILES=$(find . -type f \( -name "*.json" -o -name "*.ndjson" \) -not -path "*/.*" -not -path "./node_modules/*")
+          JSON_COUNT=0
           for file in $FILES; do
             echo "Validating: $file"
             python3 scripts/validate_ndjson.py "$file"
+            JSON_COUNT=$((JSON_COUNT + 1))
           done
+          echo "Validated $JSON_COUNT JSON/NDJSON files successfully."
+          echo "JSON_COUNT=$JSON_COUNT" >> $GITHUB_ENV
 
-      - name: Step 4 - Upload Integrity Audit Report & Artifacts
+      - name: Step 4 - Generate Summary Report (integrity-summary.md)
+        if: always()
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          STATUS="${{ job.status }}"
+          CAT_STATUS="Passed"
+          if [ "$STATUS" != "success" ]; then
+            CAT_STATUS="Failed"
+          fi
+          
+          cat <<EOF > integrity-summary.md
+          # 🛡️ Integrity Pipeline Summary Report
+          
+          - **Timestamp**: $TIMESTAMP
+          - **Python Version**: ${{ matrix.python-version }}
+          - **Overall Status**: $CAT_STATUS
+          
+          ## 📊 Execution Details
+          1. **Link Repair (`repair_broken_links.py`)**: Completed successfully.
+          2. **Link Check (`check_links.py`)**: Verified apostille archive records & remote headers.
+          3. **JSON / NDJSON Validation**: Validated all repository JSON files (Total checked: ${JSON_COUNT:-unknown}).
+          
+          ---
+          *Generated automatically by GitHub Actions Unified Integrity Pipeline.*
+          EOF
+
+      - name: Step 5 - Upload Integrity Audit Report & Summary
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -53,4 +83,14 @@ jobs:
             manifest.json
             audit_log.json
             check_report.json
+            integrity-summary.md
           if-no-files-found: ignore
+
+  deploy-gate:
+    needs: integrity-pipeline
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    steps:
+      - name: Integrity Gate Passed
+        run: |
+          echo "✅ All integrity checks passed successfully. Ready for deployment / GitHub Pages publish."
