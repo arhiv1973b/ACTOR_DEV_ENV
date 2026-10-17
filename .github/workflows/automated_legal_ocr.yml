@@ -1,0 +1,52 @@
+name: Automated Legal OCR Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - feature/cyber-sabotage-audit-10-2026
+    paths:
+      - '**/*.pdf'
+      - '**/*.png'
+      - '**/*.jpg'
+      - '**/*.jpeg'
+      - 'analyze_ocr_legal.py'
+
+permissions:
+  contents: write
+
+jobs:
+  ocr_processing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Необходимо для последующего пуша
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install System Dependencies (Tesseract OCR)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-rus tesseract-ocr-eng tesseract-ocr-ron poppler-utils
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyMuPDF pytesseract opencv-python-headless pillow
+
+      - name: Execute Legal OCR Analysis
+        run: python analyze_ocr_legal.py
+
+      - name: Commit and Push Updated Findings
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 auto: update legal findings contextual JSON via OCR pipeline"
+          file_pattern: 'legal_findings_contextual.json'
+          commit_user_name: "arhiv240"
+          commit_user_email: "arhiv240@gmail.com"
