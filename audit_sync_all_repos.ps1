@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    CLI-style Automated Audit, Cleanup, Commit, and Push Script for ACTOR_DEV_ENV & Submodules.
+    CLI-style Automated Audit, Cleanup, Commit, and Push Script for ACTOR_DEV_ENV & Submodules with File Logging.
 .PARAMETER AutoCommit
     Automatically stage and commit changes across all repositories and submodules if changes exist.
 .PARAMETER AutoPush
@@ -13,12 +13,24 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$LogFile = "audit.log"
 
-Write-Host "============================================================" -ForegroundColor Cyan
-Write-Host " ACTOR_DEV_ENV: AUTOMATED AUDIT, SYNC, COMMIT & PUSH" -ForegroundColor Cyan
-Write-Host "============================================================" -ForegroundColor Cyan
-if ($AutoCommit) { Write-Host " [MODE] AutoCommit: ENABLED" -ForegroundColor Green }
-if ($AutoPush)   { Write-Host " [MODE] AutoPush: ENABLED" -ForegroundColor Green }
+function Write-Log {
+    param(
+        [string]$Message,
+        [string]$Color = "White"
+    )
+    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $logEntry = "[$timestamp] $Message"
+    Write-Host $Message -ForegroundColor $Color
+    Add-Content -Path $LogFile -Value $logEntry -ErrorAction SilentlyContinue
+}
+
+Write-Log "============================================================" "Cyan"
+Write-Log " ACTOR_DEV_ENV: AUTOMATED AUDIT, SYNC, COMMIT & PUSH" "Cyan"
+Write-Log "============================================================" "Cyan"
+if ($AutoCommit) { Write-Log " [MODE] AutoCommit: ENABLED" "Green" }
+if ($AutoPush)   { Write-Log " [MODE] AutoPush: ENABLED" "Green" }
 
 function Invoke-RepoSync {
     param(
@@ -28,34 +40,33 @@ function Invoke-RepoSync {
     )
     
     if (-not (Test-Path $Path)) {
-        Write-Host "  -> [$Name] Not found at $Path" -ForegroundColor Red
+        Write-Log "  -> [$Name] Not found at $Path" "Red"
         return
     }
 
-    Write-Host "`n------------------------------------------------------------" -ForegroundColor DarkGray
-    Write-Host " Processing: $Name ($Path)" -ForegroundColor Yellow
+    Write-Log "`n------------------------------------------------------------" "DarkGray"
+    Write-Log " Processing: $Name ($Path)" "Yellow"
 
-    # Check for changes
     $status = git -C $Path status --porcelain
     if ($status) {
-        Write-Host "  -> Changes detected in $Name." -ForegroundColor Yellow
+        Write-Log "  -> Changes detected in $Name." "Yellow"
         if ($AutoCommit) {
             git -C $Path add .
             git -C $Path commit -m $CommitMessage
-            Write-Host "  -> Committed changes in $Name." -ForegroundColor Green
+            Write-Log "  -> Committed changes in $Name." "Green"
         }
     } else {
-        Write-Host "  -> Working tree clean in $Name." -ForegroundColor DarkGreen
+        Write-Log "  -> Working tree clean in $Name." "DarkGreen"
     }
 
     if ($AutoPush) {
-        Write-Host "  -> Pushing $Name..." -ForegroundColor Cyan
+        Write-Log "  -> Pushing $Name..." "Cyan"
         git -C $Path push
-        Write-Host "  -> Pushed $Name successfully." -ForegroundColor Green
+        Write-Log "  -> Pushed $Name successfully." "Green"
     }
 }
 
-# 1. Submodule / Nested MCP Servers
+# 1. Nested MCP Servers
 if (Test-Path "projects/mcp-servers/mcp-servers") {
     Invoke-RepoSync -Path "projects/mcp-servers/mcp-servers" -Name "nested-mcp-servers" -CommitMessage "chore: update nested mcp-servers configs and docs"
 }
@@ -73,8 +84,8 @@ Invoke-RepoSync -Path "projects/antigravity-sdk-python" -Name "submodule-antigra
 Invoke-RepoSync -Path "projects/testcontainers-cloud-nodejs-example" -Name "submodule-testcontainers-cloud-nodejs-example" -CommitMessage "chore: update testcontainers and node packages"
 
 # 6. Submodule voidImageViewer (with PaxHeaders cleanup)
-Write-Host "`n------------------------------------------------------------" -ForegroundColor DarkGray
-Write-Host " Processing: submodule-voidImageViewer (voidImageViewer)" -ForegroundColor Yellow
+Write-Log "`n------------------------------------------------------------" "DarkGray"
+Write-Log " Processing: submodule-voidImageViewer (voidImageViewer)" "Yellow"
 if (Test-Path "voidImageViewer") {
     $items = Get-ChildItem -Path "voidImageViewer" -Recurse -ErrorAction SilentlyContinue
     if ($items) {
@@ -83,21 +94,21 @@ if (Test-Path "voidImageViewer") {
                 Remove-Item $item.FullName -Force -ErrorAction SilentlyContinue
             }
         }
-        Write-Host "  -> Cleaned PaxHeaders artifacts in voidImageViewer" -ForegroundColor Green
+        Write-Log "  -> Cleaned PaxHeaders artifacts in voidImageViewer" "Green"
     }
     Invoke-RepoSync -Path "voidImageViewer" -Name "submodule-voidImageViewer" -CommitMessage "chore: clean build artifacts and sync voidImageViewer"
 } else {
-    Write-Host "  -> voidImageViewer not found" -ForegroundColor Red
+    Write-Log "  -> voidImageViewer not found" "Red"
 }
 
 # 7. Main Repository Cleanup & Sync
-Write-Host "`n------------------------------------------------------------" -ForegroundColor DarkGray
-Write-Host " Processing: Main Repository (ACTOR_DEV_ENV)" -ForegroundColor Yellow
-if (Test-Path "drive_index.db-shm") { Remove-Item "drive_index.db-shm" -Force; Write-Host "  -> Removed drive_index.db-shm" -ForegroundColor Green }
-if (Test-Path "drive_index.db-wal") { Remove-Item "drive_index.db-wal" -Force; Write-Host "  -> Removed drive_index.db-wal" -ForegroundColor Green }
+Write-Log "`n------------------------------------------------------------" "DarkGray"
+Write-Log " Processing: Main Repository (ACTOR_DEV_ENV)" "Yellow"
+if (Test-Path "drive_index.db-shm") { Remove-Item "drive_index.db-shm" -Force; Write-Log "  -> Removed drive_index.db-shm" "Green" }
+if (Test-Path "drive_index.db-wal") { Remove-Item "drive_index.db-wal" -Force; Write-Log "  -> Removed drive_index.db-wal" "Green" }
 
 Invoke-RepoSync -Path "." -Name "ACTOR_DEV_ENV-Main" -CommitMessage "chore: update submodules references and audit state"
 
-Write-Host "`n============================================================" -ForegroundColor Cyan
-Write-Host " AUDIT, SYNC, COMMIT & PUSH COMPLETE SUCCESSFULLY" -ForegroundColor Green
-Write-Host "============================================================" -ForegroundColor Cyan
+Write-Log "`n============================================================" "Cyan"
+Write-Log " AUDIT, SYNC, COMMIT & PUSH COMPLETE SUCCESSFULLY" "Green"
+Write-Log "============================================================" "Cyan"
