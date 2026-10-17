@@ -56,4 +56,10 @@ fi
 echo "=== 4. Final Git Status ==="
 git status
 
+# Send email report if configured
+if [ -f "send_audit_report.py" ]; then
+    echo "Sending email audit report..."
+    python3 send_audit_report.py || true
+fi
+
 echo "=== Audit and Repair Complete Successfully ==="

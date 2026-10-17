@@ -12,4 +12,10 @@ else
     bash audit.sh
 fi
 
+# Send email report if configured
+if [ -f "send_audit_report.py" ]; then
+    echo "Checking/sending email audit report..."
+    python3 send_audit_report.py || true
+fi
+
 echo "=== Universal Audit Dispatcher Completed Successfully ==="
