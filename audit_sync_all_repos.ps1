@@ -20,6 +20,10 @@ if (-not (Test-Path $LogDir)) {
     New-Item -ItemType Directory -Path $LogDir | Out-Null
 }
 
+# Retention Policy: Clean up log files older than 30 days
+$retentionDays = 30
+Get-ChildItem -Path $LogDir -Filter "*.log" -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-$retentionDays) } | Remove-Item -Force -ErrorAction SilentlyContinue
+
 $sessionTimestamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $LogFile = Join-Path $LogDir "audit_$sessionTimestamp.log"
 $latestLog = "audit.log"
