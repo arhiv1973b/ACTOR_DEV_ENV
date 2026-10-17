@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CASE-MACHERET-1997-2026: Financial Sabotage & UDHR Knowledge Graph</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ffcc00;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        p.subtitle {
+            text-align: center;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+        }
+        #cy {
+            width: 100%;
+            height: 750px;
+            background-color: #1e1e1e;
+            border: 2px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .legend {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .color-box {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CASE-MACHERET-1997-2026: Financial Sabotage & UDHR Knowledge Graph</h1>
+    <p class="subtitle">Интерактивный граф правовых норм (ВДПЧ ст. 3, 5, 8, 25 + Конституция РМ ст. 4) и векторов экономического саботажа</p>
+
+    <div id="cy"></div>
+
+    <div class="legend">
+        <div class="legend-item"><div class="color-box" style="background-color: #ffd700;"></div><span>Правовая база (UDHR / Конституция РМ)</span></div>
+        <div class="legend-item"><div class="color-box" style="background-color: #ff6b6b;"></div><span>Векторы саботажа</span></div>
+        <div class="legend-item"><div class="color-box" style="background-color: #4dabf7;"></div><span>Доказательства (Квитанции / OCR)</span></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var cy = cytoscape({
+                container: document.getElementById('cy'),
+
+                boxSelectionEnabled: false,
+                autounselectify: true,
+
+                style: [
+                    {
+                        selector: 'node',
+                        style: {
+                            'label': 'data(label)',
+                            'color': '#fff',
+                            'text-valign': 'center',
+                            'text-halign': 'center',
+                            'font-size': '12px',
+                            'font-weight': 'bold',
+                            'width': 'label',
+                            'height': 'label',
+                            'padding': '14px',
+                            'shape': 'roundrectangle',
+                            'border-width': 2,
+                            'border-color': '#555'
+                        }
+                    },
+                    {
+                        selector: 'node[type = "legal"]',
+                        style: {
+                            'background-color': '#ffd700',
+                            'color': '#000',
+                            'border-color': '#cca300'
+                        }
+                    },
+                    {
+                        selector: 'node[type = "vector"]',
+                        style: {
+                            'background-color': '#ff6b6b',
+                            'color': '#fff',
+                            'border-color': '#c92a2a'
+                        }
+                    },
+                    {
+                        selector: 'node[type = "evidence"]',
+                        style: {
+                            'background-color': '#4dabf7',
+                            'color': '#000',
+                            'border-color': '#1864ab'
+                        }
+                    },
+                    {
+                        selector: 'edge',
+                        style: {
+                            'width': 2,
+                            'line-color': '#666',
+                            'target-arrow-color': '#666',
+                            'target-arrow-shape': 'triangle',
+                            'curve-style': 'bezier',
+                            'label': 'data(label)',
+                            'font-size': '10px',
+                            'color': '#aaa',
+                            'text-rotation': 'autorotate'
+                        }
+                    }
+                ],
+
+                elements: {
+                    nodes: [
+                        { data: { id: 'Const4', label: 'Constitution MD Art. 4\n(Primacy of International Law)', type: 'legal' } },
+                        { data: { id: 'UDHR', label: 'UDHR / ВДПЧ\n(Jus Cogens)', type: 'legal' } },
+                        { data: { id: 'Art3', label: 'UDHR Art. 3\n(Security of Person)', type: 'legal' } },
+                        { data: { id: 'Art5', label: 'UDHR Art. 5\n(Prohibition of Torture & Strangulation)', type: 'legal' } },
+                        { data: { id: 'Art8', label: 'UDHR Art. 8\n(Effective Remedy)', type: 'legal' } },
+                        { data: { id: 'Art25', label: 'UDHR Art. 25\n(Adequate Standard of Living)', type: 'legal' } },
+
+                        { data: { id: 'Vec1', label: 'Vector 1: Income Restriction\n(Cyber-sabotage & Interception)', type: 'vector' } },
+                        { data: { id: 'Vec2', label: 'Vector 2: Infrastructure Expenses\n(GitHub, ChatGPT, Workspace, StarNet)', type: 'vector' } },
+                        { data: { id: 'Vec3', label: 'Vector 3: Financial Logistics Attacks\n(FinComBank AJUTOR SOCIAL Extortion)', type: 'vector' } },
+
+                        { data: { id: 'Receipt1', label: 'FinComBank Receipt 1\n(15.09.2026 - 1,168 MDL)', type: 'evidence' } },
+                        { data: { id: 'Receipt2', label: 'FinComBank Receipt 2\n(15.10.2026 - 123 MDL)', type: 'evidence' } },
+                        { data: { id: 'Aggregation', label: 'Financial Sabotage Aggregation Report\n(Damnum Emergens & Lucrum Cessans)', type: 'evidence' } }
+                    ],
+                    edges: [
+                        { data: { source: 'Const4', target: 'UDHR', label: 'establishes priority' } },
+                        { data: { source: 'UDHR', target: 'Art3', label: 'includes' } },
+                        { data: { source: 'UDHR', target: 'Art5', label: 'includes' } },
+                        { data: { source: 'UDHR', target: 'Art8', label: 'includes' } },
+                        { data: { source: 'UDHR', target: 'Art25', label: 'includes' } },
+
+                        { data: { source: 'Art3', target: 'Vec1', label: 'violation' } },
+                        { data: { source: 'Art25', target: 'Vec1', label: 'violation' } },
+                        { data: { source: 'Art25', target: 'Vec2', label: 'violation' } },
+                        { data: { source: 'Art3', target: 'Vec3', label: 'violation' } },
+                        { data: { source: 'Art5', target: 'Vec3', label: 'violation' } },
+                        { data: { source: 'Art8', target: 'Vec3', label: 'violation' } },
+
+                        { data: { source: 'Vec3', target: 'Receipt1', label: 'produces' } },
+                        { data: { source: 'Vec3', target: 'Receipt2', label: 'produces' } },
+                        { data: { source: 'Receipt1', target: 'Aggregation', label: 'aggregates into' } },
+                        { data: { source: 'Receipt2', target: 'Aggregation', label: 'aggregates into' } }
+                    ]
+                },
+
+                layout: {
+                    name: 'cose',
+                    animate: true,
+                    nodeRepulsion: function (node) { return 450000; },
+                    idealEdgeLength: function (edge) { return 120; }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
