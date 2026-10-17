@@ -2,17 +2,25 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>CASE-MACHERET-1997-2026: Dynamic L2 Graph</title>
+    <title>CASE-MACHERET-1997-2026: Dynamic L2 Graph (with Search)</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
     <style>
         body { font-family: monospace; background-color: #0d1117; color: #c9d1d9; margin: 0; display: flex; height: 100vh; overflow: hidden; }
         #cy { flex-grow: 1; display: block; position: relative; }
-        #sidebar { width: 350px; background-color: #161b22; border-left: 1px solid #30363d; padding: 20px; overflow-y: auto; box-shadow: -5px 0 15px rgba(0,0,0,0.5); z-index: 10; }
-        h2 { color: #58a6ff; font-size: 16px; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
+        #sidebar { width: 350px; background-color: #161b22; border-left: 1px solid #30363d; padding: 20px; overflow-y: auto; box-shadow: -5px 0 15px rgba(0,0,0,0.5); z-index: 10; display: flex; flex-direction: column; }
+        h2 { color: #58a6ff; font-size: 16px; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-top: 0; }
         .detail-block { margin-bottom: 15px; font-size: 12px; }
         .detail-label { color: #8b949e; font-weight: bold; display: block; margin-bottom: 4px; }
         .detail-value { color: #e6edf3; background: #0d1117; padding: 8px; border-radius: 4px; border: 1px solid #21262d; word-wrap: break-word; }
         #loading { position: absolute; top: 20px; left: 20px; background: rgba(218, 54, 51, 0.8); color: white; padding: 5px 10px; border-radius: 3px; font-weight: bold; }
+        
+        /* Стили для поиска */
+        #search-container { margin-bottom: 20px; display: flex; gap: 5px; }
+        #search-input { flex-grow: 1; padding: 8px; background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; border-radius: 4px; font-family: monospace; }
+        #search-input:focus { outline: none; border-color: #58a6ff; }
+        #search-clear { padding: 8px 12px; background: #21262d; border: 1px solid #30363d; color: #c9d1d9; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        #search-clear:hover { background: #30363d; }
+        #node-details-container { flex-grow: 1; overflow-y: auto; }
     </style>
 </head>
 <body>
@@ -20,9 +28,17 @@
         <div id="loading">Загрузка манифестов...</div>
     </div>
     <div id="sidebar">
+        <h2>Поиск по графу</h2>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Введите ID, дату или текст..." />
+            <button id="search-clear" title="Очистить поиск">✖</button>
+        </div>
+        
         <h2>Детали узла</h2>
-        <div id="node-details">
-            <p style="color: #8b949e; font-size: 12px;">Кликните на любой документ или чек в графе, чтобы увидеть метаданные, суммы и привязку к правовой доктрине.</p>
+        <div id="node-details-container">
+            <div id="node-details">
+                <p style="color: #8b949e; font-size: 12px;">Кликните на любой документ или чек в графе, чтобы увидеть метаданные, суммы и привязку к правовой доктрине.</p>
+            </div>
         </div>
     </div>
 
@@ -47,7 +63,7 @@
             ];
 
             try {
-                // 1. Загрузка данных OCR (Документы)
+                // 1. Загрузка данных OCR
                 const ocrResponse = await fetch('legal_findings_contextual.json');
                 if (ocrResponse.ok) {
                     const ocrData = await ocrResponse.json();
@@ -61,7 +77,6 @@
                             }
                         });
 
-                        // Динамическое связывание на основе найденных паттернов
                         const matchesStr = data.matches.join(' ').toLowerCase();
                         if (matchesStr.includes('art') && matchesStr.includes('4') && matchesStr.includes('конституци')) {
                             elements.push({ data: { source: filename, target: 'constMD', label: 'INVOKES' } });
@@ -73,7 +88,7 @@
                     }
                 }
 
-                // 2. Загрузка финансовых манифестов (Саботаж)
+                // 2. Загрузка финансовых манифестов
                 const finResponse = await fetch('evidence/financial_sabotage/fincombank_receipts_manifest.json');
                 if (finResponse.ok) {
                     const finData = await finResponse.json();
@@ -87,7 +102,6 @@
                             }
                         });
                         
-                        // Связываем транзакции AJUTOR SOCIAL со статьями ВДПЧ и перехватом гранта
                         elements.push({ data: { source: item.receipt_id, target: 'udhr5', label: 'BREACH' } });
                         elements.push({ data: { source: item.receipt_id, target: 'udhr25', label: 'BREACH' } });
                         elements.push({ data: { source: item.receipt_id, target: 'grant', label: 'SUBVERTS' } });
@@ -99,24 +113,29 @@
 
             document.getElementById('loading').style.display = 'none';
 
-            // Инициализация графа
+            // Инициализация графа с классами для подсветки
             const cy = cytoscape({
                 container: document.getElementById('cy'),
                 elements: elements,
                 style: [
-                    { selector: 'node', style: { 'label': 'data(label)', 'color': '#c9d1d9', 'text-valign': 'bottom', 'text-margin-y': 5, 'font-size': '11px', 'font-family': 'monospace', 'text-background-color': '#0d1117', 'text-background-opacity': 0.8, 'text-background-padding': 2 } },
+                    { selector: 'node', style: { 'label': 'data(label)', 'color': '#c9d1d9', 'text-valign': 'bottom', 'text-margin-y': 5, 'font-size': '11px', 'font-family': 'monospace', 'text-background-color': '#0d1117', 'text-background-opacity': 0.8, 'text-background-padding': 2, 'transition-property': 'opacity', 'transition-duration': '0.3s' } },
                     { selector: 'node[type="framework"]', style: { 'background-color': '#da3633', 'shape': 'hexagon', 'width': 60, 'height': 60, 'font-weight': 'bold', 'border-width': 2, 'border-color': '#ff7b72' } },
                     { selector: 'node[type="article"]', style: { 'background-color': '#d29922', 'shape': 'round-rectangle', 'width': 50, 'height': 50 } },
                     { selector: 'node[type="evidence"]', style: { 'background-color': '#58a6ff', 'shape': 'ellipse', 'width': 25, 'height': 25 } },
                     { selector: 'node[type="financial"]', style: { 'background-color': '#238636', 'shape': 'diamond', 'width': 40, 'height': 40 } },
                     { selector: 'node[type="grant"]', style: { 'background-color': '#8957e5', 'shape': 'star', 'width': 70, 'height': 70 } },
-                    { selector: 'edge', style: { 'width': 1.5, 'line-color': '#30363d', 'target-arrow-color': '#30363d', 'target-arrow-shape': 'triangle', 'curve-style': 'bezier', 'font-size': '9px', 'color': '#8b949e' } },
-                    { selector: 'edge[label="VIOLATION_CLAIM"], edge[label="BREACH"]', style: { 'line-color': '#da3633', 'target-arrow-color': '#da3633', 'line-style': 'dashed' } }
+                    { selector: 'edge', style: { 'width': 1.5, 'line-color': '#30363d', 'target-arrow-color': '#30363d', 'target-arrow-shape': 'triangle', 'curve-style': 'bezier', 'font-size': '9px', 'color': '#8b949e', 'transition-property': 'opacity', 'transition-duration': '0.3s' } },
+                    { selector: 'edge[label="VIOLATION_CLAIM"], edge[label="BREACH"]', style: { 'line-color': '#da3633', 'target-arrow-color': '#da3633', 'line-style': 'dashed' } },
+                    
+                    // Классы для подсветки поиска
+                    { selector: 'node.faded', style: { 'opacity': 0.15 } },
+                    { selector: 'edge.faded', style: { 'opacity': 0.05 } },
+                    { selector: 'node.highlighted', style: { 'border-width': 4, 'border-color': '#f2cc60', 'box-shadow': '0 0 20px #f2cc60' } }
                 ],
                 layout: { name: 'cose', padding: 50, nodeRepulsion: 150000, idealEdgeLength: 120, edgeElasticity: 100, gravity: 250 }
             });
 
-            // Логика обновления боковой панели при клике
+            // Обновление панели при клике
             cy.on('tap', 'node', function(evt){
                 const data = evt.target.data();
                 document.getElementById('node-details').innerHTML = `
@@ -124,6 +143,44 @@
                     <div class="detail-block"><span class="detail-label">Тип:</span><div class="detail-value">${data.type.toUpperCase()}</div></div>
                     <div class="detail-block"><span class="detail-label">Дополнительные данные:</span><div class="detail-value" style="white-space: pre-wrap;">${data.info || 'Нет данных'}</div></div>
                 `;
+            });
+
+            // Логика поиска
+            const searchInput = document.getElementById('search-input');
+            const searchClear = document.getElementById('search-clear');
+
+            function applySearch() {
+                const query = searchInput.value.toLowerCase().trim();
+                
+                if (!query) {
+                    cy.elements().removeClass('faded highlighted');
+                    return;
+                }
+
+                cy.batch(() => {
+                    // Затемняем все элементы
+                    cy.elements().addClass('faded').removeClass('highlighted');
+                    
+                    // Находим узлы, содержащие искомый текст
+                    const matchedNodes = cy.nodes().filter(node => {
+                        const d = node.data();
+                        return (d.id && d.id.toLowerCase().includes(query)) || 
+                               (d.label && d.label.toLowerCase().includes(query)) || 
+                               (d.info && d.info.toLowerCase().includes(query));
+                    });
+                    
+                    // Выделяем найденные узлы и оставляем видимыми их связи
+                    matchedNodes.removeClass('faded').addClass('highlighted');
+                    matchedNodes.connectedEdges().removeClass('faded');
+                    matchedNodes.connectedEdges().connectedNodes().removeClass('faded');
+                });
+            }
+
+            searchInput.addEventListener('input', applySearch);
+            searchClear.addEventListener('click', () => {
+                searchInput.value = '';
+                applySearch();
+                searchInput.focus();
             });
         });
     </script>
