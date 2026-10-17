@@ -1,0 +1,22 @@
+exception_of_unconstitutionality:
+  applicant:
+    name: "Macheret Alexei Artur (A©tor)"
+    idnp: "2000001159655"
+    address: "municipality of Chișinău, 30 Andrei Doga Street, apartment 38"
+    status: "Citizen of the Republic of Moldova; person with lifelong Group I disability (recognised since 2021); victim of torture"
+  case_reference: "No. 2r-1026/26 (PIGD 2-26026250-02-2r-21052026)"
+  contested_acts:
+    - "Ruling of Judge Maria Muruianu (Chișinău Court, Centru seat) returning statement of claim for EUR 506,880 damages against State of Moldova, Ministry of Finance, and State Tax Service."
+    - "Ruling of Court of Appeal Centru Panel (Judges Ana Panov, Svetlana Vișcu, Elena Bolocan) upholding first-instance ruling."
+  subject_matter:
+    - "Challenging State Fee Law No. 213/2023 and Code of Civil Procedure regarding stamp duty (taxa de timbru) and refusal of exemption for persons with Group I disability and torture victims."
+    - "Systemic falsification of apostilles (11 out of 97 apostilles bearing 'illegible signature' instead of original handwritten signatures)."
+  legal_grounds:
+    - "Articles 4, 20, 53 of the Constitution of the Republic of Moldova"
+    - "Universal Declaration of Human Rights (1948) and jus cogens norms"
+  requests:
+    - "Declare unconstitutional the contested provisions of State Law No. 213/2023 and Code of Civil Procedure."
+    - "Direct courts to treat status of torture victim and Group I disability as autonomous and sufficient ground for full stamp duty exemption."
+    - "Stay proceedings in Case No. 2r-1026/26 pending Constitutional Court judgment."
+    - "Hold that violations from falsification of apostilles and procedural barriers are systemic."
+  status: "Submitted to Constitutional Court of the Republic of Moldova / Recorded in repository"

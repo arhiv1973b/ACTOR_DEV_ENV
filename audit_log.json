@@ -303,3 +303,10 @@
     "amount_mdl": 123.00,
     "description": "ELIBERAREA PRESTATIEI \"AJUTOR SO\""
 }
+{
+    "event": "constitutional_court_exception",
+    "document": "Exception_of_Unconstitutionality_Macheret_Actor.pdf",
+    "case_reference": "No. 2r-1026/26",
+    "applicant": "Macheret Alexei Artur (A©tor)",
+    "description": "Exception of Unconstitutionality challenging stamp duty laws and highlighting systemic apostille falsifications."
+}
