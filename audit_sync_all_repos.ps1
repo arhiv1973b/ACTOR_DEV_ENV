@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    CLI-style Automated Audit, Cleanup, Commit, and Push Script for ACTOR_DEV_ENV & Submodules with File Logging.
+    CLI-style Automated Audit, Cleanup, Commit, and Push Script for ACTOR_DEV_ENV & Submodules with Log Rotation.
 .PARAMETER AutoCommit
     Automatically stage and commit changes across all repositories and submodules if changes exist.
 .PARAMETER AutoPush
@@ -13,7 +13,22 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$LogFile = "audit.log"
+
+# Log Rotation Setup
+$LogDir = "logs"
+if (-not (Test-Path $LogDir)) {
+    New-Item -ItemType Directory -Path $LogDir | Out-Null
+}
+
+$sessionTimestamp = Get-Date -Format "yyyyMMdd_HHmmss"
+$LogFile = Join-Path $LogDir "audit_$sessionTimestamp.log"
+$latestLog = "audit.log"
+
+# Rotate existing audit.log if present
+if (Test-Path $latestLog) {
+    $archivedName = "audit_archived_$sessionTimestamp.log"
+    Move-Item $latestLog (Join-Path $LogDir $archivedName) -Force -ErrorAction SilentlyContinue
+}
 
 function Write-Log {
     param(
@@ -24,10 +39,12 @@ function Write-Log {
     $logEntry = "[$timestamp] $Message"
     Write-Host $Message -ForegroundColor $Color
     Add-Content -Path $LogFile -Value $logEntry -ErrorAction SilentlyContinue
+    Add-Content -Path $latestLog -Value $logEntry -ErrorAction SilentlyContinue
 }
 
 Write-Log "============================================================" "Cyan"
 Write-Log " ACTOR_DEV_ENV: AUTOMATED AUDIT, SYNC, COMMIT & PUSH" "Cyan"
+Write-Log " Session Log: $LogFile" "Cyan"
 Write-Log "============================================================" "Cyan"
 if ($AutoCommit) { Write-Log " [MODE] AutoCommit: ENABLED" "Green" }
 if ($AutoPush)   { Write-Log " [MODE] AutoPush: ENABLED" "Green" }
