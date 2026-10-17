@@ -1,15 +1,21 @@
 <#
 .SYNOPSIS
-    CLI-style Automated Audit, Cleanup, Commit, and Push Script for ACTOR_DEV_ENV & Submodules with Log Rotation.
+    CLI-style Automated Audit, Cleanup, Commit, and Push Script for ACTOR_DEV_ENV & Submodules with Configurable Log Retention.
 .PARAMETER AutoCommit
     Automatically stage and commit changes across all repositories and submodules if changes exist.
 .PARAMETER AutoPush
     Automatically push committed changes to remote tracking branches.
+.PARAMETER RetentionDays
+    Number of days to keep audit log files (default: 30).
+.PARAMETER MaxLogs
+    Maximum number of log files to retain (default: 0 for unlimited count).
 #>
 
 param(
     [switch]$AutoCommit = $false,
-    [switch]$AutoPush = $false
+    [switch]$AutoPush = $false,
+    [int]$RetentionDays = 30,
+    [int]$MaxLogs = 0
 )
 
 $ErrorActionPreference = "Stop"
@@ -20,9 +26,16 @@ if (-not (Test-Path $LogDir)) {
     New-Item -ItemType Directory -Path $LogDir | Out-Null
 }
 
-# Retention Policy: Clean up log files older than 30 days
-$retentionDays = 30
-Get-ChildItem -Path $LogDir -Filter "*.log" -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-$retentionDays) } | Remove-Item -Force -ErrorAction SilentlyContinue
+# Retention Policy: Clean up log files older than RetentionDays
+Get-ChildItem -Path $LogDir -Filter "*.log" -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-$RetentionDays) } | Remove-Item -Force -ErrorAction SilentlyContinue
+
+# MaxLogs Limit Policy: Keep only the latest N log files if MaxLogs > 0
+if ($MaxLogs -gt 0) {
+    $allLogs = Get-ChildItem -Path $LogDir -Filter "*.log" -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending
+    if ($allLogs.Count -gt $MaxLogs) {
+        $allLogs | Select-Object -Skip $MaxLogs | Remove-Item -Force -ErrorAction SilentlyContinue
+    }
+}
 
 $sessionTimestamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $LogFile = Join-Path $LogDir "audit_$sessionTimestamp.log"
@@ -49,6 +62,7 @@ function Write-Log {
 Write-Log "============================================================" "Cyan"
 Write-Log " ACTOR_DEV_ENV: AUTOMATED AUDIT, SYNC, COMMIT & PUSH" "Cyan"
 Write-Log " Session Log: $LogFile" "Cyan"
+Write-Log " Retention Policy: $RetentionDays days | Max Logs: $(if($MaxLogs -eq 0){'Unlimited'}else{$MaxLogs})" "Cyan"
 Write-Log "============================================================" "Cyan"
 if ($AutoCommit) { Write-Log " [MODE] AutoCommit: ENABLED" "Green" }
 if ($AutoPush)   { Write-Log " [MODE] AutoPush: ENABLED" "Green" }
