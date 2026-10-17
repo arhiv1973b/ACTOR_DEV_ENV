@@ -1,12 +1,5 @@
 {
-  "audit_timestamp": "2026-09-19T12:16:19.444402+00:00",
-  "total_missing": 1,
-  "missing_evidence": [
-    {
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "role": "duplicate",
-      "path": "H:\\ACTOR_DEV_ENV\\evidence_backup\\evidence_c99741.json",
-      "size_bytes": 450
-    }
-  ]
+  "audit_timestamp": "2026-09-20",
+  "total_missing": 0,
+  "missing_evidence": []
 }
