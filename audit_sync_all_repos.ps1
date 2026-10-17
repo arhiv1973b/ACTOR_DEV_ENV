@@ -122,16 +122,16 @@ function Invoke-RepoSync {
 
     if ($AutoPush) {
         Write-Log "  -> Pushing $Name..." "Cyan"
-        try {
-            $pushOutput = git -C $Path push 2>&1
-            if ($LASTEXITCODE -eq 0) {
-                Write-Log "  -> Pushed $Name successfully." "Green"
-            } else {
-                Write-Log "  -> [Warning] Could not push $Name (may require permissions or remote setup)." "DarkYellow"
-            }
-        } catch {
-            $exMsg = $_.Exception.Message
-            Write-Log ("  -> [Warning] Push failed for " + $Name + ": " + $exMsg) "DarkYellow"
+        $previousPreference = $ErrorActionPreference
+        $ErrorActionPreference = "Continue"
+        git -C $Path push *>&1 | Out-Null
+        $pushExitCode = $LASTEXITCODE
+        $ErrorActionPreference = $previousPreference
+
+        if ($pushExitCode -eq 0) {
+            Write-Log "  -> Pushed $Name successfully." "Green"
+        } else {
+            Write-Log "  -> [Warning] Could not push $Name (permission denied or no remote destination)." "DarkYellow"
         }
     }
 }
