@@ -1,5 +1,5 @@
 // ============================================================
-// NEO4J CYPHER SCRIPT: Legal Framework & OCR Findings Graph Import
+// NEO4J CYPHER SCRIPT: Legal Framework, OCR Findings & Financial Receipts Graph Import
 // Scope: CASE-MACHERET-1997-2026
 // Legal Basis: UDHR (Articles 3, 5, 8, 25) + Constitution of Moldova (Article 4)
 // ============================================================
@@ -68,3 +68,29 @@ FOREACH (ignoreMe IN CASE WHEN term =~ '(?i).*(Jus\\s*Cogens|Erga\\s*Omnes).*' T
     MATCH (fw:LegalFramework {name: "UDHR"})
     MERGE (doc)-[:INVOKES_ABSOLUTE_NORM]->(fw)
 );
+
+// 5. Загрузка и связывание квитанций FinComBank (Экономическое удушение / ВДПЧ Ст. 5, 25)
+MERGE (vector3:SabotageVector {id: "vector_3", title: "Атаки на финансовую логистику"})
+
+CREATE (r1:Evidence:FinComBankReceipt {
+    id: "receipt_3CD779D395025DDF",
+    date: "15.09.2026 15:37:10",
+    amount_mdl: 1168.00,
+    description: "ELIBERAREA PRESTATIEI 'AJUTOR SO'"
+})
+CREATE (r2:Evidence:FinComBankReceipt {
+    id: "receipt_41B41C2E09ABEB5F",
+    date: "15.10.2026 15:34:04",
+    amount_mdl: 123.00,
+    description: "ELIBERAREA PRESTATIEI 'AJUTOR SO'"
+})
+
+MATCH (a5:Article {name: "UDHR Art. 5"})
+MATCH (a25:Article {name: "UDHR Art. 25"})
+
+MERGE (r1)-[:PART_OF_VECTOR]->(vector3)
+MERGE (r2)-[:PART_OF_VECTOR]->(vector3)
+MERGE (r1)-[:VIOLATION_CLAIM]->(a5)
+MERGE (r1)-[:VIOLATION_CLAIM]->(a25)
+MERGE (r2)-[:VIOLATION_CLAIM]->(a5)
+MERGE (r2)-[:VIOLATION_CLAIM]->(a25);
