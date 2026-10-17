@@ -284,3 +284,22 @@
     "timestamp":  "1792165561.84385",
     "event":  "system_reboot"
 }
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1792232109.45807",
+    "event":  "system_reboot"
+}
+{
+    "event": "financial_strangulation",
+    "receipt": "receipt_3CD779D395025DDF.pdf",
+    "date": "15.09.2026 15:37:10",
+    "amount_mdl": 1168.00,
+    "description": "ELIBERAREA PRESTATIEI \"AJUTOR SO\""
+}
+{
+    "event": "financial_strangulation",
+    "receipt": "receipt_41B41C2E09ABEB5F.pdf",
+    "date": "15.10.2026 15:34:04",
+    "amount_mdl": 123.00,
+    "description": "ELIBERAREA PRESTATIEI \"AJUTOR SO\""
+}
