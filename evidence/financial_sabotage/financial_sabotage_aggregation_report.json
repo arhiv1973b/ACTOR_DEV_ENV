@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-MACHERET-1997-2026",
+  "legal_doctrine": "Continuing Consequences (ECHR Art. 3 & 8 / Jus Cogens)",
+  "vectors_evaluated": 3,
+  "fincombank_strangulation_total_mdl": 1291.0,
+  "fincombank_receipts_count": 2,
+  "forced_infrastructure_expenses": [
+    {
+      "item": "GitHub Copilot / Developer Subscriptions",
+      "estimated_annual_eur": 120.0
+    },
+    {
+      "item": "ChatGPT Plus / AI Assistance",
+      "estimated_annual_eur": 240.0
+    },
+    {
+      "item": "Google Workspace & M365 Cloud",
+      "estimated_annual_eur": 150.0
+    },
+    {
+      "item": "iCloud+ Storage & Security",
+      "estimated_annual_eur": 36.0
+    },
+    {
+      "item": "StarNet High-Speed Fiber Internet (Chișinău)",
+      "estimated_annual_eur": 300.0
+    },
+    {
+      "item": "Foto-zoom Digitization & Archival Services",
+      "estimated_annual_eur": 200.0
+    }
+  ],
+  "total_infrastructure_annual_eur": 1046.0,
+  "primary_damages_claim_eur": 506880.0,
+  "aggregation_status": "verified_and_linked"
+}
