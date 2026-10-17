@@ -12,6 +12,7 @@ on:
       - '**/*.jpg'
       - '**/*.jpeg'
       - 'analyze_ocr_legal.py'
+      - 'requirements.txt'
 
 permissions:
   contents: write
@@ -29,6 +30,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
+          cache: 'pip'
 
       - name: Install System Dependencies (Tesseract OCR)
         run: |
@@ -38,7 +40,7 @@ jobs:
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install PyMuPDF pytesseract opencv-python-headless pillow
+          pip install -r requirements.txt
 
       - name: Execute Legal OCR Analysis
         run: python analyze_ocr_legal.py
@@ -46,7 +48,7 @@ jobs:
       - name: Commit and Push Updated Findings
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 auto: update legal findings contextual JSON via OCR pipeline"
+          commit_message: "🤖 auto: update legal findings contextual JSON via OCR pipeline with pinned requirements"
           file_pattern: 'legal_findings_contextual.json'
           commit_user_name: "arhiv240"
           commit_user_email: "arhiv240@gmail.com"
