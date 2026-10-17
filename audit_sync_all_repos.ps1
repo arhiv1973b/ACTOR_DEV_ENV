@@ -1,24 +1,49 @@
 <#
 .SYNOPSIS
-    CLI-style Automated Audit, Cleanup, Commit, and Push Script for ACTOR_DEV_ENV & Submodules with Configurable Log Retention.
+    CLI-style Automated Audit, Cleanup, Commit, and Push Script for ACTOR_DEV_ENV & Submodules with .env.audit Support.
 .PARAMETER AutoCommit
     Automatically stage and commit changes across all repositories and submodules if changes exist.
 .PARAMETER AutoPush
     Automatically push committed changes to remote tracking branches.
 .PARAMETER RetentionDays
-    Number of days to keep audit log files (default: 30).
+    Number of days to keep audit log files.
 .PARAMETER MaxLogs
-    Maximum number of log files to retain (default: 0 for unlimited count).
+    Maximum number of log files to retain.
 #>
 
 param(
-    [switch]$AutoCommit = $false,
-    [switch]$AutoPush = $false,
-    [int]$RetentionDays = 30,
-    [int]$MaxLogs = 0
+    [switch]$AutoCommit,
+    [switch]$AutoPush,
+    [int]$RetentionDays = -1,
+    [int]$MaxLogs = -1
 )
 
 $ErrorActionPreference = "Stop"
+
+# Load configuration from .env.audit if present
+$envFile = ".env.audit"
+$config = @{}
+if (Test-Path $envFile) {
+    Get-Content $envFile | Where-Object { $_ -match '^\s*([^#\s]+)\s*=\s*(.*)\s*$' } | ForEach-Object {
+        $key = $matches[1].Trim()
+        $val = $matches[2].Trim()
+        $config[$key] = $val
+    }
+}
+
+# Resolve parameters (Command-line > .env.audit > Defaults)
+if (-not $PSBoundParameters.ContainsKey('AutoCommit')) {
+    $AutoCommit = ($config['AUTO_COMMIT'] -eq 'true')
+}
+if (-not $PSBoundParameters.ContainsKey('AutoPush')) {
+    $AutoPush = ($config['AUTO_PUSH'] -eq 'true')
+}
+if ($RetentionDays -eq -1) {
+    if ($config.ContainsKey('RETENTION_DAYS')) { $RetentionDays = [int]$config['RETENTION_DAYS'] } else { $RetentionDays = 30 }
+}
+if ($MaxLogs -eq -1) {
+    if ($config.ContainsKey('MAX_LOGS')) { $MaxLogs = [int]$config['MAX_LOGS'] } else { $MaxLogs = 0 }
+}
 
 # Log Rotation Setup
 $LogDir = "logs"
@@ -62,6 +87,7 @@ function Write-Log {
 Write-Log "============================================================" "Cyan"
 Write-Log " ACTOR_DEV_ENV: AUTOMATED AUDIT, SYNC, COMMIT & PUSH" "Cyan"
 Write-Log " Session Log: $LogFile" "Cyan"
+Write-Log " Config Source: $(if(Test-Path $envFile){'.env.audit loaded'}else{'Default settings'})" "Cyan"
 Write-Log " Retention Policy: $RetentionDays days | Max Logs: $(if($MaxLogs -eq 0){'Unlimited'}else{$MaxLogs})" "Cyan"
 Write-Log "============================================================" "Cyan"
 if ($AutoCommit) { Write-Log " [MODE] AutoCommit: ENABLED" "Green" }
