@@ -1,0 +1,23 @@
+{
+  "case_id": "CASE-MACHERET-1997-2026",
+  "category": "financial_sabotage_vector_3",
+  "evidence_items": [
+    {
+      "receipt_id": "receipt_3CD779D395025DDF",
+      "date": "15.09.2026 15:37:10",
+      "amount_mdl": 1168.00,
+      "bank": "FinComBank",
+      "description": "ELIBERAREA PRESTATIEI \"AJUTOR SO\"",
+      "vector": "economic_strangulation"
+    },
+    {
+      "receipt_id": "receipt_41B41C2E09ABEB5F",
+      "date": "15.10.2026 15:34:04",
+      "amount_mdl": 123.00,
+      "bank": "FinComBank",
+      "description": "ELIBERAREA PRESTATIEI \"AJUTOR SO\"",
+      "vector": "economic_strangulation"
+    }
+  ],
+  "verification_status": "cryptographically_anchored"
+}
