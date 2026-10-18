@@ -43,4 +43,6 @@ copilot-worktrees/
 evidence_backup/
 recovered_evidence/
 temp-apostille-site/
-"MASTER_DOSSIER/Cold_Storage/"  
+"MASTER_DOSSIER/Cold_Storage/"
+node_modules/
+browser-mcp-server/node_modules/
