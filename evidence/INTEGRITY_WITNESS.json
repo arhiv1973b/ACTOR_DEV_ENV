@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "protocol": "TI-ULA Cryptographic Cross-Verification",
   "scope": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-19 00:13:32 UTC",
+  "timestamp": "2026-10-19 01:56:55 UTC",
   "total_verified_nodes_and_artifacts": 130,
   "artifacts": [
     {
@@ -69,8 +69,8 @@
     {
       "filename": "INTEGRITY_WITNESS.json",
       "path": "evidence\\INTEGRITY_WITNESS.json",
-      "size_bytes": 34010,
-      "sha256": "98eb604c3849916f714f0f5980f5c90609c7a6994165cbb6cb8bf87cc182063d"
+      "size_bytes": 34300,
+      "sha256": "ab1d1d728c0e0700a639d1da598f4e45f7278fed28a5808832b380247da60d79"
     },
     {
       "filename": "JUS_COGENS_CONCLUSIONS_10_20.json",

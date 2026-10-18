@@ -1,0 +1,12 @@
+{
+  "name": "browser-mcp-server",
+  "version": "1.0.0",
+  "description": "VimBrowserMCP server using Playwright and Model Context Protocol",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "playwright": "^1.40.0",
+    "zod": "^3.0.0"
+  }
+}
