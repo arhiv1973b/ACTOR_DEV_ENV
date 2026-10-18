@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "protocol": "TI-ULA Cryptographic Cross-Verification",
   "scope": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-18 21:12:30 UTC",
-  "total_verified_nodes_and_artifacts": 127,
+  "timestamp": "2026-10-19 00:08:05 UTC",
+  "total_verified_nodes_and_artifacts": 129,
   "artifacts": [
     {
       "filename": "ADOPTION_REASONING_1977.yaml",
@@ -69,8 +69,8 @@
     {
       "filename": "INTEGRITY_WITNESS.json",
       "path": "evidence\\INTEGRITY_WITNESS.json",
-      "size_bytes": 33192,
-      "sha256": "b179bd100dca9c99e47db80a62edb5f1f70d72d2d4bc0ae91c2601520eef8f72"
+      "size_bytes": 33490,
+      "sha256": "c6e55d1638bd8be9a4c1778f4d4a2ff90c9288fc856806989bb2b2f648fb5db6"
     },
     {
       "filename": "JUS_COGENS_CONCLUSIONS_10_20.json",
@@ -365,6 +365,18 @@
       "path": "evidence\\financial_sabotage\\fincombank_receipts_manifest.json",
       "size_bytes": 1405,
       "sha256": "6ad23e23b03882b235438b5ebae02a29f2f9e7c7365d67eb5267741e3e98b2d2"
+    },
+    {
+      "filename": "jus_cogens_trigger_config.json",
+      "path": "evidence\\financial_sabotage\\jus_cogens_trigger_config.json",
+      "size_bytes": 1213,
+      "sha256": "728884af45625cd25fbcee9e7175c074140885fde6e71f32e444e941a2547c02"
+    },
+    {
+      "filename": "Jus_Cogens_Trigger_Deployment.md",
+      "path": "evidence\\financial_sabotage\\Jus_Cogens_Trigger_Deployment.md",
+      "size_bytes": 2626,
+      "sha256": "62d118ec214ddbb6aa27d6f3f6335b2bde0b02399d9c26d1dd6dda3b9337af73"
     },
     {
       "filename": "language_sovereignty_analysis.json",
