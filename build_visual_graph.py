@@ -33,7 +33,30 @@ vis_edges.append(
     "{from: 'ets-nr-2-anchor', to: 'un-petition-s22-anchor', label: 'activates jus cogens'}"
 )
 
-# Читаем локальные чанки если они есть
+# Читаем remote_drive_manifest.json если есть
+remote_manifest_path = "MASTER_DOSSIER/remote_drive_manifest.json"
+if os.path.exists(remote_manifest_path):
+    try:
+        with open(remote_manifest_path, "r", encoding="utf-8-sig") as f:
+            remote_entries = json.load(f)
+        for idx, entry in enumerate(remote_entries[:50]):  # limit to 50 for clarity
+            fname = entry.get("FileName", "unknown")
+            sha = entry.get("Sha256", "UNKNOWN")
+            sha_short = sha[:8] if len(sha) >= 8 else sha
+            node_id = f"remote_drive_{idx}"
+            color = "#008b8b"  # Teal for remote metadata-only files
+            if entry.get("IdnpMatch") or entry.get("MatchedVariants"):
+                color = "#ff1493"  # Deep pink for IDNP/Surname variant match
+
+            label = f"[REMOTE:{sha_short}]\n{fname[:30]}..."
+            vis_nodes.append(
+                f"{{id: '{node_id}', label: \"{label}\", color: '{color}', shape: 'box'}}"
+            )
+            vis_edges.append(
+                f"{{from: 'un-petition-s22-anchor', to: '{node_id}', label: 'remote metadata ref'}}"
+            )
+    except Exception as e:
+        print(f"Error loading remote drive manifest for graph: {e}")
 for i in range(1, 8):
     chunk_path = f"registry_chunks/registry_chunk_{i}.json"
     if os.path.exists(chunk_path):
@@ -101,8 +124,8 @@ html_content = f"""
     <p><span style="color:#cc0000;">■</span> Detention (Root Cause: 1-568/98)</p>
     <p><span style="color:#ff8c00;">■</span> Financial Blockade (Fincombank)</p>
     <p><span style="color:#0000cc;">■</span> Jus Cogens / Venice / ETS</p>
-    <p><span style="color:#c8960a;">■</span> ETS nr. 2 Anchor (1949)</p>
-    <p><span style="color:#9933cc;">■</span> UN Petition S-22 Anchor</p>
+    <p><span style="color:#008b8b;">■</span> Remote Drive Metadata (No Copy)</p>
+    <p><span style="color:#ff1493;">■</span> IDNP / Surname Variant Match</p>
 </div>
 <div id="mynetwork"></div>
 <script type="text/javascript">

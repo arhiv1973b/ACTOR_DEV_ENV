@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "project": "MACHERET-MACERET-ONIM",
+        "description": "Public antroponymic index and spelling equivalence mapping for GitHub search.",
+        "privacy_level": "PUBLIC_INDEX",
+        "note": "Personal sensitive identifiers (IDNP) are isolated or mapped via secure references to prevent exposure in public repositories."
+    },
+    "verification": {
+        "identity_link": "DOCUMENT_DEPENDENT",
+        "linguistic_equivalence": "SOURCE_DEPENDENT",
+        "idnp_binding": "SOURCE_DEPENDENT",
+        "official_expertise": "NOT_VERIFIED_IN_THIS_RECORD",
+        "verification_rule": "No equivalence shall be treated as independently established unless supported by the cited primary document."
+    },
+    "subject_mapping": {
+        "primary_surname_variants": [
+            "MACHERET",
+            "MACERET",
+            "МАЧЕРЕТ"
+        ],
+        "equivalence_rule": "Equivalence of records is treated as dependent on the aggregate of official documents and external primary sources, rather than an automatically proven standalone linguistic identity."
+    },
+    "github_search_config": {
+        "repository_query": "macheret OR maceret OR мачерет",
+        "code_search_patterns": [
+            "MACERET",
+            "MACHERET",
+            "МАЧЕРЕТ",
+            "Maceret",
+            "Macheret"
+        ],
+        "normalization_rules": {
+            "display_standard": "MACHERET / MACERET"
+        }
+    }
+}

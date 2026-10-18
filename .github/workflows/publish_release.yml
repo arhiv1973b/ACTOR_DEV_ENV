@@ -1,0 +1,52 @@
+name: Publish Release v1.0-ACTOR-AUDIT
+
+on:
+  workflow_dispatch:   # запуск вручную
+  push:
+    tags:
+      - 'v1.0-ACTOR-AUDIT'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+
+      - name: Sign artifacts with GPG
+        run: |
+          gpg --batch --yes --armor --detach-sign MASTER_AUDIT.pdf || echo "MASTER_AUDIT.pdf not found or skipped"
+          gpg --batch --yes --armor --detach-sign FINAL_AUDIT_SUMMARY_CONST_RM.md || echo "FINAL_AUDIT_SUMMARY_CONST_RM.md not found or skipped"
+          gpg --batch --yes --armor --detach-sign EVIDENCE_CHAIN_VALIDATION.md || echo "EVIDENCE_CHAIN_VALIDATION.md not found or skipped"
+          gpg --batch --yes --armor --detach-sign 03_GRAPH_GRAPHICS/audit_graph_full.dot || echo "audit_graph_full.dot not found or skipped"
+          gpg --batch --yes --armor --detach-sign 03_GRAPH_GRAPHICS/signature_evidence_graph.dot || echo "signature_evidence_graph.dot not found or skipped"
+          gpg --batch --yes --armor --detach-sign CHECKSUMS_SHA256.txt || echo "CHECKSUMS_SHA256.txt not found or skipped"
+
+      - name: Read Release Notes
+        id: notes
+        run: |
+          echo "RELEASE_BODY<<EOF" >> $GITHUB_ENV
+          cat RELEASE_NOTES_v1.0.md >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v1.0-ACTOR-AUDIT
+          name: "ACTOR_MASTER_EVIDENCE_PACKAGE_1997‑2026"
+          body: ${{ env.RELEASE_BODY }}
+          draft: false
+          prerelease: false
+          files: |
+            MASTER_AUDIT.pdf MASTER_AUDIT.pdf.asc
+            FINAL_AUDIT_SUMMARY_CONST_RM.md FINAL_AUDIT_SUMMARY_CONST_RM.md.asc
+            EVIDENCE_CHAIN_VALIDATION.md EVIDENCE_CHAIN_VALIDATION.md.asc
+            03_GRAPH_GRAPHICS/audit_graph_full.dot 03_GRAPH_GRAPHICS/audit_graph_full.dot.asc
+            03_GRAPH_GRAPHICS/signature_evidence_graph.dot 03_GRAPH_GRAPHICS/signature_evidence_graph.dot.asc
+            CHECKSUMS_SHA256.txt CHECKSUMS_SHA256.txt.asc

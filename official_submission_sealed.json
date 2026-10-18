@@ -1,0 +1,23 @@
+{
+  "phase": "Phase 8 - Official Submission & Final Sealing",
+  "case_id": "CASE-MACHERET-1997-2026",
+  "applicant": "Alexey Macheret (A©tor)",
+  "package": "MASTER_DOSSIER_PACKAGE_2026.zip",
+  "sha256": "CE071030C8783C5E2179CB83C23F9520DA7D34748EDBE09225C163F58571E480",
+  "status": "SEALED AND SUBMITTED",
+  "normative_framework": [
+    "Jus Cogens",
+    "Erga Omnes",
+    "Vienna Convention on the Law of Treaties (1969) Articles 26, 27, 53",
+    "Constitution of the Republic of Moldova Article 4",
+    "Universal Declaration of Human Rights (UDHR 1948) Articles 8, 10, 11"
+  ],
+  "recipients_verified": [
+    "jci@justice.md",
+    "secretariat@constcourt.md",
+    "proc-gen@procuratura.md",
+    "chisinauprotocol@state.gov",
+    "communications@mail.whitehouse.gov"
+  ],
+  "cryptographic_tag": "TI-ULA-PHASE8-SEALED-20261007"
+}

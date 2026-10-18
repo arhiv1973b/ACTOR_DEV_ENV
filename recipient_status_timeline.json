@@ -1,0 +1,11 @@
+{
+  "title": "Recipient Status Timeline",
+  "query": "MATCH (r:Recipient)-[:HAS_STATUS|PREVIOUS_STATUS*]->(s:DeliveryStatus)\n            RETURN r.name AS Recipient, r.email AS Email, s.sent AS Sent,\n                   s.delivered AS Delivered, s.acknowledged AS Acknowledged,\n                   s.checked_at AS CheckedAt\n            ORDER BY s.checked_at ASC",
+  "visualization": {
+    "type": "timeline",
+    "entity": "DeliveryStatus",
+    "timeField": "CheckedAt",
+    "groupBy": "Recipient",
+    "labelFields": ["Sent","Delivered","Acknowledged"]
+  }
+}

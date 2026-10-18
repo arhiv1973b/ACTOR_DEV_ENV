@@ -37,6 +37,37 @@ services:
       - GRYPE_DB_AUTO_UPDATE=true
     entrypoint: ["/grype", "/app", "-o", "table"]
 
+  neo4j:
+    image: neo4j:5.15
+    container_name: neo4j_forensic
+    restart: unless-stopped
+    ports:
+      - "7474:7474"   # HTTP UI (Neo4j Browser / Bloom)
+      - "7687:7687"   # Bolt driver
+    environment:
+      - NEO4J_AUTH=neo4j/password
+      - NEO4JLABS_PLUGINS=["graph-data-science","apoc","bloom"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_dbms_security_procedures_allowlist=apoc.*
+    networks:
+      - actor-net
+    volumes:
+      - ./neo4j_data:/data
+      - ./neo4j_logs:/logs
+      - ./neo4j_import:/var/lib/neo4j/import
+      - ./neo4j_plugins:/plugins
+
+  adminer:
+    image: adminer:latest
+    container_name: forensic_adminer
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    networks:
+      - actor-net
+    environment:
+      - ADMINER_DEFAULT_SERVER=sqlite
+
 networks:
   actor-net:
     driver: bridge

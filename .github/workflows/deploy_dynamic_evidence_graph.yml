@@ -1,0 +1,64 @@
+name: Deploy Dynamic Evidence Graph to Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - feature/cyber-sabotage-audit-10-2026
+    paths:
+      - 'dynamic_evidence_graph.html'
+      - 'legal_findings_contextual.json'
+      - 'evidence/financial_sabotage/**'
+      - '.github/workflows/deploy_dynamic_evidence_graph.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "dynamic-pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare Public HTML
+        run: |
+          mkdir -p public_html
+          mkdir -p public_html/evidence/financial_sabotage
+          
+          # Copy dynamic graph viewer as index.html
+          cp dynamic_evidence_graph.html public_html/index.html
+          
+          # Copy required manifests and JSON data
+          if [ -f "legal_findings_contextual.json" ]; then
+            cp legal_findings_contextual.json public_html/
+          fi
+          
+          if [ -d "evidence/financial_sabotage" ]; then
+            cp -r evidence/financial_sabotage/* public_html/evidence/financial_sabotage/
+          fi
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'public_html'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -169,7 +169,7 @@
     "message":  "System rebooted. Gemini CLI auto-audit activated.",
     "timestamp":  "1791277776.21949",
     "event":  "system_reboot"
-},
+}
 {
     "event": "LIVE_SMTP_DISPATCH_DSN_CORRECTED",
     "case_id": "1-26114218-12-10-09092026-1",
@@ -208,4 +208,117 @@
             "verified_at": "2026-10-06T16:30:13.744392+00:00"
         }
     ]
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791363696.25983",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791367747.59726",
+    "event":  "system_reboot"
+}
+
+{
+    "event": "INBOUND_DSN_RECEIPTS_PARSED",
+    "case_id": "1-26114218-12-10-09092026-1",
+    "timestamp": "2026-10-07T07:40:10.766575+00:00",
+    "receipts": [
+        {
+            "file": "dsn_sample_jci_constcourt.eml",
+            "message_id": "<202610061535.jci.mandatory@actor.local>",
+            "smtp_status": "250 2.0.0 OK - Message delivered to Judec\u0103toria Chi\u0219in\u0103u Sediul Ciocana",
+            "verified_at": "2026-10-07T07:40:10.766536+00:00"
+        }
+    ]
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791451465.25183",
+    "event":  "system_reboot"
+}
+{"event": "JUS_COGENS_JUDICIAL_EVALUATION", "timestamp": "2026-10-08T19:10:01.471387+00:00", "document_title": "Ordonanța Judecătoria Chișinău / Fabricated Fine & Asset Freeze", "status": "VALID", "violations_detected": [], "vclt_basis": "Art. 53/64 (Absolute Nullity / Erga Omnes)", "actor_recognition": "Individual active standing under Art. 60"}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791531958.13332",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791592638.13503",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791790975.57645",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791894940.28762",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791932287.33911",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1791980863.56385",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1792061878.60618",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1792120759.21663",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1792165561.84385",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1792232109.45807",
+    "event":  "system_reboot"
+}
+{
+    "event": "financial_strangulation",
+    "receipt": "receipt_3CD779D395025DDF.pdf",
+    "date": "15.09.2026 15:37:10",
+    "amount_mdl": 1168.00,
+    "description": "ELIBERAREA PRESTATIEI \"AJUTOR SO\""
+}
+{
+    "event": "financial_strangulation",
+    "receipt": "receipt_41B41C2E09ABEB5F.pdf",
+    "date": "15.10.2026 15:34:04",
+    "amount_mdl": 123.00,
+    "description": "ELIBERAREA PRESTATIEI \"AJUTOR SO\""
+}
+{
+    "event": "constitutional_court_exception",
+    "document": "Exception_of_Unconstitutionality_Macheret_Actor.pdf",
+    "case_reference": "No. 2r-1026/26",
+    "applicant": "Macheret Alexei Artur (A©tor)",
+    "description": "Exception of Unconstitutionality challenging stamp duty laws and highlighting systemic apostille falsifications."
+}
+{
+    "event": "international_cover_letter_package",
+    "document": "Сопроводительное письмо_2.подписан.pdf",
+    "date": "16.10.2025",
+    "addressees": ["UN Special Committee", "ICC", "OHCHR"],
+    "description": "Signed cover letter and comprehensive petition package for judicial criminal rehabilitation based on jus cogens and erga omnes, including case files 1-568/98, 1-137/08, 1-983/07, manifestos, and memorandums."
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1792324231.17422",
+    "event":  "system_reboot"
 }

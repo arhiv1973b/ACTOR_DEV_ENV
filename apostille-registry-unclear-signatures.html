@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Реестр апостилей и анализ дефектов «Unclear Signature» · CASE-MACHERET-1997-2026 : A©tor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(20, 30, 48, 0.95);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #d4af37;
+        }
+        h1 {
+            color: #ffd700;
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-family: 'Courier New', monospace;
+        }
+        .subtitle {
+            color: #a0aec0;
+            font-size: 1.1em;
+        }
+        .alert-danger {
+            background: rgba(220, 53, 69, 0.15);
+            border: 2px solid #dc3545;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            color: #ff6b6b;
+        }
+        .alert-danger strong {
+            color: #ff4d4d;
+            font-size: 1.1em;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #1f4068 0%, #162447 100%);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            color: #a0aec0;
+        }
+        .search-box {
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border: 1px solid #4a5568;
+        }
+        .search-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #d4af37;
+            border-radius: 6px;
+            font-size: 16px;
+            background: #0f172a;
+            color: #fff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #0f172a;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #334155;
+        }
+        thead {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+            font-size: 0.95em;
+        }
+        th {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: 'Courier New', monospace;
+            color: #ffd700;
+        }
+        tbody tr:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .code-display {
+            font-family: 'Courier New', monospace;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: #60a5fa;
+        }
+        .badge-defective {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid #ef4444;
+            color: #fca5a5;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .badge-normal {
+            background: rgba(34, 197, 94, 0.2);
+            border: 1px solid #22c55e;
+            color: #86efac;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        .link-btn {
+            color: #38bdf8;
+            text-decoration: none;
+            padding: 6px 12px;
+            border: 1px solid #38bdf8;
+            border-radius: 4px;
+            display: inline-block;
+            transition: all 0.2s;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+        }
+        .link-btn:hover {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+        footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚖️ РЕЕСТР АПОСТИЛЕЙ И АНАЛИЗ ДЕФЕКТОВ «UNCLEAR SIGNATURE»</h1>
+            <div class="subtitle">CASE-MACHERET-1997-2026 · Суверенная цифровая личность: <strong>A©tor</strong> (UTF-8, U+00A9)</div>
+        </header>
+
+        <div class="alert-danger">
+            <strong>🚨 РАЗОБЛАЧЕНИЕ ИНСТИТУЦИОНАЛЬНОГО ОБМАНА И ПРАВОВОЙ ЛОВУШКИ:</strong><br>
+            Государственные органы Республики Молдова (Министерство юстиции / ASP) систематически подменяют реальные физические (ручные) подписи уполномоченных лиц в графе №2 апостиля на фиктивную формулировку <em>«semnătura indescifrabilă»</em> (<strong>unclear signature</strong> / неразборчивая подпись). Одновременно на такие документы наносится предупреждение о том, что они <em>действительны исключительно за пределами территории Республики Молдова</em>. 
+            <br><br>
+            <strong>Суть административной диверсии:</strong> Гражданин, выезжающий за рубеж с таким апостилем, заведомо обрекается на отказ иностранных ведомств в признании документа из-за умышленного сокрытия личной ответственности подписанта и размытия юридического статуса. Это приводит к прямой потере времени, визовых сборов, транспортных и судебных расходов гражданина (в данном деле — в рамках ущерба по иску на 506 880 Евро и 25.2 млн MDL).
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value">97</div>
+                <div class="stat-label">Ожиговых записей (Expected)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">90</div>
+                <div class="stat-label">Доступных загрузок (Downloadable)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">7</div>
+                <div class="stat-label">Дефектных / Пропущенных записей</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">13+</div>
+                <div class="stat-label">Установленных дефектов «Unclear»</div>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 Поиск по коду апостиля, коду безопасности или статусу дефекта..." onkeyup="filterTable()">
+        </div>
+
+        <table id="apostilleTable">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Код апостиля</th>
+                    <th>Код безопасности</th>
+                    <th>Статус подписи (Графа №2)</th>
+                    <th>Прямая ссылка / Источник</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Generated dynamically or listed explicitly -->
+                <tr>
+                    <td>1</td>
+                    <td><span class="code-display">IMWM44AZGX6N6</span></td>
+                    <td><span class="code-display">2013073817848</span></td>
+                    <td><span class="badge-normal">Верифицирована</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/IMWM44AZGX6N6/securityCode/2013073817848" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><span class="code-display">BOUS9XAQDTFH2</span></td>
+                    <td><span class="code-display">2013073851064</span></td>
+                    <td><span class="badge-normal">Верифицирована</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/BOUS9XAQDTFH2/securityCode/2013073851064" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td><span class="code-display">DLTP7B8ZHWGQ7</span></td>
+                    <td><span class="code-display">2013074484667</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #36)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/DLTP7B8ZHWGQ7/securityCode/2013074484667" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td><span class="code-display">CG0T6Y1TBUEL7</span></td>
+                    <td><span class="code-display">2013074491511</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #41)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/CG0T6Y1TBUEL7/securityCode/2013074491511" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>68</td>
+                    <td><span class="code-display">DFVMD2FQLW5N3</span></td>
+                    <td><span class="code-display">2013074809675</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #68)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/DFVMD2FQLW5N3/securityCode/2013074809675" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>69</td>
+                    <td><span class="code-display">IMTQ930Z8U4N7</span></td>
+                    <td><span class="code-display">2013074678387</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #69)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/IMTQ930Z8U4N7/securityCode/2013074678387" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>70</td>
+                    <td><span class="code-display">HQ7X9W62GUJL9</span></td>
+                    <td><span class="code-display">2013074330087</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #70)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/HQ7X9W62GUJL9/securityCode/2013074330087" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>71</td>
+                    <td><span class="code-display">BS7XCZF1EUJG3</span></td>
+                    <td><span class="code-display">2013074500114</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #71)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/BS7XCZF1EUJG3/securityCode/2013074500114" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>77</td>
+                    <td><span class="code-display">4O3WF02QGRCI1</span></td>
+                    <td><span class="code-display">2013074897031</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #77)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/4O3WF02QGRCI1/securityCode/2013074897031" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>79</td>
+                    <td><span class="code-display">DQ1N892ZFXDI3</span></td>
+                    <td><span class="code-display">2013074979347</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #79)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/DQ1N892ZFXDI3/securityCode/2013074979347" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>85</td>
+                    <td><span class="code-display">6R2V5Z4XBZBH8</span></td>
+                    <td><span class="code-display">2013074509902</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #85)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/6R2V5Z4XBZBH8/securityCode/2013074509902" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>86</td>
+                    <td><span class="code-display">IT1PD8E29S5F5</span></td>
+                    <td><span class="code-display">2013074897031</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #86)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/IT1PD8E29S5F5/securityCode/2013074897031" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>90</td>
+                    <td><span class="code-display">4J20E98WFY7J2</span></td>
+                    <td><span class="code-display">2013074672491</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #90)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/4J20E98WFY7J2/securityCode/2013074672491" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>93</td>
+                    <td><span class="code-display">6OZUD89VBUEJ3</span></td>
+                    <td><span class="code-display">2013074732485</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #93)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/6OZUD89VBUEJ3/securityCode/2013074732485" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+                <tr>
+                    <td>96</td>
+                    <td><span class="code-display">IHW093CZ8U8R7</span></td>
+                    <td><span class="code-display">2013074538582</span></td>
+                    <td><span class="badge-defective">⚠️ UNCLEAR SIGNATURE (Дефект #96)</span></td>
+                    <td><a href="https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/IHW093CZ8U8R7/securityCode/2013074538582" target="_blank" class="link-btn">Открыть / Скачать</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <p>CASE-MACHERET-1997-2026 · Digital Identity & Sovereign Trust: <strong>A©tor</strong> (U+00A9) · IDNP: 2000001159655</p>
+        </footer>
+    </div>
+
+    <script>
+        function filterTable() {
+            let input = document.getElementById("searchInput");
+            let filter = input.value.toUpperCase();
+            let table = document.getElementById("apostilleTable");
+            let tr = table.getElementsByTagName("tr");
+            for (let i = 1; i < tr.length; i++) {
+                let tdCode = tr[i].getElementsByTagName("td")[1];
+                let tdSec = tr[i].getElementsByTagName("td")[2];
+                let tdStatus = tr[i].getElementsByTagName("td")[3];
+                if (tdCode || tdSec || tdStatus) {
+                    let txtValue = (tdCode ? tdCode.textContent : "") + " " + (tdSec ? tdSec.textContent : "") + " " + (tdStatus ? tdStatus.textContent : "");
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr.style.display = "";
+                    } else {
+                        tr.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

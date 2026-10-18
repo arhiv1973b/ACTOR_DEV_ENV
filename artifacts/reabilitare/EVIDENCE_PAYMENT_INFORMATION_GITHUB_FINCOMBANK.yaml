@@ -1,0 +1,27 @@
+schema:
+  name: "MATERIAL_EVIDENCE_PAYMENT_INFORMATION"
+  version: "1.0.0"
+  classification: "CONTROLLED_FORENSIC_EVIDENCE"
+
+evidence_source:
+  file_name: "payment_information.pdf"
+  path: "C:\\Users\\arhiv\\Downloads\\Downolde\\payment_information.pdf"
+  description: "GitHub billing and payment settings profile export containing verified identity and banking gateway details."
+
+identity_data:
+  full_name: "Alexei Macheret Artur / Alexei Maceret / Alexei Macheret"
+  github_handle: "arhiv1973b"
+  idnp: "2000001159655"
+  address: "Andrei Doga 30, ap. 38, Chisinau, MD-2024, Moldova"
+
+banking_data:
+  bank: "FinComBank S.A., suc. nr. 6 Chisinau"
+  beneficiary: "Maceret Alexei"
+  iban: "MD55FT225920600348117498"
+  vat_gst: "MD55FT225920600348117498"
+
+forensic_status:
+  financial_event_status: "FINANCIAL_EVENT_UNDER_INVESTIGATION"
+  legal_characterization: "NOT_YET_ESTABLISHED"
+  provenance: "PRIMARY_DOCUMENT_VERIFIED"
+  verification_rule: "Cross-border binding between GitHub billing account, FinComBank IBAN, and State Identity Anchor (IDNP 2000001159655)."

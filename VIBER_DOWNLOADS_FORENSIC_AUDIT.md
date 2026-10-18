@@ -1,7 +1,7 @@
 # FORENSIC AUDIT & CHRONOLOGICAL TIMELINE: VIBER DOWNLOADS
 **Source Directory:** `C:\Users\arhiv\OneDrive\Документы\ViberDownloads`
-**Audit Timestamp:** 2026-08-31 12:39:42 UTC
-**Total Files Analyzed:** 547
+**Audit Timestamp:** 2026-10-09 19:00:23 UTC
+**Total Files Analyzed:** 654
 
 ## Chronological Evidence Matrix (PDF, Video, Audio)
 | Modified Timestamp | File Name | Type | Size (MB) | Forensic Significance |
@@ -354,6 +354,8 @@
 | 2026-04-16 19:24:17 | `0-02-05-1cf19c6e8e61ffd72b18a67f32dd3753eed61fbe17474cac030d4c08cc7e444e_7e8f420e1eacbc30.mp4` | .mp4 | 16.54 | Video Evidence / Procedural Incident |
 | 2026-04-16 19:24:18 | `0-02-05-fde76cd8f68c5d8bd40c81236630c5088f84590494ed7eac737a2b9adf4cb0cc_c2caba89c9852343.mp4` | .mp4 | 16.54 | Video Evidence / Procedural Incident |
 | 2026-04-16 19:24:21 | `0-02-05-fc42d465b3b713ad41ede4b2744dcffd81f56cabbc5a033887c49ba400617396_d2c5ef3e6188c112.mp4` | .mp4 | 16.54 | Video Evidence / Procedural Incident |
+| 2026-04-16 19:24:21 | `0-02-05-fc42d465b3b713ad41ede4b2744dcffd81f56cabbc5a033887c49ba400617396_d2c5ef3e6188c112_1.mp4` | .mp4 | 16.54 | Video Evidence / Procedural Incident |
+| 2026-04-16 19:24:21 | `0-02-05-fc42d465b3b713ad41ede4b2744dcffd81f56cabbc5a033887c49ba400617396_d2c5ef3e6188c112_1_1.mp4` | .mp4 | 16.54 | Video Evidence / Procedural Incident |
 | 2026-04-16 19:24:21 | `0-02-05-d3d5139489098ae9c064cf82cde5d4787fa7394128680926dba67dd1a7b15f59_5a6852fa0aad6840.mp4` | .mp4 | 16.54 | Video Evidence / Procedural Incident |
 | 2026-04-16 19:24:23 | `0-02-05-785c542db93d79258e222bdafc69d59638aa3ecefb65f382e28c92598b3cab21_e2cca98a8527ae6a.mp4` | .mp4 | 16.54 | Video Evidence / Procedural Incident |
 | 2026-04-16 19:24:40 | `0-02-05-785c542db93d79258e222bdafc69d59638aa3ecefb65f382e28c92598b3cab21_171936e67e68f9c9.mp4` | .mp4 | 16.54 | Video Evidence / Procedural Incident |
@@ -479,7 +481,6 @@
 | 2026-06-21 05:05:41 | `0-02-05-da581488acf3b3b27837c6c3fc09b173e83a3d84ba126f4d419d6205c747f333_b5756c0d3b7e52d8.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
 | 2026-06-24 11:19:46 | `0-02-05-7ae0bfed0da2e723835712493a802bffe8725e711aecc7e282f26fdee92e54f3_9a844c25bc2c57f4.jpg` | .jpg | 0.17 | Visual Evidence / Artifacts |
 | 2026-06-24 18:28:59 | `0-02-05-2163594e0707b7456e055eb0097546f3d76856dca13466762e1fdf18602b030b_b34166357bbb15d6.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
-| 2026-06-25 12:06:58 | `0-02-05-45bcdd1d53e3896f98be793b37c476f0a55ec8bb3a6c43b4ee4ef05fed9e06df_1ee52aab0e5b0c87.jpg` | .jpg | 0.15 | Visual Evidence / Artifacts |
 | 2026-06-25 12:08:38 | `0-02-05-b62cd637b7a2cd9b065c2dd6cffddbd7eb5bfd2c984fc59017a6a0c4febeaa53_9475bf5a1fae2770.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
 | 2026-06-25 12:08:39 | `0-02-05-02fa5e7e6e17adb0eb2940a803fa462bdb6fcde3d7b39bac9db56ddce57051c0_af91820e2a8f164e.jpg` | .jpg | 0.14 | Visual Evidence / Artifacts |
 | 2026-06-26 14:10:16 | `0-02-05-7a2155fff9e061bdb4b4f450b63aab3ba03fd24f2dad91b51b84cdcb504a1590_fee21f7297706b9c.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
@@ -553,3 +554,109 @@
 | 2026-08-28 11:54:12 | `0-02-05-609bc3fe9dc94474fceeffd21253b2e23267260222bc280dbcab8dadc8f11d2d_ae5222b9d5055835.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
 | 2026-08-28 20:50:23 | `Документ (164).pdf` | .pdf | 0.29 | Judicial / Legal Submission |
 | 2026-08-31 12:47:52 | `0-02-05-3daa81e51fbca025a6fb8285946feac7bd373034db8f4a85fed35a7f7abd9d03_caf7205e9f35c5b7.jpg` | .jpg | 0.23 | Visual Evidence / Artifacts |
+| 2026-09-02 19:06:57 | `Навстречу к Справедливому Возврату - последнее предупреждение в досудебном порядке_1.pdf` | .pdf | 0.19 | Judicial / Legal Submission |
+| 2026-09-02 19:56:24 | `Виктория банк.pdf` | .pdf | 0.26 | Judicial / Legal Submission |
+| 2026-09-03 15:08:07 | `0-02-05-366a20bef698d8540bbc03d241a1dfcbb2efd312b31c9aeff3209ee5b4fb4d3e_849be28c8fa8b2d.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-09-03 15:12:04 | `0-02-05-45bcdd1d53e3896f98be793b37c476f0a55ec8bb3a6c43b4ee4ef05fed9e06df_1ee52aab0e5b0c87.jpg` | .jpg | 0.15 | Visual Evidence / Artifacts |
+| 2026-09-04 18:41:17 | `25 мл_11.jpg` | .jpg | 0.09 | Visual Evidence / Artifacts |
+| 2026-09-04 20:10:37 | `0-02-05-070182392d9739bc72c9c6a510b746cb13794b7d5217969e97bdbce0fbbc94af_6ebeac3b0e5534aa.jpg` | .jpg | 0.02 | Visual Evidence / Artifacts |
+| 2026-09-07 18:07:09 | `0-02-05-9d441b3343c907e0df0db2f9779a35d910cd631d3a70a9d1e0594e95405b953e_a6628673ef481d94.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-09-07 18:07:09 | `0-02-05-9d441b3343c907e0df0db2f9779a35d910cd631d3a70a9d1e0594e95405b953e_ff7c44b1381a2ae7.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-09-08 11:01:23 | `0-02-05-e02065b3629063f1a521963cb182c6f51200b789eb5b93dbaec758d367318366_3a466971247660c1.jpg` | .jpg | 0.19 | Visual Evidence / Artifacts |
+| 2026-09-08 11:01:23 | `0-02-05-e02065b3629063f1a521963cb182c6f51200b789eb5b93dbaec758d367318366_3a466971247660c1_1.jpg` | .jpg | 0.19 | Visual Evidence / Artifacts |
+| 2026-09-09 18:52:59 | `0-02-05-e02065b3629063f1a521963cb182c6f51200b789eb5b93dbaec758d367318366_11fd8b0a586fac2d.jpg` | .jpg | 0.19 | Visual Evidence / Artifacts |
+| 2026-09-13 04:04:35 | `0-02-05-d660a1e3d0b7b500aa22cb0d3f3a2cdfddcecc9ed4334c1ef414f4a46d60e652_27749ecbe4008fa3.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-09-16 00:18:44 | `20251112151802229.semnat.zip` | .zip | 2.64 | General / Binary Artifact |
+| 2026-09-16 20:13:32 | `0-02-05-9c2ee83af0b0a692c4c35145261202331f134d1043c2901f730273c89d8dda5c_a09f345a14f6bcaf.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-09-16 20:17:02 | `0-02-05-d203088c5b55286bc346bb4e467364e633fb6db033157f2664abb253bf5a3278_5efa3c86698df3ea.jpg` | .jpg | 0.23 | Visual Evidence / Artifacts |
+| 2026-09-16 22:04:19 | `0-02-05-6346ec93e93e284539c0d346c3fc201c6787654c15012ebd316a0f9c83bd3ab9_5669d5ce2877b158.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-09-16 22:50:29 | `0-02-05-eb48f0774ed0cd046641b68c59dd367541175642ae97d482aa75c68baa0f167f_804fbd6054a81dff.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-09-16 22:50:29 | `изображение_viber_2026-09-16_22-50-29-599.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-09-16 22:54:39 | `0-02-05-eb48f0774ed0cd046641b68c59dd367541175642ae97d482aa75c68baa0f167f_6daa4aa275f6c9c6.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-09-16 22:54:39 | `0-02-05-eb48f0774ed0cd046641b68c59dd367541175642ae97d482aa75c68baa0f167f_274465cf00984ca5.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-09-18 09:03:05 | `0-02-05-9f042a3880575dd97784af04e9ad6d00a360463cfaa9ae115ce291fc740b12cd_b41a6901e156aae.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-09-18 09:03:20 | `0-02-05-4e3a9357817da1e5c92e54f5c6294d5c09039e0a49833f79d7b0207e59176e8a_ce900f8996d6e3e1.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-09-18 09:03:52 | `0-02-05-a472100784bdd2ea56927b50425420309fabb2d869dd0e83c14d5674180bb0f2_9753ed0576814ebe.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-09-18 09:04:10 | `0-02-05-64280c8902b7e6fed8447912296ac321a0daa6bc72617514ff291ef230c839cf_14fbd7a37ededd05.jpg` | .jpg | 0.19 | Visual Evidence / Artifacts |
+| 2026-09-18 09:04:32 | `0-02-05-f5367090d4bca8c14d1ff11fc8528473118095127276bdff669c17d61469c088_c9616fc8d6734949.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-09-18 11:50:35 | `0-02-05-8d1b22d5f50347b3a4ed0e93a812ceb2ea0bde8ad25251a419c0d8a52b407fbf_3b75ce28b8552c97.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-09-18 12:15:28 | `0-02-05-16ff2207bac47ccc430dc4cb26edbf9a852ffe2d797d8e6f9d48db130705d607_faecfcd82230d698.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-09-18 12:15:28 | `изображение_viber_2026-09-18_12-15-27-571.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-09-18 12:17:40 | `0-02-05-16ff2207bac47ccc430dc4cb26edbf9a852ffe2d797d8e6f9d48db130705d607_faecfcd82230d698.pdf` | .pdf | 0.24 | Judicial / Legal Submission |
+| 2026-09-18 12:18:34 | `чеканы дело о 25 милионаз.pdf` | .pdf | 0.07 | Judicial / Legal Submission |
+| 2026-09-19 21:50:50 | `NOTIFICARE.pdf` | .pdf | 11.99 | Judicial / Legal Submission |
+| 2026-09-20 12:14:09 | `0-02-05-fbbace05f1a0b7d20c7112fffd0024e3cdfe846a51269195f29ee17808bf536c_ff7b17db1bc75b54.jpg` | .jpg | 0.19 | Visual Evidence / Artifacts |
+| 2026-09-20 12:14:10 | `0-02-05-3ff771b20beb1bafa3d135549b0933bf1bd12f78257b138401edd6e8c9227eb9_abc3e98dd3b86a4b.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-09-20 12:14:10 | `0-02-05-bce4c3e03cdb9b30bac9a894504666de48434b45aadad815a52d43d723337e8f_566b75f651130af2.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-09-20 12:14:11 | `0-02-05-2a5ac369f46e93c875fac3accb1df0a2740ec4c1435ee01b0e5ec4a84a4528b4_e69cea5d37c2bdc2.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-09-20 12:14:11 | `0-02-05-2f170ac372a112ae3a3b38def15dbdbb20ad673c95e662ea257b9e73a6ef988e_613546036651dd36.jpg` | .jpg | 0.19 | Visual Evidence / Artifacts |
+| 2026-09-20 12:14:11 | `0-02-05-d80c9e3d0b5086c2bd59424a6e6b01bc426774ac70de61850786874061738cca_9fc5cdd496c13f3c.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-09-20 12:14:11 | `0-02-05-31be07f1d06728ab4cb8d0519eeca075f168e3ac3561cc5723cd5c86e6857331_fe095a1ab4ee3b8b.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-09-20 12:14:11 | `0-02-05-21b50abaa8c22a9c255a01e845af1b84c5037f297a3b8530e7656ab5ccc9172d_a415f48b4875839e.jpg` | .jpg | 0.19 | Visual Evidence / Artifacts |
+| 2026-09-20 12:14:11 | `0-02-05-b4bb4df9de42632de046ae81b58e6e73aaf698d0782e878beafa7e47385d5136_55bc1e1c2de74e7.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-09-20 12:14:12 | `0-02-05-9076910df216be7e0bad66df968d43e3133e69595b0ac8f23d3f1dc01af54ff2_ac2d6f2a0feb09ab.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-09-20 12:14:12 | `0-02-05-12b58c188767a360995966f8ab1c25b6bc92ea94fb50ebc57b31ebc568af0b57_23be1f8a0a0ca436.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-09-21 23:06:40 | `0-02-05-1d1d8f48cea7f8643d0b0204bd433bc6ba5eaa6f4d6b702d3cdaac8331bc641d_8d9fc58a05e33c11.jpg` | .jpg | 0.17 | Visual Evidence / Artifacts |
+| 2026-09-22 10:10:23 | `0-02-05-c232bcc622c2cb02f14b2a3a05a18253416cccfcd5aadc02fbf17f3a25ea9a47_2f5a1673f9157416.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-09-27 15:08:34 | `0-02-05-f737a1db82511be4e9fb1662dda4e7ef83dc806bf83342c0aa120b2fb1cd2999_54ef500aba16285a.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-09-27 15:11:42 | `0-02-05-786fc567840ef6c9918f0efa54fae0a370b03ef7e7e0fb6c67164a89c0ac89e1_f74d3aee5c5bd481.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-09-27 15:12:19 | `0-02-05-c14cc75ff785491d8d7e6774d0f7215a90f423906a608179ccc46ac11f564aee_63305fd7517597e0.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-09-29 12:04:04 | `0-02-05-a24f0984568051fdadd30d03c6f4aad49a5dca4264ebcd37287ad1c0a5eff484_a6e7192bff978bb6.jpg` | .jpg | 0.01 | Visual Evidence / Artifacts |
+| 2026-09-29 12:04:35 | `0-02-05-b5a867562f31dd4f006bb815b7b75490b55fcd3bf962ff9e8eaaaf0557bae033_53fbd9b8542aae10.jpg` | .jpg | 0.23 | Visual Evidence / Artifacts |
+| 2026-09-29 12:04:49 | `0-02-05-28af243c141692220c265370ca42662abd44b51aacbb577b0bddf39a27b782ca_c99a87f40f00f5df.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-09-29 12:05:19 | `0-02-05-212031058e75b1c81051f04d8614981ae101709d5a73d8d1eec2e4773f59bffa_8e5e60b2f5c5c9c9.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-09-29 12:05:19 | `0-02-05-212031058e75b1c81051f04d8614981ae101709d5a73d8d1eec2e4773f59bffa_8e5e60b2f5c5c9c9_1.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-09-29 12:05:38 | `0-02-05-03f713fafff67ab1be9a9194cfff7492729d9f23aef1aee4e4b1015ce92b2904_be320b4848447e14.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-09-29 12:06:37 | `0-02-05-5085b6576d1b5ef324fed593ea9991ce92ec363d68d94f7bdddc22a17f4e432c_b8d2921258648513.jpg` | .jpg | 0.23 | Visual Evidence / Artifacts |
+| 2026-09-29 12:06:53 | `0-02-05-a5c22fbd8a602bb5ac4c9f3e0c944c1267183b39330f1fdd90f31e362fbd6fb1_1dc1062e89a84b4a.jpg` | .jpg | 0.11 | Visual Evidence / Artifacts |
+| 2026-09-30 16:39:58 | `0-02-05-212031058e75b1c81051f04d8614981ae101709d5a73d8d1eec2e4773f59bffa_99b5ecf2da1a5cf0.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-10-02 16:31:36 | `0-02-05-4cbd51a20e2d6e079fb0643da463353710d9a3a9a5dcc647ff89de347bb930e4_c49cea79ee99f099.jpg` | .jpg | 0.19 | Visual Evidence / Artifacts |
+| 2026-10-02 16:31:36 | `0-02-05-b85bcf1c8a82b5ec3e774346a740763823cd5012e0fc409834bd99778717507e_efd1066bead1b3f9.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-07 17:42:43 | `0-02-05-5e95ca6ac4382738878632a6f6e933aae157be5d9253fbc2f3d449ead5bcde53_b668fae3f68e1fab.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-10-07 18:22:02 | `0-02-05-534315d86cb1570a051ff4a27cd819519adf71e1812bd10d726ea9dea8e26b2f_bf55352a9add48f6.jpg` | .jpg | 0.23 | Visual Evidence / Artifacts |
+| 2026-10-09 14:42:02 | `0-02-05-0ce2df3478889a0ee76b2cd70150d3fc065e63bb4addde85cb0acb5c60e92f37_c8e058cba6219989.jpg` | .jpg | 0.16 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:16 | `0-02-05-160cfb651eac84f286f1dd847838d02edcb0f65e3c860dd091c7da7a13283089_fe759c7a8720fa17.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:26 | `0-02-05-e8f25e00725d41c92ba7dcc55d81499cda3d831fc731ad718e88e28fa424dc2a_571c8c75ff3a0b7d.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:27 | `0-02-05-94a60b15500ceedadcadf342d4b39e9164aca47c552f1d134fb2e7f3bb9fff79_eac08e604f561438.jpg` | .jpg | 0.23 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:27 | `0-02-05-fb14b2be3e7cdd59b4e0c7c872c5d3201688701b789205037178a62736dacdec_5caff98d33c0746d.jpg` | .jpg | 0.16 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:27 | `0-02-05-60d9b8b39b3b4a942b4e2b186920cffefa39d48204cf6dca4532a38d2fa3a84a_1a3fd19036e1923.jpg` | .jpg | 0.18 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:27 | `0-02-05-d8d047b81fd5c7833e805ea067c0f432c1ea5117c20f3875954ced7475018be6_749b6b244593833.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:28 | `0-02-05-82d2c16c6722093b0fca5d0ee8281e361207d69d33e8ba483f997d131d4f1207_30ae7d72a69cdfa.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:28 | `0-02-05-4fa296433ce4adfff6394210026786c83feb88962871aa013fc395db088b60f5_72bb2af81b80ba19.jpg` | .jpg | 0.18 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:28 | `0-02-05-1113fff6cb78c8fb3f5a8b3613cb5bb5646cc814a9f8aaa80a695f7233fef933_a77484fd3fce8eb0.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:29 | `0-02-05-7982800914b990defabd4265ee49e1d62c2729c6e1b86f75cdb32aa6d0ec382b_372959db2d9596e6.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:29 | `0-02-05-819c2ec6d4443854b19fa656b1ad408d8260c9bf91f8394409e1698551f732aa_caa403f8481d10d8.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:29 | `0-02-05-ef55d286e5f8101842f36d82c6ed5672c2d2d58fe3fea4e9a4937bac704e4cc7_e3cfc47dd1b15703.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:30 | `0-02-05-02be5a932e0a1c514bd642ca5479ec5bfbb83afc8bdf6c4f857b074f5db5c915_dec11a54c83dc6bf.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-10-09 19:16:30 | `0-02-05-c244327a77ebb50d5f9f3bbc51d674767d0b92231cd4f0d316817a9c0ccdb7f0_1d4bf67ee2491134.jpg` | .jpg | 0.11 | Visual Evidence / Artifacts |
+| 2026-10-09 19:17:02 | `0-02-05-d5232a024b10aede0cb4f85174323a17d1b8a797956c6ceb60785bb99913a615_7e0359d33fd67ffd.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-10-09 19:21:20 | `0-02-05-c244327a77ebb50d5f9f3bbc51d674767d0b92231cd4f0d316817a9c0ccdb7f0_504773f9f12c42eb.jpg` | .jpg | 0.11 | Visual Evidence / Artifacts |
+| 2026-10-09 19:31:54 | `0-02-05-c244327a77ebb50d5f9f3bbc51d674767d0b92231cd4f0d316817a9c0ccdb7f0_637528251c69c93e.jpg` | .jpg | 0.11 | Visual Evidence / Artifacts |
+| 2026-10-09 19:31:55 | `0-02-05-ac322faddb16279b841c5d9010d89c02dcc68a89f8f153efb30fb8fc8492c818_db60273cf76b1aa9.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-10-09 19:31:56 | `0-02-05-a405b7ff5e65527e1bf910ee6b7e2126789ee81abcd94355f28cd5f992a9af9c_571cf8fca95640de.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-09 19:31:57 | `0-02-05-277c2ad0b6690f41f161af4b49d0d888f4207de42eec9758e278dbf117f5626f_dc58ac19a3804105.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-10-09 19:31:57 | `0-02-05-ce15be53a24ee2b28af1aa09c33b6c967678ec7dfc2b1adc7afc0cd238d5f72d_acdb4d6440864a64.jpg` | .jpg | 0.18 | Visual Evidence / Artifacts |
+| 2026-10-09 19:31:57 | `0-02-05-c4296e075030bba1c46ef6d31ba2937721a0908077c51b49763001e3c20f6d33_a3636bc79e728921.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-10-09 19:31:57 | `0-02-05-47bb71027feee22da3628b44f04ab624717af3cc97ae31ef440c4f72446d41f6_5a8754aeb1530cdf.jpg` | .jpg | 0.11 | Visual Evidence / Artifacts |
+| 2026-10-09 19:31:58 | `0-02-05-6102fa6ce8b223b8b906ab0a42a540ba4da4d9715bd091aac07fcf0ade8d3ac4_513530b8ed10ae5f.jpg` | .jpg | 0.1 | Visual Evidence / Artifacts |
+| 2026-10-09 19:31:58 | `0-02-05-cbc4b0a60b2850ed656e76630b95d30b791bc7735ebbf34a2d74618efc0bc58b_9c01edf03be50323.jpg` | .jpg | 0.11 | Visual Evidence / Artifacts |
+| 2026-10-09 19:31:58 | `0-02-05-93f44d91423ecb8443719f0c4edd4bc19f46546bbc4c1218f94038e3ccabbe4c_d0ac3cc912ca7a5d.jpg` | .jpg | 0.12 | Visual Evidence / Artifacts |
+| 2026-10-09 21:23:40 | `0-02-05-574aedb6dfde6906ab03b7e4302aa2519731f3bc48347854ae8827a2bf31bfcb_f443183406cf8691.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-09 21:23:45 | `0-02-05-6a573c05db9c9186dbf963d7f943233bcc924a59a2aa5c8f4aa01d43465dd836_3f7cf6c5b350c64a.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-10-09 21:23:47 | `0-02-05-37b6d6ccbed9c9b67982bc1629e88b1aab8806db55e300c5cee5202441555d4a_b952fbf7f45ce192.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-10-09 21:23:52 | `0-02-05-cd1d81829a3d5188d31f36399c38d4631899a22b2239b80c08ec3cd2a176721a_ff2c36c65dc84277.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-10-09 21:24:05 | `0-02-05-fe251457785bc9fb7cde4f13a20137d7ff638e3f8ee970cec6a7d2d5fdbf3ad6_76320ae0da0662ec.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-10-09 21:24:11 | `0-02-05-f2d1ca4e1e91b399cff4d6bf14d857d4ede131c3353e239a1f3dabd154e68b06_9c92d693403219d1.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-10-09 21:24:25 | `0-02-05-09f2c6b730e52421af6f32a79d85ee7a94e0cb91f2265ed34aae09f41c5dfe6b_802e719730412e95.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-09 21:25:16 | `0-02-05-d4b44c7c76515c24f300d6dcd302b1738d3c08d419e4a1b4e6a925082a9ca94d_75309e01f77b2e25.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-09 21:25:16 | `0-02-05-77a5e59acd1072a74729655406970a504d20b20a88ac3b9fbc50a50390ac4557_787b55ae4dcfeb6c.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-09 21:26:09 | `0-02-05-ce15be53a24ee2b28af1aa09c33b6c967678ec7dfc2b1adc7afc0cd238d5f72d_2f44d82f3ae17e5e.jpg` | .jpg | 0.18 | Visual Evidence / Artifacts |
+| 2026-10-09 21:45:04 | `0-02-05-06cd39d518e558344f430f91a0a506c1305b3da6b2af1698f61130e71895ad19_1ddd6a42c2cf920.jpg` | .jpg | 0.19 | Visual Evidence / Artifacts |
+| 2026-10-09 21:46:44 | `0-02-05-09f2c6b730e52421af6f32a79d85ee7a94e0cb91f2265ed34aae09f41c5dfe6b_84039656d2924c77.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-09 21:46:44 | `0-02-05-f2d1ca4e1e91b399cff4d6bf14d857d4ede131c3353e239a1f3dabd154e68b06_7c1b9408860f4070.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-10-09 21:46:44 | `0-02-05-6a573c05db9c9186dbf963d7f943233bcc924a59a2aa5c8f4aa01d43465dd836_eaeac14bca25821d.jpg` | .jpg | 0.24 | Visual Evidence / Artifacts |
+| 2026-10-09 21:46:48 | `0-02-05-e1185113e57237d4f0dbb4da03342cd9ba27433fa789012d4a94030031c085ca_4099111c94ee8001.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |
+| 2026-10-09 21:47:03 | `0-02-05-58bfb56cef97fc6b0b0c31300b13edb9bd5e4379ce745bbaaf3f17f80daa5384_8fd87172d7c1b03.jpg` | .jpg | 0.22 | Visual Evidence / Artifacts |
+| 2026-10-09 21:47:04 | `0-02-05-6946a4a2737c4c4ae819e822a8fa070226387df9eb00ec40ff0d3ce624622e12_9cf0f0d89196dfd8.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-10-09 21:47:04 | `0-02-05-35ef2ba915afd979f512d4e180c902e7016c94413d48b9fde10b0810d7dea384_cde72ff40b09fd31.jpg` | .jpg | 0.21 | Visual Evidence / Artifacts |
+| 2026-10-09 21:47:04 | `0-02-05-213e89cea18005c7592479c8418c0703ed774d1488cdb3dc574d6eac3104f9ef_e743f37987d4ac36.jpg` | .jpg | 0.2 | Visual Evidence / Artifacts |

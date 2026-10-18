@@ -9,7 +9,9 @@ import json
 import csv
 import yaml
 
-MANIFEST_PATH = r"H:\ACTOR_DEV_ENV\ti_ula_manual_binder_manifest.yaml"
+MANIFEST_PATH = (
+    r"H:\ACTOR_DEV_ENV\artifacts\reabilitare\TI_ULA_MASTER_DAG_REGISTRY_2026.yaml"
+)
 REPORT_JSON = r"H:\ACTOR_DEV_ENV\missing_evidence_audit_report.json"
 REPORT_CSV = r"H:\ACTOR_DEV_ENV\missing_evidence_audit_report.csv"
 
