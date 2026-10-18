@@ -1,12 +1,4 @@
-========================================================================
- EVIDENCE ARTIFACT: receipt_3CD779D395025DDF.pdf
- LEGAL ANCHOR: Art. 4 Constitution of RM, UDHR 1948, Jus Cogens
- SIGNATURE: A©TOR_KEY="# [⚖ A©tor Declaration]"
- SHA-256 (PDF): 3a8c669a0d2dd5d8b457777be80d38d99bc9e89b2749c58ce5f9bb6cae05d0ce
-========================================================================
-
-
---- [Page 1] ---
+--- Page 1 ---
 Электронное подтверждение 
 •
 Держатель карты: Maceret Alexei
@@ -29,3 +21,10 @@
 •
 Описание операции: ELIBERAREA PRESTATIEI "AJUTOR SO
 Дата формирования: 16.10.2026 12:52:04
+
+--------------------------------------------------
+[VERIFIED VIA OCR ZERO-BYPASS PIPELINE]
+Jurisdiction: Universal Declaration of Human Rights (UDHR) & Art. 4 of the Constitution of the Republic of Moldova.
+Status: Peremptory norms execution (jus cogens) / Erga Omnes.
+A©TOR_KEY="# [⚖ A©tor Declaration]"
+--------------------------------------------------

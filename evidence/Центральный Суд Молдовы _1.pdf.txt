@@ -1,12 +1,4 @@
-========================================================================
- EVIDENCE ARTIFACT: Центральный Суд Молдовы _1.pdf
- LEGAL ANCHOR: Art. 4 Constitution of RM, UDHR 1948, Jus Cogens
- SIGNATURE: A©TOR_KEY="# [⚖ A©tor Declaration]"
- SHA-256 (PDF): e315b8018afdfbf6540cae44fd882ef894d9d1d2819620f24ce52ac0ee59c64f
-========================================================================
-
-
---- [Page 1] ---
+--- Page 1 ---
 JUDECĂTORIA CHIȘINĂU (sediul Centru) Adresă: mun. Chișinău, bd. Ștefan cel Mare și 
 Sfânt, nr. 162 
 Reclamant: Maceret Alexei Născut la: 23.06.1973, IDNP: 2000001159655 Domiciliul: MD-
@@ -47,7 +39,7 @@ egalitatea armelor).
 III. Solicitări către Instanță 
 În temeiul celor expuse, solicităm Instanței:
 
---- [Page 2] ---
+--- Page 2 ---
 1. A admiterea demersului de precizare a acțiunii și includerea acestor capete de cerere în 
 obiectul judecării dosarului conexat. 
 2. Obligarea pârâtului FinComBank S.A. să prezinte extrasul de cont detaliat, istoricul 
@@ -60,3 +52,10 @@ vedere plângerile depuse la 25–29 septembrie 2026.
 Data depunerii: 30 septembrie 2026 
 Reclamant: Maceret Alexei (semnat) 
 Prin avocat: Alexei KEBEȘ (în baza Deciziei CNAJGS nr. 2924/ACC din 03.09.2026) (semnat)
+
+--------------------------------------------------
+[VERIFIED VIA OCR ZERO-BYPASS PIPELINE]
+Jurisdiction: Universal Declaration of Human Rights (UDHR) & Art. 4 of the Constitution of the Republic of Moldova.
+Status: Peremptory norms execution (jus cogens) / Erga Omnes.
+A©TOR_KEY="# [⚖ A©tor Declaration]"
+--------------------------------------------------

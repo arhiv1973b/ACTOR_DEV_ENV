@@ -1,14 +1,13 @@
-========================================================================
- EVIDENCE ARTIFACT: We Have Received Your Message.подписан.pdf
- LEGAL ANCHOR: Art. 4 Constitution of RM, UDHR 1948, Jus Cogens
- SIGNATURE: A©TOR_KEY="# [⚖ A©tor Declaration]"
- SHA-256 (PDF): af535e3fc2c54660f9fefc38324d823b8f37233a4932912796ba46d60f21b3db
-========================================================================
-
-
---- [Page 1] ---
+--- Page 1 ---
 Digitally signed by Maceret Alexei 
 Date: 2025.11.29 17:40:37 EET 
 Reason: MoldSign Signature 
 Location: Moldova
 MOLDOVA EUROPEANĂ
+
+--------------------------------------------------
+[VERIFIED VIA OCR ZERO-BYPASS PIPELINE]
+Jurisdiction: Universal Declaration of Human Rights (UDHR) & Art. 4 of the Constitution of the Republic of Moldova.
+Status: Peremptory norms execution (jus cogens) / Erga Omnes.
+A©TOR_KEY="# [⚖ A©tor Declaration]"
+--------------------------------------------------

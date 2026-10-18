@@ -1,12 +1,4 @@
-========================================================================
- EVIDENCE ARTIFACT: Scrisoare_insotitoare_Revizuire_Macheret.pdf
- LEGAL ANCHOR: Art. 4 Constitution of RM, UDHR 1948, Jus Cogens
- SIGNATURE: A©TOR_KEY="# [⚖ A©tor Declaration]"
- SHA-256 (PDF): 82cd7e1a48e1d411318e3fd7a20474620e4092675059416a076df2c8f9582069
-========================================================================
-
-
---- [Page 1] ---
+--- Page 1 ---
 Dosar nr. 2r-1026/26
 CĂTRE:
 CURTEA DE APEL CHIȘINĂU
@@ -62,7 +54,7 @@ Anexez la prezenta următoarele acte:
 2. Copia răspunsului „Banca de Finanțe și Comerț” S.A. (FinComBank) nr. 6647/Out din
 26.08.2026;
 
---- [Page 2] ---
+--- Page 2 ---
 3. Registrul apostilelor (97 poziții) cu indicarea codurilor de securitate, datelor, semnatărilor
 (inclusiv semnături indescifrabile) și legăturilor de descărcare;
 4. Avizul științific al Institutului de Filologie Română „Bogdan Petriceicu-Hasdeu” al
@@ -84,3 +76,10 @@ IDNP: 2000001159655
 Domiciliu: mun. Chișinău, str. Andrei Doga nr. 30, ap. 38
 Persoană cu dizabilitate severă (Gradul I); victimă a torturii
 Pagina din
+
+--------------------------------------------------
+[VERIFIED VIA OCR ZERO-BYPASS PIPELINE]
+Jurisdiction: Universal Declaration of Human Rights (UDHR) & Art. 4 of the Constitution of the Republic of Moldova.
+Status: Peremptory norms execution (jus cogens) / Erga Omnes.
+A©TOR_KEY="# [⚖ A©tor Declaration]"
+--------------------------------------------------
