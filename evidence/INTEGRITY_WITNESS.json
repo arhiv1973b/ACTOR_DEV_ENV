@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "protocol": "TI-ULA Cryptographic Cross-Verification",
   "scope": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-18 14:29:43 UTC",
-  "total_verified_nodes_and_artifacts": 121,
+  "timestamp": "2026-10-18 16:38:30 UTC",
+  "total_verified_nodes_and_artifacts": 123,
   "artifacts": [
     {
       "filename": "ADOPTION_REASONING_1977.yaml",
@@ -70,7 +70,7 @@
       "filename": "INTEGRITY_WITNESS.json",
       "path": "evidence\\INTEGRITY_WITNESS.json",
       "size_bytes": 31874,
-      "sha256": "99b51e994bf51bc97dc549e248e2e818cb083b9c5841f7ee47bcc6a9fb6c568e"
+      "sha256": "4f7f9629409339833cabac4fdd975b0f0d54db25f4a1b8390bb0cf2e6d1f37a4"
     },
     {
       "filename": "JUS_COGENS_CONCLUSIONS_10_20.json",
@@ -251,6 +251,18 @@
       "path": "evidence\\ORDER_RISCANI_24JUL2007.yaml",
       "size_bytes": 1094,
       "sha256": "231baf517ce8fe10a2e33b625ae63ef5b1e9acefaa4762b8065c3ddd953d466a"
+    },
+    {
+      "filename": "receipt_3CD779D395025DDF.pdf",
+      "path": "evidence\\receipt_3CD779D395025DDF.pdf",
+      "size_bytes": 176024,
+      "sha256": "3a8c669a0d2dd5d8b457777be80d38d99bc9e89b2749c58ce5f9bb6cae05d0ce"
+    },
+    {
+      "filename": "Scrisoare_insotitoare_Revizuire_Macheret.pdf",
+      "path": "evidence\\Scrisoare_insotitoare_Revizuire_Macheret.pdf",
+      "size_bytes": 195752,
+      "sha256": "82cd7e1a48e1d411318e3fd7a20474620e4092675059416a076df2c8f9582069"
     },
     {
       "filename": "ti_ula_jus_cogens_evidence_manifest.json",
