@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "protocol": "TI-ULA Cryptographic Cross-Verification",
   "scope": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-19 00:08:05 UTC",
-  "total_verified_nodes_and_artifacts": 129,
+  "timestamp": "2026-10-19 00:13:32 UTC",
+  "total_verified_nodes_and_artifacts": 130,
   "artifacts": [
     {
       "filename": "ADOPTION_REASONING_1977.yaml",
@@ -69,8 +69,8 @@
     {
       "filename": "INTEGRITY_WITNESS.json",
       "path": "evidence\\INTEGRITY_WITNESS.json",
-      "size_bytes": 33490,
-      "sha256": "c6e55d1638bd8be9a4c1778f4d4a2ff90c9288fc856806989bb2b2f648fb5db6"
+      "size_bytes": 34010,
+      "sha256": "98eb604c3849916f714f0f5980f5c90609c7a6994165cbb6cb8bf87cc182063d"
     },
     {
       "filename": "JUS_COGENS_CONCLUSIONS_10_20.json",
@@ -323,6 +323,12 @@
       "path": "evidence\\Центральный Суд Молдовы _1.pdf",
       "size_bytes": 179089,
       "sha256": "e315b8018afdfbf6540cae44fd882ef894d9d1d2819620f24ce52ac0ee59c64f"
+    },
+    {
+      "filename": "Analiza_Blocare_Deblocare_Active_2r_1026_26.md",
+      "path": "evidence\\financial_sabotage\\Analiza_Blocare_Deblocare_Active_2r_1026_26.md",
+      "size_bytes": 6531,
+      "sha256": "8c6ec9b625e32d13fc63804637e3a14bd09c6fe5c8f6e8e22581ef70428c1cea"
     },
     {
       "filename": "comprehensive_case_evidence_packet_oct2026.json",
