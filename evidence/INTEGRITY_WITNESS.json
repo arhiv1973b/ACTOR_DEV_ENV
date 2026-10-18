@@ -3,45 +3,9 @@
   "version": "1.0.0",
   "protocol": "TI-ULA Cryptographic Cross-Verification",
   "scope": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-09-21 02:26:06 UTC",
-  "total_verified_nodes_and_artifacts": 246,
+  "timestamp": "2026-10-18 12:11:47 UTC",
+  "total_verified_nodes_and_artifacts": 121,
   "artifacts": [
-    {
-      "filename": ".mcp_config.json",
-      "path": "evidence\\.mcp_config.json",
-      "size_bytes": 200,
-      "sha256": "7a118dda34c8e0ec8dcc295eefee3337ec870079afba48fbff643371ea95c07a"
-    },
-    {
-      "filename": "actor_jus_cogens_engine.json",
-      "path": "evidence\\actor_jus_cogens_engine.json",
-      "size_bytes": 2618,
-      "sha256": "85851c0d1ff96449038ab9ed9d2e63b94e324ef4e91b7512b8dad1270ee07e54"
-    },
-    {
-      "filename": "ACTOR_JUS_COGENS_SEARCH_PROMPT_en.json",
-      "path": "evidence\\ACTOR_JUS_COGENS_SEARCH_PROMPT_en.json",
-      "size_bytes": 1199,
-      "sha256": "361ead193b74b7dccff8fcb8aeadd408655942b2ccec50f251eb38dfa9263cff"
-    },
-    {
-      "filename": "ACTOR_JUS_COGENS_SEARCH_PROMPT_es.json",
-      "path": "evidence\\ACTOR_JUS_COGENS_SEARCH_PROMPT_es.json",
-      "size_bytes": 1231,
-      "sha256": "c3196e2962412d6d76e09e64180727468183c8cc80c915d05735bfae06908906"
-    },
-    {
-      "filename": "ACTOR_JUS_COGENS_SEARCH_PROMPT_fr.json",
-      "path": "evidence\\ACTOR_JUS_COGENS_SEARCH_PROMPT_fr.json",
-      "size_bytes": 1227,
-      "sha256": "9afd56d0712920ae58777250b4c86789c1ef18bac6a8e2a1ed18f5cae244a2f5"
-    },
-    {
-      "filename": "ACTOR_JUS_COGENS_SEARCH_PROMPT_roundtrip.json",
-      "path": "evidence\\ACTOR_JUS_COGENS_SEARCH_PROMPT_roundtrip.json",
-      "size_bytes": 1778,
-      "sha256": "8447b18b3b77c6058606b2a0cc8c29138b3db03bf636a0c58b42501da4d95df9"
-    },
     {
       "filename": "ADOPTION_REASONING_1977.yaml",
       "path": "evidence\\ADOPTION_REASONING_1977.yaml",
@@ -49,112 +13,16 @@
       "sha256": "2dcb427099efe55418a813fa2430cfb99bb3bc86f4734551ff2e7ac97d9e387f"
     },
     {
-      "filename": "agent.json",
-      "path": "evidence\\agent.json",
-      "size_bytes": 1160,
-      "sha256": "f3667a6e96e4906306078f6f32a62c47bda116b9425cd28dddee29eb0052dc6d"
+      "filename": "ANCHOR_CALIBRATION_AND_STABILIZER_BRACKET.md",
+      "path": "evidence\\ANCHOR_CALIBRATION_AND_STABILIZER_BRACKET.md",
+      "size_bytes": 2297,
+      "sha256": "3266486f81b6d894b8bf99cc6523a27e8c47905270676c73ac70c1d37c8be53c"
     },
     {
-      "filename": "apostille_candidates_manifest.json",
-      "path": "evidence\\apostille_candidates_manifest.json",
-      "size_bytes": 16866651,
-      "sha256": "8e7eb942c115426f9d3237acff96564b41252a9bd1a280664990c1c476617412"
-    },
-    {
-      "filename": "APPEAL_TO_PRESIDENT_TRUMP_2026_CANONICAL.json",
-      "path": "evidence\\APPEAL_TO_PRESIDENT_TRUMP_2026_CANONICAL.json",
-      "size_bytes": 3091,
-      "sha256": "eea46e1a7955e002f95812f8875cecc1e28295ba56af7805994d9d04d72bc269"
-    },
-    {
-      "filename": "audit_blind_zone_1997_2002.json",
-      "path": "evidence\\audit_blind_zone_1997_2002.json",
-      "size_bytes": 1131,
-      "sha256": "1b56ae84e1c00303ecb6c9ea3f3b104fa603288907361ccfe2667c5e990cfbb8"
-    },
-    {
-      "filename": "audit_blind_zone_2005.json",
-      "path": "evidence\\audit_blind_zone_2005.json",
-      "size_bytes": 1013,
-      "sha256": "147d4d1d4e9fcfd7f06a8930312c148459117120b59f34f24f027f2b6ce3a45f"
-    },
-    {
-      "filename": "audit_blind_zone_case_28_11.json",
-      "path": "evidence\\audit_blind_zone_case_28_11.json",
-      "size_bytes": 1115,
-      "sha256": "9cc7b7bbb577a14c40aa2027a41f2d722072d18532133a1a638890f4018bb6ba"
-    },
-    {
-      "filename": "audit_blind_zone_echr_2013.json",
-      "path": "evidence\\audit_blind_zone_echr_2013.json",
-      "size_bytes": 1116,
-      "sha256": "75fd9ba894a1b84781fd908b1eef38410a775772f06708e9fd6e0007b107297a"
-    },
-    {
-      "filename": "audit_blind_zone_ecpt_2012.json",
-      "path": "evidence\\audit_blind_zone_ecpt_2012.json",
-      "size_bytes": 1064,
-      "sha256": "e9eef18bb8dfd5b4a7879c3e5f6d3bca6736d0df988cbb747b0dfe63dacf1e07"
-    },
-    {
-      "filename": "audit_index.json",
-      "path": "evidence\\audit_index.json",
-      "size_bytes": 157,
-      "sha256": "2179260d19f4e86658612de5748dcf61331a12dde7be67dbc03e16b889438e90"
-    },
-    {
-      "filename": "audit_log.json",
-      "path": "evidence\\audit_log.json",
-      "size_bytes": 2820,
-      "sha256": "bcb46408d356e1a53d0f6e153cbd57c15e8334c9df56076dd06341a18f184b81"
-    },
-    {
-      "filename": "audit_log_local.json",
-      "path": "evidence\\audit_log_local.json",
-      "size_bytes": 135,
-      "sha256": "187a2367dac46d22903e4cc1a2e515a93e9054f837d50db03d572ed88dc22b85"
-    },
-    {
-      "filename": "audit_results.json",
-      "path": "evidence\\audit_results.json",
-      "size_bytes": 23661610,
-      "sha256": "329587fb6250daa450bdd24adfec18f9ac5a8c94e73a642a6f6b9f5e4cd3c76a"
-    },
-    {
-      "filename": "batch_evidence_processed.json",
-      "path": "evidence\\batch_evidence_processed.json",
-      "size_bytes": 1313,
-      "sha256": "a83f87b1be67081190f50720603b0ac432cc20e2c798ca259869c580e53b0a40"
-    },
-    {
-      "filename": "batch_icloud_forensic_report.json",
-      "path": "evidence\\batch_icloud_forensic_report.json",
-      "size_bytes": 31449,
-      "sha256": "6adce85fa82db6b48c27a34d75fba21036b0a81e064d29f4ea627a01cdfecd68"
-    },
-    {
-      "filename": "batch_manifest.json",
-      "path": "evidence\\batch_manifest.json",
-      "size_bytes": 284,
-      "sha256": "de9017d8f66873824b1396d84020a6f7a9c2c143e2512a963948c5c62040539e"
-    },
-    {
-      "filename": "bidirectional_quantum_report.json",
-      "path": "evidence\\bidirectional_quantum_report.json",
-      "size_bytes": 3731,
-      "sha256": "3295aee81262f8422f8a3090dddb321142fa33f945790279f4c1dfd8f4eb8e2b"
-    },
-    {
-      "filename": "bloom_perspective_ti_ula.json",
-      "path": "evidence\\bloom_perspective_ti_ula.json",
-      "size_bytes": 3090,
-      "sha256": "ee52d39b5675033e705e20c59c2e5c43dd979bb60de761e2a700c7698b716116"
-    },
-    {
-      "filename": "CANONICAL_JUS_COGENS_MASTER_2026.json",
-      "path": "evidence\\CANONICAL_JUS_COGENS_MASTER_2026.json",
-      "size_bytes": 683,
-      "sha256": "ffa93354fb77c2e982a666e6718e99b4870d0dc784aac204e50c047c955758ff"
+      "filename": "AUTONOMOUS_NODE_WH_FUNDS_ORIGIN.json",
+      "path": "evidence\\AUTONOMOUS_NODE_WH_FUNDS_ORIGIN.json",
+      "size_bytes": 658,
+      "sha256": "0719f12ac46cc6f543d3af45849e02e4d8b5bb1d5077bd6ef82c2abd0e239991"
     },
     {
       "filename": "CASCADE_CANCELLATION_MATRIX.yaml",
@@ -163,82 +31,10 @@
       "sha256": "95f2b40b3cbfe21ecc24631c48e8c62e511eda4cba1f08be2f7edf55f86420d0"
     },
     {
-      "filename": "CASE_TRUMP_APPEAL_CANONICAL.json",
-      "path": "evidence\\CASE_TRUMP_APPEAL_CANONICAL.json",
-      "size_bytes": 3090,
-      "sha256": "40daa2f5ca1f70e4d2cb86c7958efce610830995627f25a65d5179fbd056d91c"
-    },
-    {
-      "filename": "causality_agent_template.json",
-      "path": "evidence\\causality_agent_template.json",
-      "size_bytes": 1230,
-      "sha256": "e50d847e469d611af4d793ef58e9ca97c30872086a5af0412379cc2b4f2021d6"
-    },
-    {
-      "filename": "causality_kernel.json",
-      "path": "evidence\\causality_kernel.json",
-      "size_bytes": 4584,
-      "sha256": "9b14456805ab338a39a6589141342a9111af63e66dce1face17ed066ca7dbb02"
-    },
-    {
-      "filename": "causality_swarm_execution_report.json",
-      "path": "evidence\\causality_swarm_execution_report.json",
-      "size_bytes": 1472,
-      "sha256": "60ad60c53bfd1556610d972738051371efe544442d448ede7c3e87fee9a8d2e1"
-    },
-    {
-      "filename": "cloud_id_manifest_full (1).json",
-      "path": "evidence\\cloud_id_manifest_full (1).json",
-      "size_bytes": 22329350,
-      "sha256": "11ff5066925f9d1ba9e0b97c88a6f10a4575c19e6929d88114ce35527087fb10"
-    },
-    {
       "filename": "cloud_id_manifest_full.json",
       "path": "evidence\\cloud_id_manifest_full.json",
       "size_bytes": 17400575,
       "sha256": "3795da2244c47e101eb0ea8c11f6afdbf0e5e99dbb437ec921909791d3ffad23"
-    },
-    {
-      "filename": "cloud_id_manifest_unified.json",
-      "path": "evidence\\cloud_id_manifest_unified.json",
-      "size_bytes": 2870852,
-      "sha256": "ffa9c3ef50933a42b19bda6e47edd1b898dc842a2eb2ac35e16046b22bde31d8"
-    },
-    {
-      "filename": "config.json",
-      "path": "evidence\\config.json",
-      "size_bytes": 43,
-      "sha256": "82fe0619a8dad757f4ff3da8886886da87079fb9afe4e63df21b4be4c874b3ed"
-    },
-    {
-      "filename": "credentials (2).json",
-      "path": "evidence\\credentials (2).json",
-      "size_bytes": 2,
-      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-    },
-    {
-      "filename": "credentials.json",
-      "path": "evidence\\credentials.json",
-      "size_bytes": 490,
-      "sha256": "d4269eba17ab6ab366f74f8172d1ee4d50ad565147b8ecba7995a2b231930e71"
-    },
-    {
-      "filename": "dag_manifest.json",
-      "path": "evidence\\dag_manifest.json",
-      "size_bytes": 209336,
-      "sha256": "6bccb57f303bfcfc99aa52a2b0c1be11150af057291630981e869a34af9f673a"
-    },
-    {
-      "filename": "dag_node_cerere_7420.json",
-      "path": "evidence\\dag_node_cerere_7420.json",
-      "size_bytes": 662,
-      "sha256": "f18277e8836e58f30c17e45ad2eb06425f8652b9787748ee3d20160b69c7c521"
-    },
-    {
-      "filename": "database_integrity_lock.json",
-      "path": "evidence\\database_integrity_lock.json",
-      "size_bytes": 230,
-      "sha256": "b9b84055941545c6d47310db8a66043dbdcc9310211f8377958f1031e2f59d0e"
     },
     {
       "filename": "DIVORCE_CERTIFICATE_MATIUK_STANISLAV_GALINA.yaml",
@@ -247,296 +43,44 @@
       "sha256": "78a7a7f486963049bc5fe0402ec102feca6b32d8fb076e6bf087e3adc4030dcf"
     },
     {
-      "filename": "doctrine_bypass_echr_manifest.json",
-      "path": "evidence\\doctrine_bypass_echr_manifest.json",
-      "size_bytes": 1171,
-      "sha256": "540a61658bd6f0a1571aee459c4b6f12f81ee0257a78c1dc379b22dae6bbb202"
+      "filename": "EXECUTIVE_SUMMARY_UNHRC_2026.md",
+      "path": "evidence\\EXECUTIVE_SUMMARY_UNHRC_2026.md",
+      "size_bytes": 6658,
+      "sha256": "1e18ae3d67b08d00be016acfe5667812c682755e1eb3ae50b5e5b63af8899e39"
     },
     {
-      "filename": "ECHR_IMPUNITY_DAG.json",
-      "path": "evidence\\ECHR_IMPUNITY_DAG.json",
-      "size_bytes": 1632,
-      "sha256": "7a7762594f883341539a2a9fb137c097d7d784f83d220532282abc98826dfd94"
+      "filename": "f53f0542-1f0a-4bfd-b07c-050592d60eea.pdf",
+      "path": "evidence\\f53f0542-1f0a-4bfd-b07c-050592d60eea.pdf",
+      "size_bytes": 1599733,
+      "sha256": "80b7fbe1761a54ef58c42801859741319c1a097722e92babe255f35d47671faf"
     },
     {
-      "filename": "ECHR_IMPUNITY_DAG_1948_2026.json",
-      "path": "evidence\\ECHR_IMPUNITY_DAG_1948_2026.json",
-      "size_bytes": 2036,
-      "sha256": "0591a114f32968bb618db745634b467b3dd0e074999c523033bc61c07894420e"
+      "filename": "FORGERY_CONTRADICTION_LOG_2026.json",
+      "path": "evidence\\FORGERY_CONTRADICTION_LOG_2026.json",
+      "size_bytes": 1984,
+      "sha256": "b7fb86aaaaa707eae0abac03db70203ae5a5546fa7e723ac3f6839e254bee163"
     },
     {
-      "filename": "ECHR_IMPUNITY_DAG_SCHEMA.json",
-      "path": "evidence\\ECHR_IMPUNITY_DAG_SCHEMA.json",
-      "size_bytes": 4691,
-      "sha256": "b268838fd9ded44392352b98d31ce8496d7a95b77e3da686cf7f11015f71ee0d"
-    },
-    {
-      "filename": "ECHR_IMPUNITY_DAG_TOPOLOGICAL_INVARIANT.json",
-      "path": "evidence\\ECHR_IMPUNITY_DAG_TOPOLOGICAL_INVARIANT.json",
-      "size_bytes": 1456,
-      "sha256": "e2a59447620b51c54e23ae88b4f213a6590f02bb80b006d8156a5ebfc2f77976"
-    },
-    {
-      "filename": "evidence_0ab9ee12.json",
-      "path": "evidence\\evidence_0ab9ee12.json",
-      "size_bytes": 774,
-      "sha256": "4476a481e9233ae244bbf39d06a5382870efafe61228777f22b6f0824473a085"
-    },
-    {
-      "filename": "evidence_0dbe7fd3.json",
-      "path": "evidence\\evidence_0dbe7fd3.json",
-      "size_bytes": 620,
-      "sha256": "a9cc67a9b210010c1e20392f97c090477de87c6cfed6b28686bea4511931d613"
-    },
-    {
-      "filename": "evidence_29705e62.json",
-      "path": "evidence\\evidence_29705e62.json",
-      "size_bytes": 544,
-      "sha256": "3a3741d9920a38e2f7c8872761437cd0ba1c54c0fb4098cf43880edceb037fde"
-    },
-    {
-      "filename": "evidence_8948bbce.json",
-      "path": "evidence\\evidence_8948bbce.json",
-      "size_bytes": 541,
-      "sha256": "0f1494beaa80db74a177accc8372699016e1bf04a814f3987d031a79cdf8af35"
-    },
-    {
-      "filename": "evidence_9f050edd.json",
-      "path": "evidence\\evidence_9f050edd.json",
-      "size_bytes": 620,
-      "sha256": "920b49b86459ed15075c9733fbad46c86d647d91fcef2300d4e235321bbab10d"
-    },
-    {
-      "filename": "evidence_amount_correlation_batch.json",
-      "path": "evidence\\evidence_amount_correlation_batch.json",
-      "size_bytes": 1564,
-      "sha256": "1b36469aa26d00ae4354b5b381bf0901bfc6f9337e849b9f0f151f1d12c30303"
-    },
-    {
-      "filename": "evidence_c99741.json",
-      "path": "evidence\\evidence_c99741.json",
-      "size_bytes": 1855,
-      "sha256": "16459245fcdbdd814d4c870264da6228b676d1722fdc17c4327b423d3b522345"
-    },
-    {
-      "filename": "evidence_c99741_faecfcd8_linked.json",
-      "path": "evidence\\evidence_c99741_faecfcd8_linked.json",
-      "size_bytes": 946,
-      "sha256": "bbbbbd700c0f2c1510ed8ead4e054b91947c5fef7a45cb6f4f167653fdcd84e7"
-    },
-    {
-      "filename": "evidence_dag.json",
-      "path": "evidence\\evidence_dag.json",
-      "size_bytes": 27660,
-      "sha256": "19800ebe49557f3f580ef1020290fd44428b54b4ae3b1e1f64833ed70e523593"
-    },
-    {
-      "filename": "evidence_fabrication_analysis.json",
-      "path": "evidence\\evidence_fabrication_analysis.json",
-      "size_bytes": 592,
-      "sha256": "4844fef59752863a50c160da5dfcd67e741099705cabbf2869542dc43ecbc290"
-    },
-    {
-      "filename": "evidence_faecfcd8.json",
-      "path": "evidence\\evidence_faecfcd8.json",
-      "size_bytes": 505,
-      "sha256": "49c35d4012243d1a83ba59f92dda37ae821805fdac759b5eb6f8eac8b0072f26"
-    },
-    {
-      "filename": "evidence_faeff89c.json",
-      "path": "evidence\\evidence_faeff89c.json",
-      "size_bytes": 711,
-      "sha256": "01b7807d9de63492880d5ff246adbd05bd2a8d3a7a15bb5058fb2ab8ca2dfddd"
-    },
-    {
-      "filename": "evidence_kebes_complaint.json",
-      "path": "evidence\\evidence_kebes_complaint.json",
-      "size_bytes": 2301,
-      "sha256": "debc79fe17316dd1d46d3d92cf5c14e3ea749a5f6badc6977dfb47c4742edadc"
-    },
-    {
-      "filename": "evidence_manifest.json",
-      "path": "evidence\\evidence_manifest.json",
-      "size_bytes": 129,
-      "sha256": "a211f74c4ebe17592bbc17ad3b9758589a323bf8ce95a4a7ce3946899cf0ae41"
-    },
-    {
-      "filename": "evidence_timeline.json",
-      "path": "evidence\\evidence_timeline.json",
-      "size_bytes": 2966,
-      "sha256": "ba900242f1b6d0f8fafc3fd3fa33149153cf7940b32d53f65ff40f90f0bb49f3"
-    },
-    {
-      "filename": "FINANCIAL_MODEL_DAMNUM_EMERGENS_LUCRUM_CESSANS_2026.yaml",
-      "path": "evidence\\FINANCIAL_MODEL_DAMNUM_EMERGENS_LUCRUM_CESSANS_2026.yaml",
-      "size_bytes": 1115,
-      "sha256": "c9f14640ce0c5832e9441e749c440cd35a4576b84fb0ff0f2e0f36e0551be46d"
-    },
-    {
-      "filename": "fincombank_25m_trace.json",
-      "path": "evidence\\fincombank_25m_trace.json",
-      "size_bytes": 1271,
-      "sha256": "6efdf4d5ac0d4a1f224cd4cfce2f2641642364efac134bcf065f1ff43bb62731"
-    },
-    {
-      "filename": "forensic_exif_63e8.json",
-      "path": "evidence\\forensic_exif_63e8.json",
-      "size_bytes": 7911,
-      "sha256": "ce72c6ae95e9055d6db04825f1e5137165e3d580ef0b614a708564bcf0567dd7"
-    },
-    {
-      "filename": "forensic_exif_data.json",
-      "path": "evidence\\forensic_exif_data.json",
-      "size_bytes": 885,
-      "sha256": "ce8cf9e987359508b1ab965c30afd7da50d64fdb930c41e4eb14ff05c2c46104"
-    },
-    {
-      "filename": "found_raw_data.json",
-      "path": "evidence\\found_raw_data.json",
-      "size_bytes": 2,
-      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-    },
-    {
-      "filename": "found_raw_data_final.json",
-      "path": "evidence\\found_raw_data_final.json",
-      "size_bytes": 33455,
-      "sha256": "c33277802b747fd1fde6b7749399ea7a5b4e50bf89c20c6dde34c06be108691a"
-    },
-    {
-      "filename": "found_raw_data_flexible.json",
-      "path": "evidence\\found_raw_data_flexible.json",
-      "size_bytes": 917474,
-      "sha256": "6ade67b066659e3e22f4e71d5cc451388ea3e68fbcdb924b27f886f686ce3c73"
-    },
-    {
-      "filename": "gemini-code-1779622358688.json",
-      "path": "evidence\\gemini-code-1779622358688.json",
-      "size_bytes": 991,
-      "sha256": "bd120d735b09fad256732421bf3026fe7fa531b05b86d9d7e57ab6d72237d009"
-    },
-    {
-      "filename": "gemini-code-1779622598383.json",
-      "path": "evidence\\gemini-code-1779622598383.json",
-      "size_bytes": 279,
-      "sha256": "96971a3d0dfb671d6377a032f21e866528681a4561deab96ce3f360ba1468266"
-    },
-    {
-      "filename": "gemini-code-1779632842856.json",
-      "path": "evidence\\gemini-code-1779632842856.json",
-      "size_bytes": 293,
-      "sha256": "ded63022fe3292068abec3f8acc642e9dff1670fc8656693c6cd886653fc1dcc"
-    },
-    {
-      "filename": "gemini-code-1779634169853.json",
-      "path": "evidence\\gemini-code-1779634169853.json",
-      "size_bytes": 337,
-      "sha256": "a231d4eaee3f5a095e68f47d60083dcbcbf1b32e62f0112dd7c37632e1443f34"
-    },
-    {
-      "filename": "gemini-code-1779643197946.json",
-      "path": "evidence\\gemini-code-1779643197946.json",
-      "size_bytes": 9294,
-      "sha256": "cfec904229d3b3fcc40d5a5ae176439640483a6cc550bde5e653ced474106bb8"
-    },
-    {
-      "filename": "gemini-code-1779706151917.json",
-      "path": "evidence\\gemini-code-1779706151917.json",
-      "size_bytes": 811,
-      "sha256": "cb77ab9706a04e449bf20db28ec8527f493494c3febfc185dca5c7b17ad48f22"
-    },
-    {
-      "filename": "gemini-code-1780416851555.json",
-      "path": "evidence\\gemini-code-1780416851555.json",
-      "size_bytes": 2697,
-      "sha256": "848e4056d8ff64dd63804b50877fddc11ac8760013b68ae38267b0b588270875"
-    },
-    {
-      "filename": "gemini-code-1780417133891.json",
-      "path": "evidence\\gemini-code-1780417133891.json",
-      "size_bytes": 2165,
-      "sha256": "33e8de587608a67c7e8f7e73c2ca7d85f276ef4c35cafd82482dabc2bfbfd01f"
-    },
-    {
-      "filename": "gemini-code-1780417577219.json",
-      "path": "evidence\\gemini-code-1780417577219.json",
-      "size_bytes": 3242,
-      "sha256": "08856a245d2276fb7d47615e1ffb715fad54e83b84691b1f9d600b437e1efad9"
-    },
-    {
-      "filename": "gemini-code-1780420803746.json",
-      "path": "evidence\\gemini-code-1780420803746.json",
-      "size_bytes": 2385,
-      "sha256": "1baf0ddf45786985ce0c623ed519f7fa8932c3bd92bdf994fbc9a1b69da137f8"
-    },
-    {
-      "filename": "git_archive_manifest.json",
-      "path": "evidence\\git_archive_manifest.json",
-      "size_bytes": 3628,
-      "sha256": "4e715a654869cf3f20c32880f2b71fc5e633db1fb32d0b36c101080de369565b"
-    },
-    {
-      "filename": "GLOBAL_SYNC_REPORT.json",
-      "path": "evidence\\GLOBAL_SYNC_REPORT.json",
-      "size_bytes": 6617,
-      "sha256": "7f23f6e5dfb98fb2c3228dea395af5331e251d1809321620554f9c340b1ffba2"
-    },
-    {
-      "filename": "gureev_forgery_protocol.json",
-      "path": "evidence\\gureev_forgery_protocol.json",
-      "size_bytes": 1582,
-      "sha256": "14838c39b86dbf724c5c3504cb12d9331d2a8853c04203249d81456ecaa4a14e"
-    },
-    {
-      "filename": "hash_technology_test_report.json",
-      "path": "evidence\\hash_technology_test_report.json",
-      "size_bytes": 1927,
-      "sha256": "67f36f33ff1ac3d7918128fa504231b7692f620673169d7f3a8dd1cb8bce81f5"
-    },
-    {
-      "filename": "icloud_exif_summary.json",
-      "path": "evidence\\icloud_exif_summary.json",
-      "size_bytes": 13499,
-      "sha256": "3f87c7fe0e0c42e2dc126fdba555f10ee3133e11babbd22b8dbdc064f61a5915"
-    },
-    {
-      "filename": "integrity.json",
-      "path": "evidence\\integrity.json",
-      "size_bytes": 1120,
-      "sha256": "56d3c43ed3541885f8a33c6dd15fc3d26875d3cab41fc167ba6d5de1bbccd0a6"
+      "filename": "GIT_DEPLOYMENT_COMMANDS.md",
+      "path": "evidence\\GIT_DEPLOYMENT_COMMANDS.md",
+      "size_bytes": 563,
+      "sha256": "73ad57367a47a6d3d74419d371bec9a01a17260ffefcee374b90ff121936c91c"
     },
     {
       "filename": "INTEGRITY_WITNESS.json",
       "path": "evidence\\INTEGRITY_WITNESS.json",
-      "size_bytes": 59295,
-      "sha256": "e201690fd65b21fbdebdb1432e0d4b8930672e8045b4c5e13ed319be769e6d76"
+      "size_bytes": 57809,
+      "sha256": "13158e66f95cbda113b5dd995e7795891b1b277126c35d33248ed5a611742d20"
     },
     {
-      "filename": "international_sanctions_matrix.json",
-      "path": "evidence\\international_sanctions_matrix.json",
-      "size_bytes": 3019,
-      "sha256": "de78d03cfe397cfa580880c14a021f231964a7c174b3dc224b5c2203fe2e59af"
+      "filename": "JUS_COGENS_CONCLUSIONS_10_20.json",
+      "path": "evidence\\JUS_COGENS_CONCLUSIONS_10_20.json",
+      "size_bytes": 767,
+      "sha256": "184a55ab1c8c00b4f94cd0acb8ad1897b67ad5397d4c3753a583e52336fa94ed"
     },
     {
-      "filename": "investigation_matrix.json",
-      "path": "evidence\\investigation_matrix.json",
-      "size_bytes": 6163,
-      "sha256": "83467300b2e7b183d929d9bf333c056480ead6ec94cb72958fd5a7bd5f72348e"
-    },
-    {
-      "filename": "JUS_COGENS_CACHE_MATRIX.json",
-      "path": "evidence\\JUS_COGENS_CACHE_MATRIX.json",
-      "size_bytes": 1617,
-      "sha256": "87563e04d367b505a8956fa3467be9aae0338d75bd46fcf24f3c77d6c73d5069"
-    },
-    {
-      "filename": "Jus_Cogens_Conclusions.json",
-      "path": "evidence\\Jus_Cogens_Conclusions.json",
-      "size_bytes": 16078,
-      "sha256": "038dd972c1d77598d94022a897df0ce0c7298fd879c2c48c85bc32098e989ffa"
-    },
-    {
-      "filename": "Jus_Cogens_Conclusions_1.json",
-      "path": "evidence\\Jus_Cogens_Conclusions_1.json",
+      "filename": "Jus_Cogens_Conclusions_3.json",
+      "path": "evidence\\Jus_Cogens_Conclusions_3.json",
       "size_bytes": 16005,
       "sha256": "7d20c332876a7dc68717d5c4d98fb1f08b1fa626daf9ea5d7464f40d5ceff41d"
     },
@@ -553,88 +97,22 @@
       "sha256": "3dc8856026f9055970dcd1a24d13ecf36b97854e47b9a82cec586810da492cbc"
     },
     {
-      "filename": "manifest.json",
-      "path": "evidence\\manifest.json",
-      "size_bytes": 413,
-      "sha256": "f2546b1179d004d7ba08ef172ae43c994f880a611b795c6e4c235d4557f8380b"
-    },
-    {
-      "filename": "manifest_03092026.json",
-      "path": "evidence\\manifest_03092026.json",
-      "size_bytes": 1346,
-      "sha256": "2977bf295910fd55a1b7b5b34df8e1946e6d1438ba7227c1f64350b4c988b6f6"
-    },
-    {
-      "filename": "manifest_A©tor_01.json",
-      "path": "evidence\\manifest_A©tor_01.json",
-      "size_bytes": 148,
-      "sha256": "dff7fd369810cb23a945b9a9c15db1ef13699b48cf8f74c53a5b7593b3e50f1f"
-    },
-    {
-      "filename": "manifest_diff.json",
-      "path": "evidence\\manifest_diff.json",
-      "size_bytes": 58512,
-      "sha256": "9a51e1a857ca4a3bc51c1c822a4dc9abbddd0a3604990af7464fda131e098f79"
-    },
-    {
-      "filename": "manifest_summary.json",
-      "path": "evidence\\manifest_summary.json",
-      "size_bytes": 42,
-      "sha256": "9eae3d52d7a6a130a68d755eeb29a9987fd294f22a605824da2b4a48fa3bf7f7"
-    },
-    {
-      "filename": "manifest_tasks.json",
-      "path": "evidence\\manifest_tasks.json",
-      "size_bytes": 775,
-      "sha256": "f2f22ce7eb79d7da6d1b153ba38edd85f388567e9dfb77fa50b3102be230542e"
-    },
-    {
-      "filename": "manifest_temp_state.json",
-      "path": "evidence\\manifest_temp_state.json",
-      "size_bytes": 608,
-      "sha256": "4d98035fa10e8031f8381f93494861492151d651f8ff2c138a2ffc31b1bf9a10"
-    },
-    {
       "filename": "MARRIAGE_CERTIFICATE_GALINA_MACHERET.yaml",
       "path": "evidence\\MARRIAGE_CERTIFICATE_GALINA_MACHERET.yaml",
       "size_bytes": 1001,
       "sha256": "b40160dba91eac1b76f43221d87d5dc32e7ef153dc051f49f7ac5864e534a9fe"
     },
     {
-      "filename": "mcp.json",
-      "path": "evidence\\mcp.json",
-      "size_bytes": 206,
-      "sha256": "cd4f6f34bed2fb07b63cb53bb78d520b65fb79c74328c9976cc6f037e3199801"
+      "filename": "MODEL_VALID_AND_NEXT_STEPS.md",
+      "path": "evidence\\MODEL_VALID_AND_NEXT_STEPS.md",
+      "size_bytes": 1811,
+      "sha256": "68c9d8fb831fa39e9e37aab6e29e668fe90f5723a6613530ce36b816dd9d5b30"
     },
     {
-      "filename": "mcp_audit_report.json",
-      "path": "evidence\\mcp_audit_report.json",
-      "size_bytes": 21,
-      "sha256": "f0ec82eee177d6085bf3497348f99d94400c4779afe085afe6c8b9b24bef8d51"
-    },
-    {
-      "filename": "mcp_metrics.json",
-      "path": "evidence\\mcp_metrics.json",
-      "size_bytes": 454,
-      "sha256": "62b019dbc54e136f57d1c03cbde9b216414ece8fbc55e2648cbf94e85cbba61d"
-    },
-    {
-      "filename": "missing_evidence_audit_report.json",
-      "path": "evidence\\missing_evidence_audit_report.json",
-      "size_bytes": 342,
-      "sha256": "8d730fa0238dfce1358e117483880964be848509ba20305db3f5d6a5221ebe68"
-    },
-    {
-      "filename": "multilingual_translation_manifest.json",
-      "path": "evidence\\multilingual_translation_manifest.json",
-      "size_bytes": 2387,
-      "sha256": "d9e6e2d936798885fa3231dc125c6261cdb57feb922a6bbf23d18acb3ca674f8"
-    },
-    {
-      "filename": "NEURAL_MESH_EXECUTION_REPORT.json",
-      "path": "evidence\\NEURAL_MESH_EXECUTION_REPORT.json",
-      "size_bytes": 492,
-      "sha256": "4c0605a53787e381fe24d1cc7ccae09eaa6f3e155eaa1a1aa1dbb6b2df3df779"
+      "filename": "NODE_4D_JUS_COGENS_MODEL_2026.md",
+      "path": "evidence\\NODE_4D_JUS_COGENS_MODEL_2026.md",
+      "size_bytes": 3708,
+      "sha256": "f2d26c6705d9c99f5d02d566aedf5efd38fc24fbe2a20ab145912bab5f39b944"
     },
     {
       "filename": "NODE_APOSTILLE_REGISTRY_FIXED_HTML.yaml",
@@ -653,6 +131,12 @@
       "path": "evidence\\NODE_AVIZ_INSTiintare_2023.yaml",
       "size_bytes": 963,
       "sha256": "650bd87f688b2c588a5a348b7252dba4ee777067fbc349c9a4f27766a939e7dc"
+    },
+    {
+      "filename": "NODE_BRACKET_STABILIZER_2026.md",
+      "path": "evidence\\NODE_BRACKET_STABILIZER_2026.md",
+      "size_bytes": 2609,
+      "sha256": "031f20a680d2bb97226131bb98dd883ef88c0c9d601b8a6257c420dba0b88494"
     },
     {
       "filename": "NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026.yaml",
@@ -709,46 +193,28 @@
       "sha256": "aed1ef69959002a7e795776c84357771bce5b92adfc7209d77dc203a67c6ddff"
     },
     {
-      "filename": "NODE_FINANCIAL_MODEL_1997_2026.yaml",
-      "path": "evidence\\NODE_FINANCIAL_MODEL_1997_2026.yaml",
-      "size_bytes": 1285,
-      "sha256": "72f3036bea998b4d1b1226b644e689509c8f69918d97c2b7cebad3f435f341f2"
-    },
-    {
-      "filename": "NODE_GEOPOLITICAL_JUS_COGENS_SABOTAGE.yaml",
-      "path": "evidence\\NODE_GEOPOLITICAL_JUS_COGENS_SABOTAGE.yaml",
-      "size_bytes": 1112,
-      "sha256": "f0a1271428c17051f1067a40cb9fffcea00dd3d74bb7c53def9f0d980ac2bed0"
-    },
-    {
       "filename": "NODE_GERMANY_HAGUE_SABOTAGE.yaml",
       "path": "evidence\\NODE_GERMANY_HAGUE_SABOTAGE.yaml",
       "size_bytes": 1114,
       "sha256": "d1d2ca89c9cbaa2eb3b28e32131ecba5bb54aafce6fa8641ec0187138e7d0ce9"
     },
     {
-      "filename": "NODE_LEGAL_BASIS_JUS_COGENS.json",
-      "path": "evidence\\NODE_LEGAL_BASIS_JUS_COGENS.json",
-      "size_bytes": 2182,
-      "sha256": "4a25cfc2441cd08bdbe5cb4ee1883abfdb76026103729a6bc1425b9d4176f98d"
+      "filename": "NODE_HASH_COLLAPSE_PROTOCOL_2026.json",
+      "path": "evidence\\NODE_HASH_COLLAPSE_PROTOCOL_2026.json",
+      "size_bytes": 756,
+      "sha256": "b3741b32131460d117a535d84666f2ff719a47effb62ff2a1bf7c9e8f68b9670"
     },
     {
-      "filename": "NODE_OPERATIONAL_DEPLOYMENT_ROADMAP_2026.yaml",
-      "path": "evidence\\NODE_OPERATIONAL_DEPLOYMENT_ROADMAP_2026.yaml",
-      "size_bytes": 942,
-      "sha256": "d259708df197285f43d79830653e614aef22916d2eb8a09face6b7c6577a8484"
+      "filename": "NODE_JUS_COGENS_LITERAL_CORRECTOR_2026.json",
+      "path": "evidence\\NODE_JUS_COGENS_LITERAL_CORRECTOR_2026.json",
+      "size_bytes": 1596,
+      "sha256": "aadd0ce476991d03c8e226b62ff78952e619cab93107d86740d90c5ef99504c8"
     },
     {
       "filename": "NODE_OPERATIONAL_DEPLOYMENT_v15.yaml",
       "path": "evidence\\NODE_OPERATIONAL_DEPLOYMENT_v15.yaml",
       "size_bytes": 862,
       "sha256": "b61bce17578f3fc09474ce5ba303870b9dcbe6e784523e9b346120c1991a1591"
-    },
-    {
-      "filename": "NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml",
-      "path": "evidence\\NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml",
-      "size_bytes": 1453,
-      "sha256": "bd445b2c1cb8f3934176ba0d4296b116db3cafa40c051a19fb4a14be27f556c1"
     },
     {
       "filename": "NODE_SEMNATURA_INDESCIFRABILA_TRAP.yaml",
@@ -769,10 +235,10 @@
       "sha256": "53cad216d589551e9727612c07919a4cc18dfd228682c04e963fed68d44a79aa"
     },
     {
-      "filename": "NODE_TORTURE_AND_COVERUP_1997_1998.yaml",
-      "path": "evidence\\NODE_TORTURE_AND_COVERUP_1997_1998.yaml",
-      "size_bytes": 1195,
-      "sha256": "876ee74adf4acf3515ef7c02575f1116c21d09ab0ce38805c7322a6df002ef5e"
+      "filename": "NODE_TRACKING_608920260403.json",
+      "path": "evidence\\NODE_TRACKING_608920260403.json",
+      "size_bytes": 516,
+      "sha256": "04aabc6aad1cb8cb3f890f397267d856928a6d2cd2fa3c61fec753189658f6a3"
     },
     {
       "filename": "NODE_VENICE_COMMISSION_TERROR_AND_IMMUNITY.yaml",
@@ -787,400 +253,112 @@
       "sha256": "231baf517ce8fe10a2e33b625ae63ef5b1e9acefaa4762b8065c3ddd953d466a"
     },
     {
-      "filename": "package-lock.json",
-      "path": "evidence\\package-lock.json",
-      "size_bytes": 92,
-      "sha256": "1f51aad6c7bdf7b4b5405e7c9259053d1f8a51ae1a46abd8b5edfb27e6af042b"
+      "filename": "ti_ula_jus_cogens_evidence_manifest.json",
+      "path": "evidence\\ti_ula_jus_cogens_evidence_manifest.json",
+      "size_bytes": 2540,
+      "sha256": "c4d0e63b2eb4a1c459b3856276f7fc770297ecbbfee5c530244e48cda3638d4e"
     },
     {
-      "filename": "page_10.json",
-      "path": "evidence\\page_10.json",
-      "size_bytes": 3781,
-      "sha256": "a1e635436c244be8b60747dfe7170a5c815f916c9c2fe7030ed4d319d7c3f849"
+      "filename": "UNIFIED_JUS_COGENS_MEMORANDUM_2026.md",
+      "path": "evidence\\UNIFIED_JUS_COGENS_MEMORANDUM_2026.md",
+      "size_bytes": 2658,
+      "sha256": "f6165f8e96bb60d9edd2e793541c8f4b0b6b5a2cf77931dee1afcd603f52098d"
     },
     {
-      "filename": "page_11.json",
-      "path": "evidence\\page_11.json",
-      "size_bytes": 4432,
-      "sha256": "ba7e769aba71061dcb85747a2ab03120beb93e8266622f16b7d47614c7542776"
-    },
-    {
-      "filename": "page_12.json",
-      "path": "evidence\\page_12.json",
-      "size_bytes": 7302,
-      "sha256": "be1508a5d70013c00c3590e36286551ab372a542acde8ba3694459f99931ca82"
-    },
-    {
-      "filename": "page_13.json",
-      "path": "evidence\\page_13.json",
-      "size_bytes": 5924,
-      "sha256": "e467b3e0f338a872abcc0d793ddf7d0ddf038b027b288fb6111b52342339b1b0"
-    },
-    {
-      "filename": "page_14.json",
-      "path": "evidence\\page_14.json",
-      "size_bytes": 3675,
-      "sha256": "d85da98bda533709e7f53bcbb5344ad96b03045cf29d972389b613fcd47807a6"
-    },
-    {
-      "filename": "page_3.json",
-      "path": "evidence\\page_3.json",
-      "size_bytes": 4352,
-      "sha256": "44a472160c3f2e9c480951e9eaa121f0ef912152989c3759032de1d9476120f9"
-    },
-    {
-      "filename": "page_4.json",
-      "path": "evidence\\page_4.json",
-      "size_bytes": 4316,
-      "sha256": "01804b26685d44f88d0df9119b617ea9c05d2cdde97a044ff483d10115d39d78"
-    },
-    {
-      "filename": "page_5.json",
-      "path": "evidence\\page_5.json",
-      "size_bytes": 5645,
-      "sha256": "d1e36a8f1c68e7882097519d267c80aa4d9266140ba80bc4900b902b29b87674"
-    },
-    {
-      "filename": "page_6.json",
-      "path": "evidence\\page_6.json",
-      "size_bytes": 5031,
-      "sha256": "b91b255ea2d4a6d18bfec0d19ac7995bd0d16b22461760acb533cbb7e5626846"
-    },
-    {
-      "filename": "page_7.json",
-      "path": "evidence\\page_7.json",
-      "size_bytes": 3688,
-      "sha256": "4894facca6a6c1559530164ab8452650e4aba234fc3556109fbe20b20ebf1eb9"
-    },
-    {
-      "filename": "page_8.json",
-      "path": "evidence\\page_8.json",
-      "size_bytes": 3638,
-      "sha256": "5ec3e0e300ed5e3683d2f3e15b1dc22c3992d10dec813b4258aa531eccb1eb9c"
-    },
-    {
-      "filename": "page_9.json",
-      "path": "evidence\\page_9.json",
-      "size_bytes": 3784,
-      "sha256": "aa1d18486a07d93d16565ef237d9530ceff20146894779014010f0484f5690f0"
-    },
-    {
-      "filename": "protocol.json",
-      "path": "evidence\\protocol.json",
-      "size_bytes": 494,
-      "sha256": "b6a42ed633de21bf9dac8f99a7e262f19d035c8ddbbea2506f30000353898d92"
-    },
-    {
-      "filename": "raw_files_audit.json",
-      "path": "evidence\\raw_files_audit.json",
-      "size_bytes": 99,
-      "sha256": "ec69f7be6ad7ad07e0f0b394eace6b3a56ebe7156d4f4b46a03993061ff8c618"
-    },
-    {
-      "filename": "report.20260703.211523.23368.0.001.json",
-      "path": "evidence\\report.20260703.211523.23368.0.001.json",
-      "size_bytes": 12411,
-      "sha256": "84feeae9c53a02accd2c0ed8383878d3f3eea4e56e465938f6742562384c0c9c"
-    },
-    {
-      "filename": "report.20260705.125020.8464.0.001.json",
-      "path": "evidence\\report.20260705.125020.8464.0.001.json",
-      "size_bytes": 19485,
-      "sha256": "f1c2a54d320d9f953c4b35d0fe1773d7804000449910b4c616f8c86154d5a20e"
-    },
-    {
-      "filename": "report.20260705.125021.8432.0.001.json",
-      "path": "evidence\\report.20260705.125021.8432.0.001.json",
-      "size_bytes": 15792,
-      "sha256": "bbc06f5e65365fbf739df6b914b5642a0f67f9a37027b5362e49407b1c7929b0"
-    },
-    {
-      "filename": "REPOSITORY_INDEX.json",
-      "path": "evidence\\REPOSITORY_INDEX.json",
-      "size_bytes": 1347,
-      "sha256": "e24ec1d36b70858c57201b2e7a1d8bca1b2adcfbbcac3a2f8aaec7bec2359821"
-    },
-    {
-      "filename": "security-analysis-report.json",
-      "path": "evidence\\security-analysis-report.json",
-      "size_bytes": 2465,
-      "sha256": "0dd55f7ff7611726cee3e74a35976ae2d8331bb84956b83ecb81ffbf6ba28daa"
-    },
-    {
-      "filename": "Session.json",
-      "path": "evidence\\Session.json",
-      "size_bytes": 3056,
-      "sha256": "30b8f1b18a90be8a35d675fe562fd702e07363d88014c8b61bd3c2498b1050a1"
-    },
-    {
-      "filename": "SUBNODE_PROPERTY_RESTITUTION_1977_2026.yaml",
-      "path": "evidence\\SUBNODE_PROPERTY_RESTITUTION_1977_2026.yaml",
-      "size_bytes": 1037,
-      "sha256": "4960348c8539fd585d237ab4f9e381121291d4421cb83ab1e0de1daab0a5d98d"
-    },
-    {
-      "filename": "SWARM_CONNECTOR_HUB_REPORT.json",
-      "path": "evidence\\SWARM_CONNECTOR_HUB_REPORT.json",
-      "size_bytes": 1532,
-      "sha256": "d14ca8a3ef09dcddab0ee0e801920e35dc99da4fd69ed29625ce5a58423c33fd"
-    },
-    {
-      "filename": "SYSTEM_INTEGRITY_MANIFEST.json",
-      "path": "evidence\\SYSTEM_INTEGRITY_MANIFEST.json",
-      "size_bytes": 475,
-      "sha256": "541aec7409ee99ef3537e3fa821d8658d4dc64e81e3e750ee2f9b1217016c7d6"
-    },
-    {
-      "filename": "system_inventory_report.json",
-      "path": "evidence\\system_inventory_report.json",
-      "size_bytes": 4983201,
-      "sha256": "00ad4cacf105888f8fb0caa475d08a636f74821c0dec06f18bd27697b00dbf02"
-    },
-    {
-      "filename": "tabs.json",
-      "path": "evidence\\tabs.json",
-      "size_bytes": 280,
-      "sha256": "33339a4eecc08f27d890495ca94f95a9ace7e931624e514f2cbab233d252e89b"
-    },
-    {
-      "filename": "test_external_account_authorized_user_credentials.json",
-      "path": "evidence\\test_external_account_authorized_user_credentials.json",
-      "size_bytes": 357,
-      "sha256": "c28c3746b2fde08da7412511c586015ff2b847d9860b4d79b72a59a0f059c742"
-    },
-    {
-      "filename": "test_external_account_credentials.json",
-      "path": "evidence\\test_external_account_credentials.json",
-      "size_bytes": 337,
-      "sha256": "9655d0eb63e50c8ed03bea29eadb7b4d36a60369dd2d0488ca2a187677cdc736"
-    },
-    {
-      "filename": "ti_ula_cas_manifest.json",
-      "path": "evidence\\ti_ula_cas_manifest.json",
-      "size_bytes": 7592,
-      "sha256": "263b140decac03dac9ecf03696a6276501c3e188c1bf2af7583825ce63625b21"
-    },
-    {
-      "filename": "ti_ula_convergence_cycle_ii.json",
-      "path": "evidence\\ti_ula_convergence_cycle_ii.json",
-      "size_bytes": 206838,
-      "sha256": "8e5a38e487c3ab4c8a2aa2851384cb49aff2ce7c2ebe76786df3d52550ba4d4e"
-    },
-    {
-      "filename": "ti_ula_convergence_cycle_iii.json",
-      "path": "evidence\\ti_ula_convergence_cycle_iii.json",
-      "size_bytes": 491,
-      "sha256": "d0ee06bafbc99d26d4fc2c480b67c93f5c2c0858cabb4e03051613ce5c8c01fc"
-    },
-    {
-      "filename": "ti_ula_crypto_manifest.json",
-      "path": "evidence\\ti_ula_crypto_manifest.json",
-      "size_bytes": 2649,
-      "sha256": "5a6da66efcadf1d5b73910e24f342cff27069995bf595e2cfe0046ec385006c6"
-    },
-    {
-      "filename": "ti_ula_graph_export.json",
-      "path": "evidence\\ti_ula_graph_export.json",
-      "size_bytes": 1386,
-      "sha256": "4ea2c0f675a9392fdfba436dd6140e8759b989f4d37cc533815ca81ce0487035"
-    },
-    {
-      "filename": "ti_ula_manifest.json",
-      "path": "evidence\\ti_ula_manifest.json",
-      "size_bytes": 764992,
-      "sha256": "73e7fc562ca2cfe7cab4e0b1d9bb84998577ea0fff64c19d0515a1e85f40c5f1"
-    },
-    {
-      "filename": "TI_ULA_MASTER_DAG_REGISTRY_2026.yaml",
-      "path": "evidence\\TI_ULA_MASTER_DAG_REGISTRY_2026.yaml",
-      "size_bytes": 1219,
-      "sha256": "f0ffdd6d6794129b42522a51ed07307a1cccab58704cdc6aedf7c9d4e0ff6598"
-    },
-    {
-      "filename": "transaction_c99741_master_record.json",
-      "path": "evidence\\transaction_c99741_master_record.json",
-      "size_bytes": 1329,
-      "sha256": "e84bbf65745ca4abe1b2f7ec12f0aac199c1f74ecee6b1987d289ead0fd2a02f"
-    },
-    {
-      "filename": "transaction_image_map.json",
-      "path": "evidence\\transaction_image_map.json",
-      "size_bytes": 1135,
-      "sha256": "07ddbdab87d159947dc233a1b8e2a375c1b002380b4a9075b3da5607a38af346"
-    },
-    {
-      "filename": "tunnel_snapshot_yesterday.json",
-      "path": "evidence\\tunnel_snapshot_yesterday.json",
-      "size_bytes": 272,
-      "sha256": "df51fc2f7397b8c11db3de21538b5ce07ab82b26d35bf46176a47abeecb53b22"
-    },
-    {
-      "filename": "UDHR_1948_en.json",
-      "path": "evidence\\UDHR_1948_en.json",
-      "size_bytes": 1218,
-      "sha256": "db499bfb650e773ba5814fa17643d2bcd9f6b6929acbfb20a3d00acac1cf6e29"
-    },
-    {
-      "filename": "UDHR_1948_es.json",
-      "path": "evidence\\UDHR_1948_es.json",
-      "size_bytes": 1238,
-      "sha256": "9c4850c92738766a1772696ec5fdb763a1022797d251fc0c515d11e07893b575"
-    },
-    {
-      "filename": "UDHR_1948_fr.json",
-      "path": "evidence\\UDHR_1948_fr.json",
-      "size_bytes": 1237,
-      "sha256": "1f97d436a160261e2a92760650008bba765a428a4abe814300a92be5fa861d65"
-    },
-    {
-      "filename": "UDHR_INDEX_MANIFEST.json",
-      "path": "evidence\\UDHR_INDEX_MANIFEST.json",
-      "size_bytes": 243,
-      "sha256": "efd35a0fb09929a8511f31bfaad801ca8000cae9208ac0434698bb02f1ccfd4f"
-    },
-    {
-      "filename": "UNCAT_1984_canonical.json",
-      "path": "evidence\\UNCAT_1984_canonical.json",
-      "size_bytes": 32754,
-      "sha256": "79d40ee976bb345f01e4c880928dd3484342904282f552b07f143e97d8b8f40e"
-    },
-    {
-      "filename": "UNCAT_1984_en.json",
-      "path": "evidence\\UNCAT_1984_en.json",
-      "size_bytes": 2129,
-      "sha256": "56d65d89b5bb895888c3d6a47f6b85cddeeea6d137abf5e0aaa4a378f3a20529"
-    },
-    {
-      "filename": "UNCAT_1984_es.json",
-      "path": "evidence\\UNCAT_1984_es.json",
-      "size_bytes": 2156,
-      "sha256": "5881674c831c7b387c2b449cf7a5e927124d8645ec3e3d30d033226ed9aeaf36"
-    },
-    {
-      "filename": "UNCAT_1984_fr.json",
-      "path": "evidence\\UNCAT_1984_fr.json",
-      "size_bytes": 2166,
-      "sha256": "60a12fd76e3a12a53068eb82b2c9c4d2ec1326f2bbd61e2c4c11d183af1dfda3"
-    },
-    {
-      "filename": "UNCAT_1984_full.json",
-      "path": "evidence\\UNCAT_1984_full.json",
-      "size_bytes": 32746,
-      "sha256": "84ac1572131721cd7ffacaf1fcf78f155c442f2bbb3b0133acd4125127bb96f6"
-    },
-    {
-      "filename": "UNCAT_1984_ro.json",
-      "path": "evidence\\UNCAT_1984_ro.json",
-      "size_bytes": 2160,
-      "sha256": "490afbea437af06792bee5d6e50734c88420717e039bf02800bd662a185e7506"
-    },
-    {
-      "filename": "uncat_full_source.json",
-      "path": "evidence\\uncat_full_source.json",
-      "size_bytes": 32754,
-      "sha256": "79d40ee976bb345f01e4c880928dd3484342904282f552b07f143e97d8b8f40e"
-    },
-    {
-      "filename": "uncat_harmonized_core.json",
-      "path": "evidence\\uncat_harmonized_core.json",
-      "size_bytes": 36025,
-      "sha256": "5193d27b836535dfddf18d8eaf493e9ecdb892deeccff89f049e618d4f3da102"
-    },
-    {
-      "filename": "uncat_kernel.json",
-      "path": "evidence\\uncat_kernel.json",
-      "size_bytes": 2860,
-      "sha256": "f20d0515ccb904f79c8518f1e1ff6a0f2a58ca135179b3940727bf038c3978aa"
-    },
-    {
-      "filename": "uncat_kernel_en.json",
-      "path": "evidence\\uncat_kernel_en.json",
-      "size_bytes": 2860,
-      "sha256": "f20d0515ccb904f79c8518f1e1ff6a0f2a58ca135179b3940727bf038c3978aa"
-    },
-    {
-      "filename": "uncat_kernel_es.json",
-      "path": "evidence\\uncat_kernel_es.json",
-      "size_bytes": 2190,
-      "sha256": "02445b7f292850e160a6e7c59d061875773e498406fa5af0eeb0a6cdc5a7ec5a"
-    },
-    {
-      "filename": "uncat_kernel_fr.json",
-      "path": "evidence\\uncat_kernel_fr.json",
-      "size_bytes": 2168,
-      "sha256": "b4263735d4bc9e6942738dae826ae552ebf220dd1126d15eb6deb4104bff9abe"
-    },
-    {
-      "filename": "uncat_kernel_ro.json",
-      "path": "evidence\\uncat_kernel_ro.json",
-      "size_bytes": 2215,
-      "sha256": "1d42ef08ef528baaee9c84f5e3054c906810ec26c39fee744f264bf001f0dbb8"
-    },
-    {
-      "filename": "uncat_kernel_ru.json",
-      "path": "evidence\\uncat_kernel_ru.json",
-      "size_bytes": 2860,
-      "sha256": "f20d0515ccb904f79c8518f1e1ff6a0f2a58ca135179b3940727bf038c3978aa"
-    },
-    {
-      "filename": "vclt_index.json",
-      "path": "evidence\\vclt_index.json",
-      "size_bytes": 71476,
-      "sha256": "410d6b769f0adab73e72dd9d024a1d54fd82b64cff67cc7c738f84035bf6f1ef"
-    },
-    {
-      "filename": "vienna_convention_1.json",
-      "path": "evidence\\vienna_convention_1.json",
+      "filename": "vienna_convention_2.json",
+      "path": "evidence\\vienna_convention_2.json",
       "size_bytes": 288607,
       "sha256": "42575106c3fba2df657f41cc6b18503cbddf2293b73ed318be354ab51681f77c"
     },
     {
-      "filename": "vienna_convention_en.json",
-      "path": "evidence\\vienna_convention_en.json",
-      "size_bytes": 1170,
-      "sha256": "8cdcf81f89b3e3779ce632d975133c5a48339427e90939b84bfc86c4f6bed8d4"
+      "filename": "We Have Received Your Message.подписан.pdf",
+      "path": "evidence\\We Have Received Your Message.подписан.pdf",
+      "size_bytes": 414457,
+      "sha256": "af535e3fc2c54660f9fefc38324d823b8f37233a4932912796ba46d60f21b3db"
     },
     {
-      "filename": "vienna_convention_es.json",
-      "path": "evidence\\vienna_convention_es.json",
-      "size_bytes": 1211,
-      "sha256": "0402351af229efbb4e1975e306f446ad4bce20d4d8ea93217fc38787c956fe87"
+      "filename": "WhiteHouse_Correspondence_Mapping.json",
+      "path": "evidence\\WhiteHouse_Correspondence_Mapping.json",
+      "size_bytes": 2243,
+      "sha256": "1915c1a8efb559400d33649af9eebe98a0b28624e8bfd6e3a75ee0c3a32491d3"
     },
     {
-      "filename": "vienna_convention_fr.json",
-      "path": "evidence\\vienna_convention_fr.json",
-      "size_bytes": 1200,
-      "sha256": "9643e1195f80d76eef2314315dde6cf88136db419085e45ddf22a592a1ef4401"
+      "filename": "WhiteHouse_Integration_Summary.md",
+      "path": "evidence\\WhiteHouse_Integration_Summary.md",
+      "size_bytes": 3056,
+      "sha256": "d7c0df32807a59485b65bcd85e85fc5d0165dc6b9e03fba633e45a29f5fa5937"
     },
     {
-      "filename": "vienna_convention_roundtrip.json",
-      "path": "evidence\\vienna_convention_roundtrip.json",
-      "size_bytes": 2056,
-      "sha256": "2b0a4bfeea1ab09f5b542c4a8996d7b8b8e6060f115526cba7eef554c6780bd0"
-    },
-    {
-      "filename": "VOLUME_LANGUAGE_GRAPH.json",
-      "path": "evidence\\VOLUME_LANGUAGE_GRAPH.json",
-      "size_bytes": 338733,
-      "sha256": "8ba6b6b3a7ebd5b1c39b95f39a0181f6961433aeb568b315b64d848c6f8679b8"
-    },
-    {
-      "filename": "zip_evidence_audit_report.json",
-      "path": "evidence\\zip_evidence_audit_report.json",
-      "size_bytes": 901,
-      "sha256": "5795b8c411493212bcc170df2cc0ec6ad2f1926a2440ca7366ee2643d63c23fb"
-    },
-    {
-      "filename": "Всеобщая_декларация_прав_Человека_1948.json",
-      "path": "evidence\\Всеобщая_декларация_прав_Человека_1948.json",
+      "filename": "Всеобщая_декларация_прав_Человека_1948_1.json",
+      "path": "evidence\\Всеобщая_декларация_прав_Человека_1948_1.json",
       "size_bytes": 58553,
       "sha256": "9ae28d1f0d589b244682168eadc831e056a76cb22c15798492b51ba8b382cf92"
     },
     {
-      "filename": "Всеобщая_декларация_прав_Человека_1948_roundtrip.json",
-      "path": "evidence\\Всеобщая_декларация_прав_Человека_1948_roundtrip.json",
-      "size_bytes": 1314,
-      "sha256": "869f59545cf234660f66c84a71426824c99333a9592faa14930ae0d461396e12"
+      "filename": "ИДНП корреляции фамилии .pdf",
+      "path": "evidence\\ИДНП корреляции фамилии .pdf",
+      "size_bytes": 438440,
+      "sha256": "a5998977c97279c8f0ed3078d24d108ba67c7c9c31d4e23290179bfa735e7f39"
+    },
+    {
+      "filename": "Центральный Суд Молдовы _1.pdf",
+      "path": "evidence\\Центральный Суд Молдовы _1.pdf",
+      "size_bytes": 179089,
+      "sha256": "e315b8018afdfbf6540cae44fd882ef894d9d1d2819620f24ce52ac0ee59c64f"
+    },
+    {
+      "filename": "comprehensive_case_evidence_packet_oct2026.json",
+      "path": "evidence\\financial_sabotage\\comprehensive_case_evidence_packet_oct2026.json",
+      "size_bytes": 2292,
+      "sha256": "7a91ff9a75415627b3c148ad038bfbbe70fc37f5b96fb7ed0e28279925c37142"
+    },
+    {
+      "filename": "financial_sabotage_aggregation_report.json",
+      "path": "evidence\\financial_sabotage\\financial_sabotage_aggregation_report.json",
+      "size_bytes": 1050,
+      "sha256": "2532c482702d2a68da5fe41c678c412cce29237c66bce6a3b14b6b0060c9985a"
+    },
+    {
+      "filename": "financial_sabotage_registry.yaml",
+      "path": "evidence\\financial_sabotage\\financial_sabotage_registry.yaml",
+      "size_bytes": 1072,
+      "sha256": "a489d76c0099873bd83b69201cad6694d817f573604c9e784532ab2a456e04f5"
+    },
+    {
+      "filename": "financial_sabotage_udhr_graph.dot",
+      "path": "evidence\\financial_sabotage\\financial_sabotage_udhr_graph.dot",
+      "size_bytes": 1903,
+      "sha256": "fb0b8794962376ac83b4883df1816a1ef06e60f8c5d21cd2728787a86cad15c0"
+    },
+    {
+      "filename": "fincombank_receipts_manifest.json",
+      "path": "evidence\\financial_sabotage\\fincombank_receipts_manifest.json",
+      "size_bytes": 1405,
+      "sha256": "6ad23e23b03882b235438b5ebae02a29f2f9e7c7365d67eb5267741e3e98b2d2"
+    },
+    {
+      "filename": "police_response_k577_26_fincombank_balance.json",
+      "path": "evidence\\financial_sabotage\\police_response_k577_26_fincombank_balance.json",
+      "size_bytes": 1178,
+      "sha256": "3398b057b7dba2f827cf1a025952840a0dd4e1ee931ffa8b304289b4b554a10f"
+    },
+    {
+      "filename": "TRUTH_SOCIAL_POST_117446805111809348.md",
+      "path": "evidence\\financial_sabotage\\TRUTH_SOCIAL_POST_117446805111809348.md",
+      "size_bytes": 507,
+      "sha256": "ac5e96b0cf280338357d5802a733693ac0e3ddc13d3dfa0ba6f5b5b4eda0c761"
+    },
+    {
+      "filename": "TRUTH_SOCIAL_POST_117457348466973534.md",
+      "path": "evidence\\financial_sabotage\\TRUTH_SOCIAL_POST_117457348466973534.md",
+      "size_bytes": 630,
+      "sha256": "d9447b9ff211b7bf312019d6ce3083819a18b124eeefd000eb7a25fa8dc8a403"
+    },
+    {
+      "filename": "udhr_legal_doctrine_mapping.yaml",
+      "path": "evidence\\financial_sabotage\\udhr_legal_doctrine_mapping.yaml",
+      "size_bytes": 1517,
+      "sha256": "445f07cbbcd9972e77a9b368ba7318dacaa8d0bab84aa0b3873fab803063084d"
     },
     {
       "filename": "BANK_REFUSAL_6387.md",
@@ -1225,6 +403,18 @@
       "sha256": "2dcb427099efe55418a813fa2430cfb99bb3bc86f4734551ff2e7ac97d9e387f"
     },
     {
+      "filename": "AVIZ_HASDEU_ONOMIC_01OCT2026.yaml",
+      "path": "artifacts/reabilitare\\AVIZ_HASDEU_ONOMIC_01OCT2026.yaml",
+      "size_bytes": 2100,
+      "sha256": "9535a09c4deaa2f5349614761c139a2003ab5e07b57ee6fa4605d0006beede80"
+    },
+    {
+      "filename": "bloom_perspective_macheret_audit.json",
+      "path": "artifacts/reabilitare\\bloom_perspective_macheret_audit.json",
+      "size_bytes": 1404,
+      "sha256": "1a94629b522f3124ca13bc35d1165502ea11c7d5fd89fa9d4db439bf2bfc83c2"
+    },
+    {
       "filename": "CASCADE_CANCELLATION_MATRIX.yaml",
       "path": "artifacts/reabilitare\\CASCADE_CANCELLATION_MATRIX.yaml",
       "size_bytes": 1794,
@@ -1237,10 +427,46 @@
       "sha256": "78a7a7f486963049bc5fe0402ec102feca6b32d8fb076e6bf087e3adc4030dcf"
     },
     {
+      "filename": "EVIDENCE_25_ML_2_3_IDENTITY_AND_FINANCIAL_BALANCE.yaml",
+      "path": "artifacts/reabilitare\\EVIDENCE_25_ML_2_3_IDENTITY_AND_FINANCIAL_BALANCE.yaml",
+      "size_bytes": 1122,
+      "sha256": "5f4fcbafb10103d73ca3cb1430b4349750b79cc9328766a3f822d1de9a3b59af"
+    },
+    {
+      "filename": "EVIDENCE_PAYMENT_INFORMATION_GITHUB_FINCOMBANK.yaml",
+      "path": "artifacts/reabilitare\\EVIDENCE_PAYMENT_INFORMATION_GITHUB_FINCOMBANK.yaml",
+      "size_bytes": 1066,
+      "sha256": "0cc4b1d25dd06e236b63418db10d98d2c62df447183567431df85c87820a2ad2"
+    },
+    {
+      "filename": "EVIDENCE_POINTER_UN_SUPPORT_02MAY2025.json",
+      "path": "artifacts/reabilitare\\EVIDENCE_POINTER_UN_SUPPORT_02MAY2025.json",
+      "size_bytes": 858,
+      "sha256": "7b30fe21fa31baaee12a177cdfc93da61ddf0583025d56642a299f4699b8961f"
+    },
+    {
       "filename": "FINANCIAL_MODEL_DAMNUM_EMERGENS_LUCRUM_CESSANS_2026.yaml",
       "path": "artifacts/reabilitare\\FINANCIAL_MODEL_DAMNUM_EMERGENS_LUCRUM_CESSANS_2026.yaml",
       "size_bytes": 1115,
       "sha256": "c9f14640ce0c5832e9441e749c440cd35a4576b84fb0ff0f2e0f36e0551be46d"
+    },
+    {
+      "filename": "FINANCIAL_TRANSACTION_UN_SUPPORT_02MAY2025.yaml",
+      "path": "artifacts/reabilitare\\FINANCIAL_TRANSACTION_UN_SUPPORT_02MAY2025.yaml",
+      "size_bytes": 689,
+      "sha256": "76d126c52bb8c4687f9cffbbfdafbb1e77213a03761e10e4b9770521c61bb6b4"
+    },
+    {
+      "filename": "forensic_capture_ledger.json",
+      "path": "artifacts/reabilitare\\forensic_capture_ledger.json",
+      "size_bytes": 1324,
+      "sha256": "3d25e725a62dd0d710e4dc4fd79c7b19febba1854dbcc43efaa85c5212fcce5d"
+    },
+    {
+      "filename": "ICLOUD_PHOTOS_EVIDENCE_ALEXEI_MACERET.yaml",
+      "path": "artifacts/reabilitare\\ICLOUD_PHOTOS_EVIDENCE_ALEXEI_MACERET.yaml",
+      "size_bytes": 869,
+      "sha256": "9ded33d80c047d06e13046bee59014e0209a63503556584627d982f87852afb5"
     },
     {
       "filename": "LINK_ACCOUNTABILITY_TO_CONSEQUENCES.yaml",
@@ -1253,6 +479,36 @@
       "path": "artifacts/reabilitare\\LINK_NON_REHABILITATION_JUS_COGENS.yaml",
       "size_bytes": 865,
       "sha256": "3dc8856026f9055970dcd1a24d13ecf36b97854e47b9a82cec586810da492cbc"
+    },
+    {
+      "filename": "macheret_identity_mapping_audited.json",
+      "path": "artifacts/reabilitare\\macheret_identity_mapping_audited.json",
+      "size_bytes": 1478,
+      "sha256": "07988744f6a35f9c3079b7b9ca2507dae4670e8f1400c1fc0988cdd599f3c2d1"
+    },
+    {
+      "filename": "macheret_identity_mapping_audited.yaml",
+      "path": "artifacts/reabilitare\\macheret_identity_mapping_audited.yaml",
+      "size_bytes": 1230,
+      "sha256": "531b4aa7884b26f3f8ed067bc00215f86c1ff7f82974fba468720c4b9e651049"
+    },
+    {
+      "filename": "macheret_identity_mapping_forensic.json",
+      "path": "artifacts/reabilitare\\macheret_identity_mapping_forensic.json",
+      "size_bytes": 3697,
+      "sha256": "1013a0c08a0cba2c723a0e3a4c384ae17b4cc5fc383666e370e03fa07d243926"
+    },
+    {
+      "filename": "macheret_identity_mapping_forensic.yaml",
+      "path": "artifacts/reabilitare\\macheret_identity_mapping_forensic.yaml",
+      "size_bytes": 3018,
+      "sha256": "0a60ad24768465419c16aa78ae95ae03ee79cc01cb68f3ee88a9eed48e575402"
+    },
+    {
+      "filename": "macheret_onim_mapping.json",
+      "path": "artifacts/reabilitare\\macheret_onim_mapping.json",
+      "size_bytes": 2734,
+      "sha256": "9752a199a43bcb9d20c686311f1b27c970837f4160a12ea9d0e9a221c2c70997"
     },
     {
       "filename": "MARRIAGE_CERTIFICATE_GALINA_MACHERET.yaml",
@@ -1339,12 +595,6 @@
       "sha256": "72f3036bea998b4d1b1226b644e689509c8f69918d97c2b7cebad3f435f341f2"
     },
     {
-      "filename": "NODE_GEOPOLITICAL_JUS_COGENS_SABOTAGE.yaml",
-      "path": "artifacts/reabilitare\\NODE_GEOPOLITICAL_JUS_COGENS_SABOTAGE.yaml",
-      "size_bytes": 1112,
-      "sha256": "f0a1271428c17051f1067a40cb9fffcea00dd3d74bb7c53def9f0d980ac2bed0"
-    },
-    {
       "filename": "NODE_GERMANY_HAGUE_SABOTAGE.yaml",
       "path": "artifacts/reabilitare\\NODE_GERMANY_HAGUE_SABOTAGE.yaml",
       "size_bytes": 1114,
@@ -1355,12 +605,6 @@
       "path": "artifacts/reabilitare\\NODE_LEGAL_BASIS_JUS_COGENS.json",
       "size_bytes": 2182,
       "sha256": "4a25cfc2441cd08bdbe5cb4ee1883abfdb76026103729a6bc1425b9d4176f98d"
-    },
-    {
-      "filename": "NODE_OPERATIONAL_DEPLOYMENT_ROADMAP_2026.yaml",
-      "path": "artifacts/reabilitare\\NODE_OPERATIONAL_DEPLOYMENT_ROADMAP_2026.yaml",
-      "size_bytes": 942,
-      "sha256": "d259708df197285f43d79830653e614aef22916d2eb8a09face6b7c6577a8484"
     },
     {
       "filename": "NODE_OPERATIONAL_DEPLOYMENT_v15.yaml",
@@ -1419,8 +663,14 @@
     {
       "filename": "TI_ULA_MASTER_DAG_REGISTRY_2026.yaml",
       "path": "artifacts/reabilitare\\TI_ULA_MASTER_DAG_REGISTRY_2026.yaml",
-      "size_bytes": 1219,
-      "sha256": "f0ffdd6d6794129b42522a51ed07307a1cccab58704cdc6aedf7c9d4e0ff6598"
+      "size_bytes": 1196,
+      "sha256": "9654b9a27897368b54c2265f43f3a32c8163944571f0be91e2643fdc5016acfc"
+    },
+    {
+      "filename": "VIBER_TODAY_MANIFEST_20261009.json",
+      "path": "artifacts/reabilitare\\VIBER_TODAY_MANIFEST_20261009.json",
+      "size_bytes": 23960,
+      "sha256": "70cbaf351fa930438bd2a4d91287507611bebaddc9ba910496be25d2205b2931"
     },
     {
       "filename": "TI_ULA_Master.dot",
@@ -1443,8 +693,8 @@
     {
       "filename": "CASE_MACHERET_1997_2026_DOSSIER.md",
       "path": "H:\\ACTOR_DEV_ENV\\CASE_MACHERET_1997_2026_DOSSIER.md",
-      "size_bytes": 23281,
-      "sha256": "861cb5b0e36a25ad881c4d41758c36b8b4e155e4bedade99aeee1a60725dee08"
+      "size_bytes": 22717,
+      "sha256": "85e189e04694c13b51370aa66035a2aba8b99844662ad575c744202c7daef59b"
     },
     {
       "filename": "CASE_MACHERET_1997_2026_DOSSIER.pdf",
