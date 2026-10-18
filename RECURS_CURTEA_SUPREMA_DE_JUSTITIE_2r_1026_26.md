@@ -37,4 +37,4 @@ Considerând decizia instanței de apel și actele instanței de fond ca fiind i
 
 Macheret Alexei Artur (A©tor)
 
-*AOTOR KEY="# [A©tor Declaration]"*
+*A©TOR_KEY="# [⚖ A©tor Declaration]"*
