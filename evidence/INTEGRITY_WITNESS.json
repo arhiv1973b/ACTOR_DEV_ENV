@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "protocol": "TI-ULA Cryptographic Cross-Verification",
   "scope": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-18 21:07:35 UTC",
-  "total_verified_nodes_and_artifacts": 126,
+  "timestamp": "2026-10-18 21:12:30 UTC",
+  "total_verified_nodes_and_artifacts": 127,
   "artifacts": [
     {
       "filename": "ADOPTION_REASONING_1977.yaml",
@@ -69,8 +69,8 @@
     {
       "filename": "INTEGRITY_WITNESS.json",
       "path": "evidence\\INTEGRITY_WITNESS.json",
-      "size_bytes": 32650,
-      "sha256": "1ecb2e59d1d6f91ed046c4ad22bbca924645c6b9e8f84d98948999aab126538b"
+      "size_bytes": 33192,
+      "sha256": "b179bd100dca9c99e47db80a62edb5f1f70d72d2d4bc0ae91c2601520eef8f72"
     },
     {
       "filename": "JUS_COGENS_CONCLUSIONS_10_20.json",
@@ -335,6 +335,12 @@
       "path": "evidence\\financial_sabotage\\counter_limits_jus_cogens_doctrine.json",
       "size_bytes": 1754,
       "sha256": "7235b0d30f07ccb5b7f399f622402c1792b3e22a299efc5cfc6da61a7a66377e"
+    },
+    {
+      "filename": "Evidence_Vault_Controlimiti_Jus_Cogens_Language.md",
+      "path": "evidence\\financial_sabotage\\Evidence_Vault_Controlimiti_Jus_Cogens_Language.md",
+      "size_bytes": 6313,
+      "sha256": "a80bcd6d48e5183567eff42088a18c992a13c1ab2749798900565abddd7fd897"
     },
     {
       "filename": "financial_sabotage_aggregation_report.json",
