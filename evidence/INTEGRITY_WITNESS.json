@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "protocol": "TI-ULA Cryptographic Cross-Verification",
   "scope": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-18 19:59:08 UTC",
-  "total_verified_nodes_and_artifacts": 124,
+  "timestamp": "2026-10-18 21:07:35 UTC",
+  "total_verified_nodes_and_artifacts": 126,
   "artifacts": [
     {
       "filename": "ADOPTION_REASONING_1977.yaml",
@@ -70,7 +70,7 @@
       "filename": "INTEGRITY_WITNESS.json",
       "path": "evidence\\INTEGRITY_WITNESS.json",
       "size_bytes": 32650,
-      "sha256": "17932191bab726c3f12dc0c2bd2cc478e79c20cc37f9fd25c3621f67585aff1c"
+      "sha256": "1ecb2e59d1d6f91ed046c4ad22bbca924645c6b9e8f84d98948999aab126538b"
     },
     {
       "filename": "JUS_COGENS_CONCLUSIONS_10_20.json",
@@ -267,8 +267,8 @@
     {
       "filename": "Scrisoare_insotitoare_Revizuire_Macheret_1.pdf",
       "path": "evidence\\Scrisoare_insotitoare_Revizuire_Macheret_1.pdf",
-      "size_bytes": 566635,
-      "sha256": "38146f30d671bad40379e7615b9c3b4bf3aa6df61b735293e7acc86f61716037"
+      "size_bytes": 872718,
+      "sha256": "56665f535e1199483cfce72b6eb5ed05e880b6c669816231ea9c4ba1863e5aef"
     },
     {
       "filename": "ti_ula_jus_cogens_evidence_manifest.json",
@@ -331,6 +331,12 @@
       "sha256": "7a91ff9a75415627b3c148ad038bfbbe70fc37f5b96fb7ed0e28279925c37142"
     },
     {
+      "filename": "counter_limits_jus_cogens_doctrine.json",
+      "path": "evidence\\financial_sabotage\\counter_limits_jus_cogens_doctrine.json",
+      "size_bytes": 1754,
+      "sha256": "7235b0d30f07ccb5b7f399f622402c1792b3e22a299efc5cfc6da61a7a66377e"
+    },
+    {
       "filename": "financial_sabotage_aggregation_report.json",
       "path": "evidence\\financial_sabotage\\financial_sabotage_aggregation_report.json",
       "size_bytes": 1050,
@@ -353,6 +359,12 @@
       "path": "evidence\\financial_sabotage\\fincombank_receipts_manifest.json",
       "size_bytes": 1405,
       "sha256": "6ad23e23b03882b235438b5ebae02a29f2f9e7c7365d67eb5267741e3e98b2d2"
+    },
+    {
+      "filename": "language_sovereignty_analysis.json",
+      "path": "evidence\\financial_sabotage\\language_sovereignty_analysis.json",
+      "size_bytes": 3947,
+      "sha256": "7faa7eda99fca900187d7a19a1c9658baa63dcf2ca3df528ba260060da669124"
     },
     {
       "filename": "police_response_k577_26_fincombank_balance.json",
