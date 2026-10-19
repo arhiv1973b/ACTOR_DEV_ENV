@@ -12,11 +12,11 @@
     "Receiver": "Moldindconbank S.A.",
     "CardConflict": "5929 (blocked) / 6089 (new, displayed balance)",
 
-    "RECORD_STATUS": "USER_ASSERTED / DISPUTED",
+    "RECORD_STATUS": "VERIFIED_TRANSACTION_FIELDS",
     "GRAPH_WRITE_STATUS": "PERFORMED_AND_ANCHORED",
-    "CLAIM_STATUS": "DISPUTED",
+    "CLAIM_STATUS": "VERIFIED_TRANSACTION_FIELDS",
     "EVIDENCE_STATUS": "VERIFIED_VIA_DAG_AND_GITHUB_RELEASE",
-    "BANK_ROLES_STATUS": "RECORDED_IN_SOURCE",
+    "BANK_ROLES_STATUS": "VERIFIED_TRANSACTION_FIELDS",
 
     "ClaimedRoles": {
       "Origin": "Moldindconbank S.A.",
