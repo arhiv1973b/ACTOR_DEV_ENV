@@ -3,7 +3,7 @@
 ERGA OMNES WORKFLOW ORCHESTRATOR
 Integrated with UNIVERSAL_NOTEBOOK_CASE_MACHERET.md and apostille-mirror repository.
 Case Reference: CASE-MACHERET-1997-2026
-Security Anchor: A©TOR_KEY="# [⚖ A©tor Declaration]"
+Security Anchor: A©tor_KEY="# [⚖ A©tor Declaration]"
 """
 
 import os
@@ -110,7 +110,7 @@ def run_workflow():
 
     # 4. Simulate workflow dispatch & log audit event
     timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
-    log_entry = f"{timestamp},WORKFLOW_EXECUTION,SUCCESS,{len(dispatch_records)} documents processed,A©TOR_KEY\n"
+    log_entry = f"{timestamp},WORKFLOW_EXECUTION,SUCCESS,{len(dispatch_records)} documents processed,A©tor_KEY\n"
 
     try:
         with open(AUDIT_LOG_PATH, "a", encoding="utf-8") as log_file:

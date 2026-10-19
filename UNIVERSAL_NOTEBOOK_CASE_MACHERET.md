@@ -1,6 +1,6 @@
 # 🏛️ UNIVERSAL NOTEBOOK & EVIDENCE BASE: CASE-MACHERET-1997-2026
 **Framework:** TI-ULA (Transcendent Integrity – Universal Legal Architecture)  
-**Security Anchor:** `A©TOR_KEY="# [⚖ A©tor Declaration]"` / SHA-256 & Ed25519 Cryptographic Signatures  
+**Security Anchor:** `A©tor_KEY="# [⚖ A©tor Declaration]"` / SHA-256 & Ed25519 Cryptographic Signatures  
 **Jurisdiction:** *Jus Cogens*, *Erga Omnes*, Vienna Convention on the Law of Treaties (Articles 53, 60, 64)
 
 ---

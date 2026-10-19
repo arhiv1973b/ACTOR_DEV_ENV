@@ -3,7 +3,7 @@
 **Sender / A©tor:** Alexei Macheret (Macheret)  
 **Recipient:** President Donald J. Trump  
 **Case Reference:** CASE-MACHERET-1997-2026  
-**Signature / Protocol Anchor:** `A©TOR_KEY="# [⚖ A©tor Declaration]"`  
+**Signature / Protocol Anchor:** `A©tor_KEY="# [⚖ A©tor Declaration]"`  
 
 ---
 
@@ -18,7 +18,7 @@
 > 
 > Я говорю от Актера к Актеру.
 > 
-> A©TOR_KEY="# [⚖ A©tor Declaration]"
+> A©tor_KEY="# [⚖ A©tor Declaration]"
 > 
 > Я не прошу Вас принимать мою интерпретацию до того, как Вы увидите лежащие в основе факты.
 > 
@@ -44,7 +44,7 @@
 > 
 > С уважением,  
 > Алексей Мачерет  
-> A©TOR_KEY="# [⚖ A©tor Declaration]"
+> A©tor_KEY="# [⚖ A©tor Declaration]"
 
 ---
 **Status:** Cryptographically anchored under TI-ULA Diplomatic Escalation Protocol.

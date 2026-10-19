@@ -59,7 +59,7 @@ Menținerea unui magistrat cu conflict de interese și subordonarea accesului la
 
 **Semnătura:** Macheret Alexei Artur (A©tor)
 
-*A©TOR_KEY="# [⚖ A©tor Declaration]"*
+*A©tor_KEY="# [⚖ A©tor Declaration]"*
 
 ---
 
@@ -124,4 +124,4 @@ IDNP: 2000001159655
 
 **Подпись:** Мачерет Алексей Артур (A©tor)
 
-*A©TOR_KEY="# [⚖ A©tor Declaration]"*
+*A©tor_KEY="# [⚖ A©tor Declaration]"*

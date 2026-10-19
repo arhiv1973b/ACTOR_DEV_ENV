@@ -164,7 +164,7 @@ html_content = """
         <div class="security-marker">A©t0r Core</div>
         <h1>Спецификация Криптографического Ядра TI-ULA</h1>
         <div class="meta-info">
-            <strong>Идентификатор Аудита:</strong> A©TOR-CAS-7L-2026-05-25<br>
+            <strong>Идентификатор Аудита:</strong> A©tor-CAS-7L-2026-05-25<br>
             <strong>Контекст производства:</strong> CASE-MACHERET-1997-2026<br>
             <strong>Правовой базис:</strong> Действие Erga Omnes / Нормы Jus Cogens
         </div>

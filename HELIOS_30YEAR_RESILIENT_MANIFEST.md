@@ -36,4 +36,4 @@ The master deterministic equation governing this 30-year state is locked as:
 
 This manifest, along with all prior audit logs, DAG manifests, and evidence registries, has been committed to the secure git repository and pushed via the GitHub corridor to ensure permanent historical anchoring.
 
-**Signature:** A©TOR_KEY="# [⚖ A©tor Declaration]"
+**Signature:** A©tor_KEY="# [⚖ A©tor Declaration]"

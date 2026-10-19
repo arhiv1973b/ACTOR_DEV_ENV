@@ -1,7 +1,7 @@
 {
   "audit_case": "Case-Macheret-1997-2026",
   "signature_enforcement": "Vigilant Mode / Require Signed Commits",
-  "declaration_key": "A©TOR_KEY=\"# [⚖ A©tor Declaration]\"",
+  "declaration_key": "A©tor_KEY=\"# [⚖ A©tor Declaration]\"",
   "legal_framework": {
     "jus_cogens": "Imperative norm of international law permitting no derogation",
     "erga_omnes": "Obligations towards the entire system/community",

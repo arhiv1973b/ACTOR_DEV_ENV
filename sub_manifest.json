@@ -24,7 +24,7 @@
                 "LegalCharacterization": "Disputed Theft – US Funds Only",
                 "RecordStatus": "USER_ASSERTED / DISPUTED",
                 "EvidenceStatus": "VERIFIED_LINKED_TO_TRANSACTION",
-                "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                "A©tor_KEY": "# [⚖ A©tor Declaration]"
             }
         },
         "node_hash": "b5b9f5cc13267dfa7aa7de63a66abd576d60ba42060dc813b80817853a01b983",
@@ -46,7 +46,7 @@
                 "DateTime": "2026-09-19T12:55:10.040274+00:00",
                 "EvidenceType": "Viber Photo Evidence",
                 "RecordStatus": "VERIFIED_SOURCE_MEDIA",
-                "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                "A©tor_KEY": "# [⚖ A©tor Declaration]"
             }
         },
         "node_hash": "c658111cb41591f3e8a3553cffe25ce107bf228f1d3b5a57dc3279cb275ca1de",
@@ -69,7 +69,7 @@
                 "LegalCharacterization": "Disputed Theft – US Funds Only",
                 "RecordStatus": "USER_ASSERTED / DISPUTED",
                 "EvidenceStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
-                "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                "A©tor_KEY": "# [⚖ A©tor Declaration]"
             }
         },
         "node_hash": "16879cc7b1138d5638e1edcaaf08f036ec7994d576d1c30eaa746cb40c022767",
@@ -80,7 +80,7 @@
         "payload": {
             "case_id": "CASE-MACHERET-1997-2026",
             "document_ref": "apostille_registry_working_13.signed.pdf",
-            "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+            "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
             "event_date": "1998-10-13T00:00:00Z",
             "registration_date": "2026-09-16T23:24:33.797325+00:00",
             "protocol": "A©tor Key / TI-ULA / Evidence Anchor",
@@ -193,7 +193,7 @@
         "payload": {
             "case_id": "CASE-MACHERET-1997-2026",
             "document_ref": "apostille_registry_working_13.signed.pdf",
-            "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+            "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
             "event_date": "1998-10-13T00:00:00Z",
             "registration_date": "2026-09-13T23:10:47.672268+00:00",
             "protocol": "A©tor Key / TI-ULA / Evidence Anchor",
@@ -258,7 +258,7 @@
         "payload": {
             "case_id": "CASE-MACHERET-1997-2026",
             "document_ref": "Документ (162).pdf",
-            "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+            "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
             "event_date": "2026-04-21T00:00:00Z",
             "registration_date": "2026-09-11T18:10:44.991610+00:00",
             "protocol": "TI-ULA Graph Engineering / Ed25519",
@@ -482,7 +482,7 @@
         "payload": {
             "case_id": "CASE-MACHERET-1997-2026",
             "document_ref": "Документ (162).pdf",
-            "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+            "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
             "event_date": "2026-04-21T00:00:00Z",
             "registration_date": "2026-09-05T03:39:04.443119+00:00",
             "protocol": "TI-ULA Graph Engineering / Ed25519",

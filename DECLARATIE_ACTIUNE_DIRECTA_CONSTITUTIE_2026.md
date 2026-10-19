@@ -4,7 +4,7 @@
 
 **Дело:** MACHERET-1997-2026 / Erga Omnes / VCLT Article 71 / Actus Nullus  
 **Заявитель:** Алексей Мачерет (A. Maceret), лицо с I группой инвалидности, статус жертвы пыток (Приговор S-22).  
-**Базовый ключ:** A©TOR_KEY="# [⚖ A©tor Declaration / Jus Cogens]"  
+**Базовый ключ:** A©tor_KEY="# [⚖ A©tor Declaration / Jus Cogens]"  
 
 ---
 

@@ -1,5 +1,5 @@
 # ocr_cli_bridge.py
-# A©TOR_KEY="# [⚖ A©tor Declaration]"
+# A©tor_KEY="# [⚖ A©tor Declaration]"
 # Thin scan → raw-with-errors → process_ocr_to_udhr_pointer
 # Does not clean OCR defects. Fingerprint contract stays in ocr_zero_weight_bridge.
 

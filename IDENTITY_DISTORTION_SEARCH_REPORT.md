@@ -81,7 +81,7 @@
 - Line 13: `3351aa629d992ef0d7a960eefafc8e4a5feb858d case_macheret_repo/legal_package/Scrisoare_Acoperitoare_Jus_Cogens_ONU_Comisia_de_la_Veneția.docx`
 - Line 14: `6eabf42a40ef3d7f6eddd4a42026534278d248ee case_macheret_repo/legal_package/_Венская Конвенция о праве международны...говоров_ (Заключена в Вене 23.05.pdf`
 - Line 15: `24c3a16241371521144f9962dcefe247fea2a53a case_macheret_repo/legal_package/«ЕС» и «ЕВРОАТОМ».semnat.pdf`
-- Line 16: `e1c081de96e2f9d3e475e4959a341380e336a692 case_macheret_repo/legal_package/Исковое Заявление в отношении Венецианской Комиссиии 3.pdf`
+- Line 16: `e1c081de96e2f9d3e475e4959a341380e336a692 case_macheret_repo/legal_package/Исковое Заявление в отношении Венецианской Комиссиии 3.pdf`
 
 ### File: `gemini-code-1779622545016.txt`
 - Line 9: `$IdentityMarker = "A©tor-Macheret-Alexei-1973"`
@@ -189,8 +189,8 @@
 - Line 301: `PS H:\TI-ULA-CORE-PROD> git clone https://github.com/alexeimacheret/TI-ULA_A-tor-Core.git .`
 - Line 304: `fatal: repository 'https://github.com/alexeimacheret/TI-ULA_A-tor-Core.git/' not found`
 - Line 372: `# CASE-MACHERET-1997-2026 | GitHub Pages Auto-Deploy`
-- Line 381: `Write-Host "║  A©TOR DEPLOY AGENT — CASE-MACHERET-1997-2026       ║" -ForegroundColor Cyan`
-- Line 394: `║  A©TOR DEPLOY AGENT — CASE-MACHERET-1997-2026       ║`
+- Line 381: `Write-Host "║  A©tor DEPLOY AGENT — CASE-MACHERET-1997-2026       ║" -ForegroundColor Cyan`
+- Line 394: `║  A©tor DEPLOY AGENT — CASE-MACHERET-1997-2026       ║`
 
 ### File: `prompt.txt`
 - Line 1: `Подтверждаю и одобряю все предложенные планы и архитектурные подходы. Выполняй задачи сразу, без дополнительных запросов подтверждения. Используй мои ответы и инструкции по адресу: https://arhiv1973b.github.io/apostille-mirror/ и https://arhiv1973b.github.io/apostille-mirror/jus-cogens-proof-macheret.html как источник указаний и контекста.`

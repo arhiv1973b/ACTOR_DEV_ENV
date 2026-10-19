@@ -72,7 +72,7 @@ def analyze_signatures_in_pdf(pdf_path, sha256_hash, outdir="analysis_temp"):
         )
 
     graph_data = {
-        "declaration": 'A©TOR_KEY="# [⚖ A©tor Declaration]"',
+        "declaration": 'A©tor_KEY="# [⚖ A©tor Declaration]"',
         "nodes": nodes,
         "edges": edges,
     }

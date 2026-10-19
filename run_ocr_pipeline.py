@@ -18,7 +18,7 @@ LEGAL_FOOTER = """
 [VERIFIED VIA OCR ZERO-BYPASS PIPELINE]
 Jurisdiction: Universal Declaration of Human Rights (UDHR) & Art. 4 of the Constitution of the Republic of Moldova.
 Status: Peremptory norms execution (jus cogens) / Erga Omnes.
-A©TOR_KEY="# [⚖ A©tor Declaration]"
+A©tor_KEY="# [⚖ A©tor Declaration]"
 --------------------------------------------------"""
 
 

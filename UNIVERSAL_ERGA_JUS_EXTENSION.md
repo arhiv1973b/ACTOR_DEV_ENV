@@ -1,6 +1,6 @@
 # 🏛️ UNIVERSAL_ERGA_JUS_EXTENSION (Bilingual Framework)
 **Framework:** TI-ULA (Transcendent Integrity – Universal Legal Architecture)  
-**Security Anchor:** `A©TOR_KEY="# [⚖ A©tor Declaration]"` / SHA-256 & Ed25519  
+**Security Anchor:** `A©tor_KEY="# [⚖ A©tor Declaration]"` / SHA-256 & Ed25519  
 **Case Reference:** CASE-MACHERET-1997-2026
 
 ---
@@ -53,4 +53,4 @@ Promptul **UNIVERSAL_ERGA_JUS_EXTENSION** servește drept strat de extensie pent
               [⚖ A©tor Declaration Sealed Output]
 ```
 
-A©TOR_KEY="# [⚖ A©tor Declaration]"
+A©tor_KEY="# [⚖ A©tor Declaration]"

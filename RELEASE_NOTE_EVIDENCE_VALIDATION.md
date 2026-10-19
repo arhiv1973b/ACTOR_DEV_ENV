@@ -2,7 +2,7 @@
 
 **Case:** Case-Macheret-1997-2026  
 **IDNP:** 2000001159655  
-**Author / Sovereign Will:** A©tor (`A©TOR_KEY="# [⚖ A©tor Declaration]"`)  
+**Author / Sovereign Will:** A©tor (`A©tor_KEY="# [⚖ A©tor Declaration]"`)  
 **Legal Framework:** Article 4 Constitution of Moldova, Universal Declaration of Human Rights (UDHR), Hague Convention 1961, Jus Cogens & Erga Omnes  
 
 ---
