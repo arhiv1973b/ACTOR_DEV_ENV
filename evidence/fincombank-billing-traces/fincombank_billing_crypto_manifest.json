@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "case_id": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-20T18:20:46.061Z",
-  "description": "Comprehensive FinComBank billing statements, pre-trial claims, Philology Aviz No. 269, bank responses, and scanner evidence crypto-manifest",
+  "timestamp": "2026-10-20T19:57:31.422Z",
+  "description": "Comprehensive FinComBank billing statements, pre-trial claims, revision requests (2r-1026/26), criminal complaints, Art. 313 CPP objections, and evidence crypto-manifest",
   "algorithm": "SHA-256",
   "files": [
     {
@@ -528,6 +528,10 @@
     {
       "path": "apostille-mirror/mirrors/CERTIFICAT DE ÎNCADRARE ÎN GRAD DE DIZABILITATE.apostila[246]_extracted.txt",
       "hash": "e8d913ef93c7eed89c71c6fe68df617d7ed267f3bfe61d8a28dff5fea6e68d12"
+    },
+    {
+      "path": "apostille-mirror/mirrors/Downloads/01_Legal_Submissions/SESIZARE.pdf",
+      "hash": "3d79d0dc7c91a789a8b5a832a60a5b7c4c5ed7b3b9e6dc4db42ac5fd717836f9"
     },
     {
       "path": "apostille-mirror/mirrors/Gmail_-_FW__Мачерет_Алексей_-_заявляет_кассацию_-_одновременно_отклоняет_Dosar_civil_nr.2a-3816_22_Judecător_raportor_Vitalk_extracted_processed_processed.txt",
@@ -1107,7 +1111,19 @@
     },
     {
       "path": "evidence/fincombank-billing-traces/fincombank_billing_crypto_manifest.json",
-      "hash": "818a0663738219530b7918b4a95c5cd4ee851df0845a932ef37bfc9c77036d65"
+      "hash": "b8ce32b4a501b4857a19163893c5f9874602d6ff6014cc76c64fc6e94cf580fe"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/legal_filings_2026/cerere_revizuiere_2r_1026_26.txt",
+      "hash": "0df92b570ed7ebf495ef8dc47666ee68bb3a2802af9be9daa4232bd04339b725"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/legal_filings_2026/criminal_complaint_26092026.txt",
+      "hash": "7a9c3164ad67b0e86928c65961235052eba29bc9f34a2441e3a0e1921d13b8f1"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/legal_filings_2026/sesizare_art_313_cpp_03102026.txt",
+      "hash": "443afb483a0ad75d2b8e3d165d27efe606477967a6ede9e6ea5c91a40883dacb"
     },
     {
       "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_1.jpg",
@@ -1195,7 +1211,7 @@
     },
     {
       "path": "fincombank_billing_crypto_manifest.json",
-      "hash": "818a0663738219530b7918b4a95c5cd4ee851df0845a932ef37bfc9c77036d65"
+      "hash": "b8ce32b4a501b4857a19163893c5f9874602d6ff6014cc76c64fc6e94cf580fe"
     },
     {
       "path": "isolated_vault/AVIZ.pdf",
@@ -1334,6 +1350,10 @@
       "hash": "d44d5f53a406ba5fe3db0d39772ccaff5cf01c319b792c1766d0ae2caac21c76"
     },
     {
+      "path": "recovered_evidence/SESIZARE.pdf",
+      "hash": "3d79d0dc7c91a789a8b5a832a60a5b7c4c5ed7b3b9e6dc4db42ac5fd717836f9"
+    },
+    {
       "path": "Registrul_documentelor_Dosarul_Jus_Cogens_Maceret_si_Oleinik/1. Dosarul_nr_21-40_2021_judecatorul_Stambol_si_actele_CSJ/apostile.1ra-834_09_extracted_processed_processed.txt",
       "hash": "54d600e0059d6e1019f0b87edafd7d660b3a7cb1a0f3f137d0733b7853794033"
     },
@@ -1346,12 +1366,20 @@
       "hash": "32670b36526dd60d920b23da086c433ef7aab4b3180bd8e1e9471f476eb0d0b5"
     },
     {
+      "path": "SESIZARE BNM.pdf",
+      "hash": "e2c574c64a1b0cf52b3ce23e61761138a9fc8dd5164c6f0a12eff7d9ec866f88"
+    },
+    {
       "path": "temp_data/aviz_text.txt",
       "hash": "3da1641ba8d89d6cedde6a7f1f82589344a71286ca832ad84204958c05e79de5"
     },
     {
       "path": "temp_data/doc.pdf_ocr_extracted.txt",
       "hash": "9017c4f84272eb9f334106ccf182755cc68f8aede7886ab4330ed5f3c14eb5ea"
+    },
+    {
+      "path": "temp_data/sesizare_bnm_text.txt",
+      "hash": "d7e4f905cd2301365e57854853f056e51241ac7137752eb0554dc9d415a32660"
     },
     {
       "path": "udhr_claim_manifest.json",
@@ -1375,5 +1403,5 @@
     }
   ],
   "public_key": "283608ae670d4b234541806a06e576957a041d86a6c09eb45844eed6a5a69859",
-  "signature": "dd53ae872f4f32c80a2f031f79c9d920dd1f935ca88af35c09d2c095d0e422b16c7fd317c92b9f83ab0422987361d87788246498c644029cfc0c3a45a7a84800"
+  "signature": "a9df8927b0c8bbc41dd191ce5d6b8da2920d682ea563d9d121e37048da52e1d5007e2046e94279f2321b9725e6c890c5bb9c93c59a29b18f0f7c0bc93246c70d"
 }
