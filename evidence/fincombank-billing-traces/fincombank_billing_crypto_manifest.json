@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "case_id": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-20T17:15:03.021Z",
-  "description": "Local crypto-manifest for FinComBank billing statements, PDF extracts, and payment traces",
+  "timestamp": "2026-10-20T17:28:18.946Z",
+  "description": "Updated FinComBank billing statements, PDF extracts, and 17 new scanner JPEG images crypto-manifest",
   "algorithm": "SHA-256",
   "files": [
     {
@@ -90,12 +90,88 @@
       "hash": "3398b057b7dba2f827cf1a025952840a0dd4e1ee931ffa8b304289b4b554a10f"
     },
     {
+      "path": "evidence/fincombank-billing-traces/fincombank_billing_crypto_manifest.json",
+      "hash": "a47135254b91a8cab05f4189bf2a814d33b263453426e484342c927b6b0526a6"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_1.jpg",
+      "hash": "525546eba2433ec57cfcb2bcdeb1629c5a9a0649b969874654bd0798ebb7230a"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_10.jpg",
+      "hash": "c15ceaec8d1e2521ba4048670234a6e41f550277b854e87fb3a76bc98c03e345"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_11.jpg",
+      "hash": "9cca91d8eb335f06bb25990182e49d3afcf3f7b43099aaa583d97c7421272f46"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_12.jpg",
+      "hash": "e4d3ee65f5ab9dc11e7a1da7edaa8e5cf332b5c6043cf66c9ed035c64a19b96e"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_13.jpg",
+      "hash": "cd67c618a0852e1780af5f58e2bd42c3c6e418c04fa8a2f907636c4124ca1389"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_14.jpg",
+      "hash": "d737bf302d6e428541e7a4355aca8d4bf2cbacad9401abd685abd63bb891221d"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_15.jpg",
+      "hash": "496329d9e686f66f316fb4fc112c875ece83bfc13f9f5de185610bd1efde8432"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_16.jpg",
+      "hash": "951c35ee13aa0f41c0297db734fc60e2a8b9f528cbaace1e6f4cd51bf875ca66"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_17.jpg",
+      "hash": "a7a2c37df4ef8a4d159da359055cf17f4baf51b70b9b4dbf7af6c81814595b77"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_2.jpg",
+      "hash": "f5ab80fb8b268a84b72f24e57acbe705f7a6f6ac4fe872cf77d8897c01a329ec"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_3.jpg",
+      "hash": "25fe3f1822ba5af42387857d251e6412edf130bd8e30d8e4a3f7973732a6469c"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_4.jpg",
+      "hash": "3bce369ec6813d185c67e6b7919d571a74a58ccd7b4690fc28567b2e4b9bac2b"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_5.jpg",
+      "hash": "5444e4708d2ccacd0e0aac3baf60fc206454c1f25f4280fa007a2abbe8236032"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_6.jpg",
+      "hash": "4eb0b77e42481969d628044e7879e0a972e42bee16b4f19131ff96ba52ed7979"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_7.jpg",
+      "hash": "52208a56ba1f7b4f23b7bd261db1881b2a19d0e2ac331de0e057842242f220c4"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_8.jpg",
+      "hash": "d1457d466f40b980058fcd3c13293ea8d0a16a5cdd6eb2c57bf910a7e9b1db06"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_9.jpg",
+      "hash": "ac1355451621c361e728f2701278469499667de4a058a5006eb545991d6b9d3b"
+    },
+    {
       "path": "evidence/receipt_3CD779D395025DDF.pdf",
       "hash": "e801b1176558c53511e0304d4cf5e68cb072d4a9729a3ea4020c5a65e1d65092"
     },
     {
       "path": "fincombank_25m_trace.json",
       "hash": "6efdf4d5ac0d4a1f224cd4cfce2f2641642364efac134bcf065f1ff43bb62731"
+    },
+    {
+      "path": "fincombank_billing_crypto_manifest.json",
+      "hash": "a47135254b91a8cab05f4189bf2a814d33b263453426e484342c927b6b0526a6"
     },
     {
       "path": "isolated_vault/fincombank - criminal_compressed.pdf",
@@ -211,5 +287,5 @@
     }
   ],
   "public_key": "283608ae670d4b234541806a06e576957a041d86a6c09eb45844eed6a5a69859",
-  "signature": "e6a1014246e56e4ceae53153e0d043ed8882a052800c53ec8bc6e0ef875625dd12d51744736eecb59cd2bac989d06a8e2378d9dc06ab0fd7b22cb8c2b64cdc06"
+  "signature": "ab4cf730cb5ac460c7b9219948a87b79854cf61815dda9c44029b4f387ae07660e7a1dec8caf59a62cd2bb4c405aca09e41950285884613933a77429a9908905"
 }
