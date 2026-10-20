@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "case_id": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-20T21:20:09.972Z",
-  "description": "Comprehensive FinComBank billing statements, revision requests, criminal complaints, Decizie 21r-10/26 (01.10.2026), and evidence crypto-manifest",
+  "timestamp": "2026-10-20T21:21:52.115Z",
+  "description": "Comprehensive FinComBank billing statements, Cerere de Revizuire PRINT PDF, Document 232 PDF, and evidence crypto-manifest",
   "algorithm": "SHA-256",
   "files": [
     {
@@ -1110,8 +1110,16 @@
       "hash": "c3eaae65d3ef415209e83d2f864bfd63298d172cd934715b7ea28be647a4b6c0"
     },
     {
+      "path": "evidence/fincombank-billing-traces/downloads_2026/Cerere_de_Revizuire_Macheret_PRINT.pdf",
+      "hash": "1c3349990c5325963306f07721f80918026ecc3eaf4a974bfbaeb83fa5794eaf"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/downloads_2026/Document_232.pdf",
+      "hash": "8490984f2e333b7516fac9128fd6154074e8805b6fb8d53a604083ecb40c6d54"
+    },
+    {
       "path": "evidence/fincombank-billing-traces/fincombank_billing_crypto_manifest.json",
-      "hash": "58a5b7244a4828f60cdc919a937ed63cdd4c4590c1722ba9955df64c150d7fd0"
+      "hash": "2fa0407b20e931b4336fd28929460a3ae3786981b02d602f241ffcebea770b24"
     },
     {
       "path": "evidence/fincombank-billing-traces/judicial_decisions_2026/decizie_21r_10_26_01102026.txt",
@@ -1215,7 +1223,7 @@
     },
     {
       "path": "fincombank_billing_crypto_manifest.json",
-      "hash": "58a5b7244a4828f60cdc919a937ed63cdd4c4590c1722ba9955df64c150d7fd0"
+      "hash": "2fa0407b20e931b4336fd28929460a3ae3786981b02d602f241ffcebea770b24"
     },
     {
       "path": "isolated_vault/AVIZ.pdf",
@@ -1407,5 +1415,5 @@
     }
   ],
   "public_key": "283608ae670d4b234541806a06e576957a041d86a6c09eb45844eed6a5a69859",
-  "signature": "240ed06d426c0bfba369c3e30a68158e0baf5097896eb58cda71f37774b76621b6a8a230105eb5b27a86cc561909e404f61f287cc1cf3dac4a31c56b1d0f8c0d"
+  "signature": "6ea055cebdfcfbdf4280817eca443017547755ba997e5bbe9ac10837af87d86c8e0b483a2592ba2c82ce376cc424444ed07d8bb24fcfd9f3a342cc11fef90c0f"
 }
