@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,7 +28,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install cryptography
 
-      - name: Run Cryptographic Verification & Generate Report
+      - name: Run Cryptographic Verification & Generate Reports & HTML Index
         run: |
           python -c "
           import json, hashlib, os, datetime
@@ -103,19 +105,69 @@ jobs:
           with open(hist_report_path, 'w', encoding='utf-8') as hf:
               hf.write(summary_content)
 
-          print('Verification summary and historical report generated.')
+          # Generate HTML Dashboard / Index for GitHub Pages
+          html_content = f'''<!DOCTYPE html>
+          <html lang=\"en\">
+          <head>
+              <meta charset=\"UTF-8\">
+              <title>Crypto Integrity Audit Dashboard</title>
+              <style>
+                  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 20px; background: #0d1117; color: #c9d1d9; }}
+                  h1 {{ color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 10px; }}
+                  .status-passed {{ color: #2ea043; font-weight: bold; font-size: 1.2em; }}
+                  .status-failed {{ color: #f85149; font-weight: bold; font-size: 1.2em; }}
+                  .card {{ background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 20px; margin-top: 20px; }}
+                  code {{ background: #21262d; padding: 2px 6px; border-radius: 4px; font-family: monospace; color: #a5d6ff; }}
+                  ul {{ line-height: 1.6; }}
+              </style>
+          </head>
+          <body>
+              <h1>⚖️ Crypto Integrity & Evidence Audit Dashboard</h1>
+              <div class=\"card\">
+                  <p><strong>Timestamp:</strong> {timestamp}</p>
+                  <p><strong>Commit SHA:</strong> <code>{os.getenv('GITHUB_SHA', 'N/A')}</code></p>
+                  <p><strong>Overall Status:</strong> <span class=\"{'status-passed' if status == 'PASSED' else 'status-failed'}\">{status}</span></p>
+              </div>
+              <div class=\"card\">
+                  <h2>Verification Results</h2>
+                  <ul>
+          '''
+          for r in results:
+              if 'error' in r:
+                  html_content += f\"<li><span style='color: #f85149;'>Error: {r['error']}</span></li>\"
+              else:
+                  sig_badge = \"✅ OK\" if r['signature_verified'] else \"❌ FAILED\"
+                  hash_badge = \"✅ OK\" if r['sha256_match'] else \"❌ FAILED\"
+                  html_content += f\"<li><strong>Target File:</strong> <code>{r['target']}</code><br>\"
+                  html_content += f\"&nbsp;&nbsp;&bull; Signature (Ed25519): {sig_badge}<br>\"
+                  html_content += f\"&nbsp;&nbsp;&bull; SHA-256 Match: {hash_badge} (<code>{r['sha256_actual']}</code>)</li>\"
+          
+          html_content += '''
+                  </ul>
+              </div>
+              <footer style=\"margin-top: 40px; text-align: center; color: #8b949e; font-size: 0.9em;\">
+                  Case-Macheret-1997-2026 | UDHR 1948 & Jus Cogens Compliance Anchor
+              </footer>
+          </body>
+          </html>
+          '''
+          
+          with open('reports/index.html', 'w', encoding='utf-8') as html_f:
+              html_f.write(html_content)
+
+          print('Verification reports and HTML dashboard generated.')
           if status == 'FAILED':
               exit(1)
           "
 
-      - name: Commit and Push Historical Report to Repository
+      - name: Commit and Push Reports & HTML to Repository
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add integrity-summary.md reports/
-          git diff --staged --quiet || git commit -m "docs(audit): update automated cryptographic integrity verification reports [skip ci]"
+          git diff --staged --quiet || git commit -m "docs(audit): update cryptographic integrity reports and HTML dashboard [skip ci]"
           git push || echo "No changes to push or push skipped"
 
       - name: Upload Verification Report Artifact
