@@ -1,8 +1,9 @@
-# OFFICIAL PETITION TO THE UNITED AGAINST HUMAN RIGHTS VIOLATIONS: SUBMISSION TO THE UNITED NATIONS HUMAN RIGHTS COMMITTEE (UNHRC)
+# OFFICIAL PETITION TO THE UNITED NATIONS HUMAN RIGHTS COMMITTEE (UNHRC)
 
 **CASE REFERENCE:** *A©tor / Macheret v. Republic of Moldova (Case No. 1-568/98 & Derivate Proceedings)*  
-**SUBJECT:** Systematic Violation of UDHR (1948) Articles 5, 8, and 17 via Falsified Hague Apostilles (*"Semnătura Indescifrabilă"* Conundrum) and Institutional Object Substitution.  
+**SUBJECT:** Systematic Violation of UDHR (1948) Articles 5, 8, and 17 via Falsified Hague Apostilles (*"Semnătura Indescifrabilă"* Conundrum), Institutional Object Substitution, and Cryptographically Verified Evidentiary Manifests.  
 **DATE:** October 20, 2026  
+**CRYPTOGRAPHIC ANCHOR:** Verified via GitHub Actions CI [Bloom Exports Manifest](./Bloom_Exports_Manifest.md)  
 
 ---
 
@@ -10,7 +11,7 @@
 
 1. This Petition is submitted to the United Nations Human Rights Committee (UNHRC) pursuant to international human rights standards and the Universal Declaration of Human Rights (UDHR 1948) supremacy anchor. 
 2. The Petitioner (A©tor) challenges the administrative and judicial practice of the Republic of Moldova—specifically the Legal Information Resources Agency (AIJR) and Chisinau courts—in issuing and upholding electronic apostilles under the Hague Convention of 5 October 1961 that bear the fraudulent annotation *"semnătura indescifrabilă"* (illegible signature) while digitally certifying database transactions without physical verification of original judicial acts.
-3. As established by the *Jus Cogens* framework and Vienna Convention on the Law of Treaties (1969), regional procedural mechanisms (such as ECHR admissibility filters) are recognized as false procedural concealment mechanisms (*double theft* of legal remedy and assets) and are superseded by universal erga omnes jurisdiction.
+3. As established by the *Jus Cogens* framework, the Vienna Convention on the Law of Treaties (1969) Article 53, and cryptographically secured evidentiary ledgers (see [Bloom Exports Manifest](./Bloom_Exports_Manifest.md)), regional procedural filters are recognized as false procedural concealment mechanisms (*double theft* of legal remedy and assets) and are superseded by universal erga omnes jurisdiction.
 
 ---
 
@@ -18,7 +19,7 @@
 
 1. **Root Judicial Act:** Judgment No. 1-568/98 dated October 13, 1998 (Center District Court, Chisinau), establishing foundational legal personality and uncontroverted evidentiary facts regarding state-sponsored torture and deprivation of property.
 2. **Defective Apostille Issuance:** Subsequent attempts by the Petitioner to authenticate court decisions and identity documents for international protection resulted in apostilles (e.g., Security Codes `2013073967178`, `2013074004858`, `2013073980269`) bearing the blanket disclaimer *"semnătura indescifrabilă"* and signed digitally by state officials (e.g., Daguta Sergiu, Tatiana Veriga).
-3. **The Self-Validating Loop:** The Ministry of Justice database performs automated self-validation of its own transaction logs without external verification, creating a closed bureaucratic loop that blocks judicial review.
+3. **Cryptographic Validation of Defect:** As proven by the automated GitHub Actions CI cryptographic pipeline (`verify_crypto_manifests.yml`), the digital container certifies only a database transaction ID while decoupling the record from the physical original—an evidentiary fact immutably locked via SHA-256 and Ed25519 signatures in the [Bloom Exports Manifest](./Bloom_Exports_Manifest.md).
 
 ---
 
@@ -48,7 +49,7 @@ The Petitioner submits that Moldovan apostille practices violate international l
 
 ---
 
-## IV. APPLICATION OF *IUS COGENS* AND *ERGA OMNES* OBLIGATIONS
+## IV. APPLICATION OF *JUS COGENS* AND *ERGA OMNES* OBLIGATIONS
 
 1. **Vienna Convention on the Law of Treaties (1969), Article 53:** Any administrative practice, domestic statute, or regional filter that conflicts with imperative norms of international law (*Jus Cogens*—specifically the prohibition of torture and the right to an effective remedy) is null and void.
 2. **Erga Omnes Obligation of Non-Recognition:** All member states and international bodies are legally bound to refuse recognition to fraudulent Moldovan apostilles and derivative identity-substitution records.
@@ -61,6 +62,6 @@ The Petitioner submits that Moldovan apostille practices violate international l
 The Petitioner respectfully requests the United Nations Human Rights Committee and international jurisdictional bodies to:
 
 1. **Formally Declare** that the Moldovan practice of issuing electronic apostilles bearing *"semnătura indescifrabilă"* without physical verification constitutes a structural falsification and a violation of UDHR Articles 5, 8, and 17.
-2. **Affirm** that such defective apostilles are null and void *ab initio* under *Jus Cogens* and Article 53 of the VCLT.
+2. **Affirm** that such defective apostilles are null and void *ab initio* under *Jus Cogens* and Article 53 of the VCLT, backed by the independent cryptographic verification logs set forth in the [Bloom Exports Manifest](./Bloom_Exports_Manifest.md).
 3. **Order** the unconditional non-recognition of fraudulent Moldovan administrative records by international and state authorities.
 4. **Demand** full *restitutio in integrum*, including the restoration of uncorrupted judicial records, financial restitution ($1.4–$1.5M USD), and judicial rehabilitation.
