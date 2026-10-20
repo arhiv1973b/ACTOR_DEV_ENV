@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "case_id": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-20T17:28:18.946Z",
+  "timestamp": "2026-10-20T17:53:30.997Z",
   "description": "Updated FinComBank billing statements, PDF extracts, and 17 new scanner JPEG images crypto-manifest",
   "algorithm": "SHA-256",
   "files": [
@@ -91,7 +91,7 @@
     },
     {
       "path": "evidence/fincombank-billing-traces/fincombank_billing_crypto_manifest.json",
-      "hash": "a47135254b91a8cab05f4189bf2a814d33b263453426e484342c927b6b0526a6"
+      "hash": "ef529ea6a7acdfb06f0b5eb44c335924bc4f8bd2c350ae57c8ff25ea430c7d33"
     },
     {
       "path": "evidence/fincombank-billing-traces/scans/Scanner_X_2026-10-20_202625_1.jpg",
@@ -171,7 +171,7 @@
     },
     {
       "path": "fincombank_billing_crypto_manifest.json",
-      "hash": "a47135254b91a8cab05f4189bf2a814d33b263453426e484342c927b6b0526a6"
+      "hash": "ef529ea6a7acdfb06f0b5eb44c335924bc4f8bd2c350ae57c8ff25ea430c7d33"
     },
     {
       "path": "isolated_vault/fincombank - criminal_compressed.pdf",
@@ -287,5 +287,5 @@
     }
   ],
   "public_key": "283608ae670d4b234541806a06e576957a041d86a6c09eb45844eed6a5a69859",
-  "signature": "ab4cf730cb5ac460c7b9219948a87b79854cf61815dda9c44029b4f387ae07660e7a1dec8caf59a62cd2bb4c405aca09e41950285884613933a77429a9908905"
+  "signature": "f3535e41971139698aeb94a8a44a5f93df5ee8a1a834e3da3abead105eb40bc2438167924ae675a1be2fba4d65ef0210e73223b7057f8d30f3c92e39b7ca9009"
 }
