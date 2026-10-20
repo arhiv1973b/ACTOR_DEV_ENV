@@ -1,0 +1,215 @@
+{
+  "version": "1.0",
+  "case_id": "CASE-MACHERET-1997-2026",
+  "timestamp": "2026-10-20T17:15:03.021Z",
+  "description": "Local crypto-manifest for FinComBank billing statements, PDF extracts, and payment traces",
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": ".venv_test/Lib/site-packages/googleapiclient/discovery_cache/documents/billingbudgets.v1.json",
+      "hash": "bf760e26c0052c56f47412f70c3878d2de51622fcaf18654b33122f886345d03"
+    },
+    {
+      "path": ".venv_test/Lib/site-packages/googleapiclient/discovery_cache/documents/billingbudgets.v1beta1.json",
+      "hash": "5b55f16869100635467f151d4891458b65887e9a54fab3feae41694ae4cabea9"
+    },
+    {
+      "path": ".venv_test/Lib/site-packages/googleapiclient/discovery_cache/documents/cloudbilling.v1.json",
+      "hash": "8e0d7e0782d89b90e9f95f63528981b0b54e77d1f8b8f9600938cc13d00752bb"
+    },
+    {
+      "path": ".venv_test/Lib/site-packages/googleapiclient/discovery_cache/documents/cloudbilling.v1beta.json",
+      "hash": "0b151127cd454c069a49115aa4345e393f888b4ea565a7047787d4fe1090dc23"
+    },
+    {
+      "path": ".venv/Lib/site-packages/googleapiclient/discovery_cache/documents/billingbudgets.v1.json",
+      "hash": "bf760e26c0052c56f47412f70c3878d2de51622fcaf18654b33122f886345d03"
+    },
+    {
+      "path": ".venv/Lib/site-packages/googleapiclient/discovery_cache/documents/billingbudgets.v1beta1.json",
+      "hash": "5b55f16869100635467f151d4891458b65887e9a54fab3feae41694ae4cabea9"
+    },
+    {
+      "path": ".venv/Lib/site-packages/googleapiclient/discovery_cache/documents/cloudbilling.v1.json",
+      "hash": "8e0d7e0782d89b90e9f95f63528981b0b54e77d1f8b8f9600938cc13d00752bb"
+    },
+    {
+      "path": ".venv/Lib/site-packages/googleapiclient/discovery_cache/documents/cloudbilling.v1beta.json",
+      "hash": "0b151127cd454c069a49115aa4345e393f888b4ea565a7047787d4fe1090dc23"
+    },
+    {
+      "path": ".venv/Lib/site-packages/ibm_botocore/data/s3/2006-03-01/paginators-1.sdk-extras.json",
+      "hash": "e436d461e94c8991c40d5f35b5984d56419681647d116f65d2a525037ac20f4e"
+    },
+    {
+      "path": ".venv/Lib/site-packages/studio/frontend/src/features/data-recipes/learning-recipes/ocr-document-extraction.json",
+      "hash": "96b7464dc0fda707964029f2e646762c37f48304f00f42ac2b6d042fcceca828"
+    },
+    {
+      "path": "🏛️ EVIDENCE/New_Submissions/fincombank - criminal_compressed.pdf",
+      "hash": "e55a3e64729ab5c49fc446795138c8c87e2699b23adcdcb9afe0448162a18b1a"
+    },
+    {
+      "path": "📦 ARCHIVE/Downolde/CRIMINAL_MANIFEST_FINCOMBANK_20260418.md_compressed (1).pdf",
+      "hash": "c6379343557ebc751a5aad92722432535e456788b160c29b75572429384f464b"
+    },
+    {
+      "path": "📦 ARCHIVE/Downolde/CRIMINAL_MANIFEST_FINCOMBANK_20260418.md.pdf",
+      "hash": "eb5629f3af2932822ac42f403cee41301cf75bc1e9893bfe8f2ddc4b8953f418"
+    },
+    {
+      "path": "apostille-mirror/extracted_targets.json",
+      "hash": "57c9b6c17472984c38d88161bbe848c14236045cfa35278e46107948a8fa7310"
+    },
+    {
+      "path": "apostille-mirror/mirrors/apostila.Extras de pe actul de casatorie.pdf",
+      "hash": "1c0506624ec595c486154cb548dac31b5d5989b7d7a20a1f213382053ba70b04"
+    },
+    {
+      "path": "Apostilles/apostila.Extras de pe actul de casatorie.pdf",
+      "hash": "1c0506624ec595c486154cb548dac31b5d5989b7d7a20a1f213382053ba70b04"
+    },
+    {
+      "path": "CADASTRAL_RECORDS/Иск к Финкомбанку.pdf",
+      "hash": "cb4ae3580f7c92beb8350ee4ebab9fcd117833c8093eb28548af5e264bad297c"
+    },
+    {
+      "path": "CADASTRAL_RECORDS/test_cadastral_extract_chisinau.pdf",
+      "hash": "504dcd3798ff0f9b6710a9f84dc8bef18740f55e74bfecc28026ee7e1c33b8a5"
+    },
+    {
+      "path": "DEMERS_SUP_FINCOMBANK_30092026.json",
+      "hash": "068b867bcf4815c19b3ac1a8585d9c5f86ead74c6f37a8e3a96f345ace2c71f0"
+    },
+    {
+      "path": "evidence/financial_sabotage/fincombank_receipts_manifest.json",
+      "hash": "6ad23e23b03882b235438b5ebae02a29f2f9e7c7365d67eb5267741e3e98b2d2"
+    },
+    {
+      "path": "evidence/financial_sabotage/police_response_k577_26_fincombank_balance.json",
+      "hash": "3398b057b7dba2f827cf1a025952840a0dd4e1ee931ffa8b304289b4b554a10f"
+    },
+    {
+      "path": "evidence/receipt_3CD779D395025DDF.pdf",
+      "hash": "e801b1176558c53511e0304d4cf5e68cb072d4a9729a3ea4020c5a65e1d65092"
+    },
+    {
+      "path": "fincombank_25m_trace.json",
+      "hash": "6efdf4d5ac0d4a1f224cd4cfce2f2641642364efac134bcf065f1ff43bb62731"
+    },
+    {
+      "path": "isolated_vault/fincombank - criminal_compressed.pdf",
+      "hash": "e55a3e64729ab5c49fc446795138c8c87e2699b23adcdcb9afe0448162a18b1a"
+    },
+    {
+      "path": "isolated_vault/Legal_Reply_FinComBank.pdf",
+      "hash": "73bb8db9f64b8863eae8f66277975835cad56d80a8363526a1439ab3c6aa83dd"
+    },
+    {
+      "path": "legal_submission_fincombank_20260903.pdf",
+      "hash": "acca7e1792baabebde308c156bba799ba9237e7be9fc842643ff2a6dfe26f3d2"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Управление цифровым банковским счетом Fincompay - Gemini Notebook.pdf",
+      "hash": "80fd0b9aae1d81440b05258c166388fd11258c1150f98d59b866d1b020f8d44c"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Финком 1 стр  2 (1).pdf",
+      "hash": "a8879093883d5a0439701719d6a35f6908237454f23262826d590cbf730a948f"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Финком 1 стр  2 (2).pdf",
+      "hash": "a8879093883d5a0439701719d6a35f6908237454f23262826d590cbf730a948f"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Финком 1 стр  2.pdf",
+      "hash": "a8879093883d5a0439701719d6a35f6908237454f23262826d590cbf730a948f"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Финком 2 стр. (1).pdf",
+      "hash": "adc276c1644f5769ff7c5c4e5cf459c5142b24d372166e2cea4f9e6bf5cdcfd6"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Финком 2 стр..pdf",
+      "hash": "adc276c1644f5769ff7c5c4e5cf459c5142b24d372166e2cea4f9e6bf5cdcfd6"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Финкомбанк  ghbcdjbk ltymubpdf.pdf",
+      "hash": "d708bfe005e0d5b97c7779dd272d147408f760618b919cbb41a09505d6b5ef11"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Финкомбанк _compressed (1) (1).pdf",
+      "hash": "c42adf04872c8a822af6ec6b83ce3b400c13c23771823c044a8157f42ebeab00"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Финкомбанк _compressed (1) (2).pdf",
+      "hash": "c42adf04872c8a822af6ec6b83ce3b400c13c23771823c044a8157f42ebeab00"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Финкомбанк _compressed (1).pdf",
+      "hash": "c42adf04872c8a822af6ec6b83ce3b400c13c23771823c044a8157f42ebeab00"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Финкомбанк .pdf",
+      "hash": "0e49dbbf2cfb71b965b4a7cd7e5c9430b77f9607f5012b23bcf46369b426669f"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/EXTRAS DE CONT.pdf",
+      "hash": "7bb80b41c73f8cb5060217a77f0100b6754df620efb372a6e5c063a8b14a83aa"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/fincombank - criminal_compressed.pdf",
+      "hash": "986cd0d67c74d5e228c50cf3f84d8edb110f553cffc1608776f635de5d9f3153"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/fincombank - criminal.pdf",
+      "hash": "60e235de86004c9d1a08f9bf0b6314f161588fd801b02fc90117b977cd762792"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/fincombank.pdf",
+      "hash": "3ebb73a55b931185b004c59ba300168257ee779c3733e86cfd73a698b9a8e2df"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/Legal_Reply_FinComBank.pdf",
+      "hash": "73bb8db9f64b8863eae8f66277975835cad56d80a8363526a1439ab3c6aa83dd"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/receipt_20439B7456B59073.pdf",
+      "hash": "fbccb7f0c27d79a572851e4f59ae99d84403b57deaa499da6d9b23b43a663d56"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/receipt_5612C71EC2331E5C.pdf",
+      "hash": "df3954a96a352fae5b9aa97cd032a348e9c7954234dac296c3d1d242077435e9"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/receipt_C2D1D7D6D80B6677 (1).pdf",
+      "hash": "b38fef02c2665210a023711a3e00e778b010d21cee02e69b711d963b92254a67"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/receipt_C2D1D7D6D80B6677 (2).pdf",
+      "hash": "b38fef02c2665210a023711a3e00e778b010d21cee02e69b711d963b92254a67"
+    },
+    {
+      "path": "MASTER_DOSSIER/Evidence/PDF_Vault/receipt_C2D1D7D6D80B6677.pdf",
+      "hash": "b38fef02c2665210a023711a3e00e778b010d21cee02e69b711d963b92254a67"
+    },
+    {
+      "path": "recovered_evidence/Criminal_Manifest_FinComBank_2026.pdf",
+      "hash": "cca59004f3f68ec6cf988194bf54597c533fc4f1e2ac6ca4087497a8374998ee"
+    },
+    {
+      "path": "recovered_evidence/Fincombank_Criminal_Compressed.pdf",
+      "hash": "e55a3e64729ab5c49fc446795138c8c87e2699b23adcdcb9afe0448162a18b1a"
+    },
+    {
+      "path": "VECTOR_ENTITY_EXTRACTION_REPORT.json",
+      "hash": "09069a1f54f344dc8e757fc2192cd0311499fc900f3e3585ef5ed6368570c6b0"
+    },
+    {
+      "path": "whitehouse_fincombank_cytoscape.json",
+      "hash": "3e23f04294f0ecf1a9c25017732faf66e3bb67c0f8ea55306e64c87340ad025f"
+    }
+  ],
+  "public_key": "283608ae670d4b234541806a06e576957a041d86a6c09eb45844eed6a5a69859",
+  "signature": "e6a1014246e56e4ceae53153e0d043ed8882a052800c53ec8bc6e0ef875625dd12d51744736eecb59cd2bac989d06a8e2378d9dc06ab0fd7b22cb8c2b64cdc06"
+}
