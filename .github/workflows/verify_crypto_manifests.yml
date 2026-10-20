@@ -13,6 +13,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -74,7 +76,10 @@ jobs:
               status = 'FAILED'
               results.append({'error': 'Manifest or PDF target file not found.'})
 
-          timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
+          now = datetime.datetime.now(datetime.timezone.utc)
+          timestamp = now.isoformat()
+          date_str = now.strftime('%Y%m%d_%H%M%S')
+
           summary_content = f\"# INTEGRITY VERIFICATION SUMMARY\n\n\"
           summary_content += f\"- **Timestamp:** {timestamp}\n\"
           summary_content += f\"- **Commit SHA:** {os.getenv('GITHUB_SHA', 'N/A')}\n\"
@@ -88,16 +93,35 @@ jobs:
                   summary_content += f\"  - Signature (Ed25519): `{'OK' if r['signature_verified'] else 'FAILED'}`\n\"
                   summary_content += f\"  - SHA-256 Hash Match: `{'OK' if r['sha256_match'] else 'FAILED'}` (`{r['sha256_actual']}`)\n\"
 
+          # Write latest summary
           with open('integrity-summary.md', 'w', encoding='utf-8') as sf:
               sf.write(summary_content)
 
-          print('Verification summary generated.')
+          # Save historical report in reports/
+          os.makedirs('reports', exist_ok=True)
+          hist_report_path = f'reports/integrity_summary_{date_str}.md'
+          with open(hist_report_path, 'w', encoding='utf-8') as hf:
+              hf.write(summary_content)
+
+          print('Verification summary and historical report generated.')
           if status == 'FAILED':
               exit(1)
           "
+
+      - name: Commit and Push Historical Report to Repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add integrity-summary.md reports/
+          git diff --staged --quiet || git commit -m "docs(audit): update automated cryptographic integrity verification reports [skip ci]"
+          git push || echo "No changes to push or push skipped"
 
       - name: Upload Verification Report Artifact
         uses: actions/upload-artifact@v4
         with:
           name: integrity-verification-report
-          path: integrity-summary.md
+          path: |
+            integrity-summary.md
+            reports/
