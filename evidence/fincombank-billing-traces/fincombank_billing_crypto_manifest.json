@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "case_id": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-20T19:57:31.422Z",
-  "description": "Comprehensive FinComBank billing statements, pre-trial claims, revision requests (2r-1026/26), criminal complaints, Art. 313 CPP objections, and evidence crypto-manifest",
+  "timestamp": "2026-10-20T21:20:09.972Z",
+  "description": "Comprehensive FinComBank billing statements, revision requests, criminal complaints, Decizie 21r-10/26 (01.10.2026), and evidence crypto-manifest",
   "algorithm": "SHA-256",
   "files": [
     {
@@ -1111,7 +1111,11 @@
     },
     {
       "path": "evidence/fincombank-billing-traces/fincombank_billing_crypto_manifest.json",
-      "hash": "b8ce32b4a501b4857a19163893c5f9874602d6ff6014cc76c64fc6e94cf580fe"
+      "hash": "58a5b7244a4828f60cdc919a937ed63cdd4c4590c1722ba9955df64c150d7fd0"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/judicial_decisions_2026/decizie_21r_10_26_01102026.txt",
+      "hash": "ebaf601e7f6f4b41b1e9c64573ea2d09acd233ff6dae5632f0c5b345ad3e0a55"
     },
     {
       "path": "evidence/fincombank-billing-traces/legal_filings_2026/cerere_revizuiere_2r_1026_26.txt",
@@ -1211,7 +1215,7 @@
     },
     {
       "path": "fincombank_billing_crypto_manifest.json",
-      "hash": "b8ce32b4a501b4857a19163893c5f9874602d6ff6014cc76c64fc6e94cf580fe"
+      "hash": "58a5b7244a4828f60cdc919a937ed63cdd4c4590c1722ba9955df64c150d7fd0"
     },
     {
       "path": "isolated_vault/AVIZ.pdf",
@@ -1403,5 +1407,5 @@
     }
   ],
   "public_key": "283608ae670d4b234541806a06e576957a041d86a6c09eb45844eed6a5a69859",
-  "signature": "a9df8927b0c8bbc41dd191ce5d6b8da2920d682ea563d9d121e37048da52e1d5007e2046e94279f2321b9725e6c890c5bb9c93c59a29b18f0f7c0bc93246c70d"
+  "signature": "240ed06d426c0bfba369c3e30a68158e0baf5097896eb58cda71f37774b76621b6a8a230105eb5b27a86cc561909e404f61f287cc1cf3dac4a31c56b1d0f8c0d"
 }
