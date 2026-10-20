@@ -1,0 +1,15 @@
+Document Category,Count,Status,Notes
+Verified Primary,59,✅ VERIFIED,With proper apostille numbers
+No Apostille Number,95,❌ UNVERIFIED,Missing apostille identification
+ECHR Relevant,3,⚖️ CRITICAL,European Court Human Rights
+UNCAT Relevant,3,🌍 CRITICAL,UN Convention Against Torture
+Total,154,PROCESSED,Complete verification cycle
+
+Critical Document,7H2Q3790FZEI5,✅ PRIMARY,Security Code: 2013073926618
+Document Date,1998-10-13,VERIFIED,Torture nexus incident
+Apostille Date,2021-05-13,VERIFIED,Judecătoria Chișinău
+Legal Framework,Hague 1961,✅ COMPLIANT,International recognition
+Moldovan Law,HG 163/2007,✅ COMPLIANT,National legislation
+Moldovan Law,HG 739/2013,✅ COMPLIANT,National legislation
+ECHR Article 6,✅ COMPLIANT,Fair trial standards
+UNCAT,✅ COMPLIANT,Torture convention requirements

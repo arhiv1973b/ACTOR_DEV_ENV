@@ -1,0 +1,1 @@
+Файл C:\Users\arhiv\.opencode\bin\pdf_corpus_analysis\apostila Постановление_extracted.txt не является текстовым (бинарный или другая кодировка).
