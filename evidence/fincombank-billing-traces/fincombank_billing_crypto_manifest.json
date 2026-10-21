@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "case_id": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-20T21:21:52.115Z",
-  "description": "Comprehensive FinComBank billing statements, Cerere de Revizuire PRINT PDF, Document 232 PDF, and evidence crypto-manifest",
+  "timestamp": "2026-10-21T11:52:56.798Z",
+  "description": "Comprehensive FinComBank billing statements, consolidated Cerere de Revizuire (21.10.2026), and evidence crypto-manifest",
   "algorithm": "SHA-256",
   "files": [
     {
@@ -1119,7 +1119,7 @@
     },
     {
       "path": "evidence/fincombank-billing-traces/fincombank_billing_crypto_manifest.json",
-      "hash": "2fa0407b20e931b4336fd28929460a3ae3786981b02d602f241ffcebea770b24"
+      "hash": "cfa8b50de5885620fc490dcf754535eb158d0c7a6854ae49e6ab53286e1ee7ad"
     },
     {
       "path": "evidence/fincombank-billing-traces/judicial_decisions_2026/decizie_21r_10_26_01102026.txt",
@@ -1128,6 +1128,10 @@
     {
       "path": "evidence/fincombank-billing-traces/legal_filings_2026/cerere_revizuiere_2r_1026_26.txt",
       "hash": "0df92b570ed7ebf495ef8dc47666ee68bb3a2802af9be9daa4232bd04339b725"
+    },
+    {
+      "path": "evidence/fincombank-billing-traces/legal_filings_2026/cerere_revizuiere_consolidata_21102026.txt",
+      "hash": "d6192648924723b42085985a2b49c4b4987eea6421bc670ade48263111a42900"
     },
     {
       "path": "evidence/fincombank-billing-traces/legal_filings_2026/criminal_complaint_26092026.txt",
@@ -1223,7 +1227,7 @@
     },
     {
       "path": "fincombank_billing_crypto_manifest.json",
-      "hash": "2fa0407b20e931b4336fd28929460a3ae3786981b02d602f241ffcebea770b24"
+      "hash": "cfa8b50de5885620fc490dcf754535eb158d0c7a6854ae49e6ab53286e1ee7ad"
     },
     {
       "path": "isolated_vault/AVIZ.pdf",
@@ -1415,5 +1419,5 @@
     }
   ],
   "public_key": "283608ae670d4b234541806a06e576957a041d86a6c09eb45844eed6a5a69859",
-  "signature": "6ea055cebdfcfbdf4280817eca443017547755ba997e5bbe9ac10837af87d86c8e0b483a2592ba2c82ce376cc424444ed07d8bb24fcfd9f3a342cc11fef90c0f"
+  "signature": "771b3cafddae41b3d0e74adbd4060632821ef768361d1c29af493e0bdea338ad68a76c067af565f3bb96c4e6c71575263c27f2e032aef38fc3ffd133b8678c02"
 }
