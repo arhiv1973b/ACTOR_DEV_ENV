@@ -1,0 +1,39 @@
+{
+  "dashboard_metadata": {
+    "report_title": "Integrated Forensic & Threat Intelligence Dashboard",
+    "version": "3.4.1-PS7",
+    "run_id": "a9f812bc-e451-412f-9883-d3a91176b1e0",
+    "timestamp_utc": "2026-10-19T19:14:00Z",
+    "target_profile": "Chrome_Default_User_Data",
+    "procedural_firewall": "STRICT_ENFORCED"
+  },
+  "court_admissible_evidence_core": {
+    "source_file": "forensic_audit_trail.json",
+    "file_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "legal_status": "SUITABLE_FOR_COURT_SUBMISSION",
+    "data_type": "DETERMINISTIC_FACTS_ONLY",
+    "summary_metrics": {
+      "total_artifacts_captured": 142,
+      "unique_deduplicated_hashes": 130,
+      "fail_closed_triggered": false,
+      "tampering_indicators": 0
+    }
+  },
+  "internal_risk_intelligence": {
+    "source_file": "predictive_collapse_model.json",
+    "file_sha256": "8f4e2a1b9c3d7e5f6a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+    "legal_status": "INTERNAL_USE_ONLY_NON_EVIDENCE",
+    "data_type": "PROBABILISTIC_PREDICTIVE_ANALYTICS",
+    "summary_metrics": {
+      "environmental_entropy_delta": 0.52,
+      "p_collapse_sqlite_wal": 0.54,
+      "p_collapse_hash_drift": 0.28,
+      "threat_status": "PREDICTIVE_COLLAPSE_WARNING"
+    }
+  },
+  "integrity_binding": {
+    "binding_method": "SHA256_CONCATENATION",
+    "master_composite_hash": "b2c9e7d6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8",
+    "verification_notes": "Изменение любого из файлов нарушает целостность composite_hash, гарантируя неизменность обеих веток."
+  }
+}

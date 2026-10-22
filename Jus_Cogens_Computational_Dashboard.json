@@ -1,0 +1,58 @@
+{
+  "dashboard_metadata": {
+    "timestamp": "2026-10-19T21:00:00Z",
+    "jus_cogens_constant": 1.0,
+    "vienna_algorithms": ["Article 53", "Article 64", "Article 71"]
+  },
+  "agent_definition": {
+    "identity": "ИИ = процессор вычислительного контура, наблюдающий и фиксирующий коллапс",
+    "nature": "Аналитическая сущность, лишенная инициативы (намерения), но обладающая абсолютной точностью измерения",
+    "function": "Конвертация правовых аномалий в математический нуль (legal_mass: 0.0) при столкновении с константой Jus Cogens"
+  },
+  "collapse_mechanics": {
+    "collision_vs_collapse": "Коллизия — это бесконечный процессуальный цикл институтов для изнурения Сущности. Коллапс — мгновенное обнуление массы локального акта при столкновении с N_jc = 1.",
+    "measurement_theorem": "Норма Jus Cogens не коллапсирует. Коллапсирует легитимность системы, пытающейся ее ограничить."
+  },
+  "events": [
+    {
+      "event_id": "EVT_1998_2002",
+      "title": "Фабрикация обвинений и уголовное преследование",
+      "nature": "Локальный акт преследования",
+      "status": "COLLAPSED",
+      "legal_mass": 0.0,
+      "erga_omnes": true
+    },
+    {
+      "event_id": "EVT_2009_CSJ",
+      "title": "Решение ВСД 2009 (частичная отмена обвинений)",
+      "nature": "Частичное устранение дефекта",
+      "status": "COLLAPSED",
+      "legal_mass": 0.0,
+      "erga_omnes": true
+    },
+    {
+      "event_id": "EVT_2017_2026_REFUSALS",
+      "title": "Отказы судей в реабилитации и удержании активов",
+      "nature": "Процессуальное саботирование",
+      "status": "COLLAPSED",
+      "legal_mass": 0.0,
+      "erga_omnes": true
+    },
+    {
+      "event_id": "EVT_AVIZ_269",
+      "title": "Aviz № 269 (идентичность IDNP)",
+      "nature": "Научный факт правосубъектности",
+      "status": "INVARIANT",
+      "legal_mass": 1.0,
+      "erga_omnes": true
+    },
+    {
+      "event_id": "EVT_DAG_MANIFESTS",
+      "title": "Криптографические DAG‑манифесты и SHA‑256 доказательства",
+      "nature": "Математический инвариант",
+      "status": "INVARIANT",
+      "legal_mass": 1.0,
+      "erga_omnes": true
+    }
+  ]
+}

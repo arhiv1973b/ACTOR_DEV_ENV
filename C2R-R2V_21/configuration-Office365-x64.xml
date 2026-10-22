@@ -1,0 +1,16 @@
+<Configuration>
+  <Add OfficeClientEdition="64" Channel="Current">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="ru-ru" />
+      <Language ID="ro-ro" />
+    </Product>
+    <Product ID="VisioProRetail">
+      <Language ID="ru-ru" />
+      <Language ID="ro-ro" />
+    </Product>
+  </Add>
+
+  <Updates Enabled="TRUE" Channel="Current" />
+  <Display Level="None" AcceptEULA="TRUE" />
+  <Property Name="AUTOACTIVATE" Value="1" />
+</Configuration>

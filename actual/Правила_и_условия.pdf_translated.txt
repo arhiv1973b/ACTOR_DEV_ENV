@@ -1,0 +1,1413 @@
+=== Перевод (ro ➜ ru) ===
+ 
+Termeni și Condiții  
+de înregistrare și administrare  
+a numelor de domenii în cadrul Domeniului de Nivel Superior ".md"  
+ 
+1. DEFINIȚII  
+ 
+În sensul prezentelor Termeni și Condiții, următorii termeni și expresii semnifică:  
+ 
+DOMENIU DE NIVEL SUPERIOR (TLD)  -  unul din domeniile ce se află la cel 
+mai înalt nivel ierarhic al Sistemului de Nume de Domeniu din Internet (DNS).  
+ 
+DOMENIU DE NIVEL SUPERIOR . md (ccTLD. md) - domeniu național 
+de nivel superior atribuit Republicii Moldova în corespundere cu codurile de două 
+litere ale standardul ui ISO 3166 -1 pentru denumiri de țări sau teritorii , delegat Î.S. 
+”MOLDDATA” prin Memorandumul de Înțelegere dintre Corporația Internet pentru 
+Atribuirea Numelor și Numerelor ( ICANN) și  Î.S. ”MOLDDATA”, în calitate de 
+Administrator, din data de 02.12.2003, potrivit căruia Administratorul este 
+împuternicit cu gestionarea ccTLD.md.  
+  
+ 
+REGULAMENTUL . md – Regulamentu l cu privire la g estionarea  numelor în 
+domeniul de nivel superior .md, din  28.08.2000 , aprobat de Agenția Națională pentru 
+Reglementare în Tehnologia Informației și Comunicații Electronice a Republicii 
+Moldova.  
+ 
+ICANN  - Corporați a Internet pentru Atribuirea Numel or și Numerel or 
+ 
+IANA  - Autoritatea de Atribui re a Numerelor pe Internet  
+ 
+NUME DE DOMENI U .md – nume  de domeniu d e nivelul doi  (denumit în 
+continuare "Nume de Domeniu . md") este partea numelui  de domeniu care se află 
+imediat în stânga punctului urmat de ccTLD.md  și este înregistrat în numele unei 
+perso ane fizice sau juridice în Registrul numelor de domeniu .md. 
+ 
+SUBDOMENII GENERICE ccTLD.md  - nume de domenii dedicate înregistrate în 
+domeniile primare ccTLD.md cum ar fi  ”.com.md”, ”.org.md”, ”.pro.md”, 
+”.info.md”, ”.co.md” etc.  
+ 
+REGISTRUL NUMELOR DE DOMENI U .md- o bază de date cu toate numele 
+de domenii, deținătorii acestora  și alte persoane sau informații referitoare la numele 
+de domeniu,  care a fost creată și este deținut ă de Î.S. „MOLDDATA“. 
+REGISTRUL NUMELOR DE DOMENI U .md constituie  sursa pentru alocarea  
+numelor de domenii în zona . md localizată pe serverul de nume de domeniu primar.  
+ 
+REGISTRU/ REGISTRATOR 
+NAȚIONAL/ ADMINISTRATOR /Î.S."MOLDDATA" /MOLDDATA /- 
+ADMINISTRATOR al REGISTRULUI NUMELOR DE DOMENI U .md, 
+denumit și Centru de Informații de Rețea (NIC) , care deține toate datele 
+administrative  ale domeniilor și generează zon a .md  care conține adresele serverelor 
+de nume de domenii pentru fiecare domeniu. REGISTRUL  gestionează  și stabilește 
+procedurile și regulile de înregistrare a NUMELOR DE DOMENIU . md, 
+administrează  din punct de vedere tehnic DOMENIUL DE NI VEL 
+SUPERIOR.md . De asemenea, îndeplinește funcția de REGISTRATOR 
+NATIONAL  al NUMELOR DE DOMENIU  .md. 
+ 
+DEALER / PARTENER / REGISTR ATOR  - persoană juridică sau entitate 
+autorizată în mod corespunzător să desfășoare activitățile necesare pentru pregătirea 
+înregistrării numelor de domenii în cadrul DOMENIUL UI DE NIVEL 
+SUPERIOR .md  pe teritoriul pentru care este autorizat, în baza unui contract 
+încheiat cu REGISTRUL /REGISTRATORUL NAȚIONAL , pentru a furniza 
+servicii de înregistrare a numelor de domenii pentru registranți.  
+ 
+REGISTRANT / DEȚINĂTOR  - persoană fizică sau juridică care are dreptul de 
+folosință al unui nume înregistrat în DOMENIUL DE NIVEL SUPERIOR . md și 
+care are dreptul să solicite, să modifice şi să revoce datele de înregistrare a numelui 
+din domenul atribuit.  
+ 
+UTILIZATOR / CLIENT / BENEFICIAR  - orice persoană fizică sau juridică care 
+solicită sau utilizează serviciile REGISTRULUI /REGISTRATORULUI 
+NAȚIONAL . 
+ 
+CONTACT ADMINISTRATIV  - persoană autorizată de către REGISTRANT  să 
+interacționeze cu REGISTRUL NUMELOR DE DOMENI U.md/ 
+REGISTRATOR UL NAȚIONAL  pentru a oferi informații  referitor la 
+înregistrarea numelui de domeniu și REGISTRANT . 
+ 
+CONTACT DE FACTURARE - persoană autorizată de REGISTRANT  să 
+primească contul  de plată  pentru înregistrarea , reînnoirea numelui de domeniu.  
+ 
+CONTACT TEHNIC  - persoană autorizată de registrant să mențină serverele de 
+nume de domenii asociate numel ui de domeniu.  
+ 
+BAZĂ DE DATE  WHOIS/BAZA DE DATE  - baza de date internă a 
+REGISTRULUI utilizată pentru a furniza SERVICIUL WHOIS și alte servicii. 
+BAZA DE DATE  nu este accesibilă publicului și nu este un  serviciu de abonați.  
+ 
+SERVICIUL WHOIS  - parte accesibilă publicului din BAZA DE DATE  WHOIS  
+A REGISTRULUI . 
+ 
+SERVER NUME DE DOMENIU  - serviciu pe internet care răspunde interogărilor  
+cu informații corespunzătoare din fișierul de zonă.  
+ 
+ÎNREGISTRARE  - introducerea numelui de domeniu în BAZA DE DATE  și, dacă 
+este cazul, în zona .md . 
+ 
+FIȘIER DE ZONĂ  - fișierul solicitat de serverul de nume de domeniu, care conține 
+informațiile despre numele de domeniu, serverul de nume și adresele IP.  
+ 
+SITE -UL WEB AL REGISTRULUI  - site-ul web al Re gistrului, disponibil la 
+adresa  www.nic.md , nic.md .   
+ 
+2. CADRU  GENERAL  
+2.1. Acest document stabilește procedurile tehnice și administrative utilizate de 
+REGISTRU  în ce privește înregistrarea numelor în cadrul DOMENIULUI DE 
+NIVEL SUPERIOR .md  sau cererile pentru astfel de î nregistrări, inclusiv 
+prelungirea , ștergerea , transferul, suspendarea, revocarea etc. , a n umelor de 
+domeni u. 
+ 
+2.2. Managementul ccTLD.md  este realizat în conformitate cu 
+REGULAMENTUL .md , reglementările IANA /ICANN  pentru TLD -uri și bunele 
+practici pentru înregistrarea și administrarea numelor de domenii.  
+ 
+3. PRINCIPII GENERALE DE ÎNREGISTRARE  ȘI ADMINISTRARE  A 
+NUMELOR DE DOMENI U 
+ 
+3.1. Criterii de eligibilitate  
+Orice persoană fizică sau juridică poate înregistr a un nume de domeniu ccTLD.md . 
+ 
+ 3.2. Trat ament  egal  
+ 
+Cu excepția cazu rilor în care REGULAMENTUL . md, legislația și politicile 
+aplicabile prev ăd altfel , REGISTRUL va gestiona cererile de înregistrare a numelor 
+de domeni u în conformitate cu aceleași reguli și principii.  
+ 
+3.3. Primul venit, primul servit  
+REGISTRUL  efectuează înregistrarea numelor de domeni u în condiții 
+nediscriminatorii, după principiul "primul venit - primul servit" , dacă 
+REGISTRANTUL  a îndeplinit toate cerințele privind  înregistrarea . În acest sens, 
+data și ora primirii de către sistemul REGISTRULUI  pe site -ul său disponibil la 
+adresa www.nic.md   a unei cereri electronice complete și corecte din punct de vedere 
+tehnic poate fi luată în considerare pen tru rezervarea unui nume de domeniu.  
+Când cererea de înregistrare este finalizată, numele de domeniu va fi rezervat 
+automat de sistem pentru o perioadă de 3 zile  calendaristice , fără posibilitatea de a 
+anula rezervarea în acest interval de timp. Prin rezervarea  unui nume de domeniu, 
+BENEFICIARUL  este de acord cu procedura de rezervare , descrisă  în acest punct . 
+ 
+În cazul unor erori în procesul de rezervare automată a numelor de domeni u din 
+sistem, procesarea numelor de domeni u se va face la momentul plă ții sau la 
+rezervarea manuală, imediat după identificarea erorii.  
+REGISTRUL  nu își asumă răspundere a și nu oferă nicio garanție în acest sens 
+pentru o posibilă ÎNREGISTRARE  a unui nume de domeniu de către o terță parte, 
+în cazul în care rezervarea automată a eșuat, în perioada scursă până la rezervarea / 
+înregistrarea manuală.  
+ 
+4. CICLUL DE VIAȚĂ AL NUMELUI DE DOMENIU . md 
+4.1. Un NUME DE DOMENIU . md poate fi înregistrat sau prelungit  pentru o 
+perioadă de cel puțin un 1 an până la cel mult 5 ani.  
+4.2. REGISTRUL  permite o perioadă de rezervare de 3 zile în condițiile prevăzute 
+la punctul 3.3. din acest document . Conform REGULAMENTULUI . md, 
+înregistrarea și prelungirea  unui nume de domeniu se face numai după confirmarea 
+plății.  
+4.3. Corectarea unei greșeli ortografie în NUMELE DE DOMENIU . md nu este 
+permisă. Odată ce un nume de domeniu este înregistrat sau prelungit , acțiunea este 
+considerată a fi consumată , taxa achitată nu este  rambursabilă , iar numele de 
+domeniu intră în uzul exclusiv a l REGISTRANTULUI . MOLDDATA  nu va 
+rambursa nicio taxă pentru un nume de domeniu deja îregistrat/ prelungit . 
+4.4. Odată ce domeniul expiră, acesta intră în Perioada de Grație de 30 de zile. 
+Primele 5 zile numele de domeniu este activ, iar următoare zile este inactiv, dar 
+deținătorul  îl poate reînnoi la prețul obișnuit , fără penalități.  
+4.5. Cu 30 de zile înainte de expirarea numelui de domeniu, REGISTRUL  începe  
+să informeze REGISTRANTUL  despre acest lucru. Până la sfârșitul Perioadei de 
+Grație, REGISTRUL  trimite REGISTRANTULUI , la adresa de  e-mail indicată de 
+acesta pentru CONTACTUL ADMINISTRATIV , mai multe notificări cu 
+informații despre condițiile de reînnoire și riscul de ștergere  a numelui de domeniu  
+în caz de neplată . 
+4.6. La sfârșitul Perioadei de Grație, în cazul în care REGISTRANTUL  nu-l 
+reînnoiește, numele de domeniu este șters automat din REGISTRUL NUME LOR  
+DE DOMENI U .md. La această etapă , domeniul devine disponibil pentru o nouă 
+înregistrare , în baza principiului ”primul venit, primul servit”.  
+ 
+5. LEGITIMITATEA  
+5.1. Garanția oferită de beneficiar  
+Cererea de înregistrare a unui nume de domeniu reprezintă pentru REGISTRU 
+garanția  BENEFICIA RULUI  că înregistrarea poate fi făcută legal și că 
+BENEFICIARUL  are dreptul să utilizeze numele de domeniu solicitat. 
+REGISTRUL  nu verific ă dreptul  BENEFICIARULUI  de a înregistra și utiliza 
+numele de domeniu și nu își asumă nicio responsabilitate în acest sens prin 
+înregistrarea și administrarea numelui de domeniu pentru REGISTRANT . 
+5.2. Răspunderea pentru înregistrarea frauduloasă a mărcilor comerciale  
+REGISTRANTUL  poartă răspundere personală,  în condițiile  legii, pentru 
+înregistrarea frauduloasă a unei mărci comerciale sau a  proprietăți i intelectuale.  
+Acceptarea cererii și înregistrarea unui nume de domeniu nu înseamnă că 
+MOLDDATA recunoa ște că  REGISTRANTUL  are dreptul legal de utilizare a 
+numelui de domeniu respectiv, inclusiv în cazul numelor de domeniu care se referă 
+la mărci înregistrate, nume de firmă sau personalități bine cunoscute.  
+ 
+5.3. Neimplicarea Registrului în litigii  
+REGISTRANTUL  unui nume de d omeniu nu va implica MOLDDATA  în litigii 
+cauzate de utilizarea numelui de domeniu respectiv. DEȚINĂTORUL  se obligă să 
+despăgubească integral MOLDDATA  cu privire la toate costurile, cheltuielile și 
+cererile de despăgubire iniţiate de terţe părți, inclusiv cheltuielile de judecată și 
+avocați, suportate de REGISTRU  pe motivul înregistrării și/sau utilizării ilegale a 
+unui nume de domeniu.  
+5.4. Lipsa drept ului de proprietate  asupra domeniului  
+Înregistrarea unui nume de domeniu nu conferă REGISTRANTULUI  niciun drept 
+legal asupra acestui nume  de domeniu , cu excepția dreptului de folosință  a acestuia. 
+Eventualele litigii între părți cu privire la drepturile de  a utiliza un anumit nume  de 
+domeniu  vor fi soluționate  de către acestea  pe cale legală . DEȚINĂTORUL  unui 
+NUME DE DOMENIU .md este responsabil de utilizarea legală a acestuia . 
+ 
+6. ÎNREGISTRAREA UNUI NUME DE DOMENIU  .md  
+6.1. Validitatea solicitării de înregistrare  
+ O solicitare validă de ÎNREGISTRARE  a unui NUME DE DOMENIU . md 
+trebuie să conțină informații actua le, complete și exacte despre  REGISTRANT , 
+CONTACTUL ADMINISTRATIV, CONTACTUL DE FACTURARE ȘI 
+CONTACTUL TEHNIC . Dacă SERVERELE DE NUME DE DOMENIU  sunt 
+indicate în momentul înregistrării, informația despre acestea trebuie să fie actual ă, 
+complet ă și exact ă. 
+6.2 Nume de domeniu disponibile  
+Numai un nume disponibil poate fi înregistrat ca NUME DE DOMENIU. md. Un 
+nume este disponibil atunci când:  
+a) nu este deja înregistrat ca nume de domeniu;  
+b) nu este rezervat sau blocat;  
+c) nu este atribuit autorităților publice centrale sau locale, în conformitate cu 
+REGULAMENTUL . md (în acest caz, numai autoritățile desemnate pot solicita 
+înregistrarea) . 
+6.3. Caractere accept abile pentru numele de domeniu  
+Caracterele permise pentru numele de domeniu sunt caractere alfanumerice (a -z, A-
+Z, 0-9) și cratimă ( -). Un nume de domeniu nu poate începe și nu se poate sfârși  cu 
+o cratimă. Nu se recomandă utilizarea maj usculelor , deoarece numele de domenii nu 
+sunt sensibile la litere mari și mici . Un nume de domeniu trebuie să aibă mai puțin 
+de 63 de caractere, fără a include exstensia  .md. Un nume de domeniu este unic și 
+nu poate fi modificat după ce a fost înregistrat. Prin modificarea oricărui caracter 
+dintr -un nume de domeniu, solicitantul obține un alt nume de domeniu care poate fi 
+înregistrat ca un nume de domeniu nou, după expedi erea cererii de înregistrare și 
+efectuarea plății necesare.  
+6.4. Nume de domenii active și inactive  
+ Domeniile din zona .md pot fi înregistrate pentru utilizarea activă (delegarea 
+domeniului) sau pentru utilizarea inactivă (nume de domenii rezervate). Pentru 
+numele de domenii active înregistrate, trebuie să existe un SERVER DE NUME 
+DE DOMENIU (DNS) prima r și unul secundar operaționale. Ambele servere de 
+nume  necesită o conectare permanentă IP la Internet , astfel încât  să poată asigura cu 
+ușurință verificarea în orice moment a stării operaționale și a bazei de date, de către 
+REGISTRU .   
+6.5. Solicitare completă  
+O solicitare de înregistrare a unui nume de domeniu va fi considerată completă doar 
+atunci când REGISTRANTUL  (sau prin  intermediul unui  PARTENER ) 
+furnizează REGISTRULUI următoarele informații:  
+- numele de domeniu solicitat;  
+- numele complet al REGISTRANTULUI  – persoană fizică sau juridică ; 
+- IDNP sau IDNO;    
+- adresa și țara de reședință a REGISTRANTULUI ; 
+- adresa /adresele de e -mail ale CONTACTULUI ADMINISTRATIV , 
+CONTACTULUI  TEHNIC și CONTACTULUI  DE FACTURARE ; 
+- numărul/numerele de telefon ale CONTACTULUI ADMINISTRATIV , 
+CONTACTULUI  TEHNIC și CONTACTULUI  DE FACTURARE ; 
+- REGISTRANTUL  se obligă  să mențină  informațiile furnizate REGISTRULUI  
+actuale, complete și corecte , pe toată perioada valabilității NUMELUI DE 
+DOMENIU  .md. 
+- REGISTRANTUL  se angaje ază să furnizeze o adresă de e -mail funcțională pentru 
+a primi eventualele comunicări de la REGISTRU . 
+- REGISTRUL  va înregistra numele de domeniu doar după ce a primit o confirmare 
+prin e -mail de la UTILIZATOR . 
+- REGISTRUL  își rezervă  dreptul de a respinge  o solicitare  de înregistrare a 
+numelui de domeniu sau de a revoca un nume de domeniu pentru care 
+REGISTRANTUL a furnizat informații incomplete sau inexacte.  
+ 
+7. TEMEIURI  PENTRU RESPINGEREA SOLICITĂRI I DE 
+ÎNREGISTRARE  SAU ANULAREA ÎNREGISTRĂRII  UNUI NUME DE 
+DOMENIU : 
+   
+7.1. Respingerea solicitării de înregistrare  
+ 
+REGISTRUL  are dreptul să respingă o solicitare din următoarele motive:  
+       - informaţii incomplete în formularul de cerere;  
+- informațiile furnizate în formularul de cerere sunt false , inexacte sau 
+înșelătoare;  
+       - numele de domeni u conțin e mai mult de 63 de caractere;  
+       - numele de domeni u conțin e caractere speciale, cu excepția cratimei  (-); 
+       - numele de domeni u începe sau se termină cu cratimă ; 
+       - numele de domeni u este identic cu un nume de domeniu deja înregistrat ; 
+       - numele de domeniu conține limbaj necuviincios;  
+- numele de domeniu are un caracter ofensator;  
+       - numele de domeni u conțin e cuvinte obscene , pornografice  sau de prost gust;  
+- numele de domeniu contravine  prevederilor REGULAMENTULUI . md 
+       - plăți restante.  
+ 
+ 
+7.2. Aularea sau suspendarea domeniului  
+REGISTRUL  poate anula o înregistrare sau suspenda un nume de domeniu : 
+       - dacă numele este administrat într -un mod care ar putea pune în pericol 
+funcționarea DNS -lui; 
+       - dacă temeiul în baza căruia a fost înregistrat numele s -a modificat, de ex. 
+organizația solicitantă nu mai există sau datele de contact au fost m odificate cu date 
+inexacte sau false;  
+       - dacă MOLDDATA a fost informată că a fost inițiată o acțiune legală în 
+privința utilizării numelui;  
+       - în caz ul unei dispute între părți, până la soluționarea conflictului ; 
+- în alte cazuri prevăzute de  REG ULAMENTUL . md. 
+ 
+8. OBLIGA TIVITATEA  DE MENȚINERE A DATELOR  
+REGISTRANTUL  este responsabil ca toate datele privind numele de domeni u 
+înregistrat  și înscris în REGISTRUL NUMELOR DE DOMENIU  .md, cum ar fi 
+datele persoanelor de contact și detaliile tehnice ale numel ui de domeniu, să fie  
+actuale, complete și corecte pe întreaga perioadă a înregistrării. În cazul în care  
+REGISTRANTUL  furnizează informații greșite sau nu își actualizează , în timp util,  
+informațiile în caz de modificare, înregistrarea numelui său de domeniu poate fi 
+suspendată sau anulată. Pentru REGISTRU , singurele date considerate veridice sunt 
+cele furnizate de REGISTRANT  și înregistrate în BAZA DE DATE . 
+MOLDDATA  nu este obligată să i a act decât de datele comunicate de 
+REGISTRANT  prin intermediul www.nic.md  sau să efectueze cercetări referitor la 
+corectitudinea acestor date.  
+În cazul în care datele se  adeveresc  a fi incomplete, inexacte sau nu sunt actualizate 
+și, în consecință, determnarea identit ății REGISTRANTULUI  necesită  timp și efort 
+considerabil sau dacă mesajele către DEȚINĂTOR  și/sau CONTACTUL DE 
+FACTURARE nu pot fi expediate, MOLDDATA  își rezervă dre ptul de a revoca 
+numele de domeniu respectiv . 
+ 
+9. TRANSFERUL UNUI NUME DE DOMENIU  
+REGISTRANTUL  are dreptul de a transfera numele de domeniu către un nou 
+REGISTRANT sau către un nou REGISTRATOR . În cazul transferului, termenul 
+de valabilitate al numelui de domeniu va rămâne neschimbat. Domeniul care este în 
+litigiu sau a expirat nu poate fi transferat.   
+Transfer ul poate fi efecuat online in baza solicita rii codului de transfer sau off line, 
+la sediul MOLDDATA , prin completarea unei cereri corespunzatoare.  
+ 
+9.1. Transferul  online al  Numelui de Domeniul către un nou registrant  
+9.1.1. Pentru a transfera un nume de domeniu către un nou REGISTRANT , 
+REGIST RANTUL  actual se va autentifica în contul său de utilizator de pe 
+www.nic.md  și va solicita de la REGISTRU  un cod unic de autorizare a transferului. 
+Codul de autorizare va fi furnizat (1) de către REGISTRU  actualului 
+REGISTRANT  prin intermediul adresei de e -mail indicate la CONTACTUL 
+ADMINISTRATIV  și (2) de către REGISTRANTUL  actual noului 
+REGISTRANT.   
+9.1.2. La cererea  REGISTRANTULUI  către REGISTRATOR  de a transfera un 
+nume de d omeniu către un n ou REGISTRANT , REGISTRATORUL  actual va 
+solicita un cod unic de autorizare a transferului de la REGISTRU . În urma furnizării 
+acestuia , codul de autorizare va fi furnizat consecutiv  (1) de către REGISTRATOR 
+REGISTRANTULUI  care va transfera numele de domeniu, (2) de către 
+REGISTRANTUL  care efectuează transferul către noul REGISTRANT , (3) de 
+către noul REGISTRANT  către REGISTRATORUL  (actua l sau nou) și (4) de 
+către (actualul sau noul) REGISTRATOR  către REGISTRU . REGISTRUL  va 
+efectua transferul după primirea codului de autorizare de la REGISTRATORUL 
+actual sau cel nou.  
+În cazul în care REGISTRATORUL nu furnizează REGISTRANTULUI  codul de 
+autorizare unic în conformitate cu această procedură, REGISTRANTUL  poate 
+solicita codul de autorizare direct de la REGISTRU , cu condiția că a întreprins toate 
+eforturile pentru obținerea codului de autorizare de la REGISTRATOR . 
+9.2. Transferul numelui de domeniu către un nou registrator  
+La solicitarea REGISTRANTULUI  de a transfera numele de domeniu către un alt 
+REGISTRATOR  autorizat de REGISTRU , actualul REGISTRATOR  va solicita 
+un cod unic de autorizare a transferului de la REGISTRU . În urma furnizării 
+acestuia, codul de autorizare va fi transmis  consecutiv  (1) de către 
+REGISTRATOR , REGISTRANTULUI , (2) de către REGISTRANT  noului 
+REGISTRATOR și (3) de către noul REGISTRATOR  către  REGISTRU . 
+REGISTRUL  va executa transferul după primirea  codului de autorizare de la noul 
+REGISTRA TOR. 
+În cazul în care REGISTRATORUL  nu furnizează REGISTRANTULUI  codul 
+unic de autorizare în conformitate cu această procedură, REGISTRANTUL  poate 
+solicita codul de autorizare direct de la REGISTRU , cu condiția că a întreprins toate 
+eforturile pentru obținerea codului de autorizare de la REGISTRATOR . 
+ 
+9.3. Garantarea validității transferului  
+Urmând procedurile menționate mai sus, toți REGISTRANȚII  și 
+REGISTRATORII  implicați garantează REGISTRULUI validitatea transferului 
+numelui de domeniu.  
+ 
+10. ȘTERGEREA NUMELOR DE DOMENII  
+Un nume de domeniu poate fi șters din BAZA DE DATE  a REGISTRULUI dacă:  
+- REGISTRANTUL  încalcă pnct. 5.5. din REGULAMENTUL . md; 
+- REGISTRANTUL  transmite  REGISTRULUI  o cerere în acest sens ; 
+- numele de domeni u nu a fost achitat  în termen ii stabili ți, timp de 3 zile de la 
+rezervare sau  în 30 de zile de la data expirării;  
+- REGISTRANTUL  încalcă obligația de a menține datele actuale, complete și 
+corecte;  
+- în urma decizi ei unei instanțe  de judecată;  
+Odată cu ștergerea  din BAZA DE DATE , numele de domeniu devine disponibil 
+pentru  o nouă înregistrare. Numele de domeniu este șters cât mai repede posibil sau 
+la data indicată . 
+ 
+11. TAXE ȘI PLĂȚI  
+Taxele percepute de REGISTRU  pentr u înregistrarea, prelungirea termenului unui 
+NUME DE DOMENIU  pot fi consultate pe SITE -UL WEB AL REGISTRULUI . 
+Conturile de plată  vor fi transmise la ad resa de e -mail indicată de REGISTRANT  
+la CONTACTUL DE FACTURARE . În cazul în care destinatarul nu reușește să 
+efectueze plata , contul poate fi livrat, la cerere, DEȚINĂTORULUI  de domeniu. 
+În orice caz, DEȚINĂTORUL  domeniului este responsabil pentru plata taxei de 
+înregistrare/prelungire a domeniului . REGISTRANTUL  acceptă emiterea și 
+transmiterea conturilor  în formă electronică.  
+Plata pentru  înregistrare se va face nu mai târziu de 3 zile de la data rezervării 
+numelui de domeniu, iar pentru reînnoire  - până la data expirării acestuia . 
+REGISTRUL  nu este responsabil d e orice nerespectare a termenelor de plată  de 
+către REGISTRANT , inclusiv în cazul în care aceasta  duce la respingerea 
+înregistr ării sau ștergerea numelui de domeniu respectiv.  
+ 
+12. BAZA DE DATE WHOIS   
+12.1.  Informații din baza de date WHOIS  
+La înregistrarea unui NUME DE DOMENIU . md, informaţiile referitoare la 
+înregistrare sunt înscrise într -o BAZĂ DE DATE WHOIS . Înregistrarea are loc 
+doar după acceptarea de către REGISTRANT  a Termenilor și Condițiilor  prin 
+care REGISTRUL este autorizat să publice pe site -ul său web anumite date 
+personale ale REGISTRANTULUI , inclusiv unele date tehnice, în vederea  
+garantării transparenţei sistemului de nume de domeniu pentru p ublic.  
+Scopul BAZEI DE DATE WHOIS  este furnizarea de informaţii cât se poate de 
+precise şi actuale despre p unctele  de contact tehnic şi administrativ care 
+administrează numele de domeniu.  
+În cazul în care REGISTRUL  deţine date false, incorecte sau neactuale, 
+REGISTRANTUL  nu va putea fi contactat, iar acest lucru ar putea duce la pierder ea 
+numelui de domeniu. Prin furnizarea  în mod deliberat a unor informații inexacte, 
+REGISTRANTUL  încălcă Termenii și Condițiile , care ar putea avea ca rezultat 
+pierderea numelui de domeniu.  
+ 
+12.2 Prelucrarea datelor cu caracter personal  
+Colectarea, prelucrarea și utilizarea datelor cu caracter personal respectă prevederile 
+Legii privind protecția datelor cu caracter personal nr. 133 din 08.07.2011. Datele 
+cu caracter personal sunt prelucrate de MOLDDATA în cadrul s istem elor de 
+evidență nr . 0001200 -001,  nr. 0001200 -006, înregistrat e în Registrul de evidență al 
+operatorilor de date cu caracter personal accesibil la adresa 
+www.registru.datepersonale.md . Prin înregistrarea unui nume de domen iu și prin 
+acceptarea Termenilor și Condițiilor  de înregistrare a NUMELOR DE 
+DOMENIU. md, REGISTRANTUL  autorizează REGISTRUL  să proceseze 
+datele cu caracter personal și alte date necesare pentru administrarea sistemului de 
+Nume de Domeniu. REGISTRANTUL  își exprimă acordul explicit pentru 
+utilizarea de către REGISTRU  a datelor în scopul administrării sistemului (care 
+include alocarea unui nume de domeniu, transferul unui nume de domeniu către un 
+nou REGISTRANT/REGISTRATOR ) și poate transmite aceste date către terți 
+numai cu consimțământul explicit al REGISTRANTULUI  sau în cazul în care acest 
+lucru este solicitat de o instanță judecătorească, autoritate publică sau organism 
+autorizat, în cadrul exercitării prerogativelor legitime ale acestora.  
+ 
+REGISTRANTU L are dreptul de a accesa datele sale cu caracter personal și de a 
+asigura modificarea acestor a, în cazul în care există erori.  
+ 
+REGISTRANTUL  va informa , fără întârziere , REGISTRUL  despre orice 
+modificare a numelui, adresei, adresei de e -mail, numărului de telefon , prin 
+actualizarea acestora în sistem . Omiterea sau informarea  cu întârziere  a 
+REGISTRULUI  cu privire la astfel de modificări pot avea drept consecinţă  
+suspendarea înregis trării unui nume de domeniu.  
+ 
+12.3. Informații colectate pentru uz intern  
+ 
+Următoarele date cu caracter personal vor fi colectate pentru uzul intern al 
+REGISTRULUI  (cu excepția datelor care  sunt disponibile și prin intermediul 
+SERVICIULUI WHOIS ): 
+- numele complet al REGISTRANTULUI ; 
+- IDNO/IDNP al REGISTRANTULUI  
+- numele complet al CONTACTULUI ADMINISTRATIV, CONTACTULUI 
+TEHNIC, CONTACTULUI DE FACTURARE;  
+- adresele tuturor persoanelor de contact;  
+- adresele de e -mail ale tuturor persoanelor de contact;  
+- numerele de telefon ale tuturor persoanelor de contact;  
+- detalii le bancare ale REGISTRANTULUI ; 
+ 
+12.4. SERVICIUL  WHOIS  
+ 
+Toți REGISTRANȚII urmează să accepte  Termenii și Condițiile  prin care 
+autorizează REGISTRUL  să publice anumite date personal e. 
+Accesând SITE -UL WEB AL REGISTRULUI  și introducând numele de domeniu 
+în motorul de căutare WHOIS, informațiile despre NUMELE DE DOMENIU. md 
+și REGISTRANT  pot fi vizualizate  în conformitate cu regulile de mai jos : 
+    a) atunci când REGISTRANTUL  este persoan ă juridică, REGISTRUL  publică , 
+de regulă,  următoarele informații , prin intermediul SERVICIULUI WHOIS : 
+numele companiei /organizației , adresa  juridică , adresa de e -mail, orașul, țara, 
+serverele de nume de domeniu , data înregistr ării și data expirării numelui  de 
+domeniu . 
+      b) atunci când REGISTRANTUL este persoană fizică, informațiile publicate 
+sunt restricționate la adresa de e -mail, oraș, țară, server nume de domeniu, data 
+înregistrării și data expirării  numelui de domeniu , cu excepția cazului în care se  
+solicită altfel. În acest caz, REGISTRANTUL  poate crea și utiliza o adresă de e -
+mail funcțională specifică pentru publicare în WHOIS, drept alternativă a utilizării 
+adresei personale de e -mail.  
+ 
+Pentru a preveni utilizarea incorectă a SERVICIULUI WHOIS , căutările sunt 
+limitate la un singur criteriu, numele de domeniu. Prin urmare, nu este posibilă 
+căutarea  după  nume, adres ă, e-mail sau număr de telefon.  
+SERVICIUL WHOIS  are un caracter pur informativ. Prin efectuarea unei 
+interogări, UTILIZATORUL  consimt e să nu utilizeze informațiile pentru a:  
+       - permite, autoriza  sau susține , în alt mod , transmiterea de publicitate ne dorită , 
+comercială sau alte solicitări, fie prin e -mail, fie prin alte mijloace;  
+       - face publicitate țintită , în orice mod posibil;  
+       - provoc a neplăceri REGISTRANTULUI , în orice mod , prin t ransmiterea  de 
+mesaje către acesta.  
+REGISTRUL  își rezervă dreptul de a iniția procedurile judiciare corespunzătoare 
+împotriva oricărei terțe părți care încalcă aceste reg uli de utilizare a SERVICIULUI 
+WHOIS.  
+ 
+13. IDENTIFICAREA REGISTRANTULUI  
+În ceea ce privește numele REGISTRANTULUI , în BAZA DE DATE WHOIS , 
+există posibilitatea de a selecta opțiunea "Denumirea Organizației " sau ”Persoană 
+Fizică”. Dacă a fost completat câmpul ”Persoană Fizică”, se subînțelege că 
+înregistrarea este făcută de către sau în numele unei  persoane fizice.  
+În cazul în care este completat cîmpul "Denumirea Organizației ", se subînțelege că 
+înregistrarea  a fost făcută de către o persoană juridică .  
+Pentru a -și asigura  calitatea de DEȚINĂTOR  de nume de domeniu, 
+REGISTRANTUL (persoana fizică sau juridică)  trebuie să dețină permanent  
+controlul asupra contului său  de utilizator  de pe www.nic.md  și a adresei de e -mail 
+indicată la rubrica CONTACT ADMINISTRATIV . REGISTRANTUL  este 
+singurul responsabil  de administrarea contului său de utilizator și a informațiilor 
+referitoare la nume le de domeniu , iar REGISTR UL își declină orice 
+responsabilitate în acest sens . 
+ 
+14. DISPUTE , BLOCARE, REVOCARE  A NUMELOR DE DOMENIU  
+Orice dispute intre părți ( persoane fizice sau juridice) în legătură cu dreptul de 
+foloisință a unui nume de domeniu vor fi soluționate, de preferinta, pe cale amiabilă, 
+arbitrare  si apoi prin alte medote legale, inclusiv în instanța de judecată.  
+Părțile implicate înțeleg si sunt de acord că MOLDDATA nu arbitrează disputele 
+privind inregistrarea si utilizarea numelor de domenii, ci poate doar furniza, în 
+condițiile legii, infromații referitoare la acestea.  În cazul în care un proces referitor 
+la dreptul de folosință a unui nume de domeniu este deja în curs într -o instanță de 
+judecată, arbitraj sau alt organism autorizat, domeniul va fi blocat până la 
+pronunțarea deciziei definitive de soluționare a litigiulu i. 
+Până la pronunțarea deciziei , DEȚINĂTORUL  actual poate continua să utilizeze 
+domeniul, să -l prelungească , cu excepția cazului în care îi este interzis acest lucru 
+printr -o hotărâre judecătorească executorie.   
+REGISTRUL  respectă politica uniformă ICANN de soluționare a disputelor . 
+Conform acestei politici, disputele  privind dreptul  de înregistrare a unui nume  de 
+domeniu sunt rezolvate , de regulă, în instanță de către părțile care pretind acest drept. 
+Odată ce instanța st abilește cine are dreptul la înregistrare, REGISTRUL va pune 
+în aplicare această hotărâre.  
+REGISTRUL  are dreptul de a revoca un nume de domeniu în conformitate cu acești 
+Termeni și Condiții , REGULAMENTUL .md , reglementările  IANA /ICANN și 
+Bune le Practici  ccTLD  pentru prevenirea și soluționarea disputelor  în materie de 
+Proprietate Intelectuală ale Organizației Mondiale a Proprietății Intelectuale . 
+ 
+15. LIMITAREA RĂSPUNDERII  
+REGISTRUL  nu se va face răspunzător pentru nicio pierdere, întrerupere a 
+activității  sau orice daune directe sau indirecte, speciale, incidentale sau consecvente 
+de orice fel (inclusiv venituri ratate ) indiferent de natura lor contractuală, cvasi -
+delictuală (inclusiv datorate neglijenţei) sau de orice altă natură, chiar dacă 
+REGISTRUL a fost informat cu privire la posibilitatea unor asemenea daune.  
+  
+16. MODIFICAREA TERMENILOR ȘI CONDIȚIILOR  
+Acești Termeni și Condiții  pot fi modificați în mod unilateral de către REGISTRU . 
+În cazul în care decide modific area, REGISTRUL va face cunoscută  noua versiune 
+a Termeni lor și Condiții lor, prin publicarea acestora pe site -ul său web , cu cel puțin 
+10 zile înainte de intrarea în vigoare.  
+ 
+ 
+1 
+  
+Правила и условия 
+регистрация и администрирование  
+доменных имен в домене более высокого уровня ".md"  
+1. ОПРЕДЕЛЕНИЯ  
+9 
+Для целей настоящих Правил и условий следующие термины и выражения означают:  
+TOP LEVEL DOMAIN (TLD) - один из доменов, которые находятся на самом высоком 
+иерархическом уровне системы доменных имен Интернета (DNS). 
+ДОМЕН БОЛЕЕ ВЫСОКОГО УРОВНЯ .md (ccTLD.md)  - национальный домен 
+более высокого уровня, присвоенный Республике Молдова в соответствии с 
+двухбуквенными кодами стандарта ISO 3166 - 1 для названий стран или территорий, делегированных ГОСУДАРСТВЕННОМУ ПРЕДПРИЯТИЮ "MOLDDATA" посредством 
+Меморандума о взаимопонимании между Интернет-корпорацией по атрибуции имен и 
+номеров (ICANN) и ГОСУДАРСТВЕННЫМ ПРЕДПРИЯТИЕМ "MOLDDATA",     в качестве Администратора, от 02.12.2003, согласно которому Администратор уполномочен 
+управлять ccTLD.md. 
+РЕГЛАМЕНТ .md - Положение об управлении именами в домене верхнего уровня .md, от 
+28.08.2000, утвержденное Национальным агентством по регулированию в области 
+информационных технологий и электронных коммуникаций Республики Молдова. 
+ICANN - Интернет-корпорация по атрибуции имен и номеров IANA - Орган 
+по атрибуции интернет-номеров  
+Доменное ИМЯ .md - доменное имя второго уровня (далее - "Доменное имя .md") - это 
+часть доменного имени, которая находится непосредственно слева от точки, за которой 
+следует ccTLD.md и зарегистрирована от имени физического или юридического лица в 
+Реестре доменных имен .md  
+РОДОВЫЕ ДОМЕНЫ ccTLD. md - выделенные доменные имена, 
+зарегистрированные в первичных доменных ccTLD.md, таких как '. com.md', '. 
+org.md', '. pro.md', '. info.md', '. co.md', '. co.md'' и т.д.  
+РЕЕСТР ДОМЕННЫХ ИМЕН .md - это база данных со всеми доменными именами, их 
+владельцами и другими лицами или информацией относительно доменного имени, которое 
+было создано и принадлежит государственному предприятию "MOLDDATA". РЕЕСТ Р 
+2 ДОМЕННЫХ ИМЕН .m d являетс я источником дл я выделе ния доменны х имен в области 
+.md, локализуемой на основном сервере доменных имен. 
+РЕГИСТРАЦИЯ/РЕГИСТРАТОР 
+НАЦИОНАЛЬНЫЙ/АДМИНИСТРАТОР/LS." MOLDDATA"/MOLDDATA/ - 
+АДМИНИСТРАТОР РЕЕСТР А ДОМЕНН ЫХ ИМЕН .md, также называемого  Сетевым 
+информ
+ационным центром (NIC), которы й хранит все административные данные доменов 
+и генерирует область .m d, содержащую адреса серверов доменны х имен для каждого 
+домена . РЕЕСТР управляет и устанавливает процедуры и правила регистра ции ДОМЕ НОВ 
+.md, техническ и управляет уровнем domainSUPERIOR.m d. Он также является 
+НАЦИОНАЛЬНЫМ РЕГИСТРАТОРОМ ДОМЕННЫ Х ИМЕ Н .m d. 
+Д
+ИЛЕР/ПАРТНЕР/РЕГИСТРАТОР  – юридическое  или юридическое  лицо, 
+уполномоченное  надлежащим  образом  осуществлять  необходимые  мероприятия  по 
+подготовке  регистрации  доменных  имен  в пределах  the.md  ДОМЕНА  ВЕРХНЕГО 
+УРОВНЯ  на территории,  для которой  он авторизован,  на основании  договора, 
+заключенного  с НАЦИОНАЛЬНЫМ  РЕЕСТРОМ/РЕГИСТРАТОРОМ,  в целях  оказания 
+услуг по регистрации доменных имен для регистрантов. 
+РЕГИСТРАНТ/ДЕРЖАТЕЛЬ  - физическое  или ю ридическое  лицо,  имеющее  право  на 
+использование  имени,  зарегистрированного  в ДОМЕНЕ  ВЫСШЕГО  УРОВНЯ  .md и 
+имеющее  право  запрашивать,  изменять  и отзывать  регистрационные  данные  имени  в 
+присвоенном домене.   
+ПОЛЬЗОВАТЕЛЬ   /КЛИЕНТ/БЕНЕФИЦИАР - любое физическое или юридическое 
+лицо, которое запрашивает или пользуется услугами 
+НАЦИОНАЛЬНОГО Р ЕЕСТРА/РЕГИСТРАТОРА.  
+9 
+АДМИНИСТРАТИВНЫЙ КОНТАКТ – лицо, уполномоченное РЕГИСТРАНТОМ на 
+взаимодействие с РЕЕСТРОМ DOMENIU.MD/ НАЦИОНАЛЬНЫМ РЕГИСТРАТОРОМ 
+для предоставления информации о регистрации доменного имени и регистранта. 
+БИЛЛИНГ КОНТАКТ - лицо, уполномоченное РЕГИСТРАНТОМ на получение 
+платежного счета за регистрацию, продление доменного имени.  
+ТЕХНИЧЕСКИЙ КОНТАКТ – лицо, уполномоченное регистратором на обслуживание 
+серверов доменных имен, связанных с доменным именем. 
+WHOIS DATABASE/DATABASE - внутренняя база данных 
+РЕЕСТР, используемый для предоставления УСЛУГИ ВОЗ ЕСТЬ, и  
+БАЗА ДАННЫХ недоступна для общественности и не является абонентской услугой. 
+3 
+ WHOIS SERVICE - общедоступная часть БАЗЫ ДАННЫХ WHOIS РЕЕСТРА.  
+СЕРВЕР ДОМЕННЫХ ИМЕН – Интернет-сервис, который отвечает на запросы или с 
+соответствующей информацией в файле зоны.   
+РЕГИСТРАЦИЯ - ввод доменного имени в БАЗУ ДАННЫХ и, если применимо, в область 
+.md. 
+ФАЙЛ ЗОНЫ — файл, запрошенный сервером доменных имен, который содержит 
+сведения о номере домена, сервере имен и IP- адресах.  
+САЙТ РЕЕСТРА - Сайт реестра, доступный по адресу www.nic.md,  nic.md.  
+2. ОБЩИЕ РАМКИ  
+2.1. Настоящий документ устанавливает технические и административные процедуры, 
+используемые РЕЕСТРом в отношении регистрации имен в домене верхнего уровня .md 
+или запросов на такие регистрации, включая расширение, удаление, передачу, приостановление, отзыв и т. Д., Доменных имен. 
+2.2. управление ccTLD.md осуществляется в соответствии с РЕГЛАМЕНТОМ .md, 
+правилами IANA/ICANN для TLD и лучшими практиками регистрации и 
+администрирования доменных имен. 
+3. ГЕНЕРСКИЕ ПРИНЦИПЫ РЕГИСТРАЦИИ И АДМИНИСТРИРОВАНИЯ 
+ДОМЕННЫХ ИМЕН  
+3.1. Критерии  
+Любое физическое или юридическое лицо может зарегистрировать доменное имя 
+ccTLD.md.  
+3.2. Равное обращение  
+За исключением случаев, когда РЕГЛАМЕНТ .md, применимое законодательство и 
+политика предусматривают иное, РЕЕСТР будет управлять заявками на регистрацию 
+доменных имен в соответствии с теми же правилами и принципами.  
+3.3. Первым пришел, первым обслужен 
+РЕЕСТР ос уществляет регистрацию доменных имен на недискриминационных условиях, 
+по принципу «первым пришел – первым обслужен», если РЕГИСТРАНТ выполнил все 
+требования для регистрации. В связи с этим для резервирования доменного имени могут 
+учитываться дата и время п оступления системой REGISTRY на ее веб-сайт, доступный по 
+адресу  www.nic.md   полной и технически правильной электронной заявки. 
+Когда заявка на регистрацию будет заполнена, доменное имя будет автоматически 
+4 забронировано  системой  сроком  на 3 календарных  дня, без возможности  отменить 
+бронирование  в течение  этого  срока.  Резервируя  доменное  имя,  БЕНЕФИЦИАР 
+соглашается с процедурой бронирования, описанной в этом пункте. 
+В случае  возникновения  ошибок  в процессе  автоматического  резервирования  доменных 
+имен  в системе,  обработка  доменных  имен  будет  производиться  в момент  оплаты  или при 
+ручном бронировании, сразу после выявления ошибки. 
+РЕЕСТР  не несет  никакой  ответственности  и не  предоставляет  никаких  гарантий  в этом 
+смысле для возможной регистрации доменного имени третьим лицом, в случае сбоя 
+автоматического бронирования, в период, прошедший до бронирования   /   
+ручной регистрации. 
+4. ЖИЗНЕНН ЫЙ Ц ИКЛ ДОМЕННОГ О ИМ ЕНИ .m d
+4.1. Доменное им я .md может быть зарегистрирова но или продле но на срок от 1  года до 
+максимум 5 лет. 
+4.2. РЕЕСТР  допускает  период  бронирования  в 3 дня  в соответствии  с условиями, 
+изложенными  в пункте  3.3 настоящего  документа.  Согласно  РЕГЛАМЕНТУ  .md, 
+регистрация  и продление  доменного  имени  производится  только  после  подтверждения 
+оплаты.  
+4.3. Исправление орфографическ ой ошибк и в ДОМЕННОМ ИМЕНИ .m d не допускается. 
+После регистра ции или продлени я доменног о имени действие считаетс я совершенным, 
+уплаченная плата возврат у не возвращаетс я, а доменное им я переходит в исключительное 
+пользование  РЕГИСТРАНТА. MOLDDATA не возм ещает никак их сборов за доменное 
+имя, уже зарегистрированное/продленное.  
+4.4. По истече нии срока действ ия домена он вступает в 30-дневны й льготны й период. 
+Первые 5 дней доменное им я актив но, а следующие нескольк о дней оно неактив но, но 
+владелец может прод лить его по обычной цене, без штрафных санкций. 
+4.5. За 30 дней  до истечения  срока  действия  доменного  имени  РЕЕСТР  начинает 
+информировать  об этом  РЕГИСТРАНТА.  По окончании  Льготного  периода  РЕЕСТР 
+направляет РЕГИСТРАНТУ, на указанный им для АДМИНИСТРАТИВНОГО КОНТАКТА  
+адрес  электронной  почты,  несколько  уведомлений  с информацией  об условиях  продления 
+и риске удаления доменного имени в случае неуплаты.   
+4.6. По  окончании  Льготного  периода,  если  РЕГИСТРАНТ  не продлевает  его, доменное 
+имя автоматически  удаляется  из РЕЕСТРА  ДОМ ЕННЫХ  ИМЕН  .md На  этом  этапе домен 
+становится доступным для новой регистрации, в порядке живой очереди. 
+5 
+ 5. ЗАКОННОСТЬ  
+5.1. Гарантия, предоставляемая бенефициаром  
+9 
+Заявка на регистрацию доменного имени представляет для РЕГИСТРА гарантию 
+БЕНЕФИЦИАРА о том, что регистрация может быть произведена на законных основаниях и что БЕНЕФИЦИАР имеет право использовать запрашиваемое доменное имя. РЕЕСТР не 
+проверяет право БЕНЕФИЦИАРА на регистрацию и использование доменного имени и не 
+несет никакой ответственности в этом отношении путем регистрации и управления доменным именем для РЕГИСТРАНТА.  
+5.2. Ответственность за мошенническую регистрацию товарного знака  
+РЕГИСТРАНТ несет личную ответственность, в соответствии с законом, за мошенническую регистрацию товарного знака или интеллектуальной собственности.  Принятие заявки и регистрация доменного имени не означает, что MOLDDATA признает, 
+что РЕГИСТРАНТ имеет равное право на использование соответствующего доменного 
+имени, в том числе в случае доменных имен, которые относятся к зарегистрированным товарным знакам, названиям компаний или известным личностям.  
+5.3. Непричастность Секретариата к судебным разбирательствам  
+РЕГИСТРАНТ ДОМЕННОГО ИМЕНИ НЕ БУДЕТ ВОВЛЕКАТЬ MOLDDATA В 
+СУДЕБНЫЕ РАЗБИРАТЕЛЬСТВА, ВЫЗВАННЫЕ ИСПОЛЬЗОВАНИЕМ 
+СООТВЕТСТВУЮЩЕГО ДОМЕННОГО ИМЕНИ. ВЛАДЕЛЕЦ обязуется полностью возместить MOLDDATA все расходы, издержки и претензии, инициированные третьими 
+лицами, включая судебные издержки и адвокатов, понесенные РЕЕСТРом на основании 
+незаконной регистрации и/или использования доменного имени.  
+5.4. Отсутствие права собственности на домен  
+Регистрация доменного имени не дает РЕГИСТРАНТУ никаких законных прав на это 
+домен ное имя, за исключением права на его использование. Любые споры между 
+сторонами относительно прав на использование определенного доменного имени будут 
+разрешаться ими на законных основаниях. ОБЛАДАТЕЛЬ ДОМЕНИУ. MD NAME несет 
+ответственность за его законное использование. 
+6. РЕГИСТРАЦИЯ ДОМЕННОГО ИМЕНИ .md  
+6.1. Срок действия заявки на регистрацию  
+Действующая заявка на регистрацию доменного имени .md должна содержать актуальную, 
+полную и точную информацию о РЕГИСТРАНТЕ, АДМИНИСТРАТИВНОМ КОНТАКТЕ, ПЛАТЕЖНОМ КОНТАКТЕ И ТЕХНИЧЕСКОМ КОНТАКТЕ. Если серверы доменных 
+имен указаны в момент регистрации, информация о них должна быть актуальной, полной и 
+6 
+ точной. 
+6.2 Доступное доменное имя  
+Только один доступный один ue может быть зарегистрирован в качестве DOMENIU.md 
+NAME. Имя доступно, если:  
+a) оно еще не зарегистрировано в качестве доменного имени;  
+b) он не зарезервирован и не заблокирован;  
+c) он не передается центральным или местным органам публичной власти в соответствии 
+с REGULATION.md (в этом случае только назначенные органы могут запрашивать регистрацию).  
+6.3. Допустимые символы для доменного имени 
+Для доменного имени допускаются буквенно-цифровые символы (a-z, A- Z, 0-9) и дефис (- ). 
+Имя dominium не может начинаться и заканчиваться дефисом. Не рекомендуется 
+использовать прописные буквы, так как доменные имена нечувствительны к регистру.  
+Длина имени домена не должна превышать 63 символов, не включая расширение MD.  Доменное имя является уникальным и не может быть изменено после его регистрации. Изменяя любой символ в доменном имени, заявитель получает другое доменное имя, 
+которое может быть зарегистрировано как новое доменное имя, после отправки заявки на 
+регистрацию и внесения необходимой оплаты.   
+6.4. Активные и неактивные доменные имена  
+9 
+Домены в зоне .md могут быть зарегистрированы для активного использования 
+(делегирование домена) или для неактивного использования (зарезервированные доменные имена). Для активных зарегистрированных доменных имен должен быть основной 
+СЕРВЕР ДОМЕННЫХ ИМЕН ( DNS) и дополнительный операционный сервер. Обоим 
+серверам имен требуется постоянное IP-подключение к Интернету, чтобы они могли легко 
+гарантировать, что реестр проверяет рабочее состояние и базу данных в любое время.   
+6.5. Полный запрос  
+Запрос на регистрацию доменного имени будет считаться завершенным только в том 
+случае, если РЕГИСТРАНТ (или через ПАРТНЕРА) предоставит реестру следующую информацию:  
+5 
+- доменное имя, на которое подана заявка;  
+- полное наименование РЕГИСТРАНТА - физического или юридического лица;  
+- IDNP или IDNO;  
+- адрес и страна проживания РЕГИСТРАНТА;  
+55557     
+- адрес (адреса) электронной почты АДМИНИСТРАТИВНОГО КОНТАКТА, 
+7 
+ ТЕХНИЧЕСКОГО КОНТАКТА И КОНТАКТНОГО ЛИЦА ДЛЯ ВЫСТАВЛЕНИЯ 
+СЧЕТОВ;  
+- номер (номера) телефона (телефонов) АДМИНИСТРАТИВНОГО КОНТАКТА, 
+ТЕХНИЧЕСКОГО КОНТАКТА И КОНТАКТНОГО ЛИЦА ДЛЯ ВЫСТАВЛЕНИЯ 
+СЧЕТОВ;  
+- РЕГИСТРАНТ обязуется поддерживать информацию, предоставленную РЕЕСТРУ, 
+актуальной, полной и правильной, в течение всего срока действия ДОМЕННОГО ИМЕНИ 
+.md. 
+- РЕГИСТРАНТ обязуется предоставить функциональный адрес электронной почты для 
+получения любых сообщений от РЕЕСТРА.  
+- РЕЕСТР зарегистрирует доменное имя только после получения подтверждения по 
+электронной почте от ПОЛЬЗОВАТЕЛЯ.  
+- РЕЕСТР оставляет за собой право отклонить заявку на регистрацию доменного имени 
+или отозвать доменное имя, по которому РЕГИСТРАНТ предоставил неполную или 
+неточную информацию.   
+7. ОСНОВАНИЯ ДЛЯ ОТКЛОНЕНИЯ ЗАЯВКИ НА РЕГИСТРАЦИЮ ИЛИ ОТМЕНЫ 
+РЕГИСТРАЦИИ ДОМЕННОГО ИМЕНИ:  
+7.1. Отклонить запрос на регистрацию  
+РЕЕСТР имеет право отклонить запрос на следующих основаниях:  
+- неполная информация в заявке;  
+- информация, представленная в заявке, является ложной, неточной или вводящей в 
+заблуждение;  
+- доменное имя содержит более 63 символов;  
+- доменное имя содержит специальные символы, кроме дефиса (- ); 
+- Доменное имя начинается или заканчивается дефисом.  
+- Доменное имя идентично доменному имени, уже регистрирующему уровень;  
+- доменное имя содержит подобострастный язык;  
+- доменное имя носит оскорбительный характер;  
+- Доменное имя содержит непристойные, порнографические или в сквернословии 
+слова.  
+- доменное имя противоречит положениям РЕГЛАМЕНТА .md 
+- платежи остаются.  
+7.2. DE инициирует или приостанавливает домен  
+РЕЕСТР может отменить регистрацию или приостановить доменное имя:  
+8 
+ - если имя управляется таким образом, что это может поставить под угрозу работу 
+DNS;  
+- если изменилось основание, на котором он был зарегистрирован в U MY,   
+например, запрашивающая организация больше не существует или контактные данные 
+были изменены с использованием неточных или ложных данных;  
+- если MOLDDATA была проинформирована о возбуждении судебного иска в 
+отношении использования названия;  
+- в случае возникновения спора между сторонами, до разрешения конфликта;   
+- в иных случаях, предусмотренных регламентом .md  
+8. ОБЯЗАТЕЛЬСТВО ХРАНИТЬ ДАННЫЕ  
+9 
+РЕГИСТРАНТ несет ответственность за то, чтобы все данные, касающиеся доменного 
+имени, зарегистрированного и зарегистрированного в NUMEL ИЛИ DOMAIN, 
+REGISTRY.md, такие как контактные данные и технические данные доменного имени, были актуальными, полными и правильными в течение всего периода регистрации. Если 
+РЕГИСТРАНТ предоставляет неверную информацию или не обновляет, своевременно 
+информацию в случае изменения, регистрация его доменного имени может быть приостановлена или аннулирована. Для РЕЕСТРА единственными данными, которые 
+считаются истинными, являются данные, предоставленные РЕГИСТРАНТОМ и 
+записанные в БАЗЕ ДАННЫХ. MOLDDATA обязана принимать к сведению только данные, переданные РЕГИСТРАНТОМ через  www.nic.md,  или проводить исследования 
+относительно правильности этих данных. 
+Если данные будут признаны неполными, неточными или не обновленными и, 
+следовательно, определение ЛИЧНОСТИ РЕГИСТРАНТА требует значительного времени и усилий или если сообщения ВЛАДЕЛЬЦУ и/или БИЛЛИНГОВОМУ КОНТАКТУ не 
+могут быть отправлены, MOLDDATA оставляет за собой право отозвать соответствующее 
+доменное имя. 
+9. ПЕРЕНОС ДОМЕННОГО ИМЕНИ 
+РЕГИСТРАНТ имеет право передать доменное имя новому РЕГИСТРАНТУ или новому 
+РЕГИСТРАТОРУ. В случае переноса срок действия доменного имени останется 
+неизменным. Домен, который является спорным или срок действия которого истек, не может быть передан.  
+Перевод может быть осуществлен онлайн на основании запроса кода перевода или 
+оффлайн, в штаб-квартире MOLDDATA, заполнив соответствующую заявку.  
+9 
+ 9.1. Онлайн-передача Доменного имени новому регистранту 
+9.1.1. Чтобы передать доменное имя новому РЕГИСТРАНТУ, текущий РЕГИСТРАНТ 
+войдет в свою учетную запись пользователя на www.nic.md   и запросит у РЕЕСТРА 
+уникальный код авторизации передачи. Код авторизации будет предоставлен (1) 
+РЕЕСТРом текущему РЕГИСТРАНТУ через адрес электронной почты, указанный в 
+АДМИНИСТРАТИВНОМ КОНТАКТЕ, и (2) текущим РЕГИСТРАНТОМ новому 
+РЕГИСТРАНТУ.  
+9.1.2. По требованию РЕГИСТРАНТА РЕГИСТРАТОРУ передать  
+доменное имя новому РЕГИСТРАНТУ, текущий РЕГИСТРАТОР запросит уникальный код 
+авторизации для передачи из РЕЕСТРА. После его предоставления код авторизации будет 
+предоставлен соответственно (1) РЕГИСТРАТОРОМ РЕГИСТРАТОРУ, который передаст доменное имя, (2) РЕГИСТРАНТОМ новому РЕГИСТРАНТУ, (3)   
+новому РЕГИСТРАТОРУ к РЕГИСТРАТОРУ (текущему или новому) и (4) (текущему или новому) РЕГИСТРАТОРУ в РЕЕСТР. РЕЕСТР осуществит перевод после получения кода авторизации от текущего или нового РЕГИСТРАТОРА.  
+Если РЕГИСТРАТ ОР не предоставляет РЕГИСТРАНТУ уникальный код авторизации в 
+соответствии с этой процедурой, РЕГИСТРАНТ может запросить код авторизации непосредственно из РЕЕСТРА при условии, что он приложил все усилия для получения 
+кода авторизации от РЕГИСТРАТОРА.  
+9.2. Передача доменного имени новому регистратору 
+По просьбе РЕГИСТРАНТА о передаче доменного имени другому РЕГИСТРАТОРУ, 
+уполномоченному РЕЕСТРОМ, текущий РЕГИСТРАТОР запросит уникальный код, 
+разрешающий передачу из РЕЕСТРА. После его предоставления код авторизации будет 
+передан последовательно (1) РЕГИС ТРАТОРОМ, РЕГИСТРАНТОМ, (2) 
+РЕГИСТРАНТОМ новому РЕГИСТРАТОРУ и (3) новым РЕГИСТРАТОРОМ в РЕЕСТР. 
+РЕЕСТР выполнит передачу после получения кода авторизации от нового 
+РЕГИСТРАТОРА.  
+Если РЕГИСТРАТОР не предоставляет РЕГИСТРАНТУ уникальный код авторизации в соответствии с этой процедурой, РЕГИСТРАНТ может запросить код авторизации 
+непосредственно из РЕЕСТРА при условии, что он приложил все усилия для получения кода авторизации от РЕГИСТРАТОРА.  
+9.3. Гарантия действительности перевода  
+9 
+В соответствии с процедурами, упомянутыми выше, все участвующие РЕГИСТРАНТЫ и 
+РЕГИСТРАТОРЫ гарантируют РЕЕСТРУ действительность передачи доменного имени.  
+10. УДАЛЕНИЕ ДОМЕННЫХ ИМЕН 
+9 
+10 
+ Домен может быть удален из БАЗЫ ДАННЫХ РЕЕСТРА, если:  
+- РЕГИСТРАНТ нарушает PNCT. 5.5. ПРАВИЛ .md;  
+- ЛИЦО, ПОДАЮЩЕЕ ЗАЯВКУ на регистрацию, направляет запрос в РЕЕСТР на этот 
+счет;  
+- доменное имя не было оплачено в установленные сроки, в течение 3 дней с момента 
+бронирования или в течение 30 дней с даты истечения срока действия;  
+- РЕГИСТРАНТ нарушает обязательство по сохранению актуальных, полных и 
+правильных данных;  
+- по решению суда;  
+При удалении из БАЗЫ ДАННЫХ доменное имя становится доступным для новой 
+регистрации. Доменное имя должно быть удалено как можно скорее или в указанную дату. 
+11. НАЛОГИ И ПЛАТЕЖИ 
+99 
+С пошлинами, взимаемыми РЕЕСТРОМ за регистрацию, продление срока действия 
+ДОМЕННОГО ИМЕНИ, можно ознакомиться на ВЕБ- САЙТЕ РЕЕСТРА.  
+Платежные счета будут отправлены на адрес электронной почты, указанный 
+РЕГИСТРАНТОМ, в БИЛЛИНГ КОНТАКТ. Если получатель не п роизведет оплату, счет 
+может быть доставлен по запросу владельцу домена. В любом случае, ВЛАДЕЛЕЦ домена 
+несет ответственность за оплату регистрационного/продленного сбора домена. 
+РЕГИСТРАНТ принимает выдачу и передачу счетов в электронном виде. 
+Оплата за регистрацию будет произведена не позднее 3 дней с момента бронирования 
+доменного имени, а за продление – до истечения срока его действия. 
+РЕЕСТР не несет ответственности за любое несоблюдение регистрантом сроков оплаты, в 
+том числе, если это приводит к отказу в регистрации или удалению соответствующего доменного имени.  
+12. БАЗА ДАННЫХ WHOIS  
+12.1. Информация из базы данных WHOIS  
+9 
+При регистрации доменного имени .md регистрационная информация вносится в базу данных WHOIS. Регистрация происходит только после того, как РЕГИСТРАНТ принимает 
+Правила и условия, в соответствии с которыми РЕЕСТР уполномочен публиковать на 
+своем веб-сайте определенные персональные данные РЕГИСТРАНТА, включая некоторые технические данные, чтобы гарантировать прозрачность системы доменных имен д ля 
+общественности. 
+Целью базы данных WHOIS является предоставление как можно более точной и 
+11 актуаль ной информац ии о техническ их и административны х контактны х точка х, которые 
+управляют доменным именем.  
+Если РЕЕСТР содержит ложные, неверные или неактуальные данные, с РЕГИСТРАНТОМ 
+не удастся  связаться,  и это  может  привести  к потере  доменного  имени.  Заведомо 
+предоставляя  недостоверную  информацию,  РЕГИСТРАНТ  нарушает  Правила  и условия, 
+что может привести к потере доменного имени. 
+12.2 Обработка персональных данных 
+Сбор, обработка и использование персональны х данны х соответствуют положениям 
+Закона о защите персональны х данны х No 133 от 08.07.2011. Персональные данные 
+обрабатываются MOLDDAT A в рамках систем ы учета No 000120 0-001, No 0001200 -006, 
+зарегистрирова нной в Реестре контролеров персональны х данны х, доступном по адресу 
+www.registru.datepersonale.md. Регист рируя дом енное им я и принима я Условия 
+регистра ции DOMENIU.m d ИМЕН , РЕГИСТРАНТ уполномочивае т РЕЕСТР обрабатывать 
+пе
+рсональные данные и иные данные , необходимые дл я администрирова ния системы 
+доменных име н. РЕГИСТРАНТ выражает свое явное согласие на использование 
+РЕЕСТРОМ данных в целях администрирования системы (что включает в  себя выделение 
+доменного имени, передачу доменного имени новому РЕГИСТРАНТУ  
+ /   
+РЕГИСТРАТОРУ) и может передавать эти данные третьим лицам только с явного согласия 
+РЕГИСТРАНТА или если этого требует суд,    государственный орган или 
+уполномоченный орган при  
+осуществлении ими своих законных полномочий. 
+РЕГИСТРАНТ имеет прав о на дост уп к своим персональным данным и обеспечение их 
+измене ния в случае ошибок. 
+РЕГИСТРАНТ  незамедлительно  проинформирует  РЕЕСТР  о любых  изменениях  в имени, 
+адресе,  адресе  электронной поч ты, телеобъективе  n, обновив  их в системе.  Упущение  или 
+несвоевременное  уведомление  Реестра  о таких  изменениях  может  привести  к 
+приостановлению регистрации доменного имени. 
+12.3. Информация, собираемая для внутреннего пользования 
+Следующие  персональны е данны е будут собиратьс я для внутренне го использования 
+РЕЕСТРА (за исключением данных, которые также доступны через СЕРВИС WHOIS): 
+-полное на
+именование РЕГИСТРАНТА;
+-IDNO/I
+DNP to REGISTRANTULUI
+-пол
+ное наименование АДМИНИСТРАТИВНОГО КОНТАКТА, ТЕХНИЧЕСКОГО
+КОНТАКТА, БИЛЛИНГОВОГО КОНТАКТА;
+-адре
+са всех контактных лиц;
+-адре
+са электронной почты всех контактов;
+12 -телефоны всех контактных лиц;
+-бан
+ковские реквизиты РЕГИСТРАНТА;
+12.4. СЕР
+ВИС WHOIS  
+Все РЕГИСТРАНТЫ должны принять Правила и условия, в соответствии с которыми они 
+уполномочивают РЕЕСТР публиковать определенные персональные данные.  
+Зайдя на САЙТ РЕЕСТРА и введя доменное имя в поисковую систем у WHOIS, 
+информацию о DOMENIU.md и ИМЕНАХ РЕГИСТРАНТОВ можно просмотреть в 
+соответствии с приведенными ниже правилами:  
+a) когда РЕГИСТРАНТ является юридическим лицом, РЕЕСТР, как правило, публикует
+через СЕРВИС WHOIS следующую информацию: название компании/организации, юридический адрес, адрес электронной почты, город, страну, серверы доменных имен, дату регистрации и срок действия доменного имени.  
+b) когда РЕГИСТРАНТ является физическим лицом, информация, которую вы
+публикуете, ограничена адресом электронной почты, городом, страной, сервером доменных имен, датой регистрации и датой истечения срока действия доменного имени, 
+если не требуется иное. В этом случае РЕГИСТРАНТ может создать и использовать 
+конкретный функциональный адрес электронной почты для публикации в WHOIS, в качестве альтернативы использованию личного адреса электронной почты. 
+Чтобы предотвратить неправомерное использование СЕРВИСА WHOIS, поиск ограничен 
+одним критерием — доменным именем. Поэтому невозможно выполнить поиск по имени, 
+адресу, электронной почте или номеру телефона. 
+СЕРВИС WHOIS носит чисто информативный характер. Проводя запрос, 
+ПОЛЬЗОВАТЕЛЬ соглашается не использовать информацию для:  
+-разрешает, разрешает или иным образом поддерживает передачу нежелательной
+рекламы, коммерческих или других предложений по электронной почте или другими 
+способами;  
+-рекламирует всеми возможными способами;
+-причинять
+ неудобства РЕГИСТРАНТУ, любым способом, отправляя ему
+сообщения.  
+РЕЕСТР оставляет за собой право инициировать соответствующие судебные разбирательства против любой третьей стороны, которая нарушает настоящие правила 
+использования СЕРВИСА WHOIS. 
+13.ИДЕНТИФИКАЦИЯ РЕГИСТРАНТА
+Что к
+асается наименования РЕГИСТРАНТА, то в БАЗЕ Д АННЫХ WHOIS есть 
+возможность выбрать опцию «Название организации» или «Физическое лицо». Если поле 
+13 «Физическое лицо» было заполнено, подразумевается, что регистрация производится 
+физиче
+ским лицом или от его имени. 
+Если заполнено поле «Наименование организации», то подразумевается, что регистрация 
+была произведена юридическим лицом. 
+Для обеспечения своего статуса владельца доменного имени РЕГИСТРАНТ (физическое 
+или юридическое лицо) должен иметь постоянный контроль над своей учетной записью пользователя на  www.nic.md   и адресом электронной почты, указанным в разделе 
+административных контактов.   РЕГИСТРАНТ
+ НЕСЕТ   единоличную ответственность за 
+администрирование своей учетной записи пользователя и информации о доменном имени, и РЕЕСТР отказывается от любой ответственности в этом отношении. 
+14.СПОРЫ, БЛОКИРОВКА, ОТЗЫВ ДОМЕННЫХ ИМЕН
+Любые
+ споры между сторонами (физическими  или юридическими лицами) в связи с 
+правом  использования доменного  имени  будут разрешаться предпочтительно, 
+полюбовно, произвольно и затем другими  законными  способами, в том числе в судебном 
+порядке. 
+Вовлеченные  стороны понимают и соглашаются с тем, что   MOLDDATA не разрешает 
+споры, касающиеся регистрации  и использования доменных  имен, а может только 
+предоставлять в соответствии с законом информацию о них. Если иск, касающийся права 
+использования доменного имени, уже находится на рассмотрении в суде, арбитраже или 
+ином уполномоченном органе, домен будет заблокирован до вынесения окончательного решения по разрешению спора. 
+До принятия решения ДЕРЖАТЕЛЬ акта может продолжать использовать домен, 
+продлевать его, если это не запрещено вступившим в законную силу решением суда.  
+РЕЕСТР должен соблюдать единую политику ICANN по разрешению споров. Согласно 
+этой политике, споры, касающиеся права на регистрацию доменного имени, обычно разрешаются в суде сторонами, претендующими на это право. Как только суд определит, 
+кто имеет право на регистрацию, РЕЕСТР приведет в исполнение это решение. 
+РЕЕС ТР имеет право отозвать доменное имя в соответствии с настоящими Положениями и 
+условиями, Регламентом .md, Правилами IANA/ICANN и Надлежащей практикой ксДВУ 
+для предотвращения и разрешения споров в области интеллектуальной собственности 
+Всемирной организации интеллектуальной собственности.   
+15.ОГРАНИЧЕНИЕ ОТВЕТСТВЕННОСТИ
+РЕЕ
+СТР не несет ответственности за любые убытки, прерывание хозяйственной 
+деятельности или любые прямые или косвенные, специальные, случайные или косвенные 
+убытки любого рода (включая упущенный доход), независимо от их договорного, квази-
+14 деликтного характера (в том числе из-за не брежности) или любого другого рода, даже если 
+РЕЕСТР был проинформирован о возможности таких убытков.  
+16. ИЗМЕНЕНИЕ УСЛОВИЙ И УСЛОВИЙ
+99 
+Настоящие Правила и условия могут быть в одностороннем порядке изменены 
+РЕЕСТРОМ.  
+Если он решит внести изменения, РЕЕСТР должен сообщить о новой версии Правил и 
+условий, опубликовав их на своем веб-сайте не менее чем за 10 дней до вступления в силу. 
+Terms and Conditions  
+registration and administration  
+of domain names within the ".md" Higher Level Domain 
+1.DEFINITIONS
+9 
+For the purposes of these Terms and Conditions, the following terms and expressions mean:  
+TOP LEVEL DOMAIN (TLD) - one of the domains that are at the highest hierarchical level of 
+the Internet Domain Name System (DNS).  
+HIGHER LEVEL DOMAIN .md (ccTLD.md) - higher level national domain assigned to 
+the Republic of Moldova in accordance with  the two- letter codes of the ISO 3166- 1 standard for 
+country   or territory names, delegated to the STATE ENTERPRISE "MOLDDATA" through the 
+Memorandum of Understanding  between the Internet Corporation for the Attribution of Names 
+and Numbers (ICANN) and the STATE ENTERPRISE "MOLDDATA",  as   Administrator, 
+dated 02.12.2003, according to which the Administrator is empowered to manage the ccTLD.md. 
+REGULATION .md - Regulation on the management of names in the top-level  domain .md, from 
+28.08.2000, approved by the National  Agency for Regulation in Information Technology and 
+Electronic Communications of the Republic of Moldova. 
+ICANN - Internet Corporation for the Attribution of IANA Names and Numbers - 
+Internet Number Attribution Authority 
+Domain NAME .md - second level domain name (hereinafter referred to as ".md Domain Name") 
+is the part of the domain name that is immediately to the left of the point followed by the 
+ccTLD.md and is registered on behalf of a natural or legal person in the Register of domain 
+names . md 
+GENERIC DOMAINS ccTLD. md - dedicated domain names registered in primary 
+domains ccTLD.md such as '  ‘. com.md',  ‘. org.md',  ‘. pro.md', ‘. info.md',  ‘. co.md', 
+‘. co.md',’ etc. 
+REGISTRY OF DOMAIN NAMES .md - a database with all  domain names, their holders and 
+other persons or information regarding the domain name, which was created and is owned by the 
+state enterprise   "MOLDDATA". The REGISTRY OF DOMAIN NAMES .md is the source for 
+the allocation of domain names in the .md area localizing  on the primary domain name server.  
+REGISTER/REGISTRAR 
+NATIONAL/ADMINISTRATOR/LS."  MOLDDATA"/MOLDDATA/ - ADM INISTRATOR of  
+the REGISTRY OF DO M AIN NAMES .md, als o called N etwork Information Center (NIC), 
+which holds all t he administrative data of  the domains  and gener ates t he .md ar ea t hat contains 
+the addresses of  the domain na m e servers f or each dom ain. THE R EGISTRY m anages and 
+establishes the  procedur es and rules for the registration of .md DOMAIN NAM ES, technically 
+manages t he level domainSUPERIOR.md. He al so serves as t he  NATIONAL R E GISTRAR OF 
+THE .md DOMAIN NAMES. 
+DEALER       /PARTNER      /REGISTRAR - legal person or entity duly authorized to 
+carry out th e necessary activities for the preparation of the registration of domain names within 
+the.md TOP LEVEL DOMAIN on the territory for which it is authorized, based on a contract 
+concluded with the NATIONAL REGISTRY     /    REGISTRAR, in order to provide 
+domain name registration s ervices for registrants. 
+REGISTRANT    / HOLDER - a natural or legal person who has the right to use a name 
+registered in the HIGHER-L EVEL DOMAIN .md and who has the right to request, modify and 
+revoke the reg
+istration data of the name in the assigned domain.   
+USER    
+/CLIENT    /BENEFICIARY - any natural or legal person who requests or uses the 
+services of
+ the NATIONAL REGISTRY    / REGISTRAR. 
+9 
+ADMINISTRATIVE CONTACT - a person authorized by the REGISTRANT to interact with  the 
+REGISTER OF DOMENIU.MD/ THE NATIONAL REGISTRAR to provide information on the 
+registration of the domain name and registrant.  
+BILLING CONTACT - a person authorized by the RE GISTRANT to receive the payment 
+account for the registration , renewal of the domain name.  
+TECHNICAL CONTACT – a person authorized by the registrar to maintain  domain name servers 
+associated with the domain name. 
+WHOIS DATABASE/DATABASE - the internal database of  
+THE REGISTRY used to provide the  WHO  IS SERVICE, and  
+THE DATABASE is not accessible to the public and is not a subscriber service.  
+WHOIS SERVICE - a publicly accessible part of THE REGISTRY'S WHOIS DATABASE.  
+DOMAIN NAME SERVER – Internet service that responds to queries or  with appropriate 
+information in  the zone file.   
+REGISTRATION - entering the domain name in the DATABASE and, if applicable, in the .md 
+area.  
+ZONE FILE – The file requested by the domain name server, which contains information about 
+the domain number, the name server, and the IP addresses.  
+REGISTRY WEBSITE - Registry website, available at the address  www.nic.md,   nic.md.  
+2. GENERAL FRAMEWORK 
+2.1. This document establishes the technical  and administrative procedures used by the 
+REGISTRY regarding the registration of names within the .md TOP LEVEL DOMAIN or the 
+requests for such registrations, including extension, deletion, transfer , suspension, revocation, 
+etc., of domain names.  
+2.2. the ccTL D.md management is carried out in accordance with the .md REGULATION, 
+the IANA/ICANN regulations for TLDs and the best practices for the registration and 
+administration of domain names. 
+3. GENER PRINCIPLESOF REGISTRATION AND ADMINISTRATION OF DOMAIN 
+NAMES  
+3.1. Eligibility criteria  
+Any natural or legal person may register a domain name ccTLD.md.  
+3.2. Equal treatment  
+Except where  the .md REGULATION, applicable  law and  policies provide otherwise, the 
+REGISTRY will manage applications for registration of domain names in accordance with the 
+same rules and principles.  
+3.3. First come, first served  
+The REGISTRY carries out the registration of domain names under non- discriminator y 
+conditions, according to the "first come -first served" principle, if the REGISTRANT has met all 
+the requirements for  registration. In this respect, the date and time of receipt by the REGISTRY 
+system on its website available at the address of the  www.nic.md  of a complete and technically 
+correct electronic application may be taken into account for the reservation of a domain name.  
+When the application for registration is completed, the domain name will be automatically booked by the system for a period of 3 calendar days, without the possibility to cancel the 
+reservation within this time frame. By reserving a domain name, the BENEFICIARY agrees to 
+the reservation procedure described in this point. 
+In case of errors in the process of automatically reserving the domain names in the system, the 
+processing of the domain names will be done  at the time of payment or at the manual  reservation, 
+immediately a fter ide ntifying  the error. 
+T
+HE REGISTRY assumes no liability and does not  pr ovide  any guarantee in this sense  for a 
+possible registration 
+of a domain name by a third party,  in case the automatic reservation has 
+failed, in t he period elapsed u ntil the r eservation    /manual r egistration. 
+4. LIFE CYCLE OF TH E DOMAIN N AM E .md
+4.1. A .md DOM AIN NAME can be registered or extended for a per iod of at least 1 year up to a 
+ma
+ximum of 5 years. 
+4.2. The REGISTRY allows a reservation period of 3 days under the conditions set out in point 
+3.3 of this document. According to the .md REGULATION, the registration and extension of a 
+doma
+in name i s made  only after the payment confirmation.  
+4.3. Correcting an orthography mistake in the DOMAIN NAME .md is not allowe d. Once a 
+domain name is registered or extended, the action is considered to be consumed, the fee paid is 
+not refundable, and the domain name enters into the exclusive use of the REGISTRANT. 
+MOLDDATA will not reimburse any fees for a domain name already  registered/  extended.  
+4.4. Once the domain expires, it enters t he 30- day Grace Period. The first 5 days the domai n 
+name is act ive, and  the next  f ew da ys it is inactive, but the holder can r enew it at the usual price, 
+without penalty. 
+4.5. 30 days before the expiry of the domain name, the REGISTRY begins to inform the 
+RE
+GISTRANT about this. By the end of the Grace Period, the REGISTRY sends to the 
+RE
+GISTRANT, at the e -mail address indicated by him for the ADMINISTRATIV E CONTACT, 
+several notifications with information about  the conditions of renewal and the risk of deleting the 
+doma
+in name in case of non-payment.   
+4.6. At the end of the Grace Period , if  the REGISTRANT does not renew it , the  domain name is 
+a
+utomatically deleted  from the REGISTER OF DOMAIN NAMES .m d At this stage, the domain 
+becomes available for a new registration, on a first come, first served basis.  
+5. LEGITIMACY
+5.1. Guarantee provided by the beneficiary
+9 
+The application for the registration of a domain name represents for the REGISTER the guarantee 
+of the BENEFICIARY that the registration can be made legally and that the BENEFICIARY has the right to use the requested domain name. THE REGISTRY does not verify the BENEFICIARY's right to register and use the domain name and does not assume any  
+responsibility in this regard by registering and managing the domain name for the 
+REGISTRANT . 
+5.2. Liability for fraudulent trademark registration  
+The REGISTRANT has personal  liability, under the law, for  the fraudulent registration of a 
+trademark or intellectual property.  The acceptance of the application and the registration of a 
+domain name does not mean that MOLDDATA recognizes that  the REGISTRANT has the equal  
+right to use the respective domain name, including in the case of domain names that refer to registered trademarks, company names or well -known personalities.  
+5.3. Non-involvement of the Registry in litigations  
+THE REGISTRANT OF A DOMAIN NAME WILL NOT INVOLVE MOLDDATA IN 
+LITIGATIONS CAUSED BY THE USE OF THE RESPECTIVE DOMAIN NAME. THE HOLDER undertakes to fully compensate MOLDDATA with regard to all costs, expenses and claims initiated    by third parties , including court costs and lawyers , incurred by the REGI STRY 
+on the grounds of illegal registration and/or use of a domain name.  
+5.4. Lack of ownership of the domain 
+The registration of a domain name does not confer on the REGISTRANT any legal right over this domain name, except for  the right to use it . Any disputes  between the parties regarding the rights 
+to use a certain domain name will be settled  by them legally. THE HOLDER OF A DOMENIU. 
+MD NAME shall be responsible for its lawful use.  
+6. REGISTER A DOMAIN NAME .md  
+6.1. Validity of the registration request  
+A valid application for registration of a .md domain name must contain current, complete and 
+accurate information  about the REGISTRANT, ADMINISTRATIVE  CONTACT, BILLING 
+CONTACT AND TECHNICAL CONTACT. If domain name servers are indicated at the time of regis tration, the information about them must be up to date , complete and accurate.  
+6.2 Available domain name  
+Only one available one ue can be registered as a DOMENIU.md NAME. A name is available  
+when:  
+a) it is not already registered as a domain name;  
+b) it is not re served or blocked;  
+c) it is not assigned to the central or local public authorities, in accordance with the 
+REGULATION.md (in this case, only the designated authorities can request registration).  
+6.3. Acceptable characters for the domain name  
+The characters allowed for the domain name are alphanumeric characters (a- z, A-Z, 0-9) and 
+hyphen ( -). A name of dominium cannot begin and end with a hyphen. It is not recommended to 
+use uppercase letters because domain names are not case -sensitive.   A domain name must be less 
+than 63 characters long, not including the .md extension.  A domain name is unique and cannot be 
+changed after it has been registered. By changing any character in a domain name, the applicant 
+obtains another  domain name that can be registered as a new domain name, after sending the  
+application for registration and making the necessary payment.   
+6.4. Active and inactive domain names  
+9 
+Domains in the .md zone can be registered for active use (domain delegation) or for inactive use (reserved domain names). For active domain names that are registered, there must be a primary DOMAIN NAME SERVER (DNS) and a secondary operational server. Both name servers 
+require a permanent IP  connection to the Internet, so that they can easily ensure   that the registry 
+checks on the operational status and database at any time.   
+6.5. Full request  
+A request to register a domain name will be considered complete only when the REGISTRANT 
+(or through a PARTNER) provides the registry with the following information:  
+5 
+- the domain name applied for;  
+- full name of the REGISTRANT - natural or legal person;  
+- IDNP or IDNO;  
+- address and country of residence of the REGISTRANT;  
+5 5 5 5 7 
+- the e- mail address(s) of THE ADMINISTRATIVE CONTACT, THE TECHNICAL 
+CONTACT AND THE BILLING CONTACT;  
+- the telephone number(s) of THE ADMINISTRATIVE CONTACT, THE TECHNICAL 
+CONTACT AND THE BILLING CONTACT;  
+- THE REGISTRANT undertakes to maintain the information provided to the REGISTRY up to 
+date, complete and correct, throughout the period of validity of the .md DOMAIN NAME.  
+- The REGISTRANT undertakes to provide a functional e -mail address in order to receive any 
+communications from the REGISTRY. 
+- THE REGISTRY will register the domain name only after receiving an email confirmation 
+from the USER.  
+- The REGISTRY reserves the right to reject a domain name registration application or to revoke 
+a domain name for which the REGISTRANT has provided incomplete or inaccurate information.   
+7. GROUNDS FOR REJECTING THE APPLICATION FOR REGISTRATION OR 
+CANCELLING THE REGISTRATION OF A DOMAIN NAME:  
+7.1. Reject the registration request  
+The REGISTRY shall have the right to reject a request on the following grounds:  
+- incomplete information in the application form;  
+- the information provided in the application form is false, inaccurate or misleading ; 
+- the domain name contains more than 63 characters;  
+- the domain name contains special  characters, except for the hyphen (- ); 
+- The domain name starts or ends with a hyphen.  
+- The domain name is identical to a domain name already registering layer;  
+- the domain name contains obsequious language;  
+- the domain name is offensive in nature;  
+- The domain name contains obscene, pornographic or in bad taste words.  
+- the domain name contravenes the provisions of the .md REGULATION  
+- payments remaining.  
+7.2. DE leading  or suspending the domain 
+The REGISTRY may cancel a registration or suspend a domain name:  
+- if the name is managed in a way that could endanger the operation of the DNS;  
+- if the basis on which it was registered in the  u my has changed, e.g., the requesting 
+organization no  longer exists or the contact  details have been modified with inaccurate or f alse 
+data;  
+- if MOLDDATA was informed that a legal action has been initiated regarding the  use of 
+the name;  
+- in the event of a dispute between the parties, until the conflict is resolved;   
+- in other cases,  provided for by regulation .md  
+8. OBLIGATION TO MAINTAIN DATA  
+9 
+The REGISTRANT is responsible that all data regarding the domain name registered and 
+registered in the NUMEL OR DOMAIN REGISTRY.md, such as the contact details and the technical details of the d omain name, to be current, complete and correct throughout the 
+registration period. If the REGISTRANT provides the  wrong information or does not update, in  
+due time, the  information in case of change, the registration of his domain name may be 
+suspended or  cancelled. For the REGISTRY, the only data considered to be true are those 
+provided by the REGISTRANT and  recorded in the DATABASE. MOLDDATA is obliged to 
+take note only of the data communicated by the REGISTRANT through  the www.nic.md or to 
+carry out researches regarding the correctness of these data.  
+If the data are found to be incomplete, inexact  or not updated and, consequently, the  
+determination    of the IDENTITY OF THE REGISTRANT requires considerable time and effort 
+or if the messages to the HOLDER and/or THE BILLING CONTACT cannot be sent, 
+MOLDDATA reserves the   right to revoke the respective domain name.  
+9. TRANSFER OF A DOMAIN NAME  
+The REGISTR ANT has the right to transfer the domain name to a new REGISTRANT or  to a 
+new REGISTRAR. In the case of transfer, the term of validity of the domain name will remain 
+unchanged. The domain that is in dispute or has expired cannot be transferred. 
+The transfer can be made online  based on the request of the transfer code or offline, at  the 
+MOLDDATA headquarters, by filling in  an appropriate application . 
+9.1. Online transfer of the Domain Name to a new registrant  
+9.1.1. In order to transfer a domain name to a new REGISTRANT, the current REGISTRANT 
+will log  in to   his/her user account   on  the www.nic.md  and will request from the REGISTRY a 
+unique transfer authorization code. The authorization code will be provided (1) by the 
+REGISTRY to the current REGISTRANT through the e -mail address indicated at the 
+ADMINISTRATIVE CONTACT and (2) by the current REGISTRANT to the new 
+REGISTRANT.  
+9.1.2. Upon request of the REGISTRANT to the REGISTRAR to trans fer a 
+domain name to a new REGISTRANT, the  current REGISTRAR will request a unique 
+authorization code for the transfer from the REGISTRY. Following its provision, the 
+authorization code will be provided accordingly (1) by the REGISTRAR to the REGISTRAR who will transfer the domain name, (2) by the REGISTRANT to  the new REGISTRANT, ( 3) by  
+to the new REGISTRAR to  the REGISTRAR (current or new) and (4) by the  (current or new) 
+REGISTRAR to the REGISTRY . The REGISTRY will make the transfer after receiving the 
+authorization code from the current or new REGISTRAR. 
+If the REGISTRAR does not provide the REGISTRANT with the unique authorization code in accordance with this procedure, the REGISTRANT may request the authorization code directly from the REGISTRY, provide d that he has made every effort to obtain the authorization code 
+from the REGISTRAR.  
+9.2. Transfer of the domain name to a new registrar  
+At the request of the REGISTRANT to transfer the domain name to another REGISTRAR 
+authorized by the REGISTRY, the current REGISTRAR will request a unique code authorizing 
+the transfer from the REGISTRY. Following its provision, the authorization code will be 
+transmitted consecutively (1) by the REGISTRAR, THE REGISTRANT, (2) by the 
+REGISTRANT  to the new REGISTRAR and (3) by the new REGISTRAR to the REGISTRY. 
+THE REGISTRY will execute the transfer after receiving the authorization code from the new 
+REGISTRAR . 
+If the REGISTRAR does not  provide the REGISTRANT with the unique authorization code in 
+accordance with this procedure, the REGISTRANT may request the authorization code directly 
+from the REGISTRY, provided that he has made every effort to obtain the authorization code 
+from the REG ISTRAR.  
+9.3. Guaranteeing the validity of the transfer  
+9 
+Following the procedures mentioned above, all the  REGISTRANTS and REGISTRARS involved  
+shall guarantee to the REGISTRY the validity of the transfer of the domain name.  
+10. DELETE DOMAIN NAMES
+9 
+A domain can  be deleted  from the REGISTRY DATABASE if:  
+-THE REGISTRANT violates the PNCT. 5.5. of the .md REGULATION;
+-THE
+ REGISTRANT shall submit a request to the REGISTRY to that effect;
+-the 
+domain name has not been paid in the established terms , for 3 days  from the reservation or
+within 30 days from the expiration date;
+-THE REG
+ISTRANT violates the obligation to maintain the  current, complete and correct data;
+-foll
+owing the decision of a court of law;
+With de
+letion from  the DATABASE, the domain name becomes available for a new registration. 
+The domain name shall be deleted  as soon as possible or on the date indicated. 
+11. TAXES AND PAYMENTS
+9 9 
+The fees charged by the REGISTRY for the registration, the extension of the term of a DOMAIN 
+NAME can b e consulte d on the REGISTRY WE BSITE. 
+Payment accounts will be sent to the e -mail address indicated by the R EGISTRANT to the  
+BILLING CONTACT. If the recipient fails to make the payment, the account can be delivered, 
+upon request, 
+to the domain owner. In any case, the domain OWNER is responsible for 
+the payment of the registration    /extension fee of the domain. THE REGISTRANT 
+accepts the issuance and transmission of accounts in electronic form. 
+Payment for registration will be made no later than 3 days f rom the date of booki ng the domain 
+na
+me, and f or renewal - until its e xpiration  date. 
+The
+ REGISTRY is not responsible for any non-compliance with the payment deadlines by the 
+REGISTRANT, including if this leads to the rejection of  the registration or the deletion of the 
+doma
+in name concerned. 
+12. WHOIS DATABASE
+12.1. In
+formation from the WHOIS database
+9 
+When registering a .m d DOMAIN NAME, registration information is entered in a WHOIS 
+DATABASE. Registration takes place only after the  REGISTRANT  a ccepts the  Terms  and 
+Condi
+tions by which the REGISTRY is authorized to publish on its website certain personal data 
+of the REGISTRANT, including some technical data, in order to guarantee the transparency of 
+the domain name system for the public. 
+The purpose of the WHOIS DATABASE is to provide as precise and up -to-date in formation  as 
+possible about the technical and administrative contact points that manage the domain name.  
+If the REGISTRY holds false , incorrect  or non- actual data, the REGISTRANT will not be able to 
+be 
+contacted, and this could lead to the loss of the domain name. By deliberately providing 
+ina
+ccurate information, the  REGISTRANT violates the Terms and Conditions, which could result 
+in 
+the loss of the domain name. 
+12.2 Processing of personal data 
+The collection, processing and use of personal dat a comply with the provisions of the Law on the 
+protection of personal data no. 133 of 08.07.2011 . Personal data ar e processed by MOLDDATA 
+wi
+thin the framework of  the record keeping  system n.0001200- 001,  no. 0001200-006, registered 
+in t he  Register of pe rsonal da t a cont rollers acces sible at t he address 
+www.registru.datepersonale.md.  By registering a domain n ame and  by accepting the Ter ms and 
+Conditions for the registration of DOMENIU.md NAMES, the REGISTRANT authorizes the 
+REGISTRY to process personal dat a and other data nec essary for the administration of the 
+Dom
+ain N ame system. T he REGISTRANT exp resses his explicit consent to the use by the 
+REGISTRY of the data for the purpose of administering the system (which includes the 
+allocation of a domain name, the transfer of a domain name to a new REGISTRANT   /  
+REGISTRAR) and may transmit these data to third parties only with the explicit consent of the 
+REGIST
+RANT o r if this is requested by a court, public authority or authorized body in the 
+exercise of their legitimate powers. 
+The RE
+GISTRANT has the right to access his pers onal data and to ensure their modi fication, in 
+case 
+of errors. 
+The REGISTRANT will inform, without delay, the REGISTRY about any change in the name, 
+address, e -mail address, telephoto number  n, by updating them in the system. Omission or late 
+noti
+fication of the Registry of such changes may result in   the registration of a domain name 
+bei
+ng suspended. 
+12.3. Information  Collected f or I nternal Use 
+The following personal data will be collected for the internal use of the REGISTRY ( except for  
+data that is also available through the WHOIS SERVICE):  
+-the full name of the REGISTRAN T;
+-IDNO/I
+DNP to REGISTRANTULUI
+-the
+ full name of THEADMINISTRATIVE CONTACT, TECHNICAL CONTACT, BILLING
+CONTACT;
+-the 
+addresses of all contact persons;
+-the 
+email addresses of all contacts;
+-the t
+elephone numbers of all contact persons;
+-the ba
+nk details of the REGISTRANT;
+12.4. WHOIS S ERVICE 
+All R EGISTRANTS ar e to acc ept the Terms a nd Conditions by which they authorize the 
+REGISTRY to publish certain personal data. 
+By accessing the REGISTRY WEBSITE and entering the domain name in the WHOIS se arch 
+engine, the information about the DO MENIU.m d and REGISTRANT NAMES can be  viewed i n 
+accordance with t he rules be low: 
+a) when the REGISTRANT is a legal person, the REGISTRY shall, as a rule, publish the 
+following information, through the WHOIS SERVICE: the name of the company    /  
+organization, the legal address, the e-m ail address, the city, the country, the domain name 
+servers, the date of registration and the expiration date of the domain name. 
+b) when the REGISTRANT is a natural person, the information you publish is restrict ed to 
+the e- mail address, city, country, domain name server, registration date and expiration date of the 
+doma
+in name, unless otherwise  r equested. In this case, the REGISTRANT can create and use a 
+specific functional e- mail address for publication in WHOIS, as an alternative to using the 
+per
+sonal e- mail address.  
+To pr event the  misuse o f the WHOIS S E RVICE, s earches a re limite d to a s ingle c r iterion,  the 
+domain name. Therefore, it is not possible to search by name, address, email or phone number. 
+THE W HOIS S ERVICE is of a pure ly informative nature. By conducting a query, the USER 
+agrees not to use the information  to: 
+- allows, authorizes or othe rwise supports the transmission of unwanted advertising, 
+commercial or  other s olicitations,  either by  e - mail or  by other means; 
+-adver
+tises in every way possible;
+-caus
+e inconvenience to the REGISTRANT, in any way, by sending messages to him.
+The 
+REGISTRY reserves the right to initiate  appropriate legal proceedings against any third party 
+who violates these rules of use of the WHOIS SERVICE.  
+13. IDENTIFICATION OF THE REGISTRANT  
+As for the  name of the REGISTRANT, in THE WHOIS DATABASE, there  is the possibility to 
+select the option «Organization name» or  "Natural person". If the field 'Natural person' has be en 
+filled in, it is understood that the registration is made by or on behalf of a natural person.  
+If the field "Name of the Organization"   is filled in, it is understood that the registration was 
+made by a legal person.  
+In order to ensure his/her status as domain name holder, the REGISTRANT (natural or legal 
+person) must have  permanent control  over his/her user account on the  www.nic.md and the e -mail 
+address indicated in the administrative contact section.  THE REGISTRANT  IS solely responsible 
+for the administration of its user account and domain name information, and the REGISTRY    
+disclaims any responsibility in this regard.  
+14. DISPUTES, BLOCKING, REVOCATION OF DOMAIN NAMES  
+Any disputes between the parties ( natural  or legal persons) in connection with the right to use a  
+domain name will be settled  preferably , amicably, arbitrarily and then through other legal 
+methods, including in court. 
+The parties  involved understand and agree that  MOLDDATA does not arbitrate disputes 
+regarding the registration  and use of  domain names, but can only provide, under the law, 
+information regarding them.   If a lawsuit relating to the right to use  a domain name is already 
+pending in a court of  law, arbitr ation or other authorized body, the domain will be blocked until 
+the final decision to resolve the dispute is pronounced.  
+Until the decision is taken, the HOLDER of the act may continue  to use the domain , to extend it, 
+unless it is prohibited from doing so by an enforceable court decision. THE REGISTRY shall comply with ICANN's uniform dispute resolution policy. According to 
+this policy, disputes concerning the right to register a domain name are usually settled in court by 
+the parties claiming  this right.  Once the court determines  who is entitled to registration, the 
+REGISTRY will enforce this decision.  
+THE REGISTRY has the right to revoke a domain name in accordance with these Terms  and 
+Conditions, the  .md Regulation, the IANA/ICANN regulations and the cc TLD Good Practices for 
+the prevention and resolution of Intellectual Property disputes of  the World  Intellectual Property 
+Organization.   
+15. LIMITATION OF LIABILITY  
+The REGISTRY shall not be liable for any loss, interruption of business or  any direct or indirect, 
+special, incidental or consequential damages of any kind (including missed income) regardless of 
+their contractual, quasi -tort nature (including due to negli gence) or  of any other kind, even if the 
+REGISTRY has been informed of the possibility of such damages.  
+16. MODIFICATION OF TERMS ANDCONDITIONS  
+9 9 
+These Terms and Conditions may be unilaterally  modified by the REGISTRY. 
+If it decides to change, the REGISTRY shall make known the new version of the Terms and 
+Conditions by publishing them on its website at least 10  days before the entry into force.  

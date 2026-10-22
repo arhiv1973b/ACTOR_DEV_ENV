@@ -1,0 +1,5 @@
+FROM python:3.11-slim
+WORKDIR /workspace
+RUN pip install --no-cache-dir httpx pydantic requests
+COPY ai_bridge.py /workspace/ai_bridge.py
+CMD ["python", "ai_bridge.py"]

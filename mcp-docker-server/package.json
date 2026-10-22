@@ -1,0 +1,9 @@
+{
+  "name": "custom-mcp",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "dotenv": "latest",
+    "zod": "latest"
+  }
+}
