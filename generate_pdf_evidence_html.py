@@ -1,12 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-⚖ [A©tor Declaration] Secure Automated PDF Evidence HTML Generator (Remediated PR #7/8)
-Features:
-- Data Privacy: Automatic IDNP masking (`mask_data`).
-- Atomic Writes: Safe temporary file writing (`tempfile` + `os.replace`).
-- Professional Styling: Blue-themed CSS variables (`--primary-blue`, `--light-blue`).
-- GitHub Pages Ready URLs & Cryptographic Checksum generation.
+⚖ [A©tor Declaration] Secure Automated PDF Evidence HTML Generator (GitHub Pages Ready with .jpg)
 """
 
 import os
@@ -21,10 +16,8 @@ def mask_data(text: str) -> str:
     """Masks sensitive personal data such as IDNP (13-digit numbers)."""
     if not text:
         return text
-    # Regex to find 13-digit IDNPs and mask the last 7 digits
     idnp_pattern = re.compile(r"\b(\d{6})(\d{7})\b")
-    masked_text = idnp_pattern.sub(r"\1*******", text)
-    return masked_text
+    return idnp_pattern.sub(r"\1*******", text)
 
 
 def generate_report():
@@ -174,47 +167,47 @@ def generate_report():
   <h2>Постраничная опись и OCR-анализ пакета документов (GitHub Pages Online Links)</h2>
   <ul class="evidence-list">
     <li class="evidence-card">
-      <a href="{BASE_URL}/docs/page-1.png" target="_blank">📄 Лист 1 PDF — входящий штамп и запрос в Национальный консилиум</a>
+      <a href="{BASE_URL}/docs/page-1.jpg" target="_blank">📄 Лист 1 PDF — входящий штамп и запрос в Национальный консилиум</a>
       <div class="ocr-text"><pre>{mask_data("Входящий штамп: Nr. de intrare 2597/26\nДата: 23.10.2026\nОрган: Ministerul Muncii și Protecției Sociale\nЗапрос о разъяснении касательно выплаты социального пособия.")}</pre></div>
     </li>
 
     <li class="evidence-card">
-      <a href="{BASE_URL}/docs/page-2.png" target="_blank">📄 Лист 2 PDF — решение о назначении пособия (Управление соц. обеспечения сектора Рышкань)</a>
+      <a href="{BASE_URL}/docs/page-2.jpg" target="_blank">📄 Лист 2 PDF — решение о назначении пособия (Управление соц. обеспечения сектора Рышкань)</a>
       <div class="ocr-text"><pre>{mask_data("Решение № A013794400034 от 14.08.2026\nНазначено пособие: 1167.84 MDL/мес.\nДействует до: 31.07.2027\nНачальник: Violeta Dorul.")}</pre></div>
     </li>
 
     <li class="evidence-card">
-      <a href="{BASE_URL}/docs/page-3.png" target="_blank">📄 Лист 3 PDF — подтверждение FinComBank (15.09.2026)</a>
+      <a href="{BASE_URL}/docs/page-3.jpg" target="_blank">📄 Лист 3 PDF — подтверждение FinComBank (15.09.2026)</a>
       <div class="ocr-text"><pre>{mask_data("Транзакция: 15.09.2026\nСумма: 1168.00 MDL\nСтатус: корректная выплата")}</pre></div>
     </li>
 
     <li class="evidence-card">
-      <a href="{BASE_URL}/docs/page-4.png" target="_blank">📄 Лист 4 PDF — подтверждение FinComBank (15.10.2026)</a>
+      <a href="{BASE_URL}/docs/page-4.jpg" target="_blank">📄 Лист 4 PDF — подтверждение FinComBank (15.10.2026)</a>
       <div class="ocr-text"><pre>{mask_data("Транзакция: 15.10.2026\nСумма: 123.00 MDL\nСтатус: несоответствие установленному размеру (урезание)")}</pre></div>
     </li>
 
     <li class="evidence-card">
-      <a href="{BASE_URL}/docs/page-5.png" target="_blank">📄 Лист 5 PDF — удостоверение личности (провизорное) Мачерета Алексея (IDNP: 2000001159655) и вкладыш Олейник Ирины</a>
+      <a href="{BASE_URL}/docs/page-5.jpg" target="_blank">📄 Лист 5 PDF — удостоверение личности (провизорное) Мачерета Алексея и вкладыш Олейник Ирины</a>
       <div class="ocr-text"><pre>{mask_data("MACERET ALEXEI, IDNP: 2000001159655\nValabil: 03.04.2026 - 03.04.2027, ASP.\nFișa de însoțire: OLEINIC IRINA, IDNP: 0971908038829.")}</pre></div>
     </li>
 
     <li class="evidence-card">
-      <a href="{BASE_URL}/docs/page-6.png" target="_blank">📄 Лист 6 PDF — United Nations House in Moldova и MRZ идентификации</a>
+      <a href="{BASE_URL}/docs/page-6.jpg" target="_blank">📄 Лист 6 PDF — United Nations House in Moldova и MRZ идентификации</a>
       <div class="ocr-text"><pre>{mask_data("United Nations House in Moldova (131, 31 August 1989 st., Chisinau)\nКонтактные данные агентств ООН. Машиночитаемая зона документов.")}</pre></div>
     </li>
 
     <li class="evidence-card">
-      <a href="{BASE_URL}/docs/page-7.png" target="_blank">📄 Лист 7 PDF — сертификат об инвалидности Олейник Ирины (Grad accentuat)</a>
+      <a href="{BASE_URL}/docs/page-7.jpg" target="_blank">📄 Лист 7 PDF — сертификат об инвалидности Олейник Ирины (Grad accentuat)</a>
       <div class="ocr-text"><pre>{mask_data("Certificat nr. CI2623797 din 08.07.2026\nNume: OLEINIC IRINA, IDNP: 0971908038829\nGrad de dizabilitate: Grad accentuat (01.07.2026 - 01.07.2027).")}</pre></div>
     </li>
 
     <li class="evidence-card">
-      <a href="{BASE_URL}/docs/page-8.png" target="_blank">📄 Лист 8 PDF — удостоверения получателей социальных выплат</a>
+      <a href="{BASE_URL}/docs/page-8.jpg" target="_blank">📄 Лист 8 PDF — удостоверения получателей социальных выплат</a>
       <div class="ocr-text"><pre>{mask_data("Legitimatia beneficiarului de prestatie sociala\n- Maceret Alexei (IDNP: 2000001159655)\n- Oleinic Irina (IDNP: 0971908038829)")}</pre></div>
     </li>
 
     <li class="evidence-card">
-      <a href="{BASE_URL}/docs/page-9.png" target="_blank">📄 Лист 9 PDF — подтверждение Консилиума о бессрочной тяжелой степени Мачерета А.</a>
+      <a href="{BASE_URL}/docs/page-9.jpg" target="_blank">📄 Лист 9 PDF — подтверждение Консилиума о бессрочной тяжелой степени Мачерета А.</a>
       <div class="ocr-text"><pre>{mask_data("Raport nr. 1232 din 05.04.2021\nGrad sever de dizabilitate fără termen.\nDirector interimar: Stela PÎNZARU.")}</pre></div>
     </li>
   </ul>
@@ -228,13 +221,11 @@ def generate_report():
 </html>
 """
 
-    # Calculate checksum for clean text
     lines = [l for l in html_template.splitlines() if "checksum:" not in l]
     clean_text = "\n".join(lines)
     file_hash = hashlib.sha256(clean_text.encode("utf-8")).hexdigest()
     final_html = clean_text + f"\n<!-- checksum: sha256({file_hash}) -->\n"
 
-    # Atomic write using tempfile and os.replace
     output_filename = "case_evidence_report.html"
     dir_name = os.path.dirname(os.path.abspath(output_filename)) or "."
 
@@ -245,7 +236,9 @@ def generate_report():
         temp_name = tf.name
 
     os.replace(temp_name, output_filename)
-    print(f"Atomically generated {output_filename}. SHA-256: {file_hash}")
+    print(
+        f"Atomically generated {output_filename} with .jpg assets. SHA-256: {file_hash}"
+    )
 
 
 if __name__ == "__main__":
