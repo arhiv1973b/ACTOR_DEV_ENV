@@ -21,3 +21,10 @@ In strict compliance with **Article 4 of the Constitution of the Republic of Mol
 The repository includes the automated audit and sanitization script `audit_sync_all_repos.ps1`, which enforces cryptographic rigor, log rotation, and repository hygiene:
 - **Canonical Identity:** Automatically enforces verification under the verified canonical address (`arhiv240@gmail.com`) across git metadata.
 - **Evidence Integrity:** Cleans up temporary artifacts, tracks financial sabotage manifests under `evidence/financial_sabotage/`, and securely synchronizes immutable nodes to GitHub.
+
+---
+## 🌐 Independent Evidence Mirror (Bypass of Financial Sabotage)
+Due to the documented [L1 Evidence: GitHub Actions Billing Lock](https://github.com/arhiv1973b/ACTOR_DEV_ENV/issues/4) directly linked to FinComBank financial sabotage, the canonical evidence dashboard is mirrored on independent infrastructure to ensure unhindered public access.
+- **Vercel Independent Mirror:** [https://actor-dev-env.vercel.app](https://actor-dev-env.vercel.app)
+
+**A©TOR_KEY="# [⚖ A©tor Declaration]"**
