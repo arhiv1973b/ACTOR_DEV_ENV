@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "protocol": "TI-ULA Cryptographic Cross-Verification",
   "scope": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-19 04:17:10 UTC",
-  "total_verified_nodes_and_artifacts": 135,
+  "timestamp": "2026-10-23 23:45:57 UTC",
+  "total_verified_nodes_and_artifacts": 142,
   "artifacts": [
     {
       "filename": "ADOPTION_REASONING_1977.yaml",
@@ -23,6 +23,12 @@
       "path": "evidence\\AUTONOMOUS_NODE_WH_FUNDS_ORIGIN.json",
       "size_bytes": 658,
       "sha256": "0719f12ac46cc6f543d3af45849e02e4d8b5bb1d5077bd6ef82c2abd0e239991"
+    },
+    {
+      "filename": "Bloom_Exports_Manifest.md",
+      "path": "evidence\\Bloom_Exports_Manifest.md",
+      "size_bytes": 1466,
+      "sha256": "1ebd25606cccf5d0e35e16ba25d3212fdbb9f1bdb8495ef21e6c5f417c41ffda"
     },
     {
       "filename": "CASCADE_CANCELLATION_MATRIX.yaml",
@@ -70,7 +76,7 @@
       "filename": "INTEGRITY_WITNESS.json",
       "path": "evidence\\INTEGRITY_WITNESS.json",
       "size_bytes": 35598,
-      "sha256": "879a8a95b03dae02922a9659bbb7cafc57c15494117af3b6ef4166ebfee3875d"
+      "sha256": "582837f88ed3476d346ba6f5f4adf21bc57e50631201e36d866dc4ae2f6f46c5"
     },
     {
       "filename": "JUS_COGENS_CONCLUSIONS_10_20.json",
@@ -83,6 +89,12 @@
       "path": "evidence\\Jus_Cogens_Conclusions_3.json",
       "size_bytes": 16005,
       "sha256": "7d20c332876a7dc68717d5c4d98fb1f08b1fa626daf9ea5d7464f40d5ceff41d"
+    },
+    {
+      "filename": "LEGAL_MEMORANDUM_UNHRC_APOSTILLE_CHALLENGE_2026.md",
+      "path": "evidence\\LEGAL_MEMORANDUM_UNHRC_APOSTILLE_CHALLENGE_2026.md",
+      "size_bytes": 6094,
+      "sha256": "3f01274155aa42f0e183313b5a901026d545d4228a1598bcb5ddb4068222534e"
     },
     {
       "filename": "LINK_ACCOUNTABILITY_TO_CONSEQUENCES.yaml",
@@ -217,6 +229,12 @@
       "sha256": "b61bce17578f3fc09474ce5ba303870b9dcbe6e784523e9b346120c1991a1591"
     },
     {
+      "filename": "NODE_SEMNATURA_INDESCIFRABILA_EVIDENCE.json",
+      "path": "evidence\\NODE_SEMNATURA_INDESCIFRABILA_EVIDENCE.json",
+      "size_bytes": 2945,
+      "sha256": "6930f10b28293d6b55ce431294ad1b07c6dd0570ede3c20bd924ff85eb168a75"
+    },
+    {
       "filename": "NODE_SEMNATURA_INDESCIFRABILA_TRAP.yaml",
       "path": "evidence\\NODE_SEMNATURA_INDESCIFRABILA_TRAP.yaml",
       "size_bytes": 1167,
@@ -253,10 +271,16 @@
       "sha256": "231baf517ce8fe10a2e33b625ae63ef5b1e9acefaa4762b8065c3ddd953d466a"
     },
     {
+      "filename": "PETITION_UNHRC_MOLDOVA_APOSTILLE_VIOLATIONS_2026.md",
+      "path": "evidence\\PETITION_UNHRC_MOLDOVA_APOSTILLE_VIOLATIONS_2026.md",
+      "size_bytes": 6589,
+      "sha256": "fb10ad7bf71ff04387ce6d0396c2263bb1a16fe47d7bf8562c19ca71b560a208"
+    },
+    {
       "filename": "receipt_3CD779D395025DDF.pdf",
       "path": "evidence\\receipt_3CD779D395025DDF.pdf",
-      "size_bytes": 176024,
-      "sha256": "3a8c669a0d2dd5d8b457777be80d38d99bc9e89b2749c58ce5f9bb6cae05d0ce"
+      "size_bytes": 176592,
+      "sha256": "e801b1176558c53511e0304d4cf5e68cb072d4a9729a3ea4020c5a65e1d65092"
     },
     {
       "filename": "Scrisoare_insotitoare_Revizuire_Macheret.pdf",
@@ -267,8 +291,8 @@
     {
       "filename": "Scrisoare_insotitoare_Revizuire_Macheret_1.pdf",
       "path": "evidence\\Scrisoare_insotitoare_Revizuire_Macheret_1.pdf",
-      "size_bytes": 872718,
-      "sha256": "56665f535e1199483cfce72b6eb5ed05e880b6c669816231ea9c4ba1863e5aef"
+      "size_bytes": 1083870,
+      "sha256": "a9638e207de2df4635c56badda382e0b3f70560ca41ab507b8a107c492ff7c0d"
     },
     {
       "filename": "ti_ula_jus_cogens_evidence_manifest.json",
@@ -443,6 +467,24 @@
       "path": "evidence\\financial_sabotage\\udhr_legal_doctrine_mapping.yaml",
       "size_bytes": 1517,
       "sha256": "445f07cbbcd9972e77a9b368ba7318dacaa8d0bab84aa0b3873fab803063084d"
+    },
+    {
+      "filename": "fincombank_billing_crypto_manifest.json",
+      "path": "evidence\\fincombank-billing-traces\\fincombank_billing_crypto_manifest.json",
+      "size_bytes": 65248,
+      "sha256": "20a64943d36e6c3713997e09b5e7387567b696ac9a4be133c4d4130548b025cc"
+    },
+    {
+      "filename": "Cerere_de_Revizuire_Macheret_PRINT.pdf",
+      "path": "evidence\\fincombank-billing-traces\\downloads_2026\\Cerere_de_Revizuire_Macheret_PRINT.pdf",
+      "size_bytes": 52044,
+      "sha256": "1c3349990c5325963306f07721f80918026ecc3eaf4a974bfbaeb83fa5794eaf"
+    },
+    {
+      "filename": "Document_232.pdf",
+      "path": "evidence\\fincombank-billing-traces\\downloads_2026\\Document_232.pdf",
+      "size_bytes": 211841,
+      "sha256": "8490984f2e333b7516fac9128fd6154074e8805b6fb8d53a604083ecb40c6d54"
     },
     {
       "filename": "BANK_REFUSAL_6387.md",
