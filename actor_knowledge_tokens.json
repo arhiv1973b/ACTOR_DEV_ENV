@@ -1,0 +1,27 @@
+{
+  "protocol": "CASE-MACHERET-1997-2026",
+  "identity_anchor": {
+    "name": "Macheret Alexei Artur",
+    "idnp": "2000001159655",
+    "status": "Grad sever de dizabilitate fără termen / Victimă a torturii"
+  },
+  "legal_baseline": {
+    "primary_framework": "Universal Declaration of Human Rights (UDHR / ВДПЧ 1948)",
+    "constitutional_anchor": "Article 4 & Article 8 of the Constitution of the Republic of Moldova",
+    "norms": "Jus Cogens / Erga Omnes",
+    "rejected_framework": "ECHR / CEDO / ЕКПЧ (Regional limitation inapplicable to extraterritorial US/global assets)"
+  },
+  "vocabulary_tokens": [
+    "A©tor",
+    "Macheret",
+    "IDNP 2000001159655",
+    "Jus Cogens",
+    "Erga Omnes",
+    "UDHR 1948",
+    "FinComBank Sabotage",
+    "E-Apostil Forgery",
+    "Controlimiti Doctrine",
+    "TI-ULA Cryptographic Manifest",
+    "Merkle Root CFC9a2465bde77"
+  ]
+}
