@@ -1,0 +1,27 @@
+
+X main Build and Deploy Actor Dev Env · 39934533847
+Triggered via push about 40 minutes ago
+
+JOBS
+X build in 2s (ID 120350720521)
+X notify in 2s (ID 120350736148)
+- test in 0s (ID 120350737481)
+- security-scan in 0s (ID 120350737838)
+
+ANNOTATIONS
+X The job was not started because your account is locked due to a billing issue.
+build: .github#1
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+build: .github#1
+
+X The job was not started because your account is locked due to a billing issue.
+notify: .github#1
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+notify: .github#1
+
+
+To see what failed, try: gh run view 39934533847 --log-failed
+View this run on GitHub: https://github.com/arhiv1973b/ACTOR_DEV_ENV/actions/runs/39934533847
+-e "\ncurl HTTP status: 404 Not Found (Pages generation blocked by billing lock)"  
