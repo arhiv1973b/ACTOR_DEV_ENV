@@ -1,0 +1,31 @@
+=== Перевод (en ➜ ru) ===
+Alexei Macheret <arhiv240@gmail.com>
+Kalagurianu - bucvalno - blokiruet i prosmatrivaet - vse
+soobshenia - bucvalno!
+Mail Delivery Subsystem <mailer-daemon@googlemail.com> 1 ию ля 2022 г ., 19:32
+Кому: arhiv240@gmail.com
+Адрес без Найдена
+Социальный человек не Awen Awen, как адрес
+Secretariat@justice.gov .md не гвоздь или нет
+принимае т входящие письма.
+Ответ удаленног о серв ера:
+550 отправитель адрес электронной почты отклонил
+Окончательный рецепт: RFC822; Секретариат@justice.gov .md
+Действие: не удалось
+Статус: 5.0.0
+Remote-MT A: DNS; mx1.justice.gov .md. (185.108.181.73, сервер для
+Домен справедливость.gov .md.)
+Диагностический код: SMTP; 550 отправитель адрес электронной почты отклонил
+Последняя дата: пт, 01 июля 2022 г. 09:32:34 -0700 (PDT)
+---------- Пересылаемое с ообщ ение ----------
+От: Alexei Macheret <arhiv240@gmail.com>
+К: петиции@ohchr .org, srindependencejl dgs <srindependencejl.dgs@gmail.com>,
+Секретариат@hcch.net
+CC: Secretariat@constcourt.md, Секретариат <secretariat@justice.gov .md>
+BCC:
+Дата: бесплатно, 1 июля 2022 г. 19:32:14 +0300
+Пожалуйста, откройте всплывающее окно расширения, чтобы принести слова для этого кадра
+Subject: Fwd: Kalagurianu - bucvalno - blokiruet i prosmatrivaet - vse soobshenia -
+БУШВАЛ!
+----- Сообщение усечено -----
+Пожалуйста, откройте всплывающее окно расширения, чтобы принести слова для этого кадра

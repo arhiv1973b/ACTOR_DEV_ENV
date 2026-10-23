@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-TI-ULA Manifest Generator with A©TOR_KEY Integration
+TI-ULA Manifest Generator with A©tor_KEY Integration
 Framework: TI-ULA v1.2
 Author: Alexei Macheret
 """
@@ -15,7 +15,7 @@ def generate_manifest(output_path: str = "ti_ula_manifest_signed_template.json")
         "metadata": {
             "framework": "TI-ULA",
             "version": "1.2",
-            "A©TOR_KEY": "# [⚖ A©tor Declaration]",
+            "A©tor_KEY": "# [⚖ A©tor Declaration]",
             "actor_identity": "Alexei Macheret",
             "rights_reservation": "All rights, authorship, and structural integrity reserved under legal and cryptographic anchor",
             "session_start": datetime.utcnow().isoformat() + "Z",
@@ -33,7 +33,7 @@ def generate_manifest(output_path: str = "ti_ula_manifest_signed_template.json")
         json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8"
     )
     print(
-        f"[SUCCESS] TI-ULA v1.2 manifest template generated with A©TOR_KEY at: {path}"
+        f"[SUCCESS] TI-ULA v1.2 manifest template generated with A©tor_KEY at: {path}"
     )
 
 

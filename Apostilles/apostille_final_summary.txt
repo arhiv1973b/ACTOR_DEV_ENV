@@ -1,0 +1,89 @@
+=== ИТОГОВЫЙ АНАЛИЗ АПОСТИЛЕЙ ===
+
+Всего обработано файлов: 31
+
+СТАТУС АНАЛИЗА:
+MATCH: 27 (87.1%)
+MISMATCH: 4 (12.9%)
+
+ФАЙЛЫ С ОШИБКАМИ (4):
+apostila (25).pdf: pos 0: G≠E; pos 1: G≠J; pos 2: T≠3; pos 4: E≠9; pos 5: B≠7; pos 6: E≠0; pos 7: Z≠3; pos 8: G≠F; pos 9: Y≠P; pos 10: G≠F; pos 11: H≠S; pos 12: 7≠4
+   Security Code: 2013074155734
+   Case: 671
+
+apostila (6).pdf: pos 0: G≠E; pos 1: G≠J; pos 2: T≠3; pos 4: E≠9; pos 5: B≠7; pos 6: E≠0; pos 7: Z≠3; pos 8: G≠F; pos 9: Y≠P; pos 10: G≠F; pos 11: H≠S; pos 12: 7≠4
+   Security Code: 2013074155734
+   Case: 671
+
+apostila (22).pdf: pos 0: G≠E; pos 1: G≠J; pos 2: T≠3; pos 4: E≠9; pos 5: B≠7; pos 6: E≠0; pos 7: Z≠3; pos 8: G≠F; pos 9: Y≠P; pos 10: G≠F; pos 11: H≠S; pos 12: 7≠4
+   Security Code: 2013074155734
+   Case: 671
+
+apostila (33).pdf: pos 0: F≠C; pos 1: J≠K; pos 2: X≠5; pos 3: U≠O; pos 4: 5≠1; pos 5: 8≠3; pos 6: 8≠3; pos 7: S≠Z; pos 8: H≠K; pos 9: P≠L; pos 10: D≠J; pos 11: P≠E; pos 12: 2≠8
+   Security Code: 2013074127359
+   Case: 1-42/09
+
+ПОДПИСАНТЫ:
+Тома Надежда: 9 документов
+Мирон Алёна: 8 документов
+Фельдман Ян: 3 документов
+Иордан Юрий: 2 документов
+Гонза Наталья: 2 документов
+Василий Стахурский: 2 документов
+Стела Пынзару: 2 документов
+Пушкуца Сергей: 2 документов
+Гузун Корнелиу: 1 документов
+
+СУДЕБНЫЕ ДЕЛА:
+Дело 07-6/3-41: 4 документов
+Дело 671: 4 документов
+Дело 92/21: 3 документов
+Дело 723: 3 документов
+Дело 318: 2 документов
+Дело 1-42/09: 2 документов
+Дело 21-021527: 2 документов
+Дело 2-5486: 2 документов
+Дело 1-568/98: 2 документов
+Дело 1-272/03: 2 документов
+Дело 784: 2 документов
+Дело 04-07/1191: 2 документов
+Дело 1a-42/09: 1 документов
+
+ССЫЛКИ:
+🟢 Рабочие ссылки: 27
+🔴 Нерабочие ссылки: 4
+
+РАБОЧИЕ ССЫЛКИ:
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/3HWVD912FN7H4/securityCode/2013074053054
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/7G6YCW5R9NCP4/securityCode/2013073967178
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/CK5O133ZKLJE8/securityCode/2013074127359
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/BOUS9XAQDTFH2/securityCode/2013073851064
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/CQ0VC27VGTCK6/securityCode/2013073880545
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/CTTO324Z8MDO7/securityCode/2013074147166
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/IG4Q770QDXGH7/securityCode/2013074184369
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/7H2Q3790FZEI5/securityCode/2013073926618
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/EJ3U9703FPFS4/securityCode/2013074155734
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/5S2WF92X7X4R8/securityCode/2013074079955
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/6R3U2Y63JZ6M3/securityCode/2013073928629
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/9OVS71FRKM4S3/securityCode/2013073942632
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/DLUX84ASKYII6/securityCode/2013074013836
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/CQ0VC27VGTCK6/securityCode/2013073880545
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/BOUS9XAQDTFH2/securityCode/2013073851064
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/7H2Q3790FZEI5/securityCode/2013073926618
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/IG4Q770QDXGH7/securityCode/2013074184369
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/BOUS9XAQDTFH2/securityCode/2013073851064
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/3HWVD912FN7H4/securityCode/2013074053054
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/7G6YCW5R9NCP4/securityCode/2013073967178
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/5S2WF92X7X4R8/securityCode/2013074079955
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/3HWVD912FN7H4/securityCode/2013074053054
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/9OVS71FRKM4S3/securityCode/2013073942632
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/DLUX84ASKYII6/securityCode/2013074013836
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/BOUS9XAQDTFH2/securityCode/2013073851064
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/IG4Q770QDXGH7/securityCode/2013074184369
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/CTTO324Z8MDO7/securityCode/2013074147166
+
+НЕРАБОЧИЕ ССЫЛКИ:
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/GGTUEBEZGYGH7/securityCode/2013074155734
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/GGTUEBEZGYGH7/securityCode/2013074155734
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/GGTUEBEZGYGH7/securityCode/2013074155734
+https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/FJXU588SHPDP2/securityCode/2013074127359

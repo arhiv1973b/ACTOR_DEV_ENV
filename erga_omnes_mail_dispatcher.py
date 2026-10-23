@@ -2,7 +2,7 @@
 """
 ERGA OMNES MAIL DISPATCHER & EVIDENCE GATEWAY
 Case Reference: CASE-MACHERET-1997-2026
-Security Anchor: A©TOR_KEY="# [⚖ A©tor Declaration]"
+Security Anchor: A©tor_KEY="# [⚖ A©tor Declaration]"
 """
 
 import os
@@ -88,7 +88,7 @@ def dispatch_document(doc_path, category="JUDICIAL", dry_run=True):
         f"Case Reference: CASE-MACHERET-1997-2026\n"
         f"Document: {file_name}\n"
         f"Cryptographic Anchor (SHA-256): {file_hash}\n"
-        f'Signature: A©TOR_KEY="# [⚖ A©tor Declaration]"\n\n'
+        f'Signature: A©tor_KEY="# [⚖ A©tor Declaration]"\n\n'
         f"This message transmits verified evidentiary material under international peremptory norms."
     )
     msg.set_content(body)

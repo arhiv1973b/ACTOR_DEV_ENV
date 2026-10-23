@@ -1,0 +1,73 @@
+DEMERS SUPLIMENTAR
+(la Cererea de revizuire deja depusă la Curtea Supremă de Justiție)
+
+CURTEA SUPREMĂ DE JUSTIȚIE A REPUBLICII MOLDOVA
+(prin intermediul Curții de Apel Centru - completare a materialelor deja transmise)
+Dosar de referință: Încheierea Curții de Apel Centru din 01 octombrie 2026
+Dosar nr. 21r-10/26
+Complet atacat: Băbălău Denis, Schibin Vladislav, Buzu Elisaveta
+
+Revizuent: MACHERET ALEXEI (A©tor)
+IDNP: 2000001159655
+Domiciliu: mun. Chișinău, str. Andrei Doga 30, ap. 38
+Statut: persoană cu dizabilitate severă (gradul I, pe viață), victimă oficial recunoscută a torturii (dosar nr. 1-568/98)
+
+I. TEMEIUL ABSOLUT
+Prezentul demers se întemeiază exclusiv pe:
+• art. 4 și art. 8 din Constituția Republicii Moldova (prioritate absolută a dreptului internațional privind drepturile omului);
+• art. 8 din Declarația Universală a Drepturilor Omului din 1948;
+• normele imperative de jus cogens și obligațiile erga omnes privind interdicția absolută a torturii.
+
+Orice hotărâre care menține efectele unei condamnări obținute sau menținute prin ascunderea faptului torturii este nulă de drept ab initio. Interdicția torturii nu admite excepții, termene de prescripție, „natură juridică” formală sau echilibrări procedurale.
+
+II. STAREA DE FAPT PROCESUALĂ - CICLUL ESTE ÎNCHIS
+Cererea de revizuire a fost deja depusă la Curtea Supremă de Justiție.
+Prezentul demers se depune prin intermediul Curții de Apel Centru exclusiv pentru a completa materialele deja transmise și a închide definitiv procedura, fără a lăsa loc interpretărilor formale.
+
+1. Nulitatea absolută a Încheierii din 01.10.2026
+Completul Băbălău Denis - Schibin Vladislav - Buzu Elisaveta a reținut că constatarea oficială a torturii „în sine nu modifică natura juridică a hotărârii” și „nu transformă sentința de condamnare într-o sentință de achitare”.
+Această concluzie constituie act de legalizare a consecințelor torturii. Ea este nulă de drept deoarece:
+• interdicția torturii are efect direct și imediat;
+• orice menținere a efectelor unei proceduri viciate de tortură este ea însăși încălcare continuă a jus cogens;
+• instanța a refuzat să aplice prioritatea art. 4 Constituție și a art. 8 din Declarația Universală a Drepturilor Omului din 1948.
+
+2. Prioritatea Deciziei CSJ nr. 1ra-834/09 din 21.07.2009
+Decizia Curții Supreme de Justiție nr. 1ra-834/09 din 21.07.2009 a recunoscut caracterul abuziv al acuzațiilor și a produs eliberarea efectivă după executarea a 8 luni de detenție reală în Penitenciarul nr. 15 Cricova.
+Această decizie a interpretat deja legea. Menținerea artificială a efectelor sentinței din 08.11.2006 după Decizia 1ra-834/09 reprezintă o continuare a detenției ilegale sub formă de nereabilitare perpetuă.
+
+3. Cascada obligatorie a reabilitării
+Constatarea oficială a torturii în dosarul nr. 1-568/98 (judecător Grigoraș) a generat, prin forța normelor de jus cogens, un mecanism de reabilitare cascadă:
+• anularea automată a tuturor actelor derivate;
+• nulitatea ab initio a acuzațiilor reclasificate artificial pe art. 217 și 219 CP;
+• interdicția de a menține orice consecință juridică, patrimonială sau financiară a procedurilor viciate.
+Cererea de reabilitare judecătorească aflată în procedura judecătorului Grigoraș Viorelia a devenit irevocabilă. Faptul că instanțele ulterioare au pretins că trebuie „reexaminate” condițiile art. 112 CP sau „natura juridică” a sentinței din 2006 constituie o încălcare deliberată a caracterului autoexecutiv al normelor de jus cogens.
+
+4. Activele de 25.210.256,15 MDL - instrument de realizare a art. 4 Constituție
+Suma de 25.210.256,15 MDL, reținută ilegal în sistemul FinComBank / FinComPay sub pretextul „erorii de identificare” (Maceret / Macheret), nu reprezintă o simplă pretenție civilă.
+Acești bani au fost puși la dispoziție tocmai pentru a permite exercitarea dreptului fundamental prevăzut de art. 4 din Constituție - prioritatea absolută a tratatelor internaționale privind drepturile omului și, prin urmare, „dezghețarea” efectului direct al Declarației Universale a Drepturilor Omului din 1948.
+Reținerea lor sub pretextul unei diferențe ortografice (infirmate definitiv de Avizul științific nr. 269 din 01.10.2026 al Institutului de Filologie) constituie continuare a torturii financiare și a privării de mijloacele necesare pentru apărarea drepturilor fundamentale.
+
+5. Integritatea probatorie
+Întreaga bază probatorie (353 de artefacte) este securizată criptografic:
+• Protocol: TI-ULA / A©tor Key Framework
+• Merkle Root (hash-secol): CFC9a2465bde77
+• Algoritm: SHA-256 + semnătură Ed25519
+• Depozit oficial: https://github.com/arhiv1973b/ACTOR_DEV_ENV (ramura evidence/fincombank-billing-traces)
+Orice modificare ulterioară a materialelor este detectabilă și nulă.
+
+III. SOLICITĂRI FINALE
+1. Se constată că Încheierea Curții de Apel Centru din 01.10.2026 este nulă de drept ab initio ca act de legalizare a consecințelor torturii.
+2. Se aplică imediat efectul Deciziei CSJ nr. 1ra-834/09 din 21.07.2009 și al constatării torturii din dosarul nr. 1-568/98.
+3. Se dispune reabilitarea judiciară integrală (restitutio in integrum) cu anulare cascadă a tuturor actelor ulterioare.
+4. Se dispune deblocarea imediată a sumei de 25.210.256,15 MDL și restabilirea tuturor drepturilor patrimoniale.
+5. Se interzice categoric orice intervenție a avocaților din oficiu. Orice tentativă de retragere sau modificare a cererii de către aceștia este nulă de drept.
+
+ANEXE (completare)
+1. Extras din baza de date criptografică (Manifest JSON + Merkle Root CFC9a2465bde77).
+2. Avizul științific nr. 269 din 01.10.2026.
+3. Adeverința de dizabilitate gradul I pe viață.
+4. Copia prezentului demers cu mențiunea de înregistrare.
+
+Data: 22 octombrie 2026
+Macheret Alexei (A©tor)
+A©TOR_KEY="# [⚖ A©tor Declaration]"

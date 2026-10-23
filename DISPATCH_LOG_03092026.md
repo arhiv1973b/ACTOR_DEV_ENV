@@ -2,7 +2,7 @@
 **Дата:** 3 сентября 2026 г.  
 **Отправитель:** Алексей Мачерет (`alexeimaceret7@gmail.com`)  
 **Проект / Контекст:** `[CASE-MACHERET-1997-2026]`  
-**Ключ / Декларация:** `A©TOR_KEY="# [⚖ A©tor Declaration]"`  
+**Ключ / Декларация:** `A©tor_KEY="# [⚖ A©tor Declaration]"`  
 
 ---
 

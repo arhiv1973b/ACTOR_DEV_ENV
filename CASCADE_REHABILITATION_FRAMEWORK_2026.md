@@ -1,7 +1,7 @@
 # ФРЕЙМВОРК КАСКАДНОЙ РЕАБИЛИТАЦИИ И МЕЖДУНАРОДНОЙ ЗАЩИТЫ
 
 **Платформа:** TI-ULA / CASE-MACHERET-1997–2026  
-**Базовый ключ:** A©TOR_KEY="# [⚖ A©tor Declaration / Jus Cogens]"  
+**Базовый ключ:** A©tor_KEY="# [⚖ A©tor Declaration / Jus Cogens]"  
 
 ---
 

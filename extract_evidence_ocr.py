@@ -4,7 +4,7 @@
 Universal Evidence OCR & Text Extraction Pipeline (PyMuPDF + Tesseract)
 Case: CASE-MACHERET-1997-2026
 Author / Sovereign Witness: Macheret Alexei Artur (A©tor)
-A©TOR_KEY="# [⚖ A©tor Declaration]"
+A©tor_KEY="# [⚖ A©tor Declaration]"
 Legal Anchor: Art. 4 Constitution of RM, UDHR 1948, Jus Cogens / Erga Omnes
 """
 
@@ -32,7 +32,7 @@ except ImportError:
     )
 
 EVIDENCE_DIR = r"H:\ACTOR_DEV_ENV\evidence"
-SIGNATURE_KEY = 'A©TOR_KEY="# [⚖ A©tor Declaration]"'
+SIGNATURE_KEY = 'A©tor_KEY="# [⚖ A©tor Declaration]"'
 
 
 def compute_sha256(filepath):

@@ -1,5 +1,5 @@
 # ocr_swarm_ro_ru.py
-# A©TOR_KEY="# [⚖ A©tor Declaration]"
+# A©tor_KEY="# [⚖ A©tor Declaration]"
 # Swarm OCR: Romanian + Russian via public catalogs / public OCR APIs.
 # Raw output keeps defects. Fingerprint stays in ocr_zero_weight_bridge.
 #

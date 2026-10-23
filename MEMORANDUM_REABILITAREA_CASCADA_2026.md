@@ -3,7 +3,7 @@
 ## Reabilitarea în cascadă ca mecanism de restabilire a aplicării efective a Declarației Universale a Drepturilor Omului
 
 **TI-ULA / CASE-MACHERET-1997-2026**  
-**A©TOR_KEY:** `# [⚖ A©tor Declaration]`
+**A©tor_KEY:** `# [⚖ A©tor Declaration]`
 
 ---
 

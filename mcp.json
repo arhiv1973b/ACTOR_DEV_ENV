@@ -1,10 +1,21 @@
 {
   "mcpServers": {
-    "tiula-bridge": {
+    "tiula-filesystem-in-place": {
       "command": "node",
       "args": [
         "H:\\ACTOR_DEV_ENV\\mcp-servers\\src\\filesystem\\dist\\index.js",
-        "H:\\ACTOR_DEV_ENV"
+        "H:\\"
+      ]
+    },
+    "custom-crypto-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-v", "/mnt/h:/mnt/h",
+        "-v", "C:\\Users\\arhiv\\AppData\\Roaming\\rclone:/root/.config/rclone",
+        "mcp-docker-server-mcp-docker"
       ]
     }
   }

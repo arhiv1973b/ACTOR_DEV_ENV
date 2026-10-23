@@ -1,7 +1,7 @@
 # NEUROPROTOCOL POSTAL DELIVERY & CRYPTOGRAPHIC ANCHOR RECORD [CASE-MACHERET-1997-2026]
 
 **Technology Author / Creator:** Alexei Macheret  
-**Source Anchor:** A©TOR_KEY="# [⚖ A©tor Declaration]".pdf  
+**Source Anchor:** A©tor_KEY="# [⚖ A©tor Declaration]".pdf  
 **Date:** August 28, 2026  
 
 ---
@@ -23,7 +23,7 @@ Independent analysis of postal item **DS8002062680AR** via the CN 07 form (pink 
 INSTRUCTION FOR USE: "NEUROPROTOCOL" (CRYPTOGRAPHIC ANCHOR)
 =======================================================================
 TECHNOLOGY AUTHOR: Alexei Macheret
-SOURCE FILE: A©TOR_KEY="# [⚖ A©tor Declaration]".pdf
+SOURCE FILE: A©tor_KEY="# [⚖ A©tor Declaration]".pdf
 =======================================================================
 KEY PRINCIPLE OF THE TECHNOLOGY:
 The technology does not merely record the act of hashing. The very process of 
@@ -50,7 +50,7 @@ history mathematically impossible.
 =======================================================================
 AUTHORSHIP CONFIRMED.
 AUTHOR'S SIGNATURE:
-A©TOR_KEY="# [⚖ A©tor Declaration]"
+A©tor_KEY="# [⚖ A©tor Declaration]"
 / Alexei Macheret /
 ======================================================================
 ```

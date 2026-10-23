@@ -28,4 +28,4 @@ Respectfully submitted,
 
 **Alexei Macheret (A©tor)**  
 *Legal Architect & Submitting Claimant*  
-Digital Signature: `A©TOR_KEY="# [⚖ A©tor Declaration]"`
+Digital Signature: `A©tor_KEY="# [⚖ A©tor Declaration]"`

@@ -1,0 +1,1904 @@
+=== Перевод (ro ➜ ru) ===
+Ⱦɨɜɟɪɟɧɧɨɫɬɶ  
+ɹɧɜɚɪɹɞɜɟɬɵɫɹɱɢɜɨɫɶɦɨɝɨɝɨɞɚ  
+ əɆȺɊɄɈȼɂȼȺɇɝɨɞɚɪɨɠɞɟɧɢɹɥɢɱɧɵɣɤɨɞ 
+ɩɪɨɠɢɜɚɸɳɢɣɩɨɚɞɪɟɫɭɦɭɧɄɢɲɢɧɟɜɭɥ  Ɇ Ʉɨɫɬɢɧɤɜ
+ɧɚɫɬɨɹɳɢɦɩɨɪɭɱɚɸɰɇȺɇɌɈɃɅɘȾɆɂɅȺɥɢɱɧɵɣɤɨɞ
+ɦɟɫɬɨɠɢɬɟɥɶɫɬɜɚɦɭɧɄɢɲɢɧɟɜɭɥɂɫɦɚɢɥɤɜāɩɪɟɞ ɫɬɚɜɥɹɬɶɦɨɢ
+ɢɧɬɟɪɟɫɵɜɨɜɫɟɯɤɨɦɩɟɬɟɧɬɧɵɯɨɪɝɚɧɚɯɫɥɟɞɫɬɜɟɧɧɵɯɨɪɝɚɧɚɯɢɜ ɨɜɫɟɯ
+ɫɭɞɚɯɩɪɚɜɨɨɯɪɚɧɢɬɟɥɶɧɵɯɨɪɝɚɧɚɯɩɨɥɢɰɢɢɩɪɨɤɭɪɚɬɭɪɟɚɞɦɢɧɢɫɬɪɚɬɢɜɧɵɯɢɝɨɫɭɞɚɪɫɬɜɚɊɟɫɩɭɛɥɢɤɢɆɨɥɞɨɜɚɫɩɪɚɜɚɦɢɩɪɟɞɭɫɦɨɬɪɟɧɧɵɦɢɡɚɤɨɧɨɦɩɨɜɫɟɦɝɪɚɠɞɚɧɫɤɢɦɞɟɥɚɦɛɭɞɭɱɢɢɫɬɰ ɨɦ
+ɨɬɜɟɬɱɢɤɨɦɬɪɟɬɶɢɦɥɢɰɨɦɢɥɢɩɨɬɟɪɩɟɜɲɢɦɫɬ ɍɉɄɊɆ
+Ɇɨɣɩɪɟɞɫɬɚɜɢɬɟɥɶɛɭɞɟɬɢɧɢɰɢɢɪɨɜɚɬɶɢɩɨɞɩɢɫɵɜɚɬɶɢɫɤɢɩɨɥɭɱɚ ɬɶɜɫɟ
+ɩɪɨɰɟɫɫɭɚɥɶɧɵɟɞɨɤɭɦɟɧɬɵɜɬɨɦ ɱɢɫɥɟɫɭɞɟɛɧɵɟɪɟɲɟɧɢɹɫɦɨɠɟɬ ɩɪɨɜɟɫɬɢ
+ɥɸɛɭɸɩɪɢɦɢɪɢɬɟɥɶɧɭɸɫɞɟɥɤɭɫɦɨɠɟɬɨɬɤɚɡɚɬɶɫɹɨɬɢɫɤɚɫɦɨɠɟɬ ɡɚɹɜɢɬɶɢ
+ɫɦɨɠɟɬɨɬɤɚɡɚɬɶɫɹɨɬɚɩɟɥɥɹɰɢɨɧɧɨ ɣɠɚɥɨɛɵɛɭɞɟɬɫɦɨɠɟɬɨɬɤɚɡɚɬ ɶɫɹɨɬ
+ɜɫɟɯɢɥɢɱɚɫɬɢɬɪɟɛɨɜɚɧɢɣɜɢɫɤɚɯɫɦɨɠɟɬɢɡɦɟɧɢɬɶɨɫɧɨɜɚɧɢɟɢ ɩɪɟɞɦɟɬ
+ɢɫɤɨɜɛɭɞɟɬɩɪɟɞɫɬɚɜɥɹɬɶɦɟɧɹɜɫɭɞɚɯɤɨɬɨɪɵɟɛɭɞɭɬɪɚɫɫɦɚɬɪɢ ɜɚɬɶɷɬɢ
+ɞɟɥɚɤɚɤɩɨɫɭɳɟɫɬɜɭɬɚɤɢɜɚɩɟɥɥɹɰɢɨɧɧɨɣɢɥɢɱɪɟɡɜɵɱɚɣɧɨɣɚɩɟɥɥɹɰɢɨɧɧɨɣɢɧɫɬɚɧɰɢɢɫɦɨɠɟɬɩɪɨɢɡɜɨɞɢɬɶɩɨɫɬɭɩɥɟɧɢɹɢɩɥɚɬɟ ɠɢɜɚ
+ɦɨɠɟɬɯɨɞɚɬɚɣɫɬɜɨɜɚɬɶɨɜɥɨɠɟɧɢɢɬɢɬɭɥɚɫɢɫɩɨɥɧɢɬɟɥɶɧɨɣɮɨɪɦɭɥ ɨɣɢ
+ɡɚɛɟɪɟɬɟɝɨɩɪɟɞɫɬɚɜɢɬɢɫɩɨɥɧɢɬɟɥɶɧɵɟɞɨɤɭɦɟɧɬɵɤɢɫɩɨɥɧɟɧɢɸ ɩɨɞɚɫɬ
+ɯɨɞɚɬɚɣɫɬɜɚɜȾɟɩɚɪɬɚɦɟɧɬɢɫɩɨɥɧɟɧɢɹɫɭɞɟɛɧɵɯɪɟɲɟɧɢɣɨɛɢɫɩɨɥɧɢɬɟɥɶɧɨɦɩɪɨɢɡɜɨɞɫɬɜɟɨɡɧɚɤɨɦɢɬɫɹɫɦɚɬɟɪɢɚɥɚɦɢɞɟɥɚɢɢɫɩɨɥɧɢɬɟɥɶɧɨɝɨɩɪɨɢɡɜɨɞɫɬɜɚɢɫɩɨɥɧɢɬɟɥɶɧɨɟɩɪɨɢɡɜɨɞɫɬɜɨɧɚɩɚ ɞɭɬɧɚ
+ɞɟɣɫɬɜɢɹɫɭɞɟɛɧɨɝɨɩɪɢɫɬɚɜɚ -ɢɫɩɨɥɧɢɬɟɥɹɢɡɵɦɚɸɬɧɚɥɢɱɧɵɟɞɟɧɟɠɧɵɟ
+ɫɪɟɞɫɬɜɚɢɥɢɢɧɵɟɤɜɢɬɚɧɰɢɢɩɨɢɫɩɨɥɧɢɬɟɥɶɧɵɦɞɨɤɭɦɟɧɬɚɦɆɨɣɩɪɟɞɫɬɚɜɢɬɟɥɶɫɦɨɠɟɬɫɞɟɥɚɬɶɜɫɟɱɬɨɜɦɨɢɯɫɢɥɚɯɞɥɹɜɵɩɨɥɧɟ ɧɢɹɷɬɨɝɨ
+ɦɚɧɞɚɬɚɢɧɢɤɬɨɧɟɫɦɨɠɟɬɧɚɥɨɠɢɬɶɤɚɤɢɟ -ɥɢɛɨɨɝɪɚɧɢɱɟɧɢɹɧɟɬɨɱɧɨɫɬɢ
+ɢɥɢɧɟɫɨɜɟɪɲɟɧɫɬɜɚɧɚɟɝɨɦɚɧɞɚɬȾɥɹɜɵɩɨɥɧɟɧɢɹɷɬɨɝɨɦɚɧɞɚɬɚ ɦɨɣ
+ɩɪɟɞɫɬɚɜɢɬɟɥɶɩɨɞɩɢɲɟɬɫɹɜɟɡɞɟɝɞɟɷɬɨɧɟɨɛɯɨɞɢɦɨɢɟɝɨɩɨɞɩɢ ɫɶɛɭɞɟɬ
+ɩɪɨɬɢɜɨɩɨɫɬɚɜɥɟɧɚɦɧɟɜɩɪɟɞɟɥɚɯɦɚɧɞɚɬɚȾɨɜɟɪɟɧɧɨɫɬɶɞɟɣɫɬɜɢɬ ɟɥɶɧɚ
+ɊȿɋɉɍȻɅɂɄȺɆɈɅȾɈȼȺɑȺɋɌɇɕɃɇɈɌȺɊɂɍɋɄɈɇɌɈɊȺɆȺɊɂɂɌɄɈɅɈɆȿȿɐɄɈɇɌɈɊȺɦɭɧɄɢɲɢɧɟɜɭɥəɭɞɨɫɬɨɜɟɪɹɸɧɚɫɬɨɹɳɭɸ 
+ɞɨɜɟɪɟɧɧɨɫɬɶɜɦɨɟɦɩɪɢɫɭɬɫɬɜɢɢɡɚɩɪɟɞɟɥɚɦɢɲɬɚɛ -ɤɜɚɪɬɢɪɵɩɨɚɞɪɟɫɭ
+ɦɭɧɄɢɲɢɧɟɜɭɥɨɡɧɚɤɨɦɢɜɲɢɫɶɫɫɨɞɟɪɠɚɧɢɟɦɢɩɨɫɥɟɞɫɬɜɢɹɦɢ ɷɬɨɣ
+ɞɨɜɟɪɟɧɧɨɫɬɢɨɧɩɨɞɩɢɫɚɥɟɟɜɦɨɟɦɩɪɢɫɭɬɫɬɜɢɢɬɚɤɢɦɨɛɪɚɡɨɦɩɨɞɬɜɟɪɠɞɟɧɢɟɟɝɨɩɨɞɝɨɬɨɜɤɢ - - ɥɟɟɜɧɨɬɚɪɢɚɥɶɧɵɟɭɫɥɭɝɢ - - ɥɟɟɜ 
+	&&
+
+&&&	&	$	&
+"#&% &
+-.B/97@C=><C/*ACC!*;@%4/&"C :5':A"C
+ 	C?*5C CCCC
+>*5+#CCCCCCC*8"06C1<&2@=>/&*8(	&&&
+&&&		&
+!&% &
+-0=/9"@
+C/*ACC=><**>C!*;@%53&C:,C :5):A"C
+ C>*5CCCCC
+>*5+$CCCCCC*8"35C/<&/@=>/&*8(
+""%
+#%!%
+"%$"%  !%
+%% %	%
+!G4C^FG.\.@S^*T^G.^.G6G/^ :%^+/G/G/%^XK
+^5AI/26KMG%M&^+U^AG
+^ ^,6A^
+^U,/+&MEG6%^36]6A&U^ K/,6U:^"5]+%A6^$&^+ E>UA6+&^TG>&ME%G/:/	^
+!G6A^G&KFUAKUG6:/^AG
+^,6A^ ,%M%^,/^	
+^]6^^,6A^
+^:%^
++/G/G6:/^XK^AI^ ^,6A^
+
+^]6^AG
+^ ^,6A^
+
+^$6K%^+E>UA6+%M^
++&^ +EA0G>^ G/26KMG/:EG^ ,/^ /X6,/AN&^ %^ +%U[/:EG^+EAMG%X/AO6EA%:/ ^ ;%^ ,%M%^ ,/^
+
+^%^0KM^ />6K&^3EM&G'G/%^%KUFG%^+%U[/6^ +EBMG%X/AO6EA%;/^AG^^
++EA0G?^ +&G/6%^ +EAMG%X/A6/AMU:U6^ %+/G/M^ :/Y/6^ 6%^ 0KM^%F;6+%M^ %G/KM^
++EAMG%X/AO6EA%;^ ^ [6:/
+^ EA+E>6M/DM^ %^ 0KM^ />6K&^ 3EM&G'G/%^ F/^ +%U[%^
++EAMG%X/AP6EA%:&^ AG^^+EA0J^ +&G/6%^+EAMG%X/A6/AM/6^  :/6A6+^G6A%^6%^
+1KM^%F<7+%M^%G/KM^ +EAMG%X/AO6EA%:^^ [6:/^
+#EME,%M&^X&^+E>UA6+&>^+&^M/G>/AU:^,/^F&KMG%G/^%^,EK%G/:EG^+EA MG%X/AO6EA%=/^
+/LQ/^-/^VC^(C^ -WF&^/Z/+UQ%H/%^ F/-/FK/6^FH8C+6F%:/^ K%U^+E>F:/>/D M%9/^
+!G6A^UG>%G/^KUAM/>^5A^6>FEK6)6;6M%M/^ K&^X&^/:6)/G&>^6A0G>%O66^ KUF:6>/AM%G/^
+F/^>%G26A/%^,EK%G/:EG^+EAMG%X/AR6EA%:/^KUKAU>6M/
+^
+$!% "!%
+ "%$%
+  
+REPUBLICA MOLDOVA 
+JUDECĂTORIA CHIŞINĂU 
+sediul Râşcani 
+mun. Chişinău, str. Kiev, 3 Republica Moldova 
+MD-2068, tel. (+ 373 22) 43 80 02. 
+tcl./fax (+ 373 22) 43 80 02, e-mail: jrc a,iusticc.md 
+NrJ,96'..S-- din „I!?...? ",O_J 2020 REPUBLIC OF MOLDOVA 
+THE COURT OF CHISINAl 
+office Râşcani 
+mun. Chisinau. Kiev 3, street, Republic of Moldova 
+MD-2068. tel. (+373 22) 43 80 02. 
+tel./fax (+373 22) 43 80 02,. e-mail: irc ffiust1c~.1110 
+Dui Alexei MACERET 
+mun.Chisinău, 
+str.A.Doga, 30, ap.38 
+La solicitarea dvs., din 17.02.2020 nr. 4046, Judecătoria Chişinău 
+(sediul Râşcani), Vă comunică că, dosarul penal nr.1-983/2007, în privinţa 
+cet.Macerct A., la data de 28.02.2020, a fost expediat la judecătoria Chişinău 
+(sediul Buiucani) judecătorului Natalia Clevadî, spre examinare. 
+Dosarul penal nr.1-137/2008 la data de 04.02.2020 a fost expediat în 
+adresa Curţii de Apel Chişinău, spre examinare. 
+Totodată vă informăm că, după remiterea dosarelor penale în instanţa 
+cererea dvs. va fi executată. 
+--­'-
+Executor: Sari N. 
+022.43.82.98 
+t • 
+Procuratura Republicii Moldova 
+Republica Moldova, MD-2001 mun. Chişinău, bd Stefan cel Mare şi ~fâm, 73. 
+tel.: (+J73) 22-R18-T3, t·-r3J !l-f<l!l-3"5: e-mail: proc-gen1a>,prpcura111ra.md 
+26 iulie 2019 nr. 21-291/J I M t;}..; 
+Argumentele cererii dvs 
+Procuratura Generală. cel. Maceret Alexei 
+mun.Chişinău, str.A.Doga 30, ap.38 
+din 26.06.2019 a fost examinată de către 
+Vă comunic, că în cazul în care, dispuneţi de probe noi pe marginea cauzei 
+penale în privin_ţa dvs., sunteţi în drept să adresati cerere de revizuire în procuratura 
+de nivelul instanţei care a judecat cauza în fond, în baza art.458 Cod de procedură 
+penală privind deschiderea procedurii de revizuire. 
+În contextul celor expuse, temeiuri pentru intervenirea Procuraturii Generale 
+nu sunt. 
+Procuror în secţia unificare a practicii În 
+domeniul reprezentării Învinuirii 
+în instanţele de judecată S.Cuşnova 
+Cerere ... 
+Judecătoria Riscani 
+adresa: mun. Chifinău str. Kiev 3 de 
+Soţia Maceret -Oleinik Irina 
+Adresa: mun. Chi,inău 
+str. A Doga 30 ap.38 tel.022492290 
+Te rog să-mi dai o decizie pe care am fost arestată împreuni cu soţul meu, Maceret A., şi 
+mi-au dat 5 zile în închisoare, din 24 iulie pâni în 29 iulie 2007, sub acuzaţia de abatere -
+încilcarea legii cu privire la tăcere. 
+Olenik Irina Mircea Semnătură 
+1 
+     APOSTILLE 
+    (Convention de La Haye du 5 octobre 1961) 
+    1. Statul:  
+    Country / Pays :  Republica Moldova
+    Prezentul act oficial  
+    This public document / Le present acte public  
+    2. a fost semnat de către  
+    has been signed by  
+    a ete signe par  Guzun Corneliu
+    3. in calitatea sa de   
+    acting in the capacity of  
+    agissant en qualite de  Judecator
+    4. şi poarta sigiliul/ştampila  
+    bears the seal / stamp of  
+    est revetu du sceau / timbre de    Judecatoria Chisinau, sediul Riscani
+    Confirmat 
+    Certified / Atteste 
+    5. la Agenția Resurse
+Informaționale Juridice  
+    at / a      6. pe data 25-06-2021  
+    the / le  
+    7. de către Tatiana Veriga  
+    by / par  
+    8. cu nr. 9T3M953ZBUHO4  
+    No  
+    sous no  
+    9. Nu se aplică:  
+    Not applicable :  
+    Pas aplicable :      10. Semnătura digitală:  
+    Digital signature :  
+    Signature numérique :  
+Această Apostilă certifică autenticitatea semnăturii, calitatea în care semnatarul a acţionat şi, dacă este cazul, identitatea
+sigiliului sau a ştampilei
+Această Apostilă nu certifică conţinutul documentului pentru care a fost emis
+  [Utilizarea acestei apostile nu este valabilă în  Republica Moldova]
+[Această apostilă este semnată digital șipoate fi verificată la următoarea adresă: www.apostila.gov.md ]
+Codul de siguranță:2013073967857
+  
+   
+This Apostille only certifies the authenticity of the signature and the capacity of the person who
+has signed the public document, and,
+where appropriate, the identity of the seal or stamp which the public document bears.This Apostille only certifies the
+authenticity of the signature and the capacity of the person who has signed the public document, and,
+This Apostille does not certify the content of the document for which it was issued.
+[This Apostille is not valid for use anywhere within Republic of Moldova]
+[This Apostille is digitally signed and can be verified on the following address: www.apostila.gov.md ]
+Security code:2013073967857
+  
+   
+Cette Apostille atteste uniquement la véracité de la signature, la qualité en laquelle le signataire de l'acte a agi et, le cas
+échéant, l'identité du sceau ou timbre dont cet acte public est revêtu.
+Cette Apostille ne certifie pas le contenu de l’acte pour lequel elle a été émise.
+[L’utilisation de cette Apostille n'est pas valable en République de Moldova]
+[Cette Apostilleest signée numérique et peut être vérifiée à l’adresse suivante: www.apostila.gov.md ]     
+Code de sécurité:2013073967857
+                                1 / 2
+Digitally signed by Veriga Tatiana
+Date: 2021.06.29 07:56:11 EEST
+Reason: MoldSign Signature
+Location: Moldova
+ 
+Powered by TCPDF (www.tcpdf.org)
+                                2 / 2
+
+· Dosarul nr.1-983/07 
+06 decembrie 2007 ... _., SENTINŢA 
+în numele Legii t 
+mun. Chişinău 
+Jooecătoria sect. Rîşcani, mun. Chişinău 
+Imtanţa corrlpusă din: 
+Preşedinte 
+Grefier V.llaşco 
+A. Anghel 
+cu participarea: 
+procurorului 
+avocatului V. Călugăreanu 
+.z.Barbacari 
+a judecat în ~înţa de judecată publică catm1 penală de învinuirea lui 
+li Oleinic Irina Mircea, născută la 13. l O. : o -: : ;-: 
+or. Chişiniu, cetiţeancă a RM. ucrai::~l:-:..:!. 
+studi.i medii, divorţată, lucrează Ja Fi::::~ c:_ -
+,,Neagara" ca gospodar, domiciHată ::: ::· .. :· 
+Chişinău, str. A. Doga-30, ap. 38. an:~:-:,:-:-
+judecată: 
+-la 08.08.1990 de Judecătoria ~ct. B:.: -·-·· . 
+mun. Chişinău pe art. pe art."145 a_l.: CP · l _: ~-­
+p/1 ctraprae . .f4tft:P pe un termen c.fe L:: .:··.~ 
+în săvârşirea infracţiunii prevăzută de art. 217 al. (2) CP, 
+A constatat: 
+Oleinic I. M. pe data de 24.07.2007 pe la orele 00.3:S„ fiind suspecta1l d~ 
+întrebuinţarea substanţelor narcotice a fost condusă la Dispanserul Narcok,~k ~~ 
+' pe str. P. Rareş, mun. Chişinău, unde s-a constat starea ei de ebrietate narcotk1 ş: 
+la ea in urma percheziţiei efectuată mai apoi in CPS Rişcani, mun. Chişin!u. 5-.m 
+depistat şi s-au ,ridicat 6 pastile într-un ambalaj de hîrtie, pe care le păstra b. sin~ 
+pentru int~buinţare personală. care confonn Raportului de constatare tehnkt,­
+ştiinţitică din 26.07.2007 nr.677 reprezintă tramadol -substanţă psihotropă cu 
+masa totală de 0.30 2rame . .... 
+Inculpata Oleinic I. M. a încheiat acord de recunoaşterea vino\·ătiei. care a 
+fost acceptat de instanţă. 
+Probele prezentate de procuror şi acceptate de inculpat sunt: 
+-Raport (ffd -4), 
+-·Procesul-verbal de examinarea medicală pentru stabilirea stării de ebrietate 
+o:d -6) .. 
+-Procesl11-verbal de perchezitie corporală {f/d -8), 
+-Raport pe constatare tehnico-ştiinţifică (f/d 14-15), 
+-Proces;l-verbal de examenare a obiectului (f/d 24-25) .. 
+-Ordonanţă de recunoaştere şi de anexare a·corpurilor delicte la cauza pe:nalâ 
+(fld -26).. . · - · · . 
+-. -1-· . ! . ,' 
+tj ' . : 
+'1 .• 
+i ' .• 
+~ . ~-
+\ ·t ; :i. 
+t 
+f 
+! . 
+-lnfonnaţia ~e la Dispamerul Republican de Narcolagie (fld -Jt}; 
+-Corpul delict: tramadol (f/d-47) 
+şi alte documente. 
+Vina inculpatei Oleinic L M. in săvâqirea infiac«1R1ii este dovedită 
+şi acţiunile ei judecata le încadread in baza art.217 al.(2) CP, ca ci 
+.... · .-substanţelor psihotrope îară scop de înstdi~ adică procuraR"a fi pă 
+_ substanţelor psi~ săvîrşitc in proporţii mari fi rară scop de Înstrăi 
+' La stabilirea ~i şi termenului de pcdeapsi, ir.stanţa de j 
+conduce de criteriile generale preW7.Ule de art. 75 CP, adică ţine cont de 
+in~tiunii săvârşite, de motivul acesteia, de persoana celui 
+circumstantele cauzei. 
+Circumstante atem.um~ sunt căinta sincerL 
+Cin;:umstanţe agravante în şedinta de judecatl nu au fost stabilite. 
+Deci, judecata a ajuns la ooncluzia ci corectarea inculpatei. este posi 
+condamnarea ei cu muncă neremamerată în folosul comunităţii. 
+Conform art. S06-S09, 389, 393 CPP„ judecat.a adopti 
+Seotinlă: 
+Pe Ofoinic Irina Mircea a o recunoaşte culpabilă in bau art. 217 al. ( 
+a-i aplica o pedeapsă cu munci neremunerată in folosul oomunifătii de 60 ( . 
+ore. 
+Conform art. 88 al. (J)CP a-i indude în termenul pedepsei biiq...â af 
+sub arest de la 19.11.2007 pÎnă la 06.12.2007 şi definitiv.-. calcula pede 
+26 {dru,12eci şi şase) o.""tde muncă neremunentă în folOSld a&..-stielfi 
+Măsura preventivi fată de Oleinic I. M. arestul a-l anula, dibaind-o 
+de sub strajă din sala şedinţei de j'Ulleca1ă 
+Cotpurile delicte: 4 pastile de tnmtadol -a le nimici. 
+. Sentiofl _cu drept de recurs in famen de 15 zile la Curtea de A 
+Chişin~ 
+3o. ol fitil{ 
+/&(;. ll ;~·. I. 
+-· 
+REPUBLICA MOLDO V A 
+JUDECĂTORIA CHIŞINĂU 
+sediul Rîşcani 
+Chişinliu. str. Kiev, 3 Republica Moldova 
+MD-2078, tel. (+373 22) 43 80 02, 
+tel./fax (+ 3 73 22) 43 80 02, e-mail: jrc@justice.md 
+CONSILIUL SUPERIOR AL MAGI.!'", TRATURII 
+JUDECĂTORIA CHl~l1. U 
+BEOII.JL RIŞC>-NI ~ 
+leş·r?r . -.i C/l( ___ _ 
+. . 7 ---20 • REPUBLIC.OF MOLDO V A 
+THE COURT OF CHISINAU 
+office Rîşcani 
+OUliuu, Kiev 3, strcet. Republic of M.tilea 
+• MD-2078, tel. (+373 22) 43 80 02, 
+tel./fax (+373 22) 43 80 02, e-mail: jrc@justice md 
+D-lui Maceret Alexei 
+La solicitarea dvs. nr. 62538 din 23.11.2018, Judecătoria Chişinău sediul Rîşcani, conform 
+registrelor de evidenţă a cauzelor contravenţionale, Vă informează că la data de 24.07.2007 a fost 
+emisă hotărrrea asupra cauzei contravenţionale nr. 4B-615/2007 conform căreia contravenientului 
+Maceret Alexei i-a fost aplicat arest contravenţional 2 zile. 
+Potrivit explicaţiilor privind aplicarea indicatorului, aprobat prin Hotărîrea Consiliului 
+Superior al Magistraturii, termenul de păstrare pentru dosarele contravenţionale este un an după 
+executarea pedepsei principale şi complimentare. 
+C..9respunzător suntem -în imposibitîmtmt executării solicitării dvs. de eliberare a copiei 
+hotărîrii judecătoreşti. 
+Vicepreşedinte al 
+Judecătoriei Chişinău, 
+sediul Rîşcani 
+Ex. Malai Arcadie 
+Tel. 44-60-57 Corneliu Guzun 
+--~ ., --
+f, 11111 ,, I ,1 /08 
+19 ·martie 2008 
+Judecătoria Rîşcani 
+Instanţa în componenţa 
+Preşedinte)e şedinţei, judecător 
+.Grefieri 
+Cu particip&rea - __ .a,. .... :.s 
+SENTINŢA 
+. În nume)e Legii 
+S. Iorgov 
+V. Cucu)escu, R. Enciu, V.Miţa 
+Procurorilor V. CăJugăreanu, V. Codreanu 
+Avocatului -L.-Mîţu 
+translatorilor E. Osipov, A. Petrovici, I. Duca 
+A judecat în şedinfa de judecată pub)ică cauza pena)ă de învinuire a Jui mun. Chitinlu , 
+Maceret AJexei Artur născut Ja 23.06.1973 originar 
+mun. Chişinău, cetăţean a RM, de naţionalitate rus, 
+, dolJ)ÎciJiat mun. Chişinău str. A. Doga, 30 ap.38, supus 
+miJitar, divorţat )a întreţinere un copiJ minor, studii 
+medii, anterior judecat prin sentinţa judecătoriei Rîşcani 
+mun. Chişinău din 08.11.2006 în baza art. 217 aJ.2 CP 
+RM {pedeapsa neispăşită) 
+în comiterea infracţiunii prevăzute de art. 217 aJ.2 CP RM 
+CONSTATĂ: 
+-A. Maceret Ja 23.07.2007 în juru) ore)or 22.40 se afla )a domiciliu în apartamentul nr. 64 din 
+str. M. Costin, 13/3 mun. Chişinău unde de către grupa operativă a CPs Rîşcani a fost petrecută 
+cercetarea a faţa Jocu)ui unde in una din odăi m tost depistate şi ridicate 4 cutii eu p .. ..,tr)e "Ricofast", 
+u sticJuţă cu acid formic, o seringă de 10 ml în care se afla o substanţă lichidă de cu)oare cafenie cu 
+cantitatea de 2 m), două becuri fără miez în intc-rior fiind negre, o colbă din sticJă, o gentuţă neagră în 
+care se afl~ o seringă de 5 m), nişte pachete cu pastiJe fără inscripţie, un amba)aj de masă plastică cu 
+inscripţia "CM'', un flacon din sticJă, o cutie din meta) cu inscripţia "First" cu 2 Jame în ea, 2 seringi 
+folosite, un ambaJaj din hîrtie igienică cu 5 pastile de cu)oare a)bastru cu a)b, care conform raportu)ui 
+de constatare tehnico-ştiinţifică nr.679 din 27.07.2007 se atribuie Ja şubstanţe psihotrnpe tramadol cu 
+masa_ de 0,25 gr şi permanganat de caliu cu masa~~ 2,70 gr, care se atribuie Ja precursorii substanţe)or 
+narcotice. · 
+Fiind audiat în şedinfa de judccatn A. Maceret vina n-a recunoscut şi a dec)arat f• nu a consumat 
+nici odată pasti)e "Tramadol" . La momentul percheziţiei în apartament nu se aflau pasti)e ''Tramado)". 
+Au fost fotografiaet pastilele "Loperumid" care sînt medicamente pentru stomac. La 23.07.2007 seara 
+în jurul ore)or 18.00-19 .00 dînsul se afla în stare de ebrietate şi s-a certat cu concubina sa. Maina-sa 
+Gali na Marcova a chemat poliţia . PoliJia i-a reţinut pe e) şi concubina sa Oleinic şi au fost duşi )a CPs 
+Rîşcani, iar a doua zi au fost duşi la judecătoria Rîşcani. La judecătorie Ji. s-a aplicat sancţiunea 
+administrativi arest pe un termen de 2 1.ile. Nu au trecut zi)e)e că după ei din nou au venit co)aboratorii 
+d • poliţie şi i-au condus din nou la CPs Rîşcani unde au mai stat 3 ziJe .. După aceste 3 ziJe li s-a spus -că 
+lui Olcinic i-au găsit 6 capsuJe de ·1ramudol", iar Ja e) au fost găsite pastiJe ''TramadoJ" care în 
+rculitutc erau pastiJe ''Loperamid". Cînd au venit colaboratorii de poliţie dînsu) dormea, )-au luat şi l-au 
+condus iu CPs Rîşcani. Pe loc nu i-au arătat nimic din ceea ce au ridicat. Fotografiile din dosar au fost 
+efectutttt m apartamentu) vecinei nr.65. Pastilele "Lapiramid" îi aparţin bunelului. La 23.07.07 în 
+apartamllll era mama-sa, vecina Zinaida, un vecin Vo)odea din apartamentul nr.65 şi buneJuJ Ivan 
+Marcov.fn prcienţa sa co)aboratorii de poJiţie nu au fotografiat nimic. Mai tîrziu a aflat de Ja mama-sa 
+că toate obiectele au fost fotografiate în apartamentu) nr.65. Masa roşie din fotografii nu-i aparţine. 
+Gentuţa neagra îi a,&arţine unei cunoştinţe pc numele Valeriu, numele de familie nu-l cunoaşte. 
+Valeriu întrebuintu subst.imtc narootice. Lampa fără miez era )a baJconuJ bunelului. Lampa îi aparţine a 
+1 :t ,. 
+bz ·.·.-.--:::x_~_-;c- . :& --i'A ' 
+• 
+\du~-0 de la Telecentru din subsol. Cui. 1parUno1 htmpu nu cunouşte. Ulterior inculpatul a declarat 1 
+gentuţa îi aparţine bunelului său. · 
+Necătînd la faptul că, A. Macerct vtna n•• reounuM:UI u vlftovlţia acestuia se confinnă prin: 
+-declaraţiile martorului G. Marcov1, aan, fflnd ln&orn11t1 fn şedinţa de judecată a 
+declarat că, Ia 2~.07.2007 în a douajumltalo • 1ft I Nul I MDCcret a venit beat'acasă şi a încep 
+s-o bată pe concubina sa Irina Oleinic. Dînsu I h4 inat I 11 11 I • chemat pe Zina şi Rudenco Vladi 
+din apartamentul nr.65 ca s-o ajute să-i despurtl po A I 9' J, Otcinic. Dînsa a luat gentuţa lui A. 
+Maceret şi în ea a văzut o seringă de aproximativ 10 lftl. 11 " 1 tril din piele,dar ce culoare avea nu 
+line mintt:- Gentuţa a dus-o la vecina Zina. Cînd u ventt pnlttil po1tt' J ore de la chemare fiul Alexei 
+deja donnea, iar dînsa stătea afară. Cînd au venit colahot1h.1tU 14 poltţic dînsa a mers la Zina şi a luat 
+gentuţa şi a arătat-o colaborntorilor de poliţie. Acc"ea la ffndut 11Au au chemat un expert. Au 
+fotografiat careva lucruri pe măsuţa pe)Jtru ziare. Pe fotogr11fll · t, ttnpt tm1uli măsuţa din apartamentul 
+icau şi gentuţa de culoare neagră pe care a dat-o co&boratorilur dt 1, 1 1 
+-declaraţiile martorului S. Slabco, care fiind thterogat în 11111 , tUdccată a , 
+declarat că, A. Maceret se afla la sector la evidenţă ca persoana a1ntettnr ondamnată. În anul 2007 la 
+11ffflitul verii la el la sector s-a adresat mama incul paf lui Maceret cu n ptlnpre că acesta face scandal 
+cu concubina sa şi întrebuinţează substanţe nan:otice i produce subltanto nan:oticc pe care le vinde Ia 
+perrmane suspecte. Depalsîndu-se la faţa locului în st . M. Costin, 13/3 H 1ntnr fn 11partament unde era . 
+o dct.ordine -totală. Pe masă erau multe cutii de pastile, o seringă cu o subst•nll de culoare roşie, un bec 
+1tric:11t în care era ceva. A. Maceret donnea împreună cu concubina su. Pc m1HA era o gentuţă de 
+culoare cafenie _din piele artificială. În gentuţă au fost depistate capsule alh cu nearu probabil vre-o 3-
+4. A întrebat-o pe mama inculpatului de fel de pastile sînt la ce aceasta i•• rhpun11 că nu ştie şi 
+Maceret a spus că nu ştie, apoi a spus că sînt capsulele bunelului contra tusci. A fm1f chemată grupa 
+opor11rtvA la faţa locului_, totul a fost cercetat şi ridicat. 
+I Jt fel vinov~ţia lui A. Maceret de comiterea infracţiunii impuse se cunfirmil şi prin 
+11nnatn11relc materiale ale cauzei penale: raportul colaboratorului de poliţie pnvind dcpiswrea 
+oh1t',tclm în apartamentul nr. 64 din str. M. Costin,13/3 m'un. Chişinău (f.d.4), proccMUI verbal de 
+ccn.·01u1l" · lu fata locului şi anume a apartamentului nr.64 din str. M. Costin; 13/3 mhn. Chişmdu (f.d.5), 
+h1hdu1 •fnto cu imprimarea imaginilor obiectelor depistate la domiciliul lui A. Maceret (f.d.6), pnlCes­
+vcrbal nr 000138 4in 24.07.2007 de examinare medicală pentru stabilirea stării de ebrictute <lin care 
+rezutrl\ dl lu momentul examinării A. Maceret se afla în stare de ebrietate narcotică şi alcool (f.d.7). 
+raportul dt" constatare tehnico-ştiinţifică nr. 679 din 27.07.2007 confonn căruia s· capsule de culoare 
+alh-aJhn!\1111 de11istate în apartamentul nr.64 din str. M. Costin,13/3 mun. Chişinău unde locuieşte A. 
+Maceret comuituic „Tramadol„ substanţă psihotropă cu w.-~ de 0,25 gr (f.d.16-17), tabelul-foto 
+(f.d, 18), procc1ml verbal de examinare a obiectului din 04.08.' ,~ 'I şi tabelul-foto (f.d,.28),ordonanţa de 
+recunoaştere ,1 lle araşare la materialele cauzei a corpuri for delicte (f.d.29), precum şi alte materiale ale 
+cauzei penull! c.:tlitc şt studiate în şedinţa de judecată. · 
+La demersul parţii apărării în şedinţa de judecată a fost aµdiat în calitate de martor Ivan Marcov 
+care a declnrnt cA. careva substanţe narcotice la nepotul său A. Maceret nu a . văzut. Personal 
+întrebuinţează multe medicamente, dar denumirile nu le ţine minte. Nu ţine minte dacă colaboratorii de 
+poliJiţ au ridicat dr ln el vre-o gentuţă. Gentuţa prezentată în şedinţa de judecată nu µne minte dacă îi 
+apai:ţirie. Dînsul a· fQst împotrivă ca colaboratorii de poliţie să ridice de la el din apartament unele 
+J.ucruri.-Nu ţine minte dacă a folosit „Tramadol". 
+Analizînd probele administrate în şedinţa de judecată instanţa -de judccntt\ c,jnsideră vina lui A. 
+Maceret dovedită. Referirea lui A. Maceret la faptul precum că, gentuta nu i ,iparfine, ci îi apartine 
+unui prieten a fost ulterfor. negată însăşi de către inculpat care a decloral ~ă gentuţa îi aparţine 
+bun~lul~i I. )fatcov. Însll fiind audiat în şedinţa de judecată martorul I. Murcov nu a confinnat faptul 
+apartenenţei gentuţei sie. La fel inculpatul A. Maceret şi apărătorul ace~luta nu au prezentat instanţei 
+-~ judecată carev~ probe ce ar confirma faptul prescrierii şi adminis_trării de către I. Marcov u 
+/substapţei psihotrope „Tramadol". Astfel în şedinţa de judecată nu..şi u gasit confirmare faptul precum 
+. 'că~ LMan:ov administra substanfd psihotropă „Tramadol" . 
+. • . ., ., . . . 
+2 
+t ... , I 
+lur1J11 Ic lui A. Maceret în partea precum că, m~a cu obiellele care a&u foill fotc>arafiate le 
+,fle! vecinilor din apartamentul nr.65 în-şedinţa de judecată au fost combatutc I martorul G. 
+lf'Ct,vu. mama inculpatului care a ~eclarat că, masa cu obiectele riditate· e11tf amplasată. în 
+4ta,tamentul său. _ . 
+f n astfel de circumst• instanţa de judecată consideră declaraţiile lui A. Maceret o fncon lll'C de a 
+duce instanţa în eroare~~ se eschiva de la răspunderea penală. 
+A vînd astfel de dat';;~ şi luînd în consideraţie probele administrate în cumulu] , 
+lor judecata găseşte vina lui A. Maceret dovedită. 
+Totodată instanţa de judecată consideră necesar a excJude din învinuire semnul calit1c1tiv 
+pnll:urarea, deoarece atît în cadrul urmăririi penale, cît şi în şedinţa de judecată nu şi-a găsit confinnan, 
+f11ptul procurării de către A. Maceret a substanţelor psihotrope, mai mult ca atît în cadrul unnărtm 
+penale n-au fost efectuate careva investigaţii în acest sens. 
+Astfel instanţa de judecată califică · a,cţiunile lui A. Maceret în baza art. 217 al.2 CP RM, .ca 
+pAstrarea substanţelor psihotrope în propqrţii mari şi fără scop de înstrăinare. · 
+Soluţionînd întrebarea privind stabilirea categoriei şi termenului de pedeapsă 
+· instanţa de judecată, în conformitate cu art. 75 CP RM ţine cont de gravitatea infracţiunii săvîrşite, de 
+persoana celui vinovat că nu şi-a recunoscut vina, se caracterizează negati.v, de circumstanţele 
+agravante ca recidiva de infracţiuni, de circumstanţele atenuante ca prezenţa copilului minor şi 
+consideră că corijarea şi reeducarea lui A. Maceret poate avea loc fără izolare de societate numindu-i 
+pedeapsa sub formă de amendă. 
+Luînd în consideraţie faptul că, A. Maceret nu şi-a ispăşit pedeapsa stabilită prin sentinţa· 
+judecătoriei Rîşcani mun. Chişinău din 08.11.2006 sub formă de muncă neremunerată din motive de 
+sănătate instanţa de judecată consideră că pedeapsa dată, unnează a fi executată separat de pedeapsa 
+nou-numită . 
+Chestiunea privind soarta corpurilor dcpcte 
+prevederile art. 162 CPP RM. urmează a fi soluţionată în conformitate cu 
+Reie~md din cele expuse şi în conformitate cu art. 384, 389, 393-395 CPP RM instanţa de 
+judecată 
+CONDAMNĂ: 
+Maceret Alexei Artur se recunoaşte vinovat în comiterea infracţiunii prevăzute de art. 217 
+al.2 CP RM şi i se numeşte pedeapsa în formă amendă în mărime de 600 unităţi convenţionale în 
+sumă de 12000 (douăsprezece mii) lei. 
+Pedeapsa în formă de muncă neremunerată stabilită lui A. Maceret prin sentinţa judecătoriei 
+Rîşcani mun. Chişinău din 08.11.2006 a executa separat de pedespsa nou-numită. 
+Măsura preventivă în privinţa A. Maceret decJaraţia de nepărăsire a localităţii a revoca la 
+data intrării sentinţei în vigoare. 
+Corpurile delicte anexate la materialele cauzei a nimici. 
+Sentinţa cll drept de apel la Curtea de Apel Chişinău în termen de 15 zile, prin intermediul 
+1udecătoriei Rîşcani mun. Chişinău. 
+Preşedintele şedinţei, judecător / S. Iorgov 
+3 
+"'a~/~~ljL_U~~~~-
+t,1egiul . v{ a _.e (t. 
+f .nd în omponenţa sa pe: 
+►edintele şedinţei de judecat~ __ '-:L_'4_~--'--L,,-'-•/t(,/=-----.,L_,,,.,_~=:....;:__;/. ~~--,-------
+cătorii ':f t.t'-t d 1ft eft „ 'l-laf~tl--, 
+Jpfierul '/2, 
+1u participarea: (l(/{)Cl a:.f vLai t{tu 4 tl{t(,,, ~ ~ llL ~ 
+t-,ru,orului ~1:--:,-«Llt,<--~ 
+►ecind în şedinţa deschisă · C8tti!ă ~1ilă ....e..~JZ:::JJA~!d::...----1t1.~~~~::...-=~ 
+I .. 
+, 
+• 
+~~ ~-
+~~ • ,_ • '-&I -. -111 *f , c-,,t 
+S.' 
+~ .. 
+I 
+t, 
+f /,-------=-==~---­_,_ 
+• 
+I ,___ 
+p---
+~ -
+..... 
+► 
+. I--
+I-
+'( --r -.. ,, --. 
+Dosarul nr. 1 ra-834Mlll 
+Republica Moldova 
+Curtea Supremă de Justiţie 
+DECIZIE 
+În numele Legii 
+21 iulie 2009 mun. Chişinău 
+Colegiul penal lărgit al Curţii Supreme de Justiţie în componenţa: 
+Preşedinte -Constantin Gurschi, 
+Judecători -Nicolae Gordila, Andrei Plămădeală, Constantin Alerguş şi 
+· Vladimir Timofti, 
+Cu participarea: 
+Procurorului -Dumitru Graur, 
+Avocatului care acordă asistenţă juridică garantată de stat -Valentina Amaut, 
+Condamnatului -Alexei Maceret, 
+Translatorului -Olesea David, 
+judecind în şedinţa publică recursul ordinar declarat împotriva deciziei 
+Colegiului penal al Curţii de Apel Chişinău din 03 februarie 2009 de 
+condamnatul 
+~aceret Alexei Artur, născut la 23.06.1973, originar 
+şi domiciliat în mun. Chişinău, str. A. Daga 30, ap. 38, de 
+naţionalitate rus, cetăţean al R. Moldova, cu studii medii, 
+supus militar, anterior condamnat: 
+prin sentinţa ]~decătoriei Rîşcani, mun. Chişinău din 
+08.11.2006 în baza art. 217 alin. (2) CP la 150 ore de muncă 
+neremunerată. 
+Procedura de citare a fost executată. 
+Condamnatul şi apărătorul acestuia, avocatul V. Arnaut au susţinut · 
+·recursul în sensul declarat. 
+Procurorul s-a pronunţat pentru admiterea recursului în aspectul 
+retroactivităţii legii penale. 
+Asupra recursului în cauză în baza actelor din dosar, Colegiul penal 
+CONSTATĂ: 
+1. Prin sentinţa Judecătoriei Rişcaru, mun. Chişinău din 19 martie 2008, A. 
+Maceret a fost condamnat în baza art. 217 alin. (2) Cod penal· la amendă în 
+mărime de ~ unităţi convenţionale. 
+1 ,,. 
+al 
+,1 I 
+;· 
+:.t r a ·• 
+1 1emtinteai, A. Maceret a fost condamnat pentru 
+I, 22.40, la domiciliul său nr. 64, din str. M. Costin 
+, u ,u dtt catre grupa operativă a CPS Rîşcani a fost_ petrecută ct•t 
+t locului unde în una din odăi au fost depistate şi ridicate 4 cutii II J 
+„Rtc:ofa~t" o sticlă cu acid formic, o seringă de 10 ml în care se afla sub t 
+lkhidă de culoare cafenie cu cantitatea de 2 m1,·două becuri fără miez neg,. 
+iterior, o colbă din sticlă, o gentuţă neagră în care se afla o seringă de 5 ml, n1 t 
+pachete cu pastile fără inscripţie, un ambalaj de masă plastică cu inscriptitl 
+,,CM", un flacon din sticlă, o cutie din metal cu inscripţia „First" cu 2 lame în ea, 
+2 seringi folosite şi un ambalaj din hîrtie igienică cu 5 pastile de culoare albastru 
+cu alb, care conform raportului de constatare tehnico-ştiinţifică nr. 679 din 
+27.07.2007 se atribuie la substanţe psihotrope tramadol cu masa de O, 25 gr şi · 
+permanganat de caliu cu masa de 2, 70 gr, care se atribuie ca precursorii 
+substanţelor narcotice. 
+Sentinţa a fost contestată cu apel de către procuror, care a solicitat casarea 
+acesteia şi pronunţarea unei hotărîri în partea stabilirii pedepsei, prin care la 
+pedeapsa numită să fie adăugată conform art. 85 CP partea neexecutată a 
+pedepsei stabilite prin sentinţa anterioară, deoarece infracţiunea dată a fost 
+comisă înainte de executarea completă a pedepsei stabilite prin sentinţa 
+J ude<;ătoriei Rîşcani din 08 noiembrie 2006. 
+3. Prin decizia Colegiului penal al Curţii de Apel Chişinău din 03 februarie 
+2009, apelul declarat de acuzatorul de stat a fost admis, casată sentinţa, 
+rejudecată catţza şi pronunţată o nouă hotărîre potrivit căreia: 
+A. Maceret a fost recunoscut vinovat şi condamnat în baza art. 217 alin. 
+(2) Cod penal la 1 an 7 luni închisoare. Conform art. 85, 87 Cod penal prin cumul 
+de sentinţe i s-a adăugat partea neexecut~tă a pedepsei stabilite prin s,mtinţa 
+Judecătoriei Rîşcani, mun. Chişinău din 08.11.2006, şi ddinitiv i s .1 st,1hili1 I an 7 
+luni 26 zile închisoare cu executarea pedepsei în pt-nih•ndar dt• t,p În(·his. 
+Condamnatul ·a declarat recurs ordinar m ,,1rtt ~mliciti\ .,,,snr,•.1 rtt""ciziei 
+instanţei de apPI şi rl""lt''t1\i1wn.>a sentinţei, invocând l I ,m,tttnţ,, dt' hmd d flt<,"lminat 
+circumstantele_ · <.~auzel suh tont(' aspectt1lt1 şj , tn,, t I t1 ,t,1hrlit ~"' 1fl't1ps~ cu. 
+amendă, el concluziilt' n,,n•~.m• ti lt• ., t,lrul 
+4. Judecînd recursul 111 rapurt , u muti li tnvm ,t·• l nlc•~111I penal 
+cqnclution~ază că acesta urmt•a1.l ,, fi 6'dnu-d lt\ ur, , tourtth• l't,n1h.frrt1nl(\ 
+C~nform hotărîriţor jµdecător~,u •••, ••nit 11, m ,1hilr M,ic~n•t a fost 
+condam,nat pentru procurarea şi păstn,u 1 1111 t m • Io, 1111n·,1tk,· psihntrn~'t> sau 
+: anato~gelor -:-tramadol cu masa dP o, ' l • 
+I_ a m(lmC'ntul săvîrşirii infr~1ctluaul ,f1c .. , ;,t,, , ,m,f,111111111 ,•t~, m Vl>f.lMt•" 
+.;-:_ 
+2 
+lfffto substanţelor narcoti e, psihotrope şi a plantelor care conţin astfel de 
+ub tont depistate în traficul ilicit, care stabileşte şi cantităţile acestora, aprobată 
+,,rtn Hotărîrea Guvernului nr. 79 din 25.01.2006, conform căreia constituie 
+antitate mică de tramadol pină la 0,25 gr, iar mare de la 0,25 gr pînă la 4,0 gr. 
+Prin urmare, la mom •ntul comiterii faptei de către A. Maceret, acţiunile lui 
+corect au fost încadrate în baza art. 217 alin. (2) Cod penal cu semnul calificativ -
+păstrarea substanţelor psihotrope în proporţii mari fără scop de înstrăinare ·. 
+Însă, în rezultatul modificărilor operate prin Hotărîrea Guvernului nr. 43 
+din 26.01.2009 cu privire la aprobarea modificărilor în lista substanţelor 
+narcotice, psihotrope şi a plantelor care conţin astfel de substanţe depistate în 
+traficul ilicit, s-au schimbat şi proporţiile care prevăd răspundere penală pentru 
+astfel de acţiuni, conform pct. 122 al hotărîrii sus menţionate trarnadol în 
+proporţie de 0,25 gr nu mai formează componenţa de infracţiune prevăzută de 
+art. 217 alin. (2) Cod penal, dar constitui~ o contravenţie administrativă, 
+prevăzută de art. 85 Cod contravenţional. 
+Conform aceluiaşi punct „tramadol" în cantitate de 0,50. gr constituie 
+· proporţii mici, iar de la 0,50 gr pînă la 10 gr proporţii mari. 
+Potrivit art.427 alin.(1) pct.13) Cod de procedură penală o hotărîre a 
+instanţei de apel poate fi supusă recursului pentru a repara o eroare de dreIU.jn 
+cazul cmd a intervenit o lege penală mai favorabilă condamnatului. 
+În cauza. dată este prezent acest temei de recurs, astfel, Colegiul concljţde 
+de a admite recursul şi a casa hotărîrile judecătoreşti, cu încetarea procesului · 
+penal, deoarece, eroarea de drept poate fi corectată de către instanţa de recurs. · 
+Astfel, în conformitate cu art. 332 alin.(2) Cod de procedură penală 
+coroborate cu art. 275 alin. (1) pct. 2) Cod de procedură penală, procesul penal 
+urmează a fi încetat din motiv că fapta constituie o contravenţie administrativă. 
+Po'rnind de la dispoziţiile art. 30 alin. (3) Cod contravenţional, rezultă că 
+faţă de A. Maceret nu poate fi aplicată sancţiunea administrativă, deoarece de la 
+data comiterii contravenţiei a expirat mai mult de un an -termenul prescripţiei 
+aplicării sancţiunii administrative. 
+În ce priveşte substanţa psihotropă permanganat de cal_iu cu masa dţ 2,70 
+gr, Colegiul i:tu se va referi în privinţa acesteia, deoarece nu este inclusă în t.i~I" 
+substanţelor narcotice şi precursorii mai sus indicată. 
+În acest context, sentinţa instanţei de fond şi decizi, Curţii dt\ Apt•l 
+urme,1.ză a fi casate şi în partea aplicării art. 85 Cod penal, la stl bilirt.la p1•d,·1"· • 
+prin cumul de sentinţe, deoarece pedeapsa stabili tă prin •,1•ntinţa Jude 1 ,\I; -i 11·1 
+Rîşrani4 mun. Chişinău din 08.11.2006 , cu muncăn~n~mtţn, ·r.,cA ln 1l1 ,, Ht11 tl, 1 fi 
+on•, conform Ml. 87 Cod penal a fost tr:rnKt rnUl in 26 ·lltt 1m•hlli(1,11, , , 1,1.,1 ,, • 
+3 • I I 
+;t' E 
+r 
+1 
+I 
+1 
+. , ,r ,rm1tate .l.'"ll 435 ·alin. (1) pct. 2) lit. c) Cod de procedur~ pe, 
+tul penal, -
+DECIDE: 
+. Admite recursul, casează sentinţa Judecătoriei Rîşcani, mun. Chişinău din 
+19 martie 2008 şi decizia Colegiului penal al Curţii de Apel Chişinău din 03 
+februarie 2009, rejudecă cauza şi pronunţă o nouă hotărîre potrivit căreia: 
+Procesul penal de învinuire a lui Maceret Alexei Artur, în baza art. 217 . 
+dlin. (2) Cod penal se încetează dat fiind că fapta acestuia nu constituie 
+infracţiune . ci o contravenţie administrativă, prevăzută de art. 85 Cod 
+contravenţional, fără aplicarea sancţiunii administrative în legătură cu expirarea 
+termenului. 
+Se exclud prevederile art. 85 Cod penal, la stabilirea · pedepsei prin cumul 
+de sentinţe. 
+Maceret Alexei Artur se eliberează din arest imediat din sala de judecată. 
+Decizia este irevocabilă. 
+Preşedinte: 
+Judecători: 
+{I Constantin Gurschi 
+Nicolae Gordila 
+,..---
+Andrei Plămădeală 
+Constantin Alerguş 
+Vladimir Timofti 
+• Ml ISTERUL JUSTIŢIEI AL REPUBLICII MOLDOVA 
+Administraţia Naţională a Penitenciarelor 
+Penitenciarul nr. 15 -Cricova 
+MHHHCTEPCTBO IOCTHI.Ufil PECIIYl>JIHKM MOJI)I.OBA 
+HauuouaJJbHaH IleHHTeuunapHaSI AuMHHHCTpauHH 
+IlenuTeHiţuapuoe Yqpe>K,Zţeuue NQ 15 -Cricova 
+MD-2084 , or. Cricova, str.Luceafărul 9 MD-2084, r. KpHKOBa , yn. Jly4aq>3pyn 9 
+Tel: 022453351, Tel-fax: 022453387 Ten: 02245335 I; Ten-cpaKc :022453387 
+e-mail: p I 5specia1@anp.gov.md Jn.anpec: p I 5speciaJ@anp .gov.md 
+,,_j__v " __ o_l/ __ 2022 nr.3/)/-f//JJ 
+CEPTH<l>HKAT 
+Bb1,natta B no,nTBep)l(,nem-1e cpaKTa, qTo MaqepeT AJieKceii Apryposuq, r.p. 
+23.06.1973 oT6bIBaJI yroJIOBHoe ttaKa3aHHe B ITeHHTem..i:ttapHoM Yqpe)l(;::i:eHHH N~ 15 
+-KpHKOBa B nepHO.D: c 23.04.2009 no 09.07.2009, KOr,na 6bIJI nepeBe,neH B 
+ITeHHTem.i:ttapHoe Y qpe)l(,neHHe N2 l 3 -KI1IIIHH3Y. 
+Ocy)l(,neH no npttroBopy Cy.na MyH. KmnHH3Y, ceKTopa PumKaHb oT 
+19.03.2008 no CT. 217 (2) YK PM npHrOBOpeH K WTPaq>y B pa3Mepe 600 ycJIOBHbIX 
+e):(HHHU:. 
+ITpttroBop 113MeHeH pemem1:eM AneJIJI51U:HOHHOH TiaJiaTbI K11m11H3Y OT 
+03.02.2009, no CT. 217 (2); 85 YK PM npttroBopeH K 1 ro.ny 7 MeC51U:aM 26 .D:H51M 
+JlHlIIeHIDI CB06o,nhI. 
+CnpaBKa BhI,naHa .D:llil npe,n'h51BJieHH51 no Mecry Tpe6oBamur. 
+opa, 
+rJiaBHbIH-KOMHCCap IOCTHU.HU reuaAnii MOP03AH 
+Maceret Alexei Artur 
+тип. Chișinău str. А. Doga 30, ар. 38  МD-2 024 
+Требуются исправления или специальный сертификат: Мачерет - никогда не получал решения 
+1а-42/09 на русском языке. Копии "Recursul" на гос. языке и "Кассаций" на русском - должны 
+оставаться в архиве ПУ-1 5 Крикова. 
+В связи с орфографической ошибкой: "ОПРЕДЕЕНИЕ" Именем Закона - когда согласно 
+previizute de Legea nr. 133 din 08. 07.2011 privind protectia datelor сu caracter personal  - Дата 
+"вступления в силу" имеет "произвольный характер", как предусмотрено самим Определением 
+1а-42/09 - 
+"условно" от 03.02.2009 года и согласно "за" и "содержанию" от "момента задержания". 
+Доказывая - что решение выносилось в "отсутствии "обвиняемого" и следовательно 
+"переводчика" и судебного приказа - "самого перевода" - определения или судебного решения, 
+на котором должна стоять не только подпись переводчика и печать Суда, но и 
+сертифицированная подписью судьи: "переведённая копия - юридически соответствует 
+оригиналу", чтобы стало возможным - обжаловать не сам "перевод" - а ссылаясь на судебное 
+решение - быть доступно для его обжалования и в устной, и в письменной форме. 
+Также могут быть использованы следующее: 
+“Обстоятельства - написанных кассаций - проясняющих их написание в отсутствии - 
+перевода и соблюдение  права на обжалования - как никогда не получавшего 
+Определения № 1а-42/09 на единственно доступном Мачерет - языке и 
+подтверждающие юридические обстоятельства или объекты - которые мог бы быть 
+обжалованы:  
+Было получено только от 25.12.2020 
+Согласно ИПУД: отсутствуют данные, что:  подсудимому Мачерет Алексей Артур 
+был впервые вручен перевод приговора на русский язык. 
+Решение 1а-42/09 было обжаловано совместными кассациями: 
+1.полковника юстиции Мунтяну - на гос. языке - Начальника ПУ-15 в 2009 году.
+2.осужденного Мачерет - на рус
+. - из-за режима содержания - (3 красные Полосы:
+1.Склонен к побегу.
+2.Требует особого наблюдения
+3.Особо опасен.
+4.Закрытый режим в подвале ПУ-13 или на "закрытом бараке" в ПУ-15.
+Начальника ПУ-15 из-за ЧП связанного с расследованием, когда "усиленный" режим  наказания - 
+Мачерет едва не погиб от кровопотери - после вырванного ему вместо больного - здорового зуба. 
+Разбирая ЧП - задержек на получение "разрешений"  "спец транспорта" и "усиленной охраны" по 
+"режиму" . 
+Невозможность своевременно - доставить  Мачерет в больницы Кишинёва. Когда  "некомплект" - 
+едва не стоил - жизни. 
+Спец. расследование  установило - несоответствие тяжести наказания к только инкриминируемым 
+правонарушением.
+Особенно  - понимая, что лицо невиновно в уголовном преступлении - согласно Hotararie nr.79 и в 
+2007 году и согласно  Hotararie nr.43 именно от 03.02.2009 года - в день вынесения самого 
+Определения  nr.1а-42/09 делая нахождение в ПУ-15 с "таким" режимом - бесчеловечным.
+ 1. Recurs - от Мунтяну - со слов подсудимого и материалов дела.
+2. Кассации самого Мачерет - написанной под руководством - Мунтяну - по специально 
+выданной Мачерет - Конституции РМ.
+Пол-ник Мунтяну - никогда не делал перевода"Определения" , но был заинтересован, чтобы  
+Мачерет 
+- был эпатирован из ПУ-15 и специально ездил с этим вопросом в Кишинёв ~- но 
+получил отказ. 
+"Особый" - режим содержания  -  цензура все исходящие  петиции принимаемых исключительно 
+в открытом виде  - когда обращение шло к гос. органу - проходили  обязательную проверку -  у 
+Начальника ПУ-15  Мунтяну  и тем более после ЧП с Мачерет 
+. 
+Таким образом узнав о 
+"кассациях" и личного дела  Мачерет. Мунтяну вернул зачеркнув целые 
+предложения и абзацы - возвращал - кассации. Требуя найти тех, кто мог бы их переписать или 
+условием написания - чтобы они были "прозрачными". И обязательно ссылающимися на нац. 
+законодательства. Понимая, что истекают кассационные сроки - Мунтяну - внезапно вызвал  и  
+с моего согласия и "с моих слов" написал "Recurs" - на гос. языке и приложив "Кассацию" - на 
+русском языке - ссылающейся только на Конституцию - самолично отвёз в Кишинёв.
+В первых числах июля -заказан -на этап:  
+1.В больницу Прункул - ПУ-16 - подтвердив "ЧП".
+2.В Верховный Суд - по двум кассациям.
+Был лично вызван в кабинет Мунтяну - для моего выбора: 
+1.в ПУ- 16 - по некрозу от кровопотери - верхней челюсти и небольшой температуры или
+2.в ПУ - 13 - по кассации по "Recursul" или "Кассации" согласиться на этап домой через 
+Верховный Суд - "забыв - про температуру".
+Дополнительно - подтверждается архивом ПУ-15.
+Именно поэтому Мачерет - просит - пользуясь - ссылкой Preşedintele Colegiului Penal al Curţii de 
+Apel Chişinău - Iurie Iordan
+Прошу - сертификации - как Определения - вступившего в законную силу от 03.02.2009 года  
+решения - имеющее юридическим последствием  - права на  обжалование  судебного решения с 
+момента получения  окончательно признать решение nr. 1ra - 834/09 - оправдательным 
+приговором.
+Atenţie: Documentul confine date cu caracter personal prelucrate în sistemul de evidenţă nr. 0000299-001, înregistrat în Registrul de 
+evidenţă al operatorilor de date cu caracter personal www, resistru. datepersonale. md.
+email:centru@datepersonale.mdПоэтому заявление об обработке - будет отправлено с целью в сохранении сроков на кассацию и определения решения 
+Верховного Суда nr. 1ra - 834/09 не имеющего доступного перевода - правильного перевода - чтобы у Мачерет только могли 
+возникнуть права - на юридическую реабилитацию согласно положениям Международного Пакта о  гражданских и 
+политических правах. Так как данное решение - до сих пор не было опубликовано в Офичал Мониторул - как 
+опровергающее - ложные - данные в отношении персональных данных Мачерет - печатающимися статьями Высшей 
+Судебной Магистратуры - утверждавшей - уголовную ответственность против оправдательного приговора nr.1ra - 834/09.
+Поскольку реабилитация  - относиться к Определениям, когда лицо в прямой зависимости от степени наказания - будучи 
+признанным - невиновным должен быть - необратимо выведен из Уголовного Преследования - в случаях если этого не 
+происходит - может быть определён как право субъект - в отношении Статута. 
+Европейский Суд не правомочен проводить такую процедуру - а только Истца к государству. Тем более в отношении 
+оправдательных приговоров. 
+Такой случай - становиться - объектом МС ООН - если лицо было выведено из под  уголовного преследования - но не 
+получило - возмещения и объектом МУС ООН - если такое лицо продолжалось преследоваться вопреки решению 
+Верховных Судов - национальных законодательств. В силу того, что любое - процессуальное действие в отношении лица - к 
+которому есть неотложное обязательство в его юридической реабилитации. Любое процессуальное - действие которое не 
+следует - необратимой реабилитации - рассматривается - как международное преступление. 
+CURTEA 
+DE APEL CHI~INAU 
+2043, mun.Chi~inau, str.Teilor 4 
+www .insшnte.iustice.md: e-mail: cac@iustice .md 
+Те\ . (022) 409-209; Fax: (022) 635-355 CHISINAU 
+COURT OF APPEAL 
+4 Teilor str., Chi~inau 2043 
+www.instante.iustice .md: e-mail: cac@iustice.md 
+Те\. (022) 409-209; Fax: (022) 635-355 
+Мачерет Алексей Артур 
+Мун.Кишинэу ул.А.Дога,30 кв.38 
+На ваше заявление зарегистрированное 09.10.2020 под № 9949, Апелляционная 
+Палата Кишинэу сообщает что определение Апелляционной Палаты Кишинэу 
+№.la-42/09 от 03.02.2009 в отношении Вас, Мачерет А.А., будет передано в Бюро 
+переводов и после завершения работы над переводом будет направлено в Ваш 
+адрес, на русском языке. 
+Председатель 
+Коллегии по уголовным делам 
+Апелляционной Палаты Кишинэу 
+Исп. Аксенти М. 
+Тел. 022 635323 f Иордан Юрие 
+1 
+(; 
+( 
+,.. 
+r-Curtea de Аре/ Chi~iniiu 
+str. Teilor, 4 
+тип. Chi~inau 
+Maceret Alexei Artur , 
+тип. Chi~inau str. А. Doga 30, ар. 38 
+МD-2024 
+CURTEA 
+DE APEL CHI~INAU АПЕЛЛЯЦИОННАЯ 
+ПАЛАТ А КИШИНЭУ 
+2043, mun.Chi~inйu, str.Teilor 4 
+www.instante.iustice.md: e-mail: cacГa1.iustice.md 
+Те!. (022) 76-84-88; Fax: (022) 66-05-89 2043, мун. Кишинэу, ул. Теилор 4, 
+W\\'W.instante.iustice.md: e-mail: cw.шiustice.md 
+Тел. (022) 76-84-88: Факс: (022) 66-05-89 
+№ din -----La№ 12585 18.12.2020 
+Maceret Alexei Artur 
+тип. Chi$inau str. А. Doga 30, ар. 38 
+МD-2024 
+Prin prezenta, Va expediem pentru cuno$finfa decizia Colegiului Репа/ а/ Curfii 
+de Аре/ Chi$iniiu, din data de 03.02.2009 си nr.la-42/09, tradusa in limba rusa, in 
+privinfa cet. Maceret Alexei Artur. 
+Anexd: 3 file, 
+Pre~edintele Colegiului Репа/ 
+а/ Cur/ii de Аре/ Chi#niiu 
+и: Aiuelia Tanase 
+022.635.323. / urie I ordan 
+Aten(le: Documenlиl cofl/ine date си caracter personal pre/ucrate in sistemul de eviden/ii nr. (ХХ)О299-001, inregistrat in 
+Registru/ de eviden/ii а/ operatori/or de date си caracter persona/ ,vww.ref!istn1.dateoersonale.md. 
+Pre/ucrarea u/terioarii а acestor date poate fi efectuatii numai in condi/iile previizute de Legea nr. 133 din 08. 07.201 / privind 
+protec/ia date/or си caracter persona/. 
+Дело нр. 1 а-42/09 
+ОПРЕДЕЕНИЕ 
+Именем Закона 
+03 февраля 2009 мун. Кишинэу 
+Коллегия по У головным делам 
+Апелляционной Палаты Кишинэу 
+В составе: 
+Председатель судебного заседания: Гурин Василе 
+Судьи: Гриб Василе и Стратан Георге 
+Секретарь Бурдя Мая 
+При участии: 
+Адвоката 
+Прокурора Гушан Зинаида 
+Герман Олег 
+Рассмотрев в открытом судебном заседании в апелляционном порядке 
+уголовное дело по обвинению 
+Мачерет Алексей Артур, 23.06.1973 г.р., уроженец и житель 
+Кишинева, ул. Мирон Костина, 13/3, кв. 64, но де-факто 
+проживает в г. Кишинев, ул. А. Дога, 30 кв. 38, русский, 
+военнообязанный, разведен, гражданин Республики Молдова, 
+осужден 08.11.2006 на основании ст. 217 ч. 2 УК (наказание 
+отбыто не полностью), 
+в совершении преступления, предусмотренного ст. 217 ч. (2) УК Р. 
+Молдова, -
+УСТАНОВИВ: 
+Приговором Суда Рышкань, мун. Кишинэу от 19.03.2008 Алексей 
+Мачерет был осужден по ст. 217 ч. (2) УК к штрафу в размере 600 условных 
+единиц, на сумму 12 ООО леев. Наказание в виде неоплачиваемого труда, 
+установленное Мачерет А. приговором Суда Рышкань, мун. Кишинэу от 8 
+ноября 2006, должно быть исполнено отдельно от нового назначенного 
+наказания. 
+Для оглашения приговора суд первой инстанции установил, что Алексей 
+Мачерет 23.07.2007 примерно в 22:40 находился дома в кв. 64 по ул. М. 
+Костин 13/3 мун. Кишинэу, где на месте оперативным отрядом КПС 
+Рышкань было проведено расследование: в одной из комнат были 
+обнаружены и изъяты 4 коробки таблеток «Р:~,:кофаст», флакон муравьиной 
+кислоты, шприц 1 О мл с жидкостью коричневого цвета в количестве 2 мл, 2 
+лампочки без сердцевины внутри черного цвета, стеклянная колба, черная 
+сумочка, в которой был шприц на 5 мл, пластиковый пакет с надписью 
+«СМ», стеклянный флакон, коробка из металла с надписью «First» с 2 
+лезвиями в ней, 2 использованных шприца, упаковка из туалетной бумаги с 5 
+таблетками синего цвета в сочетании с белым, которые, согласно научно­
+техническому заключению нр. 679 от 27.07.2007отнесены к психотропным 
+веществам трамодол массой 0,25 г и перманганат кальция массой 2, 70 г. 
+которые относятся к прекурсорам наркотических веществ. 
+Приговор был обжалован гособвинителем, прокурором Прокуратуры 
+сект. Рышкань мун. Кишинэу, Виталие Кэлугэряну, который требует отмены 
+приговора, пересмотра дела и осуждения А. Мачерет по ст. 217 ч. (2) УК РМ 
+' к 2 годам лишения свободы, согласно ст. 85. УК добавить неисполненное 
+наказание -52 часа неоплачиваемого труда, измененные согласно ст. 87 УК в 
+26 дней лишения свободы и окончательное наказание в виде 2 лет 26 дней 
+лишения свободы, с отбыванием наказания в пенитенциарном учреждении 
+закрытого типа, поскольку преступление было совершено до полного 
+исполнения наказания, установленного приговором Суда Рышкань, мун. 
+Кишинэу от 08.11.2006, которым он был осужден к 150 часам 
+неоплачиваемого труда на благо общества, охарактеризован отрицательно, не 
+трудоустроен, вину не признал, и поэтому наказание должно было быть 
+более суровым, в виде лишения свободы. 
+Рассмотрев апелляционную жалобу, проверив законность и 
+обоснованность обжалуемого приговора на основании доказательств, 
+исследованных первой инстанцией, согласно материалам дела, Коллегия по 
+Уголовным делам пришла к выводу, что апелляционную жалобу прокурора 
+следует удовлетворить по следующим причинам. 
+Вина подсудимого А. Мачерет в совершении преступления, 
+установленного судом первой инстанции -хранение психотропных веществ в 
+крупных размерах и без цели отчуждения, была доказана показаниями его 
+матери -Г. Маркова, поданными в судебном заседании первой инстанции, 
+которая подтвердила, что подсудимый -ее сын, 23.07.2007 после обеда 
+пришел домой в нетрезвом виде, избил свою сожительницу -Ирину Олейник. 
+Она вызвала полицию. Она лично передала им сумку подсудимого черного 
+цвета, в которой были обнаружена таблетки трамадола, полиция вызвала 
+эксперта, сфотографировала стол, сумку сына с ее содержимым. 
+Свидетель С. Слабко -участковый подтвердил, что подсудимый был 
+зарегистрирован как лицо, употребляющее наркотики. В конце лета 2007 
+года, мать А. Мачерет обратилась в участок с жалобой на то, что последний 
+пришел домой пьяный, устроил скандал, употребляет наркотики, он пошел 
+домой к подсудимому, и Г. Маркова лично передала им сумку подсудимого, 
+в которой был обнаружен трамадол. 
+Вин А. Мачерет в хранении психотропного вещества -трамадола 
+подтверждается и протоколом расследования на месте -кв. 64 по ул. М. 
+Костин, ~ун. Кишинэу 13/3 с фотографиями обнаруженных вещей (л.д. 5-6); 
+протокол медицинского освидетельствования для установления состояния 
+наркотического и алкогольного опьянения Мачерет А. от 24.07.2007 (л.д. 7); 
+научно-техническое заключение нр. 679 от 27.07.2007, согласно которому в 
+квартире 64 по ул. М. Костин 13/3 мун. Кишинэу, где проживал А. Мачерет, 
+обнаружено 5 бело-голубых капсул «трамадол» массой 0,25 гр. (л.д. 16-17); 
+таблица с фотографиями (л.д. 18) и др. 
+Апелляционную жалобу прокурора следует удовлетворить, так как 
+подсудимый совершил новое преступление дQ окончательного исполнения 
+наказания, то есть рецидив преступлений, и этом в случае применима ст. 34, 
+82 ч. (2), 85 и 87 УК. 
+Руководствуясь ст. 415 ч. (1) п.2, 416-418 УПК Р. Молдова, Коллегия по 
+Уголовным делам, -
+ОПРЕДЕЛИЛА: 
+Удовлетворить апелляционную жалобу прокурора в Прокуратуре сект. 
+Рышкань, Виталие Кэлугэряну, поданную на приговор Суда Рышкань, мун. 
+Кишинэу от 19.03.2008 по уголовному делу Алексея Мачерет, отменить 
+приговор, пересмотреть дело и вынести новое решение, которым: А. Мачерет 
+признанный виновным в совершении преступления, предусмотренного ст. 
+217 ч. (2) УК и установить ему наказание в виде лишения свободы сроком на 
+1 (один) год и 7 (семь) месяцев. Согласно ст. 87 и 85 Уголовного кодекса, 
+окончательное наказание в отношении А. Мачерет по совокупности 
+приговоров, нового приговора и приговора, ВЫ:f!есенного Суда Рышкань, мун. 
+Кишинэу от 08.11.2006, составит 1 (один) год 7 (семь) месяцев и 26 дней 
+лишения свободы, с отбыванием наказания в пенитенциарном учреждении 
+закрытого типа, заключив его под стражу с момента задержания. 
+В остальном приговор оставить без изменений. 
+Определение подлежит исполнению, но может быть обжаловано в 
+кассационном порядке в Высшую Судебную Палату Р. Молдова в течение 2 
+месяцев. 
+Председатель заседания 
+Судья 
+Судья 
+/' 
+( 
+Переводчик~ подпись 
+подпись 
+·подпись 
+Чорба Наталья 
+3 
+.. 
+Председателю Верховного Суда 
+Молдова 
+от 
+МАЧЕРЕТ АЛЕКСЕЙ 
+ИДНП: 200001159655 
+ПРОШУ на основаниях легализации -Определения Верховного 
+Суда -и возможного представления в МС ООН и МУС ООН ввиду 
+нарушений которое может быть заявлено -только через комитет 
+JusCogens&ErgoOmnis и легализация документа проходит в 
+соответствии с Апостоле образца: 
+КОНВЕНЦИЯ ОБ ОТМЕНЕ ТРЕБОВАНИЯ О ЛЕГАЛИЗАЦИИ ИНОСТРАННЫХ 
+ГОСУДАРСТВЕННЫХ ДОКУМЕНТОВ 
+(Завершено 5 октября 1961 года) 
+Article 13 
+Любое государство может на момент подписания, ратификации 
+или присоединения заявить, что нынешняя Конвенция 
+распространяется на все территории, за международные 
+отношения которых оно несет ответственность, или на одну 
+или несколько из них. Такое заявление в силу со дня вступления в 
+силу Конвенции для данного государства. 
+В любое время после этого такие поодления уведомляются 
+министеоство иностоанных дел Нидеоландов 
+Статья 3 
+Единственной формшzьностью, которая мо:жет потребоваться 
+для подтвер:ждения подлинности подписи, возмо:жности, в 
+которой действовшю лицо, подписавшее документ, и, при 
+необходи.,иости, идентификации печати ШlИ штампа, которые 
+она несет, является добавление сертификата, описанного в 
+• 
+статье 4, выданного компетентным органом государства, из 
+• 
+которого выдается документ. 
+Обязательнvю регистрацию через министерства иностранных дел 
+Нилеоландов. чтобы быть представлен в одном из сvдов города 
+ГААГА: 
+Когда заявление о продлении делается государством, подписавиш.~t и 
+ратифицированны,\1, Конвенция вводится в силу для соответствующих 
+территорий в соответствии со статьей 11. Когда заявление о продлении 
+делается государством, присоединивши.мся к Конвенции, Конвенция 
+вводится в силу для соответствующих территорий в соответствии со 
+статьей 12. 
+Поэтому -в силу действий Jus Cogens -которое обязательно в случае, 
+когда национальный Верховный Суд -выносит решение -из которого 
+следует -возникновение гражданских и политических прав, у лица в силу 
+уголовного закона -лишившего его избирательных, гражданских и 
+политических -прав. 
+Когда наказание -применением "особого и строгого режима" -имеющим 
+последствием независимо от ero продолжительности -ограничений в 
+соответствии с Международным пактом о гражданских и политических 
+правах 
+Оправдательное решение Верховного Суда -по процедуре, когда Erga 
+Omnes не может быть обособлено от Jus Cogens. 
+В случаях /когда в отношении лица было нарушено международное 
+положение о гражданских и политических правах -государство имеет 
+правовую обязанность в устранении нарушения и её юридических 
+последствий, как условий в соблюдении общепринятой международной 
+нормы. 
+ВынесеАное Верховным Судом оправдательное определение № 1 ra-834/09 
+от 21/07/2009 года- имеющее способность к восстановлению 
+юридических: гражданско-политических и иных прав в виде -
+письменного объяснения -ero положения до и после -вынесенного 
+решения -и только на досrупном для понимания языке. 
+В Молдове до сих пор отсутствуют -процедуры по юридической 
+реабилитации. чтобы -оправданный или его адвокаты могли, следуя ей 
+Категорически запрещая применения уголовного преследования -к 
+такому лицу -в ино.\1 случае начинает относиться строго к юрисдикции 
+МС ООН и МУС ООН. 
+Именно поэтому -подпись Председателя Верховного Суда -на переводе 
+как и подпись переводчика с указанной датой когда только был получен 
+лицом подлежащего юридической реабилитацией или юридической 
+легализации положения гражданского правового состояния такого лица 
+Когда только Мачерет с может получить определение Верховного Суда на 
+единственно: и доступном для Мачерет языке и согласно 
+Международному Пакту подписанного Молдовой в 1990 году -у него 
+только тогда и могут возникнуть гражданские и политические Права. 
+Обязанностью государства становиться опубликование о вновь возникших 
+гражданских и политических правам по реабилитирующим 
+обстоятельствам случае если -оно было не напечатано ранее в Офичал 
+Мониторул. 
+Поэтому согласно международному праву -юридическая реабилитация -
+относиться к обязательному праву и относиться к политическим и 
+гражданским правам соответственно Международному Пакту о Правах -
+не может быть ограничена ни одним законом или положением. 
+Поэтому, чтобы исключить противоречие национального 
+законодательства к Международному Пакту о гражданских и 
+политических правах -когда -силу имеет международное соглашение я 
+законно потребовал, чтобы был составлен перевод Определения 
+Верховного Суда -и ясного значения для юридической реабилитации: 
+1. Числа -или даты не просто перевода -а наступившими правами 
+МП -ставшими только возможными -с момента -юридически 
+правильного перевода определения Верховного Суда. 
+2. Подписи -именно Председателя или юридически ответственного 
+лица -имеюшего права представлять Определения Верховного 
+Сvда -как Оправдательный Приговор Верховного Сvда -а не 
+частноrо определения -просто переведённого на другой язык. 
+3. Отделыjого Постановления Верховного Суда- для публикации в 
+Офичал Мониторул -именно ПЕРЕВОДА -то, есть Определения на 
+русском языке -как он есть -с указанной датой и юридическим 
+последствиями -правами -Мачерет -как только сейчас 
+возникшими у него- гражданским и политическим правами. 
+могли быть восстановлены в своих гражданских и политических правах -
+лица, освобождённые по решению Верховного Суда. 
+Поэтому, не зная этого обращаясь к гражданским процедурам '-не 
+восстановив гражданские права и имеющимися уголовными -
+обязательствами -которые продолжаются -несмотря на 
+реабилитирующие обстоятельства. 
+Такие «пробелы» многие годы от физических лиц тем не менее 
+предусмотрены уголовно процессуальным Кодексом, как обращение к 
+Международному Пакту о гражданских и политических правах -
+подписанными Молдовой в Нью-Йорке в 1990 году. 
+В случае, когда лицо, освобождённое по решению Верховного или 
+Конституционного Судов -не было выведено из-под уголовной 
+ответственности по реабилитирующим обстоятельствам продолжает 
+уголовно преследоваться в нарушении этого Пакта -делает возможным 
+обращение к Римскому Статуту. 
+Положения Европейского Суда о сроках давности чтобы не 
+противоречить -положениям МС ООН -в применении к реабилитации 
+строго -статьи 29 Римского Статута -исключения -любых сроков 
+давности. 
+Иначе -дело переходит к Уголовной юрисдикции -МУС ООН. 
+Таким образом -создается правосубъектность и правоотношения со 
+Статутом: государства в случае отклонения юрисдикции Европейского 
+Суда в МУС ООН. 
+Европейский Суд- не имеет правоспособность в вынесении решений по 
+юридической реабилитации- повторяющее определение Верховного Суда 
+национального законодательства -Европейская Конвенция не 
+предусматривает -пересмотр оправдательного приговора -или основания 
+его неисполнения. 
+В силу оправдательного решения: Верховного или Конституционного и 
+Судов, когда лицо не было восстановлено в своих правах -несмотря на 
+оправдаliельное и реабилитирующее решение. 
+К понятию неисполнения обязательств по реабилитации лица -
+применяются положение Международного Пакта о гражданских и 
+политических Правах . 
+• 
+Как это сделать правильно согласовав -с юридическим отделами Суда 
+Гаага. 
+А не Венецианской Комиссией -которой недоступно для понимания -
+такое понятие как JUS cogens и называющие презрительно: 
+«американскими когортами» 
+Подпись Председателя Верховного Су да -с указанием только даты 
+получения официальной копией -на языке доступном для понимания -в 
+соблюдении Международного Пакта о гражданских и политических 
+правах -есть или нет упущений -самим лицом -Мачерет. 
+1 / 
+Мачерет ~ 
+• 
+rл,~ilrul nrJrh-9 2020. 1-20fl47'i,I 1-12-lrh-l \OS20Z(J..I Judecaюr Angcla \'as1lcnco 
+Рассмотрев в пуб.1ичном суде хо.1атайства о перес:'\.ютре решения Веrхонного 
+су.1а от 2 l .07.200lJ в отношении его осуждения, Мачерет А..1ексея Артура. 
+23.06.1973 пца, 11ро11схuдяшсго и проживающего в Кишиневе, у,1. А. Дога 
+30, кв 38, со средним образованием, неработаюший. гражданин Республики 
+Молдова, бе1 иждивенцев, военный субъе~п, нс в.1а.1сющий госу,1арстиенным 
+языко'1, р.111се осуж;тенный 
+Веrховный суд от 21.0i .2009 не nриня.1 во внимание. •по он провс,1 полгода в 
+тюрьме, не принял во внимание, что преступление подпада.;lо под действие 
+Кодекса об административных правонарушениях, тот факт, что он подвергся 
+бес•1е"1ове•шому обращению во вре~tя содержания под стражей, бы.1 
+прес,1с,1уется rю;шuией, даже сели он бы."I освобожзен, имея право на 
+реаби"1итаuию, при ·по\1 не все ,.1оку\1енты были переведены на язык. 
+который он знает. Cy.:.i. сохраняя 1ю;южения статей 45~. 460 Уго.1овно­
+r1роuессуального кодекса. упо~tянутые выше. считает. что причины. на 
+которые ссылается Мачерет Алексей. не яв.1яются основанием .1ля 
+11ерес'l.1отра безотзыв11ого су.1ебного решения, есш1 не будут указаны другие 
+причины. не предусмотренные законом. в соответствии со ст. 458,460. 462, 
+465 УПК РФ. суд. -h о t а r а ~ t е: Ходатайство о пересмотре Постановления 
+Верховного су .:.ia от 21.07.2009 г., поданное ~1ачерет А:1ексеем, отклонено как 
+неприс!'.1,1смос. [1риговор ~южст быть обжалован в Апелляционном суде 
+1\иши11сва в тсчс111tе 15 ,1ней через Кишиневский су..1, штаб-квартиру 
+Буюкань. 
+Кассационная Жалоба 
+Через Суд Буюкань -на Определение Суда Буюкань в соответствии с 
+рассматриваемы:~., -вопросом -Оnрс,1с:1сния в Оr1равдате"1ьный Приговор. 
+который может быть заявлен от 02.12.2020 года -до 02.12.2021 года и 
+сог:1асно RECURS -п.,атированному от 02.12.2020 года -а 
+зар1:1·истрированной 11рошитой копией согласно u11ечатаннuй 11.аомбе -
+имеющих срок до 04 января 2021 голу -если следовать. строго календарны~t 
+.:~ня~t или от 16.01.2021 года. 
+Согласно возникшими -обшеобязательными международными нормами -
+посrояшю и неоднократно заявляемым. как е;1инственное условие 
+расс•атривать опрезслсние Верховного ~ула и иметь права высказываться 
+по его поводу на уровне первой инстанции -Уголовного Су,1а это 
+етановилось только допустимым, когда суду -задава,;1ся проuсссуа.1ьный -
+~замен или запрос на установление нарушений приводящих к нс.:избежному 
+пересмотру- .'1юбого решения национа.,ьных судов если нарушена статья. 
+по;южение или Протоко.1 Конвенции ООН и:ш. что традиционно ближе 
+Страница 1 из 9 Гсонсs11 ·u, ~u.~ At. ~GIS~ТURtl 
+1 JUJ.a:C~ТORIA CHl$1NAU 
+t7l}~~ 
+1 
+Dus~rul nr lrh-•, ~02r1 1-2(104"5'-ll-,2-lrl,-! ()52020-, Jнdccator .'\n11-cla Vas1lcnco 
+нашим судебным -инстанuиям, но менее обязате;1ьным тем не менее 
+обязанным исполнять их в соответствии с УПК РМ: 
+В соответствии со статьей 29 t2) УПК 11\-1 Правил (ЕС) Nr 1493'1994. УПК 
+РМ гпе стоrоны заявляют о нарушении Конвенuии о защите нрав че:ювека 
+и основных свобо.:~.. ·~аключенный в Риме 4 ноября 1950 года и 
+ратифиuированный Республикой Мол,::юва парламентским рещением No 
+1298-XII от 24 ию,1я 1997 года, суды обязаны вынести решение на разной 
+основе в своих решениях, независимо от того, имели ли место нарушения 
+основных прав и обязанностей че:ювека в свете кейс-права Европейского 
+суда по правам человека. 
+Статья 6( 1) заменяется с.1е,1ующи~ш: ( 1) и (2) ЕСПЧ предусматривает, что 
+"Каж.1ый че:1овск имеет право на справедливое судебное разбирательство ... 
+независимым и беспристрастным судом, учрежлсш1ым законом, который 
+будет принимать решение либо о нарушении своих гражданских прав и 
+обязанностей, либо по существу любого утверждения в уголовных делах. 
+направпенных против него: "Любое шщо, обвиняемое в совершении 
+преступления, считается невиновным ..10 тех пор. пока его вина не будет 
+устшювлсна законом". Таким образом. вынесенный приговор находится вне 
+справед;1ивого судебного разбирательства. Статья 93( 1) заменяется 
+следующими: ( 1) Уголовно-проuессуальный кодекс Республики Молдова 
+предусматривает, что "доказательства яв."!Яются факта:-.ш, приобретенными в 
+поря.1ке, установленном этим Кодексом. которые служат д~1я установления 
+наличия или несуществования преступления. установ;1ения виновности. 
+установления других обстоятельств, важных для простого урегу.:шрования 
+дела". и статья 95(1) Кодекса заменяется следующими: ( 1 ): 
+"соответствующие, убедительные и по.1езные доказательства, управляемые в 
+соответствии с ·пим Кодексом, должны быть приемлемыми". В де.1е не было 
+представлено никаких доказательств ~юего физического присутствия, 
+\1ачерет Алексей, на момент предполагаемого бездействия в моем доме. Я 
+была в уголовном аресте. в своем деле Европейский суд по правам человека 
+(ЕСТТЧ) подчеркнул в контексте положений статьи 6, что необходимо 
+учитывать качество доказательств, а также обстоятельства, при которых они 
+были ПQЛУЧСНЫ, 
+Ана.1огичны~t образом Страсбурп:кий суд считает. что суд до.1жен 
+опрfде.шпь, были ли рассматриваемые доказательства решающими для uелей 
+уго.qовного судопроизводства (см. "Гафген против Германии")_ кроме того, 
+ЕСI1Н по делу Барберс, Мсссегут и Джабардо против Испании и Яносевич 
+против Швеuии подчеркнул, что ро,']ь обвинения заключается в 
+предоставленю1 достаточных доказательств д.1я вынесения осуждения этого 
+лиuа. 
+Страница 2 из 9 
+rx. .. rul nr lrh-9•2020. 1-2004"'541-12-lrh-l 1 ()520~0-1 Judecator Angela \'asilcnco 
+В ..1сле я считаю, что настойчивое требование как учреждения не смогло 
+проверить законность возбужденных против меня уголовных дел. 
+Таким образом. уголовное де.:ю против \1еня расследовалось в нарушение 
+права на суд, рот, суде~ заключается в том, что пос;1е изучения всех 
+обстоятельств, а также доказательств. подтверждающих В:\tенение факты, 
+11справить эту ошибку и осуществить пrавосудие в соответствии с 
+r1ринuипом справе..1ливого судебного разбирательства. которое не 
+СОСТОЯ.;JОСЬ. 
+Заявнте:1ь считает. что его право. 1·арантирова.нное статьей 13 Конвенuии. 
+было нарушено: "Любое лицо, чьи права и свободы, признанные зтой 
+Конвенuией, были нарушены, имс1.'Т право эффективно обращаться в 
+национальный суд, даже ес.1и это нарушение обусловлено лиuами, которые 
+дейспювали при ис1юлнснии своих с:1ужебных обязанностей". 
+Статья 3 ЕСПЧ гарантирует. что "никто не может подвергаться пытка~~. 
+бесче_1овечному или уш1жающему достоинство обращению или наказанию". 
+В то же вре~tя статья I п. l. Из Конвенuии против пыток и др)'ТИХ видов 
+жестокого. бесчеловечного или унижающего достоинство обращения и 
+наказания. принятой 1 О декабря 1984 го,1а в Нью-Йорке для uелей настоящей 
+Конвенuии. термин пытки означает любое деяние, в соответствии с которым 
+лнuо с намеrением. сильной болью или страданиями провоuируется, 
+физ11ческое илн пс~1хическое. особенно с целью по.1учения информаuии или 
+признаний от ,того лиuа ш и от третьего лиuа. чтобы наказать его ш и ее за 
+деяние, которое он или третья сторона совершил или подозревается в 
+совершении. чтобы запугать или оказать давлеttие на него или запугать или 
+оказать давление на третью сторону, или по любой другой причине, 
+О(;Нованной на любой форме дискриминаuии. независимо от того, что, коr-да 
+такая боль или страдания пр11меняются агентом государственной власти или 
+любым другим лиuом, действуюшим офиuи3.;,ьно и.:-rи по иниuиативе или с 
+явного lПИ молчаливого согласия таких лиu. Этот термин не относюся к 
+бо,,и И;1И стра.:ханиям, обусловленным исключительно юридическими 
+наказаниями, присущими таким санкuиям или вызванным ими. Конвекция 
+до.1Жна быть сохранена в контексте нынешней процедуры пересмотра в 
+коl-lrексте применения пыток к заявителю в ходе су.'Iебного преследования по 
+этому делу. 
+Это касается и заключения от 23.07.2020 о вмешате;1ьства прокурора, 
+,.1:1агуряну и его же11ы Натальи Барбакарь их участием R сулебных 
+заседаниях. через третьих лиu. l·1спо,1ьзуюших не просто незнание Мачсрст -
+языка или закшш -но использующих злоупотребления правами Мачерет и 
+Закона -выступая используя -незнание как раз языка и имеющими целью 
+Страница 3 из 9 
+o.,,..,rul nr !r~-ч-:o.zo. 1-20(1-175~1-12-lrh-l iOS:!020-1 Judccator Antcla Vas1lcnco 
+сделать всё, чтобы -де.ю о юри.1ичсской нсвинuвнос·1 и -вы1·;1ядело, как 
+незаконное и необосноват1ые. 
+Здесь стоит упоминать, как де;ю было представ.1ено в письменном визе, как 
+ходатайство об отводе 11рокурора описание с подробными причинами. И 
+Уголовная Кол"1еп1я нс пр11няв отвод -основой которого стало участие 
+прокурора Ка.1агуряну в качестве государственного обвинителя в 
+предыдущих уголовных делах. по одному из которых было предъявлено 
+обвинение -ставши-.1 причJtной прив;1ечею1я к крайней степенью наказания к 
+юридически невиновному лицу. 
+Теперь 11еожи..1а11но став продолжением от ОК 12.2020 года -когда 
+Калаrуряну -попытавшийся -в открытую поучаствовать в составе той же 
+Коллегии -несмотря, на то, что Судья или Докладчик -по делу Мачерет стал 
+Гафтон Александр. 
+Ка.1агуряну -пришедшего в со11ронож.:1ении своей жены Натальи Барбакарь 
+необос,юванно заявивших отвод всей Уголовной Коллегии, 
+О его невозможном участии в деле о нарушt:нии 4 статьи 7 Протокола 
+Конвенпии 2006 года -как уже проводившего служебные расследования в 
+период от 2007-2008 годах и даже "не упрекая" не проводившуюся 
+расследованию по фактам и по применению пыток и его злоупотреблений в 
+2007 roay по участию Зинаиды Барбакарь -матери Натальи Барбакарь в 
+отношении -жертвы "Victima" -международного престуrшения "Свиридова­
+Олейник". 
+Зная об этих -незаконных и уже преступных вмешательствах -уличаюших 
+Калагуряну, Кодр- вяну. и Зинаи..1ы Барбакарь. Получивших -"шедрые» -
+"чаевые " -чтобы заставить отказаться от иска к государству Турuия -
+"Свири,1овой -Олейник" -через национальные Су ... 1ы Молдовы. Сделавших 
+стороной трс-1 ьих ;шц соучастниками -!\tеждународного nреступ:~ения. 
+Самое простое -и необходимое для совершения такого особо тяжко 
+преступления в области правосудия, когда существовало -решение 
+межлународной организации -имеющее максимальную силу дJIJI всех 
+наuиональных судов -даже в странах не участников стран ООН -когда 
+лицо бь1ло освобожлено И'J туреuкой тюрьмы -не на основании -
+,1епортаuии. А как жертва -выбывшая из страны, заявленная, как 
+:wтро11авшая без вести" -и в результате -r1рове,1ения процедуры 
+\"опекунства" -на.:~ дочерью жертвы -в рамках нащюна.,1ьноrо суда -
+государства чьё граж.;::ханство имело "без вести" пропавшее лиuо. ПО:JТОМУ 
+НАUИОНА, lЬНЫЕ СУДЫ, ПРИНЯВШИЕ РЕШЕНИЕ ПО "ОПЕКЕ" ребёнка 
+и имущественных прав жертвы -до исполнения 5 -ти лет, а в результате 3 -
+Страница 4 из 9 
+Oo,;;,rul nr lrh-11 2{120. 1-2ОН-Р5<1 !-! 2-lrh-l lf\5~()20-1 Judccillor Angcla Vasilenco 
+х ,1ет. 1аявившей "без вести пропавшую -"Свиридову Олейник"" -именно в 
+международный розыск -чтобы -по было законно. 
+Как имеющего обя·нпельство'\1 государства, принявшего Устав ООН. 
+Мо.1.-~ова 11меюwе11 оnюашюстью 11сп0Аьзовать свою правоспособность -д:1я 
+того, чтобы заяни,ъ однонрt::1\1ен1ю и \.tировому сообществу и государству на 
+территории КОП){)l)ГО совt::рша;юсь мсЖ.Jународнос прсступ.аение с 
+обязательным расследованиям, чтобы установить -являлся ли это единичный 
+с.1учай. 'Это яв.1ястся ниви.тизованным и строго обязате.1ьной проuедурой 
+неоставлення -бе3наказанными -виновных в 11реt:ту11;1ениях против 
+че.1ове•1носн1 -:нн1. 
+По·пому было и есrь то.11,ко <цно решение -допуск запроса на пересмотр, с 
+вопросом о новом решении, чтобы оправдать. Мачсрст Алексея в 
+совершении преступ:1ения, предусмотренного пунктом 2 статьи 217. (2) УК 
+Р\1 -когда при11у,1ив -будущую -но гражданскую жену "Олейник -
+Свири.:10ва" -акт самооговора -себя 11\·ictima" это пытки, а вот условия 
+которые создаться, чтобы иск.1ючитъ не просто \.1еж..1ународную 
+юридическую реабилитаu~1ю -включаюшей всея не просто материа..ъные 
+~1ски против государства -на территории которого происходило 
+прсст~п.1ение -д.1я этого необходимы сохранение права -жертвы торгов.1и 
+:1юдьми -чтобы она могла лавать показания против государственных органов 
+-страны нарушитепя -государства Турuня, но только при условии 
+"зак.1ючения согJiашений -вины, самой жертвы -при условии соблюлений 
+нормы международного права -в наuиональном Суде -государства. 
+Отзыв меж,1ународного стат)Са "\'ictima" -не противоречит 
+международным соглашениям, если есть добровольное соглашение "вины" 
+заявленное, через 11аuио11алы1ые суды, условие когда прекращаться все 
+связанные юридические обязате.1ьства в отношении юрисдикционных прав и 
+обязанностей "\'ictima". 
+В связн с тем, что соглашение вины проводилось -в отсутствии -
+допустю.1ых международных норм и в нарушение прав -"Олейник 
+С~шридова" -по,1 видо~1 -признание вины -за хранение -только 
+приписываемого ей и Мачсрет -лекарственного препарата -не имеющего -
+запре1 <1. а только ограничения на продажу. 
+с\.,,1 пре11арат .:.~ля шщ -которым этот препарата не назначен врачом или 
+соr:шсно -его установ.-~енной фактической стоимости -только его 
+перепродажей со значительным -преиышснием себестоимости -только тогда 
+подлежит -как объект -незаконного оборота наркотических веществ. 
+Страница 5 из 9 
+[)o,~rui nr !rt,-<> 2020. 1-200,P'i 11.: 2-lrli-l · !)5~r,~o-, JtJJ-:cator Angclз Vзs,lcnco 
+Пока соблю.1астся -ми11и~1а.1ьная це,1остность лекарственного препарата: 
+в с.1уча~ 11,1рушсн11й ш:лостнопи упаконкн лицо толhко \1ожет попозреваться 
+в с,1учас, ког,1а нарушены нор~1ы -инструкuий по хранению или применению 
+лекаре, венного препар:.па 
+-имеющс10 -1юказаний к 11рименению одобренных -Минз,1равом, 
+Уго.,овный Закон "'юг 11рименяться -ю;1ько на основании -существования 
+RECURS ора. 
+l lc установившей -перепродажу и.1и закупку -лt:карствснноrо nрслар,па -
+нс может прив.,екатhся к уголовной ответственности. 
+Uелью Суда то.,ько выяснить возможность совершенного правонарушения, 
+как сознательное и следовательно согласно рецидивной квалифицировать его 
+как у1·0.1овное или ес,1и 11ет разумных сомнений в намеренности действий 
+квалифинировать, его как административное пранонарушение предупреждая 
+-совершение сознательных действий -по опыту безнаказанности. 
+Судьи -были 11од в11ечат.1ением представленного -обвинительного 
+заключения. 
+Не подозревающих -что речь здесь может идти только о преступлении -
+"наоборот" . оправдывающее -незаконное проникновение в жилище 
+согласно домово~tу реестру -его собственникам. 
+"Вина" \1ачерет и Олейник "Свиридов" состоящих в 6,1изких отношениях -
+изначально была установлена "звонко~, -соседей" и матери -обвиняемого 
+Мачерет и будущей свекрови "Олейник -Свиридовой" -звонившей с uелью -
+пов.1иять на сына и прекратить -громкую скан,щы между её будушсй 
+невестки. 
+Н,tрушение~1 шума нельзя было объяснить право 110,шuии -"вспомнившей о 
+звонке" в 19-00 -и примчавшихся в 22-40. 
+Но caiw факr и сертификаты 4 В-615/07 и 48-616/07 датированных от 
+24.06.2007 года -делают "соглашение вины" и "явку с повинной" -"Олейник 
+" Свиридовой" ll)ебующих хотя бы уточнений -обстоятельств -дачи 
+1оказаний -к.1к добровольной "явки", чтобы выяснить каким образом 
+О.1ейю1к моr:1а находясь под арестом -вместе с Мачерет -ещё и гулять по 
+лесу н собирать трамадол? 
+Страница 6 из 9 
+l')(,saru 1 ~r lrh-9 :!~О. 1-20047~41-12-lrli-l lfl5:!020-I Judccэlor Angcla \'a:;1lcnco 
+Как -по нс замсти.1 прокурор Калагуряну и 1·ем более адвокат Зина 
+Барбакарь" 
+И узнать как 1Нfке,1 не отмененное определение 1-984;07 -Георгий Морозан 
+от 06.13.2007 года с участие,1 -адRоката Зинаи.1ы Барбакарь преврати,1ось в 
+'lастное н щ;полняе-.юе Опре;1еление от 10.03.2008 года -Р.А. -84/07, когда 
+согласно со.:~ержзнию -е.:~ино.1ично разреша..1ось в отношении Мачерет 11 
+выноси,1ось Определение -по 1адержанию Ма•,ерет -обвинённш,t}· согласно 
+ста·1ье 321 УК P!v1 -неисполнения судебного решения. коr.1а Мачерет не смог 
+-,1оказать -что наказывается за деяние от 24.05.2006 года в третий -а затем в 
+четвёртый. в пятый и шестой раз!? 
+А Bt:.JЬ Г еннаднй Морозан -"всnо!I.ШИ:1" -факт оп,1аты штрафа и вынес 
+определение -запрещавшее прив.,счения Мачерет по статье 321 УК Р\1 -
+пока судебные исполните:111 не ознако\fят -в апс.1ляuионном порядке 
+опровсрженш:, что И\1 ,:10пuд,1инно известно. что Мачерет -не наказывается 
+при -.1вух исполненных наказаниях в третий раз. 
+Тс1к как Мачерет, так и не бы:~ получен приrовор по решению Бырназ от 
+08.1 1.2006 года не на русском не на гос. языке II поэтому не мог быть 
+обжалован. 
+Участие О,1ейник Свиридовой в 110ходах в лес от 24.05.2007 ro..:ia 
+опrовеrгастся сос~асно 11rн11·овоrу l-13710R от 19.03.2008 -где .:хетально 
+описывается -как по "звонку" -в 19-00 -тот,ко и зарегистрированному 
+полицией -как отправной точкой вменяемых от 27.07.2007 года "нрав и 
+обязанностей" -обвиняе~1ых пос;1е .:хвух суrок ареста от 23.07.2007 ro,1a -
+согласно решению Суда сектор Рышка1t0вка -давшим обоим -по 2-е суток 
+ареста в КПЗ и согласно реестру -задержания срок начала течения ареста 
+начался как раз в 22-40 от 23.07.2007 rода. Хотя Сертификат -от Суда 
+Рышканоnка -утверждает -"округлив" срок -начав его от 24.07.2007 года -
+судьи И:шшку . 
+Поэтому прошу R связи с тем, что полученный мной RECURS от Верховного 
+Суда -рассматривает те же обстояте.1ьства -что соответствуют 
+пересмотру Определения -Верховного Суда от 21.07.2009 год nr. 1 ra-834/09 
+и ставШИ:\.IИ только сейчас -доступными на языке -вла;~еющеrо только 
+я-iыко"'1 ~1ежнаuиона.1ьного общения -но не в,1адеюшего гос. языком 
+Рр,1ышш и по.1учившсго само Определение и сам RF.CURS от 02/12/2020 и 
+зарегистрировав ero удостоверяющий uелостность -и дату перевоза 
+который делает течения исковой давности на обжалование как RECURS, а 
+так и исполнения процедуры -когда Определение -может быть 
+пrеобразовано в оправдате.1ьный приговор -прошу передать Суд Бую кань 
+-доказывающих мою невиновность -локументов заявленных у судьи 
+Страница 7 из 9 
+_,,ui ,r (rl, <1 2(,,00_ ,-:'1,щ"Ч -i~-lrl,-! :0;2020-1 Judeca1or Лngе!з \'as1knco 
+Васи.1енко в соответствии с положениями матеrнального национального и 
+-.1еж11ународного Кодекса и Конвенции -обязательной для -национальных 
+Су.1ов, Для установления в кассационном порядке обс1оятельств -
+,1остаточных для переква.1ификаuии Определения от 21.07.2009 го..1а в 
+окончательный оправ,1ате_1ьный 11рш·овор -в Верховный Суд -согласно -
+'Экспед~л ор о 'Эюекутоrе в апелляuионную Па.1ату и в 1-енпрокуратуру -
+.1ля соблюдения проuессуапьных норм -д,1я составления -
+оr~равдательного Приговора-в отношении Мачерет согласно: 
+И наuиональными. и мсждународным11 -материальными нормами -
+осноRываясь на 11елях правосу.1ия -не привлекать юридически невиновное 
+лицо к наказанию я основываю это заявление на основании статьи 3; 5 
+Регламента (Е'1К) No 208U92. Статья 458 (2) заменяется следующими: (1) uп. 
+2), 3 ). 459,460,465.427 пп. 6 ), 11 ). 12). 13) УПК РМ. 
+И ю1 основании статьи 251 УПК РМ -когда обнаруживается -
+обстоятельство имеющего способностью фундаментально в.1иять на права и 
+возникающих обязанностей 11ск~1ючающих -такое понятие «незнание 
+закона» ил1 «обязанность перед субъективным -правом)). 
+А только следуя прави,1у -когда его несоблюдение -к потере прав на 
+ис,юльзованис правиа1а. 
+Прошу Верховный Суд -учесть моё обращение по обстояте,1ьства~1 -что 
+никог.1а не получал судебные решения, когда их обязательность 
+продиктована принципов -справедливого обжа,1ования или когда решение 
+-никогда не переводилось на доступный только для обвиняемого или 
+подсудимого -язык. чтобы -только ознакомившись с его содержанием -
+несогласный и невиновный может -заявить и попытаться отменить решение 
+или опреде,1ение ,;шна -как виновное лицо_ 
+А поскольку вплоть до 2020 года -мне не у,1ава.:1ось объяснить -что: не 
+в.-1а..1ея языком -лиuо не может не подтвердить так и не опровергнуть -
+обвинение -которое он получил на недос-rупном ему языке -и из 
+со.аержания которого он позже -только сейчас узнаёт -что никогда не 
+совершал -правонар)'шения или уголовного преступления. 
+Поско:1ьку официально мной были ранее заявпсны -мои права на 
+юри,1~ескую реабнлитшmю -прошу о привлечении к делу Генпрокурора 
+проинформировав -что его обязанностью по получению Определения от 
+21.07.2009 года -это постановление -о прекращении всех юрилических 
+претензий которые чог,1и оставаться только ссыпаясь -на ранее сделанное 
+обвинительное зак.:1юченне органа уго.1овноrо прес,1едования по 
+11рив:1ечению лица к наказанию и какого то времени -6 месяuев -
+Страница 8 из 9 
+D11,~ru: rн !rt,-'J :!02n. I-20l~P5·1I-l 2-lrh-II ns2n~o-1 Judccator Angcla Vas1lcnco 
+прю,tенения уголовного наказания связанного с лишением прав Человека и 
+на..1ожений иск.,1ючительных обязанностей -11ро.1иктованны_х испо,1нением 
+наказания и его степенью -в приговоре -который был отменён 
+окончате;1ьным Определением Верховного Суда. 
+Г,1авное. что Опре,1е;1ение хоть 11 окончате.1ьное -не имеет -последствием 
+необратимую реаб11.1итаuию _,иuа -подлежащего юри.:шчсской, социальной 
+и \tатериальной и медицинской реаби,1итаuии. 
+То:~ько окончате,1ы1ый Приговор -оправдывает или осуждает лиuо. 
+Пп,то"1у \1ачерет и просит -при;южив -и проведя через ИПУ Д -
+утверж.1ённой инструкции об действиях согласно учёту и процессуального 
+.:юкументирования в судах и апс:1ляuионных палатах. когда согласно 
+вынесенно~1у Определению Верховного Суда -им высылается -это 
+определение в судебные инстанции -приговоры которых он отмениJ1 и 
+о.1новременно информирует Министерство Юстиuии -в следующем порядке 
+очередности: 
+1 . .Judecatoria Ri~cani Chi~inau 
+2_ сорш: Procшatura (jeпerald 
+3. copia: Сш1:еа de Apel Chi~inaн 
+4. сорш: M.iceret Лlexei Лrtur 
+5. Penitencian1\ nr. 13 Chi:;;inau j Chi~inau str. А. D()ga 30 ар. 38 
+1 lрошу -отмеви1ь решение Суда Буюкань -как не исполнивший 
+обязанности по запросу -на установления права и создания нормативно­
+проuессуалыюй базы для ква.1ификаuионного преобразования -Определения 
+-в Оправ..::~ате,1ьный Приговор. 
+Прошу в случае кассании о передаче согласно -проuедурс в 1шстанuии -и 
+органы судебной системы правоспособные -сделать выводы и согласно -
+Оnрезелению вынести оправдательной приговор -как лица юридически 
+невиновного -и установ;1сния в соотвстствшt со статьёй 440 ГПК РМ -
+право о.:~ностороннс обязательных получений материа.1ьных исков -когда 
+сог,1асно статье 53 Конституuии РМ -стороной Ответчика -может быть 
+представлено только Министерство Финансов. 
+Катеrорически -нс принимаю 110зиuию -передачи де.1а к бю,1жетному 
+Министерству Юстиuии -как виновной хоть и условно стороне -и не 
+1олько -возражавшей. но и нарушавшей законные права и свобод Мачсрст -
+\}pJL,araю- заиление 110 этому 1юво..1у в Генпрокуратуру от 09.01.2018 года 
+Мачерет 0(\/_--= ..,.~_.-ЯСЦ;;а:-_ 
+Странr.ща 9 из 9 
+Dosaru/ п,. 1 ra-834/09 
+ВЕРХОВНОМУ СУДУ РМ , а также 
+учитывая МС ООН -по Римскому 
+Статуту, от инвалида 1-ой группы 
+Мачерет Алексей Артур -рус. Адрес: ул. 
+А. Дога, 30 кв.38 Тел. 373-22-49-22-90, 
+моб. +37379902963 ИДНП: 
+2000001159655 
+Информируя: 
+Для представления: по ст I 7 в МС ООН 
+Управлению Верховного Комиссара 
+по правам человека 
+From СР OHCHR: cp(a),oh~hr.org 
+Secretariat ofthe complaint procedure 
+of the Human Rights Counci 1 
+Принятое 19 февраля 2020 в 09:28 
+Признано допустимым ст.17(2) в среду 
+5 АВГУСТА 2020Г. В 12:39 
+То: СР OHCHR <cp(a),ohchr.org> 
+From arhiv 1973 <archiv240(a),gmail.com> 
+Получено 6 августа 2020r. В 11 :33 
+Об правосубъективности дела и 
+заявите~ 
+Suьject: ёogeAsJOMNES и А-ктор 
+Заявление 
+В соответствии с Законом № 60 -о защите прав инвалидов в Судах Молдовы 
+-прошу о переводе -решения Вашего Су да от 21.07.2009 года nr. 1 ra-834/09 
+-чтобы законно обжаловать такое решение в соответствии с положениями 
+статьи 444 УПК РМ -в исключительном порядке. 
+Согласно национальным -процессуальным и международныw нормам, 
+только тогда считается вступившими в законную силу -слеlfющие акты: 
+Определение, решение или приговор является окончательным, истекли сроки 
+обжалования. 
+Исключением из обычных правил делается в международном 1 
+законодательстве, только для лиц в силу обстоятельств -не владеющих 
+государственным языком. 
+Прошу зарегистрировать -что никогда не получал приговора на единственно 
+цоступном и понимаемом мной государственном языке поэтому начало 
+1 
+течения срока на кассацию -с момента получения -копии Вашего решения -
+на русском языке. 
+В соответствии с запретом на любую дискриминацию в областях правосудия 
+Акт считается только вступившим в силу -с момента получения и 
+ознакомления получателя -только на доступном для понимания и 
+возникающим правом на его обжалование -иное считается -не допустимым. 
+Истечением срока потери такого права устанавливаются с момента 
+получения в момент -истечений уже обычных процессуа.r1ьных сроков. 
+Ответственность и обязанность по соблюдению правила перевода и 
+соблюдений процессуальных сроков -в уголовных судопроизводствах в 
+полном объёме ложиться на государство, а не на граждан. 
+При любом акте в уголовных су до производствах касающихся односторонних 
+уголовных решений -именно суды несут полную ответственность -за 
+соблюдение правила. 
+Именно это уполномочивает Конституция соответствующего государства -
+дающей исключительные права -органа в отношении -применения закона. 
+Поэтому прошу Верховный Суд -учитывая -эти простые правила -
+общепринятого положения международной обычной практики -о переводе 
+Вашего от 21.07 .20099 года -предварительно установив в судебном реестре 
+-что решения на единственно доступном для Мачерет русском языке -он 
+никогда не получал. И не владея государственным языком -не мог знать о 
+возникших у него процессуальных прав. 
+И следуя законодательству и международным нормам r--моментом -когда-у 
+Мачерет могут возникать права и обязанности по су дебhому акту 
+вынесенного Уголовной Коллегией Верховного Суда nr. lra-834/09 -своего 
+освобождения -где основания -само решение -считается -в позитивном 
+или регрессивном -виде только в силу понимания -содержанйя -этого 
+решения. 
+Перевод может быть осуществлён согласно в начале указанным 
+материальным нормам -только тем Су дом -который выносил: определение, 
+решение или приговор и приказ -любой процессуальный акт -по месту 
+вынесения данного приговора. 
+В связи с тем, что само решение nr. 21.07.2009 от 21.07.2009 года­
+«освободить прямо из зала суда» по адресу: Петру Рареш, 18. А согласно 
+правилу такое решение имеющее признаки -оправдательного или 
+реабилитирующего, когда возникают права -у осужденного и 
+приговорённого к наказанию «особый и строгий» режим -следовательно 
+справедливо -обязанностью -rocy дарства был перевод такого 
+исключительного решения. 
+Поэтому с учётом и не ссылаясь -а только упоминая -интуитивно понятную 
+норму -императива или когда возникает Jus Cogens -исключающий любое 
+применение закона против Erga Omnes и только в пользу -оправданного -
+2 
+(возникновении юридических обязательств у государства- перед любым 
+оправданным до этого лишённого гражданских прав в силу действия 
+уголовного закона- каким бы незначительным -это не казалось). 
+Поэтому считая -нарушением -такого положени я -когда Мачерет -так и 
+не известны -обстоятельства -его освобождения и следовательно -права -
+в следствии неисполнения обязанности по переводу -решения Вашего Су да : 
+обращаясь по адресу своего освобождения -мун. Кишинёв, ул. Петру Рареш, 
+18 о переводе данного решения -как единственного органа имеющего права 
+толковать и переводить свои решения -Верховный Суд -на единственно 
+доступный понимаемый Мачерет русский язык -с обязательным -
+регистрированным в судебном реестре -моментом получения Вашего 
+решения с позиций начала течения исковой давности -с момента его 
+получения и росписи по полученной единственной копии Вашего решения 
+1 ra-834/09 -установив год месяц и день -как начала -течение исковой 
+давности с момента получения -переведённого приговора на русский язык. 
+Прошу проверить -и установить, как юридический факт, как это было 
+сделано -другими судебными инстанциями в отношении своих решений -
+наличие или отсутствие -переведённых копий Вашего решения nr. l ra-834/09 
+от 21.07.2009 года и соответственно -наличие или отсутствия -начала 
+процессуальных прав у Мачерет. 
+Прилагаю: 
+1. Решение от 21.07.2009 года на гос. языке nr. lra-834/09 
+2. Ответ по аналогичному запросу Апелляционной Палаты ~а гос. языке 
+nr. la-42/09 от 03.02.2009 года. 
+Мачерет ~ 
+3 
+Дело nr. /га-834 /09, ВЕР О~НОМУ СУДУ РМ 
+Колганечану 70. мун . Кишинёв -по 
+Римскому Статуту, от инвалида \-ой 
+группы Мачерет Алексей Артур -рус. 
+Адрес : ул . А. Дога. 30 кв.38 
+Тел. 373-22-49-22-90, моб. +37379902963 
+ИДНП: 2000001159655 
+Информируя: 
+Управление Верховного комиссара ООН по 
+правам человека Office of the High 
+Commissioner for Human Rights Palais des 
+Nations СН 1211 Geneva 10 -Switzerland Тел. 
++41 (0)22 917 90 00 Факс: +41 (0)22 917 90 08 
+www.ohchr. org 
+Заявление 
+Обращаясь по решению от 21.07.2009 года в соответствии с статьёй 251 ч. Ч. 2 и 5 и статьёй -
+и связи с заиленными материальными нормами 
+в Апелляционную Палату мун. Кишинёва -статьи 29 части (4) УПК РМ: 
+статьи 2, 3, 4, 5, 6 и статьи 14 в соответствии с статuями 14 -Международного Пакта о 
+гражданских и политических правах 
+Статьёй 20 -Римского Статута -МС ООН. 
+В отношении № 7 Протоколом -Конвенции: статьями 2, 3 и статьи 4 части (3) -исключающей 
+применение Статьи 15 Конвенции -ввиду необходимостью -отмены такого приговора -когда 
+любое отклонение в сторону -оправдывающей такой приговор -недопустим. 
+В целях установления основания для юридической реабилитации -о переводе решения 
+Верховного Суда: 
+От 21.07 2009 года Де.1v пг. lru-83.J/09 пришу Всрхив11ый С.)'и -т:ревести !Jише Ре1тт11е 11а еdщ1стве1111и 
+понятный -оля Мачерет А.1е1,:сеи -русский язык. 
+Прошу Верховный Суд с учётом Закона -установить течение исковой давности с момента 
+получения копии 
+Решения nr I ra-834/09 на русский язык -уведомив об этом Генпрокурора и Министра Юстиции 
+-о вступлении в силу положений статьи 525 УПК РМ с момента получений копии на русском 
+языке и следовательно имеющего в течении 6 месяцев заявить свои требования по компенсации и 
+требовать юридической реабилитации. 
+А также требовать пересмотра, как до решения от 21.07.2009 года -так всех последующих после 
+21.07 2009 года решений -где есть основания -полагать, что Судам н~его не было извесnю о 
+реабилитирующем действии решения nr. 1 ra-834/09 -не понимающего смысла из-за 
+отсутствующего перевода -Мачерет просто физически и теоретическо-практически не мог знать о 
+возникших у него прав юридической реабилитации и следовательно прекратить -как не законное 
+его -уголовное преследование. 
+В связи с чем -просит рассмотреть -вопрос о реституции всех последующих уголовных дел, как 
+не имеющих силы -когда они проходили в отношении лица подлежащего юридической 
+реабилитации. 
+19.03.2020 
+СО SILIUL SUPEqtQ~ дl MAG STRATLJ 
+2 JUDECA TORIA сю~а.' U 
+Recursul nr. 1 ra-834/09 ВЕРХОВНОМУ СУДУ РМ 
+А также учитывая МС ООН - по Римскому 
+Статуту, от инвалида 1-ой группы Мачерет 
+Алексей Apтyp - рус. Адрес: ул. А. Дога, 30 кв.38 
+Тел. 373-22-49-22-90, моб. +37379902963 ИДНП: 
+2000001159655, 
+Информируя: 
+Управление Верховного комиссара ООН по 
+правам человека Office of the High
+Commissioner for Human Righ ts Palais des Nations 
+СН 1211 Geneva 10 - Switzerland Тел. +41 (0)22 
+917 90 00 
+Факс: +41 (0)22 917 90 08 www.ohchr org  
+Заявление 
+Д-нул И. О. Председателя Верховного суда Владимир Тимофтий, - я предупреждая путаницу прошу принять - это моё 
+ходатайство связанной с апелляцией подданной - Мачерет Алексеем в А пелляционную Палат у как составляющих 
+были получены переводы - R ecursul  nr . 01-2202/2020 и О пределения - В ерховного № l a-834/09 от 21.07.2009 года. 
+В качестве мер по защите - э тих прав - в озникших впервые - т олько когда Мачерет смог ознакомиться - э тим 
+Определением - О на единственно в ладеющим - русским языком. 
+Мачерет - н а ранее заявленных материальных и п роцессуальных норм - национального и м еждународного права - для 
+дальнейшей - юридической реабилитации 
+1.- как невиновное лицо - в сл учае - идущих в Апелляционной Па лате - обжалование следующих р ешений :
+1-980/06 ; РА -84/07; 1-184/08 и 1-137/08.
+2.- кажется более "лёгким" - пу тём - это "соглашение" - что правонарушение бы ло - но "количеств" - н е хватало -
+для уголовной составляющей.
+Тогда в п ервом случае останутся - безнаказанными - действия попадающие в о писание "черновой версии" - - 
+(Прилагаю) . М ной специально - недосказанность - т о, что и так явно происходит - если только внимательно - 
+ознакомиться с э тим - приложением составленным как "недописанный Ре курс"
+Поэтому - стараясь всё таки завершить и увидеть - смысл происходившего тогда и н епосредственно со мной - 
+превратившего меня в инвалида ! - ой группы - б ез наказано. 
+Прошу занести в р еестр - И ПУД - факт получения мной только позавчера или 2 сентября перевода: Recursul nr. 
+01-2202/2020 и О пределения - В ерховного № l ra-834/09 от 21.07.2009 года.
+Поручив обычным а н е заказным письмом что подразумевает - в несение в реестр - простых исходящих сообщений - не
+имеющих юридической "важности" .
+Тем не менее - несмотря на то, что Определение - безотзывное. Оно имеет юридическим п оследствием - т олько сейчас - 
+законно заявить о с воём праве - на возмещение материального и р авное морального ущерба - с вязанного лишением 
+свободы - з аведомо незаконно - о сужденное лицо и его привлечение к крайней мере наказания - н азначения наказания - 
+"Особого и с трого" режима содержания. 
+Поскольку только сейчас Мачерет - с мо
+г - действительно ознакомиться с о пределением - ч то было сделано не по его 
+вине - когда согласно международным нормам - г осударство имеет только ответственность - п ор признанию своей 
+материально й и процессуальной способностью по возмещению 
+Мачерет ,Jf)/ CURTEA SUPREM DE. JUSTITIE 
+ВЫ~А,$1,,,СУДЕ;!i,АЯ ПАЛАТ 
+DШ J::::_J. "!tx--
+~~A Pll:7-:7--
+NI В документ внесены - незначительные изменения связанные с исправлением - орфографических ошибок: вместо 
+"1а-834/09" lra-834/09 Автор:  Мачерет __________
+ВНИМАНИЕ!!!
+Прощу о пр ошитой и се ртифицированной печатью - "п ломбой" - це лостность 
+прошивавших нитей - опечатанной печатью Вашего Суда - с указанной датой получения - 
+документа следующих файлов: 
+1.Recursul nr. 01- 2202/2020 и
+2.Определения - Верховного суд nr. 1rа - 834/09 года
+С обязательной ук азанной возле пломбы или на ней датой установления -ц елостности пломбы - указав - 
+её или близко к да те получения от 02.12.2020 года. К ак начала исковой д авности - пр иостановленной - 
+моментом обращения с этим з аявлением в в Ваш Су д. 
+Для полной картины - тех органов -= которые могут сомневаться возникших правах инвалида 1-ой 
+группы - прошу о переводе приложенного " рекурса"- непосредственно - об ъясняющего - освобождение 
+Мачерет - только по  реабилитирующим обстоятельствам. 
+1. Прилагаю копии:
+a.Recursul nr. 01-2202/2020 от 16 сентября 2020 года.
+b.Определения - Верховного nr. 1rа-834/09 от 21.07.2009 года.
+2. Приложив сам Рекурс доступной только в виде фотокопии - сделанной                                         
+Судом  Рышкановка - 1 ли ст и 2-а листа.
+04.12.2020 Мачерет и, •..:.__.,,, 
+2 
+CURTEA SUPREMA. DE JUSTITIE 
+А REPUBLICII MOLDOV А 
+mun. Chi~inau, str. М. Kogalniceanu, nr. 70, 
+RepuЫica Moldova, MD-2009, tel. (+ 373 22) 22 
+15 47, tel./fax:(+ 373 22) 22 52 27, 
+e-mail: info@csj.md 
+Nr. ~ din 23.11.2020 ТНЕ SUPREME COURT OF JUSTICE 
+OF ТНЕ REPUBLIC OF MOLDOV А 
+Chi~inau, М. Kogalniceanu 70 street, 
+RepuЬlic of Moldova, MD-2009, tel. (+373 
+22) 22 15 47, tel./ fax: (+373 22) 22 52 27, 
+e-mail: info@csj.md 
+Мачерет Александр 
+Мун. Кишинэу ул. А. Дога, 30 
+кв. 38 
+На Ваши заявление от 19 октября 2020 и 21 октября 2020, адресованное 
+Высшей судебной палате, направляем копию определения Коллегии по 
+уголовным делам от 21 июля 2009 г и определение исполняющего 
+обязанности председателя Высшей судебной палаты Владимира Тимофти 
+от 16 сентября 2020 г 
+Приложение: 8 листов 
+Начальник Управления процессуального 
+Документирования и учета уголовных дел Стела Боунегру 
+Перевод 
+Дело № 1 ra-834/09 
+Высшая судебная Палата 
+ОПРЕДЕЛЕНИ Е 
+21 июля 2009 г. мун. Кишин эу 
+Расширенная Коллегия по уголовным делам Высшей судебной палаты в 
+соста ве: 
+Предс едательствующего -Константина Гурски, 
+Судей -Николая Гордилэ, Андрея Плэмэдялэ, Константина Алергуш и 
+Владимира Тимофти, 
+При участии: 
+Прок урора-Дмитрия Граур, 
+Адво ката, предоставляющего юридическую гарантированную государством 
+помощь-Валентины Арнаут, 
+Осуж денного -Мачерет Алексея, 
+Перев одчика -Олеси Давид, 
+Рассмотрела в открытом судебном заседании, кассационную жалобу на 
+определение Коллегии по уголовным делам Апелляционной Палаты Кишинэу 
+от 03 февраля 2009 года, поданную осужденным, 
+Мачерет Алексеем Артурович е.м., 23.06. 1973 
+г.р., урож енца и проживающего в мун.Кишинэу , 
+ул. А.Дога 30, кв.38, русской национшzьности, 
+гражданина ?.Молдова, образование высшее, 
+военнообя зштый, ранее судимого: 
+Приговор ом Суда Рышкань, мун.Кишинэу от 
+08.11.2006 г., по ст. 217 ч.(2) УК к 150 часов 
+неоплачи вае,11,юго труда в пользу общества. 
+Проц едура извещения законно соблюде на . 
+1 
+Осужденный и его защитник, адвокат В.Арнаут поддержали 
+1':ассац ионную жалобу в поданном смысле. 
+Прокурор nonpocwt удовлетворить кассационную жалобу, в связи с 
+обрат ной cwtoй уголовного закона. 
+По поданной кассационной жалобы, на основании материалов дела, 
+А:оллеги я по уголовным делам, 
+УСТАН ОВИЛА: 
+!.Приговором Суда Рышкань, мун. Кишинэу от 19 марта 2008 г., А.Мачерет 
+был осужден по ст. 217 ч.(2) Уголовного Кодекса к штрафу в размере 600 
+условных единиц. 
+2. Согласно приговору, А.Мачерет был осужден за то, что 23.07.2007 г., в 22.40 
+часов, в своем доме нр. 64, по ул. М.Костин 13/3, мун. Кишинэу, оперативной 
+группой КПС Рышкань был проведен осмотр места преступления, где в одной 
+из комнат были обнаружены и изъяты 4 пачки с таблетками «Ricofast», 
+бутылка с муравьиной кислотой, шприц объемом 1 О мл в котором находилась 
+жидкое вещество коричневого цвета количеством в 2 мл, две лампочки без 
+внутреннего черного тела, стеклянная колба, черная сумочка в которой 
+находился шприц объемом 5 мл, пакеты с таблетками без надписи, 
+пластиковая упаковка с надписью «СМ», стеклянная бутылка, металлическая 
+коробка с надписью «First» с двумя лезвиями, 2 использованных шприца и 
+упаковка из туалетной бумаги с 5 таблетками синего с белым цветом, которые 
+согласно заключению научно-технической экспертизы нр. 679 от 27.07.2007 
+года, относятся к психотропным веществам трамадол весом О, 25 гр и 
+перманганат калия весом 2, 70 гр, который относятся к прекурсоров 
+наркотических веществ. 
+Приговор был обжалован апелляционной жалобой прокурором, который 
+попросил отменить приговор с вынесением решения в части назначения 
+наказания, которым к назначенному наказанию присоединить согласно ст. 85 
+УК неотбытую часть наказания назначенного предыдущим приговором, 
+поскольку данное преступление было совершено до полного отбытия 
+наказания, назначенного приговором Суда Рышкань от 08 ноября 2006 г. 
+3. Определением Коллегии по уголовным делам Апелляционной Палаты 
+Кишинэу от 03 февраля 2009 года. апелл яционная жалоба, поданная 
+государственным обвинителем, была у,:::ювле творена, отменен приговор, 
+заново рассмотрено дело и вынесено новое реш ение, которым: 
+2 3 
+А.Мачерет был признан виновным и осужден по ст. 217 ч.(2) Уголовного 
+Кодекса к 1 году и 7 месяцев лишения свободы. Согласно ст. 85, 87 Уголовного 
+Кодекса, по совокупности приговоров присоединить неотбытую часть 
+наказания, назначенного приговором Суда Рышкань, мун. Кишинэу от 
+08.11.2006 года, и окончательно назначить наказание в виде 1 года и 7 месяцев 
+26 дней лишения свободы с отбыванием в пенитенциарном учреждении 
+закрытого типа. 
+Осужденный подал кассационную жалобу попросив отменить 
+определение апелляционной инстанции, оставить приговор без изменений, 
+указав, что суд первой инстанции рассмотрел обстоятельства дела всесторонне 
+и правильно назначил ему наказание в виде штрафа, он сделал для себя 
+необходимые выводы. 
+4. Рассмотрев кассационную жалобу в соответствии с приведенными 
+мотивами, Коллегия по уголовным делам пришла к выводу, что жалоба 
+подлежит удовлетворению по следующим соображениям. 
+Согласно вступившим в законную силу судебным решениям. А.Мачерет 
+был осужден за приобретение и хранение наркотических веществ, 
+психотропных или их аналогов -трамадол весом О, 25 гр. 
+В момент совершения подсудимым преступления в силе был: 
+-список наркотических веществ, психотропных и растений содержащие 
+такие вещества, обнаруженных в незаконном обороте, устанавливающий и их 
+количества, утвержденный Постановлением Правительства нр. 79 от 
+25.01.2006 года, согласно которому составляет малый размер трамадола до О, 
+25 гр, а крупный размер от О, 25 гр до 4, О гр. 
+Следовательно, в момент совершения деяния А.Мачерет, его действия 
+правильно были квалифицированы по ст. 217 ч.(2) Уголовного Кодекса, 
+согласно квалификационным признакам -хранение психотропных веществ в 
+крупных размерах не с целью отчуждения. 
+Однак{), в результате поправок, внесенных Постановлением 
+Правительства нр. 43 от 26.01.2009 года об утверждении поправок в списке 
+наркотических, психотропных и растений содержащие такие вещества, 
+обнаруженных в незаконном обороте, изменились и пропорции, 
+предусматривающие уголовную ответственн ость за такого рода действий, 
+согласно п.122 вышеуказанного Пост анов.1ени я, трамадол в размере 0,25 гр не 
+содержится в состав преступления предуоют ренного ст. 217 ч.(2) Уголовного 
+3 
+Кодекса, а составляет административное правонарушение, предусмотренное 
+ст. 85 Админ истративного Кодекса. 
+Соглас но тому же пункту, «трамадол» весом 0,50 гр. Представляет собой 
+малый разме р, а от О, 50 гр до 10 гр крупный размер. 
+Согласно ст. 427 ч.(1) п.13) Уголовно-процессуального кодекса, 
+решения апелляционной инстанции могут быть обжалованы в кассационном 
+порядке с целью исправления правовых ошибок, допущенных судебными 
+инстанциями, рассматривавшими дело по существу, и апелляционными 
+инстанциями, принят уголовный закон, более благоприятный для 
+осужденного. 
+Таким образом, в данном случае присутствует основание для 
+кассационно го обжалования, Коллегия приходит к выводу об удовлетворении 
+кассационно й жалобы и отмены судебных решений, с прекращением 
+производств а по делу, поскольку правовая ошибка может быть исправлена 
+кассационно й инстанцией. 
+В соответствии со ст. 332 ч.(2) Уголовно-процессуального кодекса в 
+сопоставимости со ст. 275 ч.(1) п.2) Уголовно-процессуального кодекса, если 
+деяние лица составляет административное правонарушение, судебная 
+инстанция прекращает производство по делу. 
+Исходя из положений ст. 30 ч.(3) Административного Кодекса, следует, 
+что в отношении А.Мачерет не представляется возможным применить 
+административное наказание, поскольку со дня совершения правонарушения 
+истекли более одного года -срок давности привлечения к ответственности за 
+правонарушение. 
+Относительно психотропного вещества перманганат калия весом 2, 70 
+гр, Коллегия не будет высказываться в этом смысле поскольку, не внесен в в 
+вышеуказанном списке наркотических веществ и их прекурсоров. 
+В связи с этим, приговор суда первой инстанции и определение 
+АпелляциСJНной инстанции должны быть отменены в части применения ст.85 
+Уголовного Кодекса, при установлении наказания по совокупности 
+приговоров, поскольку наказание, назначенное приговором Суда Рышкань, 
+мун. Кишинэу от 08.11.2006 г., в виде 150 часов неоплачиваемого труда в 
+пользу общества, согласно ст. 87 Уголовного Кодекса, которая была 
+переведена в 26 дней лишения свободы, была отбыто. 
+4 
+В соответствии со ст. 435 ч.(1) п.2) лит.с) Уголовно-процессуального 
+кодекса, Коллегия по уголовным делам, 
+ОПРЕДЕЛИЛА: 
+Удовлетворить кассационную жалобу, отменить приговор Суда Рышкань, 
+мун. Кишинэу от 19 март а 2008 года и определение Коллегии по уголовным 
+делам Апелля ционной Палаты Кишинэу от 03 февраля 2009 г., пересмотрев 
+дело вынесла новое решение, которым: 
+Прекрати ть производство по делу по обвинению Мачерет Алексея 
+Артуровича, по ст. 217 ч.(2) Уголовного Кодекса прекратить поскольку, его 
+деяние не сост авляет преступление а составляет административное 
+правонарушен ие, предусмотренное ст. 85 Административного Кодекса, без 
+применения наказания по правонарушению в связи с истечением срока 
+давности привлечения к административной ответственности. 
+Исключи ть положен ия ст. 85 Уголовного Кодекса при назначении 
+наказания совокупностью приговоров. 
+Мачерет Алексея Артуровича освободить немедленно из-под стражей из 
+зала судебного заседания. 
+Определе ние является вступившим в законную силу. 
+Председательст вующий: 
+Судьи: (подпись) 
+(подпись) 
+(подпись) 
+(подпись) 
+(подпись ) 
+Переводчи к: Бучков Оксана, 
+преду преждена по ст. 312 УК РМ Константин Гурски 
+Николае Г ордилэ 
+Андрей Плэмэдялэ 
+Константин Алергуш 
+Владимир Тимофти 
+5 
+., 
+$3267,//(
+&RQYHQWLRQGH/D+D\HGXRFWREUH
+6WDWXO 
+&RXQWU\3D\V 5HSXEOLFD0ROGRYD
+3UH]HQWXODFWRILFLDO
+7KLVSXEOLFGRFXPHQW/HSUHVHQWDFWHSXEOLF
+DIRVWVHPQDWGHFÅWUH
+KDVEHHQVLJQHGE\DHWHVLJQHSDU1LFRODX1DWDOLD
+LQFDOLWDWHDVDGH 
+DFWLQJLQWKHFDSDFLW\RIDJLVVDQWHQTXDOLWHGH6HIVHFWLH
+ġLSRDUWDVLJLOLXOġWDPSLOD 
+EHDUVWKHVHDOVWDPSRIHVWUHYHWXGXVFHDXWLPEUHGH,0636SLWDOXO&OLQLFDO0LQLVWHUXOXL6DQDWDWLL0XQFLLVL
+3URWHFWLHL6RFLDOH
+&RQILUPDW
+&HUWLILHG$WWHVWH
+OD$JHQǝLD5HVXUVH,QIRUPDǝLRQDOH-XULGLFHDWDSHGDWD 
+WKHOH
+GHFÅWUH9DOHULX)ULPXE\SDU
+FXQU3:9'$3%6
+1RVRXVQR
+1XVHDSOLFÅ 
+1RWDSSOLFDEOH
+3DVDSOLFDEOH6HPQÅWXUDGLJLWDOÅ 
+'LJLWDOVLJQDWXUH6LJQDWXUHQXP«ULTXH
+$FHDVWÅ$SRVWLOÅFHUWLILFÅDXWHQWLFLWDWHDVHPQÅWXULLFDOLWDWHD°QFDUHVHPQDWDUXODDFĥLRQDWġLGDFÅHVWHFD]XOLGHQWLWDWHD
+VLJLOLXOXLVDXDġWDPSLOHL
+$FHDVWÅ$SRVWLOÅQXFHUWLILFÅFRQĥLQXWXOGRFXPHQWXOXLSHQWUXFD UHDIRVWHPLV
+>8WLOL]DUHDDFHVWHLDSRVWLOHQXHVWHYDODELOÅ°Q5HSXEOLFD0 ROGRYD@
+>$FHDVWÅDSRVWLOÅHVWHVHPQDWÅGLJLWDOǛLSRDWHILYHULILFDWÅODXUPÅWRDUHDDGUHVÅ ZZZDSRVWLODJRYPG
+@
+&RGXOGHVLJXUDQǝÅ
+
+
+7KLV$SRVWLOOHRQO\FHUWLILHVWKHDXWKHQWLFLW\RIWKHVLJQDWXUHDQGWKHFDSDFLW\RIWKHSHUVRQZKR
+KDVVLJQHGWKHSXEOLFGRFXPHQWDQG
+ZKHUHDSSURSULDWHWKHLGHQWLW\RIWKHVHDORUVWDPSZKLFKWKHSXEOLFGRFXPHQWEHDUV7KLV$SRVWLOOHRQO\FHUWLILHVWKH
+DXWKHQWLFLW\RIWKHVLJQDWXUHDQGWKHFDSDFLW\RIWKHSHUVRQZKRKDVVLJQHGWKHSXEOLFGRFXPHQWDQG
+7KLV$SRVWLOOHGRHVQRWFHUWLI\WKHFRQWHQWRIWKHGRFXPHQWIRUZKLFKLWZDVLVVXHG
+>7KLV$SRVWLOOHLVQRWYDOLGIRUXVHDQ\ZKHUHZLWKLQ5HSXEOLFR I0ROGRYD@
+>7KLV$SRVWLOOHLVGLJLWDOO\VLJQHGDQGFDQEHYHULILHGRQWKHIROORZLQJDGGUHVV ZZZDSRVWLODJRYPG @
+6HFXULW\FRGH
+
+
+&HWWH$SRVWLOOHDWWHVWHXQLTXHPHQWODY«UDFLW«GHODVLJQDWXUHODTXDOLW«HQODTXHOOHOHVLJQDWDLUHGHO
+DFWHDDJLHWOHFD V
+«FK«DQWO
+LGHQWLW«GXVFHDXRXWLPEUHGRQWFHWDFWHSXEOLFHVW UHY¬WX
+&HWWH$SRVWLOOHQHFHUWLILHSDVOHFRQWHQXGHO૷DFWHSRXUOHTXH OHOOHD«W««PLVH
+>/૷XWLOLVDWLRQGHFHWWH$SRVWLOOHQ
+HVWSDVYDODEOHHQ5«SXEOLTXHGH0ROGRYD@
+>&HWWH$SRVWLOOHHVWVLJQ«HQXP«ULTXHHWSHXW¬WUHY«ULIL«H¢O૷DGUHVVHVXLYDQWHZZZDSRVWLODJRYPG @
+&RGHGHV«FXULW«
+'LJLWDOO\VLJQHGE\)ULPX9DOHULX
+'DWH((67
+5HDVRQ0ROG6LJQ6LJQDWXUH
+/RFDWLRQ0ROGRYD

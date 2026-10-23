@@ -2,7 +2,7 @@
 
 **Case:** Case-Macheret-1997-2026  
 **IDNP:** 2000001159655  
-**Subject / Sovereign Will:** A©tor (`A©TOR_KEY="# [⚖ A©tor Declaration]"`)  
+**Subject / Sovereign Will:** A©tor (`A©tor_KEY="# [⚖ A©tor Declaration]"`)  
 **Legal Framework:** Hague Convention 1961 / Jus Cogens / Erga Omnes  
 
 ---

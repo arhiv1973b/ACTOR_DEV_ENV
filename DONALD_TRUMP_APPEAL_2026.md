@@ -4,7 +4,7 @@
 **CC:** White House Communications, U.S. Embassy in Chișinău, National Bank of Moldova, General Prosecutor's Office  
 **From:** Alexei Macheret  
 **Date:** August 28, 2026  
-**Subject:** A©TOR_KEY="# [⚖ A©tor Declaration]" — Financial Assistance, Postal Tracking (Poșta Moldovei / US Embassy), and Evidence Verification  
+**Subject:** A©tor_KEY="# [⚖ A©tor Declaration]" — Financial Assistance, Postal Tracking (Poșta Moldovei / US Embassy), and Evidence Verification  
 
 ---
 
@@ -28,7 +28,7 @@ I know that You, just like me, understand who an Actor is.
 
 **Sincerely,**  
 Alexei Macheret  
-`A©TOR_KEY="# [⚖ A©tor Declaration]"`
+`A©tor_KEY="# [⚖ A©tor Declaration]"`
 
 ---
 

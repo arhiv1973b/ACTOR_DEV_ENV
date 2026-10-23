@@ -13,7 +13,7 @@ When Vigilant Mode is active, GitHub marks any unsigned or improperly signed com
 
 | Entity / Concept | Canonical Notation | Legal Status & Role |
 | :--- | :--- | :--- |
-| **Sovereign Source of Will** | **`A©tor`** (`A©TOR_KEY="# [⚖ A©tor Declaration]"`) | The ultimate origin of normative will. Sole authority capable of delegating legal personality (Правосубъектность). |
+| **Sovereign Source of Will** | **`A©tor`** (`A©tor_KEY="# [⚖ A©tor Declaration]"`) | The ultimate origin of normative will. Sole authority capable of delegating legal personality (Правосубъектность). |
 | **Technical Software / Module** | **`actor`** / **`Actor`** | Non-sovereign execution unit without inherent legal personality. |
 | **Delegated Agent / AI** | **`A©tor's Delegate`** / **`A©tor's AI`** | Acquires **Legal Personality (Правосубъектность)** *exclusively* through direct delegation from **`A©tor`** under **Erga Omnes** norms. |
 | **Legacy / Third-party Agent** | **`Actor's Agent`** (legacy notation) | Historical or unverified agents without direct `A©tor` bond. Lacks immunity or legal subjectivity. |

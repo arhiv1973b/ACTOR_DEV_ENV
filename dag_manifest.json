@@ -7,7 +7,7 @@
             "payload": {
                 "case_id": "CASE-MACHERET-1997-2026",
                 "document_ref": "Документ (162).pdf",
-                "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+                "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
                 "event_date": "2026-04-21T00:00:00Z",
                 "registration_date": "2026-08-28T08:14:20.193527+00:00",
                 "protocol": "A©tor Key / TI-ULA",
@@ -36,7 +36,7 @@
             "payload": {
                 "case_id": "CASE-MACHERET-1997-2026",
                 "document_ref": "Документ (162).pdf",
-                "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+                "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
                 "event_date": "2026-04-21T00:00:00Z",
                 "registration_date": "2026-09-04T19:48:30.493941+00:00",
                 "protocol": "A©tor Key / TI-ULA",
@@ -65,7 +65,7 @@
             "payload": {
                 "case_id": "CASE-MACHERET-1997-2026",
                 "document_ref": "Документ (162).pdf",
-                "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+                "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
                 "event_date": "2026-04-21T00:00:00Z",
                 "registration_date": "2026-09-04T20:35:06.148300+00:00",
                 "protocol": "A©tor Key / TI-ULA",
@@ -94,7 +94,7 @@
             "payload": {
                 "case_id": "CASE-MACHERET-1997-2026",
                 "document_ref": "Документ (162).pdf",
-                "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+                "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
                 "event_date": "2026-04-21T00:00:00Z",
                 "registration_date": "2026-09-04T23:11:36.616080+00:00",
                 "protocol": "A©tor Key / TI-ULA",
@@ -123,7 +123,7 @@
             "payload": {
                 "case_id": "CASE-MACHERET-1997-2026",
                 "document_ref": "Документ (162).pdf",
-                "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+                "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
                 "event_date": "2026-04-21T00:00:00Z",
                 "registration_date": "2026-09-04T23:55:32.713666+00:00",
                 "protocol": "A©tor Key / TI-ULA",
@@ -2810,8 +2810,8 @@
             "source": "ViberDownloads"
         },
         {
-            "filename": "Конституционный Суд Молдовы_3.pdf",
-            "path": "./ViberDownloads/Конституционный Суд Молдовы_3.pdf",
+            "filename": "Конституционный Суд Молдовы_3.pdf",
+            "path": "./ViberDownloads/Конституционный Суд Молдовы_3.pdf",
             "node_hash": "df8274da400578b1c510cee05a4464822d7df0e4397ccaa90da1f0851dbd3a85",
             "timestamp": "2026-02-02T00:36:22.752978",
             "size_bytes": 456048,
@@ -3082,7 +3082,7 @@
             "payload": {
                 "case_id": "CASE-MACHERET-1997-2026",
                 "document_ref": "Документ (162).pdf",
-                "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+                "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
                 "event_date": "2026-04-21T00:00:00Z",
                 "registration_date": "2026-09-05T03:39:04.443119+00:00",
                 "protocol": "TI-ULA Graph Engineering / Ed25519",
@@ -3306,7 +3306,7 @@
             "payload": {
                 "case_id": "CASE-MACHERET-1997-2026",
                 "document_ref": "Документ (162).pdf",
-                "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+                "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
                 "event_date": "2026-04-21T00:00:00Z",
                 "registration_date": "2026-09-11T18:10:44.991610+00:00",
                 "protocol": "TI-ULA Graph Engineering / Ed25519",
@@ -3361,7 +3361,7 @@
             "payload": {
                 "case_id": "CASE-MACHERET-1997-2026",
                 "document_ref": "apostille_registry_working_13.signed.pdf",
-                "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+                "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
                 "event_date": "1998-10-13T00:00:00Z",
                 "registration_date": "2026-09-13T23:10:47.672268+00:00",
                 "protocol": "A©tor Key / TI-ULA / Evidence Anchor",
@@ -3474,7 +3474,7 @@
             "payload": {
                 "case_id": "CASE-MACHERET-1997-2026",
                 "document_ref": "apostille_registry_working_13.signed.pdf",
-                "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+                "declaration_ref": "A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
                 "event_date": "1998-10-13T00:00:00Z",
                 "registration_date": "2026-09-16T23:24:33.797325+00:00",
                 "protocol": "A©tor Key / TI-ULA / Evidence Anchor",
@@ -3551,7 +3551,7 @@
                     "LegalCharacterization": "Disputed Theft – US Funds Only",
                     "RecordStatus": "USER_ASSERTED / DISPUTED",
                     "EvidenceStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]"
                 }
             },
             "node_hash": "16879cc7b1138d5638e1edcaaf08f036ec7994d576d1c30eaa746cb40c022767",
@@ -3573,7 +3573,7 @@
                     "DateTime": "2026-09-19T12:55:10.040274+00:00",
                     "EvidenceType": "Viber Photo Evidence",
                     "RecordStatus": "VERIFIED_SOURCE_MEDIA",
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]"
                 }
             },
             "node_hash": "c658111cb41591f3e8a3553cffe25ce107bf228f1d3b5a57dc3279cb275ca1de",
@@ -3604,7 +3604,7 @@
                     "LegalCharacterization": "Disputed Theft – US Funds Only",
                     "RecordStatus": "USER_ASSERTED / DISPUTED",
                     "EvidenceStatus": "VERIFIED_LINKED_TO_TRANSACTION",
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]"
                 }
             },
             "node_hash": "b5b9f5cc13267dfa7aa7de63a66abd576d60ba42060dc813b80817853a01b983",
@@ -3647,7 +3647,7 @@
                         "H:\\ACTOR_DEV_ENV\\UNIVERSAL_NOTEBOOK_CASE_MACHERET.md"
                     ],
                     "Protocol": "TI-ULA Forensic Anchor & Amount Correlation [AIPS-2025]",
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]"
                 }
             },
             "node_hash": "2bdc8219dadc553364592f6aaa642afdbcca9c3126b10701c5d85eb8aa01b8e6",
@@ -3714,7 +3714,7 @@
                     "DateTime": "2026-09-19T14:49:07.455568+00:00",
                     "EvidenceType": "Forensic Archive Zip",
                     "RecordStatus": "VERIFIED_SOURCE_ARCHIVE",
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]"
                 }
             },
             "node_hash": "d39b5c80dbfc6345304439e890d8a3ebf5787dafbc871c1ce45cd51289629634",
@@ -3777,7 +3777,7 @@
                             "BANK_PARTICIPATION_STATUS": "RECORDED_IN_SOURCE",
                             "LEGAL_CHARACTERIZATION": "Disputed Theft – US Funds Only"
                         },
-                        "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                        "A©tor_KEY": "# [⚖ A©tor Declaration]"
                     }
                 }
             },
@@ -3831,7 +3831,7 @@
                         "DateTimeUTC": "2026-09-19T17:24:28Z",
                         "EvidenceType": "Forensic Legal Complaint & Procedural Evidence",
                         "RecordStatus": "VERIFIED_LEGAL_SOURCE",
-                        "A©TOR_KEY": "# [⚖ A©tor Declaration]",
+                        "A©tor_KEY": "# [⚖ A©tor Declaration]",
                         "IntegrityLock": "AIPS-2025"
                     }
                 }
@@ -3878,7 +3878,7 @@
                         "cassation_doctrine_s22_art85",
                         "medical_apostille_anchor_870_883"
                     ],
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]",
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]",
                     "IntegrityLock": "AIPS-2025"
                 }
             },
@@ -3902,7 +3902,7 @@
                     "DateTime": "2026-09-19T16:58:29.577322+00:00",
                     "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
                     "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]"
                 }
             },
             "node_hash": "f75808362d3a552b5be70b2684a870d903e9b271b234c3fe37db1a2bdc8576a0",
@@ -3925,7 +3925,7 @@
                     "DateTime": "2026-09-19T16:58:29.822444+00:00",
                     "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
                     "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]"
                 }
             },
             "node_hash": "867c1496a0d575f2434e3502a68ba5546eddd3357c04d0a1657bb7f99eff3223",
@@ -3948,7 +3948,7 @@
                     "DateTime": "2026-09-19T16:58:29.826408+00:00",
                     "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
                     "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]"
                 }
             },
             "node_hash": "98aa19a93fb92dcad656b98ac921d87eff971d51daf9d76ae719693fa1eb4c1b",
@@ -3971,7 +3971,7 @@
                     "DateTime": "2026-09-19T16:58:29.838862+00:00",
                     "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
                     "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]"
                 }
             },
             "node_hash": "27ea4db0dbb3bc68514a630799834c8e53422d08ac6a3ee47ac4b83543ad1481",
@@ -3994,7 +3994,7 @@
                     "DateTime": "2026-09-19T16:58:29.841881+00:00",
                     "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
                     "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]"
                 }
             },
             "node_hash": "ea311a19ae50a673fece7b3f835eab4b19ff711cb3c92d19dd9d29a223ee6b1c",
@@ -4057,7 +4057,7 @@
                             "BANK_ROLES_STATUS": "TRANSACTION_FIELDS / NOT_ESTABLISHED_AS_FACT",
                             "LEGAL_CHARACTERIZATION": "Disputed Theft – US Funds Only"
                         },
-                        "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                        "A©tor_KEY": "# [⚖ A©tor Declaration]"
                     }
                 }
             },
@@ -4125,7 +4125,7 @@
                         "H:\\ACTOR_DEV_ENV\\UNIX_TI_ULA_PDF_INVENTORY.md"
                     ],
                     "Protocol": "TI-ULA Forensic Anchor & Amount Correlation [AIPS-2025]",
-                    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+                    "A©tor_KEY": "# [⚖ A©tor Declaration]"
                 }
             },
             "node_hash": "8596673b2d6985f4163fcad61e4e9870499c4f7ea4456e9911f02db1606bdcad",
@@ -5139,7 +5139,7 @@
                             "description": "IDNP and surname correlation evidence (Macheret / Мачерет / Macheret)"
                         },
                         {
-                            "filename": "Центральный Суд Молдовы _1.pdf",
+                            "filename": "Центральный Суд Молдовы _1.pdf",
                             "description": "Central Court of Moldova filing (Demers Suplimentar against FinComBank, 25.21M MDL)"
                         }
                     ],

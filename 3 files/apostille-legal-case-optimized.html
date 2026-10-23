@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CASE-MACHERET-1997-2026 | Evidence Vault</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #030a0f;
+    --bg2: #040d14;
+    --panel: #071624;
+    --border: #0e3a5c;
+    --accent: #00c6ff;
+    --accent2: #ff2244;
+    --accent3: #f0c040;
+    --green: #00ff88;
+    --text: #c8e0f0;
+    --muted: #4a7a9b;
+    --font-mono: 'Share Tech Mono', monospace;
+    --font-head: 'Orbitron', sans-serif;
+    --font-body: 'Rajdhani', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Scanline overlay */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background: repeating-linear-gradient(
+      0deg, transparent, transparent 2px, rgba(0,198,255,0.018) 2px, rgba(0,198,255,0.018) 4px
+    );
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  /* Grid background */
+  body::after {
+    content: '';
+    position: fixed; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,198,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,198,255,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    border: 1px solid var(--accent);
+    background: linear-gradient(135deg, rgba(0,198,255,0.06), rgba(0,198,255,0.02));
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    position: relative;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%);
+  }
+
+  .header::before {
+    content: 'EVIDENCE VAULT v4.2 // SECURE CHANNEL';
+    position: absolute;
+    top: 6px; right: 16px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 1px;
+  }
+
+  .case-id {
+    font-family: var(--font-head);
+    font-size: clamp(18px, 4vw, 28px);
+    font-weight: 900;
+    color: var(--accent);
+    letter-spacing: 3px;
+    text-shadow: 0 0 20px rgba(0,198,255,0.5);
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--accent3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* ===== COUNTER ===== */
+  .counter-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  .counter-block {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .counter-num {
+    font-family: var(--font-head);
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--accent2);
+    text-shadow: 0 0 30px rgba(255,34,68,0.6);
+    line-height: 1;
+  }
+
+  .counter-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    line-height: 1.3;
+  }
+
+  /* ===== STATUS BAR ===== */
+  .status-bar {
+    background: rgba(0,198,255,0.06);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--green);
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .pulse-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: var(--green);
+    border-radius: 50%;
+    margin-right: 6px;
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 6px var(--green); }
+    50% { opacity: 0.3; box-shadow: none; }
+  }
+
+  /* ===== SECTION PANELS ===== */
+  .panel {
+    border: 1px solid var(--border);
+    background: var(--panel);
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .panel::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.5;
+  }
+
+  .panel-header {
+    padding: 12px 18px;
+    background: rgba(0,198,255,0.05);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-head);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .panel-body {
+    padding: 18px;
+  }
+
+  /* ===== LIABILITY NODES ===== */
+  .liability-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .liability-card {
+    border: 1px solid var(--border);
+    background: rgba(255,34,68,0.04);
+    padding: 12px 14px;
+    position: relative;
+    transition: border-color 0.2s, background 0.2s;
+    text-decoration: none;
+    display: block;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+  }
+
+  .liability-card:hover {
+    border-color: var(--accent2);
+    background: rgba(255,34,68,0.08);
+  }
+
+  .liab-role {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .liab-name {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--accent2);
+  }
+
+  .liab-badge {
+    display: inline-block;
+    margin-top: 6px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    padding: 2px 6px;
+    background: rgba(255,34,68,0.15);
+    border: 1px solid rgba(255,34,68,0.3);
+    color: var(--accent2);
+    letter-spacing: 1px;
+  }
+
+  /* ===== LOG ENTRIES ===== */
+  .log-entry {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(14,58,92,0.5);
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .log-entry:last-child { border-bottom: none; }
+
+  .log-time {
+    color: var(--accent3);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .log-text { color: var(--text); }
+
+  /* ===== BUTTON SYSTEM ===== */
+  .btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  /* PRIMARY — main action */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 18px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: -60%;
+    width: 40%; height: 100%;
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-50%) skewX(-20deg);
+    transition: left 0.3s ease;
+  }
+
+  .btn:hover::after { left: 120%; }
+
+  /* Variants */
+  .btn-primary {
+    background: linear-gradient(135deg, #0077aa, #00c6ff);
+    color: #000;
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+  }
+  .btn-primary:hover { background: linear-gradient(135deg, #00a8e8, #40d9ff); transform: translateY(-1px); }
+
+  .btn-danger {
+    background: linear-gradient(135deg, #880018, #ff2244);
+    color: #fff;
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+  }
+  .btn-danger:hover { background: linear-gradient(135deg, #aa0022, #ff4466); transform: translateY(-1px); }
+
+  .btn-warning {
+    background: linear-gradient(135deg, #7a5c00, #f0c040);
+    color: #000;
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+  }
+  .btn-warning:hover { background: linear-gradient(135deg, #9a7800, #ffd060); transform: translateY(-1px); }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+  .btn-ghost:hover { background: rgba(0,198,255,0.1); transform: translateY(-1px); }
+
+  .btn-green {
+    background: linear-gradient(135deg, #004422, #00ff88);
+    color: #000;
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+  }
+  .btn-green:hover { background: linear-gradient(135deg, #006633, #40ffa0); transform: translateY(-1px); }
+
+  .btn-interpol {
+    background: linear-gradient(135deg, #3a0060, #aa44ff);
+    color: #fff;
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+  }
+  .btn-interpol:hover { background: linear-gradient(135deg, #5500aa, #cc66ff); transform: translateY(-1px); }
+
+  .btn-sm {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+
+  .btn-lg {
+    padding: 13px 26px;
+    font-size: 14px;
+  }
+
+  .btn-block {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ===== FORENSICS CARD ===== */
+  .forensic-card {
+    border: 1px solid rgba(240,192,64,0.3);
+    background: rgba(240,192,64,0.03);
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+
+  .forensic-title {
+    font-family: var(--font-head);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent3);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .forensic-desc {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  /* ===== MIRROR NODE ===== */
+  .mirror-block {
+    border: 1px solid rgba(0,255,136,0.25);
+    background: rgba(0,255,136,0.03);
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .mirror-info {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--green);
+  }
+
+  .mirror-url {
+    font-size: 12px;
+    color: var(--accent);
+    word-break: break-all;
+  }
+
+  /* ===== SHA BADGE ===== */
+  .sha-badge {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    background: rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+    word-break: break-all;
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  /* ===== TIMELINE BADGE ===== */
+  .deadline-alert {
+    background: linear-gradient(135deg, rgba(255,34,68,0.12), rgba(255,34,68,0.04));
+    border: 1px solid rgba(255,34,68,0.5);
+    border-left: 4px solid var(--accent2);
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+  }
+
+  .deadline-alert strong {
+    color: var(--accent2);
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ===== COPY BUTTON ===== */
+  .copy-btn {
+    cursor: pointer;
+    background: rgba(0,198,255,0.1);
+    border: 1px solid var(--border);
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    padding: 3px 8px;
+    letter-spacing: 1px;
+    transition: background 0.15s;
+  }
+
+  .copy-btn:hover { background: rgba(0,198,255,0.2); }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    margin-top: 30px;
+    padding: 16px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 1px;
+  }
+
+  /* ===== SCROLL HINT ===== */
+  @media (max-width: 600px) {
+    .liability-grid { grid-template-columns: 1fr; }
+    .counter-num { font-size: 32px; }
+    .case-id { letter-spacing: 1px; }
+    .btn-row { flex-direction: column; }
+    .btn { width: 100%; justify-content: center; }
+  }
+
+  /* Glow on key elements */
+  .glow-r { text-shadow: 0 0 10px rgba(255,34,68,0.6); }
+  .glow-b { text-shadow: 0 0 10px rgba(0,198,255,0.6); }
+  .glow-g { text-shadow: 0 0 10px rgba(0,255,136,0.6); }
+  .glow-y { text-shadow: 0 0 10px rgba(240,192,64,0.6); }
+
+  /* Highlight tag */
+  .tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  .tag-red { background: rgba(255,34,68,0.15); border: 1px solid rgba(255,34,68,0.4); color: var(--accent2); }
+  .tag-blue { background: rgba(0,198,255,0.12); border: 1px solid rgba(0,198,255,0.3); color: var(--accent); }
+  .tag-green { background: rgba(0,255,136,0.12); border: 1px solid rgba(0,255,136,0.3); color: var(--green); }
+  .tag-yellow { background: rgba(240,192,64,0.12); border: 1px solid rgba(240,192,64,0.3); color: var(--accent3); }
+
+  /* Divider */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 16px 0;
+  }
+
+  /* Section title inline */
+  .section-label {
+    font-family: var(--font-head);
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  /* Download row */
+  .download-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .dl-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    background: rgba(0,198,255,0.04);
+    text-decoration: none;
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 1px;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .dl-item:hover {
+    border-color: var(--accent);
+    background: rgba(0,198,255,0.09);
+    color: var(--accent);
+  }
+
+  .dl-flag {
+    font-size: 14px;
+    line-height: 1;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ===== HEADER ===== -->
+  <div class="header">
+    <div class="case-id">CASE-MACHERET-1997-2026</div>
+    <div class="subtitle">Identity Fraud &amp; Liability Protocol — Evidence Vault</div>
+    <div class="counter-row">
+      <div class="counter-block">
+        <span class="counter-num">8158</span>
+        <div class="counter-label">СУТОК<br>ПРОЦЕССУАЛЬНОГО<br>ВАКУУМА</div>
+      </div>
+      <div style="margin-left:auto; display:flex; flex-direction:column; gap:6px; align-items:flex-end;">
+        <span class="tag tag-red">🔴 ПЕРИОД СОКРЫТИЯ ПЫТОК</span>
+        <span class="tag tag-green">🛰 BROADCAST: ACTIVE</span>
+        <span class="tag tag-blue">🔒 INTEGRITY: 100%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== STATUS BAR ===== -->
+  <div class="status-bar">
+    <span><span class="pulse-dot"></span>STATUS: BROADCASTING → G7 MISSIONS | UN OHCHR | WHITE HOUSE</span>
+    <span>MIRROR: <a href="https://arhiv1973b.github.io/apostille-mirror/" style="color:var(--green); text-decoration:none;">ACTIVE ↗</a></span>
+  </div>
+
+  <!-- ===== DEADLINE ALERT ===== -->
+  <div class="deadline-alert">
+    <strong>⚠ DEADLINE NOTICE — 09.04.2026</strong>
+    Нарушение Jus Cogens по истечении срока запускает протокол <span style="color:var(--accent2); font-weight:700;">Global Sanction Vector 11</span>. Любое воспрепятствование является уголовным преступлением по нормам международного права.
+  </div>
+
+  <!-- ===== LIVE MONITORING ===== -->
+  <div class="panel">
+    <div class="panel-header">🚨 LIVE MONITORING — IDENTITY FRAUD DETECTED</div>
+    <div class="panel-body">
+      <div class="log-entry">
+        <span class="log-time">[19.03.2026 13:48]</span>
+        <span class="log-text">NOTIFIED: White House, UN OHCHR.</span>
+      </div>
+      <div class="log-entry">
+        <span class="log-time">[19.03.2026 18:50]</span>
+        <span class="log-text">DEPLOYED: Personal Liability Notices to all identified actors.</span>
+      </div>
+      <div class="log-entry">
+        <span class="log-time">[19.03.2026 19:15]</span>
+        <span class="log-text">AUDIT UPDATE: Forgery actor identified as <span style="color:var(--accent2);">L. Nantoi</span> operating under Marcov identity.</span>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn btn-primary btn-sm" href="https://arhiv1973b.github.io/apostille-legal-case/docs/forensics/FORGERY_DECONSTRUCTION_ACT.md">
+          📁 ОТКРЫТЬ ПОЛНОЕ ДОСЬЕ
+        </a>
+        <button class="btn btn-ghost btn-sm copy-btn" onclick="copyLog()">
+          📋 КОПИРОВАТЬ ЛОГ
+        </button>
+        <a class="btn btn-warning btn-sm" href="https://www.un.org/en/contact-us/" target="_blank">
+          🌐 УВЕДОМИТЬ ООН
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LIABILITY NODES ===== -->
+  <div class="panel">
+    <div class="panel-header">📉 УЗЛЫ ПЕРСОНАЛЬНОЙ ОТВЕТСТВЕННОСТИ (LIABILITY)</div>
+    <div class="panel-body">
+      <div class="liability-grid">
+        <a class="liability-card" href="https://arhiv1973b.github.io/apostille-legal-case/docs/liability/DULCA_NOTICE.md">
+          <div class="liab-role">МВД</div>
+          <div class="liab-name">ДУЛЧА В.Г.</div>
+          <span class="liab-badge">УВЕДОМЛЕНИЕ ▶</span>
+        </a>
+        <a class="liability-card" href="https://arhiv1973b.github.io/apostille-legal-case/docs/liability/MURIANU_NOTICE.md">
+          <div class="liab-role">СУД</div>
+          <div class="liab-name">МУРЯНУ И.</div>
+          <span class="liab-badge">УВЕДОМЛЕНИЕ ▶</span>
+        </a>
+        <a class="liability-card" href="https://arhiv1973b.github.io/apostille-legal-case/docs/liability/NANTOI_NOTICE.md">
+          <div class="liab-role">ГНС — АКТОР ПОДЛОГА</div>
+          <div class="liab-name">НАНТОЙ ЛЮДМИЛА</div>
+          <span class="liab-badge">УВЕДОМЛЕНИЕ ▶</span>
+        </a>
+        <div class="liability-card" style="opacity:0.7;">
+          <div class="liab-role">МАСКА ПОДЛОГА</div>
+          <div class="liab-name" style="color:var(--accent3);">МАРКОВ И.М.</div>
+          <span class="liab-badge" style="border-color:rgba(240,192,64,0.3); color:var(--accent3); background:rgba(240,192,64,0.1);">ЖЕРТВА</span>
+        </div>
+        <div class="liability-card">
+          <div class="liab-role">СОУЧАСТИЕ</div>
+          <div class="liab-name">НАНТОЙ ОАЗУ</div>
+          <span class="liab-badge">ЗАДОКУМЕНТИРОВАНО</span>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn btn-danger btn-sm" href="https://arhiv1973b.github.io/apostille-legal-case/docs/liability/NANTOI_NOTICE.md">
+          🚨 ОТКРЫТЬ ДОСЬЕ НАНТОЙ
+        </a>
+        <a class="btn btn-interpol btn-sm" href="https://www.interpol.int/en/Contacts/Contact-INTERPOL" target="_blank">
+          🔵 ПЕРЕДАТЬ В INTERPOL
+        </a>
+        <a class="btn btn-ghost btn-sm" href="https://arhiv1973b.github.io/apostille-legal-case/docs/liability/DULCA_NOTICE.md">
+          📌 МВД — ДУЛЧА
+        </a>
+        <a class="btn btn-ghost btn-sm" href="https://arhiv1973b.github.io/apostille-legal-case/docs/liability/MURIANU_NOTICE.md">
+          📌 СУД — МУРЯНУ
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FORGERY DECONSTRUCTION ===== -->
+  <div class="panel">
+    <div class="panel-header">🧨 АКТ ДЕКОНСТРУКЦИИ ПОДЛОГА (НАНТОЙ)</div>
+    <div class="panel-body">
+      <div class="forensic-card">
+        <div class="forensic-title">КРИМИНАЛИСТИЧЕСКИЙ АНАЛИЗ</div>
+        <div class="forensic-desc">
+          Использование личности Маркова И.М. — Доказательства подлога от 15.03.2022.<br>
+          Роль Нантой Людмилы и соучастие Нантой Оазу задокументированы.
+        </div>
+        <a class="btn btn-danger" href="https://arhiv1973b.github.io/apostille-legal-case/docs/forensics/FORGERY_DECONSTRUCTION_ACT.md">
+          ⚖ ПЕРЕДАТЬ В INTERPOL / PG
+        </a>
+      </div>
+
+      <div class="section-label">Переводы официального акта</div>
+      <div class="download-row">
+        <a class="dl-item" href="https://arhiv1973b.github.io/apostille-legal-case/docs/forensics/FORGERY_DECONSTRUCTION_EN.md">
+          <span class="dl-flag">🇬🇧</span> ENGLISH (UN)
+        </a>
+        <a class="dl-item" href="https://arhiv1973b.github.io/apostille-legal-case/docs/forensics/FORGERY_DECONSTRUCTION_FR.md">
+          <span class="dl-flag">🇫🇷</span> FRANÇAIS (EU)
+        </a>
+        <a class="dl-item" href="https://arhiv1973b.github.io/apostille-legal-case/docs/forensics/FORGERY_DECONSTRUCTION_ACT.md">
+          <span class="dl-flag">🇲🇩</span> РУССКИЙ (РМ)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== VECTOR 3 ===== -->
+  <div class="panel">
+    <div class="panel-header">📄 ВЕКТОР 3 — ПОДЛОГ И КРИМИНАЛЬНЫЙ ЗАХВАТ</div>
+    <div class="panel-body">
+      <p style="font-family:var(--font-mono); font-size:12px; color:var(--muted); margin-bottom:14px; line-height:1.6;">
+        Использование личности Маркова И.М. для фальсификации документов.<br>
+        Роль Нантой Людмилы и соучастие Нантой Оазу в событиях от 15.03.2022.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-danger" href="https://arhiv1973b.github.io/apostille-legal-case/docs/liability/NANTOI_NOTICE.md">
+          🗂 ОТКРЫТЬ ПОЛНОЕ ДОСЬЕ НАНТОЙ
+        </a>
+        <a class="btn btn-warning" href="https://www.ohchr.org/en/contact-us" target="_blank">
+          📡 UN OHCHR — ПОДАТЬ ЖАЛОБУ
+        </a>
+        <a class="btn btn-primary" href="https://www.interpol.int/en/Contacts/Contact-INTERPOL" target="_blank">
+          🌐 INTERPOL NOTICE
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== QUICK ACTIONS ===== -->
+  <div class="panel">
+    <div class="panel-header">⚡ БЫСТРЫЕ ДЕЙСТВИЯ — QUICK ACTIONS</div>
+    <div class="panel-body">
+      <div class="btn-row">
+        <a class="btn btn-primary btn-lg" href="https://arhiv1973b.github.io/apostille-legal-case/docs/forensics/FORGERY_DECONSTRUCTION_EN.md" target="_blank">
+          🔍 FORENSIC REPORT (EN)
+        </a>
+        <a class="btn btn-interpol btn-lg" href="https://www.interpol.int/en/Contacts/Contact-INTERPOL" target="_blank">
+          🔵 INTERPOL NOTICE
+        </a>
+        <a class="btn btn-danger btn-lg" href="https://www.ohchr.org/en/contact-us" target="_blank">
+          🌍 UN OHCHR
+        </a>
+        <a class="btn btn-green btn-lg" href="https://arhiv1973b.github.io/apostille-mirror/" target="_blank">
+          🛰 MIRROR NODE
+        </a>
+        <a class="btn btn-warning btn-lg" href="https://legal.un.org/ilc/guide/1_14.shtml" target="_blank">
+          📜 JUS COGENS / ILC
+        </a>
+      </div>
+      <div class="divider"></div>
+      <div class="btn-row">
+        <button class="btn btn-ghost btn-sm" onclick="window.print()">🖨 РАСПЕЧАТАТЬ</button>
+        <button class="btn btn-ghost btn-sm" onclick="shareCase()">📤 ПОДЕЛИТЬСЯ</button>
+        <button class="btn btn-ghost btn-sm" onclick="copyHash()">🔑 КОПИРОВАТЬ HASH</button>
+        <a class="btn btn-ghost btn-sm" href="https://arhiv1973b.github.io/apostille-mirror/" target="_blank">🔗 ЗЕРКАЛО</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MIRROR NODE ===== -->
+  <div class="mirror-block">
+    <div class="mirror-info">
+      <div>🛰 ЗЕРКАЛЬНЫЙ УЗЕЛ — MIRROR NODE</div>
+      <div class="mirror-url">https://arhiv1973b.github.io/apostille-mirror/</div>
+    </div>
+    <a class="btn btn-green btn-sm" href="https://arhiv1973b.github.io/apostille-mirror/" target="_blank">
+      ОТКРЫТЬ ЗЕРКАЛО ↗
+    </a>
+  </div>
+
+  <div class="sha-badge">
+    🔒 LOCKED BY SHA-256 | IDENTITY FRAUD SYNC | 2026<br>
+    <span id="sha-hash" style="color:var(--accent); user-select:all;">SHA-256: 7f3d1a9b2c8e4f0d5b6a3c7e9f1d2a4b8c6e0f3a9d5b2c7e1a4f8b3d6c9e0a2f</span>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="footer">
+    CASE-MACHERET-1997-2026 &nbsp;|&nbsp; EVIDENCE VAULT v4.2 &nbsp;|&nbsp;
+    BROADCAST: G7 MISSIONS / UN OHCHR / WHITE HOUSE &nbsp;|&nbsp;
+    <a href="https://legal.un.org/ilc/guide/1_14.shtml" target="_blank" style="color:var(--accent); text-decoration:none;">ILC JUS COGENS</a>
+    &nbsp;|&nbsp; © 2026 ALL RIGHTS RESERVED UNDER INTERNATIONAL LAW
+  </div>
+</div>
+
+<script>
+  function copyLog() {
+    const log = `[19.03.2026 13:48] NOTIFIED: White House, UN OHCHR.
+[19.03.2026 18:50] DEPLOYED: Personal Liability Notices.
+[19.03.2026 19:15] AUDIT UPDATE: Forgery actor identified as L. Nantoi under Marcov identity.`;
+    navigator.clipboard?.writeText(log).then(() => alert('Лог скопирован в буфер обмена.')).catch(() => {});
+  }
+
+  function copyHash() {
+    const h = document.getElementById('sha-hash').textContent;
+    navigator.clipboard?.writeText(h).then(() => alert('Hash скопирован.')).catch(() => {});
+  }
+
+  function shareCase() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'CASE-MACHERET-1997-2026 | Evidence Vault',
+        url: 'https://arhiv1973b.github.io/apostille-legal-case/'
+      });
+    } else {
+      navigator.clipboard?.writeText('https://arhiv1973b.github.io/apostille-legal-case/')
+        .then(() => alert('URL скопирован в буфер обмена.'));
+    }
+  }
+</script>
+</body>
+</html>

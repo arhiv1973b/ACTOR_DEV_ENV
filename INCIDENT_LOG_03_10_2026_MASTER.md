@@ -49,4 +49,4 @@ Faced with local institutional corruption and physical blockades, the applicant 
    - **Cloud Backup & Hashing:** Complete cryptographic preservation of all records via SHA-256 manifests (`evidence_manifest_sha256.json`) and synchronization with Google Drive.
 
 ---
-**A©TOR_KEY="[⚖ A©tor Declaration / TI-ULA Protocol - Master Incident Log Verified]"**
+**A©tor_KEY="[⚖ A©tor Declaration / TI-ULA Protocol - Master Incident Log Verified]"**

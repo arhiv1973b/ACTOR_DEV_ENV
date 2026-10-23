@@ -2,7 +2,7 @@
 """
 PROCESS TABLE & EVIDENCE AUDIT
 Case Reference: CASE-MACHERET-1997-2026
-Security Anchor: A©TOR_KEY="# [⚖ A©tor Declaration]"
+Security Anchor: A©tor_KEY="# [⚖ A©tor Declaration]"
 """
 
 import os
@@ -17,7 +17,7 @@ def process_csv():
         # Create a sample resilience / evidence table if it doesn't exist
         data = {
             "Layer": ["Basement", "Adaptive", "Context"],
-            "Task": ["SHA-256 / A©TOR_KEY", "OCR Fallback", "Artifact Graph"],
+            "Task": ["SHA-256 / A©tor_KEY", "OCR Fallback", "Artifact Graph"],
             "Status": ["Verified", "Active", "Logged"],
             "Aberration_Risk": ["Fatal", "Compensated", "Tolerated"],
         }

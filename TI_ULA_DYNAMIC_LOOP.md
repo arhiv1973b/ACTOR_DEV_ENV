@@ -1,7 +1,7 @@
 # TI-ULA DYNAMIC SELF-CLEANING LOOP ARCHITECTURE ($S_1 \to S_2 \to S_3 \to S_1$)
 
 **Framework:** TI-ULA v1.2  
-**A©TOR_KEY:** `# [⚖ A©tor Declaration]`  
+**A©tor_KEY:** `# [⚖ A©tor Declaration]`  
 **Status:** Active Closed-Loop Dynamic Contour  
 
 ---
@@ -27,7 +27,7 @@ graph TD
 
 ### State 1 ($S_1$): Intake & Baseline Anchoring
 - **Function:** Ingestion of raw inputs, evidence files (e.g., apostilles, judicial determinations, simulation telemetry).
-- **Invariant:** Verification against baseline schema and `A©TOR_KEY` metadata binding.
+- **Invariant:** Verification against baseline schema and `A©tor_KEY` metadata binding.
 
 ### State 2 ($S_2$): Peremptory Norm Verification
 - **Function:** Rigorous evaluation against the *jus cogens* hierarchy (UDHR 1948, VCLT Art. 53, absolute prohibition of torture).

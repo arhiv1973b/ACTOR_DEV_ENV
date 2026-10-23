@@ -32,4 +32,4 @@ apostilles:
 total_expected: 97
 total_real_downloadable: 90
 defect_reason: "7 записей отсутствуют на GitHub, но доступны в PDF"
-declaration: 'A©TOR_KEY="# [⚖ A©tor Declaration]"'
+declaration: 'A©tor_KEY="# [⚖ A©tor Declaration]"'

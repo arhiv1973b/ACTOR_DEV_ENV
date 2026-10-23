@@ -1,77 +1,40 @@
 services:
-  actor-app-dev:
-    build: .
-    user: "65532:65532"
-    cap_drop:
-      - ALL
-    security_opt:
-      - no-new-privileges:true
-    deploy:
-      resources:
-        limits:
-          cpus: '0.50'
-          memory: 256M
-    networks:
-      - actor-net
+  mcp-docker:
+    build: mcp-docker-server
+    container_name: mcp-docker
     volumes:
-      - audit_data:/app/.audit
-
-  actor-audit:
-    image: anchore/grype:latest
-    depends_on:
-      - actor-app-dev
-    cap_drop:
-      - ALL
-    security_opt:
-      - no-new-privileges:true
-    deploy:
-      resources:
-        limits:
-          cpus: '0.50'
-          memory: 512M
-    networks:
-      - actor-net
-    volumes:
-      - audit_data:/app:ro
-    environment:
-      - GRYPE_DB_AUTO_UPDATE=true
-    entrypoint: ["/grype", "/app", "-o", "table"]
-
-  neo4j:
-    image: neo4j:5.15
-    container_name: neo4j_forensic
-    restart: unless-stopped
+      - ./mcp-docker-server/run:/run
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./mcp-docker-server/forensic_air_gapped_audit.py:/app/forensic_air_gapped_audit.py:ro
+      - H:/ACTOR_DEV_ENV:/audit_data:ro
     ports:
-      - "7474:7474"   # HTTP UI (Neo4j Browser / Bloom)
-      - "7687:7687"   # Bolt driver
+      - "8082:8080"
     environment:
-      - NEO4J_AUTH=neo4j/password
-      - NEO4JLABS_PLUGINS=["graph-data-science","apoc","bloom"]
-      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
-      - NEO4J_dbms_security_procedures_allowlist=apoc.*
-    networks:
-      - actor-net
-    volumes:
-      - ./neo4j_data:/data
-      - ./neo4j_logs:/logs
-      - ./neo4j_import:/var/lib/neo4j/import
-      - ./neo4j_plugins:/plugins
-
-  adminer:
-    image: adminer:latest
-    container_name: forensic_adminer
+      NODE_ENV: production
+      MCP_LOG_LEVEL: debug
     restart: unless-stopped
-    ports:
-      - "8080:8080"
-    networks:
-      - actor-net
+
+  gemini-cli-docker:
+    build:
+      context: .
+      dockerfile: Dockerfile.gemini
+    container_name: gemini-cli
     environment:
-      - ADMINER_DEFAULT_SERVER=sqlite
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    stdin_open: true
+    tty: true
 
-networks:
-  actor-net:
-    driver: bridge
-
-volumes:
-  audit_data:
-
+  gemini-dockerfile-bridge:
+    build:
+      context: .
+      dockerfile: Dockerfile.bridge
+    container_name: gemini-dockerfile-bridge
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - OLLAMA_HOST=http://host.docker.internal:11434
+    ports:
+      - "8001:8001"
+    command: ["python", "-c", "import time; print('Gemini Dockerfile Bridge ready.'); while True: time.sleep(3600)"]
+    stdin_open: true
+    tty: true
+    restart: unless-stopped

@@ -54,4 +54,4 @@ Conform art. 4 din Constituție, pactele și tratatele internaționale privind d
 
 Macheret Alexei Artur (A©tor)
 
-*A©TOR_KEY="# [⚖ A©tor Declaration]"*
+*A©tor_KEY="# [⚖ A©tor Declaration]"*

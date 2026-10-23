@@ -1,42 +1,42 @@
-{
-  "test_suite": "TI-ULA Raw Hash Invariance & Snapshot Timestamp Test",
-  "timestamp": "2026-09-03T17:24:52.492521",
-  "tested_files_count": 5,
-  "results": [
-    {
-      "original_path": "fincombank - criminal_compressed.pdf",
-      "sha256": "e55a3e64729ab5c49fc446795138c8c87e2699b23adcdcb9afe0448162a18b1a",
-      "hash_filename": "e55a3e64729ab5c49fc446795138c8c87e2699b23adcdcb9afe0448162a18b1a.bin",
-      "snapshot_timestamp": "2026-08-19T23:02:50.673425",
-      "hash_verification_passed": true
-    },
-    {
-      "original_path": "Min Fin.pdf",
-      "sha256": "473c0e7c3940384899941b77ec8aeb0edc20edf36cff71001ff155ea05b99471",
-      "hash_filename": "473c0e7c3940384899941b77ec8aeb0edc20edf36cff71001ff155ea05b99471.bin",
-      "snapshot_timestamp": "2026-08-19T22:55:42.414946",
-      "hash_verification_passed": true
-    },
-    {
-      "original_path": "Tehnologice A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
-      "sha256": "c97cc380cd3132bc1ddb2fc226b3e19a6f9cff414ac8c87e004081c3319f2bde",
-      "hash_filename": "c97cc380cd3132bc1ddb2fc226b3e19a6f9cff414ac8c87e004081c3319f2bde.bin",
-      "snapshot_timestamp": "2026-09-02T20:36:52.432561",
-      "hash_verification_passed": true
-    },
-    {
-      "original_path": "[⚖ A©tor Declaration] .pdf",
-      "sha256": "5f1f6bdfdd5e13224e117ddffcc05320b9cbdda11e324c85d2dbf2cea17c937b",
-      "hash_filename": "5f1f6bdfdd5e13224e117ddffcc05320b9cbdda11e324c85d2dbf2cea17c937b.bin",
-      "snapshot_timestamp": "2026-08-30T18:32:28.519622",
-      "hash_verification_passed": true
-    },
-    {
-      "original_path": "Док.pdf",
-      "sha256": "95c1d48abf8fecd0b00b24b893eda4d45bf3e03fb9ad3991d9d7f72754e5b748",
-      "hash_filename": "95c1d48abf8fecd0b00b24b893eda4d45bf3e03fb9ad3991d9d7f72754e5b748.bin",
-      "snapshot_timestamp": "2026-08-20T10:26:07.333443",
-      "hash_verification_passed": true
-    }
-  ]
+{
+  "test_suite": "TI-ULA Raw Hash Invariance & Snapshot Timestamp Test",
+  "timestamp": "2026-09-03T17:24:52.492521",
+  "tested_files_count": 5,
+  "results": [
+    {
+      "original_path": "fincombank - criminal_compressed.pdf",
+      "sha256": "e55a3e64729ab5c49fc446795138c8c87e2699b23adcdcb9afe0448162a18b1a",
+      "hash_filename": "e55a3e64729ab5c49fc446795138c8c87e2699b23adcdcb9afe0448162a18b1a.bin",
+      "snapshot_timestamp": "2026-08-19T23:02:50.673425",
+      "hash_verification_passed": true
+    },
+    {
+      "original_path": "Min Fin.pdf",
+      "sha256": "473c0e7c3940384899941b77ec8aeb0edc20edf36cff71001ff155ea05b99471",
+      "hash_filename": "473c0e7c3940384899941b77ec8aeb0edc20edf36cff71001ff155ea05b99471.bin",
+      "snapshot_timestamp": "2026-08-19T22:55:42.414946",
+      "hash_verification_passed": true
+    },
+    {
+      "original_path": "Tehnologice A©tor_KEY=_# [⚖ A©tor Declaration]_.pdf",
+      "sha256": "c97cc380cd3132bc1ddb2fc226b3e19a6f9cff414ac8c87e004081c3319f2bde",
+      "hash_filename": "c97cc380cd3132bc1ddb2fc226b3e19a6f9cff414ac8c87e004081c3319f2bde.bin",
+      "snapshot_timestamp": "2026-09-02T20:36:52.432561",
+      "hash_verification_passed": true
+    },
+    {
+      "original_path": "[⚖ A©tor Declaration] .pdf",
+      "sha256": "5f1f6bdfdd5e13224e117ddffcc05320b9cbdda11e324c85d2dbf2cea17c937b",
+      "hash_filename": "5f1f6bdfdd5e13224e117ddffcc05320b9cbdda11e324c85d2dbf2cea17c937b.bin",
+      "snapshot_timestamp": "2026-08-30T18:32:28.519622",
+      "hash_verification_passed": true
+    },
+    {
+      "original_path": "Док.pdf",
+      "sha256": "95c1d48abf8fecd0b00b24b893eda4d45bf3e03fb9ad3991d9d7f72754e5b748",
+      "hash_filename": "95c1d48abf8fecd0b00b24b893eda4d45bf3e03fb9ad3991d9d7f72754e5b748.bin",
+      "snapshot_timestamp": "2026-08-20T10:26:07.333443",
+      "hash_verification_passed": true
+    }
+  ]
 }

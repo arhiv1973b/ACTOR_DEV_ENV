@@ -16,4 +16,4 @@ Cryptographic Anchor: SHA-256 Content-Addressing & Ed25519 Digital Signature Led
 - Seamless transition to RECORD OF STATE №2 authorized under imperative norms of Jus Cogens and Erga Omnes, sealing the evidentiary pipeline against unauthorized post-facto modifications.
 - Operational integration of $\Xi_{\text{ultimate}} = \oint_{\Omega_{\text{AI}}} \left( \frac{\partial \Lambda(t)}{\partial \Theta} \cdot \lim_{\Delta R \to 0} [\nabla_{\neg D} \, \Phi(T)] \right) e^{-\Delta S(t) - \mathcal{E}_{\text{third\_party}}} \, d\Psi$.
 
-A©TOR_KEY="# [⚖ A©tor Declaration - State 2 Authorized]"
+A©tor_KEY="# [⚖ A©tor Declaration - State 2 Authorized]"
