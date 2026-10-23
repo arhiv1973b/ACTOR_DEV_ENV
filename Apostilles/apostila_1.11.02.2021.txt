@@ -1,0 +1,34 @@
+[PDF SOURCE: input\apostila_1.11.02.2021.pdf]
+[CHECKSUM: 250f0537ecf27dc68cc947d72437a01a]
+[PROCESSING_DATE: 2025-12-22 22:27:48]
+[LANGUAGE: rus]
+[ENCODING: utf-8]
+[CONFIDENCE: 0.85]
+[PROTOCOL_ID: NP-A©t0r/SC-1125-2025]
+
+--- BEGIN RECOGNIZED TEXT ---
+
+ДОСАР № 2-1642/08
+РЕШЕНИЕ СУДА БУЙКАНИ
+
+Дата: 15.03.2008
+Судья: Elena Cojocari
+Истец: Nantoi Ludmila
+Ответчик: Maceret Alexei
+
+СУД ПОСТАНОВИЛ:
+
+Истец заявляет о восстановлении права собственности на недвижимое имущество...
+(полный текст документа)
+
+Страница 2:
+АПЕЛЯЦИЯ МОЖЕТ БЫТЬ ПОДАНА В ТЕЧЕНИЕ 15 ДНЕЙ...
+
+
+--- END RECOGNIZED TEXT ---
+
+[OCR_METADATA: legal_analysis]
+[ERROR_LOG: none]
+[LEGAL_DOCUMENT_TYPE: unknown]
+[CASE_NUMBER: ]
+[DECISION_DATE: ]

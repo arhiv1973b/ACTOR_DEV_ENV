@@ -1,0 +1,19 @@
+{
+  "audit_module": "Controlimiti & Jus Cogens Application Doctrine",
+  "precedents": [
+    {
+      "case": "It. Const. Court No. 238/2014",
+      "principle": "Primacy of judicial protection and fundamental rights over state immunity in cases of delicta imperii."
+    },
+    {
+      "case": "It. Const. Court No. 159/2023",
+      "principle": "Pragmatic execution limits through equivalent compensatory mechanisms without invalidating core constitutional protections."
+    }
+  ],
+  "application_scope": [
+    "Evidence Vault indexing",
+    "Neutralization of false procedural triggers and fake ECHR/EU integration arguments",
+    "Defense of national constitutional order (Art. 4 & 8 of RM Constitution) against systemic institutional impunity"
+  ],
+  "memorandum_formula": "Практика Конституционного суда Италии (решения № 238/2014 и № 159/2023) демонстрирует, что даже в условиях формального признания решений Международного Суда ООН национальный конституционный порядок сохраняет право устанавливать пределы, когда применение иммунитета или межгосударственных конструкций приводит к уничтожению права на судебную защиту при тяжких нарушениях. При этом последующее pragmatic-урегулирование не отменяет исходного принципа приоритета защиты прав, а лишь определяет границы его реализации на стадии исполнения."
+}

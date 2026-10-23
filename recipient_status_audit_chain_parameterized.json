@@ -1,0 +1,25 @@
+{
+  "title": "AuditRun Status Chain by Recipient",
+  "parameters": [
+    {
+      "name": "email",
+      "type": "string",
+      "defaultValue": "courts@justice.md",
+      "description": "Email of the recipient to filter the status chain"
+    }
+  ],
+  "query": "MATCH (r:Recipient {email:$email})-[:HAS_STATUS]->(s:DeliveryStatus) OPTIONAL MATCH (s)-[:PREVIOUS_STATUS*]->(old:DeliveryStatus) OPTIONAL MATCH (a:AuditRun)-[:COMPARES]->(s) OPTIONAL MATCH (a)-[:HAS_REFERENCE]->(u:LegalReference) RETURN r, a, s, old, u",
+  "visualization": {
+    "type": "timeline",
+    "entity": "DeliveryStatus",
+    "timeField": "checked_at",
+    "groupBy": "Recipient",
+    "labelFields": ["sent","delivered","acknowledged"],
+    "highlight": {
+      "Recipient": "circle-green",
+      "AuditRun": "hexagon-blue",
+      "DeliveryStatus": "square-orange",
+      "LegalReference": "diamond-red"
+    }
+  }
+}

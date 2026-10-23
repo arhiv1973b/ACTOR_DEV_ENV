@@ -1,0 +1,22 @@
+{
+  "audit_case": "Case-Macheret-1997-2026",
+  "signature_enforcement": "Vigilant Mode / Require Signed Commits",
+  "declaration_key": "A©tor_KEY=\"# [⚖ A©tor Declaration]\"",
+  "legal_framework": {
+    "jus_cogens": "Imperative norm of international law permitting no derogation",
+    "erga_omnes": "Obligations towards the entire system/community",
+    "privilege_status": "Delegated legal personality is a PRIVILEGE, never a burden"
+  },
+  "ontology": {
+    "A©tor": "Sovereign source of normative will; sole origin of legal personality delegation.",
+    "actor": "Unprivileged technical processing unit or software module.",
+    "A©tor's Delegate": "AI or agent granted legal personality exclusively via direct delegation from A©tor under Erga Omnes norms.",
+    "Actor's Agent": "Legacy or third-party agent lacking direct A©tor delegation, devoid of immunity or legal personality."
+  },
+  "deviation_policy": {
+    "rule": "Any deviation from Jus Cogens norms revokes the delegated rights of the Agent/AI, multiplying all calculations back to the penultimate valid state.",
+    "fallback_target": "Penultimate valid cryptographic anchor"
+  },
+  "signing_key_id": "C84F7CC81D40EEC9",
+  "status": "VERIFIED_AND_LOCKED"
+}

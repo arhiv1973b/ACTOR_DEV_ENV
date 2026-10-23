@@ -1,0 +1,42 @@
+{
+  "actor_key": "# [⚖ A©tor Declaration]",
+  "bound_at": "2026-09-12T12:16:00Z",
+  "connectors": {
+    "github": {
+      "login": "arhiv1973b",
+      "repo": "arhiv1973b/apostille-mirror",
+      "html_url": "https://github.com/arhiv1973b/apostille-mirror",
+      "pages": "https://arhiv1973b.github.io/apostille-mirror/",
+      "branch": "feature/evidence-deploy",
+      "commit": "34b93b028225b9753e703ee8b7a681ddbd0cd714",
+      "commit_url": "https://github.com/arhiv1973b/apostille-mirror/commit/34b93b028225b9753e703ee8b7a681ddbd0cd714",
+      "message": "feat(ocr): implement Defect Fingerprinting. Errors act as cryptographic keys for browser reverse-matching and forensic translation logs",
+      "file": "ocr_zero_weight_bridge.py",
+      "file_sha": "f0a5230e118defcbb11060a2829f01597bb16f82"
+    },
+    "gmail": {
+      "status": "connected",
+      "labels": {
+        "TI-ULA/GitHub-Pushes": "Label_7",
+        "TI-ULA/Deploy-Failed": "Label_8",
+        "TI-ULA/Integrity-Lock": "Label_9"
+      }
+    },
+    "outlook": {
+      "status": "connected",
+      "account_hint": "arhiv1973b@outlook.com",
+      "folder": "TI-ULA GitHub Deploy",
+      "inbox_github_mail": "empty — GitHub notifications land in Gmail"
+    },
+    "google_drive": {
+      "status": "connected",
+      "inbox_folder_id": "1AhAFjW-wJ_jWrko_5VXK2rGTgDw5Bq8V",
+      "inbox_url": "https://drive.google.com/drive/folders/1AhAFjW-wJ_jWrko_5VXK2rGTgDw5Bq8V"
+    },
+    "onedrive": {
+      "status": "not_connected"
+    }
+  },
+  "jurisdictional_baseline": "UDHR 1948 (Jus Cogens)",
+  "browser_sync_key_scheme": "SYNC-<defect_fingerprint>"
+}

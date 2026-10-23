@@ -1,0 +1,29 @@
+id: FINANCIAL_MODEL_DAMNUM_EMERGENS_LUCRUM_CESSANS_2026
+type: economic_restitution_model
+baseline:
+  t0: "1997-08-05"
+  audit_date: "2026-09-20"
+  total_days: 10639
+damnum_emergens:
+  real_estate_losses:
+    - asset: ZhSK-39, Miron Kostin str. 13/3, ap. 64 (Chisinau)
+    - valuation_eur: 90000
+    - legal_basis: UDHR Art. 17, Restitutio in integrum
+  medical_and_recovery_costs:
+    - description: Foreign high-tech medical extraction of foreign metal body and facial reconstructive surgery resulting from 1998 torture consequences
+    - estimated_eur: 35000
+lucrum_cessans:
+  professional_interruption:
+    - calculation_period_years: 29
+    - annual_baseline_eur: 15000
+    - total_lucrum_cessans_eur: 435000
+  financial_deprivation_and_penalties:
+    - description: Blocked bank accounts (Victoriabank), fraudulent credit reports (Infodebit/ViaScope), cascading financial restriction penalties
+    - amount_eur: 50000
+summary_claim:
+  total_damnum_emergens_eur: 125000
+  total_lucrum_cessans_eur: 485000
+  grand_total_restitution_eur: 610000
+ti_ula_status:
+  anchored: true
+  hash_algorithm: SHA-256 + Ed25519

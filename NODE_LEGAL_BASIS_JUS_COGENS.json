@@ -1,0 +1,53 @@
+{
+  "id": "NODE_LEGAL_BASIS_JUS_COGENS",
+  "version": "1.0.0",
+  "type": "root_legal_trust_node",
+  "scope": "CASE-MACHERET-1997-2026",
+  "legal_foundations": {
+    "universal_declaration_of_human_rights": {
+      "year": 1948,
+      "articles": [
+        {
+          "article": "3",
+          "principle": "Right to life, liberty and security of person",
+          "application": "Protection against arbitrary state infringement and state-sponsored violence"
+        },
+        {
+          "article": "5",
+          "principle": "Absolute prohibition of torture and cruel, inhuman or degrading treatment",
+          "application": "Direct legal status of torture episodes starting from August 18, 1997 (Case No. 1-568/98)"
+        },
+        {
+          "article": "9",
+          "principle": "Protection against arbitrary arrest, detention or exile",
+          "application": "Nullification of arbitrary detention starting August 5, 1997 (Judge Ciachir, name distortion)"
+        },
+        {
+          "article": "17",
+          "principle": "Right to property and prohibition of arbitrary deprivation",
+          "application": "Mandatory restitutio in integrum for ZhSK-39, apt. 64 / Miron Costin 13/3"
+        }
+      ]
+    },
+    "international_conventions": [
+      {
+        "instrument": "Vienna Convention on the Law of Treaties (VCLT)",
+        "year": 1969,
+        "articles": ["53", "71"],
+        "effect": "Nullity ab initio of any national judicial decision attempting to validate or sanitize torture or property theft through procedural bad faith."
+      },
+      {
+        "instrument": "UN Convention Against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment",
+        "year": 1984,
+        "articles": ["4", "7", "15"],
+        "effect": "Obligation to prosecute, universal jurisdiction, and inadmissibility of statements extracted under torture."
+      }
+    ],
+    "erga_omnes_obligations": "Absolute and non-derogable obligations owed by the State to the international community as a whole."
+  },
+  "ti_ula_status": {
+    "status": "sealed_root_of_trust",
+    "anchored_at": "2026-09-20",
+    "hash_algorithm": "SHA-256 + Ed25519"
+  }
+}

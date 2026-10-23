@@ -1,0 +1,9 @@
+{
+  "seal_id": "EXTERNAL-SEAL-ANCHOR-001",
+  "timestamp": "2026-09-08T14:16:27.671244",
+  "target_ledger": "DAG_SWARM_LEDGER.jsonl",
+  "ledger_file_sha256": "33f8d37a5228edbe761dffd100df8ce8372d2a98965cc2f58c663de37a05836d",
+  "dag_tail_hash": "7a2dd1456783be6090a8528de1c3adbff1d0028d66adfc3fbd6b809d9fd539c6",
+  "self_reference": false,
+  "status": "sealed"
+}

@@ -1,0 +1,15 @@
+services:
+  mcp-docker:
+    build: .
+    container_name: mcp-docker
+    volumes:
+      - ./run:/run
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./forensic_air_gapped_audit.py:/app/forensic_air_gapped_audit.py:ro
+      - H:/ACTOR_DEV_ENV:/audit_data:ro
+    ports:
+      - "8080:8080"
+    environment:
+      NODE_ENV: production
+      MCP_LOG_LEVEL: debug
+    restart: unless-stopped

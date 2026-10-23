@@ -1,0 +1,21 @@
+{
+  "archive_name": "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65.zip",
+  "archive_sha256": "c4ebd16c1e5f27976571a9757968b19e45381e6041bcad3baf03968c4e8e8440",
+  "timestamp": "2026-09-19T15:15:28.407024+00:00",
+  "contents": [
+    {
+      "filename": "diagnostics.txt",
+      "relative_path": "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65\\diagnostics.txt",
+      "size_bytes": 38044,
+      "sha256": "28e0310f452152b5290c92f1594c0ecfba67d544cf0c367275216014e001849e",
+      "binaryExists": true
+    },
+    {
+      "filename": "github-app.18620.log",
+      "relative_path": "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65\\github-app.18620.log",
+      "size_bytes": 396698,
+      "sha256": "d2030cea97d870a696e3f82dad0e48c90664f7bb17722d9afef456d9f73faaf1",
+      "binaryExists": true
+    }
+  ]
+}

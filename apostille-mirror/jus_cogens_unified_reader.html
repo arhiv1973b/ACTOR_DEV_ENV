@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ro" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUS COGENS &amp; UNIVERSAL INTERNATIONAL LAW SUPREMACY — CASE MACHERET &amp; TIULA</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@600;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:       #050a0f;
+  --panel:    #060f1a;
+  --panel2:   #071220;
+  --border:   #0c2e4a;
+  --border2:  #103c60;
+  --gold:     #c8960a;
+  --gold2:    #f0c040;
+  --red:      #cc1133;
+  --red2:     #ff2244;
+  --cyan:     #00b8e8;
+  --cyan2:    #40d4ff;
+  --green:    #00d870;
+  --purple:   #9933cc;
+  --text:     #c0d8ec;
+  --text2:    #8ab0cc;
+  --muted:    #3a6080;
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-head: 'Orbitron', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+body::before {
+  content:''; position:fixed; inset:0; z-index:200; pointer-events:none;
+  background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,184,232,.012) 2px,rgba(0,184,232,.012) 4px);
+}
+.wrap { max-width: 1200px; margin: 0 auto; padding: 30px 20px 80px; position: relative; z-index: 1; }
+header {
+  border-bottom: 2px solid var(--border2);
+  padding-bottom: 25px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+header h1 {
+  font-family: var(--font-head);
+  font-size: 28px;
+  color: var(--gold2);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px rgba(200,150,10,0.3);
+}
+header p {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--cyan2);
+  letter-spacing: 1px;
+}
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.tab-btn {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 20px;
+  font-family: var(--font-head);
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.tab-btn:hover, .tab-btn.active {
+  background: var(--border2);
+  color: var(--gold2);
+  border-color: var(--gold);
+  box-shadow: 0 0 10px rgba(0,184,232,0.2);
+}
+.section-box {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 25px;
+  margin-bottom: 25px;
+  display: none;
+}
+.section-box.active {
+  display: block;
+  animation: fadeIn 0.4s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+h2 {
+  font-family: var(--font-head);
+  font-size: 20px;
+  color: var(--cyan2);
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+h3 {
+  font-family: var(--font-head);
+  font-size: 16px;
+  color: var(--gold);
+  margin: 15px 0 8px;
+}
+p, li {
+  margin-bottom: 12px;
+  color: var(--text);
+}
+ul { padding-left: 20px; }
+.highlight-box {
+  background: rgba(200, 150, 10, 0.05);
+  border-left: 4px solid var(--gold);
+  padding: 15px;
+  margin: 15px 0;
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+.article-card {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+.article-num {
+  font-family: var(--font-head);
+  color: var(--gold2);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>JUS COGENS &amp; SUPREMAȚIA DREPTULUI INTERNAȚIONAL</h1>
+    <p>TIULA &amp; CASE MACHERET — INTEGRATED SOVEREIGN READER (RO / EN / RU)</p>
+  </header>
+
+  <div class="nav-tabs">
+    <button class="tab-btn active" onclick="switchTab('tab-doctrine')">1. Doctrina Supremă &amp; Constituții</button>
+    <button class="tab-btn" onclick="switchTab('tab-vienna')">2. Convenția de la Viena (1969)</button>
+    <button class="tab-btn" onclick="switchTab('tab-juscogens')">3. Concluziile ILC (Jus Cogens)</button>
+    <button class="tab-btn" onclick="switchTab('tab-udhr')">4. Declarația Universală (1948)</button>
+    <button class="tab-btn" onclick="switchTab('tab-supremacy')">5. Supraliminarea EКПП &amp; Standardele UE</button>
+  </div>
+
+  <!-- TAB 1: DOCTRINE -->
+  <div id="tab-doctrine" class="section-box active">
+    <h2>Fundamentul Constituțional și Supranațional (România &amp; Moldova)</h2>
+    <div class="highlight-box">
+      <strong>Art. 4 și Art. 8 din Constituția Republicii Moldova</strong><br>
+      • Art. 4: Drepturile şi libertăţile omului se interpretează şi se aplică în concordanţă cu Declaraţia Universală a Drepturilor Omului, cu pactele şi celelalte tratatate la care Republica Moldova este parte.<br>
+      • Art. 8: Respectarea dreptului internaţional şi a tratatelor internaţionale. Republica Moldova se obligă să respecte carta ONU şi tratatele la care este parte.
+    </div>
+    <div class="highlight-box">
+      <strong>Constituția României (Art. 11 &amp; Art. 20) — Corelat cu practica suverană</strong><br>
+      • Pactele şi tratatele internaţionale privind drepturile fundamentale ale omului au prioritate absolută faţă de legislaţia internă, consfințind nulitatea oricărui act care contravine normelor imperative <em>Jus Cogens</em>.
+    </div>
+    <p>Proiectul <strong>Tiula</strong> și dosarul <strong>Case Macheret (1997–2026)</strong> instituie un standard de protecție absolută care depășit cu mult minimalismul birocratic al instituțiilor europene curente.</p>
+  </div>
+
+  <!-- TAB 2: VIENNA CONVENTION -->
+  <div id="tab-vienna" class="section-box">
+    <h2>Convenția de la Viena privind dreptul tratatelor (1969)</h2>
+    <p><strong>Articolul 53 (Nulitatea tratatelor contrare unei norme imperative a dreptului internațional general - Jus Cogens):</strong> Este nul orice tratat care, în momentul încheierii sale, este în conflict cu o normă imperativă a dreptului internațional general.</p>
+    <div class="article-card">
+      <div class="article-num">Analiză Sistemică a Viena 1969</div>
+      <p>Orice act administrativ intern, hotárâre judecătorească sau ordonanță adoptată în conflict cu drepturile fundamentale stabilite prin Jus Cogens este <strong>absolut nulă <i>ab initio</i></strong>, fără a fi necesară o anulare prealabilă.</p>
+    </div>
+  </div>
+
+  <!-- TAB 3: JUS COGENS CONCLUSIONS -->
+  <div id="tab-juscogens" class="section-box">
+    <h2>Concluziile Comisiei de Drept Internațional (ILC) privind Jus Cogens</h2>
+    <p>Normele imperative ale dreptului internațional general (Jus Cogens) reflectă valori fundamentale ale comunității internaționale, sunt acceptate și recunoscute ca norme de la care nicio derogare nu este permisă.</p>
+    <div class="highlight-box">
+      <strong>Efecte Erga Omnes:</strong> Obligațiile derivate din norme de Jus Cogens sunt datorate comunității internaționale în întregul său, dând dreptul oricărui subiect de drept la acțiune directă pentru încetarea încălcărilor (Tortura 1997, confiscările abuzive, mușamalizările instituționale).
+    </div>
+  </div>
+
+  <!-- TAB 4: UDHR 1948 -->
+  <div id="tab-udhr" class="section-box">
+    <h2>Declarația Universală a Drepturilor Omului (1948)</h2>
+    <p>Temelia libertății, dreptății și a păcii în lume rezidă în recunoașterea demnității inerente a tuturor membrilor familiei umane.</p>
+    <div class="article-card">
+      <div class="article-num">Articolul 5 (Interzicerea torturii)</div>
+      <p>Nimeni nu va fi supus la tortură, nici la pedepse sau tratamente cruce, inumane ori degradante.</p>
+    </div>
+    <div class="article-card">
+      <div class="article-num">Articolul 8 (Recursul efectiv)</div>
+      <p>Orice persoană are dreptul la anihilarea efectivă prin intermediul instanțelor naționale competente a actelor care violează drepturile fundamentale.</p>
+    </div>
+  </div>
+
+  <!-- TAB 5: SUPREMACY & BEYOND EU -->
+  <div id="tab-supremacy" class="section-box">
+    <h2>Supraliminarea EКПП (CEDO) și Standardele Superioare UE</h2>
+    <p>Jurisprudența convențională clasică (Curtea Europeană a Drepturilor Omului) oferă adesea doar un standard minim de remediu (subsidiaritate formală). Proiectul Tiula și jurisprudência Case Macheret impun un <strong>standard substanțial superior</strong>:</p>
+    <ul>
+      <li><strong>Supremația directă a Jus Cogens:</strong> Fără termen de prescripție pentru faptele de tortură și uzurpation de putere.</li>
+      <li><strong>Inaplicabilitatea imunităților funcționale:</strong> În cazurile de violare gravă a drepturilor imperative, funcționarii publici și judecătorii care au comis abuzuri răspund direct <i>erga omnes</i>.</li>
+      <li><strong>Standardul instituțional național:</strong> Instituțiile naționale sunt obligate să aplice standardul maxim de protecție a drepturilor omului, depășind pasivitatea birocratică a UE și CEDO în cazurile de corupție sistemică.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>TIULA &amp; CASE MACHERET FORENSIC ENGINE — PROTECTED BY JUS COGENS ERGA OMNES PROTOCOL</p>
+  </footer>
+</div>
+
+<script>
+function switchTab(tabId) {
+  document.querySelectorAll('.section-box').forEach(box => box.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+</script>
+</body>
+</html>

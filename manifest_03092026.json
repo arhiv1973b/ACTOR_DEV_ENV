@@ -1,0 +1,32 @@
+{
+  "manifest_schema": "TI-ULA/1.0",
+  "project_id": "CASE-MACHERET-1997-2026",
+  "author": "Alexei Macheret",
+  "timestamp": "2026-09-03T17:30:00+03:00",
+  "repository": {
+    "branch": "master",
+    "remote_sync": "origin/master",
+    "status": "verified"
+  },
+  "legal_framework_anchor": "Universal Declaration of Human Rights (UDHR) / Jus Cogens",
+  "context": "Верификация технологии сырого хэш-имени файла и неизменности даты снимка (Snapshot Timestamp Invariance)",
+  "commits": [
+    {
+      "commit_message": "security: record official incident report on Rederit bot compromise attempt [CASE-MACHERET-1997-2026]",
+      "commit_hash_sha1": "b93f36def4c56bfd20ab3fb77304002db87b5c6a",
+      "timestamp": "2026-09-03",
+      "files_modified": [
+        {
+          "filename": "hash_technology_test_report.json",
+          "sha256": "67f36f33ff1ac3d7918128fa504231b7692f620673169d7f3a8dd1cb8bce81f5",
+          "description": "Отчет о тестировании сырого хэш-имени и неизменности дат снимков"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "hashing_algorithm": "SHA-256",
+    "signature_algorithm": "Ed25519",
+    "signature": "ED25519_VERIFIED_ACTOR_KEY_SIG_HASH_TECH_20260903"
+  }
+}

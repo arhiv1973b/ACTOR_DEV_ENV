@@ -1,0 +1,21 @@
+{
+  "project_name": "A©tor Forensic Audit",
+  "version": "2026.06.18",
+  "build_path": "H:\\ACTOR_DEV_ENV",
+  "evidence_vault": "H:\\ACTOR_DEV_ENV\\CASE-MACHERET-EVIDENCE-FINAL",
+  "repo_targets": {
+    "apostille-legal-case": {
+      "path": "H:\\ACTOR_DEV_ENV\\actual",
+      "canonical_url": "https://macheret.github.io/apostille-legal-case/"
+    },
+    "apostille-mirror": {
+      "path": "H:\\ACTOR_DEV_ENV\\apostille-archive",
+      "canonical_url": "https://macheret.github.io/apostille-archive/"
+    }
+  },
+  "scripts": {
+    "analyzer_path": "H:\\ACTOR_DEV_ENV\\batch_analyzer.py",
+    "analyzer_cmd": "H:\\ACTOR_DEV_ENV\\run_analyzer.ps1"
+  },
+  "status": "INITIALIZED"
+}

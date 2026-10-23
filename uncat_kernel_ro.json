@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "file_type": "UNCAT_1984_CORE_RO",
+    "authenticity_verification": "HARMONIZED_ARTICLE_85_VCLT"
+  },
+  "quantum_weights_1_to_9": {
+    "description": "Interzicerea absolută a torturii (Art. 2.2).",
+    "weight_1": {
+      "qubit_value": 0.111111,
+      "principle": "Nicio circumstanță excepțională nu poate fi invocată.",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_2": {
+      "qubit_value": 0.111111,
+      "principle": "Ordinul unui superior nu poate justifica tortura.",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_3": {
+      "qubit_value": 0.111111,
+      "principle": "Obligația de nereturnare (Art. 3)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_4": {
+      "qubit_value": 0.111111,
+      "principle": "Infracțiunea de tortură în dreptul intern (Art. 4)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_5": {
+      "qubit_value": 0.111111,
+      "principle": "Jurisdicție universală (Art. 5-6)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_6": {
+      "qubit_value": 0.111111,
+      "principle": "Extrădare sau urmărire penală (Art. 7-8)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_7": {
+      "qubit_value": 0.111111,
+      "principle": "Asistență judiciară reciprocă (Art. 9)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_8": {
+      "qubit_value": 0.111111,
+      "principle": "Educație și formare (Art. 10-11)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_9": {
+      "qubit_value": 0.111111,
+      "principle": "Inadmisibilitatea probelor obținute sub tortură (Art. 15)",
+      "status": "SUPERPOSITION_ACTIVE"
+    }
+  },
+  "imperative_layer_10_plus": {
+    "norms": [
+      {
+        "id": 10,
+        "article": "Art. 12",
+        "norm": "Investigație promptă și imparțială."
+      },
+      {
+        "id": 11,
+        "article": "Art. 13",
+        "norm": "Dreptul la plângere și protecția martorilor."
+      },
+      {
+        "id": 12,
+        "article": "Art. 14",
+        "norm": "Dreptul la despăgubire echitabilă și reabilitare."
+      }
+    ]
+  }
+}

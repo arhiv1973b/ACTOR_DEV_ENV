@@ -1,0 +1,4 @@
+apostille_code,security_code,download_status,file_size,file_hash,pages,detected_language,verification_score,is_valid_apostille,has_dates,has_signatures,missing_elements,suspicious_elements,first_page_text_length,verification_time
+BOUS9XAQDTFH2,2013073851064,success,1182821,562cb4f5783363f952e23422633b289637955954d6358ebe0975c99807675b7d,2,Romanian,66.67,False,False,True,dates,,2672,2026-02-11T15:00:35.990229
+CTTO324Z8MDO7,2013074147166,success,2554893,d88d86ed17894d2261189fb69d4306971d0d6a18087a1024983ffa63275e9fbc,4,Romanian,66.67,False,False,True,dates,,2612,2026-02-11T15:00:37.903327
+DOYO489SCL5K2,2013074137051,success,1318677,3cdf4ddcf416781bc3474dee8b662cd13d5781ac399d9ad0232ad5fcbabd8b79,4,Romanian,66.67,False,False,True,dates,,2671,2026-02-11T15:00:40.758379

@@ -1,0 +1,80 @@
+digraph TI_ULA_Master {
+    rankdir=TB;
+    node [shape=box, style="rounded,filled", fontname="Arial", fontsize=10, fillcolor="#FDFEFE", color="#333333"];
+    edge [fontname="Arial", fontsize=9, color="#555555"];
+
+    // --- Генетика и правовой фундамент ---
+    subgraph cluster_genetics {
+        label = "Генеалогический и правовой фундамент (1953–1977)";
+        style=filled;
+        fillcolor="#EBF5FB";
+
+        PARENT_LINEAGE [label="Родители Галины Марковой\nМарков Иван (1922) & Баскова Павлина (1926)", fillcolor="#D4E6F1"];
+        BIRTH_GALINA [label="Свидетельство о рождении\nМаркова Галина Ивановна\n28.02.1953, Кишинёв", fillcolor="#D4E6F1"];
+        MARRIAGE_PARENTS [label="Брак и развод\nГалина & Матиюк Станислав", fillcolor="#D4E6F1"];
+        CHILD_REGISTRATION_BIRTH_CERTIFICATE_1973 [label="Свидетельство о рождении\nАлексей (акт № 4057, 23.06.1973, Кишинёв)", fillcolor="#D6EAF8"];
+        ADOPTION_ACT_1977 [label="Решение Одесского горисполкома № 61\n06.05.1977 (Акт усыновления)\nМачерет Алексей Артурович", fillcolor="#AED6F1"];
+
+        PARENT_LINEAGE -> BIRTH_GALINA;
+        BIRTH_GALINA -> MARRIAGE_PARENTS;
+        MARRIAGE_PARENTS -> CHILD_REGISTRATION_BIRTH_CERTIFICATE_1973;
+        CHILD_REGISTRATION_BIRTH_CERTIFICATE_1973 -> ADOPTION_ACT_1977;
+    }
+
+    // --- Имущественная цепочка ---
+    subgraph cluster_property {
+        label = "Цепочка защиты собственности (1976–2003)";
+        style=filled;
+        fillcolor="#FCF3CF";
+
+        PROPERTY_CHAIN [label="Имущественная преемственность\nОрдер 1976 → Ордер № 012665 (1992)\nПриватизация ул. А. Дога, 30, кв. 38", fillcolor="#F9E79F"];
+        DEFENSE_2003 [label="Договор с адвокатом С. Гавриловой\nзащита активов (июль 2003)", fillcolor="#F9E79F"];
+
+        ADOPTION_ACT_1977 -> PROPERTY_CHAIN;
+        PROPERTY_CHAIN -> DEFENSE_2003;
+    }
+
+    // --- Репрессии и каскадный демонтаж ---
+    subgraph cluster_repression {
+        label = "Системный террор и каскадный демонтаж (1997–2024)";
+        style=filled;
+        fillcolor="#FADBD8";
+
+        TORMENT_1997 [label="Уголовное преследование и пытки (1997)\nДиагноз: органический токсоплазмоз мозга", fillcolor="#F5B7B1"];
+        GRIGORAS_CASCADE_TRIGGER [label="Запуск каскадного контура отмен\n(судья В. Григораш)\nДемонтаж барьеров Стамбула, Негру и Гурьева", fillcolor="#F5B7B1"];
+        ECONOMIC_MARAUDING [label="Экономическое мародерство и рейдерство\nВскрытие истинного мотива захвата\nГибель свидетеля (Г. Маркова, 2022)", fillcolor="#F5B7B1"];
+
+        DEFENSE_2003 -> TORMENT_1997;
+        TORMENT_1997 -> GRIGORAS_CASCADE_TRIGGER;
+        GRIGORAS_CASCADE_TRIGGER -> ECONOMIC_MARAUDING;
+    }
+
+    // --- Матрица каскадных отмен ---
+    subgraph cluster_cancellation_matrix {
+        label = "Матрица каскадных отмен (Cascade Cancellation Matrix)";
+        style=filled;
+        fillcolor="#EAFAF1";
+
+        VOID_RULINGS [label="Аннулирование прецедентов (Void ab initio)\nСтамбул (2025), Негру (2023), Морозан (2007)\nУстранение плодов отравленного дерева", fillcolor="#A9DFBF"];
+        FINANCIAL_ENFORCEMENT [label="Интеграция с финмоделью (1,098,500 EUR)\nПринудительная реституция ЖСК-39 кв. 64\nОтветственность Государства по ARSIWA", fillcolor="#A9DFBF"];
+
+        VOID_RULINGS -> FINANCIAL_ENFORCEMENT [label="Каскадный сброс\n→ Разблокировка выплат"];
+    }
+
+    GRIGORAS_CASCADE_TRIGGER -> VOID_RULINGS [label="Процессуальный триггер\n→ Матрица отмен"];
+
+    // --- Поисковые и архивные векторы ---
+    subgraph cluster_prompts {
+        label = "Поисковые и архивные векторы (1973–1977)";
+        style=filled;
+        fillcolor="#EBDEF0";
+
+        DIVORCE_SEARCH_PROMPT [label="PROMPT: Поиск акта о разводе\nМатиюк Станислав & Галина\n(1975–1977, Кишинёв)", fillcolor="#F9EBEA"];
+        MARRIAGE_SEARCH_PROMPT [label="PROMPT: Поиск свидетельства о браке\nГалина & Артур Мачерет\n(1976–1977, Кишинёв)", fillcolor="#F9EBEA"];
+        ADOPTION_REASON_SEARCH_PROMPT [label="PROMPT: Поиск решения об усыновлении\nАлексей Матиюк → Мачерет Алексей Артурович\n(1977, Одесса/Кишинёв)", fillcolor="#F9EBEA"];
+
+        CHILD_REGISTRATION_BIRTH_CERTIFICATE_1973 -> DIVORCE_SEARCH_PROMPT;
+        DIVORCE_SEARCH_PROMPT -> MARRIAGE_SEARCH_PROMPT;
+        MARRIAGE_SEARCH_PROMPT -> ADOPTION_REASON_SEARCH_PROMPT;
+    }
+}

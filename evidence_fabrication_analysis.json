@@ -1,0 +1,18 @@
+{
+  "canonical_url": "https://arhiv1973b.github.io/",
+  "repo_targets": {
+    "apostille-mirror": {
+      "remote_url": "git@github.com:arhiv1973b/apostille-mirror.git",
+      "path": "H:\\ACTOR_DEV_ENV\\apostille-archive"
+    },
+    "apostille-legal-case": {
+      "remote_url": "git@github.com:arhiv1973b/apostille-legal-case.git",
+      "path": "H:\\ACTOR_DEV_ENV\\actual"
+    },
+    "apostille-archive-english": {
+      "remote_url": "git@github.com:arhiv1973b/apostille-archive-english.git",
+      "path": "H:\\ACTOR_DEV_ENV\\CASE_MACHERET_ARCHIVE"
+    }
+  },
+  "status": "CONFIGURED"
+}

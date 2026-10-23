@@ -1,0 +1,45 @@
+{
+  "legal_framework": [
+    "Jus Cogens",
+    "Erga Omnes",
+    "ECHR_Art_3",
+    "ECHR_Art_5"
+  ],
+  "submitter_token": "A©t0r",
+  "case_reference": "CASE-MACHERET-1997-2026",
+  "timestamp": "2026-06-21T05:15:00Z",
+  "manifest_id": "TI_ULA_FINLAND_AUDIT_NODE",
+  "jurisdiction_status": "NATIONAL_DISCRETION_LOST",
+  "destination_routing": [
+    "INTERPOL",
+    "UN_OHCHR",
+    "ICC"
+  ],
+  "seal_status": "READY_FOR_SHA256",
+  "evidence_nodes": [
+    {
+      "integrity_status": "VERIFIED",
+      "category": "Physical_Evidence_Tampering",
+      "description": "Disappearance of 3 metallic surgical bolts. Verification between Jan 2022 (545 slices) and Mar 2022 (635 slices) at identical ImagePosition Patient coordinates.",
+      "node_id": "EV_DICOM_001"
+    },
+    {
+      "integrity_status": "VERIFIED",
+      "category": "Identity_Fraud",
+      "description": "Procedural substitution of victim Marcova Galina (DOB 1953) with namesake Timofei (DOB 1950) to legalize fraudulent autopsy and mask lethal trauma under C187 diagnosis.",
+      "node_id": "EV_IDENTITY_002"
+    },
+    {
+      "integrity_status": "VERIFIED",
+      "category": "Financial_Trigger",
+      "description": "Transaction anomaly of 25,210,256.15 MDL identified via FinComPay records. Suspected primary motive for subsequent concealment.",
+      "node_id": "EV_FINANCE_003"
+    },
+    {
+      "integrity_status": "VERIFIED",
+      "category": "Jus_Cogens_Violation",
+      "description": "Political and administrative intervention to block national investigation, perpetuating the unpunished torture established in Case 1-568/98 (13.10.1998).",
+      "node_id": "EV_INSTITUTIONAL_004"
+    }
+  ]
+}

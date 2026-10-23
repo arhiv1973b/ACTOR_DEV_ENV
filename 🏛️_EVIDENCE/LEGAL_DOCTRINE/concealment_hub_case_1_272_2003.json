@@ -1,0 +1,30 @@
+{
+  "ti_ula_version": "1.4.0",
+  "node_id": "concealment_hub_case_1_272_2003",
+  "node_type": "critical_concealment_anomaly",
+  "dag_pointers": {
+    "parent_node_hash": "3175fd5c6d872a8e9b5bfe9a12e6248fa00f22554e45509a713feabacf0f5513"
+  },
+  "temporal_metrics": {
+    "t_created": "2003-01-01T00:00:00Z",
+    "t_disclosed": "2021-02-11T00:00:00Z",
+    "concealment_gap_days": 6617,
+    "is_concealed_anomaly": true
+  },
+  "isolation_vectors": {
+    "linguistic_blockade": true,
+    "un_access_denied": true,
+    "jurisdiction_substitution": "Continuation of Case 1-568/98 procedural masking"
+  },
+  "evidence_payload": {
+    "document_id": "case_1_272_2003_verdict",
+    "sha256_hash": "85851c0d1ff96449038ab9ed9d2e63b94e324ef4e91b7512b8dad1270ee07e54",
+    "storage_uri": "local_secure_archive/case_1_272_2003.pdf"
+  },
+  "legal_consequence": {
+    "status": "prolonged_prosecution_without_rehabilitation",
+    "jus_cogens_violation": true,
+    "continuing_offense": true,
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  }
+}

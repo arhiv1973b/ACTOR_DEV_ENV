@@ -1,0 +1,222 @@
+{
+  "timestamp": "2026-10-19T11:39:16.804394Z",
+  "input_file": "C:\\Users\\arhiv\\Downloads\\Downolde\\Анализ файлов cookie Truth Social.json",
+  "input_sha256": "e9843a4d9065efd6f549c30e59e076d3d5b5f7ecfdb1988f30b0aaff953a657c",
+  "audit_summary": {
+    "total_items": 26,
+    "categories_breakdown": {
+      "Essential": 10,
+      "Targeted Advertising": 9,
+      "Analytics": 7
+    },
+    "compliance_status": "WARNING",
+    "violations": [],
+    "warnings": [
+      "Алерт: Трекер 'IDE' в категории 'Targeted Advertising' не имеет указанного поставщика."
+    ]
+  },
+  "parsed_items": [
+    {
+      "category": "Essential",
+      "name": "__cf",
+      "provider": "CloudFlare Inc",
+      "type": "Cookie",
+      "expiration": "29 minutes 58 seconds",
+      "purpose": "This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website."
+    },
+    {
+      "category": "Essential",
+      "name": "__cflb",
+      "provider": "CloudFlare Inc",
+      "type": "Cookie",
+      "expiration": "4 hours",
+      "purpose": "Created by Cloudflare’s Load Balancer to keep a visitor’s requests routed to the same origin (so sessions aren’t broken when a site uses multiple servers)."
+    },
+    {
+      "category": "Essential",
+      "name": "_cfuvid",
+      "provider": "CloudFlare Inc",
+      "type": "Cookie",
+      "expiration": "Session",
+      "purpose": "Used by Cloudflare’s Rate Limiting and Bot Management features to distinguish legitimate requests from abusive traffic during a single browsing session."
+    },
+    {
+      "category": "Essential",
+      "name": "Account Session",
+      "provider": "Social V1 API",
+      "type": "Cookie",
+      "purpose": "Provisional — required to keep you signed in via OAuth."
+    },
+    {
+      "category": "Essential",
+      "name": "Account Session (OAuth)",
+      "provider": "Поставщик не указан",
+      "type": "Cookie",
+      "expiration": "Undefined",
+      "purpose": "Provisional — required to keep you signed in via OAuth."
+    },
+    {
+      "category": "Essential",
+      "name": "googtrans",
+      "provider": "Google",
+      "type": "Cookie",
+      "purpose": "Google Translate"
+    },
+    {
+      "category": "Essential",
+      "name": "Load Balancing",
+      "provider": "HAProxy",
+      "type": "Cookie",
+      "expiration": "Undefined",
+      "purpose": "Provisional — may be required for reliable routing of your requests."
+    },
+    {
+      "category": "Essential",
+      "name": "Security & Bot Protection",
+      "provider": "Cloudflare",
+      "type": "Cookie",
+      "purpose": "Used to protect the site from bots, fraud, and abuse. Required for the site to function and cannot be disabled."
+    },
+    {
+      "category": "Essential",
+      "name": "osano_consentmanager",
+      "provider": "Osano",
+      "type": "Локальное Хранилище",
+      "expiration": "1 year",
+      "purpose": "Stores the user's current consent status."
+    },
+    {
+      "category": "Essential",
+      "name": "osano_consentmanager_uuid",
+      "provider": "Osano",
+      "type": "Локальное Хранилище",
+      "expiration": "1 year",
+      "purpose": "Stores the user's unique consent identifier."
+    },
+    {
+      "category": "Targeted Advertising",
+      "name": "__eoi",
+      "provider": "Google LLC",
+      "type": "Cookie",
+      "expiration": "1 day",
+      "purpose": "Used by Google Ads for event measurement and optimization, often related to conversion tracking and ad engagement. It helps Google understand if users interacted with an ad or related element on your page."
+    },
+    {
+      "category": "Targeted Advertising",
+      "name": "__gads",
+      "provider": "Google LLC",
+      "type": "Cookie",
+      "expiration": "1 day",
+      "purpose": "Used to measure ad interactions and prevent the same ad from showing too many times to the same user. It’s also used for conversion tracking — e.g., determining if a user clicked an ad and later performed an action on your site."
+    },
+    {
+      "category": "Targeted Advertising",
+      "name": "__gpi",
+      "provider": "Google LLC",
+      "type": "Cookie",
+      "expiration": "1 day",
+      "purpose": "Used by Google AdSense / Ad Manager to measure ad performance and personalize ads (for example, showing more relevant ads to users based on browsing behavior)."
+    },
+    {
+      "category": "Targeted Advertising",
+      "name": "_fbc",
+      "provider": "Meta",
+      "type": "Cookie",
+      "expiration": "Undefined",
+      "purpose": "Placed by Facebook to store last visit"
+    },
+    {
+      "category": "Targeted Advertising",
+      "name": "_fbp",
+      "provider": "Meta",
+      "type": "Cookie",
+      "expiration": "3 months",
+      "purpose": "Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers"
+    },
+    {
+      "category": "Targeted Advertising",
+      "name": "_gcl_au",
+      "provider": "Google LLC",
+      "type": "Cookie",
+      "expiration": "2 months 4 weeks",
+      "purpose": "Used by Google AdSense for experimenting with advertisement efficiency across websites using their services"
+    },
+    {
+      "category": "Targeted Advertising",
+      "name": "^_gcl_.*",
+      "provider": "Google LLC",
+      "type": "Cookie",
+      "expiration": "Undefined",
+      "purpose": "Stores ad click information so that conversions can be attributed outside the landing page"
+    },
+    {
+      "category": "Targeted Advertising",
+      "name": "Advertising Conversion Tracking",
+      "provider": "YouTube",
+      "type": "Cookie",
+      "purpose": "Used to measure conversions from our Google advertising campaigns. Requires your consent."
+    },
+    {
+      "category": "Targeted Advertising",
+      "name": "IDE",
+      "provider": "Поставщик не указан",
+      "type": "Cookie",
+      "expiration": "1 year",
+      "purpose": "This cookie is set by Doubleclick and carries out information about how the end user uses the website and any advertising that the end user may have seen before visiting the said website."
+    },
+    {
+      "category": "Analytics",
+      "name": "_ga",
+      "provider": "Google LLC",
+      "type": "Cookie",
+      "expiration": "2 Years",
+      "purpose": "Associated with Google Universal Analytics to distinguish unique users by assigning a randomly generated number as a client identifier."
+    },
+    {
+      "category": "Analytics",
+      "name": "_gid",
+      "provider": "Google LLC",
+      "type": "Cookie",
+      "expiration": "24 hours",
+      "purpose": "Associated with Google Universal Analytics to distinguish unique users by assigning a randomly generated number as a client identifier."
+    },
+    {
+      "category": "Analytics",
+      "name": "Ad Attribution Tracking",
+      "provider": "TV Squared",
+      "type": "Cookie",
+      "purpose": "Used to measure the effectiveness of our advertising campaigns. Requires your consent."
+    },
+    {
+      "category": "Analytics",
+      "name": "ajs_anonymous_id",
+      "provider": "Segment Inc",
+      "type": "Cookie",
+      "expiration": "1 year",
+      "purpose": "These cookies are generally used for Analytics and help count how many people visit a certain site by tracking if you have visited before. This cookie has a lifespan of 1 year."
+    },
+    {
+      "category": "Analytics",
+      "name": "AMP_",
+      "provider": "Amplitude",
+      "type": "Cookie",
+      "purpose": "AMP_' is associated with the Amplitude SDK, which is used for analytics and session tracking."
+    },
+    {
+      "category": "Analytics",
+      "name": "mp_[0-9a-f]{32}_mixpanel",
+      "provider": "Mixpanel Inc",
+      "type": "Cookie",
+      "expiration": "1 year",
+      "purpose": "Used by Mixpanel to track user interactions and events across sessions for analytics purposes."
+    },
+    {
+      "category": "Analytics",
+      "name": "Product Analytics",
+      "provider": "Mixpanel Inc",
+      "type": "Cookie",
+      "expiration": "Undefined",
+      "purpose": "Used to understand how you use Truth Social so we can improve the product. Requires your Ниже приводится структурированный анализ предоставленного перечня **систем хранения данных** (файлов cookie, локального хранилища), извлеченного из панели управления согласием (Cookie Consent / Osano) веб-ресурса (судя по обрывку в конце текста — *Truth Social*).  ---  ### Общая структура категорий хранения  Все элементы разбиты на 4 основные группы в зависимости от их назначения: "
+    }
+  ]
+}

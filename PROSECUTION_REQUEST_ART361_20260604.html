@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- Секретное слово: "База Данных" -->
+<html lang="ru" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROSECUTION REQUEST ART. 361 CP RM — CASE MACHERET 1997–2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@600;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════
+   ROOT SYSTEM (Synchronized with jus-cogens-proof)
+═══════════════════════════════════════════════════════ */
+:root {
+  --bg:       #050a0f;
+  --bg2:      #070e16;
+  --panel:    #060f1a;
+  --panel2:   #071220;
+  --border:   #0c2e4a;
+  --border2:  #103c60;
+  --gold:     #c8960a;
+  --gold2:    #f0c040;
+  --red:      #cc1133;
+  --red2:     #ff2244;
+  --cyan:     #00b8e8;
+  --cyan2:    #40d4ff;
+  --green:    #00d870;
+  --purple:   #9933cc;
+  --purple2:  #bb55ff;
+  --text:     #c0d8ec;
+  --text2:    #8ab0cc;
+  --muted:    #3a6080;
+  --font-mono:  'Share Tech Mono', monospace;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-head:  'Orbitron', sans-serif;
+  --font-body:  'Rajdhani', sans-serif;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* scanlines */
+body::before {
+  content:''; position:fixed; inset:0; z-index:200; pointer-events:none;
+  background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,184,232,.012) 2px,rgba(0,184,232,.012) 4px);
+}
+/* grid bg */
+body::after {
+  content:''; position:fixed; inset:0; z-index:0; pointer-events:none;
+  background-image: linear-gradient(rgba(0,184,232,.025) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0,184,232,.025) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.wrap { max-width:1100px; margin:0 auto; padding:24px 20px 80px; position:relative; z-index:1; }
+
+/* ═══════════════════════════════════════════════════════
+   NAVIGATION BAR
+═══════════════════════════════════════════════════════ */
+.nav-bar {
+  position: sticky; top:0; z-index:100;
+  background: rgba(5,10,15,.96);
+  border-bottom: 1px solid var(--border2);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.nav-links { display: flex; gap: 0; }
+.nav-btn {
+  padding: 13px 20px;
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--muted);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all .2s;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav-btn:hover { color: var(--cyan2); }
+.nav-btn.active { color: var(--gold2); border-bottom-color: var(--gold2); }
+.nav-sep { font-family: var(--font-mono); font-size: 10px; color: var(--border2); padding: 0 4px; }
+.case-ref { margin-left: auto; font-family: var(--font-mono); font-size: 10px; color: var(--muted); letter-spacing: 1px; }
+
+/* ═══════════════════════════════════════════════════════
+   HERO HEADER
+═══════════════════════════════════════════════════════ */
+.hero {
+  margin: 28px 0;
+  padding: 40px 44px;
+  background: linear-gradient(135deg, rgba(12,46,74,.8) 0%, rgba(5,10,15,.9) 60%);
+  border: 1px solid var(--gold);
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+}
+.hero-eyebrow { font-family: var(--font-mono); font-size: 11px; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; }
+.hero-title { font-family: var(--font-serif); font-size: clamp(22px, 4vw, 40px); font-weight: 900; color: #fff; line-height: 1.15; margin-bottom: 10px; }
+.hero-title em { color: var(--gold2); font-style: italic; }
+.hero-equation {
+  display: inline-flex; align-items: center; gap: 14px; background: rgba(200,150,10,.08); border: 1px solid rgba(200,150,10,.3);
+  padding: 12px 22px; font-family: var(--font-serif); font-size: 18px; font-weight: 700;
+}
+.num-auto { color: var(--red2); text-shadow: 0 0 15px rgba(255,34,68,.4); }
+
+/* ═══════════════════════════════════════════════════════
+   CONTENT PANELS
+═══════════════════════════════════════════════════════ */
+.lang-panel { display: none; }
+.lang-panel.active { display: block; }
+
+.section { margin: 32px 0; }
+.sec-hd { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+.sec-num { font-family: var(--font-head); font-size: 11px; color: var(--gold); background: rgba(200,150,10,.1); border: 1px solid rgba(200,150,10,.25); padding: 3px 10px; }
+.sec-title { font-family: var(--font-serif); font-size: 22px; font-weight: 700; color: #fff; }
+
+.audit-box {
+  background: var(--panel); border: 1px solid var(--border); padding: 24px; margin: 16px 0;
+  position: relative; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+.audit-vector { border-left: 3px solid var(--gold2); padding-left: 16px; margin: 20px 0; }
+.vector-id { font-family: var(--font-mono); font-size: 12px; color: var(--gold2); text-transform: uppercase; margin-bottom: 4px; display: block; }
+.vector-title { font-family: var(--font-serif); font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+
+.verdict { border: 2px solid var(--red2); background: rgba(204,17,51,.07); padding: 24px; margin: 32px 0; }
+.verdict-title { font-family: var(--font-head); font-size: 14px; color: var(--red2); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+
+.footer { margin-top:48px; padding:18px 20px; border-top:1px solid var(--border); display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:10px; color:var(--muted); }
+
+</style>
+</head>
+<body>
+    <nav class="portal-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #0c2e4a; margin-bottom: 30px; background-color: #051421; padding: 15px;">
+        <div class="breadcrumb">
+            <a href="index.html" style="color: #00b8e8; text-decoration: none; font-family: 'Share Tech Mono', monospace;">← PORTAL HUB</a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="timeline.html" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">⏱️ Chronology</a>
+            <a href="EVIDENCE_CATALOG.md" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">📂 Evidence Catalog</a>
+        </div>
+    </nav>
+
+
+<div class="nav-bar">
+  <div class="nav-links">
+    <button class="nav-btn active" onclick="switchLang('ru',this)">🇷🇺 RU</button>
+    <button class="nav-btn" onclick="switchLang('ro',this)">🇷🇴 RO</button>
+    <button class="nav-btn" onclick="switchLang('en',this)">🇬🇧 EN</button>
+    <span class="nav-sep">|</span>
+    <a href="FORENSIC_NAVIGATOR.html" class="nav-btn">🧭 NAVIGATOR</a>
+    <a href="index.html" class="nav-btn">🏠 INDEX</a>
+  </div>
+  <div class="case-ref">CASE-MACHERET-1997–2026 // PROSECUTION ART. 361</div>
+</div>
+
+<div class="wrap">
+
+  <!-- ══════════════════════════════════════════════════════════
+       РУССКИЙ (RU)
+  ══════════════════════════════════════════════════════════ -->
+  <div class="lang-panel active" id="panel-ru">
+    <div class="hero">
+      <div class="hero-eyebrow">// ЗАЯВЛЕНИЕ О ПРЕСТУПЛЕНИИ — ART. 361 CP RM</div>
+      <div class="hero-title">Фальсификация доказательств:<br><em>Требование уголовного преследования</em></div>
+      <div class="hero-equation">
+        <span>Статус бездействия:</span>
+        <span class="num-auto">10530</span> суток
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sec-hd"><span class="sec-num">01</span><div class="sec-title">Объективные основания</div></div>
+      <div class="audit-box">
+        <p>Настоящее заявление базируется на результатах форензик-аудита от 02.06.2026. Выявлены системные факты подлога документов в рамках дела CASE-MACHERET-1997-2026.</p>
+        
+        <div class="audit-vector">
+          <span class="vector-id">Vector: LINK-BASCOVA-MACERET_AB</span>
+          <div class="vector-title">Хищение активов через подлог</div>
+          <p>Использование «слепого узла» (Баскова) для легитимизации фальсифицированных документов. Зафиксировано 45 подтвержденных связей. Факт подделки подтвержден показаниями.</p>
+        </div>
+
+        <div class="audit-vector">
+          <span class="vector-id">Vector: LINK-MARCOV-MATIUC-NANTOI</span>
+          <div class="vector-title">Информационная изоляция</div>
+          <p>Манипуляция свидетельской базой под внешним управлением (Нантой/Манте). Создание искусственного вакуума информации о наследниках.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-title">ТРЕБОВАНИЕ К ГЕНПРОКУРАТУРЕ РМ</div>
+      <p>Возбудить уголовное дело по <strong>ст. 361 УК РМ</strong>. Обеспечить сохранность оригиналов и провести допрос фигурантов на предмет принуждения к ложным показаниям.</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ROMÂNĂ (RO)
+  ══════════════════════════════════════════════════════════ -->
+  <div class="lang-panel" id="panel-ro">
+    <div class="hero">
+      <div class="hero-eyebrow">// SESIZARE PENALĂ — ART. 361 CP RM</div>
+      <div class="hero-title">Falsificarea probelor:<br><em>Cerere de urmărire penală</em></div>
+      <div class="hero-equation">
+        <span>Inacțiune statală:</span>
+        <span class="num-auto">10530</span> zile
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sec-hd"><span class="sec-num">01</span><div class="sec-title">Temeiuri obiective</div></div>
+      <div class="audit-box">
+        <p>Această sesizare se bazează pe rezultatele auditului criminalistic din 02.06.2026. S-au identificat fapte sistemice de fals în acte în cadrul cazului CASE-MACHERET-1997-2026.</p>
+        
+        <div class="audit-vector">
+          <span class="vector-id">Vector: LINK-BASCOVA-MACERET_AB</span>
+          <div class="vector-title">Sustragerea activelor prin fals</div>
+          <p>Utilizarea unui „nod orb” (Bascova) pentru legitimarea documentelor falsificate. S-au identificat 45 de legături confirmate. Faptul falsului este confirmat prin declarații.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-title">CERINȚA CĂTRE PROCURATURA GENERALĂ RM</div>
+      <p>Pornirea urmăririi penale conform <strong>Art. 361 CP RM</strong>. Securizarea originalelor și interogarea figuranților privind constrângerea la declarații false.</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ENGLISH (EN)
+  ══════════════════════════════════════════════════════════ -->
+  <div class="lang-panel" id="panel-en">
+    <div class="hero">
+      <div class="hero-eyebrow">// CRIMINAL COMPLAINT — ART. 361 CP RM</div>
+      <div class="hero-title">Falsification of Evidence:<br><em>Request for Criminal Prosecution</em></div>
+      <div class="hero-equation">
+        <span>State Inaction:</span>
+        <span class="num-auto">10530</span> days
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sec-hd"><span class="sec-num">01</span><div class="sec-title">Objective Grounds</div></div>
+      <div class="audit-box">
+        <p>This complaint is based on the forensic audit results dated June 2, 2026. Systematic instances of document forgery have been identified within CASE-MACHERET-1997-2026.</p>
+        
+        <div class="audit-vector">
+          <span class="vector-id">Vector: LINK-BASCOVA-MACERET_AB</span>
+          <div class="vector-title">Asset Hijacking via Forgery</div>
+          <p>Use of a "blind node" (Bascova) to legitimize forged documents. 45 confirmed links identified. Forgery confirmed by testimony.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-title">DEMAND TO PROSECUTOR GENERAL RM</div>
+      <p>Initiate criminal proceedings under <strong>Art. 361 CP RM</strong>. Secure original documents and interrogate suspects regarding coerced false testimony.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>A©tor FORENSIC SYSTEM // 2026</span>
+    <span>STATUS: DEPLOYED // INTEGRITY: 100%</span>
+  </div>
+
+</div>
+
+<script>
+function switchLang(lang, btn) {
+  document.querySelectorAll('.lang-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + lang).classList.add('active');
+  btn.classList.add('active');
+  document.documentElement.lang = lang;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function updateDaysCounter() {
+  const baseline = new Date('1997-08-06');
+  const now = new Date();
+  const diffTime = Math.abs(now - baseline);
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  document.querySelectorAll('.num-auto').forEach(el => {
+    el.textContent = diffDays.toLocaleString();
+  });
+}
+window.onload = updateDaysCounter;
+</script>
+</body>
+</html>

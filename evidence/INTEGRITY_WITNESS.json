@@ -1,0 +1,821 @@
+{
+  "id": "TI_ULA_INTEGRITY_WITNESS_2026",
+  "version": "1.0.0",
+  "protocol": "TI-ULA Cryptographic Cross-Verification",
+  "scope": "CASE-MACHERET-1997-2026",
+  "timestamp": "2026-10-19 04:17:10 UTC",
+  "total_verified_nodes_and_artifacts": 135,
+  "artifacts": [
+    {
+      "filename": "ADOPTION_REASONING_1977.yaml",
+      "path": "evidence\\ADOPTION_REASONING_1977.yaml",
+      "size_bytes": 972,
+      "sha256": "2dcb427099efe55418a813fa2430cfb99bb3bc86f4734551ff2e7ac97d9e387f"
+    },
+    {
+      "filename": "ANCHOR_CALIBRATION_AND_STABILIZER_BRACKET.md",
+      "path": "evidence\\ANCHOR_CALIBRATION_AND_STABILIZER_BRACKET.md",
+      "size_bytes": 2297,
+      "sha256": "3266486f81b6d894b8bf99cc6523a27e8c47905270676c73ac70c1d37c8be53c"
+    },
+    {
+      "filename": "AUTONOMOUS_NODE_WH_FUNDS_ORIGIN.json",
+      "path": "evidence\\AUTONOMOUS_NODE_WH_FUNDS_ORIGIN.json",
+      "size_bytes": 658,
+      "sha256": "0719f12ac46cc6f543d3af45849e02e4d8b5bb1d5077bd6ef82c2abd0e239991"
+    },
+    {
+      "filename": "CASCADE_CANCELLATION_MATRIX.yaml",
+      "path": "evidence\\CASCADE_CANCELLATION_MATRIX.yaml",
+      "size_bytes": 1794,
+      "sha256": "95f2b40b3cbfe21ecc24631c48e8c62e511eda4cba1f08be2f7edf55f86420d0"
+    },
+    {
+      "filename": "cloud_id_manifest_full.json",
+      "path": "evidence\\cloud_id_manifest_full.json",
+      "size_bytes": 17400575,
+      "sha256": "3795da2244c47e101eb0ea8c11f6afdbf0e5e99dbb437ec921909791d3ffad23"
+    },
+    {
+      "filename": "DIVORCE_CERTIFICATE_MATIUK_STANISLAV_GALINA.yaml",
+      "path": "evidence\\DIVORCE_CERTIFICATE_MATIUK_STANISLAV_GALINA.yaml",
+      "size_bytes": 1011,
+      "sha256": "78a7a7f486963049bc5fe0402ec102feca6b32d8fb076e6bf087e3adc4030dcf"
+    },
+    {
+      "filename": "EXECUTIVE_SUMMARY_UNHRC_2026.md",
+      "path": "evidence\\EXECUTIVE_SUMMARY_UNHRC_2026.md",
+      "size_bytes": 6658,
+      "sha256": "1e18ae3d67b08d00be016acfe5667812c682755e1eb3ae50b5e5b63af8899e39"
+    },
+    {
+      "filename": "f53f0542-1f0a-4bfd-b07c-050592d60eea.pdf",
+      "path": "evidence\\f53f0542-1f0a-4bfd-b07c-050592d60eea.pdf",
+      "size_bytes": 1599733,
+      "sha256": "80b7fbe1761a54ef58c42801859741319c1a097722e92babe255f35d47671faf"
+    },
+    {
+      "filename": "FORGERY_CONTRADICTION_LOG_2026.json",
+      "path": "evidence\\FORGERY_CONTRADICTION_LOG_2026.json",
+      "size_bytes": 1984,
+      "sha256": "b7fb86aaaaa707eae0abac03db70203ae5a5546fa7e723ac3f6839e254bee163"
+    },
+    {
+      "filename": "GIT_DEPLOYMENT_COMMANDS.md",
+      "path": "evidence\\GIT_DEPLOYMENT_COMMANDS.md",
+      "size_bytes": 563,
+      "sha256": "73ad57367a47a6d3d74419d371bec9a01a17260ffefcee374b90ff121936c91c"
+    },
+    {
+      "filename": "INTEGRITY_WITNESS.json",
+      "path": "evidence\\INTEGRITY_WITNESS.json",
+      "size_bytes": 35598,
+      "sha256": "879a8a95b03dae02922a9659bbb7cafc57c15494117af3b6ef4166ebfee3875d"
+    },
+    {
+      "filename": "JUS_COGENS_CONCLUSIONS_10_20.json",
+      "path": "evidence\\JUS_COGENS_CONCLUSIONS_10_20.json",
+      "size_bytes": 767,
+      "sha256": "184a55ab1c8c00b4f94cd0acb8ad1897b67ad5397d4c3753a583e52336fa94ed"
+    },
+    {
+      "filename": "Jus_Cogens_Conclusions_3.json",
+      "path": "evidence\\Jus_Cogens_Conclusions_3.json",
+      "size_bytes": 16005,
+      "sha256": "7d20c332876a7dc68717d5c4d98fb1f08b1fa626daf9ea5d7464f40d5ceff41d"
+    },
+    {
+      "filename": "LINK_ACCOUNTABILITY_TO_CONSEQUENCES.yaml",
+      "path": "evidence\\LINK_ACCOUNTABILITY_TO_CONSEQUENCES.yaml",
+      "size_bytes": 1023,
+      "sha256": "bde6191310b1787f1b682dbf1c1e4883787c9ced6a6c6e0398b3f540a61f5975"
+    },
+    {
+      "filename": "LINK_NON_REHABILITATION_JUS_COGENS.yaml",
+      "path": "evidence\\LINK_NON_REHABILITATION_JUS_COGENS.yaml",
+      "size_bytes": 865,
+      "sha256": "3dc8856026f9055970dcd1a24d13ecf36b97854e47b9a82cec586810da492cbc"
+    },
+    {
+      "filename": "MARRIAGE_CERTIFICATE_GALINA_MACHERET.yaml",
+      "path": "evidence\\MARRIAGE_CERTIFICATE_GALINA_MACHERET.yaml",
+      "size_bytes": 1001,
+      "sha256": "b40160dba91eac1b76f43221d87d5dc32e7ef153dc051f49f7ac5864e534a9fe"
+    },
+    {
+      "filename": "MODEL_VALID_AND_NEXT_STEPS.md",
+      "path": "evidence\\MODEL_VALID_AND_NEXT_STEPS.md",
+      "size_bytes": 1811,
+      "sha256": "68c9d8fb831fa39e9e37aab6e29e668fe90f5723a6613530ce36b816dd9d5b30"
+    },
+    {
+      "filename": "NODE_4D_JUS_COGENS_MODEL_2026.md",
+      "path": "evidence\\NODE_4D_JUS_COGENS_MODEL_2026.md",
+      "size_bytes": 3708,
+      "sha256": "f2d26c6705d9c99f5d02d566aedf5efd38fc24fbe2a20ab145912bab5f39b944"
+    },
+    {
+      "filename": "NODE_APOSTILLE_REGISTRY_FIXED_HTML.yaml",
+      "path": "evidence\\NODE_APOSTILLE_REGISTRY_FIXED_HTML.yaml",
+      "size_bytes": 653,
+      "sha256": "2b4d6558d078d5401fb5b0a2de65953a81a8a2bef077ddf17faa13a7464afb79"
+    },
+    {
+      "filename": "NODE_APOSTILLE_REGISTRY_MASTER.yaml",
+      "path": "evidence\\NODE_APOSTILLE_REGISTRY_MASTER.yaml",
+      "size_bytes": 1193,
+      "sha256": "2b7bb139f33674d56de0dd41605be861030506723516bcda1aaf274d7babc0f4"
+    },
+    {
+      "filename": "NODE_AVIZ_INSTiintare_2023.yaml",
+      "path": "evidence\\NODE_AVIZ_INSTiintare_2023.yaml",
+      "size_bytes": 963,
+      "sha256": "650bd87f688b2c588a5a348b7252dba4ee777067fbc349c9a4f27766a939e7dc"
+    },
+    {
+      "filename": "NODE_BRACKET_STABILIZER_2026.md",
+      "path": "evidence\\NODE_BRACKET_STABILIZER_2026.md",
+      "size_bytes": 2609,
+      "sha256": "031f20a680d2bb97226131bb98dd883ef88c0c9d601b8a6257c420dba0b88494"
+    },
+    {
+      "filename": "NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026.yaml",
+      "path": "evidence\\NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026.yaml",
+      "size_bytes": 2018,
+      "sha256": "f074db0251a94fb11c2321805dec0074070405404a93ca35dc9192a244d6738a"
+    },
+    {
+      "filename": "NODE_COMPREHENSIVE_FINANCIAL_AND_FAMILY_TERROR_2026.yaml",
+      "path": "evidence\\NODE_COMPREHENSIVE_FINANCIAL_AND_FAMILY_TERROR_2026.yaml",
+      "size_bytes": 1718,
+      "sha256": "8cd58d0b24d3fe7472632b0e0a0895bdf69b9688043966705002e5b103eda456"
+    },
+    {
+      "filename": "NODE_CSJ_DECISION_2009.yaml",
+      "path": "evidence\\NODE_CSJ_DECISION_2009.yaml",
+      "size_bytes": 916,
+      "sha256": "c8a2672bc1fbcfc5e7a8338e8daad8a1bec3f56d31ad93a5a0c4a65b072e5f85"
+    },
+    {
+      "filename": "NODE_ECHR_OVERRIDE_VCLT_UNRES4034.yaml",
+      "path": "evidence\\NODE_ECHR_OVERRIDE_VCLT_UNRES4034.yaml",
+      "size_bytes": 1237,
+      "sha256": "2db8db56427f6e72ea08b5cc0a97060f5ca05979d420b0975ac83a53c7672b21"
+    },
+    {
+      "filename": "NODE_ECONOMIC_MAUROUDING_GRIGORAS.yaml",
+      "path": "evidence\\NODE_ECONOMIC_MAUROUDING_GRIGORAS.yaml",
+      "size_bytes": 1220,
+      "sha256": "4f9c2a06f85c10c81962033f714c8f72e881030248319c4441d1d6bb73a6e559"
+    },
+    {
+      "filename": "NODE_ENTITY_ACCOUNTABILITY_NETWORK.yaml",
+      "path": "evidence\\NODE_ENTITY_ACCOUNTABILITY_NETWORK.yaml",
+      "size_bytes": 1754,
+      "sha256": "5f40b1926344726769f4857c0b786ff0178a94fc15b14f32360a0e5692b0b37b"
+    },
+    {
+      "filename": "NODE_FABRICATION_AND_LANGUAGE_DEPRIVATION_2007.yaml",
+      "path": "evidence\\NODE_FABRICATION_AND_LANGUAGE_DEPRIVATION_2007.yaml",
+      "size_bytes": 1052,
+      "sha256": "704a7c0dc40531a6c2f0607ccfa350e2d16914c4ef06e233527094eb95e74a1e"
+    },
+    {
+      "filename": "NODE_FICTITIOUS_ISSUANCE_TRAP.yaml",
+      "path": "evidence\\NODE_FICTITIOUS_ISSUANCE_TRAP.yaml",
+      "size_bytes": 1298,
+      "sha256": "630228512249449e63fbc04598ca85f30066e21f809cc598191cfca3bb9f6170"
+    },
+    {
+      "filename": "NODE_FINANCIAL_AND_DIGITAL_CONSOLIDATION_v2.yaml",
+      "path": "evidence\\NODE_FINANCIAL_AND_DIGITAL_CONSOLIDATION_v2.yaml",
+      "size_bytes": 1312,
+      "sha256": "aed1ef69959002a7e795776c84357771bce5b92adfc7209d77dc203a67c6ddff"
+    },
+    {
+      "filename": "NODE_GERMANY_HAGUE_SABOTAGE.yaml",
+      "path": "evidence\\NODE_GERMANY_HAGUE_SABOTAGE.yaml",
+      "size_bytes": 1114,
+      "sha256": "d1d2ca89c9cbaa2eb3b28e32131ecba5bb54aafce6fa8641ec0187138e7d0ce9"
+    },
+    {
+      "filename": "NODE_HASH_COLLAPSE_PROTOCOL_2026.json",
+      "path": "evidence\\NODE_HASH_COLLAPSE_PROTOCOL_2026.json",
+      "size_bytes": 756,
+      "sha256": "b3741b32131460d117a535d84666f2ff719a47effb62ff2a1bf7c9e8f68b9670"
+    },
+    {
+      "filename": "NODE_JUS_COGENS_LITERAL_CORRECTOR_2026.json",
+      "path": "evidence\\NODE_JUS_COGENS_LITERAL_CORRECTOR_2026.json",
+      "size_bytes": 1596,
+      "sha256": "aadd0ce476991d03c8e226b62ff78952e619cab93107d86740d90c5ef99504c8"
+    },
+    {
+      "filename": "NODE_OPERATIONAL_DEPLOYMENT_v15.yaml",
+      "path": "evidence\\NODE_OPERATIONAL_DEPLOYMENT_v15.yaml",
+      "size_bytes": 862,
+      "sha256": "b61bce17578f3fc09474ce5ba303870b9dcbe6e784523e9b346120c1991a1591"
+    },
+    {
+      "filename": "NODE_SEMNATURA_INDESCIFRABILA_TRAP.yaml",
+      "path": "evidence\\NODE_SEMNATURA_INDESCIFRABILA_TRAP.yaml",
+      "size_bytes": 1167,
+      "sha256": "1241de36e4d8c43c6e84954ba3aabbcd8888a6a866a0a0294cee3ed8847b07be"
+    },
+    {
+      "filename": "NODE_TI_ULA_GRAPHVIZ_ARCHITECTURE.yaml",
+      "path": "evidence\\NODE_TI_ULA_GRAPHVIZ_ARCHITECTURE.yaml",
+      "size_bytes": 782,
+      "sha256": "73b5afc3406b1baf0287bd5132509b7494cf40ec56f56d5619449d0106d8f908"
+    },
+    {
+      "filename": "NODE_TI_ULA_MASTER_TOPOLOGY.yaml",
+      "path": "evidence\\NODE_TI_ULA_MASTER_TOPOLOGY.yaml",
+      "size_bytes": 751,
+      "sha256": "53cad216d589551e9727612c07919a4cc18dfd228682c04e963fed68d44a79aa"
+    },
+    {
+      "filename": "NODE_TRACKING_608920260403.json",
+      "path": "evidence\\NODE_TRACKING_608920260403.json",
+      "size_bytes": 516,
+      "sha256": "04aabc6aad1cb8cb3f890f397267d856928a6d2cd2fa3c61fec753189658f6a3"
+    },
+    {
+      "filename": "NODE_VENICE_COMMISSION_TERROR_AND_IMMUNITY.yaml",
+      "path": "evidence\\NODE_VENICE_COMMISSION_TERROR_AND_IMMUNITY.yaml",
+      "size_bytes": 1351,
+      "sha256": "c1a9a582bd7a404e0000d7669ee29d34bcd8147f3ed3a41632dfedd4cfeb9ab2"
+    },
+    {
+      "filename": "ORDER_RISCANI_24JUL2007.yaml",
+      "path": "evidence\\ORDER_RISCANI_24JUL2007.yaml",
+      "size_bytes": 1094,
+      "sha256": "231baf517ce8fe10a2e33b625ae63ef5b1e9acefaa4762b8065c3ddd953d466a"
+    },
+    {
+      "filename": "receipt_3CD779D395025DDF.pdf",
+      "path": "evidence\\receipt_3CD779D395025DDF.pdf",
+      "size_bytes": 176024,
+      "sha256": "3a8c669a0d2dd5d8b457777be80d38d99bc9e89b2749c58ce5f9bb6cae05d0ce"
+    },
+    {
+      "filename": "Scrisoare_insotitoare_Revizuire_Macheret.pdf",
+      "path": "evidence\\Scrisoare_insotitoare_Revizuire_Macheret.pdf",
+      "size_bytes": 195752,
+      "sha256": "82cd7e1a48e1d411318e3fd7a20474620e4092675059416a076df2c8f9582069"
+    },
+    {
+      "filename": "Scrisoare_insotitoare_Revizuire_Macheret_1.pdf",
+      "path": "evidence\\Scrisoare_insotitoare_Revizuire_Macheret_1.pdf",
+      "size_bytes": 872718,
+      "sha256": "56665f535e1199483cfce72b6eb5ed05e880b6c669816231ea9c4ba1863e5aef"
+    },
+    {
+      "filename": "ti_ula_jus_cogens_evidence_manifest.json",
+      "path": "evidence\\ti_ula_jus_cogens_evidence_manifest.json",
+      "size_bytes": 2540,
+      "sha256": "c4d0e63b2eb4a1c459b3856276f7fc770297ecbbfee5c530244e48cda3638d4e"
+    },
+    {
+      "filename": "UNIFIED_JUS_COGENS_MEMORANDUM_2026.md",
+      "path": "evidence\\UNIFIED_JUS_COGENS_MEMORANDUM_2026.md",
+      "size_bytes": 2658,
+      "sha256": "f6165f8e96bb60d9edd2e793541c8f4b0b6b5a2cf77931dee1afcd603f52098d"
+    },
+    {
+      "filename": "vienna_convention_2.json",
+      "path": "evidence\\vienna_convention_2.json",
+      "size_bytes": 288607,
+      "sha256": "42575106c3fba2df657f41cc6b18503cbddf2293b73ed318be354ab51681f77c"
+    },
+    {
+      "filename": "We Have Received Your Message.подписан.pdf",
+      "path": "evidence\\We Have Received Your Message.подписан.pdf",
+      "size_bytes": 414457,
+      "sha256": "af535e3fc2c54660f9fefc38324d823b8f37233a4932912796ba46d60f21b3db"
+    },
+    {
+      "filename": "WhiteHouse_Correspondence_Mapping.json",
+      "path": "evidence\\WhiteHouse_Correspondence_Mapping.json",
+      "size_bytes": 2243,
+      "sha256": "1915c1a8efb559400d33649af9eebe98a0b28624e8bfd6e3a75ee0c3a32491d3"
+    },
+    {
+      "filename": "WhiteHouse_Integration_Summary.md",
+      "path": "evidence\\WhiteHouse_Integration_Summary.md",
+      "size_bytes": 3056,
+      "sha256": "d7c0df32807a59485b65bcd85e85fc5d0165dc6b9e03fba633e45a29f5fa5937"
+    },
+    {
+      "filename": "Всеобщая_декларация_прав_Человека_1948_1.json",
+      "path": "evidence\\Всеобщая_декларация_прав_Человека_1948_1.json",
+      "size_bytes": 58553,
+      "sha256": "9ae28d1f0d589b244682168eadc831e056a76cb22c15798492b51ba8b382cf92"
+    },
+    {
+      "filename": "ИДНП корреляции фамилии .pdf",
+      "path": "evidence\\ИДНП корреляции фамилии .pdf",
+      "size_bytes": 438440,
+      "sha256": "a5998977c97279c8f0ed3078d24d108ba67c7c9c31d4e23290179bfa735e7f39"
+    },
+    {
+      "filename": "Центральный Суд Молдовы _1.pdf",
+      "path": "evidence\\Центральный Суд Молдовы _1.pdf",
+      "size_bytes": 179089,
+      "sha256": "e315b8018afdfbf6540cae44fd882ef894d9d1d2819620f24ce52ac0ee59c64f"
+    },
+    {
+      "filename": "Analiza_Blocare_Deblocare_Active_2r_1026_26.md",
+      "path": "evidence\\financial_sabotage\\Analiza_Blocare_Deblocare_Active_2r_1026_26.md",
+      "size_bytes": 6531,
+      "sha256": "8c6ec9b625e32d13fc63804637e3a14bd09c6fe5c8f6e8e22581ef70428c1cea"
+    },
+    {
+      "filename": "comprehensive_case_evidence_packet_oct2026.json",
+      "path": "evidence\\financial_sabotage\\comprehensive_case_evidence_packet_oct2026.json",
+      "size_bytes": 2292,
+      "sha256": "7a91ff9a75415627b3c148ad038bfbbe70fc37f5b96fb7ed0e28279925c37142"
+    },
+    {
+      "filename": "counter_limits_jus_cogens_doctrine.json",
+      "path": "evidence\\financial_sabotage\\counter_limits_jus_cogens_doctrine.json",
+      "size_bytes": 1754,
+      "sha256": "7235b0d30f07ccb5b7f399f622402c1792b3e22a299efc5cfc6da61a7a66377e"
+    },
+    {
+      "filename": "Evidence_Vault_Controlimiti_Jus_Cogens_Language.md",
+      "path": "evidence\\financial_sabotage\\Evidence_Vault_Controlimiti_Jus_Cogens_Language.md",
+      "size_bytes": 6313,
+      "sha256": "a80bcd6d48e5183567eff42088a18c992a13c1ab2749798900565abddd7fd897"
+    },
+    {
+      "filename": "FinalMemorandum2r1026_26.md",
+      "path": "evidence\\financial_sabotage\\FinalMemorandum2r1026_26.md",
+      "size_bytes": 4464,
+      "sha256": "c46a6c31a9df4cb5d9e09144f766f6f3c0b5824255ecbb4b0c46af6bfeab235d"
+    },
+    {
+      "filename": "FinancialQuantumAuditRestitution.md",
+      "path": "evidence\\financial_sabotage\\FinancialQuantumAuditRestitution.md",
+      "size_bytes": 2353,
+      "sha256": "14f8538b7aaf1a0a5e015adc7ab4b1624e7e4775ba9b108ca54ea84df8032741"
+    },
+    {
+      "filename": "financial_quantum_audit.json",
+      "path": "evidence\\financial_sabotage\\financial_quantum_audit.json",
+      "size_bytes": 1537,
+      "sha256": "06be0a3a0ff523516985c70bb569ca3db7ff06c61080d2119b361618bdaf9e5d"
+    },
+    {
+      "filename": "financial_sabotage_aggregation_report.json",
+      "path": "evidence\\financial_sabotage\\financial_sabotage_aggregation_report.json",
+      "size_bytes": 1050,
+      "sha256": "2532c482702d2a68da5fe41c678c412cce29237c66bce6a3b14b6b0060c9985a"
+    },
+    {
+      "filename": "financial_sabotage_registry.yaml",
+      "path": "evidence\\financial_sabotage\\financial_sabotage_registry.yaml",
+      "size_bytes": 1072,
+      "sha256": "a489d76c0099873bd83b69201cad6694d817f573604c9e784532ab2a456e04f5"
+    },
+    {
+      "filename": "financial_sabotage_udhr_graph.dot",
+      "path": "evidence\\financial_sabotage\\financial_sabotage_udhr_graph.dot",
+      "size_bytes": 1903,
+      "sha256": "fb0b8794962376ac83b4883df1816a1ef06e60f8c5d21cd2728787a86cad15c0"
+    },
+    {
+      "filename": "FINCOMBANK_GITHUB_BILLING_ANCHOR.md",
+      "path": "evidence\\financial_sabotage\\FINCOMBANK_GITHUB_BILLING_ANCHOR.md",
+      "size_bytes": 2481,
+      "sha256": "137ac441de90ac42d583e53c111b231847f27824c09bd421810651b2c471c440"
+    },
+    {
+      "filename": "fincombank_receipts_manifest.json",
+      "path": "evidence\\financial_sabotage\\fincombank_receipts_manifest.json",
+      "size_bytes": 1405,
+      "sha256": "6ad23e23b03882b235438b5ebae02a29f2f9e7c7365d67eb5267741e3e98b2d2"
+    },
+    {
+      "filename": "JusCogensSingularityVector.md",
+      "path": "evidence\\financial_sabotage\\JusCogensSingularityVector.md",
+      "size_bytes": 1635,
+      "sha256": "ef19b4fb79d8c39ac39473437610c4ebb87aad36d236d08502e97bc014eb96a1"
+    },
+    {
+      "filename": "jus_cogens_trigger_config.json",
+      "path": "evidence\\financial_sabotage\\jus_cogens_trigger_config.json",
+      "size_bytes": 1213,
+      "sha256": "728884af45625cd25fbcee9e7175c074140885fde6e71f32e444e941a2547c02"
+    },
+    {
+      "filename": "Jus_Cogens_Trigger_Deployment.md",
+      "path": "evidence\\financial_sabotage\\Jus_Cogens_Trigger_Deployment.md",
+      "size_bytes": 2626,
+      "sha256": "62d118ec214ddbb6aa27d6f3f6335b2bde0b02399d9c26d1dd6dda3b9337af73"
+    },
+    {
+      "filename": "language_sovereignty_analysis.json",
+      "path": "evidence\\financial_sabotage\\language_sovereignty_analysis.json",
+      "size_bytes": 3947,
+      "sha256": "7faa7eda99fca900187d7a19a1c9658baa63dcf2ca3df528ba260060da669124"
+    },
+    {
+      "filename": "police_response_k577_26_fincombank_balance.json",
+      "path": "evidence\\financial_sabotage\\police_response_k577_26_fincombank_balance.json",
+      "size_bytes": 1178,
+      "sha256": "3398b057b7dba2f827cf1a025952840a0dd4e1ee931ffa8b304289b4b554a10f"
+    },
+    {
+      "filename": "TRUTH_SOCIAL_POST_117446805111809348.md",
+      "path": "evidence\\financial_sabotage\\TRUTH_SOCIAL_POST_117446805111809348.md",
+      "size_bytes": 507,
+      "sha256": "ac5e96b0cf280338357d5802a733693ac0e3ddc13d3dfa0ba6f5b5b4eda0c761"
+    },
+    {
+      "filename": "TRUTH_SOCIAL_POST_117457348466973534.md",
+      "path": "evidence\\financial_sabotage\\TRUTH_SOCIAL_POST_117457348466973534.md",
+      "size_bytes": 630,
+      "sha256": "d9447b9ff211b7bf312019d6ce3083819a18b124eeefd000eb7a25fa8dc8a403"
+    },
+    {
+      "filename": "udhr_legal_doctrine_mapping.yaml",
+      "path": "evidence\\financial_sabotage\\udhr_legal_doctrine_mapping.yaml",
+      "size_bytes": 1517,
+      "sha256": "445f07cbbcd9972e77a9b368ba7318dacaa8d0bab84aa0b3873fab803063084d"
+    },
+    {
+      "filename": "BANK_REFUSAL_6387.md",
+      "path": "evidence\\fincombank-financial-traces\\BANK_REFUSAL_6387.md",
+      "size_bytes": 2339,
+      "sha256": "353adb6c57283725d743410a0c871fb9d989f723a86e8c01b85fa1875a98e2c7"
+    },
+    {
+      "filename": "FORENSIC_FINCOM_ANALYSIS.md",
+      "path": "evidence\\fincombank-financial-traces\\FORENSIC_FINCOM_ANALYSIS.md",
+      "size_bytes": 4758,
+      "sha256": "e6f62faa7ba08a0e6c9a96a9de6f323dc9ebdc5772b24492b030d44c29f6dff5"
+    },
+    {
+      "filename": "JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md",
+      "path": "evidence\\fincombank-financial-traces\\JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md",
+      "size_bytes": 2992,
+      "sha256": "847dfc2928f7147c81a4406b581053e63ebbce3109a3d92a73175bb860fee0da"
+    },
+    {
+      "filename": "LEGAL_MEMORANDUM_ECHR.md",
+      "path": "evidence\\fincombank-financial-traces\\LEGAL_MEMORANDUM_ECHR.md",
+      "size_bytes": 3936,
+      "sha256": "48fc3a2a81f8d01630ac9007620c1f1aa3d5a31417058add50b2c15101b66614"
+    },
+    {
+      "filename": "LINKS.md",
+      "path": "evidence\\fincombank-financial-traces\\LINKS.md",
+      "size_bytes": 1699,
+      "sha256": "0893e80e8cd28bb31aad4685340bdf20feb045aee96af9a4ad7ddf8ea92d94d7"
+    },
+    {
+      "filename": "ti_ula_crypto_manifest.json",
+      "path": "evidence\\fincombank-financial-traces\\ti_ula_crypto_manifest.json",
+      "size_bytes": 1753,
+      "sha256": "95e4f027c5e6b3a62eaa310a10989169489638c68fcbef1a3e02dfade5f2510d"
+    },
+    {
+      "filename": "ADOPTION_REASONING_1977.yaml",
+      "path": "artifacts/reabilitare\\ADOPTION_REASONING_1977.yaml",
+      "size_bytes": 972,
+      "sha256": "2dcb427099efe55418a813fa2430cfb99bb3bc86f4734551ff2e7ac97d9e387f"
+    },
+    {
+      "filename": "AVIZ_HASDEU_ONOMIC_01OCT2026.yaml",
+      "path": "artifacts/reabilitare\\AVIZ_HASDEU_ONOMIC_01OCT2026.yaml",
+      "size_bytes": 2100,
+      "sha256": "9535a09c4deaa2f5349614761c139a2003ab5e07b57ee6fa4605d0006beede80"
+    },
+    {
+      "filename": "bloom_perspective_macheret_audit.json",
+      "path": "artifacts/reabilitare\\bloom_perspective_macheret_audit.json",
+      "size_bytes": 1404,
+      "sha256": "1a94629b522f3124ca13bc35d1165502ea11c7d5fd89fa9d4db439bf2bfc83c2"
+    },
+    {
+      "filename": "CASCADE_CANCELLATION_MATRIX.yaml",
+      "path": "artifacts/reabilitare\\CASCADE_CANCELLATION_MATRIX.yaml",
+      "size_bytes": 1794,
+      "sha256": "95f2b40b3cbfe21ecc24631c48e8c62e511eda4cba1f08be2f7edf55f86420d0"
+    },
+    {
+      "filename": "DIVORCE_CERTIFICATE_MATIUK_STANISLAV_GALINA.yaml",
+      "path": "artifacts/reabilitare\\DIVORCE_CERTIFICATE_MATIUK_STANISLAV_GALINA.yaml",
+      "size_bytes": 1011,
+      "sha256": "78a7a7f486963049bc5fe0402ec102feca6b32d8fb076e6bf087e3adc4030dcf"
+    },
+    {
+      "filename": "EVIDENCE_25_ML_2_3_IDENTITY_AND_FINANCIAL_BALANCE.yaml",
+      "path": "artifacts/reabilitare\\EVIDENCE_25_ML_2_3_IDENTITY_AND_FINANCIAL_BALANCE.yaml",
+      "size_bytes": 1122,
+      "sha256": "5f4fcbafb10103d73ca3cb1430b4349750b79cc9328766a3f822d1de9a3b59af"
+    },
+    {
+      "filename": "EVIDENCE_PAYMENT_INFORMATION_GITHUB_FINCOMBANK.yaml",
+      "path": "artifacts/reabilitare\\EVIDENCE_PAYMENT_INFORMATION_GITHUB_FINCOMBANK.yaml",
+      "size_bytes": 1066,
+      "sha256": "0cc4b1d25dd06e236b63418db10d98d2c62df447183567431df85c87820a2ad2"
+    },
+    {
+      "filename": "EVIDENCE_POINTER_UN_SUPPORT_02MAY2025.json",
+      "path": "artifacts/reabilitare\\EVIDENCE_POINTER_UN_SUPPORT_02MAY2025.json",
+      "size_bytes": 858,
+      "sha256": "7b30fe21fa31baaee12a177cdfc93da61ddf0583025d56642a299f4699b8961f"
+    },
+    {
+      "filename": "FINANCIAL_MODEL_DAMNUM_EMERGENS_LUCRUM_CESSANS_2026.yaml",
+      "path": "artifacts/reabilitare\\FINANCIAL_MODEL_DAMNUM_EMERGENS_LUCRUM_CESSANS_2026.yaml",
+      "size_bytes": 1115,
+      "sha256": "c9f14640ce0c5832e9441e749c440cd35a4576b84fb0ff0f2e0f36e0551be46d"
+    },
+    {
+      "filename": "FINANCIAL_TRANSACTION_UN_SUPPORT_02MAY2025.yaml",
+      "path": "artifacts/reabilitare\\FINANCIAL_TRANSACTION_UN_SUPPORT_02MAY2025.yaml",
+      "size_bytes": 689,
+      "sha256": "76d126c52bb8c4687f9cffbbfdafbb1e77213a03761e10e4b9770521c61bb6b4"
+    },
+    {
+      "filename": "forensic_capture_ledger.json",
+      "path": "artifacts/reabilitare\\forensic_capture_ledger.json",
+      "size_bytes": 1324,
+      "sha256": "3d25e725a62dd0d710e4dc4fd79c7b19febba1854dbcc43efaa85c5212fcce5d"
+    },
+    {
+      "filename": "ICLOUD_PHOTOS_EVIDENCE_ALEXEI_MACERET.yaml",
+      "path": "artifacts/reabilitare\\ICLOUD_PHOTOS_EVIDENCE_ALEXEI_MACERET.yaml",
+      "size_bytes": 869,
+      "sha256": "9ded33d80c047d06e13046bee59014e0209a63503556584627d982f87852afb5"
+    },
+    {
+      "filename": "LINK_ACCOUNTABILITY_TO_CONSEQUENCES.yaml",
+      "path": "artifacts/reabilitare\\LINK_ACCOUNTABILITY_TO_CONSEQUENCES.yaml",
+      "size_bytes": 1023,
+      "sha256": "bde6191310b1787f1b682dbf1c1e4883787c9ced6a6c6e0398b3f540a61f5975"
+    },
+    {
+      "filename": "LINK_NON_REHABILITATION_JUS_COGENS.yaml",
+      "path": "artifacts/reabilitare\\LINK_NON_REHABILITATION_JUS_COGENS.yaml",
+      "size_bytes": 865,
+      "sha256": "3dc8856026f9055970dcd1a24d13ecf36b97854e47b9a82cec586810da492cbc"
+    },
+    {
+      "filename": "macheret_identity_mapping_audited.json",
+      "path": "artifacts/reabilitare\\macheret_identity_mapping_audited.json",
+      "size_bytes": 1478,
+      "sha256": "07988744f6a35f9c3079b7b9ca2507dae4670e8f1400c1fc0988cdd599f3c2d1"
+    },
+    {
+      "filename": "macheret_identity_mapping_audited.yaml",
+      "path": "artifacts/reabilitare\\macheret_identity_mapping_audited.yaml",
+      "size_bytes": 1230,
+      "sha256": "531b4aa7884b26f3f8ed067bc00215f86c1ff7f82974fba468720c4b9e651049"
+    },
+    {
+      "filename": "macheret_identity_mapping_forensic.json",
+      "path": "artifacts/reabilitare\\macheret_identity_mapping_forensic.json",
+      "size_bytes": 3697,
+      "sha256": "1013a0c08a0cba2c723a0e3a4c384ae17b4cc5fc383666e370e03fa07d243926"
+    },
+    {
+      "filename": "macheret_identity_mapping_forensic.yaml",
+      "path": "artifacts/reabilitare\\macheret_identity_mapping_forensic.yaml",
+      "size_bytes": 3018,
+      "sha256": "0a60ad24768465419c16aa78ae95ae03ee79cc01cb68f3ee88a9eed48e575402"
+    },
+    {
+      "filename": "macheret_onim_mapping.json",
+      "path": "artifacts/reabilitare\\macheret_onim_mapping.json",
+      "size_bytes": 2734,
+      "sha256": "9752a199a43bcb9d20c686311f1b27c970837f4160a12ea9d0e9a221c2c70997"
+    },
+    {
+      "filename": "MARRIAGE_CERTIFICATE_GALINA_MACHERET.yaml",
+      "path": "artifacts/reabilitare\\MARRIAGE_CERTIFICATE_GALINA_MACHERET.yaml",
+      "size_bytes": 1001,
+      "sha256": "b40160dba91eac1b76f43221d87d5dc32e7ef153dc051f49f7ac5864e534a9fe"
+    },
+    {
+      "filename": "NODE_APOSTILLE_REGISTRY_FIXED_HTML.yaml",
+      "path": "artifacts/reabilitare\\NODE_APOSTILLE_REGISTRY_FIXED_HTML.yaml",
+      "size_bytes": 653,
+      "sha256": "2b4d6558d078d5401fb5b0a2de65953a81a8a2bef077ddf17faa13a7464afb79"
+    },
+    {
+      "filename": "NODE_APOSTILLE_REGISTRY_MASTER.yaml",
+      "path": "artifacts/reabilitare\\NODE_APOSTILLE_REGISTRY_MASTER.yaml",
+      "size_bytes": 1193,
+      "sha256": "2b7bb139f33674d56de0dd41605be861030506723516bcda1aaf274d7babc0f4"
+    },
+    {
+      "filename": "NODE_AVIZ_INSTiintare_2023.yaml",
+      "path": "artifacts/reabilitare\\NODE_AVIZ_INSTiintare_2023.yaml",
+      "size_bytes": 963,
+      "sha256": "650bd87f688b2c588a5a348b7252dba4ee777067fbc349c9a4f27766a939e7dc"
+    },
+    {
+      "filename": "NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026.yaml",
+      "path": "artifacts/reabilitare\\NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026.yaml",
+      "size_bytes": 2018,
+      "sha256": "f074db0251a94fb11c2321805dec0074070405404a93ca35dc9192a244d6738a"
+    },
+    {
+      "filename": "NODE_COMPREHENSIVE_FINANCIAL_AND_FAMILY_TERROR_2026.yaml",
+      "path": "artifacts/reabilitare\\NODE_COMPREHENSIVE_FINANCIAL_AND_FAMILY_TERROR_2026.yaml",
+      "size_bytes": 1718,
+      "sha256": "8cd58d0b24d3fe7472632b0e0a0895bdf69b9688043966705002e5b103eda456"
+    },
+    {
+      "filename": "NODE_CSJ_DECISION_2009.yaml",
+      "path": "artifacts/reabilitare\\NODE_CSJ_DECISION_2009.yaml",
+      "size_bytes": 916,
+      "sha256": "c8a2672bc1fbcfc5e7a8338e8daad8a1bec3f56d31ad93a5a0c4a65b072e5f85"
+    },
+    {
+      "filename": "NODE_ECHR_OVERRIDE_VCLT_UNRES4034.yaml",
+      "path": "artifacts/reabilitare\\NODE_ECHR_OVERRIDE_VCLT_UNRES4034.yaml",
+      "size_bytes": 1237,
+      "sha256": "2db8db56427f6e72ea08b5cc0a97060f5ca05979d420b0975ac83a53c7672b21"
+    },
+    {
+      "filename": "NODE_ECONOMIC_MAUROUDING_GRIGORAS.yaml",
+      "path": "artifacts/reabilitare\\NODE_ECONOMIC_MAUROUDING_GRIGORAS.yaml",
+      "size_bytes": 1220,
+      "sha256": "4f9c2a06f85c10c81962033f714c8f72e881030248319c4441d1d6bb73a6e559"
+    },
+    {
+      "filename": "NODE_ENTITY_ACCOUNTABILITY_NETWORK.yaml",
+      "path": "artifacts/reabilitare\\NODE_ENTITY_ACCOUNTABILITY_NETWORK.yaml",
+      "size_bytes": 1754,
+      "sha256": "5f40b1926344726769f4857c0b786ff0178a94fc15b14f32360a0e5692b0b37b"
+    },
+    {
+      "filename": "NODE_FABRICATION_AND_LANGUAGE_DEPRIVATION_2007.yaml",
+      "path": "artifacts/reabilitare\\NODE_FABRICATION_AND_LANGUAGE_DEPRIVATION_2007.yaml",
+      "size_bytes": 1052,
+      "sha256": "704a7c0dc40531a6c2f0607ccfa350e2d16914c4ef06e233527094eb95e74a1e"
+    },
+    {
+      "filename": "NODE_FICTITIOUS_ISSUANCE_TRAP.yaml",
+      "path": "artifacts/reabilitare\\NODE_FICTITIOUS_ISSUANCE_TRAP.yaml",
+      "size_bytes": 1298,
+      "sha256": "630228512249449e63fbc04598ca85f30066e21f809cc598191cfca3bb9f6170"
+    },
+    {
+      "filename": "NODE_FINANCIAL_AND_DIGITAL_CONSOLIDATION_v2.yaml",
+      "path": "artifacts/reabilitare\\NODE_FINANCIAL_AND_DIGITAL_CONSOLIDATION_v2.yaml",
+      "size_bytes": 1312,
+      "sha256": "aed1ef69959002a7e795776c84357771bce5b92adfc7209d77dc203a67c6ddff"
+    },
+    {
+      "filename": "NODE_FINANCIAL_MODEL_1997_2026.yaml",
+      "path": "artifacts/reabilitare\\NODE_FINANCIAL_MODEL_1997_2026.yaml",
+      "size_bytes": 1285,
+      "sha256": "72f3036bea998b4d1b1226b644e689509c8f69918d97c2b7cebad3f435f341f2"
+    },
+    {
+      "filename": "NODE_GERMANY_HAGUE_SABOTAGE.yaml",
+      "path": "artifacts/reabilitare\\NODE_GERMANY_HAGUE_SABOTAGE.yaml",
+      "size_bytes": 1114,
+      "sha256": "d1d2ca89c9cbaa2eb3b28e32131ecba5bb54aafce6fa8641ec0187138e7d0ce9"
+    },
+    {
+      "filename": "NODE_LEGAL_BASIS_JUS_COGENS.json",
+      "path": "artifacts/reabilitare\\NODE_LEGAL_BASIS_JUS_COGENS.json",
+      "size_bytes": 2182,
+      "sha256": "4a25cfc2441cd08bdbe5cb4ee1883abfdb76026103729a6bc1425b9d4176f98d"
+    },
+    {
+      "filename": "NODE_OPERATIONAL_DEPLOYMENT_v15.yaml",
+      "path": "artifacts/reabilitare\\NODE_OPERATIONAL_DEPLOYMENT_v15.yaml",
+      "size_bytes": 862,
+      "sha256": "b61bce17578f3fc09474ce5ba303870b9dcbe6e784523e9b346120c1991a1591"
+    },
+    {
+      "filename": "NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml",
+      "path": "artifacts/reabilitare\\NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml",
+      "size_bytes": 1453,
+      "sha256": "bd445b2c1cb8f3934176ba0d4296b116db3cafa40c051a19fb4a14be27f556c1"
+    },
+    {
+      "filename": "NODE_SEMNATURA_INDESCIFRABILA_TRAP.yaml",
+      "path": "artifacts/reabilitare\\NODE_SEMNATURA_INDESCIFRABILA_TRAP.yaml",
+      "size_bytes": 1167,
+      "sha256": "1241de36e4d8c43c6e84954ba3aabbcd8888a6a866a0a0294cee3ed8847b07be"
+    },
+    {
+      "filename": "NODE_TI_ULA_GRAPHVIZ_ARCHITECTURE.yaml",
+      "path": "artifacts/reabilitare\\NODE_TI_ULA_GRAPHVIZ_ARCHITECTURE.yaml",
+      "size_bytes": 782,
+      "sha256": "73b5afc3406b1baf0287bd5132509b7494cf40ec56f56d5619449d0106d8f908"
+    },
+    {
+      "filename": "NODE_TI_ULA_MASTER_TOPOLOGY.yaml",
+      "path": "artifacts/reabilitare\\NODE_TI_ULA_MASTER_TOPOLOGY.yaml",
+      "size_bytes": 751,
+      "sha256": "53cad216d589551e9727612c07919a4cc18dfd228682c04e963fed68d44a79aa"
+    },
+    {
+      "filename": "NODE_TORTURE_AND_COVERUP_1997_1998.yaml",
+      "path": "artifacts/reabilitare\\NODE_TORTURE_AND_COVERUP_1997_1998.yaml",
+      "size_bytes": 1195,
+      "sha256": "876ee74adf4acf3515ef7c02575f1116c21d09ab0ce38805c7322a6df002ef5e"
+    },
+    {
+      "filename": "NODE_VENICE_COMMISSION_TERROR_AND_IMMUNITY.yaml",
+      "path": "artifacts/reabilitare\\NODE_VENICE_COMMISSION_TERROR_AND_IMMUNITY.yaml",
+      "size_bytes": 1351,
+      "sha256": "c1a9a582bd7a404e0000d7669ee29d34bcd8147f3ed3a41632dfedd4cfeb9ab2"
+    },
+    {
+      "filename": "ORDER_RISCANI_24JUL2007.yaml",
+      "path": "artifacts/reabilitare\\ORDER_RISCANI_24JUL2007.yaml",
+      "size_bytes": 1094,
+      "sha256": "231baf517ce8fe10a2e33b625ae63ef5b1e9acefaa4762b8065c3ddd953d466a"
+    },
+    {
+      "filename": "SUBNODE_PROPERTY_RESTITUTION_1977_2026.yaml",
+      "path": "artifacts/reabilitare\\SUBNODE_PROPERTY_RESTITUTION_1977_2026.yaml",
+      "size_bytes": 1037,
+      "sha256": "4960348c8539fd585d237ab4f9e381121291d4421cb83ab1e0de1daab0a5d98d"
+    },
+    {
+      "filename": "TI_ULA_MASTER_DAG_REGISTRY_2026.yaml",
+      "path": "artifacts/reabilitare\\TI_ULA_MASTER_DAG_REGISTRY_2026.yaml",
+      "size_bytes": 1196,
+      "sha256": "9654b9a27897368b54c2265f43f3a32c8163944571f0be91e2643fdc5016acfc"
+    },
+    {
+      "filename": "VIBER_TODAY_MANIFEST_20261009.json",
+      "path": "artifacts/reabilitare\\VIBER_TODAY_MANIFEST_20261009.json",
+      "size_bytes": 23960,
+      "sha256": "70cbaf351fa930438bd2a4d91287507611bebaddc9ba910496be25d2205b2931"
+    },
+    {
+      "filename": "TI_ULA_Master.dot",
+      "path": "H:\\ACTOR_DEV_ENV\\TI_ULA_Master.dot",
+      "size_bytes": 5525,
+      "sha256": "096541df48c289831cc5d0914f34189ff802ad0f1defbafea6da393058359fa4"
+    },
+    {
+      "filename": "TI_ULA_Architecture.dot",
+      "path": "H:\\ACTOR_DEV_ENV\\TI_ULA_Architecture.dot",
+      "size_bytes": 3873,
+      "sha256": "2b3d5e02e337eb7db0ed5c1ccfb3232deaeae6319861e848917c1de352fc5c1d"
+    },
+    {
+      "filename": "TI_ULA_Search_Prompts.dot",
+      "path": "H:\\ACTOR_DEV_ENV\\TI_ULA_Search_Prompts.dot",
+      "size_bytes": 1854,
+      "sha256": "fe690ab890c0b1943bfc4fab76ea14fd2accd32cb613c971e7b8f4034ba22845"
+    },
+    {
+      "filename": "CASE_MACHERET_1997_2026_DOSSIER.md",
+      "path": "H:\\ACTOR_DEV_ENV\\CASE_MACHERET_1997_2026_DOSSIER.md",
+      "size_bytes": 22717,
+      "sha256": "85e189e04694c13b51370aa66035a2aba8b99844662ad575c744202c7daef59b"
+    },
+    {
+      "filename": "CASE_MACHERET_1997_2026_DOSSIER.pdf",
+      "path": "H:\\ACTOR_DEV_ENV\\CASE_MACHERET_1997_2026_DOSSIER.pdf",
+      "size_bytes": 27649,
+      "sha256": "3e3b6038148c3244933aaa507762c8cf85eb751d80fae01ebfd265d4391a85d5"
+    },
+    {
+      "filename": "UN_CAT_COVER_LETTER_2026.md",
+      "path": "H:\\ACTOR_DEV_ENV\\UN_CAT_COVER_LETTER_2026.md",
+      "size_bytes": 3440,
+      "sha256": "58c3059f41ccbf641fd95a8484c27e277b047531fa787b7c0f02f1d3c49fa0a1"
+    },
+    {
+      "filename": "UN_CAT_QUESTIONNAIRE_MAPPING.yaml",
+      "path": "H:\\ACTOR_DEV_ENV\\UN_CAT_QUESTIONNAIRE_MAPPING.yaml",
+      "size_bytes": 2010,
+      "sha256": "1012402a453c05a55c6dba905a24a0f7c0ee858b1fcffb23b6498498248786d5"
+    },
+    {
+      "filename": "UN_SPECIAL_RAPPORTEURS_SUBMISSIONS_2026.md",
+      "path": "H:\\ACTOR_DEV_ENV\\UN_SPECIAL_RAPPORTEURS_SUBMISSIONS_2026.md",
+      "size_bytes": 4387,
+      "sha256": "94b393d749103350a60296c3ab3ba3a01ca1ce6689252f8646d0b53e266dc559"
+    },
+    {
+      "filename": "MEMORANDUM_IMPUTED_LIABILITY_RM_2026.md",
+      "path": "H:\\ACTOR_DEV_ENV\\MEMORANDUM_IMPUTED_LIABILITY_RM_2026.md",
+      "size_bytes": 5557,
+      "sha256": "cacdc61279578caf380d41a5a91dbf1a546a8f33061f7ca0822489c3822b33b3"
+    },
+    {
+      "filename": "NODE_LEGAL_BASIS_JUS_COGENS.json",
+      "path": "H:\\ACTOR_DEV_ENV\\NODE_LEGAL_BASIS_JUS_COGENS.json",
+      "size_bytes": 2182,
+      "sha256": "4a25cfc2441cd08bdbe5cb4ee1883abfdb76026103729a6bc1425b9d4176f98d"
+    }
+  ],
+  "verification_status": "cryptographically_sealed_immutable"
+}

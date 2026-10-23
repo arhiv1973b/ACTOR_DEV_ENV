@@ -1,0 +1,30 @@
+{
+  "log_id": "FORGERY_CONTRADICTION_LOG_2026",
+  "subject": "Direct Contradictions Between Recognized Court/Administrative Records and Primary Apostilled Documents",
+  "contradictions": [
+    {
+      "item_id": "FORGERY_01",
+      "primary_document": "Sentence Case No. 1-568/98 (13.10.1998, Apostille No. 7H2Q3790FZEI5)",
+      "primary_fact": "Official judicial establishment of physical torture ('lastochka') committed by Police Inspector Victor Grigore Dulce.",
+      "contradicting_record": "Rulings by Judge Tudor Stambol (21-40/2021) and subsequent court refusals",
+      "contradiction_nature": "Recharacterization of state torture as a 'civil dispute' or ignoring the res judicata effect, violating Article 3 ECHR and UNCAT.",
+      "legal_status": "Null and void ab initio (Fructus venenati / VCLT Art. 53)"
+    },
+    {
+      "item_id": "FORGERY_02",
+      "primary_document": "Soviet Period Housing & Guardianship Records (1973-1987, ZhSK-39 / CCL-39)",
+      "primary_fact": "Original lawful allocation of housing rights and family registry entries for Alexei Macheret / Matiyuk.",
+      "contradicting_record": "Subsequent court orders by Judge Holban, Dada Ion, and Gennady Morozan",
+      "contradiction_nature": "Refusal to recognize housing warrants as legal facts, creating artificial procedural barriers and administrative amnesia.",
+      "legal_status": "Falsification of administrative history to facilitate asset deprivation"
+    },
+    {
+      "item_id": "FORGERY_03",
+      "primary_document": "Civil Registry Birth & Adoption Records (1977 Odessa / Chisinau)",
+      "primary_fact": "Lawful adoption linkage and birth entry tracking.",
+      "contradicting_record": "Fabricated statements by Lyudmila Nantoi and psychiatric facility (PKB) placement records",
+      "contradiction_nature": "Using coercive institutional isolation to suppress primary identity and property rights.",
+      "legal_status": "Systemic forgery and denial of justice"
+    }
+  ]
+}

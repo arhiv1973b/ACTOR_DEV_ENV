@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "hybrid-local-llm": {
+      "command": "python",
+      "args": ["mcp_hybrid_server.py"],
+      "env": {
+        "OLLAMA_BASE_URL": "http://127.0.0.1:11434"
+      }
+    }
+  }
+}

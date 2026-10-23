@@ -1,0 +1,21 @@
+{
+  "ti_ula_version": "1.2.0",
+  "case_reference": "CASE-MACHERET-1997-2026",
+  "core_anomaly": {
+    "node_id": "case_1_568_98_concealment_root",
+    "description": "Первичный приговор № 1-568/98 от 13.10.1998 об установлении факта пыток",
+    "t_created": "1998-10-13T00:00:00Z",
+    "t_disclosed": "2021-02-11T00:00:00Z",
+    "concealment_gap_days": 8157,
+    "concealment_gap_years": 22.3,
+    "is_concealed_anomaly": true,
+    "methods": ["Ласточка", "Лом", "Противогаз"],
+    "mechanisms": [
+      "Лингвистическая изоляция (отказ в переводе)",
+      "Подмена юрисдикций и мануализация",
+      "Институциональное укрывательство (Венецианская комиссия, ЕСПЧ)"
+    ],
+    "sha256_hash_doc": "3175fd5c6d872a8e9b5bfe9a12e6248fa00f22554e45509a713feabacf0f5513",
+    "ed25519_signature": "935ddcd01cea947b5bfab9cffdee5885cb1574d008ff1d0f2ec1325002dbe1c33d787817a600766e4ef7af8dddc556fb5cd148d54acf76ed495a2079a7078b03"
+  }
+}

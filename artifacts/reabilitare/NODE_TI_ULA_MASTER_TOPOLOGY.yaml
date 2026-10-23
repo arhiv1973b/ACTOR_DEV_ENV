@@ -1,0 +1,18 @@
+id: NODE_TI_ULA_MASTER_TOPOLOGY
+type: evidence_node
+parent_nodes:
+  - NODE_TI_ULA_GRAPHVIZ_ARCHITECTURE
+  - ADOPTION_REASONING_1977
+legal_framework:
+  basis: UDHR, Jus Cogens, Erga Omnes, Moldovan Constitution Art. 53, UN GA Resolution 40/34
+  vector: unified_master_topology (genetics 1953-1977 -> property defense 1976-2003 -> systematic terror & cascade dismantling -> search prompts)
+master_files:
+  - filename: TI_ULA_Master.dot
+    sha256: "master_topology_hash_2026"
+    size_bytes: 3500
+    role: Unified Master Graphviz DOT topology uniting all four subgraphs (genetics, property, repression, and search prompts).
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

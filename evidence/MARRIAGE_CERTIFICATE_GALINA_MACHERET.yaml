@@ -1,0 +1,21 @@
+id: MARRIAGE_CERTIFICATE_GALINA_MACHERET
+type: evidence_node
+parent_nodes:
+  - DIVORCE_CERTIFICATE_MATIUK_STANISLAV_GALINA
+legal_framework:
+  basis: Civil Status Registry (Starea Civilă) verification standards, UDHR Art. 6, 16
+  vector: marriage_record_search (Galina Ivanovna Markova/Matiuk & Artur Borisovich Macheret, 1976-1977, Chisinau)
+search_parameters:
+  query: "Свидетельство о браке Маркова (Матиюк) Галина Ивановна и Мачерет Артур Борисович"
+  filters: ["Кишинёв", "Молдавская ССР", "1976", "1977"]
+  strict: "Primary civil status act records"
+master_files:
+  - filename: marriage_macheret_search_prompt.yaml
+    sha256: "marriage_search_anchor_2026"
+    size_bytes: 450
+    role: Strict search prompt and verification anchor for the marriage record of Galina Markova and Artur Macheret.
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: ADOPTION_REASONING_1977

@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "schema_version": "1.0",
+    "project": "CASE-MACHERET-1997-2026",
+    "module": "ECHR_IMPUNITY_DAG",
+    "description": "Структурный граф доказательств (DAG), связывающий императивные нормы Jus Cogens, институциональные фильтры иммунитетов (ETS nr. 2) и эмпирическую проекцию непрерывных последствий."
+  },
+  "nodes": [
+    {
+      "id": "Jus_Cogens_Invariant",
+      "type": "normative_invariant",
+      "title": "Jus Cogens Invariant",
+      "description": "Фиксирует императивность норм (включая запрет пыток, произвольного задержания и право на справедливое судебное разбирательство) и превращает любое институциональное нарушение в прямое доказательство деликта.",
+      "legal_basis": [
+        "Статьи 53 и 64 Венской конвенции о праве международных договоров 1969 г.",
+        "Выводы Комиссии международного права ООН (ILC) № 10, 21, 23"
+      ]
+    },
+    {
+      "id": "ETS_nr_2_Anchor",
+      "type": "institutional_anchor",
+      "title": "ETS nr. 2 Anchor",
+      "description": "Юридический якорь иммунитетов и процессуальных фильтров Совета Европы (1949 г.), используемый для изоляции контура ответственности.",
+      "legal_basis": [
+        "Генеральное соглашение о привилегиях и иммунитетах Совета Европы (ETS № 2, 1949 г.)"
+      ]
+    },
+    {
+      "id": "Geopolitical_Genesis_of_Impunity",
+      "type": "structural_design",
+      "title": "Geopolitical Genesis of Impunity",
+      "description": "Геополитический и институциональный контекст, объясняющий встроенный дизайн защитных механизмов и колониальные/ведомственные оговорки.",
+      "legal_basis": [
+        "Практика применения конвенционных механизмов с учетом оговорок и суверенного иммунитета"
+      ]
+    },
+    {
+      "id": "Case_Macheret_Projection",
+      "type": "empirical_projection",
+      "title": "CASE-MACHERET-1997-2026",
+      "description": "Эмпирическая проекция: Республика Молдова, приговор S-22, ратификация ETS nr. 2, системное затягивание процедур до 2025–2026 гг., проявление доктрины непрерывных последствий (continuing consequences)."
+    }
+  ],
+  "edges": [
+    {
+      "source": "Jus_Cogens_Invariant",
+      "target": "ETS_nr_2_Anchor",
+      "relation": "collision_and_strengthening",
+      "description": "Попытка прикрытия иммунитетом по ETS № 2 вступает в противоречие с Jus Cogens, что автоматически усиливает доказательную линию незаконности такого щита."
+    },
+    {
+      "source": "Jus_Cogens_Invariant",
+      "target": "Geopolitical_Genesis_of_Impunity",
+      "relation": "procedural_bypass",
+      "description": "Процессуальный обход императивных обязательств подтверждает изначальный исторический и геополитический замысел встроенной безнаказанности."
+    },
+    {
+      "source": "ETS_nr_2_Anchor",
+      "target": "Geopolitical_Genesis_of_Impunity",
+      "relation": "institutional_realization",
+      "description": "Юридическая машина иммунитетов реализует на практике заданный геополитический дизайн изоляции правоприменителей."
+    },
+    {
+      "source": "ETS_nr_2_Anchor",
+      "target": "Case_Macheret_Projection",
+      "relation": "applied_projection",
+      "description": "Институциональный фильтр проецируется на национальный контур (Молдова), порождая приговор S-22 и многолетнее затягивание."
+    }
+  ]
+}

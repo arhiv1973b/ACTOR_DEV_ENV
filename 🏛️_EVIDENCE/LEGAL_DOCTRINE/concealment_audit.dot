@@ -1,0 +1,22 @@
+digraph TI_ULA_Concealment_Audit {
+    rankdir=TB;
+    fontname="Courier";
+    node [shape=box, style=filled, fillcolor="#f8f9fa", fontname="Courier", margin="0.2,0.1"];
+    edge [fontname="Courier", fontsize=10];
+
+    N_1997 [label="Node_1997\nПервичное событие (Пытки)"];
+    N_2012_CPT [label="Node_2012\nОсведомленность системы (ЕКПП)"];
+    N_2013_ECHR [label="Node_2013\nГенерация решения (ЕСПЧ)\nt_created: 05.12.2013", fillcolor="#fff2cc"];
+    
+    N_Disclosed [label="Node_Access\nФактический доступ к документу\nt_disclosed: 11.02.2021", fillcolor="#e2efda"];
+    
+    N_1997 -> N_2012_CPT [color="#555555", label=" Уведомление"];
+    N_2012_CPT -> N_2013_ECHR [color="#555555", label=" Системный след"];
+    
+    N_2013_ECHR -> N_Disclosed [
+        color="#d32f2f", 
+        penwidth=2.5, 
+        label=" BLIND ZONE (Δt = 2624 days)\nConcealment Gap", 
+        fontcolor="#d32f2f"
+    ];
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "node_id": "apostille_anchor_1_568_98",
+  "node_type": "evidence_anchor",
+  "legal_basis": [
+    "VCLT_Art_71_1a",
+    "Actus_Nullus",
+    "ECHR_Continuing_Consequences"
+  ],
+  "documents": [
+    {
+      "source_file": "apostille_registry_working_13.signed.pdf",
+      "case_reference": "1-568/98",
+      "apostilles": [
+        {
+          "apostille_id": "7H2Q3790FZEI5",
+          "signatory": "Мирон Алёна",
+          "original_date": "13.10.1998",
+          "apostille_date": "18.05.2021"
+        },
+        {
+          "apostille_id": "FL2VB340JYEG5",
+          "signatory": "Miron Aliona",
+          "apostille_date": "21.07.2021"
+        }
+      ]
+    }
+  ]
+}

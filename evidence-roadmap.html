@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evidence Roadmap · CASE-MACHERET-1997-2026 · A©tor</title>
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg2: #0f0f0f;
+    --bg3: #141400;
+    --gold: #ffd700;
+    --gold2: #c8a000;
+    --red: #ff4444;
+    --green: #44ff44;
+    --orange: #ff6644;
+    --muted: #666;
+    --border: #222;
+    --border2: #333;
+    --font: 'Courier New', Courier, monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: #e0e0e0;
+    font-family: var(--font);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* TOP BAR */
+  .topbar {
+    background: #000;
+    border-bottom: 2px solid var(--gold2);
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .topbar-id { color: var(--gold); font-weight: bold; letter-spacing: 1px; }
+  .topbar-status { color: var(--green); font-size: 11px; }
+  .topbar-date { color: var(--muted); font-size: 11px; }
+
+  /* HEADER */
+  header {
+    border-bottom: 1px solid var(--border2);
+    padding: 32px 24px 24px;
+    background: linear-gradient(180deg, #0d0d00 0%, var(--bg) 100%);
+  }
+  .case-label {
+    color: var(--gold2);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  header h1 {
+    color: var(--gold);
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .header-sub {
+    color: var(--muted);
+    font-size: 11px;
+    margin-bottom: 16px;
+  }
+  .stats-row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  .stat {
+    border: 1px solid var(--border2);
+    padding: 8px 14px;
+    background: var(--bg3);
+    text-align: center;
+    min-width: 80px;
+  }
+  .stat-num { color: var(--gold); font-size: 1.4em; font-weight: bold; display: block; }
+  .stat-label { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* NAV */
+  .nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    background: var(--bg2);
+  }
+  .nav a {
+    color: var(--muted);
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    border-right: 1px solid var(--border);
+    white-space: nowrap;
+    transition: all 0.15s;
+  }
+  .nav a:hover { color: var(--gold); background: var(--bg3); }
+
+  /* MAIN */
+  main { padding: 0 24px 48px; max-width: 1100px; margin: 0 auto; }
+
+  /* SECTION HEADER */
+  .section-header {
+    margin: 32px 0 16px;
+    padding: 12px 16px;
+    border-left: 4px solid var(--gold);
+    background: var(--bg3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .section-title { color: var(--gold); font-size: 1em; font-weight: bold; }
+  .section-meta { color: var(--muted); font-size: 10px; }
+  .section-badge {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .badge-critical { background: #3a0000; color: var(--red); border: 1px solid var(--red); }
+  .badge-active { background: #003a00; color: var(--green); border: 1px solid var(--green); }
+  .badge-verified { background: #1a1a00; color: var(--gold); border: 1px solid var(--gold2); }
+  .badge-icc { background: #00003a; color: #88aaff; border: 1px solid #88aaff; }
+
+  /* ARTICLE CARD */
+  .article-card {
+    border: 1px solid var(--border);
+    margin-bottom: 12px;
+    background: var(--bg2);
+    overflow: hidden;
+  }
+  .article-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    background: #0c0c00;
+    flex-wrap: wrap;
+    gap: 8px;
+    cursor: pointer;
+  }
+  .article-card-header:hover { background: #111100; }
+  .article-ref {
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+  }
+  .article-name { color: #bbb; margin-top: 2px; font-size: 12px; }
+  .violation-label {
+    color: var(--red);
+    font-size: 10px;
+    padding: 3px 8px;
+    border: 1px solid var(--red);
+    background: #1a0000;
+    white-space: nowrap;
+    letter-spacing: 1px;
+  }
+
+  /* EVIDENCE TABLE */
+  .evidence-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .evidence-table th {
+    background: #111100;
+    color: var(--gold2);
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+  }
+  .evidence-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+    vertical-align: top;
+  }
+  .evidence-table tr:last-child td { border-bottom: none; }
+  .evidence-table tr:hover td { background: #0d0d00; }
+
+  .ev-id { color: var(--gold2); font-weight: bold; white-space: nowrap; }
+  .ev-doc a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .ev-doc a:hover { text-decoration: underline; }
+  .ev-fact { color: #ccc; }
+  .ev-status { white-space: nowrap; }
+
+  .status-v { color: var(--green); }
+  .status-a { color: var(--gold); }
+  .status-c { color: var(--red); }
+
+  /* CAUSAL CHAIN */
+  .causal-chain {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 20px 0;
+    border: 1px solid var(--border);
+    background: var(--bg2);
+    padding: 16px;
+  }
+  .chain-node {
+    background: var(--bg3);
+    border: 1px solid var(--border2);
+    padding: 10px 14px;
+    font-size: 11px;
+    min-width: 120px;
+    text-align: center;
+  }
+  .chain-node .cn-year { color: var(--gold); font-weight: bold; display: block; }
+  .chain-node .cn-text { color: #aaa; }
+  .chain-arrow {
+    color: var(--gold2);
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    align-self: center;
+  }
+
+  /* COUNTER */
+  .counter-block {
+    border: 1px solid var(--border2);
+    padding: 16px 20px;
+    background: var(--bg3);
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .counter-num { color: var(--red); font-size: 2.2em; font-weight: bold; letter-spacing: 2px; }
+  .counter-desc { color: #bbb; font-size: 12px; }
+  .counter-label { color: var(--gold2); font-size: 10px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 4px; }
+
+  /* FOOTER */
+  footer {
+    border-top: 2px solid var(--gold2);
+    padding: 20px 24px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 32px;
+    background: #000;
+  }
+  footer .footer-id { color: var(--gold); font-size: 11px; font-weight: bold; margin-bottom: 4px; }
+
+  /* SEARCH */
+  .search-bar {
+    padding: 16px 24px;
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .search-bar input {
+    background: var(--bg);
+    border: 1px solid var(--border2);
+    color: var(--gold);
+    padding: 8px 12px;
+    font-family: var(--font);
+    font-size: 12px;
+    flex: 1;
+    min-width: 200px;
+    outline: none;
+  }
+  .search-bar input:focus { border-color: var(--gold); }
+  .search-bar input::placeholder { color: var(--muted); }
+  .search-label { color: var(--muted); font-size: 11px; white-space: nowrap; }
+
+  /* PRINT */
+  @media print {
+    .topbar, .nav, .search-bar { display: none; }
+    body { background: white; color: black; }
+    .article-card { border: 1px solid #ccc; page-break-inside: avoid; }
+    .section-header { background: #f5f5f5; }
+  }
+</style>
+</head>
+<body>
+    <nav class="portal-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #0c2e4a; margin-bottom: 30px; background-color: #051421; padding: 15px;">
+        <div class="breadcrumb">
+            <a href="index.html" style="color: #00b8e8; text-decoration: none; font-family: 'Share Tech Mono', monospace;">← PORTAL HUB</a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="timeline.html" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">⏱️ Chronology</a>
+            <a href="EVIDENCE_CATALOG.md" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">📂 Evidence Catalog</a>
+        </div>
+    </nav>
+
+<!-- A©tor NAVIGATOR v3.0-SECURE [STABILIZED TDCH-3] -->
+<nav id="actor-navigator" style="background:#070e16; border-bottom:2px solid #b8960c; padding:12px 20px; font-family:'Courier New', monospace; display:flex; justify-content:space-between; align-items:center; box-shadow:0 4px 20px rgba(0,0,0,0.5); position: sticky; top: 0; z-index: 9999;">
+  <div style="display:flex; align-items:center; gap:15px;">
+    <span style="color:#f0c040; font-weight:bold; letter-spacing:1px;">⚖️ A©t0r Integrity Engine v6.9</span>
+    <span style="color:#666;">|</span>
+    <span style="color:#d4cfc7; font-size:12px;">CONTOUR: <strong style="color:#ff4444;">H:\ACTOR_DEV_ENV</strong></span>
+  </div>
+  <div style="display:flex; gap:12px; font-size:12px;">
+    <a href="index.html" style="color:#ffd700; text-decoration:none; padding:4px 8px; border:1px solid #2a2a2e; background:#111114;">[Core Vault]</a>
+    <a href="evidence-roadmap.html" style="color:#e0e0e0; text-decoration:none; padding:4px 8px; border:1px solid #222;">[Roadmap]</a>
+    <a href="jus-cogens-proof-macheret.html" style="color:#e0e0e0; text-decoration:none; padding:4px 8px; border:1px solid #222;">[Jus Cogens]</a>
+    <a href="apostille-registry-fixed.html" style="color:#e0e0e0; text-decoration:none; padding:4px 8px; border:1px solid #222;">[Apostille Registry (90)]</a>
+    <a href="un_contacts_copy_buttons.html" style="color:#4fc3f7; text-decoration:none; padding:4px 8px; border:1px solid #222;">[UN Liaison Contacts]</a>
+  </div>
+  <div style="font-size:11px; color:#ff6644; font-weight:bold; text-align: right; line-height: 1.2;">
+    ⏱️ Свыше 10 000 дней<br>
+    <span style="color:#666; font-size:9px;">(1997-2026) непрерывного удержания контура</span>
+  </div>
+</nav>
+
+
+<div class="topbar">
+  <div class="topbar-id">⚖ CASE-MACHERET-1997-2026 · A©tor · EVIDENCE ROADMAP</div>
+  <div class="topbar-status">▸ ARCHIVE ACTIVE · 90 APOSTILLES · 2992 OBJECTS</div>
+  <div class="topbar-date">28.04.2026 · IDNP: 2000001159655</div>
+</div>
+
+<header>
+  <div class="case-label">Доказательная карта · Jus Cogens · Erga Omnes</div>
+  <h1>EVIDENCE ROADMAP · ДЕЛО МАЧЕРЕТ</h1>
+  <div class="header-sub">
+    Юридический маппинг: Статья Конвенции → Файл архива → Доказательный факт<br>
+    GPG: 82E473E71719065B72C234127BEACB5463BA3007 · <a href="https://arhiv1973b.github.io/apostille-mirror/" style="color:#ff6644">arhiv1973b.github.io/apostille-mirror</a>
+  </div>
+  <div class="stats-row">
+    <div class="stat"><span class="stat-num">Свыше 10 000 дней (период 1997-2026) непрерывного удержания контура</span><span class="stat-label">Суток молчания</span></div>
+    <div class="stat"><span class="stat-num">90</span><span class="stat-label">Апостилей</span></div>
+    <div class="stat"><span class="stat-num">2992</span><span class="stat-label">Объектов</span></div>
+    <div class="stat"><span class="stat-num">6</span><span class="stat-label">Конвенций</span></div>
+    <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Срок давности</span></div>
+  </div>
+</header>
+
+<nav class="nav">
+  <a href="#echr3">ЕКПЧ Ст.3</a>
+  <a href="#echr6">ЕКПЧ Ст.6</a>
+  <a href="#echr13">ЕКПЧ Ст.13</a>
+  <a href="#p7-4">Пр.7 Ст.4</a>
+  <a href="#rome17">МУС Ст.17</a>
+  <a href="#un-cat">КПП ООН</a>
+  <a href="#hague">Гаага 1961</a>
+  <a href="#vienna53">Венская Ст.53</a>
+  <a href="#cascade">Каскад</a>
+  <a href="index.html">← Реестр</a>
+</nav>
+
+<div class="search-bar">
+  <span class="search-label">ФИЛЬТР:</span>
+  <input type="text" id="searchInput" placeholder="Введите: статья, год, ИДНП, файл..." onkeyup="filterCards()">
+</div>
+
+<main id="mainContent">
+
+  <!-- ECHR ART 3 -->
+  <div id="echr3" class="section-header">
+    <div>
+      <div class="section-title">ЕКПЧ · Статья 3 · Запрет пыток</div>
+      <div class="section-meta">European Convention on Human Rights · Art. 3 · Prohibition of torture</div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <span class="section-badge badge-critical">JUS COGENS</span>
+      <span class="section-badge badge-active">НАРУШЕНА</span>
+    </div>
+  </div>
+
+  <div class="counter-block">
+    <div>
+      <div class="counter-label">Длящееся нарушение</div>
+      <div class="counter-num">Свыше 10 000 дней (период 1997-2026) непрерывного удержания контура</div>
+      <div class="counter-desc">суток без расследования = Свыше 10 000 дней (период 1997-2026) непрерывного удержания контура самостоятельных нарушений Ст. 3</div>
+    </div>
+    <div style="color:#666;font-size:11px;max-width:300px">
+      Ст. 3 ЕКПЧ — абсолютная норма. Не допускает отступления ни при каком обстоятельстве (ст. 15 ЕКПЧ — исключения не распространяются на Ст. 3). Каждый день без расследования — новое, самостоятельное нарушение.
+    </div>
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-header">
+      <div>
+        <div class="article-ref">ECHR · Art. 3 · Substantive Limb</div>
+        <div class="article-name">Запрет пыток и бесчеловечного обращения · Материальный аспект</div>
+      </div>
+      <span class="violation-label">VIOLATION PROVEN</span>
+    </div>
+    <table class="evidence-table">
+      <tr>
+        <th>ID</th><th>Файл архива</th><th>Доказательный факт</th><th>Статус</th>
+      </tr>
+      <tr>
+        <td class="ev-id">E-001</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">forensic_idnp_report.html</a></td>
+        <td class="ev-fact">Факты пыток 1997–1998. Дело № 1-568/98. Апостиль РМ подтверждает подлинность судебного документа.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+      <tr>
+        <td class="ev-id">E-002</td>
+        <td class="ev-doc"><a href="jus-cogens-proof-macheret.html">jus-cogens-proof-macheret.html</a></td>
+        <td class="ev-fact">Свыше 10 000 суток без расследования пыток = длящееся нарушение. Каждые сутки — новое нарушение.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+      <tr>
+        <td class="ev-id">E-003</td>
+        <td class="ev-doc"><a href="index.html">Реестр · 90 апостилей</a></td>
+        <td class="ev-fact">90 судебных решений 2003–2021: ни одно не содержит реального расследования фактов пыток 1997–1998.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-header">
+      <div>
+        <div class="article-ref">ECHR · Art. 3 · Procedural Limb</div>
+        <div class="article-name">Обязательство расследовать · Процессуальный аспект</div>
+      </div>
+      <span class="violation-label">VIOLATION PROVEN</span>
+    </div>
+    <table class="evidence-table">
+      <tr><th>ID</th><th>Файл архива</th><th>Доказательный факт</th><th>Статус</th></tr>
+      <tr>
+        <td class="ev-id">E-004</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">forensic_idnp_report.html</a></td>
+        <td class="ev-fact">Систематическая фальсификация ИДНП: 655→555→455. Создание «цифрового двойника» для блокировки правовой идентичности заявителя.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+      <tr>
+        <td class="ev-id">E-005</td>
+        <td class="ev-doc"><a href="index.html">90 апостилей · Паттерн</a></td>
+        <td class="ev-fact">Перекрёстный анализ 90 решений: жалобы отклоняются без анализа доказательств пыток. Системная имитация правосудия (Art. 17 МУС).</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ECHR ART 6 -->
+  <div id="echr6" class="section-header">
+    <div>
+      <div class="section-title">ЕКПЧ · Статья 6 · Право на справедливое судебное разбирательство</div>
+      <div class="section-meta">ECHR Art. 6 · Right to a fair trial</div>
+    </div>
+    <span class="section-badge badge-active">НАРУШЕНА</span>
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-header">
+      <div>
+        <div class="article-ref">ECHR · Art. 6 § 1 · Access to Court</div>
+        <div class="article-name">Доступ к суду · Разумный срок · Беспристрастность</div>
+      </div>
+      <span class="violation-label">VIOLATION PROVEN</span>
+    </div>
+    <table class="evidence-table">
+      <tr><th>ID</th><th>Файл архива</th><th>Доказательный факт</th><th>Статус</th></tr>
+      <tr>
+        <td class="ev-id">E-006</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">forensic_idnp_report.html</a></td>
+        <td class="ev-fact">Судья Моросан Геннадий (2006): назначил третье наказание при наличии доказательств полной оплаты. Передал дело другому судье с нарушением Ne Bis In Idem.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+      <tr>
+        <td class="ev-id">E-007</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">forensic_idnp_report.html</a></td>
+        <td class="ev-fact">Заседание проведено без переводчика при незнании заявителем государственного языка. Отказ выдать письменное решение. Незаконный арест на 26 суток.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+      <tr>
+        <td class="ev-id">E-008</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">forensic_idnp_report.html</a></td>
+        <td class="ev-fact">Ст. 361 ч.2 УК РМ (лит. «ц») признана неконституционной — Постановление КС № 12 от 14.05.2018. Все ограничения прав после 2018 г. на основании этой нормы — незаконны.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+      <tr>
+        <td class="ev-id">E-009</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">forensic_idnp_report.html</a></td>
+        <td class="ev-fact">Судебные исполнители Вассиан и Фокша: блокировка счета Молдинкомбанк на основании оплаченного штрафа 2016 года. Фиктивные возвраты 50% для сохранения статуса «неплательщика».</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ECHR ART 13 -->
+  <div id="echr13" class="section-header">
+    <div>
+      <div class="section-title">ЕКПЧ · Статья 13 · Право на эффективное средство правовой защиты</div>
+      <div class="section-meta">ECHR Art. 13 · Right to an effective remedy</div>
+    </div>
+    <span class="section-badge badge-active">НАРУШЕНА</span>
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-header">
+      <div>
+        <div class="article-ref">ECHR · Art. 13 · Effective Remedy</div>
+        <div class="article-name">Эффективное средство защиты при нарушении Ст. 3</div>
+      </div>
+      <span class="violation-label">VIOLATION PROVEN</span>
+    </div>
+    <table class="evidence-table">
+      <tr><th>ID</th><th>Файл архива</th><th>Доказательный факт</th><th>Статус</th></tr>
+      <tr>
+        <td class="ev-id">E-010</td>
+        <td class="ev-doc"><a href="index.html">90 решений · Реестр</a></td>
+        <td class="ev-fact">90 апостилированных судебных решений — ни одного эффективного средства защиты по фактам пыток 1997–1998. Структурный отказ системы.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+      <tr>
+        <td class="ev-id">E-011</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">forensic_idnp_report.html</a></td>
+        <td class="ev-fact">Фальсификация ИДНП 655→555 лишила заявителя правовой идентичности и блокировала доступ к системе защиты прав.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- PROTOCOL 7 ART 4 -->
+  <div id="p7-4" class="section-header">
+    <div>
+      <div class="section-title">Протокол 7 · Ст. 4 · Ne Bis In Idem</div>
+      <div class="section-meta">Protocol 7 to ECHR · Art. 4 · Right not to be tried twice</div>
+    </div>
+    <span class="section-badge badge-active">НАРУШЕНА</span>
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-header">
+      <div>
+        <div class="article-ref">Protocol 7 · Art. 4 · Ne Bis In Idem · Ст. 22 Конституции РМ</div>
+        <div class="article-name">Запрет повторного уголовного преследования</div>
+      </div>
+      <span class="violation-label">VIOLATION PROVEN</span>
+    </div>
+    <table class="evidence-table">
+      <tr><th>ID</th><th>Файл архива</th><th>Доказательный факт</th><th>Статус</th></tr>
+      <tr>
+        <td class="ev-id">E-012</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">forensic_idnp_report.html</a></td>
+        <td class="ev-fact">Дело № 2006020792: третье наказание (150 ч. работ) при доказательстве полной оплаты штрафа. Судья Моросан → передача другому судье (07.11.2006, ст. 361 ч.2 лит. «ц»). Незаконный арест 26 суток.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ROME STATUTE ART 17 -->
+  <div id="rome17" class="section-header">
+    <div>
+      <div class="section-title">Римский статут · Статья 17 · Принцип дополнительности МУС</div>
+      <div class="section-meta">Rome Statute · Art. 17 · ICC Complementarity Principle</div>
+    </div>
+    <div style="display:flex;gap:8px">
+      <span class="section-badge badge-icc">МУС АКТИВИРОВАН</span>
+      <span class="section-badge badge-critical">КРИТИЧЕСКИЙ</span>
+    </div>
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-header">
+      <div>
+        <div class="article-ref">Rome Statute · Art. 17 § 1(a) · State "unwilling or unable"</div>
+        <div class="article-name">Государство нежелает или неспособно провести подлинное расследование</div>
+      </div>
+      <span class="violation-label">ICC JURISDICTION TRIGGERED</span>
+    </div>
+    <table class="evidence-table">
+      <tr><th>ID</th><th>Файл архива</th><th>Доказательный факт</th><th>Статус</th></tr>
+      <tr>
+        <td class="ev-id">E-013</td>
+        <td class="ev-doc"><a href="index.html">90 апостилей · Реестр</a></td>
+        <td class="ev-fact">90 решений с апостилем: системная имитация правосудия. Паттерн: жалобы отклоняются без анализа доказательств пыток. Не серия ошибок — структурный отказ.</td>
+        <td class="ev-status status-a">▸ ICC ACTIVE</td>
+      </tr>
+      <tr>
+        <td class="ev-id">E-014</td>
+        <td class="ev-doc"><a href="jus-cogens-proof-macheret.html">jus-cogens-proof-macheret.html</a></td>
+        <td class="ev-fact">Свыше 10 000 дней (период 1997-2026) непрерывного удержания контура суток = доказательство неспособности/нежелания государства. Дополнительность МУС активируется при доказанном бездействии национального суда.</td>
+        <td class="ev-status status-a">▸ ICC ACTIVE</td>
+      </tr>
+      <tr>
+        <td class="ev-id">E-015</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">forensic_idnp_report.html</a></td>
+        <td class="ev-fact">Подлог 15.03.2022 (Нантой Людмила): прямое следствие Свыше 10 000 дней (период 1997-2026) непрерывного удержания контура суток вакуума безнаказанности. Причинно-следственная связь доказана.</td>
+        <td class="ev-status status-a">▸ ICC ACTIVE</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- UN CAT -->
+  <div id="un-cat" class="section-header">
+    <div>
+      <div class="section-title">КПП ООН · Конвенция против пыток · Ст. 2, 12, 13, 14</div>
+      <div class="section-meta">UN Convention Against Torture · Art. 2, 12, 13, 14</div>
+    </div>
+    <span class="section-badge badge-active">НАРУШЕНА</span>
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-header">
+      <div>
+        <div class="article-ref">UN CAT · Art. 12 · Obligation to Investigate</div>
+        <div class="article-name">Обязательство государства провести быстрое и беспристрастное расследование</div>
+      </div>
+      <span class="violation-label">VIOLATION PROVEN</span>
+    </div>
+    <table class="evidence-table">
+      <tr><th>ID</th><th>Файл архива</th><th>Доказательный факт</th><th>Статус</th></tr>
+      <tr>
+        <td class="ev-id">E-016</td>
+        <td class="ev-doc"><a href="jus-cogens-proof-macheret.html">jus-cogens-proof-macheret.html</a></td>
+        <td class="ev-fact">Свыше 10 000 дней (период 1997-2026) непрерывного удержания контура суток без быстрого расследования — прямое нарушение Art. 12 КПП ООН («компетентные власти проводят быстрое расследование»). Ни один из Свыше 10 000 дней (период 1997-2026) непрерывного удержания контура дней не соответствует «быстроте».</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+      <tr>
+        <td class="ev-id">E-017</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">forensic_idnp_report.html</a></td>
+        <td class="ev-fact">Art. 14 КПП ООН: государство обязано обеспечить жертве пыток компенсацию. Вместо компенсации — блокировка счетов, фиктивные долги, фальсификация ИДНП.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- HAGUE CONVENTION -->
+  <div id="hague" class="section-header">
+    <div>
+      <div class="section-title">Гаагская конвенция · 05.10.1961 · Апостиль</div>
+      <div class="section-meta">Hague Convention Abolishing the Requirement of Legalisation</div>
+    </div>
+    <span class="section-badge badge-verified">ИНСТРУМЕНТ ВЕРИФИКАЦИИ</span>
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-header">
+      <div>
+        <div class="article-ref">Гаага 1961 · Апостиль · Правовое значение</div>
+        <div class="article-name">90 апостилей = 90 государственных удостоверений подлинности официальной подписи</div>
+      </div>
+      <span class="violation-label">EVIDENCE FOUNDATION</span>
+    </div>
+    <table class="evidence-table">
+      <tr><th>ID</th><th>Файл архива</th><th>Доказательный факт</th><th>Статус</th></tr>
+      <tr>
+        <td class="ev-id">E-018</td>
+        <td class="ev-doc"><a href="index.html">Реестр · 90 апостилей</a></td>
+        <td class="ev-fact">Апостиль по Гаагской конвенции удостоверяет: (1) подлинность подписи должностного лица; (2) подлинность печати; (3) полномочия лица. Он НЕ удостоверяет законность содержания. Содержание: уклонение от расследования пыток.</td>
+        <td class="ev-status status-v">✔ 90 APOSTILLES</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- VIENNA CONVENTION ART 53 -->
+  <div id="vienna53" class="section-header">
+    <div>
+      <div class="section-title">Венская конвенция · Ст. 53 · Jus Cogens</div>
+      <div class="section-meta">Vienna Convention on the Law of Treaties 1969 · Art. 53 · Peremptory norms</div>
+    </div>
+    <span class="section-badge badge-critical">ИМПЕРАТИВНАЯ НОРМА</span>
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-header">
+      <div>
+        <div class="article-ref">Венская конвенция · Ст. 53 · Jus Cogens</div>
+        <div class="article-name">Норма, от которой нельзя отступить ни при каких обстоятельствах</div>
+      </div>
+      <span class="violation-label">JUS COGENS BREACHED</span>
+    </div>
+    <table class="evidence-table">
+      <tr><th>ID</th><th>Файл архива</th><th>Доказательный факт</th><th>Статус</th></tr>
+      <tr>
+        <td class="ev-id">E-019</td>
+        <td class="ev-doc"><a href="jus-cogens-proof-macheret.html">jus-cogens-proof-macheret.html</a></td>
+        <td class="ev-fact">Запрет пыток — норма Jus Cogens. Ст. 53 Венской конвенции: любой договор, противоречащий этой норме, — ничтожен. Молчание государства нарушает Jus Cogens. Свыше 10 000 дней (период 1997-2026) непрерывного удержания контура нарушений.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+      <tr>
+        <td class="ev-id">E-020</td>
+        <td class="ev-doc"><a href="jus-cogens-proof-macheret.html">jus-cogens-proof-macheret.html</a></td>
+        <td class="ev-fact">ICJ Barcelona Traction 1970: обязательства erga omnes — перед международным сообществом в целом. Любое государство вправе требовать расследования. Молчание = нарушение erga omnes.</td>
+        <td class="ev-status status-v">✔ VERIFIED</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- CAUSAL CASCADE -->
+  <div id="cascade" class="section-header">
+    <div>
+      <div class="section-title">Причинно-следственный каскад · 1997–2026</div>
+      <div class="section-meta">Causal cascade — each link documented and proven</div>
+    </div>
+    <span class="section-badge badge-verified">ДОКАЗАН</span>
+  </div>
+
+  <div class="causal-chain">
+    <div class="chain-node">
+      <span class="cn-year">1997–1998</span>
+      <span class="cn-text">Пытки<br>Дело №1-568/98<br>Апостиль</span>
+    </div>
+    <div class="chain-arrow">→</div>
+    <div class="chain-node">
+      <span class="cn-year">Jus Cogens</span>
+      <span class="cn-text">Нарушен<br>Обязательство<br>расследовать</span>
+    </div>
+    <div class="chain-arrow">→</div>
+    <div class="chain-node">
+      <span class="cn-year">2003–2021</span>
+      <span class="cn-text">90 решений<br>Молчание<br>Imitation</span>
+    </div>
+    <div class="chain-arrow">→</div>
+    <div class="chain-node">
+      <span class="cn-year">Свыше 10 000 дней (период 1997-2026) непрерывного удержания контура суток</span>
+      <span class="cn-text">Вакуум<br>безнаказан-<br>ности</span>
+    </div>
+    <div class="chain-arrow">→</div>
+    <div class="chain-node">
+      <span class="cn-year">15.03.2022</span>
+      <span class="cn-text">Подлог<br>Нантой<br>ул. М.Костин</span>
+    </div>
+    <div class="chain-arrow">→</div>
+    <div class="chain-node" style="border-color:#ff4444">
+      <span class="cn-year" style="color:#ff4444">2026</span>
+      <span class="cn-text">Захват<br>активов<br>ИДНП 655</span>
+    </div>
+  </div>
+
+  <div class="article-card">
+    <div class="article-card-header">
+      <div>
+        <div class="article-ref">Каскад · Сводная доказательная матрица</div>
+        <div class="article-name">Все 5 элементов матрицы · Математически неопровержимый вывод</div>
+      </div>
+      <span class="violation-label">MATRIX IRREFUTABLE</span>
+    </div>
+    <table class="evidence-table">
+      <tr><th>Элемент</th><th>Файл</th><th>Содержание</th><th>Статус</th></tr>
+      <tr>
+        <td class="ev-id">(1)</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">forensic_idnp_report.html</a></td>
+        <td class="ev-fact">Задокументированные факты пыток 1997–1998</td>
+        <td class="ev-status status-v">✔</td>
+      </tr>
+      <tr>
+        <td class="ev-id">(2)</td>
+        <td class="ev-doc"><a href="jus-cogens-proof-macheret.html">jus-cogens-proof-macheret.html</a></td>
+        <td class="ev-fact">Свыше 10 000 суток без расследования</td>
+        <td class="ev-status status-v">✔</td>
+      </tr>
+      <tr>
+        <td class="ev-id">(3)</td>
+        <td class="ev-doc"><a href="index.html">Реестр · 90 апостилей</a></td>
+        <td class="ev-fact">90 документов, фиксирующих паттерн уклонения</td>
+        <td class="ev-status status-v">✔</td>
+      </tr>
+      <tr>
+        <td class="ev-id">(4)</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">Подлог 15.03.2022</a></td>
+        <td class="ev-fact">Криминальный каскад: захват ул. Мирон Костин · Вектор 3 · Нантой</td>
+        <td class="ev-status status-v">✔</td>
+      </tr>
+      <tr>
+        <td class="ev-id">(5)</td>
+        <td class="ev-doc"><a href="forensic_idnp_report.html">ИДНП · Акторы</a></td>
+        <td class="ev-fact">Идентифицированные персональные акторы: Нантой Людмила, Вассиан, Фокша, Моросан</td>
+        <td class="ev-status status-v">✔</td>
+      </tr>
+    </table>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-id">A©tor · CASE-MACHERET-1997-2026 · Evidence Roadmap · 2026</div>
+  <div>GPG: 82E473E71719065B72C234127BEACB5463BA3007 · IDNP: 2000001159655 · Jus Cogens · Erga Omnes</div>
+  <div style="margin-top:6px">
+    <a href="index.html" style="color:#ff6644">← Реестр</a> ·
+    <a href="jus-cogens-proof-macheret.html" style="color:#ff6644">Jus Cogens Proof</a> ·
+    <a href="forensic_idnp_report.html" style="color:#ff6644">IDNP Forensic</a>
+  </div>
+</footer>
+
+<script>
+  function filterCards() {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.article-card, .counter-block, .causal-chain');
+    cards.forEach(card => {
+      card.style.display = card.textContent.toLowerCase().includes(query) ? '' : 'none';
+    });
+    // Also show/hide section headers
+    document.querySelectorAll('.section-header').forEach(sh => {
+      const next = sh.nextElementSibling;
+      if (next && (next.style.display !== 'none')) {
+        sh.style.display = '';
+      } else {
+        sh.style.display = query ? 'none' : '';
+      }
+    });
+  }
+</script>
+
+<style>
+    #ti-ula-search-container { font-family: monospace; padding: 20px; background: #000; color: #0f0; border: 1px solid #0f0; margin: 20px 0; }
+    #search-input { width: 100%; padding: 10px; background: #111; border: 1px solid #0f0; color: #0f0; margin-bottom: 10px; }
+    .evidence-item { padding: 5px; border-bottom: 1px dotted #333; display: flex; justify-content: space-between; }
+    .evidence-item:hover { background: #111; }
+    .evidence-link { color: #0f0; text-decoration: none; }
+    .evidence-link:hover { text-decoration: underline; }
+    .file-size { color: #555; font-size: 0.8em; }
+</style>
+
+<div id="ti-ula-search-container">
+    <h3>[ TERMINAL ] TI-ULA EVIDENCE SEARCH</h3>
+    <input type="text" id="search-input" placeholder="Введите имя файла или фрагмент доказательства..." oninput="searchEvidence()">
+    <div id="results-count"></div>
+    <div id="search-results"></div>
+</div>
+<script>
+let evidenceData = [];
+
+// Загрузка индекса
+fetch('evidence_index.json')
+    .then(response => response.json())
+    .then(data => {
+        evidenceData = data;
+        console.log("TI-ULA: Индекс загружен, объектов:", evidenceData.length);
+    });
+
+function searchEvidence() {
+    const query = document.getElementById('search-input').value.toLowerCase();
+    const resultsContainer = document.getElementById('search-results');
+    const countContainer = document.getElementById('results-count');
+    
+    if (query.length < 2) {
+        resultsContainer.innerHTML = '';
+        countContainer.innerHTML = '';
+        return;
+    }
+
+    const filtered = evidenceData.filter(item => 
+        item.name.toLowerCase().includes(query)
+    );
+
+    countContainer.innerHTML = `Найдено совпадений: ${filtered.length}`;
+    
+    resultsContainer.innerHTML = filtered.slice(0, 50).map(item => `
+        <div class="evidence-item">
+            <a href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank" class="evidence-link">
+                > ${item.name}
+            </a>
+            <span class="file-size">${(item.size / 1024 / 1024).toFixed(2)} MB</span>
+        </div>
+    `).join('');
+    
+    if (filtered.length > 50) {
+        resultsContainer.innerHTML += '<div style="color:#555; padding: 10px;">...показаны первые 50 результатов. Уточните запрос.</div>';
+    }
+}
+</script>
+</body>
+</html>
+ые 50 результатов. Уточните запрос.</div>';
+    }
+}
+</script>
+</body>
+</html>

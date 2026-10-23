@@ -1,0 +1,42 @@
+id: NODE_FINANCIAL_MODEL_1997_2026
+version: "1.0.0"
+type: damage_calculation_node
+parent_nodes:
+  - NODE_CONTINUING_CONSEQUENCES_1997_2026
+  - SUBNODE_PROPERTY_RESTITUTION_1977_2026
+  - NODE_TORTURE_AND_COVERUP_1997_1998
+calculation_basis:
+  start_date: "1997-08-05"
+  current_date: "2026-09-20"
+  duration_months: 349
+  status: provisional_estimates
+components:
+  damnum_emergens:
+    property:
+      asset: "ZhSK-39 apt. 64 (Miron Costin 13/3)"
+      metric: "market_value + historical_inflation"
+      variables:
+        base_value: 75000
+        currency: "EUR"
+        status: provisional
+  lucrum_cessans:
+    lost_income:
+      subject: "Alexei Macheret"
+      source: "Firma Comex SRL (20% stake) + professional blockade"
+      metric: "base_monthly_rate * duration_months"
+      variables:
+        base_monthly_rate: 1500
+        currency: "EUR"
+        total_lost_base_income: 523500
+        status: provisional
+  moral_damage:
+    jus_cogens_violation:
+      metric: "international_tribunal_standard (UN CAT / UDHR Art. 3, 5, 9)"
+      variables:
+        estimated_claim: 500000
+        currency: "EUR"
+        status: provisional
+ti_ula_status:
+  state: financial_model_initialized_provisional
+  total_base_claim_eur: 1098500
+  next_step: await_expert_appraisal_refinement

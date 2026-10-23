@@ -1,0 +1,21 @@
+id: NODE_SEMNATURA_INDESCIFRABILA_TRAP
+type: evidence_node
+legal_framework:
+  basis: UDHR Art. 8, 10, 11; UN CAT Art. 2, 7, 12, 13, 14; VCLT Art. 53
+  vector: language_deprivation (CPC RM Art. 16) -> institutional_sabotage (semnătura indescifrabilă) -> moldsign_state_binding -> ti_ula_cryptographic_override
+subjects:
+  victims:
+    - name: Alexei Macheret (A©tor)
+  violators:
+    - name: State Officials (Deleanu Cristina, Mîrzac Iuliana, Frimu Valeriu et al.)
+      role: Issuers of digital apostilles and administrative obfuscation actors
+master_files:
+  - filename: apostille_registry_working_14.signed.pdf
+    sha256: de54c36210e4df65d61475c48fd5f3e0ffe60d606041bcbf393affb71e510050
+    size_bytes: 304558
+    role: Documenting the institutional trap of marking valid physical signatures as 'semnătura indescifrabilă' while binding them with MoldSign state cryptographic certificates.
+ti_ula_status:
+  isolation: true
+  verified: true
+  override_mechanism: "Content-addressed SHA-256 total hash (FILE_HASH_TOTAL) + MoldSign digital signature binding state liability directly to the Republic of Moldova."
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

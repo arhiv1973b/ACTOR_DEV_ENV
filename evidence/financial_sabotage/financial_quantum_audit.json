@@ -1,0 +1,29 @@
+{
+  "audit_module": "Financial Quantum Audit & Restitution Enforcement",
+  "case": "CASE-MACHERET-1997-2026",
+  "sovereign_witness": "Macheret Alexei Artur (A©tor)",
+  "a©tor_key": "# [⚖ A©tor Declaration]",
+  "legal_anchors": [
+    "UDHR 1948 Art. 8, 17, 25",
+    "Constitution of the Republic of Moldova Art. 4 & 8",
+    "Vienna Convention on the Law of Treaties (1969) - Jus Cogens / Erga Omnes"
+  ],
+  "quantum_breakdown": {
+    "damnum_emergens": {
+      "blocked_international_transfer_usd": 1000000.00,
+      "blocked_funds_mdl": 25210256.15,
+      "extortion_administrative_fees_mdl": 1168.00,
+      "additional_operational_expenses_mdl": 50000.00,
+      "description": "Actual direct material losses resulting from unlawful asset freezing, bureaucratic extortion (stamp duties, physical apostilles), and systemic identity collision created by transliteration errors."
+    },
+    "lucrum_cessans": {
+      "estimated_lost_yield_mdl": 5000000.00,
+      "description": "Loss of economic opportunity, investment yield, and commercial utilization of capital during the unlawful retention period (2023-2026)."
+    }
+  },
+  "restitution_mechanism": [
+    "Immediate unfreezing and direct crediting of accounts at FinComBank S.A. and Victoriabank linked to IDNP 2000001159655.",
+    "Full indemnification of Damnum Emergens and Lucrum Cessans under Erga Omnes execution.",
+    "Official nullification of administrative barriers (stamp duties, physical apostille demands) in accordance with Art. 4 of the Constitution of RM."
+  ]
+}

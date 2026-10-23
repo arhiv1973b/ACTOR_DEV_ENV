@@ -1,0 +1,12 @@
+{
+  "tracking_id": "608920260403",
+  "type": "Official Dispatch & Registration Identifier",
+  "timestamp_anchor": "2026-04-03 / 2026-09-21",
+  "status": "REGISTERED_AND_ANCHORED",
+  "context": "Integration into TI-ULA Framework for tracking submissions, apostilles, and administrative filings relating to Case No. 1-568/98 and Erga Omnes restitution.",
+  "associated_vectors": [
+    "NODE_JUS_COGENS_LITERAL_CORRECTOR_2026",
+    "FORGERY_CONTRADICTION_LOG_2026",
+    "TI_ULA_JUS_COGENS_EVIDENCE_MANIFEST_2026"
+  ]
+}

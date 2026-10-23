@@ -1,0 +1,8 @@
+{
+  "name": "gcp_bucket_connector",
+  "path": "F:\\GCS_Cloud_Drive\\bucket_shared",
+  "type": "gcs_bucket",
+  "created_at": "2026-09-08T13:28:16.233146",
+  "status": "active",
+  "sha256": "8da29e3d96280ec4c2882d2aef16fbd059b9d9159a9947750ddf454467b693b0"
+}

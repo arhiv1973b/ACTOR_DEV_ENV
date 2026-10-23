@@ -1,0 +1,11 @@
+{
+  "agent": "Agent_Evidence_Crosschecker",
+  "status": "VERIFIED",
+  "draft_sha256": "bcbc6f59161951ac3374d77733db3baf2672051532d45a0389f427a3259e9d8f",
+  "referenced_cases": [
+    "1-272/2003",
+    "1-28/11",
+    "1-989/06"
+  ],
+  "timestamp": "2026-09-08T18:18:21.450796"
+}

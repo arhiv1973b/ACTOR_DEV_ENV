@@ -1,0 +1,21 @@
+{
+  "agents": {
+    "bridge_logger": {
+      "status": "ok",
+      "msg": "alive"
+    },
+    "orchestrator": {
+      "status": "ok",
+      "msg": "running",
+      "last_update": "2026-06-21T20:36:48.155185+00:00"
+    },
+    "legal_agent": {
+      "status": "ok",
+      "msg": "Legal agent alive",
+      "last_update": "2026-06-21T22:35:16.844176Z"
+    }
+  },
+  "bridge_logger": {
+    "last_update": "2026-06-21T22:35:26.941630Z"
+  }
+}

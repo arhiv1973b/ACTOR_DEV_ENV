@@ -1,0 +1,12 @@
+{
+  "title": "Recipient Status Diff Timeline",
+  "query": "MATCH (r:Recipient)-[:HAS_STATUS|PREVIOUS_STATUS*]->(s:DeliveryStatus)\n            RETURN r.name AS Recipient, r.email AS Email,\n                   s.sent AS Sent, s.delivered AS Delivered,\n                   s.acknowledged AS Acknowledged, s.checked_at AS CheckedAt\n            ORDER BY s.checked_at ASC",
+  "visualization": {
+    "type": "timeline",
+    "entity": "DeliveryStatus",
+    "timeField": "CheckedAt",
+    "groupBy": "Recipient",
+    "labelFields": ["Sent","Delivered","Acknowledged"],
+    "diffHighlight": true
+  }
+}

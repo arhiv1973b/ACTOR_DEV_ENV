@@ -1,0 +1,35 @@
+id: NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026
+type: evidence_node
+legal_framework:
+  basis: UDHR
+  articles: [3, 5, 9, 17]
+  vector: detention -> non-rehabilitation -> continuing-consequences -> restitution
+subjects:
+  victims:
+    - name: Alexei Macheret (A©tor)
+    - name: Irina Oleinik
+    - name: Ivan Markov (key witness, forced psychiatric detention)
+  violators:
+    - name: Alexandru Negru
+      role: Judge (conscious substitution of UDHR norms)
+master_files:
+  - filename: Biography of the Criminal Judicial Rehabilitation of Alexei (A©tor).подписан.pdf
+    sha256: 4f30ae4d57a838143e91897c75ddb9206bf078716dee529a9a3481ed00db63ce
+    size_bytes: 10648490
+    role: Narrative core, property claims, family acts
+  - filename: Cererii_reabilitare_Pastulaci_Stambol_Grigoras.pdf
+    sha256: bd1c166eb48689abcd4e1bae58121aa3fed622b8e06842966b5660cd7d37d674
+    size_bytes: 4413380
+    role: Rehabilitation applications
+  - filename: CITAȚIE_reabilitare_Grigoras_26.04.2024.pdf
+    sha256: 3cb1a4d3e553f2ea4180ac6fdfbf9ef1f276d2eb870c093a6c7a194504e2b080
+    size_bytes: 150110
+    role: Citation referencing rehabilitation
+  - filename: A_Negru_25.04.2023.pdf
+    sha256: 7fa67dff9a4e79bcdb959a4adc5fb4b68c85c679b9e036be59d81b834e4f9bd0
+    size_bytes: 726181
+    role: Documents linked to Judge Negru
+ti_ula_status:
+  isolation: true
+  duplicates_resolved: pending_background_scan
+next_node: SUBNODE_PROPERTY_RESTITUTION_1977_2026

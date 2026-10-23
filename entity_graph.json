@@ -1,0 +1,15 @@
+{
+    "node_id": "AUTONOMOUS_NODE_WH_FUNDS_ORIGIN",
+    "node_type": "PRIMARY_TRANSACTION_PAYLOAD",
+    "status": "FUNDS_RECEIVED_AND_ENCRYPTED",
+    "extracted_routing_key": "27672080-84A1-43A2-86BB-0A46BE87AAEF",
+    "transaction_hash_sha256": "15fe46c199209f0f3b4136d925d36773c5879b3c3d1a83d0374c29f22c65c5ca",
+    "amount_linked": "25,210,256.15 MDL",
+    "timeline_correction": {
+        "origin_date": "2025-11-29",
+        "interception_date": "2026-04-03",
+        "interception_actor": "FinComBank / Moldindconbank",
+        "modus_operandi": "Theft of origin funds, masking the tail"
+    },
+    "legal_basis": "UDHR Art. 8 - Satisfaction Payload"
+}

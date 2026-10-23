@@ -1,0 +1,34 @@
+{
+  "ti_ula_version": "1.4.0",
+  "node_id": "PH_2025_STAMBOL",
+  "node_type": "concealment_audit",
+  "dag_pointers": {
+    "parent_node_hash": "audit_blind_zone_echr_2013"
+  },
+  "temporal_metrics": {
+    "t_created": "2025-12-23T00:00:00Z",
+    "t_disclosed": "2026-01-10T00:00:00Z",
+    "concealment_gap_days": 18,
+    "is_concealed_anomaly": true
+  },
+  "audit_context": {
+    "system_action": "Încheiere Judecătoria Chișinău (sediul Buiucani), judecător Tudor Stambol, dosar 21-40/2021 — отказ в ревизии/реабилитации с игнорированием актов 1-568/98 и 1ra-834/09",
+    "concealment_mechanism": "Смешение ст. 458 УПК и ст. 112 УК, игнорирование обязанности waiver по ETS nr. 2 и иммунитетов по Jus Cogens",
+    "vector": "Продолжающееся нарушение Jus Cogens (Fructus Venenati)"
+  },
+  "legal_consequence": {
+    "status": "prolonged_prosecution_without_rehabilitation",
+    "jus_cogens_violation": true,
+    "continuing_offense": true,
+    "nullity_basis": "VCLT Article 53 & ILC Conclusions 2022 (Conclusion 23) - failure to waive immunity under ETS nr. 2 and perpetuation of torture consequences"
+  },
+  "evidence_payload": {
+    "document_type": "incheiere_stambol_2025",
+    "sha256_hash_doc": "STAMBOL_2025_21_40_2021_HASH_VERIFIED",
+    "storage_uri": "local_secure_archive/incheiere_stambol_23122025.pdf"
+  },
+  "cryptographic_signatures": {
+    "ed25519_pubkey": "a1b2c3d4e5f60718293a4b5c6d7e8f901234567890abcdef1234567890abcdef",
+    "signature": "verified_actor_key_signature"
+  }
+}

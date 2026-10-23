@@ -1,0 +1,142 @@
+name: Publish Docker Image
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Extract metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository }}/maceret-case-evidence
+          tags: |
+            type=ref,event=branch
+            type=raw,value=latest
+            type=raw,value={{date 'YYYY-MM-DD'}}
+
+      - name: Build and Push
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Get SHA-256 Digest
+        run: |
+          echo "## Docker Image Digest" >> $GITHUB_STEP_SUMMARY
+          echo "Latest: \`ghcr.io/${{ github.repository }}/maceret-case-evidence@sha256:$(docker manifest inspect ghcr.io/${{ github.repository }}/maceret-case-evidence:latest | grep digest | head -1 | cut -d' ' -f2)\`" >> $GITHUB_STEP_SUMMARY
+          echo "Date tag: \`ghcr.io/${{ github.repository }}/maceret-case-evidence:$(date +%Y-%m-%d)@sha256:$(docker manifest inspect ghcr.io/${{ github.repository }}/maceret-case-evidence:$(date +%Y-%m-%d) | grep digest | head -1 | cut -d' ' -f2)\`" >> $GITHUB_STEP_SUMMARY
+          echo "Full digest for court:" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
+          docker manifest inspect ghcr.io/${{ github.repository }}/maceret-case-evidence:latest | grep digest | head -1 | cut -d' ' -f2 >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
+
+      - name: Save Digest to File
+        run: |
+          DIGEST=$(docker manifest inspect ghcr.io/${{ github.repository }}/maceret-case-evidence:latest | grep digest | head -1 | cut -d' ' -f2)
+          DATE=$(date +%Y-%m-%d)
+          TIME=$(date +%H:%M:%S)
+          COMMIT_SHA=${{ github.sha }}
+
+          cat > DIGEST.txt << EOF
+          ================================================================================
+                              COURT EVIDENCE DIGEST RECORD
+                                      OFFICIAL DOCUMENT
+          ================================================================================
+
+          Document ID:      DIGEST-$DATE-$TIME
+          Document Type:    SHA-256 Cryptographic Digest Verification Record
+          Case:             MACERET CASE EVIDENCE
+
+          Generation Details:
+            - Generated:       $DATE at $TIME (UTC)
+            - Repository:      ${{ github.repository }}
+            - Commit SHA:       $COMMIT_SHA
+            - Workflow Run:     https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            - Actor:            ${{ github.actor }}
+
+          ================================================================================
+                                      IMAGE DETAILS
+          ================================================================================
+
+          Image Name (latest):    ghcr.io/${{ github.repository }}/maceret-case-evidence:latest
+          Image Name (dated):     ghcr.io/${{ github.repository }}/maceret-case-evidence:$DATE
+
+          SHA-256 Digest:         $DIGEST
+
+          Full Reference:         ghcr.io/${{ github.repository }}/maceret-case-evidence@sha256:$DIGEST
+
+          ================================================================================
+                                  VERIFICATION INSTRUCTIONS
+          ================================================================================
+
+          NOTARIAL VERIFICATION BLOCK
+          ----------------------------
+          PURPOSE: Verify that the Docker image matches this digest record.
+
+          Step 1. Pull image by digest:
+            $> docker pull ghcr.io/${{ github.repository }}/maceret-case-evidence@sha256:$DIGEST
+
+          Step 2. Extract current digest:
+            $> docker manifest inspect ghcr.io/${{ github.repository }}/maceret-case-evidence:latest \
+                | grep -oP 'sha256:[a-f0-9]+'
+
+          Step 3. Compare:
+            The digest from Step 2 MUST be identical to:
+            $DIGEST
+            
+          RESULT:
+            If digests match: AUTHENTICITY CONFIRMED
+            If digests differ: AUTHENTICITY COMPROMISED
+
+          ================================================================================
+                                      LEGAL NOTICE
+          ================================================================================
+
+          This document constitutes a cryptographic proof of the exact state of the Docker
+          evidence container at the time of its last build and deployment to GHCR.
+
+          The SHA-256 digest is a one-way cryptographic hash that uniquely identifies
+          the image content. Any modification to the image will result in a different
+          digest, making this record suitable for forensic and legal verification.
+
+          This digest record may serve as evidence under:
+            - UN Charter, Article 92-96 (International Court of Justice)
+            - ICJ Statute, Article 34 (submission by states) and Article 38 (sources of law)
+            - EU GDPR (data integrity verification)
+            - ECHR Article 34 (right to individual petition)
+            - Federal Rules of Evidence (Rule 901(b)(4) - distinctive characteristics)
+            - Best evidence rule (authentication of electronic records)
+
+          This record was generated automatically by GitHub Actions automated system.
+          No manual modifications are applied to ensure integrity and Chain of custody.
+
+          ================================================================================
+          System: GitHub Actions Automated Verification System
+          Status: DIGEST RECORDED
+          ================================================================================
+          EOF
+
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add DIGEST.txt
+          git commit -m "Update DIGEST.txt [skip ci]" || echo "No changes to commit"
+          git push

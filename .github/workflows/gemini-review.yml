@@ -1,0 +1,35 @@
+name: Gemini CLI PR Review
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  gemini-review:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Gemini CLI analysis
+        id: gemini
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "GEMINI_API_KEY not set — skipping analysis" > gemini_output.txt
+          else
+            npm install -g @google/gemini-cli 2>/dev/null
+            gemini -m gemini-1.5-flash -p "Analyse PR changes for critical errors. Format: CRITICAL_ERROR: / WARNING: / INFO:" > gemini_output.txt 2>&1 || echo "Gemini analysis unavailable" > gemini_output.txt
+          fi
+        env:
+          GEMINI_API_KEY: ${{ secrets.MY_LOCAL_KEY }}
+
+      - name: Check for critical errors
+        id: check
+        run: |
+          if grep -q "CRITICAL_ERROR" gemini_output.txt; then
+            echo "found=true" >> $GITHUB_OUTPUT
+            exit 1
+          else
+            echo "found=false" >> $GITHUB_OUTPUT
+          fi

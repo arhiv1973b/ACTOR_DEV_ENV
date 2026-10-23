@@ -1,0 +1,12 @@
+{
+  "title": "Forensic Anchor: Corrected Transaction c99741 Model",
+  "case": "MACHERET-1997-2026",
+  "transaction_hash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+  "amount_mdl": 25210256.15,
+  "sender": "FinComBank S.A.",
+  "receiver": "Moldindconbank S.A.",
+  "wallet_token": "MD-APPLEPAY-6089-20260403",
+  "integrity_lock": "AIPS-2025",
+  "status": "VERIFIED_TRANSACTION_FIELDS",
+  "description": "Updated DAG registration for Apple Wallet transaction c99741 separating operational transaction fields from fund source claims."
+}

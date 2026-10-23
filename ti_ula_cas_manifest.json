@@ -1,0 +1,100 @@
+{
+    "$schema": "https://actor.schema/v1/cas-api",
+    "meta": {
+        "repository": "arhiv1973b/maceret-case-evidence",
+        "timestamp": "2026-05-24T17:37:07.412939Z",
+        "description": "API-индекс доказательной базы. Файлы хранятся по их SHA-256 хэшам без расширения. Этот манифест связывает хэш с метаданными.",
+        "version": "1.0",
+        "security_marker": "A©t0r"
+    },
+    "verified_facts_summary": [
+        "1. Антропонимическая идентичность: MACERET и MACHERET — одно лицо (Институт Филологии).",
+        "2. Умышленный подлог 1997 г.: Искажение фамилии Maceret -> Maciret (Суд сек. Центр).",
+        "3. Инвалидность I группы: Пожизненно, вследствие пыток 1997-2003 (Сертификат от 05.04.2021).",
+        "4. Финансовый саботаж: Блокировка активов (FinComBank: 25.2M MDL, Moldindconbank).",
+        "5. Международная регистрация: ООН OHCHR (tw571ryb, 2026), ЕКПП (2012), Меморандум США (2025).",
+        "6. Конституционный прецедент: Ст. 361 ч.2 УК РМ признана неконституционной (Пост. № 12, 2018)."
+    ],
+    "cas_objects": [
+        {
+            "hash": "fa707ba540ef04917b7e1329ceed7e05faa20141bd34beb715096ccaad9d6aea",
+            "object_name": "fa707ba540ef04917b7e1329ceed7e05faa20141bd34beb715096ccaad9d6aea",
+            "original_name": "Искажение Фамилии из Мачкпкт в Макеирет.signed.pdf",
+            "doc_id": "Decizie_1997_Identity_Distortion",
+            "extension": ".pdf",
+            "mime_type": "application/pdf",
+            "description": "Судебное решение от 06.08.1997 (судья C. P. Ciachir). Фиксация умышленного искажения фамилии Maceret -> Maciret.",
+            "github_raw_url": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/fa707ba540ef04917b7e1329ceed7e05faa20141bd34beb715096ccaad9d6aea"
+        },
+        {
+            "hash": "f35fccc97c503cd856f2142dfc63a4210a06dca2d76339181036ba7a28845a96",
+            "object_name": "f35fccc97c503cd856f2142dfc63a4210a06dca2d76339181036ba7a28845a96",
+            "original_name": "ЕКПП.pdf",
+            "doc_id": "CPT_Response_2012",
+            "extension": ".pdf",
+            "mime_type": "application/pdf",
+            "description": "Официальный ответ Комитета против пыток Совета Европы (Страсбург, 18.07.2012) по делу Алексея Мачерета.",
+            "github_raw_url": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/f35fccc97c503cd856f2142dfc63a4210a06dca2d76339181036ba7a28845a96"
+        },
+        {
+            "hash": "1371a4e006f7d8eef086813d6fc0fe9ab3100084cf9398080dfe19c09dcd6117",
+            "object_name": "1371a4e006f7d8eef086813d6fc0fe9ab3100084cf9398080dfe19c09dcd6117",
+            "original_name": "361. ч.2 2.pdf",
+            "doc_id": "Constitutional_Court_HCC_12_2018",
+            "extension": ".pdf",
+            "mime_type": "application/pdf",
+            "description": "Решение Конституционного Суда РМ № 12 от 14.05.2018 (неконституционность ст. 361 ч.2) и Отказ ASP № 1476.",
+            "github_raw_url": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/1371a4e006f7d8eef086813d6fc0fe9ab3100084cf9398080dfe19c09dcd6117"
+        },
+        {
+            "hash": "81502bc3aa7e34e2c5fd95a122e9ece007000fd2d514d2f5eea0d64e30f3cb64",
+            "object_name": "81502bc3aa7e34e2c5fd95a122e9ece007000fd2d514d2f5eea0d64e30f3cb64",
+            "original_name": "инвалидное пожизненое первая группа.pdf",
+            "doc_id": "Disability_Certificate_Group1_Lifelong",
+            "extension": ".pdf",
+            "mime_type": "application/pdf",
+            "description": "Сертификат о тяжелой инвалидности I группы (пожизненно), выдан 05.04.2021 (следствие пыток). IDNP 2000001159655.",
+            "github_raw_url": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/81502bc3aa7e34e2c5fd95a122e9ece007000fd2d514d2f5eea0d64e30f3cb64"
+        },
+        {
+            "hash": "ede4faaa6c141c150bbd65d94290691b5f7f5e558dcd28297e8d752456452af6",
+            "object_name": "ede4faaa6c141c150bbd65d94290691b5f7f5e558dcd28297e8d752456452af6",
+            "original_name": "20260414161753960.pdf",
+            "doc_id": "Moldindconbank_Statement_2026",
+            "extension": ".pdf",
+            "mime_type": "application/pdf",
+            "description": "Банковская выписка BC Moldindconbank S.A. от 14.04.2026 (блокировка счетов, IDNP 2000001159655).",
+            "github_raw_url": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/ede4faaa6c141c150bbd65d94290691b5f7f5e558dcd28297e8d752456452af6"
+        },
+        {
+            "hash": "79fd8f114e781c03864d89c9d42d19ab0ca0582818fc6a3c36d11761d2935a40",
+            "object_name": "79fd8f114e781c03864d89c9d42d19ab0ca0582818fc6a3c36d11761d2935a40",
+            "original_name": "UN file.pdf",
+            "doc_id": "UN_OHCHR_Submission_tw571ryb_2026",
+            "extension": ".pdf",
+            "mime_type": "application/pdf",
+            "description": "Официальная жалоба в Специальные процедуры ООН (OHCHR) от 03.05.2026, Ref: tw571ryb.",
+            "github_raw_url": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/79fd8f114e781c03864d89c9d42d19ab0ca0582818fc6a3c36d11761d2935a40"
+        },
+        {
+            "hash": "b7d3eddbc4c91dcfde961d136d0b4eb7d9ff4dc42f70271c5384564d130e8025",
+            "object_name": "b7d3eddbc4c91dcfde961d136d0b4eb7d9ff4dc42f70271c5384564d130e8025",
+            "original_name": "Президент USA.pdf",
+            "doc_id": "Presidential_Memorandum_Trump_2025",
+            "extension": ".pdf",
+            "mime_type": "application/pdf",
+            "description": "Меморандум Д. Трампу в рамках Протокола ClosedProtocol/TI-ULA (Jus Cogens, Erga Omnes).",
+            "github_raw_url": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/b7d3eddbc4c91dcfde961d136d0b4eb7d9ff4dc42f70271c5384564d130e8025"
+        },
+        {
+            "hash": "2d40f09c87942a2f3ec231f80cfe4787ca230242d6af0dc8d681b54476bc2042",
+            "object_name": "2d40f09c87942a2f3ec231f80cfe4787ca230242d6af0dc8d681b54476bc2042",
+            "original_name": "apostille_registry_working.signed.pdf",
+            "doc_id": "Apostille_Registry_97_Records",
+            "extension": ".pdf",
+            "mime_type": "application/pdf",
+            "description": "Реестр 97 рабочих апостилей (аудит на соответствие Статье 5 Гаагской Конвенции).",
+            "github_raw_url": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/2d40f09c87942a2f3ec231f80cfe4787ca230242d6af0dc8d681b54476bc2042"
+        }
+    ]
+}

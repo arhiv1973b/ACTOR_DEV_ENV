@@ -1,0 +1,60 @@
+metadata:
+  file_type: UNCAT_1984_CORE
+  authenticity_verification: HARMONIZED_ARTICLE_85_VCLT
+  project_projection: CASE-MACHERET-1997-2026
+quantum_weights_1_to_9:
+  description: Абсолютный запрет пыток (UNCAT Art. 2.2). Квантовая суперпозиция исключает
+    любые оправдания.
+  weight_1:
+    qubit_value: 0.111111
+    principle: No exceptional circumstances whatsoever (war, political instability)
+      may be invoked.
+    status: SUPERPOSITION_ACTIVE
+  weight_2:
+    qubit_value: 0.111111
+    principle: An order from a superior officer or a public authority may not be invoked
+      as a justification.
+    status: SUPERPOSITION_ACTIVE
+  weight_3:
+    qubit_value: 0.111111
+    principle: Non-refoulement obligation (Art. 3)
+    status: SUPERPOSITION_ACTIVE
+  weight_4:
+    qubit_value: 0.111111
+    principle: Criminalization of torture in domestic law (Art. 4)
+    status: SUPERPOSITION_ACTIVE
+  weight_5:
+    qubit_value: 0.111111
+    principle: Universal jurisdiction & custody measures (Art. 5-6)
+    status: SUPERPOSITION_ACTIVE
+  weight_6:
+    qubit_value: 0.111111
+    principle: Extradition obligations or prosecution (Art. 7-8)
+    status: SUPERPOSITION_ACTIVE
+  weight_7:
+    qubit_value: 0.111111
+    principle: Mutual judicial assistance (Art. 9)
+    status: SUPERPOSITION_ACTIVE
+  weight_8:
+    qubit_value: 0.111111
+    principle: Education and training prohibition integration (Art. 10-11)
+    status: SUPERPOSITION_ACTIVE
+  weight_9:
+    qubit_value: 0.111111
+    principle: Inadmissibility of evidence obtained under torture (Art. 15)
+    status: SUPERPOSITION_ACTIVE
+imperative_layer_10_plus:
+  description: Механизмы исполнения и восстановления (Jus Cogens nullifier)
+  norms:
+  - id: 10
+    article: UNCAT Article 12
+    norm: Prompt and impartial investigation wherever there is reasonable ground to
+      believe an act of torture has been committed.
+  - id: 11
+    article: UNCAT Article 13
+    norm: Right to complain to, and to have the case promptly and impartially examined
+      by, competent authorities with whistleblower protection.
+  - id: 12
+    article: UNCAT Article 14
+    norm: Enforceable right to fair and adequate compensation, including the means
+      for as full rehabilitation as possible.

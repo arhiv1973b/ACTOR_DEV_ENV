@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "file_type": "UNCAT_1984_CORE_FR",
+    "authenticity_verification": "HARMONIZED_ARTICLE_85_VCLT"
+  },
+  "quantum_weights_1_to_9": {
+    "description": "Interdiction absolue de la torture (Art. 2.2).",
+    "weight_1": {
+      "qubit_value": 0.111111,
+      "principle": "Aucune circonstance exceptionnelle ne peut être invoquée.",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_2": {
+      "qubit_value": 0.111111,
+      "principle": "Un ordre d'un supérieur ne peut servir de justification.",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_3": {
+      "qubit_value": 0.111111,
+      "principle": "Obligation de non-refoulement (Art. 3)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_4": {
+      "qubit_value": 0.111111,
+      "principle": "Inrimination de la torture (Art. 4)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_5": {
+      "qubit_value": 0.111111,
+      "principle": "Juridiction universelle (Art. 5-6)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_6": {
+      "qubit_value": 0.111111,
+      "principle": "Extradition ou poursuite (Art. 7-8)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_7": {
+      "qubit_value": 0.111111,
+      "principle": "Entraide judiciaire (Art. 9)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_8": {
+      "qubit_value": 0.111111,
+      "principle": "Formation et éducation (Art. 10-11)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_9": {
+      "qubit_value": 0.111111,
+      "principle": "Irrecevabilité des aveux sous la torture (Art. 15)",
+      "status": "SUPERPOSITION_ACTIVE"
+    }
+  },
+  "imperative_layer_10_plus": {
+    "norms": [
+      {
+        "id": 10,
+        "article": "Art. 12",
+        "norm": "Enquête rapide et impartiale."
+      },
+      {
+        "id": 11,
+        "article": "Art. 13",
+        "norm": "Droit de plainte et protection des témoins."
+      },
+      {
+        "id": 12,
+        "article": "Art. 14",
+        "norm": "Droit à réparation équitable et réhabilitation."
+      }
+    ]
+  }
+}

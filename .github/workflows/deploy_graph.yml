@@ -1,0 +1,63 @@
+name: Deploy TI-ULA Evidence Graph
+
+on:
+  push:
+    branches:
+      - master
+      - temp-audit-remote-master
+    paths:
+      - 'registry_chunks/**'
+      - 'build_visual_graph.py'
+      - '.github/workflows/deploy_graph.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write  # Права write нужны для создания релизов (gh release create)
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build Visual Graph
+        run: |
+          python build_visual_graph.py
+          mkdir -p public_html
+          cp evidence_map.html public_html/index.html
+
+      - name: Snapshot to GitHub Releases (DAG Integration)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TIMESTAMP=$(date +'%Y%m%d-%H%M%S')
+          gh release create "evidence-snapshot-$TIMESTAMP" public_html/index.html --title "TI-ULA Graph Snapshot $TIMESTAMP" --notes "Automated forensic graph snapshot from branch temp-audit-remote-master. Legal Foundation: Jus Cogens."
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'public_html'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,30 @@
+{
+  "ti_ula_version": "1.4.0",
+  "node_id": "audit_property_family_violation_2005_2009",
+  "node_type": "concealment_audit",
+  "dag_pointers": {
+    "parent_node_hash": "audit_system_silence_1997_2002"
+  },
+  "temporal_metrics": {
+    "t_created": "2005-01-01T00:00:00Z",
+    "t_disclosed": "2021-02-11T00:00:00Z",
+    "concealment_gap_days": 5889,
+    "is_concealed_anomaly": true
+  },
+  "audit_context": {
+    "system_action": "Конфискация квартир, разрушение семейных прав и материального базиса потерпевшего",
+    "concealment_mechanism": "Использование имущественных репрессий как внесудебного продолжения наказания за пытки",
+    "vector": "Нарушение прав семьи и конфискация имущества (2005–2009)"
+  },
+  "evidence_payload": {
+    "document_type": "property_confiscation_record",
+    "sha256_hash_doc": "PENDING_LOCAL_HASH_PROPERTY",
+    "storage_uri": "local_secure_archive/property_violation_2005_2009.pdf"
+  },
+  "legal_consequence": {
+    "status": "prolonged_prosecution_without_rehabilitation",
+    "jus_cogens_violation": true,
+    "continuing_offense": true,
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  }
+}

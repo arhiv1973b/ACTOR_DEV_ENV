@@ -1,0 +1,28 @@
+*
+!index.html
+!app.js
+!manifest.json
+!.gitignore
+!*.css
+!jus-cogens-proof-macheret.html
+!MASTER_TIMELINE_INDEX.html
+!apostille-registry-fixed.html
+!doc-timeline.html
+!evidence-mosaic.html
+!projection-stream.html
+!google-drive-mirror.html
+!forensic-lock-theft-evidence.html
+!evidence-roadmap.html
+!lang.js
+!wrappers/
+!wrappers/*.js
+
+# Облачные ярлыки Google Drive
+*.gdoc
+*.gsheet
+
+
+# Облачные ярлыки Google Drive
+*.gdoc
+*.gsheet
+

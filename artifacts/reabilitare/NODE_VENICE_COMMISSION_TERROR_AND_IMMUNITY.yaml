@@ -1,0 +1,27 @@
+id: NODE_VENICE_COMMISSION_TERROR_AND_IMMUNITY
+type: evidence_node
+parent_nodes:
+  - NODE_ENTITY_ACCOUNTABILITY_NETWORK
+  - NODE_CONTINUING_CONSEQUENCES_1997_2026
+legal_framework:
+  basis: UDHR, Jus Cogens, VCLT (1969) Arts. 53 & 64, UN Convention Against Torture
+  doctrine: "Institutional terror and neo-Nazi bureaucracy: Venice Commission 'Democracy through Law' doctrine, Judge T. Avasiloaie ruling (30.12.2021) shielding CoE/Venice Commission immunities, HUDOC privatization as Supreme Court IP, and physical elimination/murder of key witness Galina Markova to silence Jus Cogens enforcement."
+subjects:
+  victims:
+    - name: Alexei Macheret (A©tor)
+    - name: Galina Markova (Mother and key witness, eliminated)
+  violators:
+    - name: T. Avasiloaie
+      role: Judge - ruling of 30.12.2021 shielding Venice Commission immunities
+    - name: Council of Europe / Venice Commission Apparatus
+      role: Architects of neo-Nazi procedural hegemony
+master_files:
+  - filename: CASE_MACHERET_1997_2026_DOSSIER.md
+    sha256: bcd4927701824031535df4983ffb8c4891d817794a58b39366f27df157fd303a
+    size_bytes: 11298
+    role: Master Legal Dossier incorporating the Venice Commission terror and witness elimination vector.
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

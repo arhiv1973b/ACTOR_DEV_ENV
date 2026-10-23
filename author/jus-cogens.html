@@ -1,0 +1,542 @@
+Here is the raw content:
+Contents of https://arhiv1973b.github.io/apostille-mirror/jus-cogens-proof-macheret.html:
+<!DOCTYPE html>
+<!-- Секретное слово: "База Данных" -->
+<html lang="ru" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUS COGENS = FACTUAL PROOF — CASE MACHERET 1997–2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@600;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════
+   ROOT SYSTEM
+═══════════════════════════════════════════════════════ */
+:root {
+  --bg:       #050a0f;
+  --bg2:      #070e16;
+  --panel:    #060f1a;
+  --panel2:   #071220;
+  --border:   #0c2e4a;
+  --border2:  #103c60;
+  --gold:     #c8960a;
+  --gold2:    #f0c040;
+  --red:      #cc1133;
+  --red2:     #ff2244;
+  --cyan:     #00b8e8;
+  --cyan2:    #40d4ff;
+  --green:    #00d870;
+  --purple:   #9933cc;
+  --purple2:  #bb55ff;
+  --text:     #c0d8ec;
+  --text2:    #8ab0cc;
+  --muted:    #3a6080;
+  --font-mono:  'Share Tech Mono', monospace;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-head:  'Orbitron', sans-serif;
+  --font-body:  'Rajdhani', sans-serif;
+  --r: 4px;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* scanlines */
+body::before {
+  content:''; position:fixed; inset:0; z-index:200; pointer-events:none;
+  background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,184,232,.012) 2px,rgba(0,184,232,.012) 4px);
+}
+/* grid bg */
+body::after {
+  content:''; position:fixed; inset:0; z-index:0; pointer-events:none;
+  background-image: linear-gradient(rgba(0,184,232,.025) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0,184,232,.025) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   LAYOUT
+═══════════════════════════════════════════════════════ */
+.wrap { max-width:1100px; margin:0 auto; padding:24px 20px 80px; position:relative; z-index:1; }
+
+/* ═══════════════════════════════════════════════════════
+   LANGUAGE SWITCHER
+═══════════════════════════════════════════════════════ */
+.lang-bar {
+  position: sticky; top:0; z-index:100;
+  background: rgba(5,10,15,.96);
+  border-bottom: 1px solid var(--border2);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+.lang-btn {
+  padding: 13px 20px;
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--muted);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: color .2s, border-color .2s;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.lang-btn:hover { color: var(--cyan2); }
+.lang-btn.active { color: var(--gold2); border-bottom-color: var(--gold2); }
+.lang-sep {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--border2);
+  padding: 0 4px;
+  pointer-events: none;
+}
+.case-ref {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  white-space: nowrap;
+  padding: 0 0 0 16px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   LANGUAGE PANELS
+═══════════════════════════════════════════════════════ */
+.lang-panel { display: none; }
+.lang-panel.active { display: block; }
+
+/* ═══════════════════════════════════════════════════════
+   HERO HEADER
+═══════════════════════════════════════════════════════ */
+.hero {
+  margin: 28px 0 24px;
+  padding: 40px 44px;
+  background: linear-gradient(135deg, rgba(12,46,74,.8) 0%, rgba(5,10,15,.9) 60%);
+  border: 1px solid var(--gold);
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+  overflow: hidden;
+}
+.hero::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:3px;
+  background: linear-gradient(90deg, transparent, var(--gold2), transparent);
+}
+.hero::after {
+  content:'';
+  position:absolute; bottom:0; left:0; right:0; height:1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 4vw, 40px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+.hero-title em {
+  color: var(--gold2);
+  font-style: italic;
+}
+.hero-subtitle {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--cyan);
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+.hero-equation {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(200,150,10,.08);
+  border: 1px solid rgba(200,150,10,.3);
+  padding: 12px 22px;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+.eq-part { color: var(--text); }
+.eq-equals { color: var(--gold2); font-size: 22px; }
+.eq-result { color: var(--gold2); font-style: italic; }
+.hero-meta { margin-top: 18px; display:flex; flex-wrap:wrap; gap:8px; }
+
+/* ═══════════════════════════════════════════════════════
+   TAGS
+═══════════════════════════════════════════════════════ */
+.tag {
+  display:inline-block; font-family:var(--font-mono);
+  font-size:10px; padding:3px 9px; letter-spacing:1px; font-weight:700;
+}
+.tg { background:rgba(0,184,232,.1); border:1px solid rgba(0,184,232,.28); color:var(--cyan2); }
+.tg-g { background:rgba(0,216,112,.09); border:1px solid rgba(0,216,112,.26); color:var(--green); }
+.tg-r { background:rgba(255,34,68,.1); border:1px solid rgba(255,34,68,.3); color:var(--red2); }
+.tg-y { background:rgba(240,192,64,.1); border:1px solid rgba(240,192,64,.28); color:var(--gold2); }
+.tg-p { background:rgba(187,85,255,.1); border:1px solid rgba(187,85,255,.28); color:var(--purple2); }
+.tg-x { background:rgba(255,255,255,.05); border:1px solid var(--border); color:var(--text2); }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION HEADING
+═══════════════════════════════════════════════════════ */
+.sec-hd {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 36px 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.sec-num {
+  font-family: var(--font-head);
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 2px;
+  background: rgba(200,150,10,.1);
+  border: 1px solid rgba(200,150,10,.25);
+  padding: 3px 10px;
+  flex-shrink: 0;
+}
+.sec-title {
+  font-family: var(--font-serif);
+  font-size: clamp(16px, 2.5vw, 22px);
+  font-weight: 700;
+  color: #fff;
+}
+.sec-title em { color: var(--gold2); font-style: italic; }
+
+/* ═══════════════════════════════════════════════════════
+   PROOF CHAIN
+═══════════════════════════════════════════════════════ */
+.proof-chain {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 20px 0;
+  position: relative;
+  padding-left: 36px;
+}
+.proof-chain::before {
+  content:'';
+  position:absolute; left:14px; top:20px; bottom:20px;
+  width:3px;
+  background: linear-gradient(180deg, var(--gold2), var(--red2), var(--purple2));
+  opacity:.6;
+}
+.proof-step {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 18px 20px;
+  margin-bottom: 2px;
+  transition: border-color .2s;
+}
+.proof-step:hover { border-color: var(--border2); }
+
+.proof-step::before {
+  content: attr(data-num);
+  position: absolute;
+  left: -36px; top: 50%; transform: translateY(-50%);
+  width: 26px; height: 26px;
+  background: var(--gold);
+  color: #000;
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 700;
+  display: flex; align-items:center; justify-content:center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.proof-step[data-color="red"]::before   { background:var(--red2); color:#fff; }
+.proof-step[data-color="cyan"]::before  { background:var(--cyan); color:#000; }
+.proof-step[data-color="purple"]::before{ background:var(--purple2); color:#000; }
+.proof-step[data-color="green"]::before { background:var(--green); color:#000; }
+
+.proof-step-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+.proof-step[data-color="red"] .proof-step-label   { color:var(--red2); }
+.proof-step[data-color="cyan"] .proof-step-label  { color:var(--cyan); }
+.proof-step[data-color="purple"] .proof-step-label{ color:var(--purple2); }
+.proof-step[data-color="green"] .proof-step-label { color:var(--green); }
+
+.proof-step-title {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+.proof-step-body {
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.65;
+}
+.proof-step-body strong { color: var(--text); }
+.proof-step-body em { color: var(--gold2); font-style: normal; font-weight: 600; }
+
+.proof-arrow {
+  text-align: center;
+  font-size: 20px;
+  color: var(--gold);
+  opacity: .5;
+  line-height: 1;
+  padding: 4px 0;
+  position: relative;
+  left: 0;
+}
+
+/* ═══════════════════════════════════════════════════════
+   EVIDENCE CARDS
+═══════════════════════════════════════════════════════ */
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+.ev-card {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  padding: 16px 18px;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+.ev-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity:.5;
+}
+.ev-card-icon { font-size:22px; margin-bottom:8px; }
+.ev-card-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.ev-card-body {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.6;
+}
+.ev-card-body strong { color: var(--text); }
+.ev-card-body .num {
+  font-family: var(--font-head);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--red2);
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+  text-shadow: 0 0 20px rgba(255,34,68,.4);
+}
+
+/* ═══════════════════════════════════════════════════════
+   VERDICT BLOCK
+═══════════════════════════════════════════════════════ */
+.verdict {
+  border: 2px solid var(--gold);
+  background: rgba(200,150,10,.07);
+  padding: 28px 32px;
+  margin: 28px 0;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+}
+.verdict::before {
+  content: 'CONCLUSION / ВЫВОД / CONCLUZIE / CONCLUSION';
+  font-family: var(--font-mono); font-size: 9px;
+  color: var(--gold); letter-spacing: 2px;
+  position: absolute; top: 8px; left: 16px;
+}
+.verdict-title {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: 900;
+  color: var(--gold2);
+  margin: 12px 0 14px;
+  line-height: 1.25;
+}
+.verdict-body {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.75;
+}
+.verdict-body strong { color: var(--gold2); }
+.verdict-body em { color: var(--red2); font-style: normal; font-weight: 600; }
+
+/* ═══════════════════════════════════════════════════════
+   BUTTON SYSTEM
+═══════════════════════════════════════════════════════ */
+.btn-row { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0; }
+.btn {
+  display:inline-flex; align-items:center; gap:7px;
+  padding:10px 20px;
+  font-family:var(--font-body); font-size:13px;
+  font-weight:700; letter-spacing:1.5px;
+  text-transform:uppercase; text-decoration:none;
+  border:none; cursor:pointer;
+  transition:all .18s ease;
+  position:relative; overflow:hidden;
+  white-space:nowrap;
+}
+.btn-gold { background:linear-gradient(135deg,#5a3800,#c8960a); color:#000; clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%); }
+.btn-red { background:linear-gradient(135deg,#660018,#ff2244); color:#fff; clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%); }
+.btn-cyan { background:linear-gradient(135deg,#003355,#00b8e8); color:#000; clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%); }
+.btn-ghost { background:transparent; color:var(--cyan2); border:1px solid rgba(0,184,232,.3); }
+
+.div { height:1px; background:linear-gradient(90deg,transparent,var(--border2),transparent); margin:28px 0; }
+.footer {
+  margin-top:48px; padding:18px 20px; border-top:1px solid var(--border);
+  display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:center;
+  font-family:var(--font-mono); font-size:10px; color:var(--muted); letter-spacing:1px;
+}
+.footer a { color:var(--cyan); text-decoration:none; }
+</style>
+<!-- Portal OpenGraph metadata -->
+<meta name="description" content="Evidence portal — Case Maceret 1997–2026">
+<meta property="og:title" content="Case Maceret — Evidence Portal">
+<meta property="og:description" content="Evidence portal — Case Maceret 1997–2026">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arhiv1973b.github.io/apostille-mirror/">
+<meta name="twitter:card" content="summary_large_image">
+<!-- End Portal OpenGraph metadata -->
+<link rel="stylesheet" href="/portal-global.css"></head>
+<body>
+<div style="position:fixed;top:8px;right:8px;z-index:9999;font-family:var(--font-mono);">
+  <a href="EVIDENCE_CATALOG.md" style="background:var(--cyan);color:#001;padding:6px 10px;border-radius:4px;text-decoration:none;margin-right:8px;">📂 Evidence Catalog</a>
+  <a href='https://arhiv1973b.github.io/apostille-mirror/' style="background:var(--gold);color:#001;padding:6px 10px;border-radius:4px;text-decoration:none;">← Portal</a>
+</div>
+<!-- A©TOR NAVIGATOR v3.0-SECURE [STABILIZED TDCH-3] -->
+<nav id="actor-navigator" style="background:#070e16; border-bottom:2px solid #b8960c; padding:12px 20px; font-family:'Courier New', monospace; display:flex; justify-content:space-between; align-items:center; box-shadow:0 4px 20px rgba(0,0,0,0.5); position: sticky; top: 0; z-index: 9999;">
+  <div style="display:flex; align-items:center; gap:15px;">
+    <span style="color:#f0c040; font-weight:bold; letter-spacing:1px;">⚖️ A©t0r Integrity Engine v6.9</span>
+    <span style="color:#666;">|</span>
+    <span style="color:#d4cfc7; font-size:12px;">CONTOUR: <strong style="color:#ff4444;">H:\ACTOR_DEV_ENV</strong></span>
+  </div>
+  <div style="display:flex; gap:12px; font-size:12px;">
+    <a href='https://arhiv1973b.github.io/apostille-mirror/' style="color:#ffd700; text-decoration:none; padding:4px 8px; border:1px solid #2a2a2e; background:#111114;">[Core Vault]</a>
+    <a href="evidence-roadmap.html" style="color:#e0e0e0; text-decoration:none; padding:4px 8px; border:1px solid #222;">[Roadmap]</a>
+    <a href="jus-cogens-proof-macheret.html" style="color:#e0e0e0; text-decoration:none; padding:4px 8px; border:1px solid #222;">[Jus Cogens]</a>
+    <a href="apostille-registry-fixed.html" style="color:#e0e0e0; text-decoration:none; padding:4px 8px; border:1px solid #222;">[Apostille Registry (90)]</a>
+    <a href="un_contacts_copy_buttons.html" style="color:#4fc3f7; text-decoration:none; padding:4px 8px; border:1px solid #222;">[UN Liaison Contacts]</a>
+  </div>
+  <div style="font-size:11px; color:#ff6644; font-weight:bold; text-align: right; line-height: 1.2;">
+    ⏱️ Свыше 10 000 дней<br>
+    <span style="color:#666; font-size:9px;">(1997-2026) непрерывного удержания контура</span>
+  </div>
+</nav>
+
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="switchLang('ru',this)">🇷🇺 РУССКИЙ</button>
+  <span class="lang-sep">|</span>
+  <button class="lang-btn" onclick="switchLang('ro',this)">🇷🇴 ROMÂNĂ</button>
+  <span class="lang-sep">|</span>
+  <button class="lang-btn" onclick="switchLang('en',this)">🇬🇧 ENGLISH</button>
+  <span class="case-ref">CASE-MACHERET-1997–2026 · JUS COGENS PROOF</span>
+</div>
+
+<div class="wrap">
+
+<!-- ══════════════════════════════════════════════════════════
+     РУССКИЙ
+══════════════════════════════════════════════════════════ -->
+<div class="lang-panel active" id="panel-ru">
+  <div class="hero">
+    <div class="hero-eyebrow">// ДОКАЗАТЕЛЬНЫЙ АКТ — ДЕЛО МАЧЕРЕТ 1997–2026</div>
+    <div class="hero-title">От теории к практике:<br><em>Jus Cogens = Фактическое Доказательство</em></div>
+    <div class="hero-subtitle">ЛОГИКА НОРМЫ БЕЗ СРОКА ДАВНОСТИ · ОТВЕТСТВЕННОСТЬ ERGA OMNES</div>
+    <div class="hero-equation">
+      <span class="eq-part">Jus Cogens</span> <span class="eq-equals">+</span>
+      <span class="eq-part"><span class="num num-auto">10524</span> суток молчания</span> <span class="eq-equals">=</span>
+      <span class="eq-result">Нарушение Erga Omnes</span>
+    </div>
+  </div>
+
+  <div class="sec-hd"><span class="sec-num">§ 03</span><div class="sec-title">Ключевые <em>доказательные факты</em></div></div>
+  <div class="evidence-grid">
+    <div class="ev-card"><div class="ev-card-icon">⏱</div><div class="ev-card-title">ПРОЦЕССУАЛЬНЫЙ ВАКУУМ</div><div class="ev-card-body"><span class="num num-auto">10524</span>суток без расследования. Срок давности отсутствует.</div></div>
+    <div class="ev-card"><div class="ev-card-icon">📂</div><div class="ev-card-title">АПОСТИЛИРОВАННЫЙ АРХИВ</div><div class="ev-card-body"><span class="num">90</span>документов Гаагской конвенции. Апостиль удостоверяет подпись должностного лица.</div></div>
+    <div class="ev-card"><div class="ev-card-icon">🧬</div><div class="ev-card-title">ПОДЛОГ 15.03.2022</div><div class="ev-card-body"><strong>Факт:</strong> Нантой Людмила использовала личность Маркова И.М. для захвата имущества.</div></div>
+  </div>
+
+  <div class="verdict">
+    <div class="verdict-title">Вывод: Jus Cogens = Фактическое доказательство</div>
+    <div class="verdict-body">Институциональная безнаказанность — это не судебная ошибка. Это «рак» правосудия.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     ROMÂNĂ
+══════════════════════════════════════════════════════════ -->
+<div class="lang-panel" id="panel-ro">
+  <div class="hero">
+    <div class="hero-eyebrow">// ACT PROBATOR — CAZUL MACHERET 1997–2026</div>
+    <div class="hero-title">De la teorie la practică:<br><em>Jus Cogens = Dovadă Faptică</em></div>
+    <div class="hero-subtitle">LOGICA NORMEI FĂRĂ PRESCRIPȚIE · RĂSPUNDERE ERGA OMNES</div>
+    <div class="hero-equation">
+      <span class="eq-part">Jus Cogens</span> <span class="eq-equals">+</span>
+      <span class="eq-part"><span class="num num-auto">10524</span> zile de tăcere</span> <span class="eq-equals">=</span>
+      <span class="eq-result">Încălcare Erga Omnes</span>
+    </div>
+  </div>
+
+  <div class="sec-hd"><span class="sec-num">§ 03</span><div class="sec-title">Fapte cheie <em>probatorii</em> — nu afirmații</div></div>
+  <div class="evidence-grid">
+    <div class="ev-card"><div class="ev-card-icon">⏱</div><div class="ev-card-title">VID PROCEDURAL</div><div class="ev-card-body"><span class="num num-auto">10524</span>zile fără investigare. <strong>Prescripția nu există.</strong></div></div>
+    <div class="ev-card"><div class="ev-card-icon">📂</div><div class="ev-card-title">ARHIVĂ APOSTILATĂ</div><div class="ev-card-body"><span class="num">90</span>doc. apostilate. <strong>Apostila atestă semnătura</strong>, nu conținutul — care dovedește eludarea torturii.</div></div>
+    <div class="ev-card"><div class="ev-card-icon">🧬</div><div class="ev-card-title">FALS 15.03.2022</div><div class="ev-card-body"><strong>Fapt:</strong> Nantoi Liudmila a folosit identitatea lui Marcov I.M. <strong>Dovadă:</strong> Expertiza grafologică (Vector 3).</div></div>
+  </div>
+
+  <div class="sec-hd"><span class="sec-num">§ 04</span><div class="sec-title">„Cancerul” justiției: mecanismul <em>impunității</em></div></div>
+  <div class="cancer-diagram">
+     <div class="cancer-row"><div class="cancer-node n-start">TORTURĂ 1997</div><div class="cancer-arrow">→</div><div class="cancer-node n-breach">ÎNCĂLCARE JUS COGENS</div><div class="cancer-arrow">→</div><div class="cancer-node n-silence">TĂCEREA STATULUI</div></div>
+  </div>
+
+  <div class="sec-hd"><span class="sec-num">§ 05</span><div class="sec-title">Cronologie: fiecare dată — <em>un nod probatoriu</em></div></div>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-date">15.03.2022</div><div class="tl-title">Falsul Nantoi</div><div class="tl-body">Punctul final de confiscare a activelor.</div></div>
+    <div class="tl-item highlight"><div class="tl-date">09.04.2026</div><div class="tl-title">DEADLINE JUS COGENS</div><div class="tl-body">Activarea Global Sanction Vector 11.</div></div>
+  </di
+
+<note>Content truncated. Call the fetch tool with a start_index of 20000 to get more content.</note>
+
+<script src='wrappers/portal-enhancements.js'></script>
+
+<!-- PORTAL_FOOTER_START -->
+<div class="portal-footer" style="text-align:center;padding:16px;margin-top:20px;border-top:1px solid #103c60;color:#8ab0cc;font-size:0.85em;font-family:monospace">SHA256: EE952E39D925C6C8604553F7CD82AC6793C60121BF686C8BA2BD94E48FA95AF5 | Verified: ✓ | Updated: 2026-07-04T08:01:15.845266Z</div>
+<!-- PORTAL_FOOTER_END -->
+

@@ -1,0 +1,21 @@
+# UDHR & Article 4 Constitution of Moldova Legal Framework
+# Scope: CASE-MACHERET-1997-2026
+# Primary Legal Basis: Universal Declaration of Human Rights (UDHR) + Art. 4 Constitution of the Republic of Moldova
+
+legal_doctrine:
+  priority_norm: "Article 4 of the Constitution of the Republic of Moldova (Absolute priority of international human rights treaties and standards over domestic legislation)."
+  source_funding: "US White House designated international aid (~$1.4M USD / 25,210,256.15 MDL) for Restitution and Rehabilitation, misrouted and subverted through Moldindconbank and FinComBank."
+  udhr_violations:
+    - article: 3
+      title: "Right to life, liberty, and security of person"
+      infringement: "Systemic torture, institutional terror, and physical/psychological degradation."
+    - article: 5
+      title: "Prohibition of torture and cruel, inhuman, or degrading treatment"
+      infringement: "Deliberate creation of economic strangulation, micro-payments ('AJUTOR SOCIAL' extortion), and deprivation of survival means."
+    - article: 8
+      title: "Right to an effective remedy"
+      infringement: "Judicial denial of access to court, stamp duty extortion (Law No. 213/2023), and refusal of full rehabilitation."
+    - article: 25
+      title: "Right to an adequate standard of living"
+      infringement: "Confiscation of property, property marauding, and obstruction of professional engineering/development activity."
+  integration_status: "Fully Harmonized & Cryptographically Anchored"

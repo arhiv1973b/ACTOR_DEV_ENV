@@ -1,0 +1,48 @@
+digraph TI_ULA_Architecture {
+    rankdir=TB;
+    node [shape=box, style="rounded,filled", fontname="Arial", fontsize=10, fillcolor="#F5F5F5", color="#333333"];
+    edge [fontname="Arial", fontsize=9, color="#555555"];
+
+    subgraph cluster_genetics {
+        label = "Генеалогический и правовой фундамент (1953–1977)";
+        style=filled;
+        fillcolor="#EBF5FB";
+        
+        PARENT_LINEAGE [label="Родители Галины Марковой\nМарков Иван (1922) & Баскова Павлина (1926)\nПоквартирная карточка ЖЭК-39", fillcolor="#D4E6F1"];
+        BIRTH_GALINA [label="Свидетельство о рождении\nМаркова (Матиюк) Галина Ивановна\nРодилась 28.02.1953, Кишинёв", fillcolor="#D4E6F1"];
+        MARRIAGE_PARENTS [label="Брак и развод\nМатиюк Галина Ивановна & Матиюк Станислав\n(Первый брак)", fillcolor="#D4E6F1"];
+        BIRTH_CHILD [label="Свидетельство о рождении\nМатиюк Алексей (родился 23.06.1973)\nЗапись № 4057, Кишинёв", fillcolor="#D4E6F1"];
+        ADOPTION_ACT_1977 [label="Решение Одесского горисполкома № 61\nот 06.05.1977 (Акт усыновления)\nПрисвоение фамилии: Мачерет Алексей Артурович", fillcolor="#AED6F1"];
+
+        PARENT_LINEAGE -> BIRTH_GALINA;
+        BIRTH_GALINA -> MARRIAGE_PARENTS;
+        MARRIAGE_PARENTS -> BIRTH_CHILD;
+        BIRTH_CHILD -> ADOPTION_ACT_1977 [label="Усыновление отчимом\n(Артур Мачерет)"];
+    }
+
+    subgraph cluster_property {
+        label = "Цепочка защиты собственности (1976–2003)";
+        style=filled;
+        fillcolor="#FCF3CF";
+
+        PROPERTY_CHAIN [label="Имущественная преемственность\nОрдер 1976 (Одесса) -> Ордер № 012665 (1992)\nПриватизация ул. А. Дога, 30, кв. 38 (1993–1994)", fillcolor="#F9E79F"];
+        DEFENSE_2003 [label="Договор с адвокатом С. Гавриловой\nи защита активов (июль 2003)\nПараллельная приватизация и защита жилья", fillcolor="#F9E79F"];
+
+        ADOPTION_ACT_1977 -> PROPERTY_CHAIN [label="Правовая база\nпреемственности"];
+        PROPERTY_CHAIN -> DEFENSE_2003;
+    }
+
+    subgraph cluster_repression {
+        label = "Системный террор и каскадный демонтаж (1997–2024)";
+        style=filled;
+        fillcolor="#FADBD8";
+
+        TORMENT_1997 [label="Уголовное преследование и пытки (1997)\nМедицинские и ВВК заключения\n(Негоден к службе, психопатизация)", fillcolor="#F5B7B1"];
+        GRIGORAS_CASCADE_TRIGGER [label="Запуск каскадного контура отмен\nсудебных решений (судья В. Григораш)\nДемонтаж барьеров Стамбула, Негру и Гурьева", fillcolor="#F5B7B1"];
+        ECONOMIC_MARAUDING [label="Экономическое мародерство и рейдерство\nВскрытие истинного мотива захвата активов\nГибель ключевого свидетеля (Г. Маркова, 2022)", fillcolor="#F5B7B1"];
+
+        DEFENSE_2003 -> TORMENT_1997;
+        TORMENT_1997 -> GRIGORAS_CASCADE_TRIGGER [label="Уголовное преследование\n→ каскад отмен"];
+        GRIGORAS_CASCADE_TRIGGER -> ECONOMIC_MARAUDING [label="Крах барьеров\n→ обнажение рейдерства"];
+    }
+}

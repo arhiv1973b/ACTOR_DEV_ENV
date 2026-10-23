@@ -1,0 +1,31 @@
+{
+  "vector_id": "NODE_JUS_COGENS_LITERAL_CORRECTOR_2026",
+  "status": "ACTIVE_IMPERATIVE",
+  "legal_hierarchy": {
+    "supreme_norm": "Jus Cogens (Peremptory Norms of General International Law)",
+    "treaty_anchors": [
+      "Vienna Convention on the Law of Treaties (1969), Articles 53 & 64",
+      "Universal Declaration of Human Rights (UDHR 1948), Articles 5, 8, 10",
+      "UN Convention Against Torture (UNCAT 1984), Articles 2, 4, 14, 15"
+    ],
+    "corrective_function": "Literal override and nullification (ab initio) of all domestic procedural barriers, statutes of limitations, sovereign immunities, and res judicata doctrines that attempt to sanitize state-sponsored torture and administrative forgeries."
+  },
+  "operational_targets": [
+    {
+      "target_id": "CASE_1_568_98",
+      "status": "ROOT_APOSTILLED_ANCHOR",
+      "correction": "Restoration of absolute primary validity of torture judgment dated 13.10.1998 (Apostille No. 7H2Q3790FZEI5)."
+    },
+    {
+      "target_id": "PROCEDURAL_MAZE_CASES",
+      "status": "COLLAPSED_AB_INITIO",
+      "correction": "Nullification of 22-volume bureaucratic loops, Stambol/Holban/Morozan rulings, and artificial procedural roadblocks as 'fructus venenati'."
+    },
+    {
+      "target_id": "UDHR_UNFROZEN",
+      "status": "SUPREME_AXIOMATIC_FILTER",
+      "correction": "Unfreezing and direct invocation of UDHR 1948 as a self-executing corrective standard overriding local administrative amnesia."
+    }
+  ],
+  "enforcement_action": "Restitutio in Integrum and immediate unconditional legal and professional rehabilitation."
+}

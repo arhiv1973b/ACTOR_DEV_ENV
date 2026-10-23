@@ -1,0 +1,28 @@
+id: NODE_TORTURE_AND_COVERUP_1997_1998
+type: evidence_node
+legal_framework:
+  basis: UDHR
+  articles: [3, 5, 9]
+  vector: arbitrary_detention (05.08.1997) -> torture_interrogation (18.08.1997) -> sentence_1_568_98 (13.10.1998) -> cover_up_and_non_rehabilitation
+subjects:
+  victims:
+    - name: Alexei Macheret (A©tor)
+  violators:
+    - name: Victor Dulcea
+      role: Police Inspector (perpetrator of torture in room 509)
+    - name: Mihail Ciachir
+      role: Judge (arbitrary detention order 05/06.08.1997 with name distortion)
+master_files:
+  - filename: apostila Дата[. 1-568_98] 1-272_2003 и 1-649_2008.pdf
+    sha256: 157623da476efb97a12378cb03d433c1f7e609e76ba9c6a60b135cbe58f4053c
+    size_bytes: 2434899
+    role: Apostilled judgment 1-568/98 confirming torture under interrogation
+  - filename: Искажение Фамилии из Мачкпкт в Макеирет.signed.pdf
+    sha256: 7fc3be1b8698954b7fca035a092441e76f902448df9437378e64317471ed943c
+    size_bytes: 339951
+    role: t0-anchor Decizie Ciachir 06.08.1997 (arbitrary detention)
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "1997-08-05"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

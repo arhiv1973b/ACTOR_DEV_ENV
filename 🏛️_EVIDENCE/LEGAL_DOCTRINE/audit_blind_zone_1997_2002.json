@@ -1,0 +1,30 @@
+{
+  "ti_ula_version": "1.4.0",
+  "node_id": "audit_blind_zone_1997_2002",
+  "node_type": "concealment_audit",
+  "dag_pointers": {
+    "parent_node_hash": "3175fd5c6d872a8e9b5bfe9a12e6248fa00f22554e45509a713feabacf0f5513"
+  },
+  "temporal_metrics": {
+    "t_created": "1997-01-01T00:00:00Z",
+    "t_disclosed": "2021-02-11T00:00:00Z",
+    "concealment_gap_days": 8777,
+    "is_concealed_anomaly": true
+  },
+  "audit_context": {
+    "system_action": "Латентное ведение материалов судами, прокуратурой и МВД без уведомления потерпевшего",
+    "concealment_mechanism": "Полная изоляция информации о процессуальных решениях для создания искусственного срока давности",
+    "vector": "Аудит институционального молчания и сокрытия"
+  },
+  "evidence_payload": {
+    "document_type": "concealed_institutional_silence",
+    "sha256_hash_doc": "PENDING_LOCAL_HASH",
+    "storage_uri": "local_secure_archive/system_silence_1997_2002.pdf"
+  },
+  "legal_consequence": {
+    "status": "prolonged_prosecution_without_rehabilitation",
+    "jus_cogens_violation": true,
+    "continuing_offense": true,
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  }
+}

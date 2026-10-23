@@ -1,0 +1,184 @@
+{
+    "$schema": "https://actor.schema/v1",
+    "meta": {
+        "caseId": "CASE-MACHERET-1997-2026",
+        "title": "Universal Legal Architecture, Asset & Disability Integrity Manifest",
+        "updatedAt": "2026-05-24T20:20:00Z",
+        "jurisdiction": ["MD", "US", "ECHR", "UN"],
+        "version": "4.4",
+        "protocol": "ClosedProtocol/TI-ULA",
+        "security_marker": "A©t0r"
+    },
+    "subject": {
+        "id": "person-maceret-alexei",
+        "type": "Person",
+        "identity_marker": "A©tor",
+        "canonical_name": {
+            "last_name": "MACERET",
+            "first_name": "ALEXEI",
+            "patronymic": "ARTUR",
+            "idnp": "2000001159655",
+            "birth_date": "1973-06-23",
+            "citizenship": "MDA",
+            "gender": "M"
+        },
+        "legal_domicile": {
+            "primary_communication_address": "Moldova, mun. Chișinău, str. Andrei Doga 30, ap. 38",
+            "postal_code": "MD-2024",
+            "historical_registration_1974": "mun. Chișinău, str. Miron Costin 13/3, ap. 64",
+            "telecom_digital_signature_anchor": "078238410",
+            "backup_contact": "079902963",
+            "email": "arhiv240@gmail.com"
+        },
+        "disability_status": {
+            "certificate_series_nr": "C013564402308",
+            "issuing_body": "Consiliul Național pentru Determinarea Dizabilității și Capacității de Muncă",
+            "report_nr": "1232 din 05.04.2021",
+            "severity_degree": "Sever / I grupa пожизненно",
+            "cause": "Afectiune generala (Тяжелые травмы опорно-двигательного аппарата и внутренних органов вследствие пыток)",
+            "validity": "Fara termen (Бессрочно с 01.03.2021)",
+            "medical_recommendations": {
+                "palliative_care": true,
+                "medical_consumables": true,
+                "permanent_assistance_required": true
+            },
+            "validation_team": "Echipa 6 (Elena Turcuman, Elena Erhan, Oxana Virschi, Valentina Livadari)"
+        }
+    },
+    "financial_registry": {
+        "high_value_asset": {
+            "institution": "FinComBank (Fincompay)",
+            "payment_system": "Mastercard",
+            "card_expiry": "2030-04-30",
+            "balance_mdl": 25210256.15,
+            "currency": "MDL",
+            "status": "Blocked (Pending Unblocking Request)",
+            "usd_equivalent_approx": 1400000.00,
+            "threshold_validation": "Exceeds_1_000_000_USD"
+        },
+        "operational_accounts": {
+            "institution": "BC Moldindconbank S.A.",
+            "holder": "MACERET ALEXEI",
+            "accounts": [
+                {
+                    "iban": "MD33ML000002259A65114581",
+                    "currency": "MDL",
+                    "balance": 298.15,
+                    "blocked_amount": 300.00,
+                    "branch": "Sucursala Tudor Vladimirescu / Renastere",
+                    "status": "Restrictions Applied / Interdictii"
+                },
+                {
+                    "iban": "MD45ML0000002259A6699301",
+                    "currency": "MDL",
+                    "balance": 0.00,
+                    "overdraft_exposure": -88.00,
+                    "branch": "Sucursala Alecu Russo / Renastere"
+                }
+            ]
+        },
+        "recent_transactions": {
+            "institution": "FinComBank",
+            "date": "2026-04-02T22:34:39Z",
+            "operation": "Anulare Google*Google One",
+            "amount_usd": 2.41,
+            "confirmed_wallet_sold_usd": 1578.71
+        }
+    },
+    "legal_evidence_chain": {
+        "un_special_procedures_submission_2026": {
+            "report_reference": "tw571ryb",
+            "submission_date": "2026-05-03",
+            "body": "United Nations Office of the High Commissioner for Human Rights (OHCHR)",
+            "mandates": ["Independence of judges and lawyers", "Torture", "Transitional justice", "Disability"],
+            "sabotage_timeline_days": 8170,
+            "geography_of_violations": "Republic of Moldova (Chisinau, Riscani/Centru), transnational impact (US, NL, RO, CH)",
+            "victim_disclosure_consent": {
+                "government_letter_disclosure": true,
+                "human_rights_council_public_report": true,
+                "legal_basis": "Countering identity fraud, elimination of anonymity, publicity under Jus Cogens doctrine"
+            }
+        },
+        "root_cause_fraud_1997": {
+            "document": "Decizie din 6 august 1997, Judecătoria sect. Centru",
+            "judge": "C. P. Ciachir",
+            "distorted_entity": "Maciret Alexei Artur",
+            "violation": "Intentional vowel shift (e -> i) creating a phantom identity to block administrative fine settlement (90 MDL), shifting the timeline 10 days prior to Case 1-568/98 to evade court appearance of the torture victim."
+        },
+        "physical_torture_methods": {
+            "perpetrators": "MVD RM, Comisariatul de Poliție Centru/Rîșcani, Департамент по борьбе с организованной преступностью (OPG)",
+            "active_phases": "1997-1998, повторно 2002-2003",
+            "methods_used": ["Систематические избиения", "Применение пыточного инструмента «дыба»", "Информационная изоляция и блокировка доступа к адвокату по выбору"],
+            "purpose": "Принуждение к самооговору, рейдерский захват семейных активов и сокрытие следов насилия"
+        },
+        "international_escalation_2012": {
+            "body": "European Committee for the Prevention of Torture (CPT/ЕКПП)",
+            "date": "2012-07-18",
+            "signatory": "Johan Fristedt",
+            "status": "Filed as systemic problem indicator under ECHR framework"
+        },
+        "linguistic_validation_2023": {
+            "body": "Institute of Romanian Philology 'Bogdan Petriceicu-Hasdeu'",
+            "document_nr": "177 din 09.11.2023",
+            "expert": "Lidia Vieru",
+            "conclusion": "MACERET and MACHERET are absolute anthroponymic equivalents, identifying the same unique legal person."
+        },
+        "constitutional_precedent": {
+            "body": "Curtea Constituțională a Republicгии Moldova",
+            "decision_date": "2018-05-14",
+            "case_ref": "HCC Nr. 12 / Sesizarea 25g/2018 (Dosarul nr. 1-77/18)",
+            "ruling": "Declared Art. 361 alin. (2) lit. c) CP RM unconstitutional due to lack of clarity, predictability, and legal quality, stripping weaponized 'phantom identity' charges of their constitutional basis."
+        },
+        "diplomatic_protocol_2025": {
+            "protocol_id": "NP-A©t0r/SC-1125-2025",
+            "date": "2025-11-10",
+            "recipient": "Donald J. Trump (Former President of the United States)",
+            "doctrine": "Supremacy of Jus Cogens and Erga Omnes obligations under Article 103 of the UN Charter, challenging institutional immunity shielding identity fraud and enforcement paralysis",
+            "institutional_delivery_registry": {
+                "procuratura_generala": {
+                    "action": "Audienta / Depunere",
+                    "date": "2025-11-11",
+                    "registration_nr": "256-567"
+                },
+                "curtea_constitutionala": {
+                    "action": "Intrare",
+                    "date": "2025-11-11",
+                    "registration_nr": "105-ca"
+                },
+                "consiliul_superior_al_magistraturii": {
+                    "action": "Înregistrare",
+                    "date": "2025-11-11",
+                    "status": "Depus / Спец. комиссия"
+                },
+                "judecatoria_chisinau_sediul_central": {
+                    "action": "Înregistrare",
+                    "date": "2025-11-11",
+                    "status": "Depus / Спец. комиссия"
+                },
+                "ministerul_justitiei": {
+                    "action": "Petitie / Intrare",
+                    "date": "2025-11-11",
+                    "registration_nr": "1916 / 2917"
+                },
+                "curtea_suprema_de_justitie": {
+                    "action": "Sudebnaia Palata / Intrare",
+                    "registration_nr": "3583"
+                }
+            }
+        },
+        "system_synchronization_2026": {
+            "repository": "arhiv1973b/maceret-case-evidence",
+            "pull_request": "PR #4 (Masterr)",
+            "audit_status": "12 key evidence files secured, links cleaned from artifacts, Dashboard deployed live via GitHub Pages"
+        }
+    },
+    "integrity": {
+        "sha256_manifest": "439987aa854b83e47d933a650c6be1ec10bd41ce91c56621b09ab76d2f84651f",
+        "git_commit": "43cb47df553b0f2f8465191952a2d197062d190b",
+        "timestamp_utc": "2026-05-24T17:20:00Z",
+        "signature": {
+            "algorithm": "ed25519",
+            "public_key": "a3c0r_public_key_73b_v4_2026_prod_level_master"
+        }
+    }
+}

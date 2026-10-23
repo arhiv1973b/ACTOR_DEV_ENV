@@ -1,0 +1,49 @@
+name: Rebuild footers and create release
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run footer updater
+        run: |
+          python3 .github/update_footers.py
+
+      - name: Create site ZIP
+        run: |
+          zip -r site_export.zip . -x ".git/*"
+
+      - name: Create GitHub release
+        id: create_release
+        uses: actions/create-release@v1
+        with:
+          tag_name: auto-${{ github.sha }}
+          release_name: Auto release ${{ github.sha }}
+          body: "Automated site export and footer rebuild"
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload release asset
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./site_export.zip
+          asset_name: site_export.zip
+          asset_content_type: application/zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

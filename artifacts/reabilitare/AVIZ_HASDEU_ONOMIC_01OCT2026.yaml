@@ -1,0 +1,35 @@
+schema:
+  name: "AVIZ_HASDEU_ONOMIC_01OCT2026"
+  version: "1.0.0"
+  classification: "OFFICIAL_SCIENTIFIC_EXPERTISE_ARTIFACT"
+
+issuing_institution:
+  name_ro: "Universitatea de Stat din Moldova, Institutul de Filologie Română „Bogdan Petriceicu-Hasdeu”"
+  name_en: "Moldova State University, Institute of Romanian Philology „Bogdan Petriceicu-Hasdeu”"
+  address: "3/2, Academiei str., MD-2028, Chisinau"
+  contact: "(+373) 22 73 74 37 | cancelarie.ifilolog@gmail.com"
+
+document_metadata:
+  number: "269"
+  date: "01.10.2026"
+  title: "AVIZ științific privind etimologizarea și identificarea numelui/prenumelui"
+  signer: "Lidia Vieru"
+  signer_title: "cercetător științific, Secretar al Comisiei pentru reglementarea onomasticii și terminologiei naționale"
+
+subject_identity:
+  name_primary: "MACERET ALEXEI"
+  idnp: "2000001159655"
+  citizenship: "Republica Moldova"
+
+findings:
+  - surname_variant: "MACERET"
+    context: "Atostit în actele personale (act de naștere, buletin de identitate, pașaport) emise de autoritățile RM."
+    origin: "Variantă a numelui de familie de origine evreiască МАЧЕРЕТ, preluată din actele emise în limba rusă în perioada sovietică conform normelor de transcriere (Legea cu privire la funcționarea limbilor vorbite pe teritoriul RSS Moldova din 31 august 1989)."
+  - surname_variant: "MACHERET"
+    context: "Înregistrat în actele emise de autoritățile competente din Statele Unite ale Americii (pentru ARTUR MACHERET / legătura cu dosarul)."
+    origin: "Echivalent cu MACERET / МАЧЕРЕТ, variantă ortografiată conform normelor de redare a numelor în limba engleză."
+  - surname_variant: "МАЧЕРЕТ"
+    context: "Forma istorică din actele sovietice în limba rusă."
+
+conclusion:
+  statement: "Numele de familie MACHERET și MACERET, înregistrate în diverse acte ale titularului de dosar MACERET ALEXEI, emise în diferite limbi de autorități competente din diferite țări, pot fi considerate echivalente antonimice [antronimice], adică nume identice, purtate de membrii uneia și aceleiași familii."

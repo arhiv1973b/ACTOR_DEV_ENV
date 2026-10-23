@@ -1,0 +1,32 @@
+name: Publish International Audit Reports
+on:
+  push:
+    paths:
+      - 'Evidence_Ledger.json'
+      - 'DeliveryStatus_PointDiff_Log.md'
+  workflow_dispatch:
+  schedule:
+    - cron: "0 5 * * *" # 05:00 UTC ежедневно
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Generate Reports
+        run: python export_auditor_reports.py
+
+      - name: Publish to External Auditors Channel (GitHub Pages)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          destination_dir: external_auditors
+          keep_files: true

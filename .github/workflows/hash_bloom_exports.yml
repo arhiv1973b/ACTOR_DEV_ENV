@@ -1,0 +1,39 @@
+name: Hash Bloom Exports
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"   # ежедневный запуск в 03:00
+
+jobs:
+  hash-exports:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Compute SHA-256 hashes
+        run: |
+          TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
+          echo "## Bloom Exports Manifest" > Bloom_Exports_Manifest.md
+          echo "" >> Bloom_Exports_Manifest.md
+          echo "**Generated at:** $TIMESTAMP" >> Bloom_Exports_Manifest.md
+          echo "" >> Bloom_Exports_Manifest.md
+          echo "| File | SHA-256 |" >> Bloom_Exports_Manifest.md
+          echo "|------|---------|" >> Bloom_Exports_Manifest.md
+
+          for f in exports/*.png exports/*.svg; do
+            if [ -f "$f" ]; then
+              HASH=$(sha256sum "$f" | awk '{print $1}')
+              echo "| $f | $HASH |" >> Bloom_Exports_Manifest.md
+            fi
+          done
+
+      - name: Commit and push manifest
+        run: |
+          git config --global user.name "AuditBot"
+          git config --global user.email "auditbot@example.com"
+          git add Bloom_Exports_Manifest.md
+          git commit -m "Update Bloom Exports Manifest with SHA-256 hashes"
+          git push origin feature/cyber-sabotage-audit-10-2026

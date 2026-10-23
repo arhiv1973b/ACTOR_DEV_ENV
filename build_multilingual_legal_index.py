@@ -1,0 +1,59 @@
+import os
+import json
+import glob
+
+
+def build_index():
+    legal_index = {
+        "legal_index": {
+            "[MARKER:LAW780_2001_ART41]": {
+                "act_id": "law_780_2001",
+                "type": "Закон",
+                "number": "780",
+                "applicability_timeline": {
+                    "valid_from": "27-12-2001",
+                    "valid_to": "REPEALED (Replaced by Law No. 100/2017)",
+                    "retroactivity_allowed": False,
+                },
+                "parallel_texts": {
+                    "ru_utf8": "Законодательные акты, посредством которых устанавливаются или ужесточаются юридическая ответственность или наказание, обратной силы не имеют.",
+                    "ro_utf8": "Actele legislative prin care se instituie sau se agravează răspunderea juridică sau sancțiunea nu au efect retroactiv.",
+                    "en_utf8": "Legislative acts which establish or aggravate legal liability or punishment shall not have retroactive effect.",
+                },
+                "verification_status": "VERIFIED_ONLINE",
+                "current_validity": "REPEALED",
+                "source_files": [
+                    "law780.pdf",
+                    "evidence/ACTOR_JUS_COGENS_SEARCH_PROMPT_en.json",
+                ],
+            },
+            "[MARKER:LAW100_2017_ART73]": {
+                "act_id": "law_100_2017",
+                "type": "Закон",
+                "number": "100",
+                "applicability_timeline": {
+                    "valid_from": "22-12-2017",
+                    "valid_to": "ACTIVE",
+                    "retroactivity_allowed": False,
+                },
+                "parallel_texts": {
+                    "ru_utf8": "Нормативные акты не имеют обратной силы, за исключением случаев, когда они смягчают или отменяют ответственность.",
+                    "ro_utf8": "Actele normative nu au efect retroactiv decât în cazul în care acestea atenuează sau anulează răspunderea.",
+                    "en_utf8": "Normative acts do not have retroactive effect except when they mitigate or annul liability.",
+                },
+                "verification_status": "VERIFIED_ONLINE",
+                "current_validity": "ACTIVE",
+                "source_files": ["law100.pdf"],
+            },
+        }
+    }
+
+    output_path = r"H:\ACTOR_DEV_ENV\ti_ula_multilingual_legal_index.json"
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(legal_index, f, ensure_ascii=False, indent=4)
+
+    print("Index successfully built and saved to:", output_path)
+
+
+if __name__ == "__main__":
+    build_index()

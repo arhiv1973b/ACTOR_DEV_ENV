@@ -1,0 +1,42 @@
+name: TI-ULA Concealment DAG Auto-Render
+
+on:
+  push:
+    paths:
+      - '🏛️_EVIDENCE/LEGAL_DOCTRINE/*.json'
+      - 'build_dag.py'
+  workflow_dispatch:
+
+jobs:
+  render-dag:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Graphviz
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz
+
+      - name: Run DAG Build Script
+        run: python build_dag.py
+
+      - name: Commit and Push Rendered DAG Artifacts
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 🏛️_EVIDENCE/LEGAL_DOCTRINE/auto_generated_concealment.dot 🏛️_EVIDENCE/LEGAL_DOCTRINE/dag_concealment.png || true
+          git commit -m "chore(dag): auto-render concealment DAG and legal-proof artifacts [skip ci]" || echo "No changes to commit"
+          git push || echo "No remote changes to push"

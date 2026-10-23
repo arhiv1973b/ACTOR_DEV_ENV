@@ -1,0 +1,32 @@
+id: NODE_APOSTILLE_REGISTRY_MASTER
+type: evidence_node
+legal_framework:
+  basis: UDHR Art. 8; Hague Convention of 5 October 1961; UN CAT Art. 12, 13
+  vector: apostille_registry_verification -> cryptographic_anchoring -> chain_of_custody
+subjects:
+  verified_apostilles:
+    - code: "7H2Q3790FZEI5"
+      case: "1-568/98"
+      signer: "Alena Miron (Supreme Court / Chisinau Court)"
+      date: "13.10.1998 / 18.05.2021"
+    - code: "5GTUD58SJQ5N6"
+      case: "1ra-834/09"
+      signer: "Corneliu Guzun"
+      date: "21.07.2009 / 19.05.2021"
+    - code: "DQWVCZCRGYBP4"
+      signer: "Tudor Stambol"
+      date: "03.08.2021"
+    - code: "DLTP7B8ZHWGQ7"
+      case: "1-989/06"
+      signer: "semnatura indescifrabila (Illegible signature)"
+      date: "08.07.2022"
+master_files:
+  - filename: apostille_registry_working_14.signed.pdf
+    sha256: de54c36210e4df65d61475c48fd5f3e0ffe60d606041bcbf393affb71e510050
+    size_bytes: 304558
+    role: Master Apostille Registry (97 verified entries including key Case 1-568/98, 1ra-834/09, and Stambol/illegible signature records)
+ti_ula_status:
+  isolation: true
+  verified: true
+  total_records: 97
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

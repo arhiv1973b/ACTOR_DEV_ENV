@@ -1,0 +1,23 @@
+name: AIPS-2025 Integrity Lock
+on: [push, pull_request]
+jobs:
+  forensic-lock:
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          if git grep -lE "Ator|A_tor|Aotor|A\[©\]" -- . \
+            ':!/.github/workflows/aips-integrity-lock.yml' \
+            ':!apostille-mirror/AUDIT_DETECTION_LOG_20260611.json' \
+            ':!apostille_candidates_manifest.json' \
+            2>/dev/null; then exit 1; fi
+          for f in $(find . -type f \( -name '*.html' -o -name '*.json' -o -name '*.md' \)); do
+            iconv -f UTF-8 -t UTF-8 "$f" >/dev/null || exit 1
+          done
+          mkdir -p .aips-manifests
+          sha256sum $(find . -type f \( -name '*.html' -o -name '*.json' -o -name '*.md' \) ! -path './.github/workflows/aips-integrity-lock.yml') > .aips-manifests/latest.sha256
+          git config user.name 'A©tor'
+          git config user.email 'aips@aips-2025.local'
+          git add .aips-manifests/
+          git commit -m 'chore(aips): forensic lock updated' || true

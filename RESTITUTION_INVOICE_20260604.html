@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- Секретное слово: "База Данных" -->
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORENSIC INVOICE — RESTITUTION DEMAND — CASE MACHERET 1997–2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Playfair+Display:wght@700;900&family=Orbitron:wght@600;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #050a0f;
+  --panel: #060f1a;
+  --gold: #c8960a;
+  --gold2: #f0c040;
+  --red: #cc1133;
+  --red2: #ff2244;
+  --cyan: #00b8e8;
+  --text: #c0d8ec;
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-head: 'Orbitron', sans-serif;
+}
+
+body { background: var(--bg); color: var(--text); font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+.scanlines { position: fixed; inset: 0; pointer-events: none; background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,184,232,0.01) 2px, rgba(0,184,232,0.01) 4px); z-index: 100; }
+
+.wrap { max-width: 900px; margin: 40px auto; padding: 20px; z-index: 1; position: relative; }
+
+.invoice-box {
+  background: var(--panel); border: 2px solid var(--gold); padding: 40px;
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+  position: relative;
+}
+
+.header { border-bottom: 2px solid var(--gold); padding-bottom: 20px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end; }
+.header-title { font-family: var(--font-head); font-size: 28px; color: var(--gold2); letter-spacing: 2px; }
+.invoice-meta { font-family: var(--font-mono); font-size: 12px; text-align: right; color: var(--gold); }
+
+.parties { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+.party-label { font-family: var(--font-mono); font-size: 10px; color: var(--gold); text-transform: uppercase; margin-bottom: 5px; }
+.party-name { font-weight: bold; color: #fff; font-size: 16px; }
+
+.billing-table { width: 100%; border-collapse: collapse; margin: 30px 0; font-family: var(--font-mono); }
+.billing-table th { text-align: left; border-bottom: 1px solid var(--gold); padding: 10px; color: var(--gold); font-size: 11px; text-transform: uppercase; }
+.billing-table td { padding: 15px 10px; border-bottom: 1px solid #103c60; }
+.billing-table .amount { text-align: right; font-weight: bold; color: var(--cyan); }
+.billing-table .total-row { border-top: 2px solid var(--gold); background: rgba(200,150,10,0.05); }
+.billing-table .total-label { font-family: var(--font-head); font-size: 18px; color: var(--gold2); }
+.billing-table .total-value { font-family: var(--font-head); font-size: 22px; color: var(--gold2); text-align: right; }
+
+.payment-gateway {
+  background: #000; border: 1px dashed var(--cyan); padding: 25px; margin: 30px 0;
+  font-family: var(--font-mono); color: var(--cyan); position: relative;
+}
+.gateway-label { position: absolute; top: -10px; left: 20px; background: #000; padding: 0 10px; font-size: 10px; }
+
+.verdict-red { border: 1px solid var(--red2); background: rgba(255,34,68,0.05); padding: 20px; margin-top: 30px; color: var(--red2); font-size: 13px; font-family: var(--font-mono); }
+
+.days-counter { font-family: var(--font-head); color: var(--red2); font-size: 1.2em; text-shadow: 0 0 10px rgba(255,34,68,0.4); }
+
+.btn-back { display: inline-block; margin-top: 20px; color: var(--cyan); text-decoration: none; font-family: var(--font-mono); font-size: 12px; }
+</style>
+</head>
+<body>
+    <nav class="portal-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #0c2e4a; margin-bottom: 30px; background-color: #051421; padding: 15px;">
+        <div class="breadcrumb">
+            <a href="index.html" style="color: #00b8e8; text-decoration: none; font-family: 'Share Tech Mono', monospace;">← PORTAL HUB</a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="timeline.html" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">⏱️ Chronology</a>
+            <a href="EVIDENCE_CATALOG.md" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">📂 Evidence Catalog</a>
+        </div>
+    </nav>
+
+<div class="scanlines"></div>
+<div class="wrap">
+  <div class="invoice-box">
+    <div class="header">
+      <div>
+        <div class="header-title">FORENSIC INVOICE</div>
+        <div style="font-family: var(--font-mono); font-size: 10px; color: var(--cyan);">CASE: CASE-MACHERET-1997-2026 // RESTITUTION DEMAND</div>
+      </div>
+      <div class="invoice-meta">
+        ID: ACTOR-INV-2026-06-04-001<br>
+        DATE: 04.06.2026<br>
+        STATUS: <span style="color: var(--red2);">FINAL DEMAND</span>
+      </div>
+    </div>
+
+    <div class="parties">
+      <div>
+        <div class="party-label">FROM (CREDITOR):</div>
+        <div class="party-name">Alexei Macheret (A©tor)</div>
+        <div style="font-size: 12px; color: var(--muted);">Forensic Audit Node / Sovereign Subject</div>
+      </div>
+      <div>
+        <div class="party-label">TO (DEBTORS):</div>
+        <div class="party-name">Republic of Moldova / Artur B. Macheret</div>
+        <div style="font-size: 11px; color: var(--muted);">Nodes of Asset Hijacking & Judicial Inaction</div>
+      </div>
+    </div>
+
+    <table class="billing-table">
+      <thead>
+        <tr>
+          <th>CODE</th>
+          <th>DESCRIPTION / LEGAL BASIS</th>
+          <th style="text-align: right;">AMOUNT (MDL)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>FIN-025</td>
+          <td>Restitution of Hijacked Inheritance Assets (1998-2026)</td>
+          <td class="amount">25,210,256.00</td>
+        </tr>
+        <tr>
+          <td>JC-1997</td>
+          <td>Damages for Torture (Jus Cogens Violation)</td>
+          <td class="amount">10,000,000.00</td>
+        </tr>
+        <tr>
+          <td>EO-8174</td>
+          <td>Penalty for Procedural Inaction (<span class="days-counter" id="days">10530</span> days)</td>
+          <td class="amount">5,000,000.00</td>
+        </tr>
+        <tr>
+          <td>TECH-01</td>
+          <td>Forensic Audit & Infrastructure Maintenance Costs</td>
+          <td class="amount">500,000.00</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="2" class="total-label">TOTAL REMEDY DEMANDED</td>
+          <td class="total-value">40,710,256.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="payment-gateway">
+      <div class="gateway-label">SECURE HUMANITARIAN GATEWAY (TI-ULA)</div>
+      <strong>Beneficiary:</strong> Alexei Maceret<br>
+      <strong>IBAN:</strong> MD55FT225920600348117498<br>
+      <strong>Fiscal Code:</strong> 2000001159655<br>
+      <strong>SWIFT:</strong> FTMDMD2X (FinComBank S.A.)
+    </div>
+
+    <div class="verdict-red">
+      <strong>NOTICE OF NON-COMPLIANCE:</strong> FAILURE TO INITIATE RESTITUTION WITHIN 72 HOURS WILL TRIGGER GLOBAL SANCTION VECTOR 11 AND MERKLE-CHAIN ESCALATION TO INTERNATIONAL REGULATORS. THIS DEBT IS IMPRESCRIPTIBLE UNDER JUS COGENS NORMS.
+    </div>
+
+    <div style="margin-top: 30px; border-top: 1px solid var(--gold); padding-top: 10px; font-family: var(--font-mono); font-size: 9px; color: var(--gold);">
+      VERIFIED BY: A©tor FORENSIC NODE // INTEGRITY HASH: [CFC-9A2465BD-E77-ACTOR] // DIGITAL SOVEREIGNTY: ACTIVE
+    </div>
+  </div>
+  <a href="support.html" class="btn-back">← BACK TO FINANCIAL AUTONOMY</a>
+</div>
+
+<script>
+function updateDays() {
+  const baseline = new Date('1997-08-06');
+  const now = new Date();
+  const diffDays = Math.floor(Math.abs(now - baseline) / (1000 * 60 * 60 * 24));
+  document.getElementById('days').textContent = diffDays.toLocaleString();
+}
+window.onload = updateDays;
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿name: RecoveryTest
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Emit probe marker
+        run: echo "RECOVERY_TEST_OK"
+
+      - name: Validate marker
+        run: |
+          value="$(echo RECOVERY_TEST_OK)"
+          if [ "$value" != "RECOVERY_TEST_OK" ]; then
+            echo "Probe output mismatch"
+            exit 1
+          fi

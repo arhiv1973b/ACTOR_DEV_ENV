@@ -1,0 +1,33 @@
+id: CASCADE_CANCELLATION_MATRIX
+version: "1.0.0"
+type: cancellation_matrix_node
+parent_nodes:
+  - NODE_TI_ULA_MASTER_TOPOLOGY
+  - LINK_NON_REHABILITATION_JUS_COGENS
+legal_framework:
+  basis: VCLT (1969) Art. 53 & 71, UDHR Art. 8, Moldovan Constitution Art. 53, UN GA Resolution 40/34
+  doctrine: "Cascade Cancellation Matrix: Systematic nullification (void ab initio) of legacy fraudulent rulings maintaining the victim's criminalized status and blocking restitution."
+legacy_fraudulent_rulings:
+  - ruling_id: "DECISION_RIAJ_2003"
+    description: "Legacy administrative/judicial restrictions derived from fabricated 1997 proceedings"
+    status: "declared_void_ab_initio"
+  - ruling_id: "ORDER_RISCANI_24JUL2007"
+    signer: "Judge Gheorghe Morozan"
+    description: "Retroactive search validation order No. 337/07 (24.07.2007) for Miron Costin 13/3, apt. 64"
+    status: "nullified_by_jus_cogens"
+  - ruling_id: "STAMBOL_RULING_2025"
+    signer: "Judge Tudor Stambol"
+    description: "Ruling of 23.12.2025 in case no. 21-40/2021 confusing review (revizuire) with rehabilitation"
+    status: "overridden_by_cascade_trigger"
+procedural_triggers:
+  - trigger_actor: "Judge Viorelia Grigoraș"
+    action: "Initiation of cascade cancellation circuit dismantling Stambol, Negru, and Gureev barriers"
+    legal_effect: "Exposing fruit of the poisonous tree doctrine (*fructus venenati*) and triggering mandatory restitutio in integrum."
+financial_integration:
+  linked_model: "NODE_FINANCIAL_MODEL_1997_2026"
+  total_claim_eur: 1098500
+  enforcement: "Each canceled barrier directly unlocks property restitution (ZhSK-39 apt. 64) and financial compensation."
+ti_ula_status:
+  state: cascade_cancellation_matrix_active
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

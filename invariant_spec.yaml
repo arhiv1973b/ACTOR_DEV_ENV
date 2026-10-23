@@ -1,0 +1,16 @@
+version: "0.1"
+case_id: "Maceret_1997-2026"
+meta:
+  description: "Фундаментальная аксиоматика и инварианты безопасности (Layer 0)"
+  status: "IMMUTABLE"
+
+core_norms_l0:
+  - id: "JUS_COGENS_TORTURE"
+    norm: "Запрет пыток и бесчеловечного обращения (ст. 3 ЕКПЧ)"
+  - id: "JUS_COGENS_LIBERTY"
+    norm: "Право на свободу и личную неприкосновенность (ст. 5 ЕКПЧ)"
+
+validation_rules_l2.5:
+  - id: "RULE_FACT_SUPREMACY"
+    description: "Процедура не может обнулять VALID факт"
+    logic: "if FACT.status == VALID then BLOCK status_change_by_PROCEDURE"

@@ -1,0 +1,24 @@
+id: SUBNODE_PROPERTY_RESTITUTION_1977_2026
+type: property_restitution_subnode
+legal_framework:
+  basis: UDHR Art. 17 (Right to property & prohibition of arbitrary deprivation)
+  vector: property_confiscation -> fraudulent_registration -> non_restitution -> restitution_in_integrum
+subjects:
+  claimants:
+    - name: Alexei Macheret (A©tor)
+    - name: Galina Markova (Mother)
+    - name: Polina Baskova
+    - name: Ivan Markov
+master_files:
+  - filename: Infodebit_Credit_Report_Alexei_Maceret_26.02.2024.jpg
+    sha256: 02455b17ecd6956b9adad5f4e5411f7c04b9a3f574b662388d1e43e73da00b5f
+    size_bytes: 504000
+    role: Economic anchor and residential address verification (Miron Costin 13/364)
+  - filename: apostila.2-1642_08[.pdf
+    sha256: ec45660bed4e6babbeb2b5b1c62b49ead8c30b579bab76dfbdebacef0dd708ef
+    size_bytes: 1266932
+    role: Property claims and case file no. 2-1642/08 (ZhSK-39 / apt. 64)
+ti_ula_status:
+  isolation: true
+  restitution_vector: active
+  target_asset: ZhSK-39, Miron Costin str. 13/3, ap. 64 (Chisinau)

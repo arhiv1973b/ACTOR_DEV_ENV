@@ -1,0 +1,26 @@
+{
+  "document_type": "DEMERS_SUPLIMENTAR_PRECIZARE_ACTIUNII",
+  "court": "Judecătoria Chișinău (sediul Centru)",
+  "date": "2026-09-30",
+  "claimant": {
+    "name": "Maceret Alexei",
+    "idnp": "2000001159655",
+    "address": "str. Andrei Doga, nr. 30, ap. 38, Chișinău, MD-2024"
+  },
+  "defendant": {
+    "name": "FinComBank S.A.",
+    "idno": "1002600005347",
+    "address": "str. A. Pușkin, nr. 26, Chișinău"
+  },
+  "advocate": {
+    "name": "Alexei Kebeș",
+    "mandate": "Decizia CNAJGS nr. 2924/ACC din 03.09.2026"
+  },
+  "subject": "Clarificarea circumstanțelor aferente tranșei Finanțării Externe (noiembrie 2025) și blocării soldului de 25.210.256,15 MDL",
+  "case_number": "CASE-MACHERET-1997-2026",
+  "claims": [
+    "Admiterea demersului de precizare a acțiunii",
+    "Obligarea FinComBank S.A. să prezinte extrasul de cont detaliat și istoricul complet al fluxurilor financiare pentru suma de 25.210.256,15 MDL",
+    "Sesizarea organelor de urmărire penală (Inspectoratul de Poliție Centru) privind deteriorarea circuitului fondurilor internaționale"
+  ]
+}

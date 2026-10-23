@@ -1,0 +1,10 @@
+{
+  "node_id": "TI-1997-ASSET-CLAIM",
+  "identity_anchor": "Macheret-Alexei-Arturovich-1973",
+  "document_anchors": {
+    "passport_soviet": "XVII-BM-540509",
+    "inheritance_claim": "1M_USD_CLAUSE",
+    "kinship_link": "EISENSTEIN-MACHERET-FOND"
+  },
+  "forensic_status": "LOCKED_FOR_ECHR"
+}

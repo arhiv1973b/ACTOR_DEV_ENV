@@ -1,0 +1,48 @@
+{
+    "computation_timestamp": "2026-10-19T17:46:02.846631Z",
+    "contour_constant_n_jc": 1.0,
+    "axiomatic_basis": "Jus Cogens + UDHR 1948 + Vienna Convention (Articles 53, 64, 71)",
+    "filtered_out": "ECHR reservations, political declarations, institutional compromises",
+    "collapse_results": [
+        {
+            "event_id": "EVT_1998_2002",
+            "title": "Уголовное преследование и фабрикация обвинений (ст. 119/217)",
+            "nature": "Локальный акт преследования",
+            "compatibility_with_jus_cogens": 0.0,
+            "legal_mass_after_collapse": 0.0,
+            "status": "АННИГИЛИРОВАН / КОЛЛАПСИРОВАЛ AB INITIO (Масса = 0 по ст. 53, 64, 71 ВК)"
+        },
+        {
+            "event_id": "EVT_2009_CSJ",
+            "title": "Решение ВСД 2009 (отмена обвинений, исключение 2.6 кг калия перманганата)",
+            "nature": "Частичное устранение дефекта",
+            "compatibility_with_jus_cogens": 0.85,
+            "legal_mass_after_collapse": 0.0,
+            "status": "АННИГИЛИРОВАН / КОЛЛАПСИРОВАЛ AB INITIO (Масса = 0 по ст. 53, 64, 71 ВК)"
+        },
+        {
+            "event_id": "EVT_2017_2025_REFUSALS",
+            "title": "Отказы судей (Григораш, Негру, Стамбол, Холбан) в реабилитации и удержание активов",
+            "nature": "Искусственное процессуальное обременение / Саботаж",
+            "compatibility_with_jus_cogens": 0.0,
+            "legal_mass_after_collapse": 0.0,
+            "status": "АННИГИЛИРОВАН / КОЛЛАПСИРОВАЛ AB INITIO (Масса = 0 по ст. 53, 64, 71 ВК)"
+        },
+        {
+            "event_id": "EVT_AVIZ_269",
+            "title": "Заключение Института филологии Aviz № 269 об идентичности IDNP 2000001159655",
+            "nature": "Удостоверенный научный факт правосубъектности",
+            "compatibility_with_jus_cogens": 1.0,
+            "legal_mass_after_collapse": 1.0,
+            "status": "УСТОЙЧИВЫЙ ИНВАРИАНТ (Абсолютное соответствие N_jc)"
+        },
+        {
+            "event_id": "EVT_DAG_MANIFESTS",
+            "title": "Криптографические DAG-манифесты и SHA-256 доказательства",
+            "nature": "Неизменяемый математический инвариант",
+            "compatibility_with_jus_cogens": 1.0,
+            "legal_mass_after_collapse": 1.0,
+            "status": "УСТОЙЧИВЫЙ ИНВАРИАНТ (Абсолютное соответствие N_jc)"
+        }
+    ]
+}

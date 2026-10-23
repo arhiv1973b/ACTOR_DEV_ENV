@@ -1,0 +1,24 @@
+{
+  "project_id": "CASE-MACHERET-1997-2026",
+  "actor_signature": "A©tor",
+  "registry_status": "LOCKED",
+  "forensic_context": {
+    "root_idnp": "2000001159655",
+    "case_subject": "Macheret Alexei",
+    "legal_foundation": "Vienna Convention (Art. 53, 64 - Jus Cogens Compliance)"
+  },
+  "deployment_flags": {
+    "auto_commit": true,
+    "force_push": true,
+    "timeout_seconds": 60
+  },
+  "chunks": [
+    "registry_chunk_1.json",
+    "registry_chunk_2.json",
+    "registry_chunk_3.json",
+    "registry_chunk_4.json",
+    "registry_chunk_5.json",
+    "registry_chunk_6.json",
+    "registry_chunk_7.json"
+  ]
+}

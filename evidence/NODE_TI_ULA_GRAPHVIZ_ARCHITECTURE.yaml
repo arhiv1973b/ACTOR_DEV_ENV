@@ -1,0 +1,18 @@
+id: NODE_TI_ULA_GRAPHVIZ_ARCHITECTURE
+type: evidence_node
+parent_nodes:
+  - NODE_ECONOMIC_MAUROUDING_GRIGORAS
+  - SUBNODE_PROPERTY_RESTITUTION_1977_2026
+legal_framework:
+  basis: UDHR Art. 8, 17; Moldovan Constitution Art. 53; UN GA Resolution 40/34
+  vector: genealogy (1953-1977) -> property_defense (1976-2003) -> systematic_repression_and_sabotage (1997-2024, Judge Viorelia Grigoraș) -> economic_marauding
+master_files:
+  - filename: TI_ULA_Architecture.dot
+    sha256: "computed_from_dot"
+    size_bytes: 2650
+    role: Graphviz architectural topology uniting genealogical foundation, property chain, and systematic repression/economic marauding.
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

@@ -1,0 +1,24 @@
+id: NODE_GERMANY_HAGUE_SABOTAGE
+type: evidence_node
+parent_nodes:
+  - NODE_GEOPOLITICAL_JUS_COGENS_SABOTAGE
+  - NODE_APOSTILLE_REGISTRY_MASTER
+legal_framework:
+  basis: UN Charter Art. 2 (Sovereign Equality), Hague Convention of 5 October 1961, UDHR, Jus Cogens
+  doctrine: "Financial and legal colonialism via German sabotage of the 1961 Hague Apostille Convention for Moldova, imposing consular legalization, financial tribute, and political filtration of evidence."
+subjects:
+  victims:
+    - name: Alexei Macheret (A©tor)
+  violators:
+    - name: Federal Republic of Germany (Diplomatic & Bureaucratic Apparatus)
+      role: Enforcer of consular legalization monopoly and obstruction of Moldovan apostilles.
+master_files:
+  - filename: apostille_registry_working_14.signed.pdf
+    sha256: de54c36210e4df65d61475c48fd5f3e0ffe60d606041bcbf393affb71e510050
+    size_bytes: 304558
+    role: Validating cryptographically anchored MoldSign apostilles against external consular sabotage.
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

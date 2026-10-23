@@ -1,0 +1,19 @@
+id: NODE_ECHR_OVERRIDE_VCLT_UNRES4034
+type: legal_framework_anchor
+parent_nodes:
+  - NODE_LEGAL_BASIS_JUS_COGENS
+  - NODE_FICTITIOUS_ISSUANCE_TRAP
+legal_framework:
+  basis: UDHR (1948), VCLT (1969) Arts. 27 & 53, UN GA Resolution 40/34, Moldovan Constitution Arts. 4, 8, 53
+  doctrine: "Bypassing regional ECHR restrictive models (App. 41929/11) via absolute Jus Cogens, Erga Omnes obligations, and direct UDHR restitution."
+overrides:
+  - regional_filter: "ECHR Single-Judge Decision (05.12.2013, App. 41929/11)"
+    legal_nullity: "Null and void as a denial of justice; regional procedural statutes cannot override peremptory norms of international law."
+  - internal_law_excuse: "Moldovan 'semnătura indescifrabilă' and language law restrictions"
+    vclt_override: "VCLT Art. 27 (Internal law cannot justify treaty/UDHR breach) + VCLT Art. 53 (Acts violating Jus Cogens are void ab initio)."
+  - restitution_standard: "UN GA Resolution 40/34 & Moldovan Constitution Art. 53"
+    mandate: "Full Restitutio in Integrum and 1,098,500 EUR provisional claim, superseding symbolic ECHR just satisfaction."
+ti_ula_status:
+  state: echr_bypassed_and_overridden
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

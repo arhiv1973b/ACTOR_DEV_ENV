@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TI-ULA Evidence Graph: CASE-MACHERET-1997-2026 (Updated)</title>
+  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <style type="text/css">
+    body { background-color: #050a0f; color: #c0d8ec; font-family: 'Rajdhani', sans-serif; margin: 0; }
+    #mynetwork { width: 100vw; height: 100vh; border: none; }
+    #legend { position: absolute; top: 10px; left: 10px; background: rgba(6,15,26,0.9); border: 1px solid #0c2e4a; padding: 15px; border-radius: 4px; z-index: 10; font-family: 'Share Tech Mono', monospace; font-size: 13px; }
+  </style>
+</head>
+<body>
+<div id="legend">
+    <h3 style="color:#f0c040; margin-bottom: 10px;">CASE-MACHERET 1997–2026</h3>
+    <p><span style="color:#cc0000;">■</span> Detention (Root Cause: 1-568/98)</p>
+    <p><span style="color:#ff8c00;">■</span> Financial Blockade (Fincombank)</p>
+    <p><span style="color:#0000cc;">■</span> Jus Cogens / Venice / ETS</p>
+    <p><span style="color:#c8960a;">■</span> ETS nr. 2 Anchor (1949)</p>
+    <p><span style="color:#9933cc;">■</span> UN Petition S-22 Anchor</p>
+</div>
+<div id="mynetwork"></div>
+<script type="text/javascript">
+  var nodes = new vis.DataSet([{id: 'ets-nr-2-anchor', label: "[ets-nr-2-anchor]
+Historical Defect of ECHR - ETS nr. 2", color: '#c8960a', shape: 'box'},{id: 'un-petition-s22-anchor', label: "[un-petition-s22-anchor]
+UN Petition & S-22 Anchor", color: '#9933cc', shape: 'box'},{id: 'NODE-031', label: "[NODE-031]
+Memorandum_JUS_COGENS_PRIORITY...", color: '#0000cc', shape: 'box'},{id: 'NODE-032', label: "[NODE-032]
+MEMORANDUM_JUS_COGENS_PRIORITY...", color: '#0000cc', shape: 'box'},{id: 'NODE-033', label: "[NODE-033]
+Memorandum_JUS_COGENS_PRIORITY...", color: '#0000cc', shape: 'box'},{id: 'NODE-036', label: "[NODE-036]
+MEMORANDUM JUS_COGENS_PRIORITY...", color: '#0000cc', shape: 'box'},{id: 'NODE-048', label: "[NODE-048]
+MEMORANDUM JUS_COGENS_PRIORITY...", color: '#0000cc', shape: 'box'},{id: 'NODE-051', label: "[NODE-051]
+Memorandum_JUS_COGENS_PRIORITY...", color: '#0000cc', shape: 'box'},{id: 'NODE-053', label: "[NODE-053]
+Дело № 1-568_98.апостилированн...", color: '#cc0000', shape: 'box'},{id: 'NODE-058', label: "[NODE-058]
+Memorandum_JUS_COGENS_PRIORITY...", color: '#0000cc', shape: 'box'},{id: 'NODE-1416', label: "[NODE-1416]
+Дело № 1-568_98.апостилированн...", color: '#cc0000', shape: 'box'},{id: 'NODE-1617', label: "[NODE-1617]
+Ознакомительная для Судьи Диак...", color: '#cc0000', shape: 'box'},{id: 'NODE-1630', label: "[NODE-1630]
+Дело Дулча Апелляци или жалоба...", color: '#cc0000', shape: 'box'},{id: 'NODE-1647', label: "[NODE-1647]
+Дело № 1-568_98.апостилированн...", color: '#cc0000', shape: 'box'},{id: 'NODE-2894', label: "[NODE-2894]
+Svodnaya_tablitsa_jus_cogens_A...", color: '#0000cc', shape: 'box'},{id: 'NODE-2914', label: "[NODE-2914]
+CRIMINAL_MANIFEST_FINCOMBANK_R...", color: '#ff8c00', shape: 'box'},{id: 'NODE-2973', label: "[NODE-2973]
+CRIMINAL_MANIFEST_FINCOMBANK_2...", color: '#ff8c00', shape: 'box'},{id: 'NODE-3177', label: "[NODE-3177]
+UN_OHCHR_Manifest_tw571ryb_JUS...", color: '#0000cc', shape: 'box'},{id: 'NODE-3246', label: "[NODE-3246]
+CRIMINAL_MANIFEST_FINCOMBANK_R...", color: '#ff8c00', shape: 'box'},{id: 'NODE-3316', label: "[NODE-3316]
+CRIMINAL_MANIFEST_FINCOMBANK_2...", color: '#ff8c00', shape: 'box'},{id: 'NODE-3338', label: "[NODE-3338]
+Fincombank.pdf...", color: '#ff8c00', shape: 'box'}]);
+  var edges = new vis.DataSet([{from: 'ets-nr-2-anchor', to: 'un-petition-s22-anchor', label: 'activates jus cogens'}]);
+  var container = document.getElementById('mynetwork');
+  var data = { nodes: nodes, edges: edges };
+  var options = { edges: { arrows: 'to', color: '#8ab0cc' }, physics: { stabilization: false, barnesHut: { springLength: 200 } } };
+  var network = new vis.Network(container, data, options);
+</script>
+</body>
+</html>

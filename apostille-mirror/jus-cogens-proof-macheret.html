@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<!-- Секретное слово: "База Данных" -->
+<html lang="ru" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUS COGENS = FACTUAL PROOF — CASE MACHERET 1997–2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@600;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════
+   ROOT SYSTEM
+═══════════════════════════════════════════════════════ */
+:root {
+  --bg:       #050a0f;
+  --bg2:      #070e16;
+  --panel:    #060f1a;
+  --panel2:   #071220;
+  --border:   #0c2e4a;
+  --border2:  #103c60;
+  --gold:     #c8960a;
+  --gold2:    #f0c040;
+  --red:      #cc1133;
+  --red2:     #ff2244;
+  --cyan:     #00b8e8;
+  --cyan2:    #40d4ff;
+  --green:    #00d870;
+  --purple:   #9933cc;
+  --purple2:  #bb55ff;
+  --text:     #c0d8ec;
+  --text2:    #8ab0cc;
+  --muted:    #3a6080;
+  --font-mono:  'Share Tech Mono', monospace;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-head:  'Orbitron', sans-serif;
+  --font-body:  'Rajdhani', sans-serif;
+  --r: 4px;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* scanlines */
+body::before {
+  content:''; position:fixed; inset:0; z-index:200; pointer-events:none;
+  background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,184,232,.012) 2px,rgba(0,184,232,.012) 4px);
+}
+/* grid bg */
+body::after {
+  content:''; position:fixed; inset:0; z-index:0; pointer-events:none;
+  background-image: linear-gradient(rgba(0,184,232,.025) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0,184,232,.025) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   LAYOUT
+═══════════════════════════════════════════════════════ */
+.wrap { max-width:1100px; margin:0 auto; padding:24px 20px 80px; position:relative; z-index:1; }
+
+/* ═══════════════════════════════════════════════════════
+   LANGUAGE SWITCHER
+═══════════════════════════════════════════════════════ */
+.lang-bar {
+  position: sticky; top:0; z-index:100;
+  background: rgba(5,10,15,.96);
+  border-bottom: 1px solid var(--border2);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+.lang-btn {
+  padding: 13px 20px;
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--muted);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: color .2s, border-color .2s;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.lang-btn:hover { color: var(--cyan2); }
+.lang-btn.active { color: var(--gold2); border-bottom-color: var(--gold2); }
+.lang-sep {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--border2);
+  padding: 0 4px;
+  pointer-events: none;
+}
+.case-ref {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  white-space: nowrap;
+  padding: 0 0 0 16px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   LANGUAGE PANELS
+═══════════════════════════════════════════════════════ */
+.lang-panel { display: none; }
+.lang-panel.active { display: block; }
+
+/* ═══════════════════════════════════════════════════════
+   HERO HEADER
+═══════════════════════════════════════════════════════ */
+.hero {
+  margin: 28px 0 24px;
+  padding: 40px 44px;
+  background: linear-gradient(135deg, rgba(12,46,74,.8) 0%, rgba(5,10,15,.9) 60%);
+  border: 1px solid var(--gold);
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+  overflow: hidden;
+}
+.hero::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:3px;
+  background: linear-gradient(90deg, transparent, var(--gold2), transparent);
+}
+.hero::after {
+  content:'';
+  position:absolute; bottom:0; left:0; right:0; height:1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 4vw, 40px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+.hero-title em {
+  color: var(--gold2);
+  font-style: italic;
+}
+.hero-subtitle {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--cyan);
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+.hero-equation {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(200,150,10,.08);
+  border: 1px solid rgba(200,150,10,.3);
+  padding: 12px 22px;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+.eq-part { color: var(--text); }
+.eq-equals { color: var(--gold2); font-size: 22px; }
+.eq-result { color: var(--gold2); font-style: italic; }
+.hero-meta { margin-top: 18px; display:flex; flex-wrap:wrap; gap:8px; }
+
+/* ═══════════════════════════════════════════════════════
+   TAGS
+═══════════════════════════════════════════════════════ */
+.tag {
+  display:inline-block; font-family:var(--font-mono);
+  font-size:10px; padding:3px 9px; letter-spacing:1px; font-weight:700;
+}
+.tg { background:rgba(0,184,232,.1); border:1px solid rgba(0,184,232,.28); color:var(--cyan2); }
+.tg-g { background:rgba(0,216,112,.09); border:1px solid rgba(0,216,112,.26); color:var(--green); }
+.tg-r { background:rgba(255,34,68,.1); border:1px solid rgba(255,34,68,.3); color:var(--red2); }
+.tg-y { background:rgba(240,192,64,.1); border:1px solid rgba(240,192,64,.28); color:var(--gold2); }
+.tg-p { background:rgba(187,85,255,.1); border:1px solid rgba(187,85,255,.28); color:var(--purple2); }
+.tg-x { background:rgba(255,255,255,.05); border:1px solid var(--border); color:var(--text2); }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION HEADING
+═══════════════════════════════════════════════════════ */
+.sec-hd {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 36px 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.sec-num {
+  font-family: var(--font-head);
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 2px;
+  background: rgba(200,150,10,.1);
+  border: 1px solid rgba(200,150,10,.25);
+  padding: 3px 10px;
+  flex-shrink: 0;
+}
+.sec-title {
+  font-family: var(--font-serif);
+  font-size: clamp(16px, 2.5vw, 22px);
+  font-weight: 700;
+  color: #fff;
+}
+.sec-title em { color: var(--gold2); font-style: italic; }
+
+/* ═══════════════════════════════════════════════════════
+   PROOF CHAIN
+═══════════════════════════════════════════════════════ */
+.proof-chain {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 20px 0;
+  position: relative;
+  padding-left: 36px;
+}
+.proof-chain::before {
+  content:'';
+  position:absolute; left:14px; top:20px; bottom:20px;
+  width:3px;
+  background: linear-gradient(180deg, var(--gold2), var(--red2), var(--purple2));
+  opacity:.6;
+}
+.proof-step {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 18px 20px;
+  margin-bottom: 2px;
+  transition: border-color .2s;
+}
+.proof-step:hover { border-color: var(--border2); }
+
+.proof-step::before {
+  content: attr(data-num);
+  position: absolute;
+  left: -36px; top: 50%; transform: translateY(-50%);
+  width: 26px; height: 26px;
+  background: var(--gold);
+  color: #000;
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 700;
+  display: flex; align-items:center; justify-content:center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.proof-step[data-color="red"]::before   { background:var(--red2); color:#fff; }
+.proof-step[data-color="cyan"]::before  { background:var(--cyan); color:#000; }
+.proof-step[data-color="purple"]::before{ background:var(--purple2); color:#000; }
+.proof-step[data-color="green"]::before { background:var(--green); color:#000; }
+
+.proof-step-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+.proof-step[data-color="red"] .proof-step-label   { color:var(--red2); }
+.proof-step[data-color="cyan"] .proof-step-label  { color:var(--cyan); }
+.proof-step[data-color="purple"] .proof-step-label{ color:var(--purple2); }
+.proof-step[data-color="green"] .proof-step-label { color:var(--green); }
+
+.proof-step-title {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+.proof-step-body {
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.65;
+}
+.proof-step-body strong { color: var(--text); }
+.proof-step-body em { color: var(--gold2); font-style: normal; font-weight: 600; }
+
+.proof-arrow {
+  text-align: center;
+  font-size: 20px;
+  color: var(--gold);
+  opacity: .5;
+  line-height: 1;
+  padding: 4px 0;
+  position: relative;
+  left: 0;
+}
+
+/* ═══════════════════════════════════════════════════════
+   EVIDENCE CARDS
+═══════════════════════════════════════════════════════ */
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+.ev-card {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  padding: 16px 18px;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+.ev-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity:.5;
+}
+.ev-card-icon { font-size:22px; margin-bottom:8px; }
+.ev-card-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.ev-card-body {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.6;
+}
+.ev-card-body strong { color: var(--text); }
+.ev-card-body .num {
+  font-family: var(--font-head);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--red2);
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+  text-shadow: 0 0 20px rgba(255,34,68,.4);
+}
+
+/* ═══════════════════════════════════════════════════════
+   VERDICT BLOCK
+═══════════════════════════════════════════════════════ */
+.verdict {
+  border: 2px solid var(--gold);
+  background: rgba(200,150,10,.07);
+  padding: 28px 32px;
+  margin: 28px 0;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+}
+.verdict::before {
+  content: 'CONCLUSION / ВЫВОД / CONCLUZIE / CONCLUSION';
+  font-family: var(--font-mono); font-size: 9px;
+  color: var(--gold); letter-spacing: 2px;
+  position: absolute; top: 8px; left: 16px;
+}
+.verdict-title {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: 900;
+  color: var(--gold2);
+  margin: 12px 0 14px;
+  line-height: 1.25;
+}
+.verdict-body {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.75;
+}
+.verdict-body strong { color: var(--gold2); }
+.verdict-body em { color: var(--red2); font-style: normal; font-weight: 600; }
+
+/* ═══════════════════════════════════════════════════════
+   BUTTON SYSTEM
+═══════════════════════════════════════════════════════ */
+.btn-row { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0; }
+.btn {
+  display:inline-flex; align-items:center; gap:7px;
+  padding:10px 20px;
+  font-family:var(--font-body); font-size:13px;
+  font-weight:700; letter-spacing:1.5px;
+  text-transform:uppercase; text-decoration:none;
+  border:none; cursor:pointer;
+  transition:all .18s ease;
+  position:relative; overflow:hidden;
+  white-space:nowrap;
+}
+.btn-gold { background:linear-gradient(135deg,#5a3800,#c8960a); color:#000; clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%); }
+.btn-red { background:linear-gradient(135deg,#660018,#ff2244); color:#fff; clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%); }
+.btn-cyan { background:linear-gradient(135deg,#003355,#00b8e8); color:#000; clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%); }
+.btn-ghost { background:transparent; color:var(--cyan2); border:1px solid rgba(0,184,232,.3); }
+
+.div { height:1px; background:linear-gradient(90deg,transparent,var(--border2),transparent); margin:28px 0; }
+.footer {
+  margin-top:48px; padding:18px 20px; border-top:1px solid var(--border);
+  display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:center;
+  font-family:var(--font-mono); font-size:10px; color:var(--muted); letter-spacing:1px;
+}
+.footer a { color:var(--cyan); text-decoration:none; }
+</style>
+<!-- Portal OpenGraph metadata -->
+<meta name="description" content="Evidence portal — Case Maceret 1997–2026">
+<meta property="og:title" content="Case Maceret — Evidence Portal">
+<meta property="og:description" content="Evidence portal — Case Maceret 1997–2026">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arhiv1973b.github.io/apostille-mirror/">
+<meta name="twitter:card" content="summary_large_image">
+<!-- End Portal OpenGraph metadata -->
+</head>
+<body>
+    <nav class="portal-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #0c2e4a; margin-bottom: 30px; background-color: #051421; padding: 15px;">
+        <div class="breadcrumb">
+            <a href="index.html" style="color: #00b8e8; text-decoration: none; font-family: 'Share Tech Mono', monospace;">← PORTAL HUB</a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="timeline.html" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">⏱️ Chronology</a>
+            <a href="EVIDENCE_CATALOG.md" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">📂 Evidence Catalog</a>
+        </div>
+    </nav>
+
+<!-- A©TOR NAVIGATOR v3.0-SECURE [STABILIZED TDCH-3] -->
+<nav id="actor-navigator" style="background:#070e16; border-bottom:2px solid #b8960c; padding:12px 20px; font-family:'Courier New', monospace; display:flex; justify-content:space-between; align-items:center; box-shadow:0 4px 20px rgba(0,0,0,0.5); position: sticky; top: 0; z-index: 9999;">
+  <div style="display:flex; align-items:center; gap:15px;">
+    <span style="color:#f0c040; font-weight:bold; letter-spacing:1px;">⚖️ A©t0r Integrity Engine v6.9</span>
+    <span style="color:#666;">|</span>
+    <span style="color:#d4cfc7; font-size:12px;">CONTOUR: <strong style="color:#ff4444;">H:\ACTOR_DEV_ENV</strong></span>
+  </div>
+  <div style="display:flex; gap:12px; font-size:12px;">
+    <a href="index.html" style="color:#ffd700; text-decoration:none; padding:4px 8px; border:1px solid #2a2a2e; background:#111114;">[Core Vault]</a>
+    <a href="evidence-roadmap.html" style="color:#e0e0e0; text-decoration:none; padding:4px 8px; border:1px solid #222;">[Roadmap]</a>
+    <a href="jus-cogens-proof-macheret.html" style="color:#e0e0e0; text-decoration:none; padding:4px 8px; border:1px solid #222;">[Jus Cogens]</a>
+    <a href="apostille-registry-fixed.html" style="color:#e0e0e0; text-decoration:none; padding:4px 8px; border:1px solid #222;">[Apostille Registry (90)]</a>
+    <a href="un_contacts_copy_buttons.html" style="color:#4fc3f7; text-decoration:none; padding:4px 8px; border:1px solid #222;">[UN Liaison Contacts]</a>
+  </div>
+  <div style="font-size:11px; color:#ff6644; font-weight:bold; text-align: right; line-height: 1.2;">
+    ⏱️ Свыше 10 000 дней<br>
+    <span style="color:#666; font-size:9px;">(1997-2026) непрерывного удержания контура</span>
+  </div>
+</nav>
+
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="switchLang('ru',this)">🇷🇺 РУССКИЙ</button>
+  <span class="lang-sep">|</span>
+  <button class="lang-btn" onclick="switchLang('ro',this)">🇷🇴 ROMÂNĂ</button>
+  <span class="lang-sep">|</span>
+  <button class="lang-btn" onclick="switchLang('en',this)">🇬🇧 ENGLISH</button>
+  <span class="case-ref">CASE-MACHERET-1997–2026 · JUS COGENS PROOF</span>
+</div>
+
+<div class="wrap">
+
+<!-- ══════════════════════════════════════════════════════════
+     РУССКИЙ
+══════════════════════════════════════════════════════════ -->
+<div class="lang-panel active" id="panel-ru">
+  <div class="hero">
+    <div class="hero-eyebrow">// ДОКАЗАТЕЛЬНЫЙ АКТ — ДЕЛО МАЧЕРЕТ 1997–2026</div>
+    <div class="hero-title">От теории к практике:<br><em>Jus Cogens = Фактическое Доказательство</em></div>
+    <div class="hero-subtitle">ЛОГИКА НОРМЫ БЕЗ СРОКА ДАВНОСТИ · ОТВЕТСТВЕННОСТЬ ERGA OMNES</div>
+    <div class="hero-equation">
+      <span class="eq-part">Jus Cogens</span> <span class="eq-equals">+</span>
+      <span class="eq-part"><span class="num num-auto">10524</span> суток молчания</span> <span class="eq-equals">=</span>
+      <span class="eq-result">Нарушение Erga Omnes</span>
+    </div>
+  </div>
+
+  <div class="sec-hd"><span class="sec-num">§ 03</span><div class="sec-title">Ключевые <em>доказательные факты</em></div></div>
+  <div class="evidence-grid" id="dynamic-evidence-grid">
+    <!-- Dynamically populated from manifest.json -->
+  </div>
+
+  <div class="verdict">
+    <div class="verdict-title">Вывод: Jus Cogens = Фактическое доказательство</div>
+    <div class="verdict-body">Институциональная безнаказанность — это не судебная ошибка. Это «рак» правосудия.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     ROMÂNĂ
+══════════════════════════════════════════════════════════ -->
+<div class="lang-panel" id="panel-ro">
+  <div class="hero">
+    <div class="hero-eyebrow">// ACT PROBATOR — CAZUL MACHERET 1997–2026</div>
+    <div class="hero-title">De la teorie la practică:<br><em>Jus Cogens = Dovadă Faptică</em></div>
+    <div class="hero-subtitle">LOGICA NORMEI FĂRĂ PRESCRIPȚIE · RĂSPUNDERE ERGA OMNES</div>
+    <div class="hero-equation">
+      <span class="eq-part">Jus Cogens</span> <span class="eq-equals">+</span>
+      <span class="eq-part"><span class="num num-auto">10524</span> zile de tăcere</span> <span class="eq-equals">=</span>
+      <span class="eq-result">Încălcare Erga Omnes</span>
+    </div>
+  </div>
+
+  <div class="sec-hd"><span class="sec-num">§ 03</span><div class="sec-title">Fapte cheie <em>probatorii</em> — nu afirmații</div></div>
+  <div class="evidence-grid">
+    <div class="ev-card"><div class="ev-card-icon">⏱</div><div class="ev-card-title">VID PROCEDURAL</div><div class="ev-card-body"><span class="num num-auto">10524</span>zile fără investigare. <strong>Prescripția nu există.</strong></div></div>
+    <div class="ev-card"><div class="ev-card-icon">📂</div><div class="ev-card-title">ARHIVĂ APOSTILATĂ</div><div class="ev-card-body"><span class="num">90</span>doc. apostilate. <strong>Apostila atestă semnătura</strong>, nu conținutul — care dovedește eludarea torturii.</div></div>
+    <div class="ev-card"><div class="ev-card-icon">🧬</div><div class="ev-card-title">FALS 15.03.2022</div><div class="ev-card-body"><strong>Fapt:</strong> Nantoi Liudmila a folosit identitatea lui Marcov I.M. <strong>Dovadă:</strong> Expertiza grafologică (Vector 3).</div></div>
+  </div>
+
+  <div class="sec-hd"><span class="sec-num">§ 04</span><div class="sec-title">„Cancerul” justiției: mecanismul <em>impunității</em></div></div>
+  <div class="cancer-diagram">
+     <div class="cancer-row"><div class="cancer-node n-start">TORTURĂ 1997</div><div class="cancer-arrow">→</div><div class="cancer-node n-breach">ÎNCĂLCARE JUS COGENS</div><div class="cancer-arrow">→</div><div class="cancer-node n-silence">TĂCEREA STATULUI</div></div>
+  </div>
+
+  <div class="sec-hd"><span class="sec-num">§ 05</span><div class="sec-title">Cronologie: fiecare dată — <em>un nod probatoriu</em></div></div>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-date">15.03.2022</div><div class="tl-title">Falsul Nantoi</div><div class="tl-body">Punctul final de confiscare a activelor.</div></div>
+    <div class="tl-item highlight"><div class="tl-date">09.04.2026</div><div class="tl-title">DEADLINE JUS COGENS</div><div class="tl-body">Activarea Global Sanction Vector 11.</div></div>
+  </div>
+
+  <div class="verdict" style="border-color: var(--cyan); background: rgba(0, 184, 232, 0.05); margin-top: 40px;">
+    <div class="verdict-title" style="color: var(--cyan); font-size: 1.2rem; text-align: center;">SUSȚINERE JURIDICĂ</div>
+    <div class="verdict-body" style="text-align: center;">
+      Ruta sigură pentru fondul juridic:<br><br>
+      <strong style="font-family: var(--font-mono); font-size: 1.5em; color: var(--gold2); letter-spacing: 2px;">**** **** **** 6089</strong><br><br>
+      <em style="color: var(--text2); font-size: 0.85em;">(Utilizați strict cardul care se termină в 6089).</em>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     ENGLISH
+══════════════════════════════════════════════════════════ -->
+<div class="lang-panel" id="panel-en">
+  <div class="hero">
+    <div class="hero-eyebrow">// EVIDENTIARY ACT — MACHERET CASE 1997–2026</div>
+    <div class="hero-title">From Theory to Practice:<br><em>Jus Cogens = Factual Proof</em></div>
+    <div class="hero-subtitle">THE LOGIC OF A NORM WITHOUT LIMITATION · ERGA OMNES ACCOUNTABILITY</div>
+    <div class="hero-equation">
+      <span class="eq-part">Jus Cogens</span> <span class="eq-equals">+</span>
+      <span class="eq-part"><span class="num num-auto">10524</span> days of silence</span> <span class="eq-equals">=</span>
+      <span class="eq-result">Erga Omnes violation</span>
+    </div>
+  </div>
+
+  <div class="sec-hd"><span class="sec-num">§ 03</span><div class="sec-title">Key <em>Evidentiary Facts</em> — Not Allegations</div></div>
+  <div class="evidence-grid">
+    <div class="ev-card"><div class="ev-card-icon">⏱</div><div class="ev-card-title">PROCEDURAL VACUUM</div><div class="ev-card-body"><span class="num num-auto">10,524</span>days without investigation. <strong>Statute of limitations does not exist.</strong></div></div>
+    <div class="ev-card"><div class="ev-card-icon">📂</div><div class="ev-card-title">APOSTILLED ARCHIVE</div><div class="ev-card-body"><span class="num">90</span>apostilled documents. <strong>Apostille certifies signature</strong>, not content — proving torture evasion.</div></div>
+    <div class="ev-card"><div class="ev-card-icon">🧬</div><div class="ev-card-title">FORGERY 15.03.2022</div><div class="ev-card-body"><strong>Fact:</strong> Nantoi Liudmila used Marcov I.M.'s identity. <strong>Proof:</strong> Graphological expertise (Vector 3).</div></div>
+  </div>
+
+  <div class="sec-hd"><span class="sec-num">§ 04</span><div class="sec-title">The "Cancer" of Justice: <em>Institutional Impunity</em></div></div>
+  <div class="cancer-diagram">
+     <div class="cancer-row"><div class="cancer-node n-start">TORTURE 1997</div><div class="cancer-arrow">→</div><div class="cancer-node n-breach">JUS COGENS BREACH</div><div class="cancer-arrow">→</div><div class="cancer-node n-silence">STATE SILENCE</div></div>
+  </div>
+
+  <div class="sec-hd"><span class="sec-num">§ 05</span><div class="sec-title">Timeline: every date — <em>an evidentiary node</em></div></div>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-date">March 15, 2022</div><div class="tl-title">Nantoi Forgery</div><div class="tl-body">Final point of asset seizure.</div></div>
+    <div class="tl-item highlight"><div class="tl-date">April 09, 2026</div><div class="tl-title">JUS COGENS DEADLINE</div><div class="tl-body">Global Sanction Vector 11 activation.</div></div>
+  </div>
+
+  <div class="verdict" style="border-color: var(--cyan); background: rgba(0, 184, 232, 0.05); margin-top: 40px;">
+    <div class="verdict-title" style="color: var(--cyan); font-size: 1.2rem; text-align: center;">FUND LEGAL DEFENSE</div>
+    <div class="verdict-body" style="text-align: center;">
+      Direct secure routing for legal fund:<br><br>
+      <strong style="font-family: var(--font-mono); font-size: 1.5em; color: var(--gold2); letter-spacing: 2px;">**** **** **** 6089</strong><br><br>
+      <em style="color: var(--text2); font-size: 0.85em;">(Use strictly the destination card ending in 6089).</em>
+    </div>
+  </div>
+</div>
+
+<div class="div"></div>
+<div class="footer">
+  <span>CASE-MACHERET-1997–2026 · JUS COGENS PROOF DOCUMENT</span>
+  <span>🔒 SHA-256 · INTEGRITY 100% · 2026</span>
+</div>
+
+</div>
+
+<script>
+function switchLang(lang, btn) {
+  document.querySelectorAll('.lang-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + lang).classList.add('active');
+  btn.classList.add('active');
+  document.documentElement.lang = lang;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function updateDaysCounter() {
+  const baseline = new Date('1997-08-06');
+  const now = new Date();
+  const diffTime = Math.abs(now - baseline);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  document.querySelectorAll('.num-auto').forEach(el => {
+    el.textContent = diffDays.toLocaleString();
+  });
+}
+window.onload = updateDaysCounter;
+</script>
+
+<!-- TI-ULA FORENSIC REGISTRY — CASE-MACHERET-1997-2026 -->
+<style>
+.crit-forgery{background-color:#fff9f9;border-left:4px solid #d32f2f}
+.crit-forgery strong{color:#a32d2d}
+.crit-jurisdiction{background-color:#f0f7ff;border-left:4px solid #1976d2}
+.crit-jurisdiction strong{color:#185fa5}
+.node-row:hover{background-color:#f5f5f5}
+#forensic-table td,#forensic-table th{padding:8px 10px;border:1px solid #ddd;font-size:12px;word-break:break-word}
+#forensic-table{width:100%;border-collapse:collapse;font-family:'Segoe UI',sans-serif;table-layout:fixed}
+#forensic-table col:nth-child(1){width:110px}
+#forensic-table col:nth-child(2){width:160px}
+#forensic-table col:nth-child(3){width:200px}
+#forensic-table col:nth-child(4){width:auto}
+#forensic-table thead{background:#f4f4f4;font-size:12px}
+#registry-filters{margin:12px 0}
+#registry-filters button{margin:3px;padding:5px 12px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fff;font-size:12px}
+#registry-filters button:hover{background:#e8f0fe}
+#ti-ula-status{padding:12px 16px;margin:16px 0;border-radius:5px;font-family:monospace;font-size:13px;background:#f5f5f5;border:1px solid #ddd}
+#ti-ula-counter{font-size:12px;color:#555;margin-bottom:6px;font-family:monospace}
+</style>
+<div id="ti-ula-status">&#9203; Материализация узлов реестра TI-ULA...</div>
+<div id="registry-filters">
+  <button onclick="filterNodes('all')">&#128200; Все узлы</button>
+  <button onclick="filterNodes('Digital Twin')">&#128308; Подлоги IDNP (..555)</button>
+  <button onclick="filterNodes('Jurisdiction')">&#128309; Подмена UN&#8594;UNIX</button>
+  <button onclick="filterNodes('Primary')">&#128250; Identity Mapping</button>
+  <button onclick="filterNodes('Fiscal')">&#128986; Fiscal Anomaly</button>
+</div>
+<div id="ti-ula-counter"></div>
+<div style="overflow-x:auto">
+<table id="forensic-table">
+  <colgroup><col/><col/><col/><col/></colgroup>
+  <thead><tr>
+    <th>Node ID</th>
+    <th>Классификация</th>
+    <th>Файл (источник) / Стр.</th>
+    <th>Контекст форензик-аудита</th>
+  </tr></thead>
+  <tbody id="registry-body"></tbody>
+</table>
+</div>
+<script>
+var allNodes=[];
+var PAGE_SIZE=200;
+var currentOffset=0;
+var currentSet=[];
+
+async function materializeRegistry(){
+  var status=document.getElementById('ti-ula-status');
+  try{
+    var r=await fetch('pdfs_mirror/evidence_registry.json');
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    var data=await r.json();
+    allNodes=data.evidence_nodes||[];
+    status.style.background='#e8f5e9';
+    status.style.borderColor='#4caf50';
+    status.innerHTML='<strong>[TI-ULA v1.3.1 &#10003;]</strong>&nbsp;'
+      +'&#9679; &#1050;&#1077;&#1081;&#1089;: <strong>'+data.registry_meta.caseId+'</strong>'
+      +'&nbsp;&#9679; &#1055;&#1088;&#1086;&#1090;&#1086;&#1082;&#1086;&#1083;: '+data.registry_meta.protocol
+      +'&nbsp;&#9679; &#1059;&#1079;&#1083;&#1086;&#1074;: <strong>'+data.registry_meta.total_nodes+'</strong>';
+    renderNodes(allNodes,0);
+  }catch(e){
+    status.style.background='#ffebee';
+    status.style.borderColor='#f44336';
+    status.innerHTML='<strong>[&#10060; ОШИБКА]</strong> Реестр не найден: pdfs_mirror/evidence_registry.json — '+e.message;
+    console.error(e);
+  }
+}
+
+function renderNodes(nodes, offset){
+  currentSet=nodes;
+  currentOffset=offset;
+  var body=document.getElementById('registry-body');
+  var slice=nodes.slice(offset, offset+PAGE_SIZE);
+  body.innerHTML=slice.map(function(n){
+    var cls=n.classification&&n.classification.includes('Digital Twin')?'crit-forgery':
+            n.classification&&n.classification.includes('Jurisdiction')?'crit-jurisdiction':'';
+    var ctx=(n.forensic_context||'').substring(0,100);
+    var fname=(n.source&&n.source.file)||'';
+    var page=(n.source&&n.source.page)||'';
+    var shortName=decodeURIComponent(fname).replace(/_fixed\.pdf$/,'').split(/[/\\]/).pop();
+    if(shortName.length>45) shortName=shortName.substring(0,45)+'...';
+    return '<tr class="node-row '+cls+'">'
+      +'<td style="font-size:10px;white-space:nowrap">'+n.node_id+'</td>'
+      +'<td><strong>'+n.classification+'</strong></td>'
+      +'<td><span title="'+decodeURIComponent(fname)+'">'+shortName+'</span>'
+      +'<br><small style="color:#888">Стр.&nbsp;'+page+'</small></td>'
+      +'<td style="font-style:italic;color:#444">...'+ctx+'...</td>'
+      +'</tr>';
+  }).join('');
+  var ctr=document.getElementById('ti-ula-counter');
+  var showing=Math.min(offset+PAGE_SIZE,nodes.length);
+  ctr.innerHTML='Показано: <strong>'+offset+' – '+showing+'</strong> из <strong>'+nodes.length+'</strong>';
+  var nav='';
+  if(offset>0) nav+='<button onclick="renderNodes(currentSet,'+(offset-PAGE_SIZE)+')" style="margin-right:6px">&larr; Назад</button>';
+  if(showing<nodes.length) nav+='<button onclick="renderNodes(currentSet,'+(offset+PAGE_SIZE)+')">&rarr; Далее</button>';
+  ctr.innerHTML+='&nbsp;&nbsp;'+nav;
+}
+
+function filterNodes(type){
+  var filtered=type==='all'?allNodes:allNodes.filter(function(n){return n.classification&&n.classification.includes(type);});
+  renderNodes(filtered,0);
+}
+materializeRegistry();
+</script>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- FORENSIC LOCK — ASSET THEFT + IDNP EVIDENCE BLOCK  -->
+<!-- ═══════════════════════════════════════════════════ -->
+<style>
+  .forensic-section {
+    margin: 40px auto; max-width: 960px; font-family: 'Courier New', monospace;
+  }
+  .f-header {
+    background: linear-gradient(135deg, #1a0000, #161b22);
+    border: 2px solid #f85149; border-radius: 8px;
+    padding: 20px; text-align: center; margin-bottom: 20px;
+  }
+  .f-header h2 { color: #f85149; font-size: 1.2em; letter-spacing: 2px; margin-bottom: 6px; }
+  .f-header .sub { color: #d29922; font-size: 0.8em; }
+  .f-status {
+    background: #3fb950; color: #000; text-align: center;
+    padding: 8px; border-radius: 6px; font-weight: bold;
+    font-size: 0.8em; letter-spacing: 1px; margin-bottom: 20px;
+  }
+  .f-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+  @media(max-width:600px){ .f-grid { grid-template-columns: 1fr; } }
+  .f-field {
+    background: #161b22; border: 1px solid #30363d;
+    border-radius: 6px; padding: 12px;
+    font-family: 'Courier New', monospace;
+  }
+  .f-field .lbl { color: #8b949e; font-size: 0.68em; text-transform: uppercase; margin-bottom: 4px; }
+  .f-field .val { font-size: 0.88em; word-break: break-all; }
+  .f-field .val.red  { color: #f85149; }
+  .f-field .val.green{ color: #3fb950; }
+  .f-field .val.gold { color: #d29922; }
+  .f-field .val.blue { color: #58a6ff; }
+  .f-sha {
+    background: #010409; border: 1px solid #d29922;
+    border-radius: 6px; padding: 14px; margin-bottom: 16px;
+    font-family: 'Courier New', monospace; word-break: break-all;
+  }
+  .f-sha .lbl { color: #d29922; font-size: 0.68em; margin-bottom: 6px; }
+  .f-sha .hash { color: #3fb950; font-size: 0.85em; letter-spacing: 1px; }
+  .f-idnp {
+    background: #1a0000; border: 2px solid #f85149;
+    border-radius: 8px; padding: 20px; margin-bottom: 16px;
+  }
+  .f-idnp h3 { color: #f85149; margin-bottom: 12px; font-size: 0.95em; letter-spacing: 1px; }
+  .f-idnp ul { list-style: none; padding: 0; }
+  .f-idnp ul li {
+    padding: 5px 0; color: #e6edf3;
+    font-size: 0.82em; font-family: 'Courier New', monospace;
+    border-bottom: 1px solid #30363d;
+  }
+  .f-idnp ul li:last-child { border-bottom: none; }
+  .f-idnp ul li::before { content: "▸ "; color: #f85149; }
+  .f-idnp .chain {
+    margin-top: 14px; padding: 10px;
+    background: #010409; border-radius: 6px;
+    color: #d29922; font-size: 0.78em; text-align: center;
+    letter-spacing: 1px;
+  }
+  .f-links a {
+    display: block; padding: 10px 14px; margin-bottom: 8px;
+    background: #161b22; border: 1px solid #30363d;
+    border-radius: 6px; color: #58a6ff;
+    text-decoration: none; font-size: 0.82em;
+    font-family: 'Courier New', monospace;
+  }
+  .f-links a:hover { border-color: #58a6ff; }
+  .f-links a .tag { color: #8b949e; font-size: 0.72em; display: block; margin-bottom: 2px; }
+  .f-separator {
+    border: none; border-top: 2px solid #1F3864;
+    margin: 30px 0;
+  }
+</style>
+
+<hr class="f-separator">
+
+<div class="forensic-section">
+
+  <div class="f-header">
+    <h2>⚖ FORENSIC LOCK — ХИЩЕНИЕ АКТИВОВ + ПОДЛОГ ИДНП</h2>
+    <div class="sub">CASE-MACHERET-1997-2026 · SHA-256 VERIFIED · ERGA OMNES · ICC ART. 17</div>
+  </div>
+
+  <div class="f-status">
+    ✅ FORENSIC LOCK CONFIRMED · PUBLIC TIMESTAMP · IMMUTABLE RECORD · 2026-04-25T13:37Z
+  </div>
+
+  <!-- COMMIT BLOCK -->
+  <div class="f-sha">
+    <div class="lbl">GitHub Commit — Публичный таймстемп хищения (неизменяем)</div>
+    <div class="hash">
+      <a href="https://github.com/arhiv1973b/apostille-mirror/commit/90655f14d1a3cd7ea262e278fc3f5fd5b63b49a0"
+         target="_blank" style="color:#58a6ff; text-decoration:none;">
+        90655f14d1a3cd7ea262e278fc3f5fd5b63b49a0
+      </a>
+    </div>
+    <div class="lbl" style="margin-top:10px;">SHA-256 · theft_evidence_manifest.txt</div>
+    <div class="hash">3ED3F2E67CE07528EBCEA42BB21117D06045CDDDC3D4BF52A959E662742A2964</div>
+  </div>
+
+  <!-- GRID -->
+  <div class="f-grid">
+    <div class="f-field">
+      <div class="lbl">Субъект права</div>
+      <div class="val gold">A©tor · IDNP: 2000001159655</div>
+    </div>
+    <div class="f-field">
+      <div class="lbl">Сумма хищения</div>
+      <div class="val red">25 210 256,15 MDL</div>
+    </div>
+    <div class="f-field">
+      <div class="lbl">Субъекты хищения</div>
+      <div class="val red">FinComPay · Moldindconbank</div>
+    </div>
+    <div class="f-field">
+      <div class="lbl">Метод</div>
+      <div class="val">Принудительная смена карты + обнуление баланса</div>
+    </div>
+    <div class="f-field">
+      <div class="lbl">Timestamp (UTC)</div>
+      <div class="val green">2026-04-25T13:37Z</div>
+    </div>
+    <div class="f-field">
+      <div class="lbl">Merkle Root</div>
+      <div class="val green">CFC 9a2465bd...e77</div>
+    </div>
+  </div>
+
+  <!-- УЛИКА №99 -->
+  <div class="f-idnp">
+    <h3>🔴 УЛИКА №99 — ПОДТВЕРЖДЁННЫЙ ПОДЛОГ ИДНП (2006–2020)</h3>
+    <ul>
+      <li>Источник: actual_08_11_2006_для_прокуратуры.pdf — прямое упоминание ИДНП <b style="color:#f85149;">...555</b></li>
+      <li>30.10.2006: государственный орган выдал документ с фантомным ИДНП 2000001159<b style="color:#f85149;">555</b></li>
+      <li>Законный ИДНП: 2000001159<b style="color:#3fb950;">655</b> — подмена трёх цифр создала «цифрового двойника»</li>
+      <li>2018: оригиналы с мокрыми печатями переданы в Высшую Судебную Магистратуру</li>
+      <li>2020: «исправление» на ...655 — без возбуждения уголовного дела (ст. 332 УК РМ)</li>
+      <li>Следствие: цифровой двойник ...555 использован для списания фиктивных долгов</li>
+      <li>Прямая связь: подлог ИДНП → Свыше 10 000 дней (период 1997-2026) непрерывного удержания контура суток вакуума → хищение 25 210 256,15 MDL (2026)</li>
+      <li>Commit улики: <a href="https://github.com/arhiv1973b/apostille-mirror/commit/94b277b4" target="_blank" style="color:#58a6ff;">94b277b4</a> · idnp_555_evidence_trace.txt</li>
+    </ul>
+    <div class="chain">
+      ИДНП ...555 (2006) → ВСМ 2018 → «Исправление» 2020 → Вакуум безнаказанности → ХИЩЕНИЕ 2026
+      <br>Каждое звено задокументировано · Причинно-следственная цепь замкнута
+    </div>
+  </div>
+
+  <!-- PDF STREAMING BLOCK (ZERO-COPY-TO-GITHUB) -->
+  <div class="f-idnp" style="background: #060f1a; border-color: var(--cyan);">
+    <h3 style="color: var(--cyan);">📄 ОСНОВНОЙ ДОКАЗАТЕЛЬНЫЙ АКТ (JUS COGENS PROOF / APOSTILLE)</h3>
+    <div style="position: relative; width: 100%; height: 600px; margin-bottom: 12px; border: 1px solid var(--border);">
+      <iframe src="https://arhiv1973b.github.io/apostille-archive-english/" width="100%" height="600px" allow="autoplay" style="border:none;"></iframe>
+    </div>
+    <div style="font-size: 0.8em; text-align: center; color: var(--muted); font-family: var(--font-mono);">
+      Резервная ссылка для скачивания: <a href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank" style="color: var(--cyan);">Скачать файл с Google Диска</a> (на случай сбоя отображения)
+    </div>
+  </div>
+
+  <!-- LINKS -->
+  <div class="f-links">
+    <a href="https://arhiv1973b.github.io/apostille-mirror/forensic-lock-theft-evidence.html" target="_blank">
+      <span class="tag">Forensic Lock — Полная страница доказательств хищения</span>
+      forensic-lock-theft-evidence.html
+    </a>
+    <a href="https://arhiv1973b.github.io/apostille-mirror/idnp_555_evidence_trace.txt" target="_blank">
+      <span class="tag">Улика №99 — ИДНП ...555 Forensic Trace (Commit 94b277b4)</span>
+      idnp_555_evidence_trace.txt
+    </a>
+    <a href="https://github.com/arhiv1973b/apostille-mirror/commit/90655f14d1a3cd7ea262e278fc3f5fd5b63b49a0" target="_blank">
+      <span class="tag">GitHub Commit — Публичный таймстемп хищения</span>
+      commit/90655f14d1a3cd7ea262e278fc3f5fd5b63b49a0
+    </a>
+    <a href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">
+      <span class="tag">Google Drive — Основной доказательный акт (Apostille)</span>
+      drive.google.com · Jus Cogens Proof
+    </a>
+    <a href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">
+      <span class="tag">Google Drive — Подтверждение факта хищения (FinComPay)</span>
+      drive.google.com · Theft Evidence
+    </a>
+    <a href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">
+      <span class="tag">Google Drive — Манипуляция данными ИДНП</span>
+      drive.google.com · IDNP Manipulation Evidence
+    </a>
+  </div>
+
+</div>
+<!-- ═══════════════════════════════════════════════════ -->
+<script src="wrappers/portal-enhancements.js"></script>
+
+<!-- PORTAL_FOOTER_START -->
+<div class="portal-footer" style="text-align:center;padding:16px;margin-top:20px;border-top:1px solid #103c60;color:#8ab0cc;font-size:0.85em;font-family:monospace">SHA256: E8D77A5BB2061035E1F85619B27FB5EE1EC3C24268E452C9142BA524EFAE6811 | Verified: ✓ | Updated: 2026-07-04T08:01:15.833183Z</div>
+<!-- PORTAL_FOOTER_END -->
+<script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+{
+  "NodeId": "doctrine_bypass_echr_corporate_model",
+  "NodeType": "Strategic_Legal_Shift",
+  "Subject": "Disarming EU Treaty Bodies via RM Constitution Art 4 & 8",
+  "CoreArguments": [
+    {
+      "Argument": "Rejection of Human Rights Commodification",
+      "Description": "Invalidates ECHR precedents that treat fundamental rights as tradable commodities generated via corporate AI protocols and data manipulation."
+    },
+    {
+      "Argument": "Constitutional Supremacy Override",
+      "Articles": ["Constitution_RM_Art_4", "Constitution_RM_Art_8", "UN_Charter"],
+      "Description": "Direct application of UN Charter and UDHR overrides European bureaucratic jurisprudence and procedural limits (like Art 85 CPC RM)."
+    },
+    {
+      "Argument": "Absolute Restitutio in Integrum",
+      "Articles": ["Constitution_RM_Art_53", "Jus_Cogens"],
+      "Description": "Demands total restitution, rejecting the ECHR's limited 'just satisfaction' model as fundamentally unconstitutional."
+    }
+  ],
+  "LinkedNodes": ["cassation_doctrine_s22_art85", "medical_apostille_anchor_870_883"],
+  "A©tor_KEY": "# [⚖ A©tor Declaration]",
+  "IntegrityLock": "AIPS-2025"
+}

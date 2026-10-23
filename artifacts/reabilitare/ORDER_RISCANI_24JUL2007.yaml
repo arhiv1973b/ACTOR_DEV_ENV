@@ -1,0 +1,25 @@
+id: ORDER_RISCANI_24JUL2007
+type: evidence_node
+legal_framework:
+  basis: UDHR Art. 8, 9, 17; UN CAT Art. 2, 12, 13, 14
+  vector: search_warrant_legitimation -> asset_deprivation -> non_rehabilitation -> continuing_violation
+subjects:
+  victims:
+    - name: Alexei Macheret (A©tor)
+  violators:
+    - name: Gheorghe Morozan (corrected from erroneous translation "Gh. Moraru")
+      role: Investigative Judge (Judecătoria Rîșcani)
+    - name: A. Crainic
+      role: Prosecutor (Procuratura sectorului Rîșcani)
+    - name: M. Sandu
+      role: Criminal Prosecution Officer (Comisariatul de Poliție Rîșcani)
+master_files:
+  - filename: Доказательства Суду Холбан.pdf
+    sha256: cad22878e52a79c4a8613665dc2cca169a8f04cca34132edfbbff7a89ebd5e56
+    size_bytes: 1150307
+    role: Judicial order No. 337/07 (July 24, 2007) by Judge Gheorghe Morozan validating search at Miron Costin 13/3, apt. 64 (Translated by Natalia Lasco, 24.11.2023)
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2007-07-24"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

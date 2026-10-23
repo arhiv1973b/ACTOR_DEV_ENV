@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORENSIC LOCK — CASE MACHERET 1997–2026</title>
+  <style>
+    :root {
+      --bg: #0d1117; --surface: #161b22; --border: #30363d;
+      --green: #3fb950; --red: #f85149; --blue: #58a6ff;
+      --gold: #d29922; --text: #e6edf3; --muted: #8b949e;
+      --font-mono: 'Courier New', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-mono); padding: 24px; }
+
+    .header {
+      border: 2px solid var(--red);
+      border-radius: 8px; padding: 24px; margin-bottom: 24px;
+      background: linear-gradient(135deg, #1a0000 0%, var(--surface) 100%);
+      text-align: center;
+    }
+    .header h1 { color: var(--red); font-size: 1.4em; letter-spacing: 2px; margin-bottom: 8px; }
+    .header .subtitle { color: var(--gold); font-size: 0.85em; }
+
+    .commit-card {
+      background: var(--surface); border: 1px solid var(--green);
+      border-radius: 8px; padding: 20px; margin-bottom: 20px;
+    }
+    .commit-card .label { color: var(--muted); font-size: 0.75em; text-transform: uppercase; margin-bottom: 4px; }
+    .commit-card .value { color: var(--green); font-size: 1em; word-break: break-all; }
+    .commit-card .value a { color: var(--blue); text-decoration: none; }
+    .commit-card .value a:hover { text-decoration: underline; }
+
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+    @media(max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+
+    .field { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px; }
+    .field .label { color: var(--muted); font-size: 0.7em; text-transform: uppercase; margin-bottom: 6px; }
+    .field .value { color: var(--text); font-size: 0.9em; word-break: break-all; }
+    .field .value.green { color: var(--green); }
+    .field .value.gold  { color: var(--gold); }
+    .field .value.red   { color: var(--red); }
+    .field .value.blue  { color: var(--blue); }
+
+    .sha-block {
+      background: #010409; border: 1px solid var(--gold);
+      border-radius: 6px; padding: 16px; margin-bottom: 20px;
+      word-break: break-all; font-size: 0.85em;
+    }
+    .sha-block .label { color: var(--gold); font-size: 0.7em; margin-bottom: 8px; }
+    .sha-block .hash { color: var(--green); letter-spacing: 1px; }
+
+    .manifest-embed {
+      background: #010409; border: 1px solid var(--border);
+      border-radius: 6px; padding: 16px; margin-bottom: 20px;
+      white-space: pre; overflow-x: auto; font-size: 0.8em;
+      color: var(--muted); line-height: 1.6;
+    }
+    .manifest-embed .highlight { color: var(--green); }
+
+    .jus-cogens {
+      border: 1px solid var(--gold); border-radius: 8px;
+      padding: 20px; margin-bottom: 20px; background: #0d0c00;
+    }
+    .jus-cogens h2 { color: var(--gold); margin-bottom: 12px; font-size: 1em; }
+    .jus-cogens ul { list-style: none; }
+    .jus-cogens ul li { padding: 4px 0; color: var(--text); font-size: 0.85em; }
+    .jus-cogens ul li::before { content: "▸ "; color: var(--gold); }
+
+    .links-section { margin-bottom: 20px; }
+    .link-item { display: block; padding: 10px 14px; margin-bottom: 8px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 6px; color: var(--blue); text-decoration: none; font-size: 0.85em; }
+    .link-item:hover { border-color: var(--blue); }
+    .link-item .tag { color: var(--muted); font-size: 0.75em; display: block; margin-bottom: 2px; }
+
+    .status-bar {
+      background: var(--green); color: #000;
+      text-align: center; padding: 10px; border-radius: 6px;
+      font-weight: bold; font-size: 0.85em; letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .footer { text-align: center; color: var(--muted); font-size: 0.7em; padding-top: 20px;
+      border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+    <nav class="portal-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #0c2e4a; margin-bottom: 30px; background-color: #051421; padding: 15px;">
+        <div class="breadcrumb">
+            <a href="index.html" style="color: #00b8e8; text-decoration: none; font-family: 'Share Tech Mono', monospace;">← PORTAL HUB</a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="timeline.html" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">⏱️ Chronology</a>
+            <a href="EVIDENCE_CATALOG.md" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">📂 Evidence Catalog</a>
+        </div>
+    </nav>
+
+
+<div class="header">
+  <h1>⚖ FORENSIC LOCK — ASSET THEFT EVIDENCE</h1>
+  <div class="subtitle">CASE-MACHERET-1997-2026 · JUS COGENS · ERGA OMNES · ICC ART. 17</div>
+</div>
+
+<div class="status-bar">✅ FORENSIC LOCK CONFIRMED · PUBLIC TIMESTAMP · IMMUTABLE RECORD</div>
+
+<!-- COMMIT CARD -->
+<div class="commit-card">
+  <div class="label">GitHub Commit — Публичный таймстемп хищения</div>
+  <div class="value" style="font-size:1.1em; margin-bottom:10px;">
+    FORENSIC LOCK: Theft 25 210 256,15 MDL | SHA-256: 3ED3F2E6 | 2026-04-25
+  </div>
+  <div class="label" style="margin-top:12px;">Full Commit Hash</div>
+  <div class="value">
+    <a href="https://github.com/arhiv1973b/apostille-mirror/commit/90655f14d1a3cd7ea262e278fc3f5fd5b63b49a0"
+       target="_blank">90655f14d1a3cd7ea262e278fc3f5fd5b63b49a0</a>
+  </div>
+  <div class="label" style="margin-top:10px;">Timestamp (UTC)</div>
+  <div class="value">2026-04-25T13:37Z</div>
+</div>
+
+<!-- GRID FIELDS -->
+<div class="grid">
+  <div class="field">
+    <div class="label">Субъект права</div>
+    <div class="value gold">A©tor | IDNP: 2000001159655</div>
+  </div>
+  <div class="field">
+    <div class="label">Сумма хищения</div>
+    <div class="value red">25 210 256,15 MDL</div>
+  </div>
+  <div class="field">
+    <div class="label">Субъекты хищения</div>
+    <div class="value red">FinComPay · Moldindconbank</div>
+  </div>
+  <div class="field">
+    <div class="label">Метод</div>
+    <div class="value">Принудительная смена карты + обнуление баланса</div>
+  </div>
+  <div class="field">
+    <div class="label">Дело</div>
+    <div class="value blue">CASE-MACHERET-1997-2026</div>
+  </div>
+  <div class="field">
+    <div class="label">Merkle Root</div>
+    <div class="value green">CFC 9a2465bd...e77</div>
+  </div>
+</div>
+
+<!-- SHA BLOCK -->
+<div class="sha-block">
+  <div class="label">🔒 SHA-256 INTEGRITY HASH (theft_evidence_manifest.txt)</div>
+  <div class="hash">3ED3F2E67CE07528EBCEA42BB21117D06045CDDDC3D4BF52A959E662742A2964</div>
+</div>
+
+<!-- MANIFEST EMBED -->
+<div class="manifest-embed"><span class="highlight">THEFT EVIDENCE MANIFEST</span>
+CASE:        CASE-MACHERET-1997-2026
+SUBJECT:     A©tor | IDNP: 2000001159655
+EVENT:       Asset Theft / Forced Card Replacement
+AMOUNT:      <span class="highlight">25 210 256,15 MDL</span>
+ENTITIES:    FinComPay, Moldindconbank
+SHA-256:     <span class="highlight">3ED3F2E67CE07528EBCEA42BB21117D06045CDDDC3D4BF52A959E662742A2964</span>
+COMMIT-FULL: <span class="highlight">90655f14d1a3cd7ea262e278fc3f5fd5b63b49a0</span>
+TIMESTAMP:   2026-04-25T13:37Z
+STATUS:      <span class="highlight">FORENSIC LOCK CONFIRMED</span></div>
+
+<!-- PDF STREAMING BLOCK (ZERO-COPY-TO-GITHUB) -->
+<div class="jus-cogens" style="border-color: var(--blue); background: #000c1a;">
+  <h2>📄 ДОКУМЕНТАЛЬНОЕ ПОДТВЕРЖДЕНИЕ ХИЩЕНИЯ (Google Drive Stream)</h2>
+  <div style="position: relative; width: 100%; height: 600px; margin-bottom: 12px; border: 1px solid var(--border);">
+    <iframe src="https://arhiv1973b.github.io/apostille-archive-english/" width="100%" height="600px" allow="autoplay" style="border:none;"></iframe>
+  </div>
+  <div style="font-size: 0.8em; text-align: center; color: var(--muted); font-family: var(--font-mono);">
+    Резервная ссылка для скачивания: <a href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank" style="color: var(--blue);">Скачать файл с Google Диска</a> (на случай сбоя отображения)
+  </div>
+</div>
+
+<!-- JUS COGENS -->
+<div class="jus-cogens">
+  <h2>⚖ JUS COGENS · ERGA OMNES · ДОКАЗАТЕЛЬНАЯ МАТРИЦА</h2>
+  <ul>
+    <li>8 158 суток без расследования пыток 1997–1998 (Дело № 1-568/98)</li>
+    <li>90 апостилированных документов — системный паттерн уклонения</li>
+    <li>Хищение 25 210 256,15 MDL — прямое следствие процессуального вакуума</li>
+    <li>Подлог 15.03.2022 (Нантой) — графологическая экспертиза Вектор 3</li>
+    <li>Ст. 17 Римского статута: принцип дополнительности МУС активирован</li>
+    <li>Нарушение erga omnes: обязательство государства перед международным сообществом</li>
+  </ul>
+</div>
+
+<!-- LINKS -->
+<div class="links-section">
+  <a class="link-item" href="https://github.com/arhiv1973b/apostille-mirror/commit/90655f14d1a3cd7ea262e278fc3f5fd5b63b49a0" target="_blank">
+    <span class="tag">GitHub Commit — Публичный таймстемп</span>
+    github.com/arhiv1973b/apostille-mirror/commit/90655f14...
+  </a>
+  <a class="link-item" href="https://arhiv1973b.github.io/apostille-mirror/" target="_blank">
+    <span class="tag">Evidence Vault — Apostille Mirror</span>
+    arhiv1973b.github.io/apostille-mirror/
+  </a>
+  <a class="link-item" href="https://arhiv1973b.github.io/apostille-mirror/jus-cogens-proof-macheret.html" target="_blank">
+    <span class="tag">Jus Cogens Proof Document</span>
+    jus-cogens-proof-macheret.html
+  </a>
+  <a class="link-item" href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">
+    <span class="tag">Google Drive — Основной доказательный акт</span>
+    drive.google.com · Jus Cogens Proof / Apostille
+  </a>
+  <a class="link-item" href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">
+    <span class="tag">Google Drive — Подтверждение факта хищения (FinComPay)</span>
+    drive.google.com · Theft Evidence
+  </a>
+  <a class="link-item" href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">
+    <span class="tag">Google Drive — Манипуляция данными ИДНП</span>
+    drive.google.com · IDNP Manipulation Evidence
+  </a>
+</div>
+
+<div class="footer">
+  CASE-MACHERET-1997-2026 · SHA-256 VERIFIED · APOSTILLE ARCHIVE · JUS COGENS · ICC ART.17 · 2026<br>
+  Generated: 2026-04-25T14:08:36Z UTC
+</div>
+
+
+<!-- УЛИКА №99: ИДНП 555 -->
+<div class="jus-cogens" style="border-color:#f85149; background:#1a0000;">
+  <h2 style="color:#f85149;">🔴 УЛИКА №99 — ПОДТВЕРЖДЁННЫЙ ПОДЛОГ ИДНП</h2>
+  <ul>
+    <li>Документ: actual_08_11_2006_для_прокуратуры.pdf — ИДНП <b>...555</b> зафиксирован</li>
+    <li>30.10.2006: государственный орган выдал документ с фантомным ИДНП ...555</li>
+    <li>2018: оригиналы с мокрыми печатями переданы в ВСМ</li>
+    <li>2020: «исправление» на ...655 — БЕЗ уголовного расследования</li>
+    <li>Следствие: цифровой двойник использован для списания фиктивных долгов</li>
+    <li>Прямая связь: подлог ИДНП → процессуальный вакуум → хищение 25 210 256,15 MDL</li>
+  </ul>
+  <div style="margin-top:12px;">
+    <a class="link-item" href="https://arhiv1973b.github.io/apostille-mirror/idnp_555_evidence_trace.txt" target="_blank">
+      <span class="tag">Forensic Trace — IDNP ...555 (Commit 94b277b4)</span>
+      idnp_555_evidence_trace.txt · SHA-256 Verified
+    </a>
+  </div>
+</div>
+</body>
+</html>
+

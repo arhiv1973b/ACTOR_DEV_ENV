@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apple Media Services — Research Test</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; max-width: 900px; line-height: 1.45; }
+  h1 { margin-bottom: 10px; }
+  .status { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; flex: 0 0 12px; }
+  .green { background: #28a745; }
+  .yellow { background: #ffc107; }
+  .parameter { padding: 12px; margin: 7px 0; border: 1px solid #ddd; border-radius: 6px; }
+  .language-panel { padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; }
+  .observed { background: #f6fff8; border-left: 4px solid #28a745; }
+  .counterfactual { background: #f3f9ff; border-left: 4px solid #007aff; padding: 12px; margin-top: 15px; }
+  .warning { background: #fffbea; border-left: 4px solid #ffc107; padding: 12px; margin-top: 15px; }
+  .system-note { background: #f5f5f5; border-left: 4px solid #777; padding: 12px; margin-top: 15px; }
+  button { margin: 5px; padding: 8px 14px; cursor: pointer; border: 1px solid #bbb; border-radius: 5px; background: #fff; }
+  button:hover { background: #f0f0f0; }
+  button.active { font-weight: 700; border: 2px solid #007aff; }
+  pre { background: #f9f9f9; padding: 12px; border: 1px solid #ddd; border-radius: 6px; white-space: pre-wrap; overflow-x: auto; min-height: 120px; }
+  .result { background: #f7f7f7; border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-top: 10px; }
+  .small { font-size: 0.9em; color: #555; }
+</style>
+</head>
+<body>
+<h1>APPLE MEDIA SERVICES — RESEARCH TEST</h1>
+<div class="system-note">
+  <strong>SIMULATION — NOT APPLE TELEMETRY</strong>
+  <p>This autonomous HTML prototype models the parameter <strong>Contract Language</strong> only.</p>
+  <p>It does not connect to Apple systems and does not represent Apple telemetry.</p>
+</div>
+
+<div class="language-panel observed">
+  <strong>Contract Language</strong>
+  <div id="languageStatus" class="status" style="margin-top:8px;">
+    <span class="dot green"></span><span>EN — INITIAL</span>
+  </div>
+  <div style="margin-top:10px;">
+    <button id="btnEN" onclick="setLanguage('EN')">EN</button>
+    <button id="btnRO" onclick="setLanguage('RO')">RO</button>
+    <button id="btnRU" onclick="setLanguage('RU')">RU</button>
+  </div>
+</div>
+
+<div id="parameters">
+  <div class="parameter"><strong>Apple Account Country</strong><br><span class="status"><span class="dot green"></span>MD — UNCHANGED</span></div>
+  <div class="parameter"><strong>Storefront</strong><br><span class="status"><span class="dot green"></span>MD — UNCHANGED</span></div>
+  <div class="parameter"><strong>Service Jurisdiction</strong><br><span class="status"><span class="dot green"></span>MD — UNCHANGED</span></div>
+</div>
+
+<div class="warning">
+  <strong>⚠️ LOCALIZATION TEST</strong>
+  <p>Language selection is evaluated independently inside this simulation from Apple Account Country, Storefront and Service Jurisdiction.</p>
+  <p>No regional change is inferred from language selection alone.</p>
+</div>
+
+<div class="counterfactual">
+  <strong>COUNTERFACTUAL MODE</strong>
+  <p>Contract Language: RU<br>Apple Account Country: MD<br>Storefront: MD<br>Service Jurisdiction: MD</p>
+  <strong>COUNTERFACTUAL — NOT AN OBSERVED APPLE STATE</strong>
+</div>
+
+<h3>EVENT LOG</h3>
+<pre id="eventLog">No events recorded.</pre>
+
+<h3>COMPARATIVE RESULT</h3>
+<div id="result" class="result">No comparative test executed.</div>
+
+<div style="margin-top:12px;">
+  <button onclick="runComparativeTest()">RUN COMPARATIVE TEST</button>
+  <button onclick="exportEventLog()">EXPORT EVENT LOG</button>
+  <button onclick="clearLog()">CLEAR LOG</button>
+</div>
+
+<p class="small">
+  Apple telemetry: NOT PRESENT<br>
+  External network connection: NONE<br>
+  Legal qualification: NOT PERFORMED<br>
+  Sanctions inference: NOT PERFORMED
+</p>
+
+<script>
+const TEST_ID = "AMS-MD-LOCALIZATION-001";
+let initialLang = "EN";
+let currentLang = "EN";
+let log = [];
+
+function timestamp() { return new Date().toISOString(); }
+
+function setLanguage(lang) {
+  const prev = currentLang;
+  const time = timestamp();
+  if (prev === lang) {
+    log.push(`[${time}] SIMULATION: LANGUAGE ${lang} → ${lang} [UNCHANGED]`);
+  } else {
+    log.push(`[${time}] SIMULATION: LANGUAGE ${prev} → ${lang} [CHANGED]`);
+    log.push(`[${time}] SIMULATION: ACCOUNT_COUNTRY MD → MD [UNCHANGED]`);
+    log.push(`[${time}] SIMULATION: STOREFRONT MD → MD [UNCHANGED]`);
+    log.push(`[${time}] SIMULATION: JURISDICTION MD → MD [UNCHANGED]`);
+  }
+  currentLang = lang;
+  updateLanguageUI();
+  updateLog();
+}
+
+function updateLanguageUI() {
+  const status = document.getElementById("languageStatus");
+  let label = currentLang === initialLang ? `${currentLang} — INITIAL` : `${currentLang} — CHANGED`;
+  let dotClass = currentLang === initialLang ? "green" : "yellow";
+  status.innerHTML = `<span class="dot ${dotClass}"></span><span>${label}</span>`;
+  document.querySelectorAll(".language-panel button").forEach(b => b.classList.remove("active"));
+  document.getElementById("btn" + currentLang).classList.add("active");
+}
+
+function updateLog() {
+  document.getElementById("eventLog").innerText = log.length ? log.join("\n") : "No events recorded.";
+}
+
+function runComparativeTest() {
+  const changed = currentLang !== initialLang;
+  const result = `
+TEST RESULT
+────────────────────────────
+Mode: SIMULATION
+Variable changed: ${changed ? "Language" : "NONE"}
+Current Language: ${currentLang}
+Variables unchanged:
+    Apple Account Country
+    Storefront
+    Service Jurisdiction
+Purchase state: NOT DETERMINED BY SIMULATION
+Apple telemetry: NOT PRESENT
+Causal inference: NONE
+Legal qualification: NOT PERFORMED
+Sanctions inference: NOT PERFORMED
+`;
+  document.getElementById("result").innerText = result;
+  log.push(`[${timestamp()}] COMPARATIVE TEST EXECUTED`);
+  updateLog();
+}
+
+function exportEventLog() {
+  const exportObj = {
+    test_id: TEST_ID,
+    mode: "SIMULATION",
+    telemetry_source: "NONE",
+    apple_telemetry: false,
+    simulation_timestamp: timestamp(),
+    before: {
+      language: initialLang,
+      apple_account_country: "MD",
+      storefront: "MD",
+      service_jurisdiction: "MD"
+    },
+    after: {
+      language: currentLang,
+      apple_account_country: "MD",
+      storefront: "MD",
+      service_jurisdiction: "MD"
+    },
+    changed: currentLang !== initialLang ? ["language"] : [],
+    unchanged: [
+      "apple_account_country",
+      "storefront",
+      "service_jurisdiction"
+    ],
+    purchase_state: "NOT_DETERMINED_BY_SIMULATION",
+    causal_inference: null,
+    legal_inference: null,
+    sanctions_inference: null,
+    event_log: log
+  };
+
+  const json = JSON.stringify(exportObj, null, 2);
+  const blob = new Blob([json], { type: "application/json;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = TEST_ID + "-" + new Date().toISOString().replace(/[:.]/g, "-") + ".json";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
+
+function clearLog() {
+  log = [];
+  currentLang = initialLang;
+  updateLanguageUI();
+  updateLog();
+  document.getElementById("result").innerText = "No comparative test executed.";
+}
+
+/* Initial UI state */
+updateLanguageUI();
+updateLog();
+</script>
+
+</body>
+</html>

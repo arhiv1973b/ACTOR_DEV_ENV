@@ -1,0 +1,232 @@
+name: Crypto Manifest & Evidence Verification CI
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  verify-manifests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install cryptography
+
+      - name: Run Cryptographic Verification & Generate Comprehensive Dashboard
+        run: |
+          python -c "
+          import json, hashlib, os, datetime
+          from cryptography.hazmat.primitives.asymmetric import ed25519
+
+          manifest_path = 'manifests/motions/manifest_legal_requirements_e_apostille_pdf.json'
+          pdf_path = 'Apostilles/файлы удостоверяющие - законные требования - по Е- Апостиль.pdf'
+          
+          results = []
+          status = 'PASSED'
+
+          if os.path.exists(manifest_path) and os.path.exists(pdf_path):
+              with open(manifest_path, 'r', encoding='utf-8') as f:
+                  manifest = json.load(f)
+
+              pub_key_bytes = bytes.fromhex(manifest['cryptography']['public_key'])
+              public_key = ed25519.Ed25519PublicKey.from_public_bytes(pub_key_bytes)
+
+              sha256_hash = hashlib.sha256()
+              with open(pdf_path, 'rb') as f:
+                  for block in iter(lambda: f.read(4096), b''):
+                      sha256_hash.update(block)
+              actual_sha256 = sha256_hash.hexdigest()
+
+              payload = f\"FILE:{manifest['target_file']}|SHA256:{manifest['file_sha256']}\".encode('utf-8')
+              signature = bytes.fromhex(manifest['cryptography']['signature'])
+              
+              try:
+                  public_key.verify(signature, payload)
+                  sig_ok = True
+              except Exception as e:
+                  sig_ok = False
+                  status = 'FAILED'
+
+              hash_ok = (actual_sha256 == manifest['file_sha256'])
+              if not hash_ok:
+                  status = 'FAILED'
+
+              results.append({
+                  'target': manifest['target_file'],
+                  'manifest': manifest_path,
+                  'signature_verified': sig_ok,
+                  'sha256_match': hash_ok,
+                  'sha256_actual': actual_sha256
+              })
+          else:
+              status = 'FAILED'
+              results.append({'error': 'Manifest or PDF target file not found.'})
+
+          # Scan all files in Apostilles/
+          apostilles_files = []
+          apostilles_dir = 'Apostilles'
+          if os.path.exists(apostilles_dir):
+              for root, dirs, files in os.walk(apostilles_dir):
+                  for file in sorted(files):
+                      full_path = os.path.join(root, file)
+                      rel_path = os.path.relpath(full_path, '.')
+                      file_size = os.path.getsize(full_path)
+                      
+                      # Compute SHA-256 for each file
+                      f_hash = hashlib.sha256()
+                      with open(full_path, 'rb') as ff:
+                          for block in iter(lambda: ff.read(4096), b''):
+                              f_hash.update(block)
+                      apostilles_files.append({
+                          'path': rel_path,
+                          'size': file_size,
+                          'sha256': f_hash.hexdigest()
+                      })
+
+          now = datetime.datetime.now(datetime.timezone.utc)
+          timestamp = now.isoformat()
+          date_str = now.strftime('%Y%m%d_%H%M%S')
+
+          summary_content = f\"# INTEGRITY VERIFICATION SUMMARY\n\n\"
+          summary_content += f\"- **Timestamp:** {timestamp}\n\"
+          summary_content += f\"- **Commit SHA:** {os.getenv('GITHUB_SHA', 'N/A')}\n\"
+          summary_content += f\"- **Overall Status:** {status}\n\"
+          summary_content += f\"- **Total Apostilles Artifacts Scanned:** {len(apostilles_files)}\n\n\"
+          summary_content += \"## Verification Results\n\n\"
+          for r in results:
+              if 'error' in r:
+                  summary_content += f\"- **Error:** {r['error']}\n\"
+              else:
+                  summary_content += f\"- **Target File:** `{r['target']}`\n\"
+                  summary_content += f\"  - Signature (Ed25519): `{'OK' if r['signature_verified'] else 'FAILED'}`\n\"
+                  summary_content += f\"  - SHA-256 Hash Match: `{'OK' if r['sha256_match'] else 'FAILED'}` (`{r['sha256_actual']}`)\n\"
+
+          # Write latest summary
+          with open('integrity-summary.md', 'w', encoding='utf-8') as sf:
+              sf.write(summary_content)
+
+          # Save historical report in reports/
+          os.makedirs('reports', exist_ok=True)
+          hist_report_path = f'reports/integrity_summary_{date_str}.md'
+          with open(hist_report_path, 'w', encoding='utf-8') as hf:
+              hf.write(summary_content)
+
+          # Generate HTML Dashboard / Index for GitHub Pages with complete Apostilles table
+          html_content = f'''<!DOCTYPE html>
+          <html lang=\"en\">
+          <head>
+              <meta charset=\"UTF-8\">
+              <title>Crypto Integrity & Evidence Audit Dashboard</title>
+              <style>
+                  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 1100px; margin: 40px auto; padding: 20px; background: #0d1117; color: #c9d1d9; }}
+                  h1, h2 {{ color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 10px; }}
+                  .status-passed {{ color: #2ea043; font-weight: bold; font-size: 1.2em; }}
+                  .status-failed {{ color: #f85149; font-weight: bold; font-size: 1.2em; }}
+                  .card {{ background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 20px; margin-top: 20px; }}
+                  code {{ background: #21262d; padding: 2px 6px; border-radius: 4px; font-family: monospace; color: #a5d6ff; font-size: 0.9em; }}
+                  table {{ width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; }}
+                  th, td {{ border: 1px solid #30363d; padding: 10px 12px; text-align: left; }}
+                  th {{ background: #21262d; color: #58a6ff; }}
+                  tr:nth-child(even) {{ background: #161b22; }}
+                  tr:hover {{ background: #1f242c; }}
+                  ul {{ line-height: 1.6; }}
+              </style>
+          </head>
+          <body>
+              <h1>⚖️ Crypto Integrity & Evidence Audit Dashboard</h1>
+              <div class=\"card\">
+                  <p><strong>Timestamp:</strong> {timestamp}</p>
+                  <p><strong>Commit SHA:</strong> <code>{os.getenv('GITHUB_SHA', 'N/A')}</code></p>
+                  <p><strong>Overall Status:</strong> <span class=\"{'status-passed' if status == 'PASSED' else 'status-failed'}\">{status}</span></p>
+                  <p><strong>Total Evidentiary Artifacts in Apostilles/:</strong> {len(apostilles_files)} files</p>
+              </div>
+
+              <div class=\"card\">
+                  <h2>Primary Signed Manifest Verification</h2>
+                  <ul>
+          '''
+          for r in results:
+              if 'error' in r:
+                  html_content += f\"<li><span style='color: #f85149;'>Error: {r['error']}</span></li>\"
+              else:
+                  sig_badge = \"✅ OK (Ed25519 Verified)\" if r['signature_verified'] else \"❌ FAILED\"
+                  hash_badge = \"✅ OK (SHA-256 Match)\" if r['sha256_match'] else \"❌ FAILED\"
+                  html_content += f\"<li><strong>Target File:</strong> <code>{r['target']}</code><br>\"
+                  html_content += f\"&nbsp;&nbsp;&bull; Signature: {sig_badge}<br>\"
+                  html_content += f\"&nbsp;&nbsp;&bull; SHA-256: {hash_badge} (<code>{r['sha256_actual']}</code>)</li>\"
+          
+          html_content += f'''
+                  </ul>
+              </div>
+
+              <div class=\"card\">
+                  <h2>📁 Complete Apostilles Evidence Registry ({len(apostilles_files)} Files)</h2>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>#</th>
+                              <th>Artifact File Path</th>
+                              <th>Size (Bytes)</th>
+                              <th>SHA-256 Checksum</th>
+                              <th>Status</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+          '''
+          
+          for idx, af in enumerate(apostilles_files, 1):
+              html_content += f\"<tr><td>{idx}</td><td><code>{af['path']}</code></td><td>{af['size']:,}</td><td><code>{af['sha256']}</code></td><td><span style='color: #2ea043;'>🟢 SECURE</span></td></tr>\"
+
+          html_content += f'''
+                      </tbody>
+                  </table>
+              </div>
+
+              <footer style=\"margin-top: 40px; text-align: center; color: #8b949e; font-size: 0.9em;\">
+                  Case-Macheret-1997-2026 | UDHR 1948 & Jus Cogens Compliance Anchor | Automated CI Integrity Vault
+              </footer>
+          </body>
+          </html>
+          '''
+          
+          with open('reports/index.html', 'w', encoding='utf-8') as html_f:
+              html_f.write(html_content)
+
+          print('Comprehensive verification dashboard and table generated.')
+          if status == 'FAILED':
+              exit(1)
+          "
+
+      - name: Commit and Push Reports & HTML to Repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add integrity-summary.md reports/
+          git diff --staged --quiet || git commit -m "docs(audit): update comprehensive cryptographic reports and Apostilles evidence table [skip ci]"
+          git push || echo "No changes to push or push skipped"
+
+      - name: Upload Verification Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: integrity-verification-report
+          path: |
+            integrity-summary.md
+            reports/

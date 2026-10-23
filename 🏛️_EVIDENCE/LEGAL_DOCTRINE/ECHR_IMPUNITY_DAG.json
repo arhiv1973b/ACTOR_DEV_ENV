@@ -1,0 +1,64 @@
+{
+  "id": "ECHR_IMPUNITY_DAG",
+  "type": "graph",
+  "title": "Topography of the Architecture of Impunity",
+  "nodes": [
+    {
+      "id": "Jus_Cogens_Invariant",
+      "label": "Jus Cogens Invariant",
+      "description": "Переменные нормы международного права (jus cogens) действуют как топологический инвариант: любая попытка процедурного обхода фиксируется как доказательство вины и переводит субъект в состояние необратимого коллапса."
+    },
+    {
+      "id": "ETS_nr_2_Anchor",
+      "label": "ETS nr. 2 Anchor",
+      "description": "Юридический якорь: процессуальные фильтры и иммунитеты, легализующие континуитет элит и защищающие государственные кадры от прямой ответственности."
+    },
+    {
+      "id": "Geopolitical_Genesis_of_Impunity",
+      "label": "Geopolitical Genesis of Impunity",
+      "description": "Геополитический контекст: институциональные корни фильтров ЕКПЧ, колониальная оговорка и коммерциализация прав человека через 'Just Satisfaction'."
+    },
+    {
+      "id": "UNCAT_1984_Anchor",
+      "label": "UNCAT 1984 Anchor",
+      "description": "Конвенция против пыток (UNCAT Art. 12-14, 2.2): абсолютный запрет пыток как императивная норма jus cogens, требующая незамедлительного расследования и блокирующая национальные иммунитеты."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Jus_Cogens_Invariant",
+      "to": "ETS_nr_2_Anchor",
+      "relation": "Violation attempts reinforce proof"
+    },
+    {
+      "from": "Jus_Cogens_Invariant",
+      "to": "Geopolitical_Genesis_of_Impunity",
+      "relation": "Procedural bypass strengthens context"
+    },
+    {
+      "from": "ETS_nr_2_Anchor",
+      "to": "Geopolitical_Genesis_of_Impunity",
+      "relation": "Legal construct supports geopolitical design"
+    },
+    {
+      "from": "Jus_Cogens_Invariant",
+      "to": "UNCAT_1984_Anchor",
+      "relation": "Erga omnes obligation of torture prohibition"
+    },
+    {
+      "from": "UNCAT_1984_Anchor",
+      "to": "ETS_nr_2_Anchor",
+      "relation": "institutional_override"
+    },
+    {
+      "from": "UNCAT_1984_Anchor",
+      "to": "Geopolitical_Genesis_of_Impunity",
+      "relation": "continuing consequences of uninvestigated torture"
+    }
+  ],
+  "projection": {
+    "country": "Republic of Moldova",
+    "case": "CASE-MACHERET-1997-2026",
+    "effect": "Приговор S‑22 (1998) зафиксировал факт пытки. Ратификация ETS nr. 2 в 1997 встроила молдавскую систему в западный механизм безнаказанности. Все последующие апелляции лишь усилили доказательную линию, подтверждая институциональный замысел."
+  }
+}

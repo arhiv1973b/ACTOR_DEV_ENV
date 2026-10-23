@@ -1,0 +1,21 @@
+id: ADOPTION_REASONING_1977
+type: evidence_node
+parent_nodes:
+  - MARRIAGE_CERTIFICATE_GALINA_MACHERET
+legal_framework:
+  basis: Family Code of MSSR / Ukrainian SSR, UDHR Art. 6, 12, 16
+  vector: adoption_reasoning_1977 (Odessa Executive Committee Decision No. 61 -> Chisinau Birth Entry No. 4057, 1973)
+search_parameters:
+  query: "Решение об усыновлении Алексей Матиюк → Мачерет Алексей Артурович"
+  filters: ["Одесса", "Кишинёв", "1977"]
+  strict: "Primary executive committee acts, notarized copies"
+master_files:
+  - filename: adoption_reasoning_search_prompt.yaml
+    sha256: "adoption_search_anchor_2026"
+    size_bytes: 480
+    role: Strict search prompt explaining why adoption was processed in Odessa while birth registration remained in Chisinau (entry #4057, 1973).
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_TI_ULA_GRAPHVIZ_ARCHITECTURE

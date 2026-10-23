@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "code": "IMWM44AZGX6N6",
+    "security": "2013073817848",
+    "filename": "apostille_IMWM44AZGX6N6_2013073817848.pdf",
+    "signer": "Toporets Irina",
+    "status": "ok",
+    "sha256": null,
+    "source_url": null,
+    "notes": "эталон",
+    "check": {
+      "ok": true,
+      "size": 1294220,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "ok"
+  },
+  {
+    "id": 5,
+    "code": "7H2Q3790FZEI5",
+    "security": "2013073926618",
+    "filename": "apostille_7H2Q3790FZEI5_2013073926618.pdf",
+    "signer": "Miron Aliona",
+    "status": "ok",
+    "sha256": null,
+    "source_url": null,
+    "notes": "эталон",
+    "check": {
+      "ok": true,
+      "size": 5075808,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "ok"
+  },
+  {
+    "id": 36,
+    "code": "DLTP7B8ZHWGQ7",
+    "security": "2013074484667",
+    "filename": "apostille_DLTP7B8ZHWGQ7_2013074484667.pdf",
+    "signer": "unclear signature",
+    "status": "defective_signature",
+    "sha256": null,
+    "source_url": null,
+    "notes": "semnatura indescifrabila",
+    "check": {
+      "ok": true,
+      "size": 5288888,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "defective_signature + ok"
+  },
+  {
+    "id": 41,
+    "code": "CG0T6Y1TBUEL7",
+    "security": "2013074491511",
+    "filename": "apostille_CG0T6Y1TBUEL7_2013074491511.pdf",
+    "signer": "unclear signature",
+    "status": "defective_signature",
+    "sha256": null,
+    "source_url": null,
+    "notes": "semnatura indescifrabila",
+    "check": {
+      "ok": true,
+      "size": 3913646,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "defective_signature + ok"
+  },
+  {
+    "id": 65,
+    "code": "80UQ636YBZG17",
+    "security": "2013073978518",
+    "filename": "apostille_80UQ636YBZG17_2013073978518.pdf",
+    "signer": "Iordan Iurie",
+    "status": "ok",
+    "sha256": null,
+    "source_url": null,
+    "notes": "восстановлен с OCR текстовым слоем",
+    "check": {
+      "ok": false,
+      "size": 40,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "tampered/empty"
+  },
+  {
+    "id": 68,
+    "code": "DFVMD2FQLW5N3",
+    "security": "2013074809675",
+    "filename": "apostille_DFVMD2FQLW5N3_2013074809675.pdf",
+    "signer": "unclear signature",
+    "status": "defective_signature",
+    "sha256": null,
+    "source_url": null,
+    "notes": "semnatura indescifrabila",
+    "check": {
+      "ok": true,
+      "size": 1249365,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "defective_signature + ok"
+  },
+  {
+    "id": 69,
+    "code": "IMTQ930Z8U4N7",
+    "security": "2013074678387",
+    "filename": "apostille_IMTQ930Z8U4N7_2013074678387.pdf",
+    "signer": "unclear signature",
+    "status": "defective_signature",
+    "sha256": null,
+    "source_url": null,
+    "notes": "semnatura indescifrabila",
+    "check": {
+      "ok": true,
+      "size": 2889369,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "defective_signature + ok"
+  },
+  {
+    "id": 70,
+    "code": "HQ7X9W62GUJL9",
+    "security": "2013074330087",
+    "filename": "apostille_HQ7X9W62GUJL9_2013074330087.pdf",
+    "signer": "unclear signature",
+    "status": "defective_signature",
+    "sha256": null,
+    "source_url": null,
+    "notes": "semnatura indescifrabila",
+    "check": {
+      "ok": true,
+      "size": 879760,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "defective_signature + ok"
+  },
+  {
+    "id": 71,
+    "code": "BS7XCZF1EUJG3",
+    "security": "2013074500114",
+    "filename": "apostille_BS7XCZF1EUJG3_2013074500114.pdf",
+    "signer": "unclear signature",
+    "status": "defective_signature",
+    "sha256": null,
+    "source_url": null,
+    "notes": "semnatura indescifrabila",
+    "check": {
+      "ok": true,
+      "size": 4627933,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "defective_signature + ok"
+  },
+  {
+    "id": 77,
+    "code": "403WF02QGRCI1",
+    "security": "2013074897031",
+    "filename": "apostille_403WF02QGRCI1_2013074897031.pdf",
+    "signer": "unclear signature",
+    "status": "defective_signature",
+    "sha256": null,
+    "source_url": null,
+    "notes": "semnatura indescifrabila",
+    "check": {
+      "ok": false,
+      "size": 40,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "defective_signature + tampered/empty"
+  },
+  {
+    "id": 79,
+    "code": "DQ1N892ZFXDI3",
+    "security": "2013074979347",
+    "filename": "apostille_DQ1N892ZFXDI3_2013074979347.pdf",
+    "signer": "unclear signature",
+    "status": "defective_signature",
+    "sha256": null,
+    "source_url": null,
+    "notes": "semnatura indescifrabila",
+    "check": {
+      "ok": true,
+      "size": 843467,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "defective_signature + ok"
+  },
+  {
+    "id": 85,
+    "code": "6R2V5Z4XBZBH8",
+    "security": "2013074509902",
+    "filename": "apostille_6R2V5Z4XBZBH8_2013074509902.pdf",
+    "signer": "unclear signature",
+    "status": "defective_signature",
+    "sha256": null,
+    "source_url": null,
+    "notes": "semnatura indescifrabila",
+    "check": {
+      "ok": true,
+      "size": 846733,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "defective_signature + ok"
+  },
+  {
+    "id": 86,
+    "code": "IT1PD8E29S5F5",
+    "security": "2013074897031",
+    "filename": "apostille_IT1PD8E29S5F5_2013074897031.pdf",
+    "signer": "unclear signature",
+    "status": "defective_signature",
+    "sha256": null,
+    "source_url": null,
+    "notes": "semnatura indescifrabila",
+    "check": {
+      "ok": true,
+      "size": 941525,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "defective_signature + ok"
+  },
+  {
+    "id": 90,
+    "code": "4J20E98WFY7J2",
+    "security": "2013074672491",
+    "filename": "apostille_4J20E98WFY7J2_2013074672491.pdf",
+    "signer": "unclear signature",
+    "status": "defective_signature",
+    "sha256": null,
+    "source_url": null,
+    "notes": "semnatura indescifrabila",
+    "check": {
+      "ok": true,
+      "size": 931160,
+      "content_type": "application/pdf",
+      "status_code": 200
+    },
+    "final_status": "defective_signature + ok"
+  }
+]

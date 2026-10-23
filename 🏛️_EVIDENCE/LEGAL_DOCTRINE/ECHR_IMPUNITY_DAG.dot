@@ -1,0 +1,20 @@
+digraph StructuralDefect {
+    rankdir=LR;
+    node [shape=box, style="filled,rounded", fontname="Arial", fillcolor="#f0f4f8", color="#cbd5e1"];
+    edge [fontname="Arial", fontsize=10, color="#64748b"];
+
+    UDHR_1948 [label="UDHR 1948 (Ω)\nUniversal Baseline", fillcolor="#dcfce7", color="#86efac"];
+    VCLT_53 [label="VCLT Art. 53 (J)\nPeremptory Supremacy", fillcolor="#dcfce7", color="#86efac"];
+    Torture_Prohibition [label="Prohibition of Torture (T)\nJus Cogens", fillcolor="#fee2e2", color="#fca5a5"];
+    ECHR_Procedural [label="ECHR Procedural Filters (Φ_ECHR)\nTime limits, exhaustion, single-judge", fillcolor="#e0f2fe", color="#7dd3fc"];
+    ETS2_Immunity [label="ETS nr. 2 Immunities (I_ETS2)\nPrivileges & Immunities", fillcolor="#e0f2fe", color="#7dd3fc"];
+    Case_S22 [label="Case S-22 (1998)\nMaterial Fact of Torture", fillcolor="#fef3c7", color="#fde047"];
+    Nullity [label="Actus Nullus\nVoid ab initio", shape=ellipse, fillcolor="#ef4444", fontcolor=white, color="#dc2626"];
+
+    UDHR_1948 -> Torture_Prohibition [label="Art. 5"];
+    VCLT_53 -> Torture_Prohibition [label="Supremacy"];
+    Torture_Prohibition -> Case_S22 [label="Anchoring"];
+    ECHR_Procedural -> Nullity [label="Conflict with T"];
+    ETS2_Immunity -> Nullity [label="Obstruction of Justice"];
+    Case_S22 -> Nullity [label="Denial of Rehabilitation"];
+}

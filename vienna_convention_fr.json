@@ -1,0 +1,44 @@
+{
+  "file_type": "vienna_convention",
+  "authenticity_verification": "VALIDÉ",
+  "quantum_weights_1_to_9": {
+    "weight_1": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_2": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_3": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_4": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_5": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_6": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_7": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_8": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_9": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    }
+  },
+  "imperative_layer_10_plus": "Articles 53 et 64 de la Convention de Vienne sur les Normes Impératives",
+  "description": "Les traités en conflit avec une norme impérative sont nuls."
+}

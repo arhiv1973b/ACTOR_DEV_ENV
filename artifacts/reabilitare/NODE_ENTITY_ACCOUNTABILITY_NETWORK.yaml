@@ -1,0 +1,31 @@
+id: NODE_ENTITY_ACCOUNTABILITY_NETWORK
+type: entity_mapping_node
+parent_nodes:
+  - LINK_NON_REHABILITATION_JUS_COGENS
+  - ORDER_RISCANI_24JUL2007
+legal_framework:
+  basis: Universal Jurisdiction / Individual Responsibility for Jus Cogens violations
+entities:
+  - name: "Gheorghe Morozan"
+    role: "Investigative Judge (Judecătoria Rîșcani)"
+    action: "Issued Judicial Order No. 337/07 on July 24, 2007, validating the fabricated search at Miron Costin 13/3, apt. 64 as the initial procedural fabrication step"
+    linked_evidence: "Доказательства Суду Холбан.pdf"
+  - name: "Alexandru Negru"
+    role: "Judge"
+    action: "Formal denial of rehabilitation / Obstruction of effective remedy (UDHR Art. 8)"
+    linked_evidence: "A_Negru_25.04.2023.pdf"
+  - name: "Viorelia Grigoraș"
+    role: "Judge"
+    action: "Issuing citations and procedural orders maintaining procedural barriers while processing rehabilitation claims"
+    linked_evidence: "CITAȚIE_reabilitare_Grigoras_26.04.2024.pdf"
+  - name: "Tudor Stambol"
+    role: "Judge"
+    action: "Issued rulings intentionally confusing review (revizuire, CPC Art. 458) with rehabilitation (CP Art. 112), ignoring res judicata of torture judgment No. 1-568/98"
+    linked_evidence: "Cererii_reabilitare_Pastulaci_Stambol_Grigoras.pdf"
+  - name: "Tatiana Postolachi (Pastulaci)"
+    role: "Judge (Judecătoria Chișinău, sediul Buiucani)"
+    action: "Processing sham rehabilitation applications under CPC RM Arts. 250-251 while enforcing administrative preclusion and blocking full exoneration"
+    linked_evidence: "Cererii_reabilitare_Pastulaci_Stambol_Grigoras.pdf"
+ti_ula_status:
+  state: entities_identified_and_corrected
+  next_step: link_to_continuing_consequences

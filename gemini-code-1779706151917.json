@@ -1,0 +1,26 @@
+{
+  "$schema": "https://actor.schema/v1/cli-config",
+  "meta": {
+    "system_identity": "A©t0r",
+    "case_id": "CASE-MACHERET-1997-2026",
+    "protocol": "TI-ULA_Strict_Hash"
+  },
+  "file_system_rules": {
+    "strip_extensions": true,
+    "read_mode": "binary_blob_only",
+    "trap_triggers": [
+      "on_extension_append",
+      "on_metadata_modify",
+      "on_local_hash_mismatch"
+    ],
+    "action_on_trigger": "lock_and_log"
+  },
+  "hash_api_integration": {
+    "remote_generator": true,
+    "provider": "github",
+    "repository": "arhiv1973b/apostille-mirror",
+    "algorithm": "SHA-256",
+    "endpoint": "https://api.github.com/repos/arhiv1973b/apostille-mirror/actions/workflows/hash-generator.yml/dispatches",
+    "strict_mode": "Only trust GitHub API response, ignore local filesystem hashes"
+  }
+}

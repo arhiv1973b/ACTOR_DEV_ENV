@@ -1,0 +1,17 @@
+id: LINK_ACCOUNTABILITY_TO_CONSEQUENCES
+type: causation_link
+source_node: NODE_ENTITY_ACCOUNTABILITY_NETWORK
+target_node: NODE_FINANCIAL_MODEL_1997_2026
+legal_framework:
+  basis: Draft Articles on Responsibility of States for Internationally Wrongful Acts, UDHR Art. 8
+  mechanism: perpetuation_of_harm_through_denial_of_justice
+causation_vectors:
+  - entity_group: "Judges (Negru, Stambol)"
+    action: "Intentional blockage of the rehabilitation mechanism and dismissal of primary torture evidence (Sentință 1-568/98)"
+    effect: "Maintained the victim's criminalized status, directly causing the uninterrupted accumulation of Lucrum Cessans (professional blockade) and Moral Damage."
+  - entity_group: "State of Moldova"
+    action: "Failure to provide effective remedy and correct acts of its agents"
+    effect: "Full State Liability for the total provisional claim of 1,098,500 EUR + ongoing monthly accruals."
+ti_ula_status:
+  state: causation_loop_closed
+  next_step: initiate_historical_layer_or_export_dossier

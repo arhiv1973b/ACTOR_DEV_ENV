@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "algorithm": "sha256",
+    "baseline": "UDHR 1948 (Jus Cogens)",
+    "files": {
+        "ECHR_IMPUNITY_DAG_POINTER.json": "b91c8f22c5bfcd41a7d09e59dfee4acaea06957e57d4c9daa3e96e9196f3d4ef",
+        "ECHR_IMPUNITY_DAG_SCHEMA.json": "b268838fd9ded44392352b98d31ce8496d7a95b77e3da686cf7f11015f71ee0d",
+        "ECHR_IMPUNITY_GRAPH.json": "91f75078cfcfc70ec46a2388e1be87b0bcef4372e0f635945d56d7484d5748dc",
+        "ETS_nr_2_Anchor.json": "a2b3dfd597c1b0854f8f848f67dd3639506499299e265390fb4088c4d5f47550",
+        "GEOPOLITICAL_GENESIS_ANCHOR.json": "31c2fd470c10911e5078f1ab7dff4962c3b11e6e5db0692d346010a155ab673b",
+        "Geopolitical_Genesis_of_Impunity.json": "60a6339185ec79f105f86a480881bac2b51edd7f9695de52b2b629a50c5d3b79",
+        "NODE_ETS_2_ANCHOR.json": "f821bd5df28ecd28eb79bf3f36947aa380a7880575c37dc700f9469b1051cfb9",
+        "NODE_EVIDENCE_X.json": "dd5054a32a05a520f1dd8ac1f5e98a49d22b9e656b105a6f48b0a2a12fbde207"
+    },
+    "root": "1a356bf163281d630f2a93d6aaeb85ee6b643f298b6a386bd7d96421bc23cb5a"
+}

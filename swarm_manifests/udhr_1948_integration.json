@@ -1,0 +1,10 @@
+{
+  "integration_id": "INT-UDHR-1948-2026-09",
+  "timestamp": "2026-09-08T20:43:32.829892",
+  "source": {
+    "file": "\u0412\u0441\u0435\u043e\u0431\u0449\u0430\u044f_\u0434\u0435\u043a\u043b\u0430\u0440\u0430\u0446\u0438\u044f_\u043f\u0440\u0430\u0432_\u0427\u0435\u043b\u043e\u0432\u0435\u043a\u0430_1948.json",
+    "sha256": "9ae28d1f0d589b244682168eadc831e056a76cb22c15798492b51ba8b382cf92",
+    "relevance": "Universal Declaration of Human Rights (1948) - Articles 3, 5, 6, 8, 10 guaranteeing right to life, liberty, security, freedom from torture, recognition of legal personality, effective remedy, and fair trial."
+  },
+  "status": "fully_integrated"
+}

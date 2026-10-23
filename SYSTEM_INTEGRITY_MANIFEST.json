@@ -1,0 +1,19 @@
+{
+  "system_integrity": {
+    "manifest_id": "ACTOR-2026-001",
+    "compliance": {
+      "no_distillation_protocol": true,
+      "no_weight_reconstruction": true,
+      "training_data_isolation": true
+    },
+    "arch_rules": [
+      "LOCAL_MODEL_PRIMARY_EXECUTION",
+      "REMOTE_API_INFERENCE_ONLY",
+      "STRICT_ZERO_PERSISTENCE_FOR_REMOTE_OUT"
+    ],
+    "verification": {
+      "last_checked": "2026-07-05T06:00:00Z",
+      "authorized_signature": "A©tor"
+    }
+  }
+}

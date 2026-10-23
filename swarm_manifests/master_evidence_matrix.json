@@ -1,0 +1,74 @@
+{
+  "matrix_id": "MASTER-EVIDENCE-MATRIX-2026-v2",
+  "case_id": "CASE-MACHERET-1997-2026",
+  "categories": [
+    {
+      "period": "2003-2004",
+      "focus": "Early Systemic Non-Rehabilitation Pattern",
+      "documents": [
+        {
+          "type": "Judicial Act",
+          "title": "Case No. 1-272/2003",
+          "date": "2021-09-16",
+          "judge": "Miron Aliona",
+          "status": "VERIFIED",
+          "description": "Early episode demonstrating systematic refusal of rehabilitation and pre-2006 patterns of victim status denial."
+        }
+      ]
+    },
+    {
+      "period": "2005-2006",
+      "focus": "Identity Manipulation & Administrative Penalties",
+      "documents": [
+        {
+          "type": "Administrative / State Act",
+          "title": "DAS Rîșcani Certificat Nr. 4410/15",
+          "date": "2015-09-28",
+          "status": "CLOSED_NODE",
+          "description": "Official usage of secondary IDNP 2005048071209 on Maceret Alexei."
+        },
+        {
+          "type": "Judicial Act",
+          "title": "Guzun Court Letters (Cerere 16463)",
+          "date": "2020-07-30",
+          "status": "CLOSED_NODE",
+          "description": "Confirmation of fines 4B-824/2006 and 4B-1409/2006 (40+40 MDL, paid, copies destroyed)."
+        }
+      ]
+    },
+    {
+      "period": "2011-2021",
+      "focus": "Post-Cassation Non-Rehabilitation & Canonical State Validation",
+      "documents": [
+        {
+          "type": "Judicial Act",
+          "title": "Case No. 1-28/11",
+          "date": "2022-02-07",
+          "judge": "Cotruta Ecaterina",
+          "status": "VERIFIED",
+          "description": "Continuation of rehabilitation refusal following 2009 VSP cassation decision, proving systemic disregard for rights restoration."
+        },
+        {
+          "type": "Administrative / State Act",
+          "title": "OSC Rîșcani Apostille Nr. 2013073980269",
+          "date": "2021-07-08",
+          "status": "VERIFIED",
+          "description": "Marriage certificate validation under canonical IDNP 2000001159655."
+        }
+      ]
+    },
+    {
+      "period": "2022-2026",
+      "focus": "Financial Sabotage, Banking Digital Twins & Continuing Consequences",
+      "documents": [
+        {
+          "type": "Judicial Act",
+          "title": "Chisinau Court (Ciocana) Art. 313 CCP Complaint",
+          "date": "2026-09-07",
+          "status": "VERIFIED",
+          "description": "Challenge against Prosecutor Oxana Cazacu's inaction regarding 25.2M MDL theft."
+        }
+      ]
+    }
+  ]
+}

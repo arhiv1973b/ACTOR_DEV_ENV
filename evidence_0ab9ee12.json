@@ -1,0 +1,15 @@
+{
+  "Case": "MACHERET-1997-2026",
+  "SourcePath": "C:\\Users\\arhiv\\Downloads\\Downolde\\0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65.zip",
+  "FileHash": "c4ebd16c1e5f27976571a9757968b19e45381e6041bcad3baf03968c4e8e8440",
+  "FileSize": 26090,
+  "ZipContents": [
+    "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65/",
+    "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65/diagnostics.txt",
+    "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65/github-app.18620.log"
+  ],
+  "DateTime": "2026-09-19T14:49:07.455568+00:00",
+  "EvidenceType": "Forensic Archive Zip",
+  "RecordStatus": "VERIFIED_SOURCE_ARCHIVE",
+  "A©tor_KEY": "# [⚖ A©tor Declaration]"
+}

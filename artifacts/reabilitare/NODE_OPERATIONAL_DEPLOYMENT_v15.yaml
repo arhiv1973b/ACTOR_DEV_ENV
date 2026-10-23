@@ -1,0 +1,19 @@
+id: NODE_OPERATIONAL_DEPLOYMENT_v15
+type: evidence_node
+parent_nodes:
+  - NODE_AVIZ_INSTiintare_2023
+  - NODE_APOSTILLE_REGISTRY_FIXED_HTML
+  - NODE_FINANCIAL_AND_DIGITAL_CONSOLIDATION_v2
+legal_framework:
+  basis: UDHR, VCLT (1969) Arts. 27 & 53, ARSIWA, UN CAT Article 22
+  vector: operational_deployment_v15 (Core Evidence Vault -> 4 Deployment Routing Vectors: UN CAT, Special Rapporteurs, National Prosecutor, Financial Audit)
+master_files:
+  - filename: TI_ULA_Deployment_v15.mmd
+    sha256: "deployment_v15_anchor_2026"
+    size_bytes: 1800
+    role: Mermaid.js operational deployment flowchart v15.0 linking core evidence nodes (Aviz 2023, Apostille Registry Fixed, Financial Consolidation) to the four active routing vectors.
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

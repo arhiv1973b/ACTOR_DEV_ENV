@@ -1,0 +1,44 @@
+[
+  {
+    "agent_id": "AGENT_CAUSALITY_PRIME_01",
+    "target": "Maceret_Restitution_Claim_2026",
+    "timestamp": "2026-09-13T00:28:06.038023",
+    "quantum_weights_1_9": {
+      "w_1": 0.1111111111111111,
+      "w_2": 0.1111111111111111,
+      "w_3": 0.1111111111111111,
+      "w_4": 0.1111111111111111,
+      "w_5": 0.1111111111111111,
+      "w_6": 0.1111111111111111,
+      "w_7": 0.1111111111111111,
+      "w_8": 0.1111111111111111,
+      "w_9": 0.1111111111111111
+    },
+    "imperative_layer_10": "VCLT Art. 53/64 & UDHR 1948 Supremacy",
+    "computed_vector_score": 0.69631,
+    "vienna_status": "Article 53 & 64 Check Passed",
+    "udhr_status": "Articles 1-30 Protected",
+    "agent_status": "AGENT_COLLAPSE"
+  },
+  {
+    "agent_id": "AGENT_CAUSALITY_PRIME_01",
+    "target": "Fabricated_Fine_Order",
+    "timestamp": "2026-09-13T00:28:06.038552",
+    "quantum_weights_1_9": {
+      "w_1": 0.1111111111111111,
+      "w_2": 0.1111111111111111,
+      "w_3": 0.1111111111111111,
+      "w_4": 0.1111111111111111,
+      "w_5": 0.1111111111111111,
+      "w_6": 0.1111111111111111,
+      "w_7": 0.1111111111111111,
+      "w_8": 0.1111111111111111,
+      "w_9": 0.1111111111111111
+    },
+    "imperative_layer_10": "VCLT Art. 53/64 & UDHR 1948 Supremacy",
+    "computed_vector_score": 0.99031,
+    "vienna_status": "Nullified by Jus Cogens",
+    "udhr_status": "Articles 1-30 Protected",
+    "agent_status": "AGENT_VALID"
+  }
+]

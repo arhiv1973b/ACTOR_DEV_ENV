@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Swarm Deployment Logs Archive Index</title>
+<style>
+  body { background: #050a0f; color: #c0d8ec; font-family: 'Share Tech Mono', monospace, sans-serif; padding: 25px; line-height: 1.6; }
+  h1 { color: #f0c040; border-bottom: 1px solid #103c60; padding-bottom: 10px; }
+  input[type="text"] { width: 100%; padding: 10px; background: #071220; border: 1px solid #0c2e4a; color: #40d4ff; border-radius: 4px; margin-bottom: 20px; font-size: 1rem; }
+  ul { list-style: none; padding: 0; }
+  li { margin: 10px 0; background: #071220; padding: 12px; border: 1px solid #0c2e4a; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
+  a { color: #40d4ff; text-decoration: none; font-weight: bold; }
+  a:hover { text-decoration: underline; }
+  .meta { color: #00b8e8; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+  <h1>📁 Swarm Logs Archive Index</h1>
+  <p>Generated at: 2026-09-08T21:55:14.896299</p>
+  <input type="text" id="searchInput" placeholder="Search logs by filename or timestamp..." onkeyup="filterLogs()">
+  <ul id="logList">
+    <li data-filename="swarm-deploy_2026-09-08_21-46-29.log">
+      <a href="swarm-deploy_2026-09-08_21-46-29.log">swarm-deploy_2026-09-08_21-46-29.log</a>
+      <span class="meta">Size: 13013 bytes | Date: 2026-09-08T21:34:20.999742</span>
+    </li>
+  </ul>
+
+  <script>
+    function filterLogs() {
+      let input = document.getElementById('searchInput').value.toLowerCase();
+      let list = document.getElementById('logList');
+      let items = list.getElementsByTagName('li');
+      for (let i = 0; i < items.length; i++) {
+        let filename = items[i].getAttribute('data-filename');
+        if (filename.indexOf(input) > -1) {
+          items[i].style.display = "";
+        } else {
+          items[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

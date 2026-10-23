@@ -1,0 +1,223 @@
+name: Unified Integrity Pipeline & Deployment Gate
+
+on:
+  push:
+    branches: [ "*" ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ "*" ]
+  workflow_dispatch:
+
+jobs:
+  integrity-pipeline:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Step 1 - Repair Broken Links & Mirror PDFs
+        run: |
+          set -e
+          echo "=== Running repair_broken_links.py ==="
+          python3 scripts/repair_broken_links.py
+
+      - name: Step 2 - Verify Manifest and PDF Links
+        run: |
+          set -e
+          echo "=== Running check_links.py ==="
+          python3 check_links.py
+
+      - name: Step 3 - Validate All JSON and NDJSON Files
+        run: |
+          set -e
+          echo "=== Running universal JSON / NDJSON Validator ==="
+          FILES=$(find . -type f \( -name "*.json" -o -name "*.ndjson" \) -not -path "*/.*" -not -path "./node_modules/*")
+          JSON_COUNT=0
+          for file in $FILES; do
+            echo "Validating: $file"
+            python3 scripts/validate_ndjson.py "$file"
+            JSON_COUNT=$((JSON_COUNT + 1))
+          done
+          echo "Validated $JSON_COUNT JSON/NDJSON files successfully."
+          echo "JSON_COUNT=$JSON_COUNT" >> $GITHUB_ENV
+
+      - name: Step 4 - Generate Comprehensive Audit Summary with ASCII Trend Chart (integrity-summary.md)
+        if: always()
+        run: |
+          python3 -c '
+          import json, datetime, hashlib
+          from pathlib import Path
+
+          manifest_path = Path("manifest.json")
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else {}
+          records = manifest.get("records", [])
+          total_records = len(records)
+          ok_records = sum(1 for r in records if r.get("status") == "ok")
+          restored_records = sum(1 for r in records if "восстановлено" in r.get("notes", "").lower())
+          etalon_records = sum(1 for r in records if "эталон" in r.get("notes", "").lower())
+          tampered_records = sum(1 for r in records if "tampered" in r.get("status", "").lower())
+          other_records = total_records - (ok_records + tampered_records)
+
+          # SHA-256 Ledger checks & Mismatch tracking
+          populated_sha256 = sum(1 for r in records if r.get("sha256"))
+          null_sha256 = sum(1 for r in records if not r.get("sha256"))
+          hash_mismatches = 0
+          mismatch_rows = []
+
+          for r in records:
+              expected_hash = r.get("sha256")
+              filename = r.get("filename")
+              if expected_hash and filename:
+                  p = Path(filename)
+                  if p.exists():
+                      file_hash = hashlib.sha256(p.read_bytes()).hexdigest()
+                      if file_hash.lower() != expected_hash.lower():
+                          hash_mismatches += 1
+                          mismatch_rows.append(f"| {r.get(\"id\")} | `{r.get(\"code\")}` | `{expected_hash}` | `{file_hash}` |")
+
+          if mismatch_rows:
+              mismatch_section = "## ⚠️ Detected SHA-256 Hash Mismatches\n| ID | Code | Expected SHA-256 | Actual SHA-256 |\n|:---|:---|:---|:---|\n" + "\n".join(mismatch_rows)
+          else:
+              mismatch_section = "## ⚠️ Detected SHA-256 Hash Mismatches\nNo hash mismatches detected ✅"
+
+          # Audit Log Events aggregation & Temporal Analysis & ASCII Chart
+          audit_log_path = Path("audit_log.json")
+          total_audit_events = 0
+          system_reboots = 0
+          event_breakdown = {}
+          timeline_counts = {}
+
+          if audit_log_path.exists():
+              content = audit_log_path.read_text(encoding="utf-8")
+              decoder = json.JSONDecoder()
+              pos = 0
+              while pos < len(content):
+                  while pos < len(content) and content[pos].isspace():
+                      pos += 1
+                  if pos >= len(content):
+                      break
+                  try:
+                      obj, idx = decoder.raw_decode(content, pos)
+                      pos = idx
+                      total_audit_events += 1
+                      ev = obj.get("event") or obj.get("category") or "general_log"
+                      if ev == "system_reboot":
+                          system_reboots += 1
+                      event_breakdown[ev] = event_breakdown.get(ev, 0) + 1
+
+                      # Temporal parsing
+                      ts_raw = obj.get("timestamp")
+                      dt_str = "Unknown"
+                      if ts_raw is not None:
+                          try:
+                              if isinstance(ts_raw, (int, float)) or (isinstance(ts_raw, str) and ts_raw.replace(".", "", 1).isdigit()):
+                                  dt = datetime.datetime.utcfromtimestamp(float(ts_raw))
+                                  dt_str = dt.strftime("%Y-%m-%d")
+                              elif isinstance(ts_raw, str):
+                                  dt = datetime.datetime.fromisoformat(ts_raw.replace("Z", "+00:00").split("+")[0])
+                                  dt_str = dt.strftime("%Y-%m-%d")
+                          except Exception:
+                              dt_str = "Invalid/Other"
+                      timeline_counts[dt_str] = timeline_counts.get(dt_str, 0) + 1
+                  except Exception:
+                      break
+
+          event_rows = [f"| `{ev}` | {cnt} |" for ev, cnt in event_breakdown.items()]
+          event_table = "| Event Type | Count |\n|:---|:---|\n" + ("\n".join(event_rows) if event_rows else "| (None) | 0 |")
+
+          timeline_rows = [f"| `{date}` | {cnt} |" for date, cnt in sorted(timeline_counts.items(), reverse=True)]
+          timeline_table = "| Date (UTC) | Event Count |\n|:---|:---|\n" + ("\n".join(timeline_rows) if timeline_rows else "| (No timestamps) | 0 |")
+
+          # ASCII Trend Chart Generation
+          max_count = max(timeline_counts.values()) if timeline_counts else 1
+          bar_max_width = 30
+          ascii_lines = []
+          for date_str, cnt in sorted(timeline_counts.items()):
+              bar_len = int((cnt / max_count) * bar_max_width) if max_count > 0 else 0
+              bar = "█" * bar_len
+              ascii_lines.append(f"`{date_str}` | {cnt:3d} | {bar}")
+          ascii_chart = "```text\n" + ("\n".join(ascii_lines) if ascii_lines else "No data") + "\n```"
+
+          table_rows = []
+          for r in records:
+              table_rows.append(f"| {r.get(\"id\")} | `{r.get(\"code\")}` | {r.get(\"status\")} | {r.get(\"sha256\") or \"null\"} | {r.get(\"notes\")} |")
+
+          timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+          status = "${{ job.status }}"
+          cat_status = "Passed ✅" if status == "success" else "Failed ❌"
+
+          summary_content = f"""# 🛡️ Unified Integrity & Audit Summary Report
+
+- **Timestamp**: {timestamp}
+- **Python Version**: ${{ matrix.python-version }}
+- **Pipeline Status**: {cat_status}
+- **Manifest Version**: {manifest.get("version", "N/A")}
+- **Base URL**: {manifest.get("base_url", "N/A")}
+
+## 📊 Aggregated Totals & Ledger Statistics
+- **Total Records in Manifest**: {total_records}
+- **OK / Valid**: {ok_records}
+- **Baseline / Etalon**: {etalon_records}
+- **Restored from Original**: {restored_records}
+- **Tampered / Empty**: {tampered_records}
+- **Other**: {other_records}
+- **JSON Files Checked**: ${{ env.JSON_COUNT }}
+
+## 🔐 SHA-256 Hash Integrity Summary
+- **Populated SHA-256 Hashes**: {populated_sha256}
+- **Null SHA-256 Hashes**: {null_sha256}
+- **Hash Mismatches Detected**: {hash_mismatches}
+
+{mismatch_section}
+
+## 📜 Audit Log Events Summary (`audit_log.json`)
+- **Total Logged Events**: {total_audit_events}
+- **System Reboots Recorded**: {system_reboots}
+
+{event_table}
+
+## 📈 Temporal Analysis & Event Distribution (UTC)
+{timeline_table}
+
+### 📊 Event Trend Visualization (ASCII Chart)
+{ascii_chart}
+
+## 📑 Apostille Ledger Records Table
+| ID | Code | Status | SHA-256 | Notes |
+|:---|:---|:---|:---|:---|
+""" + "\n".join(table_rows) + f"""
+
+---
+*Generated automatically by GitHub Actions Unified Integrity Pipeline.*
+"""
+          Path("integrity-summary.md").write_text(summary_content, encoding="utf-8")
+          print("Successfully generated integrity-summary.md with ASCII trend chart.")
+          '
+
+      - name: Step 5 - Upload Integrity Audit Report & Summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: integrity-audit-report-py${{ matrix.python-version }}
+          path: |
+            manifest.json
+            audit_log.json
+            check_report.json
+            integrity-summary.md
+          if-no-files-found: ignore
+
+  deploy-gate:
+    needs: integrity-pipeline
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    steps:
+      - name: Integrity Gate Passed
+        run: |
+          echo "✅ All integrity checks passed successfully. Ready for deployment / GitHub Pages publish."

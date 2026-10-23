@@ -1,0 +1,4 @@
+Layer,Task,Status,Aberration_Risk
+Basement,SHA-256 / A©TOR_KEY,Verified,Fatal
+Adaptive,OCR Fallback,Active,Compensated
+Context,Artifact Graph,Logged,Tolerated

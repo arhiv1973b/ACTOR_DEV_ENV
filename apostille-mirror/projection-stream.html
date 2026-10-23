@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projection Stream | CASE MACHERET</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@600;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050a0f;
+      --panel: #060f1a;
+      --border: #0c2e4a;
+      --cyan: #00b8e8;
+      --gold: #f0c040;
+      --text: #c0d8ec;
+      --muted: #8ab0cc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Rajdhani', sans-serif;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .hero, .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      margin: 0 0 8px;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.1rem;
+    }
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .status {
+      margin-top: 12px;
+      color: var(--gold);
+      font-size: 0.95rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .badge {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 4px 8px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.75rem;
+    }
+    .title {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.05rem;
+    }
+    .preview {
+      color: var(--muted);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+    .path {
+      word-break: break-all;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--cyan);
+      margin-bottom: 12px;
+    }
+    .actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .actions a {
+      text-decoration: none;
+      color: var(--cyan);
+      border: 1px solid var(--cyan);
+      padding: 6px 10px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Projection Stream</h1>
+      <p>Автономный слой для PDF и image потоков из локального worktree и зеркала Google Drive.</p>
+      <div class="status">Если локальная машина отключена, GitHub сохраняет витрину, а зеркальный контент возвращается после синхронизации.</div>
+    </div>
+    <div id="projection-grid" class="grid"></div>
+  </div>
+  <script>
+    fetch('manifest.json')
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var grid = document.getElementById('projection-grid');
+        var nodes = Array.isArray(data.projectionNodes) ? data.projectionNodes : [];
+        grid.innerHTML = nodes.map(function (item) {
+          return `
+            <div class="card">
+              <div class="badge">${item.badge || item.kind}</div>
+              <div class="title">${item.title}</div>
+              <div class="preview">${item.preview || ''}</div>
+              <div class="path">${item.source || ''}</div>
+              <div class="actions">
+                <a href="${item.source}">Open</a>
+                ${item.download ? `<a href="${item.download}" download>Download</a>` : ''}
+              </div>
+            </div>
+          `;
+        }).join('');
+      });
+  </script>
+</body>
+</html>

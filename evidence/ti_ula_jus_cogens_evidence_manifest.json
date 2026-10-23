@@ -1,0 +1,66 @@
+{
+  "manifest_id": "TI_ULA_JUS_COGENS_EVIDENCE_MANIFEST_2026",
+  "case_reference": "CASE-MACHERET-1997-2026",
+  "framework": "TI-ULA Transparent Immutable Universal Legal Anchor",
+  "evidence_items": [
+    {
+      "evidence_id": "EV_ROOT_TORTURE_1998",
+      "type": "Judicial Judgment & Apostille",
+      "reference": "Case No. 1-568/98 (October 13, 1998)",
+      "authentication": "Hague Apostille No. 7H2Q3790FZEI5",
+      "description": "Judicial establishment of state torture (position 'lastochka') committed by Police Inspector Victor Grigore Dulce on August 18, 1997.",
+      "legal_weight": "Absolute Res Judicata / Jus Cogens Anchor"
+    },
+    {
+      "evidence_id": "EV_MULTILINGUAL_LAWS",
+      "type": "Statutory & International Norms",
+      "items": [
+        {
+          "norm": "Vienna Convention on the Law of Treaties (1969), Articles 53 & 64",
+          "status": "Active Peremptory Standard"
+        },
+        {
+          "norm": "Universal Declaration of Human Rights (1948), Articles 5 & 8",
+          "status": "Unfrozen Supreme Axiological Filter"
+        },
+        {
+          "norm": "UN Convention Against Torture (1984), Articles 2, 4, 14",
+          "status": "Non-derogable obligation for Restitutio in Integrum"
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV_PROCEDURAL_SABOTAGE_NETWORK",
+      "type": "Institutional Complicity & Forgery",
+      "actors": [
+        {
+          "name": "Judge Tudor Stambol",
+          "action": "Conflation of review and rehabilitation, ignoring res judicata of 1-568/98"
+        },
+        {
+          "name": "Judge Holban & Dada Ion",
+          "action": "Cross-jurisdictional manipulation of cooperative housing ZhSK-39 rights"
+        },
+        {
+          "name": "Judge Gennady Morozan",
+          "action": "Refusal to recognize housing warrants as legal facts"
+        },
+        {
+          "name": "Lyudmila Nantoi",
+          "action": "Fabrication of statements and psychiatric isolation (PKB)"
+        }
+      ]
+    },
+    {
+      "evidence_id": "EV_VOLUME_ANOMALY_AUDIT",
+      "type": "Administrative Sabotage Metric",
+      "metrics": {
+        "root_case_volume": "0.2 volumes (Case No. 1-568/98)",
+        "procedural_maze_volume": "22+ volumes (Case No. 1-272/2003 and cascading files)",
+        "conclusion": "Hypertrophic paper volume demonstrates systematic denial of justice and administrative obstruction."
+      }
+    }
+  ],
+  "memorandum_link": "LEGAL_MEMORANDUM_MACHERET_2026.md",
+  "verification_status": "VERIFIED_AND_ANCHORED"
+}

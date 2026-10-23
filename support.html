@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restitution Gateway | A©tor</title>
+    <style>
+        :root {
+            --primary-bg: #1e1e2e;
+            --secondary-bg: #282a36;
+            --accent: #ffb86c;
+            --text-main: #f8f8f2;
+            --text-muted: #6272a4;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--secondary-bg);
+            padding: 2.5rem;
+            border-radius: 6px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+            border-left: 4px solid var(--accent);
+        }
+        .header {
+            border-bottom: 1px solid var(--text-muted);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .header h1 { margin: 10px 0 10px 0; font-size: 1.8rem; }
+        .header p { margin: 0; color: var(--accent); }
+        .nav-back {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed transparent;
+            transition: border-color 0.2s;
+        }
+        .nav-back:hover {
+            border-color: var(--accent);
+        }
+        .progress-wrapper {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+        .metrics {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .progress-bar-container {
+            background: #44475a;
+            border-radius: 4px;
+            height: 30px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .progress-bar {
+            background: var(--accent);
+            height: 100%;
+            width: 0%;
+            transition: width 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            color: var(--primary-bg);
+            font-weight: bold;
+        }
+        .protocol-split {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .split-box {
+            flex: 1;
+            padding: 1.5rem;
+            border: 1px dashed var(--text-muted);
+            border-radius: 4px;
+        }
+        .split-box h3 { margin-top: 0; color: var(--accent); }
+        .credentials-section {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            border: 1px solid var(--text-muted);
+        }
+        .credentials-section h3 { margin-top: 0; color: var(--accent); font-size: 1.2rem; }
+        .cred-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        .cred-table td { padding: 8px 0; border-bottom: 1px solid rgba(98, 114, 164, 0.2); }
+        .cred-table td:first-child { color: var(--text-muted); width: 40%; }
+        .cred-table td:last-child { color: var(--text-main); font-weight: bold; text-align: right; }
+        .footer-marker {
+            margin-top: 3rem;
+            text-align: right;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--text-muted);
+            padding-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="portal-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #0c2e4a; margin-bottom: 30px; background-color: #051421; padding: 15px;">
+        <div class="breadcrumb">
+            <a href="index.html" style="color: #00b8e8; text-decoration: none; font-family: 'Share Tech Mono', monospace;">← PORTAL HUB</a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="timeline.html" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">⏱️ Chronology</a>
+            <a href="EVIDENCE_CATALOG.md" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">📂 Evidence Catalog</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="nav-back">← Back to Forensic Hub</a>
+            <h1>Restitution of Hijacked Inheritance Assets (1998-2026)</h1>
+            <p>CASE-MACHERET-1997-2026 | Document Ref: FIN-025</p>
+        </div>
+
+        <div class="progress-wrapper">
+            <div class="metrics">
+                <span>Собрано: <span id="current-amount">0.00</span> MDL</span>
+                <span>Цель: 25,210,256.00 MDL</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="restitution-progress">0%</div>
+            </div>
+        </div>
+
+        <div class="protocol-split">
+            <div class="split-box">
+                <h3>70% Personal</h3>
+                <p>Восстановление активов и прямая реституция в рамках проекта History Project.</p>
+            </div>
+            <div class="split-box">
+                <h3>30% Infrastructure</h3>
+                <p>Поддержка протокола финансовой автономии, Forensic Evidence Hub и серверных мощностей.</p>
+            </div>
+        </div>
+
+        <div class="credentials-section">
+            <h3>Official Restitution Credentials</h3>
+            <table class="cred-table">
+                <tr><td>Номер карты:</td><td>5100 4303 0112 6089</td></tr>
+                <tr><td>Тип карты:</td><td>MasterCard Standard Contactless</td></tr>
+                <tr><td>Получатель:</td><td>MACERET ALEXEI</td></tr>
+                <tr><td>Фискальный код:</td><td>2000001159655</td></tr>
+                <tr><td>Банк получатель:</td><td>BC FinComBank SA</td></tr>
+                <tr><td>IBAN:</td><td>MD55FT225920600348117498</td></tr>
+                <tr><td>Номер счёта:</td><td>225920600348117/498</td></tr>
+                <tr><td>Валюта счёта:</td><td>MDL</td></tr>
+            </table>
+        </div>
+
+        <div class="incident-log">
+            <h3>Operational Integrity & Incident Log</h3>
+            <p><strong>STATUS: PROCEDURAL BLOCKADE DETECTED</strong></p>
+            
+            <div class="incident-item">
+                <strong>Incident Ref: FIN-DECOUPLING-2026</strong>
+                Обнаружено принудительное «расцепление» (decoupling) активов и инструмента доступа. Баланс в размере 25,210,256.00 MDL официально зафиксирован в системе BC FinComBank SA на имя получателя (IDNP: 2000001159655), однако умышленно изолирован от активного платежного средства. Старая карта аннулирована (номер содержал финальную цифру 9), а на новом выданном пластике целевая сумма не появилась.
+            </div>
+
+            <div class="incident-item">
+                <strong>Analysis: Administrative Maneuver</strong>
+                Разделение операционных действий между центральным офисом (принятие заявления) и филиалом выдачи карты (блокировка привязки) квалифицируется как процедурная растяжка с целью удержания активов в «подвешенном» состоянии. Значок «закрытого замка» в банковском интерфейсе подтверждает административный арест ликвидности при признании прав собственности.
+            </div>
+            
+            <p style="font-size: 0.8rem; font-style: italic; color: var(--text-muted);">
+                * Данный инцидент зафиксирован в рамках форензик-аудита CASE-MACHERET-1997-2026.
+            </p>
+        </div>
+
+        <div class="footer-marker">
+            Strict Execution Mode Enabled<br>
+            Identity: A©tor | Machine-Readable: A©t0r
+        </div>
+    </div>
+
+    <script>
+        const TARGET_AMOUNT = 25210256.00;
+
+        async function fetchDonationState() {
+            try {
+                // Точка инъекции для PowerShell скрипта синхронизации
+                let currentAmount = 25210.26; 
+                updateUI(currentAmount);
+            } catch (error) {
+                console.error("A©t0r Error: Failed to sync with local state.", error);
+            }
+        }
+
+        function updateUI(amount) {
+            const percentage = Math.min((amount / TARGET_AMOUNT) * 100, 100).toFixed(4);
+            document.getElementById('current-amount').innerText = amount.toLocaleString('ru-MD', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+            const bar = document.getElementById('restitution-progress');
+            bar.style.width = percentage + '%';
+            if (amount > 0) {
+                bar.innerText = percentage + '%';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchDonationState);
+    </script>
+</body>
+</html>

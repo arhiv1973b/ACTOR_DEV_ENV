@@ -1,0 +1,47 @@
+{
+  "$schema": "https://actor.schema/v1/claude-mcp-integration",
+  "meta": {
+    "module": "Web_Development_Bridge",
+    "target_path": "C:\\Users\\arhiv\\AppData\\Local\\AnthropicClaude\\claude_desktop_config.json",
+    "author": "A©tor",
+    "status": "READY_FOR_DEPLOYMENT",
+    "timestamp": "2026-06-02T20:25:00Z"
+  },
+  "deployment_instructions": {
+    "step_1": "Закройте приложение Claude Desktop полностью (включая фоновый процесс в трее).",
+    "step_2": "Перейдите по пути C:\\Users\\arhiv\\AppData\\Roaming\\Claude\\ (обратите внимание: конфигурационный файл обычно лежит в Roaming, а не в Local). Если файла claude_desktop_config.json нет, создайте его.",
+    "step_3": "Скопируйте блок 'mcpServers' из этого манифеста в ваш конфигурационный файл.",
+    "step_4": "Запустите Claude Desktop. Появится иконка 'молотка', сигнализирующая о подключении инструментов сборки."
+  },
+  "mcpServers": {
+    "actor_filesystem_dev": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\arhiv\\WebProjects",
+        "C:\\Users\\arhiv\\Downloads"
+      ],
+      "description": "Предоставляет ИИ прямой доступ к чтению и записи HTML/CSS/JS файлов в рабочей директории."
+    },
+    "actor_terminal_build": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "description": "Позволяет системе планировать архитектуру сайта и последовательно выполнять команды терминала (например, npm run build)."
+    },
+    "actor_github_sync": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<ВСТАВЬТЕ_ВАШ_ТОКЕН_ЗДЕСЬ>"
+      },
+      "description": "Прямая интеграция с репозиториями для пуша исходного кода сайта."
+    }
+  }
+}

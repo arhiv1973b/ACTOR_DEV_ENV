@@ -1,0 +1,35 @@
+digraph ApostilleAuditMasterExtended {
+    rankdir=TB;
+    newrank=true;
+    compound=true;
+    node [shape=box, style="filled,rounded", fontname="Arial", fontsize=10];
+    edge [fontname="Arial", fontsize=8];
+
+    # VALID NODES
+    subgraph cluster_valid {
+        label="VALID APOSTILLES (Full Legal Certainty)";
+        style="dashed,bold"; color="darkgreen"; bgcolor="#f0fff0";
+        VALID_9OVS71FRKM4S3 [label="9OVS71FRKM4S3\n[VALID]\nSigner: Stela Pinzaru", fillcolor="#c8e6c9", color="#2e7d32"];
+    }
+
+    # DEFECTIVE NODES WITH PHYSICAL EVIDENCE LAYER
+    subgraph cluster_defective_extended {
+        label="DEFECTIVE APOSTILLES & PHYSICAL EVIDENCE LAYER (13 Nodes)";
+        style="dashed,bold"; color="darkred"; bgcolor="#fff0f0";
+
+        # Node 68 with Physical Evidence Subnode
+        DEF_68 [label="#68 | DFVMD2FQLW5N3\nRegistry: semnătura indescifrabilă", fillcolor="#ffcdd2", color="#c62828"];
+        PHYS_68 [label="Physical Evidence #68\nAutograph: Maia Flenchea\n(Verified Blue/Violet Ink)", fillcolor="#e8f5e9", color="#2e7d32"];
+        DEF_68 -> PHYS_68 [label="Contradiction / Exposure", color="purple", style="bold"];
+
+        # Node 36
+        DEF_36 [label="#36 | DLTP7B8ZHWGQ7\nRegistry: unclear signature", fillcolor="#ffcdd2", color="#c62828"];
+        PHYS_36 [label="Physical Evidence #36\nManual Cursive Ink Present", fillcolor="#e8f5e9", color="#2e7d32"];
+        DEF_36 -> PHYS_36 [label="Contradiction", color="purple", style="bold"];
+
+        # Node 41
+        DEF_41 [label="#41 | CG0T6Y1TBUEL7\nRegistry: unclear signature", fillcolor="#ffcdd2", color="#c62828"];
+        PHYS_41 [label="Physical Evidence #41\nLegible Autograph Present", fillcolor="#e8f5e9", color="#2e7d32"];
+        DEF_41 -> PHYS_41 [label="Contradiction", color="purple", style="bold"];
+    }
+}

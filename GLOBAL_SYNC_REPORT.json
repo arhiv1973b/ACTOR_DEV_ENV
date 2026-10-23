@@ -1,0 +1,133 @@
+{
+  "node": "Agent_Global_Sync",
+  "timestamp": "2026-09-13T11:41:11.466677",
+  "total_dag_entries": 10,
+  "ledger_entries": [
+    {
+      "Output": "data/verified_output/",
+      "Name": "Agent_Crypto",
+      "Hash": "sha256:crypto-block",
+      "Timestamp": "2026-09-10T00:53:20Z",
+      "Result": "success",
+      "Input": "data/semantic_output/",
+      "Task": "Crypto_Verification"
+    },
+    {
+      "Output": "data/ocr_output/",
+      "Name": "Agent_OCR",
+      "Hash": "sha256:ocr-block",
+      "Timestamp": "2026-09-10T00:53:20Z",
+      "Result": "success",
+      "Input": "data/input_images/",
+      "Task": "OCR_Enrichment"
+    },
+    {
+      "Output": "data/semantic_output/",
+      "Name": "Agent_Semantic",
+      "Hash": "sha256:semantic-block",
+      "Timestamp": "2026-09-10T00:53:20Z",
+      "Result": "success",
+      "Input": "data/ocr_output/",
+      "Task": "Semantic_Mining"
+    },
+    {
+      "entry_id": "DIR-FINALIZE-ENTITY-GRAPH-2026-09",
+      "timestamp": "2026-09-10T04:11:22.931704",
+      "agent_id": "AgentRoot_Orchestrator",
+      "role": "Finalize entity graph and state across international law and domestic evidence",
+      "action": "Execute finalizeCurrentState()",
+      "input_ref": "manifest_temp_state.json",
+      "output_ref": "DAG_SWARM_LEDGER.jsonl",
+      "artifact_sha256": "61c06905074da4273207f3b964a4ad121dd4deab43e9e8042f6b2e63b2536206",
+      "prev_dag_hash": "0caaca9691277805f21aa6ac346e77f668cc606beb581c709e1e529f3328bad4",
+      "convergence_criterion": "100% entity graph closure and cryptographic DAG anchoring",
+      "status": "finalized",
+      "new_dag_hash": "1e8c41bf499f0e5572172ecd9e2434a6a0bf6d0a69705283150c8d3b51811335"
+    },
+    {
+      "entry_id": "DAG-ENTRY-FINAL-CONSENSUS-2026-09",
+      "timestamp": "2026-09-10T04:13:08.300511",
+      "agent_id": "AgentRoot_Orchestrator",
+      "action": "Final consensus and cryptographic seal of 5 scratch nodes",
+      "input_ref": "ACTOR_DEV_ENV manifest hashes",
+      "output_ref": "DAG_SWARM_LEDGER.jsonl",
+      "prev_dag_hash": "784d69d4cf00688139df64458e5508061631a645f934246247b76e5c41727fd7",
+      "ledger_state_hash": "e739e1967943ddd5c5a0e057f8094d5112583038cb8ad43c4bfe6fef22d0ac01",
+      "status": "sealed",
+      "new_dag_hash": "efafd23726079487dc4615599894e38f8a72734fef0f25e8450f8a157455e11c"
+    },
+    {
+      "entry_id": "DIR-FINALIZE-ENTITY-GRAPH-2026-09",
+      "timestamp": "2026-09-11T20:33:16.214210",
+      "agent_id": "AgentRoot_Orchestrator",
+      "role": "Finalize entity graph and state across international law and domestic evidence",
+      "action": "Execute finalizeCurrentState()",
+      "input_ref": "manifest_temp_state.json",
+      "output_ref": "DAG_SWARM_LEDGER.jsonl",
+      "artifact_sha256": "f97094ae2a0e5a1e842b58012a10fba2da1c3b64b6a3a58fd88d0f1c68bbc6e3",
+      "prev_dag_hash": "efafd23726079487dc4615599894e38f8a72734fef0f25e8450f8a157455e11c",
+      "convergence_criterion": "100% entity graph closure and cryptographic DAG anchoring",
+      "status": "finalized",
+      "new_dag_hash": "35161b792fd9e6b034373ae97c186574187ad2cbc159018fff3cb5f60d8b749d"
+    },
+    {
+      "entry_id": "DIR-FINALIZE-ENTITY-GRAPH-2026-09",
+      "timestamp": "2026-09-11T20:52:55.644112",
+      "agent_id": "AgentRoot_Orchestrator",
+      "role": "Finalize entity graph and state across international law and domestic evidence",
+      "action": "Execute finalizeCurrentState()",
+      "input_ref": "manifest_temp_state.json",
+      "output_ref": "DAG_SWARM_LEDGER.jsonl",
+      "artifact_sha256": "50c5527f1321aa77b866a27c5c3eab31f041fd81d213a90c822a03987359f7df",
+      "prev_dag_hash": "35161b792fd9e6b034373ae97c186574187ad2cbc159018fff3cb5f60d8b749d",
+      "convergence_criterion": "100% entity graph closure and cryptographic DAG anchoring",
+      "status": "finalized",
+      "new_dag_hash": "e9b7e266156f262b3b9d0010ed369acbef2f2de1e2a3719e6b9416bf5e25547f"
+    },
+    {
+      "entry_id": "DIR-FINALIZE-ENTITY-GRAPH-2026-09",
+      "timestamp": "2026-09-11T21:10:44.617302",
+      "agent_id": "AgentRoot_Orchestrator",
+      "role": "Finalize entity graph and state across international law and domestic evidence",
+      "action": "Execute finalizeCurrentState()",
+      "input_ref": "manifest_temp_state.json",
+      "output_ref": "DAG_SWARM_LEDGER.jsonl",
+      "artifact_sha256": "101523d67efe4e3b5db924f3f3b57e388ffe21216993c7e517446933f9570336",
+      "prev_dag_hash": "e9b7e266156f262b3b9d0010ed369acbef2f2de1e2a3719e6b9416bf5e25547f",
+      "convergence_criterion": "100% entity graph closure and cryptographic DAG anchoring",
+      "status": "finalized",
+      "new_dag_hash": "aa203509000ab2171b05fdca8bceb631b395f19d8b61359a2b1b85258d14c9dc"
+    },
+    {
+      "entry_id": "DIR-FINALIZE-ENTITY-GRAPH-2026-09",
+      "timestamp": "2026-09-12T11:54:27.671027",
+      "agent_id": "AgentRoot_Orchestrator",
+      "role": "Finalize entity graph and state across international law and domestic evidence",
+      "action": "Execute finalizeCurrentState()",
+      "input_ref": "manifest_temp_state.json",
+      "output_ref": "DAG_SWARM_LEDGER.jsonl",
+      "artifact_sha256": "079ae5cf58f250522ffb199232016bf4638081f994d6c0d63d94f834f1c5b3e1",
+      "prev_dag_hash": "aa203509000ab2171b05fdca8bceb631b395f19d8b61359a2b1b85258d14c9dc",
+      "convergence_criterion": "100% entity graph closure and cryptographic DAG anchoring",
+      "status": "finalized",
+      "new_dag_hash": "0d9314cf2d50f983d1c16a2819dd3dab9416146c9dd6da3be94908c28bf6fee9"
+    },
+    {
+      "entry_id": "DIR-FINALIZE-ENTITY-GRAPH-2026-09",
+      "timestamp": "2026-09-12T12:00:53.011762",
+      "agent_id": "AgentRoot_Orchestrator",
+      "role": "Finalize entity graph and state across international law and domestic evidence",
+      "action": "Execute finalizeCurrentState()",
+      "input_ref": "manifest_temp_state.json",
+      "output_ref": "DAG_SWARM_LEDGER.jsonl",
+      "artifact_sha256": "543686939dd5b0bb4422ebea328acfee4efa618147c60cfbd7ed928eddc53375",
+      "prev_dag_hash": "0d9314cf2d50f983d1c16a2819dd3dab9416146c9dd6da3be94908c28bf6fee9",
+      "convergence_criterion": "100% entity graph closure and cryptographic DAG anchoring",
+      "status": "finalized",
+      "new_dag_hash": "50fd6ea7ed41aa88d0e8c25040c5a25787e646642d2366f8dda0f40d8d0a46f6"
+    }
+  ],
+  "security_status": "G:\\ Google Drive Read-Only Enforced",
+  "status": "synchronized",
+  "report_sha256": "4009de7306946646b7127ca6a2ec7e81bd5c8034f4a1e4bf8961167e228e4176"
+}

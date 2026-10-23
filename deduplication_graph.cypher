@@ -1,0 +1,6 @@
+CREATE (a:AuditSession {id: 'session_1789820179', generated_at: '2026-09-19T12:16:19.444402+00:00', system_user: 'arhiv'});
+MERGE (m:MasterFile {sha256: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'}) ON CREATE SET m.filepath = 'H:/ACTOR_DEV_ENV/evidence_c99741.json', m.size_bytes = 450;
+MATCH (a:AuditSession {id: 'session_1789820179'}), (m:MasterFile {sha256: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'}) CREATE (a)-[:AUDITED]->(m);
+MERGE (d:DuplicateFile {filepath: 'H:/ACTOR_DEV_ENV/evidence_backup/evidence_c99741.json'}) ON CREATE SET d.sha256 = 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855';
+MATCH (d:DuplicateFile {filepath: 'H:/ACTOR_DEV_ENV/evidence_backup/evidence_c99741.json'}), (m:MasterFile {sha256: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'}) MERGE (d)-[:IS_SYMLINK_TO {link_type: 'IS_SYMLINK_TO'}]->(m);
+MATCH (a:AuditSession {id: 'session_1789820179'}), (d:DuplicateFile {filepath: 'H:/ACTOR_DEV_ENV/evidence_backup/evidence_c99741.json'}) CREATE (a)-[:AUDITED]->(d);

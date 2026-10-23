@@ -1,0 +1,28 @@
+{
+  "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+  "DateTime": "2026-04-03T10:55:00",
+  "Sender": "FinComBank S.A.",
+  "Receiver": "Moldindconbank S.A.",
+  "Amount": {
+    "MDL": 25210256.15,
+    "USD": 1400000
+  },
+  "WalletToken": "MD-APPLEPAY-6089-20260403",
+  "CardConflict": {
+    "Blocked": "5929",
+    "Displayed": "6089"
+  },
+  "Image": {
+    "FileName": "0-02-05-16ff2207bac47ccc430dc4cb26edbf9a852ffe2d797d8e6f9d48db130705d607_faecfcd82230d698.jpg",
+    "LocalPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\viber_faecfcd8_2dc2fcf5.jpg",
+    "SHA256": "2dc2fcf5f5ac90dd2dbed76789cf6edd37eac0be7fb10f9d186ed43418dc42ac",
+    "SizeBytes": 247438
+  },
+  "DAGNode": "b5b9f5cc13267dfa7aa7de63a66abd576d60ba42060dc813b80817853a01b983",
+  "GitHubRelease": "https://github.com/arhiv1973b/apostille-mirror/releases/tag/evidence-linked-c99741-faecfcd8-20260403",
+  "Case": "MACHERET-1997-2026",
+  "LegalCharacterization": "Disputed Theft – US Funds Only",
+  "RecordStatus": "USER_ASSERTED / DISPUTED",
+  "EvidenceStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
+  "IntegrityLock": "AIPS-2025"
+}

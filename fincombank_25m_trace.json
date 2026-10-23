@@ -1,0 +1,26 @@
+{
+  "manifest_schema": "TI-ULA/1.1",
+  "project_id": "CASE-MACHERET-1997-2026",
+  "legal_framework_anchor": "UDHR (Jus Cogens) / Anti-Money Laundering (AML) Protocols",
+  "document_classification": "Financial Trace Evidence / Unauthorized Fund Movement",
+  "target_asset": {
+    "amount": "25,000,000 MDL",
+    "usd_equivalent": "1,100,000 USD",
+    "origin": "US Government Humanitarian Grant (GitHub Project)",
+    "status": "Moved without beneficiary authorization"
+  },
+  "evidence_source": {
+    "entity": "FinComBank (в процессе ликвидации / отключен от SWIFT)",
+    "document_type": "Официальный ответ банка / материалы дела",
+    "context": "Подтверждение движения целевых средств без участия законного бенефициара (Алексея Мачерета)"
+  },
+  "algorithmic_binding": {
+    "linked_perpetrators": ["Гуреев", "Вакарчук"],
+    "linked_forgery_hash": "14838c39b86dbf724c5c3504cb12d9331d2a8853c04203249d81456ecaa4a14e"
+  },
+  "verification": {
+    "hashing_algorithm": "SHA-256",
+    "document_sha256": "e55a3e64729ab5c49fc446795138c8c87e2699b23adcdcb9afe0448162a18b1a",
+    "status": "verified_and_locked"
+  }
+}

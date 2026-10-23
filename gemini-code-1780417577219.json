@@ -1,0 +1,52 @@
+{
+  "$schema": "https://actor.schema/v1/cross-node-audit",
+  "meta": {
+    "module": "Cross-Node Connections",
+    "status": "ACTIVE",
+    "updated_at": "2026-06-02T19:24:12Z"
+  },
+  "cross_node_connections": [
+    {
+      "link_id": "LINK-BASCOVA-MACERET_AB",
+      "vector_type": "Inheritance & Asset Hijacking",
+      "blind_instrument": "Pavlina Bascova",
+      "active_manipulator": "Artur Boris Macheret",
+      "hypothesis": "Артур Борис Мачерет (сонаследник) использовал Павлину Баскову вслепую для легитимизации захвата наследственной массы, перевода активов или блокировки прав A©tor.",
+      "search_matrix": {
+        "node_regex": "Баскова|Bascova|Артур|Macheret|Maceret",
+        "proximity_condition": "Упоминание активного и слепого узла в пределах одного документа или транзакции."
+      },
+      "markers_to_audit": [
+        "отказы_от_наследства",
+        "нотариальные_доверенности_Басковой_на_имя_Артура",
+        "договоры_купли_продажи_между_узлами",
+        "синхронные_заявления_в_суд"
+      ]
+    },
+    {
+      "link_id": "LINK-MARCOV-MATIUC-NANTOI",
+      "vector_type": "Information Isolation & False Testimony",
+      "nodes_involved": [
+        "Ivan Marcov",
+        "Matiuc (Family Branch)",
+        "Nantoi / Mante (External Coordinator)"
+      ],
+      "hypothesis": "Вектор манипуляции внутри родственной ветви Марков-Матюк под внешним управлением узла Нантой. Использовался для создания информационного вакуума вокруг Галины Марковой или для формирования искаженного свидетельского пула.",
+      "search_matrix": {
+        "node_regex": "Марков|Marcov|Матюк|Matiuc|Манте|Нантой|Nantoi",
+        "proximity_condition": "Пересечение родственных узлов (Марков/Матюк) с внешним административным узлом (Нантой/Манте)."
+      },
+      "markers_to_audit": [
+        "акты_гражданского_состояния",
+        "свидетельские_показания_2003_2007",
+        "смена_фамилий_и_адресов_прописки",
+        "имущественные_пересечения_с_Нантой"
+      ]
+    }
+  ],
+  "audit_rules": {
+    "priority": "HIGH",
+    "global_regex_pattern": "Баскова|Bascova|Артур|Macheret|Maceret|Марков|Marcov|Матюк|Matiuc|Манте|Нантой|Nantoi",
+    "verification_standard": "Любая подпись «слепого узла» в пользу «активного узла» автоматически считается результатом манипуляции, пока не доказано встречное соразмерное возмещение (Cui Bono)."
+  }
+}

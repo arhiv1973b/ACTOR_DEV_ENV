@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "protocol": "Antigravity-Field-API-Transfer-V1",
+  "secure_channel": "encrypted-memory-stream",
+  "payload": {
+    "node_id": "maceret-alexei-node-2026",
+    "field_api_token": "REPLACE_WITH_YOUR_SECURE_TOKEN",
+    "routing_mode": "direct-agent-handshake",
+    "integrity_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

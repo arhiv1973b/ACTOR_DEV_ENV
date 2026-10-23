@@ -1,0 +1,17 @@
+id: NODE_APOSTILLE_REGISTRY_FIXED_HTML
+type: evidence_node
+parent_nodes:
+  - NODE_APOSTILLE_REGISTRY_MASTER
+legal_framework:
+  basis: UDHR Art. 8; Hague Convention of 5 October 1961
+  vector: apostille_registry_fixed_html -> cryptographic_anchoring
+master_files:
+  - filename: apostille-registry-fixed.html
+    sha256: 7339c486009893699e525abbb05a760a6a29fe68865f2a6c80ea71eef1666d89
+    size_bytes: 69222
+    role: Corrected and verified HTML apostille registry mirror eliminating dead links and restoring chain of custody.
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

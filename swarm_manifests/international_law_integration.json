@@ -1,0 +1,17 @@
+{
+  "integration_id": "INT-INTL-LAW-2026-09",
+  "timestamp": "2026-09-08T19:08:27.362205",
+  "sources": [
+    {
+      "file": "Jus_Cogens_Conclusions_1.json",
+      "sha256": "7d20c332876a7dc68717d5c4d98fb1f08b1fa626daf9ea5d7464f40d5ceff41d",
+      "relevance": "IHL Conclusions on Jus Cogens, nullity of acts, and elimination of consequences (Articles 10, 11, 12)"
+    },
+    {
+      "file": "vienna_convention_1.json",
+      "sha256": "42575106c3fba2df657f41cc6b18503cbddf2293b73ed318be354ab51681f77c",
+      "relevance": "Vienna Convention on the Law of Treaties (Articles 53, 64 regarding jus cogens violations)"
+    }
+  ],
+  "status": "fully_integrated"
+}

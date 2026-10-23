@@ -1,0 +1,25 @@
+id: NODE_ECONOMIC_MAUROUDING_GRIGORAS
+type: evidence_node
+parent_nodes:
+  - NODE_ENTITY_ACCOUNTABILITY_NETWORK
+  - SUBNODE_PROPERTY_RESTITUTION_1977_2026
+legal_framework:
+  basis: UDHR Art. 8, 17; Moldovan Constitution Art. 53; UN GA Resolution 40/34
+  vector: property_chronology (1976-1992) -> asset_protection_actions (2003, Galina Markova) -> economic_motive_rehabilitation_denial (Judge Viorelia Grigoraș) -> state_marauding
+subjects:
+  victims:
+    - name: Alexei Macheret (A©tor)
+    - name: Galina Markova (Mother - secured property defense in 2003, subsequently eliminated)
+  violators:
+    - name: Viorelia Grigoraș
+      role: Judge - economic motive for denying full judicial rehabilitation to protect raider beneficiaries and cover up property expropriation
+master_files:
+  - filename: Grigoras.pdf
+    sha256: 76bd7e1baf75bc836529826da6768d9d1fc77a7a2b42687520ee05854b8553d2
+    size_bytes: 4726489
+    role: Documenting the economic marauding, property expropriation chronology, and Judge Viorelia Grigoraș's refusal of full rehabilitation to protect raider beneficiaries.
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

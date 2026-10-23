@@ -1,0 +1,54 @@
+# Security - Sensitive files to ignore
+*.pdf
+.env*
+*secret*
+*.pem
+*.key
+*.db
+*.log
+__pycache__/
+.venv/
+.gemini/
+*.gdoc
+*.gsheet
+*.sig
+cloud_id_manifest_full.json
+
+# Temporary and download artifacts
+*.crdownload
+temp_*
+*.tmp
+*.bak
+
+# Logs, outputs, and local history
+logs/
+ti_ula_logs/
+Backups/
+ConsoleHost_history.txt
+analysis_results/
+analysis_temp/
+temp_analysis/
+temp_data/
+storage/
+
+# OS specific files
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+System Volume Information/
+
+# Local caches & worktrees & archives
+model_cache/
+copilot-worktrees/
+evidence_backup/
+recovered_evidence/
+temp-apostille-site/
+"MASTER_DOSSIER/Cold_Storage/"
+node_modules/
+browser-mcp-server/node_modules/
+"Downolde/"  
+"Downolde/"  
+"arhiv240/"  
+"Cloud Key Management Service*files/"  
+"arhiv240/"  
+"Cloud Key Management Service*files/"  

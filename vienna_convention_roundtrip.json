@@ -1,0 +1,46 @@
+{
+  "vienna_convention_article_85_harmonization": {
+    "file_type": "vienna_convention",
+    "authenticity_verification": "PASSED",
+    "quantum_weights_1_to_9": {
+      "weight_1": {
+        "qubit_value": 0.111111,
+        "status": "SUPERPOSITION_ACTIVE"
+      },
+      "weight_2": {
+        "qubit_value": 0.111111,
+        "status": "SUPERPOSITION_ACTIVE"
+      },
+      "weight_3": {
+        "qubit_value": 0.111111,
+        "status": "SUPERPOSITION_ACTIVE"
+      },
+      "weight_4": {
+        "qubit_value": 0.111111,
+        "status": "SUPERPOSITION_ACTIVE"
+      },
+      "weight_5": {
+        "qubit_value": 0.111111,
+        "status": "SUPERPOSITION_ACTIVE"
+      },
+      "weight_6": {
+        "qubit_value": 0.111111,
+        "status": "SUPERPOSITION_ACTIVE"
+      },
+      "weight_7": {
+        "qubit_value": 0.111111,
+        "status": "SUPERPOSITION_ACTIVE"
+      },
+      "weight_8": {
+        "qubit_value": 0.111111,
+        "status": "SUPERPOSITION_ACTIVE"
+      },
+      "weight_9": {
+        "qubit_value": 0.111111,
+        "status": "SUPERPOSITION_ACTIVE"
+      }
+    },
+    "imperative_layer_10_plus": "Jus Cogens Absolute Supremacy",
+    "original_payload_summary": "{'metadata': {'title': 'Венская Конвенция о праве международных договоров', 'date_concluded': '1969-05-23', 'source_file': '_Венская Конвенция о праве международных договоров_ (Заключена в Вене 23.05.pdf'}, 'content': {'full_text': '[source: 1]\"Венская Конвенция о праве международных\\nдоговоров\" (Заключена в Вене 23.05.1969)\\nВЕНСКАЯ КОНВЕНЦИЯ\\nО ПРАВЕ МЕЖДУНАРОДНЫХ ДОГОВОРОВ\\nот 23 мая 1969 года\\nГосударства участники настоящей Конвенции,\\nучитывая важнейшую роль договоров в истории международн"
+  }
+}

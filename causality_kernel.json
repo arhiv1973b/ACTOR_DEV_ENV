@@ -1,0 +1,63 @@
+{
+  "kernel_name": "Actor Causality Core - Jus Cogens Supremacy Engine",
+  "version": "2026.1.0",
+  "timestamp": "2026-09-12T23:48:26.380537",
+  "basis_instruments": [
+    "Vienna Convention on the Law of Treaties (1969) - Articles 53 & 64",
+    "Universal Declaration of Human Rights (1948) - Articles 1, 8, 10, 17",
+    "Actor Jurisprudential Evidence Matrix & Canonical Baseline (Maceret Alexei)"
+  ],
+  "jus_cogens_conclusions": [
+    {
+      "id": 1,
+      "principle": "Jus Cogens Supremacy (Высшая императивная сила)",
+      "description": "Нормы jus cogens обладают абсолютным приоритетом над любыми национальными актами, локальными судебными решениями (res judicata) и административными барьерами."
+    },
+    {
+      "id": 2,
+      "principle": "Nullity of Illicit Acts (Ничтожность незаконных актов)",
+      "description": "Сфабрикованные производства, незаконные штрафы и фиктивные обременения активов юридически ничтожны ex tunc (с момента издания)."
+    },
+    {
+      "id": 3,
+      "principle": "Protection of Property & Assets (Защита собственности)",
+      "description": "Запрет произвольного лишения собственности и рейдерских захватов через незаконно замороженные счета (согласно ст. 17 ВДПЧ и ст. 1 Протокола 1 ЕКПЧ)."
+    },
+    {
+      "id": 4,
+      "principle": "Erga Omnes Obligations (Обязательства перед международным сообществом)",
+      "description": "Систематические нарушения прав человека и хищения международной помощи порождают ответственность и юрисдикцию erga omnes."
+    },
+    {
+      "id": 5,
+      "principle": "Causality Continuity (Непрерывность причинно-следственной связи)",
+      "description": "Каждый зафиксированный факт нарушения образует неразрывную причинно-следственную цепочку, защищенную криптографической неизменяемостью."
+    },
+    {
+      "id": 6,
+      "principle": "Canonical Identity Anchor (Защита канонической идентичности)",
+      "description": "Неприкосновенность базового правового субъекта (Мачерет Алексей / Maceret Alexei) от административных искажений и подмен."
+    },
+    {
+      "id": 7,
+      "principle": "Prohibition of Abuse of Power (Запрет злоупотребления властью)",
+      "description": "Персональная и институциональная ответственность должностных лиц за использование служебного положения в корыстных целях."
+    },
+    {
+      "id": 8,
+      "principle": "Automatic Abrogation of Obstacles (Безусловная отмена препятствий)",
+      "description": "Требование незамедлительного аннулирования всех незаконных уголовных дел, исполнительных листов и административных ограничений."
+    },
+    {
+      "id": 9,
+      "principle": "Cryptographic Immutable Anchoring (Криптографическая фиксация доказательств)",
+      "description": "Закрепление доказательной базы в распределенном реестре/Git с защитой от фальсификации и удаления."
+    },
+    {
+      "id": 10,
+      "principle": "Integral Causality Synthesis (Интегральный синтез правосудия)",
+      "description": "Слияние международного публичного права и цифровых алгоритмов верификации в единый самоисполнимый контур правосудия."
+    }
+  ],
+  "integrity_sha256": "73b13fdca6ea04460655b6575605f9ccb6779d3df7ab845b3df3277fb16bcc99"
+}

@@ -1,0 +1,24 @@
+id: NODE_AVIZ_INSTiintare_2023
+type: evidence_node
+parent_nodes:
+  - NODE_ENTITY_ACCOUNTABILITY_NETWORK
+  - CASCADE_CANCELLATION_MATRIX
+legal_framework:
+  basis: UDHR Art. 8, 10; Moldovan CPC Art. 106-108
+  vector: aviz_de_instiintare (18.10.2023, Judecătoria Chișinău, sediul Centru) -> procedural_trace_and_notice -> continuing_violation
+subjects:
+  victims:
+    - name: Alexei Macheret (A©tor)
+  issuing_authority:
+    - name: Judecătoria Chișinău (sediul Centru)
+      address: "bd. Ștefan cel Mare și Sfânt, 162"
+master_files:
+  - filename: Aviz_de_instiintare_18.10.2023.pdf
+    sha256: "aviz_instiintare_anchor_2023"
+    size_bytes: 250000
+    role: Official court notice (Aviz de înștiințare) dated October 18, 2023 from Chisinau Court (Center HQ) tracking ongoing procedural correspondence and denial of justice.
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2023-10-18"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TI-ULA MANIFESTO: Jus Cogens & Erga Omnes</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff;
+            --border-color: #30363d;
+            --code-bg: #161b22;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        h1, h2, h3 { color: #fff; border-bottom: 1px solid var(--border-color); padding-bottom: 0.3em; margin-top: 1.5em; }
+        h1 { font-size: 2em; }
+        .header-block {
+            border: 1px solid var(--accent-color);
+            padding: 1rem;
+            background-color: rgba(88, 166, 255, 0.1);
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+            font-size: 0.9em;
+        }
+        .pipeline {
+            display: block;
+            padding: 10px;
+            background-color: var(--code-bg);
+            border-left: 4px solid var(--accent-color);
+            margin: 1rem 0;
+            font-family: ui-monospace, SFMono-Regular, SF Mono, monospace;
+        }
+        code {
+            background-color: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: ui-monospace, SFMono-Regular, SF Mono, monospace;
+        }
+        pre {
+            background-color: var(--code-bg);
+            padding: 1rem;
+            overflow-x: auto;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+        ul { padding-left: 1.5em; }
+        li { margin-bottom: 0.5em; }
+    </style>
+</head>
+<body>
+    <div class="header-block">
+        <strong>СИСТЕМНАЯ ДИРЕКТИВА:</strong> CASE-MACHERET-1997-2026<br>
+        <strong>ПРОТОКОЛ:</strong> TI-ULA (Truth &amp; Integrity - Universal Legal Architecture)<br>
+        <strong>СТАТУС:</strong> IMMUTABLE / PUBLISHED
+    </div>
+
+    <h1>Манифест: Легализация Jus Cogens и Erga Omnes в Децентрализованной Сети</h1>
+
+    <h2>1. Юридическая неразрывность (Доктрина)</h2>
+    <p>Императивные нормы международного права (<strong>Jus Cogens</strong>) обладают высшей юридической силой. К ним относится абсолютный запрет пыток (Ст. 3 ЕКПЧ) и произвольного, незаконного удержания (Ст. 5 ЕКПЧ). Нарушение этих норм государственным аппаратом выходит за рамки двусторонних отношений "гражданин-государство" и автоматически порождает обязательства <strong>Erga Omnes</strong> — обязательства перед всем международным сообществом.</p>
+    
+    <p>Доктринальная модель TI-ULA фиксирует этот процесс через необратимую причинно-следственную цепь:</p>
+    <div class="pipeline">
+        detention → non-rehabilitation → continuing-consequences → international-obligations
+    </div>
+    <p>Отсутствие правовой реабилитации после факта незаконного удержания (detention) трансформируется в длящееся правонарушение (continuing consequences). Следовательно, срок давности не применим, а ответственность приобретает международный масштаб.</p>
+
+    <h2>2. Технологическая легализация («Железное правило»)</h2>
+    <p>Для предотвращения уничтожения, искажения или сокрытия фактов национальными архивами, архитектура TI-ULA применяет <strong>«Железное правило»</strong> — протокол криптографического якорения физических доказательств (RAW-артефактов).</p>
+    
+    <ul>
+        <li><strong>Криптографическая печать:</strong> Каждый документ, фотография или свидетельское показание проходит через алгоритм <code>SHA-256</code>, генерируя уникальный цифровой отпечаток.</li>
+        <li><strong>Цифровая подпись:</strong> Отпечаток подписывается ключами <code>Ed25519</code>, подтверждая подлинность и время фиксации.</li>
+        <li><strong>Технологическая Ст. 13 ЕКПЧ:</strong> Децентрализованная сеть становится гарантом права на эффективное средство правовой защиты. Данные, зафиксированные в неизменяемой структуре (Merkle tree/DAG), невозможно изменить задним числом.</li>
+    </ul>
+
+    <h2>3. Протокол максимального доступа (Omnipresence Protocol)</h2>
+    <p>Юридическая истина должна быть глобальной. Архитектура TI-ULA обеспечивает 100% доступность доказательной базы (Zero-Dependency Web):</p>
+    <ul>
+        <li><strong>Статический хостинг:</strong> Интеграция <code>docs-agent-navigator</code> и публикация через GitHub Pages обеспечивают развертывание без серверных зависимостей.</li>
+        <li><strong>Content-Addressing:</strong> Файлы запрашиваются и верифицируются по их криптографическому хэшу. Это делает систему устойчивой к блокировкам и обеспечивает легкое зеркалирование графа сущностей.</li>
+        <li><strong>Универсальность:</strong> Структуры <code>JSON</code> и <code>Markdown</code> гарантируют читаемость манифеста и реестров на любом устройстве: от терминалов <code>WSL2</code> и мобильного <code>iSH Shell</code> на iOS до стандартных веб-браузеров.</li>
+    </ul>
+
+    <h2>4. Верификация для конечного пользователя</h2>
+    <p>Любой участник сети может независимо проверить целостность юридических фактов. Для проверки RAW-артефакта скачайте файл и выполните в терминале:</p>
+    
+    <pre><code># Для Linux / WSL2 / Bash / iSH:
+sha256sum &lt;имя_файла&gt;
+
+# Для Windows (PowerShell):
+Get-FileHash &lt;имя_файла&gt; -Algorithm SHA256
+
+# Проверка подписи Ed25519 (при наличии публичного ключа):
+openssl dgst -sha256 -verify pubkey.pem -signature file.sig &lt;имя_файла&gt;</code></pre>
+
+    <p><em>Сверите полученный хэш с записями в реестре <code>CASE_MACHERET_ENTITY_GRAPH_2026.md</code>. Совпадение хэшей является неоспоримым математическим и, как следствие, юридическим доказательством неизменности факта.</em></p>
+</body>
+</html>

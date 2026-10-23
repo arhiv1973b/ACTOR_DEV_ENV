@@ -1,0 +1,18 @@
+id: LINK_NON_REHABILITATION_JUS_COGENS
+type: verification_link
+source_node: NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026
+target_node: NODE_LEGAL_BASIS_JUS_COGENS
+verification_points:
+  - file_ref: "Cererii_reabilitare_Pastulaci_Stambol_Grigoras.pdf"
+    legal_mapping: "UDHR Art. 8, Const. RM Art. 53 (Initiation of effective remedy)"
+    status: "verified_demand"
+  - file_ref: "CITAȚIE_reabilitare_Grigoras_26.04.2024.pdf"
+    legal_mapping: "Procedural trace of the rehabilitation mechanism"
+    status: "verified_trace"
+  - file_ref: "A_Negru_25.04.2023.pdf"
+    legal_mapping: "VCLT Art. 53 (Acts conflicting with Jus Cogens are void)"
+    violation: "Denial of justice by Judge Negru. Subversion of Erga Omnes obligations."
+    status: "verified_violation"
+ti_ula_status:
+  state: legal_mapping_established
+  next_step: content_parsing_and_entity_extraction

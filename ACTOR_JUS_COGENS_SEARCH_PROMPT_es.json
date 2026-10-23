@@ -1,0 +1,44 @@
+{
+  "file_type": "ACTOR_JUS_COGENS_SEARCH_PROMPT",
+  "authenticity_verification": "APROBADO",
+  "quantum_weights_1_to_9": {
+    "weight_1": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_2": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_3": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_4": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_5": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_6": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_7": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_8": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_9": {
+      "qubit_value": 0.111111,
+      "status": "SUPERPOSITION_ACTIVE"
+    }
+  },
+  "imperative_layer_10_plus": "Supremacía Absoluta del Ius Cogens sobre Barreras Administrativas",
+  "description": "Indicación de búsqueda principal e imperativos para la aplicación del Ius Cogens."
+}

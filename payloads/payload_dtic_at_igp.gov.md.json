@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-MACHERET-1997-2026",
+  "audit_run_id": "AuditRun-20261004-1511-4",
+  "target_institution": "Police",
+  "recipient_email": "dtic@igp.gov.md",
+  "cryptographic_proof": {
+    "document_hash_sha256": "e61b0c3ab002476ab35890314afc0cf7c07c9d21b92fcbd8ef5d47ff04815581",
+    "delivery_receipt_hash": "736ed13dfb560f4c2294fea7f52e0c83e1bd052f04d028d3555fe82e184e3746"
+  },
+  "delivery_status": {
+    "sent": true,
+    "delivered": true,
+    "acknowledged": true
+  },
+  "legal_violation_trigger": []
+}

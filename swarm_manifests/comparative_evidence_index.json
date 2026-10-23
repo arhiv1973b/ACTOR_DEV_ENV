@@ -1,0 +1,25 @@
+{
+  "index_id": "DIR-COMPARATIVE-INDEX-2026-09",
+  "case_id": "CASE-MACHERET-1997-2026",
+  "timestamp": "2026-09-08T15:30:00Z",
+  "comparisons": [
+    {
+      "artifact_ref": "DAS_Riscani_Cert_4410_15 (IDNP 2005048071209)",
+      "external_protocol": "ECHR Art. 13 / Art. 6 §1 (Effective Remedy & Right to a Fair Trial)",
+      "compliance_status": "NON_COMPLIANT_STATE_ACTION",
+      "analysis": "Issuance and unverified operational use of a secondary synthetic IDNP by state administrative bodies violates the state's positive obligation to maintain legal certainty and prevents effective remedy."
+    },
+    {
+      "artifact_ref": "Guzun_Fines_4B_824_1409 (40+40 MDL paid, copies destroyed)",
+      "external_protocol": "ECHR Protocol 7 Art. 4 (Ne bis in idem) & Art. 6 §1 / UN ICCPR Art. 14(7)",
+      "compliance_status": "SYSTEMIC_VIOLATION",
+      "analysis": "Enforcing multiple administrative penalties for overlapping factual matrices while destroying primary case files after 1 year under retention pretext creates a procedural blackout, breaching non bis in idem guarantees."
+    },
+    {
+      "artifact_ref": "IDNP_Substitution_Node (Canonical 655 vs. Banking *555)",
+      "external_protocol": "ECHR Art. 8 (Right to Respect for Private Life) & UN Principles on Continuing Consequences",
+      "compliance_status": "ARBITRARY_ISOLATION",
+      "analysis": "Injecting a phantom digital twin into the banking/fiscal sector while recognizing the canonical IDNP in administrative state acts constitutes arbitrary deprivation of means of subsistence (continuing consequences)."
+    }
+  ]
+}

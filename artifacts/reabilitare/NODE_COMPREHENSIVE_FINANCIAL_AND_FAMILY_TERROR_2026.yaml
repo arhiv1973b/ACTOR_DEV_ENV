@@ -1,0 +1,22 @@
+id: NODE_COMPREHENSIVE_FINANCIAL_AND_FAMILY_TERROR_2026
+type: evidence_node
+parent_nodes:
+  - NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026
+  - CASCADE_CANCELLATION_MATRIX
+legal_framework:
+  basis: UDHR Art. 3, 5, 8, 9, 17; VCLT (1969) Art. 53; ARSIWA (State Responsibility); Moldovan Constitution Art. 53
+  vector: familial_persecution (Irina Oleinik, Ivan Markov) -> fruit_of_poisonous_tree (Judge S. Iorgov 2008 -> CSJ 1ra-834/09) -> financial_blockade_and_plunder (FinComBank, Victoriabank, Moldindconbank, bailiff Alexandru Foxa, 25,210,256.15 MDL frozen) -> international_erga_omnes_action
+evidential_blocks:
+  - name: "Fruit of the Poisonous Tree & CSJ 2009 Nullification"
+    details: "Riscani Court sentence of 19.03.2008 (Judge S. Iorgov) based on forged search (Judge Gheorghe Morozan), conclusively nullified by Supreme Court Decision No. 1ra-834/09 (21.07.2009)."
+  - name: "Family Persecution & Terror"
+    details: "Sentence No. 1-983/07 (06.12.2007) against Irina Oleinik and forced psychiatric detention of Ivan Markov leading to death, paired with property asset clearing."
+  - name: "Financial Blockade & 25,210,256.15 MDL Plunder"
+    details: "FinComBank, Victoriabank, Moldindconbank, and bailiff Alexandru Foxa maintaining unlawful asset freezes and false zero balances on 25,210,256.15 MDL (international aid and Galina Markova inheritance) despite IP Riscani case No. 10541 annulment (29.06.2026)."
+  - name: "International Erga Omnes Action"
+    details: "Presidential memorandum to Donald Trump, OHCHR, and UN Special Rapporteurs establishing absolute state liability."
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

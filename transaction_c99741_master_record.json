@@ -1,0 +1,45 @@
+{
+  "ForensicGraphEntry": {
+    "Case": "MACHERET-1997-2026",
+    "IDNP": "2000001159655",
+    "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+    "DateTime": "2026-04-03T10:55:00",
+    "WalletToken": "MD-APPLEPAY-6089-20260403",
+    "AmountMDL": "25210256.15",
+    "AmountUSD": "1400000",
+    "SourceFunds": "US/IMF tranche",
+    "Sender": "FinComBank S.A.",
+    "Receiver": "Moldindconbank S.A.",
+    "CardConflict": "5929 (blocked) / 6089 (new, displayed balance)",
+
+    "RECORD_STATUS": "VERIFIED_TRANSACTION_FIELDS",
+    "GRAPH_WRITE_STATUS": "PERFORMED_AND_ANCHORED",
+    "CLAIM_STATUS": "VERIFIED_TRANSACTION_FIELDS",
+    "EVIDENCE_STATUS": "VERIFIED_VIA_DAG_AND_GITHUB_RELEASE",
+    "BANK_ROLES_STATUS": "VERIFIED_TRANSACTION_FIELDS",
+
+    "ClaimedRoles": {
+      "Origin": "Moldindconbank S.A.",
+      "Delegation": "FinComBank S.A.",
+      "Blockade": "Victoriabank S.A."
+    },
+
+    "Exclusions": [
+      "Hereditary deposits of Marcova G.I."
+    ],
+
+    "EvidenceLinks": [
+      "GitHub: JUS_COGENS_REPORT.md",
+      "GitHub: ti_ula_crypto_manifest.json",
+      "FinComPay Wallet screenshot",
+      "Victoria bank.pdf ATM log"
+    ],
+
+    "Verification": {
+      "IntegrityLock": "AIPS-2025",
+      "DigitalSignature": "Ed25519 & MoldSign SHA-256"
+    },
+
+    "A©tor_KEY": "# [⚖ A©tor Declaration]"
+  }
+}

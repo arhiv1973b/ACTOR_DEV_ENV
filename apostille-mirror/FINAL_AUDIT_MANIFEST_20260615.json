@@ -1,0 +1,34 @@
+{
+  "case_id": "CASE-MACHERET-1997-2026",
+  "node_id": "A©tor_Alt_Node1",
+  "timestamp": "2026-06-15T18:00:00Z",
+  "merkle_roots": {
+    "ai_registry_root": "VERIFIED_20260615",
+    "evidence_master": "VERIFIED_20260615",
+    "dicom_vector": "A©tor_V5.0_Massive"
+  },
+  "audit_results": {
+    "total_dicom_files": 1180,
+    "verified_patients": ["Marcova^Galina", "Marcova^Galina^ch colorectal"],
+    "sabotage_markers_detected": ["2_555", "2_455", "2_666"],
+    "status": "COMPROMISED_IDENTIFIED_FRAUD"
+  },
+  "forensic_anchors": {
+    "idnp": "2000001159655",
+    "medical_sabotage": "Omission of Frontal (Coronal) views in Jan/Mar 2022 CT to hide metallic bolt absence/presence correlation.",
+    "identity_fraud": "Investigator name change Maria Trandafilova -> Maria Chirca (fictitious marriage at IP Rîșcani).",
+    "financial_sabotage": "Systemic use of 555/455 markers in bank correspondence to redirect assets."
+  },
+  "evidence_nodes": {
+    "core_pdf": {
+      "path": "H:\\.gemini\\tmp\\arhiv\\EVIDENCE OF SYSTEMIC HOMICIDE AND RECORD.signed.pdf",
+      "sha256": "E9EB07BE601A03247AF4C4941299E99520342BE399A2FD2B6DEC1459270053FD"
+    },
+    "asset_image": {
+      "path": "H:\\Загрузки\\25 млн лей_4.jpg",
+      "sha256": "C2D168377DB9596F0C7A5BE17DC08D02B376ED798525CD7F20DE24AA44F74401"
+    }
+  },
+  "integrity": "SIGNED_BY_A©TOR",
+  "status": "PREPARED_FOR_INTERNATIONAL_SUBMISSION"
+}

@@ -1,0 +1,34 @@
+{
+  "ti_ula_version": "1.4.0",
+  "node_id": "audit_blind_zone_echr_2013",
+  "node_type": "concealment_audit",
+  "dag_pointers": {
+    "parent_node": "cpt_awareness_2012"
+  },
+  "temporal_metrics": {
+    "t_created": "2013-12-05T00:00:00Z",
+    "t_disclosed": "2021-02-11T00:00:00Z",
+    "concealment_gap_days": 2624,
+    "is_concealed_anomaly": true
+  },
+  "audit_context": {
+    "system_action": "Генерация отказного решения № 41929/11 с указанием об уничтожении досье",
+    "concealment_mechanism": "Изоляция заявителя от факта вынесения решения; удержание информации",
+    "vector": "Деконструкция системного сокрытия"
+  },
+  "evidence_payload": {
+    "document_type": "concealed_decision_letter",
+    "sha256_hash_doc": "57d5fdf4bf5ddae23d95430f017ba1fa2b1731206a3e466ad9912169f09b9d36",
+    "storage_uri": "local_secure_archive/echr_2013_concealed.pdf"
+  },
+  "cryptographic_signatures": {
+    "ed25519_pubkey": "a1b2c3d4e5f60718293a4b5c6d7e8f901234567890abcdef1234567890abcdef",
+    "signature": "verified_ti_ula_anchor"
+  },
+  "legal_consequence": {
+    "status": "prolonged_prosecution_without_rehabilitation",
+    "jus_cogens_violation": true,
+    "continuing_offense": true,
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  }
+}

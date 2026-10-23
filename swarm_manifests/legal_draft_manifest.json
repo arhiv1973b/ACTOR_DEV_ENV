@@ -1,0 +1,18 @@
+{
+  "draft_manifest_id": "DIR-LEGAL-DRAFT-2026-09",
+  "case_reference": "CASE-MACHERET-1997-2026",
+  "status": "SYNTHESIZED_AND_CROSSCHECKED",
+  "agents_involved": [
+    "Agent_Legal_Draftsman",
+    "Agent_Evidence_Crosschecker",
+    "Agent_Immutable_Archiver"
+  ],
+  "legal_focus": [
+    "ECHR Art 3",
+    "ECHR Art 5",
+    "Fructus Venenati",
+    "Continuing Consequences"
+  ],
+  "output_artifact": "LEGAL_DRAFT_ECHR_UN_PETITION.md",
+  "timestamp": "2026-09-08T18:30:00.000000"
+}

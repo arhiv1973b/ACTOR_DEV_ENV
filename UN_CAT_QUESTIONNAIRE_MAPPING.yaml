@@ -1,0 +1,40 @@
+communication_instrument: "UN CAT Article 22 Individual Communication"
+state_party: "Republic of Moldova"
+author: "Alexei Macheret (A©tor)"
+ti_ula_mapping:
+  section_1_identity:
+    author_name: "Alexei Macheret"
+    pseudonym_or_symbol: "A©tor"
+    idnp: "2000001159655"
+  section_2_facts_of_violation:
+    root_cause_node: "NODE_TORTURE_AND_COVERUP_1997_1998"
+    search_warrant_node: "ORDER_RISCANI_24JUL2007"
+    torture_date: "1997-08-05 to 1997-08-18"
+    search_order_date: "2007-07-24"
+    perpetrator_torture: "Police Inspector Victor Grigore Dulce"
+    perpetrator_search: "Judge Gh. Moraru, Prosecutor A. Crainic, Officer M. Sandu"
+    judicial_confirmation: "Sentință Case No. 1-568/98 (October 13, 1998) & Order No. 337/07 (July 24, 2007, translated by Natalia Lasco, 24.11.2023)"
+    legal_basis: "UDHR Art. 3, 5, 9, 17; UN CAT Arts. 2, 12, 13, 14"
+  section_3_exhaustion_of_domestic_remedies:
+    linkage_node: "LINK_NON_REHABILITATION_JUS_COGENS"
+    entity_network_node: "NODE_ENTITY_ACCOUNTABILITY_NETWORK"
+    obstructing_actors:
+      - "Alexandru Negru (Judge)"
+      - "Tudor Stambol (Judge)"
+      - "Tatiana Postolachi (Judge)"
+      - "Viorelia Grigoraș (Judge)"
+      - "Gh. Moraru (Judge)"
+      - "A. Crainic (Prosecutor)"
+    justification: "Domestic remedies are ineffective, systematically blocked, and null ab initio under VCLT Art. 53 due to ongoing denial of justice and fabricated search/investigation orders."
+  section_4_restitution_and_damages:
+    financial_model_node: "NODE_FINANCIAL_MODEL_1997_2026"
+    causation_link_node: "LINK_ACCOUNTABILITY_TO_CONSEQUENCES"
+    components:
+      damnum_emergens_eur: 75000
+      lucrum_cessans_eur: 523500
+      moral_damage_eur: 500000
+      total_provisional_claim_eur: 1098500
+  section_5_relief_sought:
+    - "Formal legal rehabilitation and annulment of all criminalized status."
+    - "Full financial restitution in the amount of 1,098,500 EUR."
+    - "Individual accountability for state agents obstructing justice."

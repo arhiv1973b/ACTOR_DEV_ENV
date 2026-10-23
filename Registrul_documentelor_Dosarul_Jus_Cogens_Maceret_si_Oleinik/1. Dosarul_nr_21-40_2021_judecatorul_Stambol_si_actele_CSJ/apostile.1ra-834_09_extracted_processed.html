@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Document Node | A©tor Archive</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #0f172a; }
+        #shield { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; background: transparent; }
+        #pdf-container { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+    <div id="shield"></div>
+    <iframe id="pdf-container"></iframe>
+
+    <script>
+        // 1. Obfuscated ID Decoding (Placeholder for now)
+        // In production, this logic will decode the Drive ID from Base64+Salt
+        function getDecodedUrl(obfuscatedId) {
+            // Simplified demonstration
+            const decodedId = atob(obfuscatedId);
+            return `https://drive.google.com/viewerng/viewer?embedded=true&url=https://drive.google.com/uc?export=view&id=${decodedId}`;
+        }
+
+        // Example Usage (to be dynamically generated per file)
+        const obfuscatedId = "MVkwWUVJak01RDdQUTVOSHlfd01aSzFpaUlCLTl5bXhlOlRJLVVMQS1TRUNVUkUtMjAyNg=="; 
+        document.getElementById('pdf-container').src = getDecodedUrl(obfuscatedId);
+
+        // 2. UI Protection (Jus Cogens Blocks)
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('keydown', e => {
+            if (e.keyCode === 123 || // F12
+               (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Inspect
+               (e.ctrlKey && e.keyCode === 85) || // View Source
+               (e.ctrlKey && e.keyCode === 80) || // Print
+               (e.ctrlKey && e.keyCode === 83)) { // Save
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

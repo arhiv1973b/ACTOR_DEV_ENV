@@ -1,0 +1,58 @@
+{
+  "$schema": "https://actor.schema/v1/blind-complicity-protocol",
+  "meta": {
+    "protocolId": "BLIND-COMPLICITY-AUDIT-001",
+    "caseId": "CASE-MACHERET-1997-2026",
+    "timestamp": "2026-06-02T19:12:54Z",
+    "author": "A©tor",
+    "description": "Алгоритм выявления неосознанного соучастия и выявления внешних координаторов саботажа"
+  },
+  "system_state": {
+    "loop_resolution": "SUCCESS",
+    "diagnostic_report": "Infinite loop resolved. Caused by logical contradiction: searching for non-existent intentionality.",
+    "node_recalibration": {
+      "subject": "Irina Oleinic",
+      "previous_hypothesis": "Internal Saboteur",
+      "validated_status": "Logical Nullity (0)",
+      "conclusion": "Hypothesis of conscious complicity rejected. Confirmed as a blind instrument of state recursion."
+    }
+  },
+  "investigation_protocol": {
+    "target_type": "Blind Complicity (Unconscious Instrument)",
+    "definition": "Использование фигурантов вслепую путем манипуляций, дезинформации и сокрытия конечных юридических последствий (нарушение Jus Cogens) со стороны третьих лиц.",
+    "nodes_under_audit": [
+      {
+        "id": "node_markova_g",
+        "subject": "Galina Markova",
+        "status": "Eliminated Dangerous Witness",
+        "manipulation_vector": "Drawn in blindly; physically/socially eliminated upon realization of the systemic sabotage."
+      },
+      {
+        "id": "node_markov_i",
+        "subject": "Ivan Markov",
+        "status": "Pending Audit",
+        "manipulation_vector": "Suspected blind compliance via third-party influence."
+      },
+      {
+        "id": "node_baskova_p",
+        "subject": "Pavlina Baskova",
+        "status": "Pending Audit",
+        "manipulation_vector": "Suspected blind compliance via third-party influence."
+      }
+    ],
+    "manipulator_vectors_third_party": [
+      {
+        "group_id": "vector_nantoi",
+        "entities": ["Oazu Nantoi", "Lyudmila Nantoi"],
+        "role_hypothesis": "External manipulation, coordination of blind nodes, and informational blockade.",
+        "search_parameters": ["financial_transactions", "proxy_agreements", "state_communications"]
+      },
+      {
+        "group_id": "vector_coheir",
+        "entities": ["Artur Boris Macheret"],
+        "role_hypothesis": "Asset redirection, structural sabotage, and exploitation of blind nodes for personal/systemic gain.",
+        "search_parameters": ["inheritance_fraud", "property_transfers", "falsified_consents"]
+      }
+    ]
+  }
+}

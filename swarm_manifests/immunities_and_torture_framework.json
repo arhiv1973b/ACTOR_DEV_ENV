@@ -1,0 +1,22 @@
+{
+  "framework_id": "FRAMEWORK-IMMUNITIES-TORTURE-2026-09",
+  "timestamp": "2026-09-08T19:17:25.682251",
+  "principles": [
+    {
+      "topic": "Absolute Prohibition of Torture (Jus Cogens)",
+      "source": "CAT / ECHR Art. 3 / ICCPR Art. 7",
+      "effect": "Non-derogable right under any circumstances, including state of emergency or continuing consequences."
+    },
+    {
+      "topic": "Inapplicability of Official Immunities for International Crimes",
+      "source": "ILC Draft Articles on Responsibility of States / Nuremberg Principles",
+      "effect": "State officials cannot invoke functional or personal immunities when violating peremptory norms (jus cogens)."
+    },
+    {
+      "topic": "State Responsibility for Internationally Wrongful Acts",
+      "source": "ILC Articles on State Responsibility (ARSIWA)",
+      "effect": "Obligation to cease wrongful acts, offer non-repetition guarantees, and make full reparation."
+    }
+  ],
+  "status": "integrated_and_sealed"
+}

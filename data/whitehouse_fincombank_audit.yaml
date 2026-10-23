@@ -1,0 +1,51 @@
+node:
+  id: whitehouse_fincombank_audit_novdec2025
+  status: Disputed Theft – US Funds Only
+  cryptographic_anchor: "SHA-256 verified via register_log_to_dag.py"
+  critical_dates:
+    - period: "Nov-Dec 2025"
+      label: "Initial Packages"
+    - date: "03.04.2026"
+      label: "Interception/Alteration"
+  description: >
+    This node captures a deliberate distortion of designated international aid. Funds originating from the US Government / White House, explicitly intended for Restitution / Rehabilitation, were systematically redirected through local financial institutions under a fictitious USAID gateway.
+    Concealment Mechanism: The assets (~$1.4M USD / 25,210,256.15 MDL) were initially processed by Moldindconbank, routed through the State Bank of Moldova, and ultimately delegated to FinComBank utilizing the protection cover of Irina Oleinic.
+    Fraudulent Re-designation: The aid was falsely reported before the US Congress as funding for Moldovan penitentiary institutions and border security, thereby masking the extraction of non-round, fragmented sums.
+
+nodes:
+  - id: wh
+    name: US White House
+    role: Origin
+    type: source
+  - id: micb
+    name: Moldindconbank
+    role: Initial Concealment
+    type: bank
+  - id: sbm
+    name: State Bank of Moldova
+    role: Aid Redirection
+    type: bank
+  - id: fcb
+    name: FinComBank
+    role: Delegation (Oleinic Cover)
+    type: target
+  - id: anomaly_03042026
+    name: "Anomaly: 25.2M MDL\nDate: 03.04.2026"
+    role: Fraudulent Re-designation
+    type: alert
+
+edges:
+  - source: wh
+    target: micb
+    label: "Restitution Funds (Nov-Dec 2025)"
+  - source: micb
+    target: sbm
+    label: "Fictitious USAID Gateway"
+  - source: sbm
+    target: fcb
+    label: "Delegated / Intercepted (03.04.2026)"
+    classes: fraud-path
+  - source: fcb
+    target: anomaly_03042026
+    label: "Amount: 25,210,256.15 MDL"
+    classes: metadata-edge

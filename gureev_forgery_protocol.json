@@ -1,0 +1,26 @@
+{
+  "manifest_schema": "TI-ULA/1.0",
+  "project_id": "CASE-MACHERET-1997-2026",
+  "legal_framework_anchor": "UDHR (Jus Cogens) / Constitution of RM (Arts. 4, 8)",
+  "timestamp": "2026-09-03T18:47:00+03:00",
+  "event_classification": "Official Forgery / Obstruction of Justice",
+  "perpetrators": [
+    {
+      "name": "Гуреев",
+      "role": "Дежурный прокурор (Прокуратура сектора Рышкановка)",
+      "action": "Личное распоряжение о сокрытии фактов и прикрытие лжи секретаря о фиктивной передаче дела по компетенции"
+    },
+    {
+      "name": "Вакарчук",
+      "role": "Комиссар полиции (сектор Рышкановка)",
+      "action": "Незаконное удержание материалов дела с целью саботажа и сокрытия попытки присвоения 25 млн леев"
+    }
+  ],
+  "factual_basis": "Прокуратура сектора Центр официально опровергла получение дела. Заявления секретариата сектора Рышкановка являются процессуальным подлогом, санкционированным прокурором Гуреевым.",
+  "financial_target": "US Humanitarian Grant ($1,100,000 / 25,000,000 MDL) via FinComBank",
+  "verification": {
+    "hashing_algorithm": "SHA-256",
+    "signature_algorithm": "Ed25519",
+    "status": "pending_signature"
+  }
+}

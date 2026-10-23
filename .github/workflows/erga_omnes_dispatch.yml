@@ -1,0 +1,51 @@
+name: Erga Omnes Automated Dispatch
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: evidence/fincombank-financial-traces
+
+      - name: Install msmtp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y msmtp msmtp-mta
+
+      - name: Configure msmtp
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          cat << EOF > ~/.msmtprc
+          defaults
+          auth on
+          tls on
+          tls_trust_file /etc/ssl/certs/ca-certificates.crt
+          logfile ~/.msmtp.log
+
+          account default
+          host $SMTP_HOST
+          port 587
+          from $SMTP_USER
+          user $SMTP_USER
+          password $SMTP_PASSWORD
+          EOF
+          chmod 600 ~/.msmtprc
+
+      - name: Run Erga Omnes Dispatch Script
+        run: |
+          chmod +x send_dispatch.sh
+          ./send_dispatch.sh
+
+      - name: Upload Dispatch Logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: msmtp-dispatch-logs
+          path: msmtp_dispatch_log.txt

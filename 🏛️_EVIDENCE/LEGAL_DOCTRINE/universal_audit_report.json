@@ -1,0 +1,189 @@
+[
+  {
+    "accusation": {
+      "id": "scenario_isolation_conflict_2008",
+      "date": "2008-05-12",
+      "description": "Инкриминируемое процессуальное или материальное действие на свободе в период жесткой тюремной изоляции (ПУ-15 Криково)"
+    },
+    "conflicting_node": "audit_blind_zone_1997_2002",
+    "vector": "Аудит институционального молчания и сокрытия",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_isolation_conflict_2008",
+      "date": "2008-05-12",
+      "description": "Инкриминируемое процессуальное или материальное действие на свободе в период жесткой тюремной изоляции (ПУ-15 Криково)"
+    },
+    "conflicting_node": "audit_blind_zone_2005",
+    "vector": "Аудит латентного периода 2005 года",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_isolation_conflict_2008",
+      "date": "2008-05-12",
+      "description": "Инкриминируемое процессуальное или материальное действие на свободе в период жесткой тюремной изоляции (ПУ-15 Криково)"
+    },
+    "conflicting_node": "audit_property_family_violation_2005_2009",
+    "vector": "Нарушение прав семьи и конфискация имущества (2005–2009)",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_isolation_conflict_2008",
+      "date": "2008-05-12",
+      "description": "Инкриминируемое процессуальное или материальное действие на свободе в период жесткой тюремной изоляции (ПУ-15 Криково)"
+    },
+    "conflicting_node": "audit_system_silence_1997_2002",
+    "vector": "Аудит институционального молчания (1997–2002)",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_isolation_conflict_2008",
+      "date": "2008-05-12",
+      "description": "Инкриминируемое процессуальное или материальное действие на свободе в период жесткой тюремной изоляции (ПУ-15 Криково)"
+    },
+    "conflicting_node": "concealment_hub_case_1_272_2003",
+    "vector": "General",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_concealed_statute_2013",
+      "date": "2013-12-05",
+      "description": "Применение сроков давности и вынесение отказного решения в условиях сокрытия информации от заявителя"
+    },
+    "conflicting_node": "audit_blind_zone_1997_2002",
+    "vector": "Аудит институционального молчания и сокрытия",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_concealed_statute_2013",
+      "date": "2013-12-05",
+      "description": "Применение сроков давности и вынесение отказного решения в условиях сокрытия информации от заявителя"
+    },
+    "conflicting_node": "audit_blind_zone_2005",
+    "vector": "Аудит латентного периода 2005 года",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_concealed_statute_2013",
+      "date": "2013-12-05",
+      "description": "Применение сроков давности и вынесение отказного решения в условиях сокрытия информации от заявителя"
+    },
+    "conflicting_node": "audit_blind_zone_echr_2013",
+    "vector": "Деконструкция системного сокрытия",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_concealed_statute_2013",
+      "date": "2013-12-05",
+      "description": "Применение сроков давности и вынесение отказного решения в условиях сокрытия информации от заявителя"
+    },
+    "conflicting_node": "audit_property_family_violation_2005_2009",
+    "vector": "Нарушение прав семьи и конфискация имущества (2005–2009)",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_concealed_statute_2013",
+      "date": "2013-12-05",
+      "description": "Применение сроков давности и вынесение отказного решения в условиях сокрытия информации от заявителя"
+    },
+    "conflicting_node": "audit_system_silence_1997_2002",
+    "vector": "Аудит институционального молчания (1997–2002)",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_concealed_statute_2013",
+      "date": "2013-12-05",
+      "description": "Применение сроков давности и вынесение отказного решения в условиях сокрытия информации от заявителя"
+    },
+    "conflicting_node": "concealment_hub_case_1_272_2003",
+    "vector": "General",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_property_confiscation_2007",
+      "date": "2007-06-20",
+      "description": "Внесудебная конфискация и лишение имущественных прав по делу Мирон Костин"
+    },
+    "conflicting_node": "audit_blind_zone_1997_2002",
+    "vector": "Аудит институционального молчания и сокрытия",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_property_confiscation_2007",
+      "date": "2007-06-20",
+      "description": "Внесудебная конфискация и лишение имущественных прав по делу Мирон Костин"
+    },
+    "conflicting_node": "audit_blind_zone_2005",
+    "vector": "Аудит латентного периода 2005 года",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_property_confiscation_2007",
+      "date": "2007-06-20",
+      "description": "Внесудебная конфискация и лишение имущественных прав по делу Мирон Костин"
+    },
+    "conflicting_node": "audit_property_family_violation_2005_2009",
+    "vector": "Нарушение прав семьи и конфискация имущества (2005–2009)",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_property_confiscation_2007",
+      "date": "2007-06-20",
+      "description": "Внесудебная конфискация и лишение имущественных прав по делу Мирон Костин"
+    },
+    "conflicting_node": "audit_system_silence_1997_2002",
+    "vector": "Аудит институционального молчания (1997–2002)",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_property_confiscation_2007",
+      "date": "2007-06-20",
+      "description": "Внесудебная конфискация и лишение имущественных прав по делу Мирон Костин"
+    },
+    "conflicting_node": "concealment_hub_case_1_272_2003",
+    "vector": "General",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  },
+  {
+    "accusation": {
+      "id": "scenario_stambol_ruling_2025",
+      "date": "2025-12-15",
+      "description": "Утверждение бессрочной судимости без реабилитации (судьи Стамбол / Холбан)"
+    },
+    "conflicting_node": "audit_infinite_record_stambol",
+    "vector": "Институциональная пролонгация судимости (Stambol Rulings)",
+    "anomaly_type": "PHYSICAL_OR_PROC_IMPOSSIBILITY",
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
+  }
+]

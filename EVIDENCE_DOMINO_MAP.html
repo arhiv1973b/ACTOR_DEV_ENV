@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVIDENCE DOMINO MAP — CASE-MACHERET-1997-2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050a0f;
+            --panel: #071220;
+            --gold: #c8960a;
+            --red: #cc1133;
+            --cyan: #00b8e8;
+            --text: #c0d8ec;
+            --border: #103c60;
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Rajdhani', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 { color: var(--gold); text-transform: uppercase; margin: 10px 0; }
+        .logic-block {
+            background: rgba(0, 184, 232, 0.05);
+            border: 1px solid var(--cyan);
+            padding: 20px;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .domino-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .domino-node {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            padding: 15px;
+            position: relative;
+            transition: 0.3s;
+        }
+        .domino-node:hover { border-color: var(--gold); transform: translateY(-5px); }
+        .node-type { font-family: 'Share Tech Mono', monospace; font-size: 0.8em; color: var(--cyan); }
+        .node-title { font-weight: bold; margin: 10px 0; color: #fff; }
+        .node-status { font-size: 0.85em; color: var(--gold); }
+        .support-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--red);
+            color: #fff;
+            padding: 15px 25px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 0 20px rgba(204, 17, 51, 0.5);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="portal-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #0c2e4a; margin-bottom: 30px; background-color: #051421; padding: 15px;">
+        <div class="breadcrumb">
+            <a href="index.html" style="color: #00b8e8; text-decoration: none; font-family: 'Share Tech Mono', monospace;">← PORTAL HUB</a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="timeline.html" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">⏱️ Chronology</a>
+            <a href="EVIDENCE_CATALOG.md" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">📂 Evidence Catalog</a>
+        </div>
+    </nav>
+
+    <div class="header">
+        <div style="font-family: 'Share Tech Mono'; color: var(--cyan);">// JUS COGENS CATHARSIS — EVIDENCE SYNC 2026-05-30</div>
+        <h1>КАРТА ДОМИНО: ДОКАЗАТЕЛЬСТВА ПРОТИВ ОБМАНА</h1>
+        <p>Систематизация 100+ фрагментов улик, разрушающих миф о безнаказанности.</p>
+    </div>
+
+    <div class="logic-block">
+        <strong>ЛОГИКА КАТАРСИСА:</strong> Каждое звено этой цепи (от пыток 1997 года до хищения 2026 года) делает попытки «обнуления» прав юридически невозможными. Мы не разрешаем коллизии — мы исключаем их, делая мотивы системы прозрачными. Любой затор потоков (401/404) теперь «замощен» фактами.
+    </div>
+
+    <div class="domino-grid">
+        <div class="domino-node">
+            <div class="node-type">UN MANIFEST</div>
+            <div class="node-title">UN_OHCHR_Manifest_tw571ryb.pdf</div>
+            <div class="node-status">🔒 ЗАКРЕПЛЕНО В ООН</div>
+            <p>Центральный манифест по делу о пытках и дискриминации.</p>
+        </div>
+        <div class="domino-node">
+            <div class="node-type">HUMANITARIAN</div>
+            <div class="node-title">инвалидное пожизненое первая группа_7.pdf</div>
+            <div class="node-status">♿ СТАТУС ВЕРИФИЦИРОВАН</div>
+            <p>Доказательство необратимого вреда здоровью (Jus Cogens).</p>
+        </div>
+        <div class="domino-node">
+            <div class="node-type">FINANCIAL</div>
+            <div class="node-title">25 млн лей.jpg</div>
+            <div class="node-status">💰 ОБЪЕКТ ХИЩЕНИЯ</div>
+            <p>Фиксация блокировки активов в FinComBank (RRN 019811057850).</p>
+        </div>
+        <div class="domino-node">
+            <div class="node-type">FORGERY</div>
+            <div class="node-title">Искажение Фамилии..._3.signed.pdf</div>
+            <div class="node-status">🔴 ПОДЛОГ ДОКАЗАН</div>
+            <p>Криминалистический анализ подмены имен для саботажа прав.</p>
+        </div>
+        <div class="domino-node">
+            <div class="node-type">DEEP AUDIT</div>
+            <div class="node-title"><a href="DEEP_AUDIT_VVK_FURDUI.html" style="color: #fff; text-decoration: underline;">ВВК 1990 & Лингвистический Подлог</a></div>
+            <div class="node-status">⚖️ УМЫСЕЛ ДОКАЗАН</div>
+            <p>Системные коллизии: Сокрытие токсоплазмоза (1991) и фальсификация приговора Фурдуя (8 лет vs 8 месяцев).</p>
+        </div>
+        <div class="domino-node">
+            <div class="node-type">MCP HANDSHAKE</div>
+            <div class="node-title">PR #2043: Implementation.Name Alignment</div>
+            <div class="node-status">🤝 ТЕХНИЧЕСКОЕ ПРИЗНАНИЕ</div>
+            <p>Синхронизация системных инструментов с архитектурой GitHub.</p>
+        </div>
+    </div>
+
+    <a href="support.html" class="support-fixed">ПОДДЕРЖАТЬ ПРОЕКТ (DONATE)</a>
+
+    <div style="margin-top: 50px; text-align: center; color: var(--border);">
+        <a href="jus-cogens-proof-macheret.html" style="color: var(--cyan);">ВЕРНУТЬСЯ К МАТРИЦЕ JUS COGENS</a>
+    </div>
+</body>
+</html>

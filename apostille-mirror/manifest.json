@@ -1,0 +1,350 @@
+{
+  "caseId": "CASE-MACHERET-1997-2026",
+  "evidenceNodes": [
+    {
+      "id": "vacuum_time",
+      "icon": "⏱",
+      "title": "ПРОЦЕССУАЛЬНЫЙ ВАКУУМ",
+      "body": "10524 суток без расследования. Срок давности отсутствует.",
+      "num": "10524"
+    },
+    {
+      "id": "apostille_archive",
+      "icon": "📂",
+      "title": "АПОСТИЛИРОВАННЫЙ АРХИВ",
+      "body": "90 документов Гаагской конвенции. Апостиль удостоверяет подпись.",
+      "num": "90"
+    },
+    {
+      "id": "forgery_2022",
+      "icon": "🧬",
+      "title": "ПОДЛОГ 15.03.2022",
+      "body": "Нантой Людмила использовала личность Маркова И.М. для захвата имущества.",
+      "num": null
+    },
+    {
+      "id": "idnp_forgery_1",
+      "body": "Досар по нр 20006021107: ИДНП другого лица.",
+      "icon": "🔴",
+      "title": "ПОДЛОГ ИДНП №1",
+      "num": "2006"
+    },
+    {
+      "id": "idnp_forgery_2",
+      "body": "Сравнительный анализ прав ИДНП 1974 и 1995 годов.",
+      "icon": "🔴",
+      "title": "ПОДЛОГ ИДНП №2 (1974/1995)",
+      "num": "1974"
+    },
+    {
+      "icon": "⚠️",
+      "title": "CONFLICT-ANCHOR: Ордер кв. 64",
+      "body": "Конфликтующая копия, указывающая на подлог IDNP.",
+      "id": "conflict_node_1",
+      "num": "2023"
+    },
+    {
+      "icon": "⚠️",
+      "title": "CONFLICT-ANCHOR: Исполнение 2006",
+      "body": "Дублирующиеся записи исполнения наказания.",
+      "id": "conflict_node_2",
+      "num": "2006"
+    },
+    {
+      "title": "FORENSIC-LINK: Дело 1-28 (09.02.2011)",
+      "num": "2011",
+      "body": "Хронологическое доказательство невозможности участия.",
+      "id": "forensic_1_28",
+      "icon": "⚖️"
+    },
+    {
+      "title": "FORENSIC-LINK: Приговор 1a-42",
+      "num": "2009",
+      "body": "Сравнительный анти-паттерн хронологии.",
+      "id": "forensic_1a_42",
+      "icon": "⚖️"
+    },
+    {
+      "body": "Отправное доказательство искусственного разделения свидетелей.",
+      "id": "forensic_1_983",
+      "title": "FORENSIC-LINK: Дело 1-983 (2007)",
+      "num": "1-983",
+      "icon": "⚖️"
+    },
+    {
+      "body": "Подделка прав собственности и принудительная конвертация владения.",
+      "id": "miron_costin_property_fraud",
+      "title": "PROPERTY-FRAUD: Мирон Костин 13/3 кв. 64",
+      "num": "64",
+      "icon": "🏠"
+    },
+    {
+      "id": "sabotage_node_morozan_07",
+      "title": "SABOTAGE-NODE: Обыск Морозана (23.07.2007)",
+      "num": "2007",
+      "body": "Легализация ночного обыска задним числом; фальсификация вещества (марганец->трамадол).",
+      "icon": "🚨"
+    },
+    {
+      "id": "sabotage_node_property_fraud",
+      "title": "SABOTAGE-NODE: Мирон Костин 13/3, кв. 64",
+      "num": "64",
+      "body": "Конфискация частной собственности через поддельную прописку и принудительную конвертацию статуса жилья.",
+      "icon": "🏚️"
+    },
+    {
+      "icon": "🚫",
+      "num": "2007",
+      "title": "SABOTAGE-NODE: Судья Холбан (2007)",
+      "body": "Легализация ночного обыска кв. 64 (без присутствия, нарушение прав).",
+      "id": "forensic_holban_sabotage"
+    },
+    {
+      "icon": "🔐",
+      "num": "64",
+      "title": "LEGAL-IMPOSSIBILITY: Квартира 64",
+      "body": "Отсутствие оснований для обыска при законном владении 50% собственности.",
+      "id": "property_impossibility_node"
+    },
+    {
+      "title": "FRAUD-NODE: Конвертация собственности в прописку",
+      "body": "Подмена законных прав на 'бессрочную прописку' для дестабилизации права владения.",
+      "num": "2009",
+      "icon": "📉",
+      "id": "property_conversion_fraud"
+    },
+    {
+      "title": "FRAUD-ANCHOR: Принудительная регистрация",
+      "body": "Манипуляция с адресом (Бернардарци,3) как механизм выписки из законной собственности (Мирон Костин, 64).",
+      "num": "2009",
+      "icon": "👣",
+      "id": "illegal_registration_anchor"
+    },
+    {
+      "num": "ID",
+      "title": "SABOTAGE-NODE: Подмена фамилий (Буквенная)",
+      "id": "identity_forgery_substitution",
+      "body": "Систематические вставки/замены букв при сохранении заглавной инициальной буквы для обхода автоматической идентификации.",
+      "icon": "🔠"
+    },
+    {
+      "num": "ID",
+      "title": "SABOTAGE-NODE: Полная подмена фамилии",
+      "id": "identity_forgery_total",
+      "body": "Институциональный подлог личности субъекта при сохранении процессуальной формы.",
+      "icon": "👤"
+    },
+    {
+      "icon": "🧟",
+      "id": "identity_fraud_post_mortem_markov",
+      "title": "SABOTAGE-NODE: Фикция 'Живой Марков' (2022)",
+      "num": "2022",
+      "body": "Использование доверенности от умершего в 2011 году Маркова для захвата собственности в 2022."
+    },
+    {
+      "icon": "🔠",
+      "id": "identity_fraud_name_substitution",
+      "title": "SABOTAGE-NODE: Подмена: Мокряк / Мачерет",
+      "num": "CS",
+      "body": "Искажение идентификационных данных при обращении в КС для процессуального саботажа."
+    },
+    {
+      "icon": "🎭",
+      "id": "sabotage_node_nantoi_kotorobai",
+      "title": "SABOTAGE-NODE: Гендерно-идентификационный подлог (Нантой/Которобай)",
+      "num": "2022",
+      "body": "Использование фиктивной идентификации и опекунства для легализации конфискаций."
+    },
+    {
+      "num": "L-FORGERY",
+      "id": "sabotage_node_linguistic_markov",
+      "title": "SABOTAGE-NODE: Лингвистическая подмена 'Markov'",
+      "body": "Систематическое незаконное склонение иностранной фамилии 'Markov' и замена 'ț'/'ts' на 'k', нарушающее нормы идентичности.",
+      "icon": "🔤"
+    },
+    {
+      "num": "FORGERY-CHAIN",
+      "id": "identity_forgery_chain_variations",
+      "title": "SABOTAGE-NODE: Идентификационная цепочка вариаций",
+      "body": "Систематическое использование цепочки: Marcov < Macarova < Marcova < Maceret < Macieret < Maciret как SWIFT-эквивалентных ключей для обхода легальности владения и совершения хищений.",
+      "icon": "🔗"
+    },
+    {
+      "num": "2022",
+      "id": "sabotage_hospice_fraud_2022",
+      "icon": "🧟",
+      "body": "Сегрегация Г.И. Марковой, использование фальшивой опеки (Нантой) и перехват предсмертных доказательств.",
+      "title": "SABOTAGE-NODE: Фикция Хосписа и убийство Марковой"
+    },
+    {
+      "num": "2024",
+      "id": "sabotage_witness_erasure",
+      "icon": "📉",
+      "body": "Смерть ключевого свидетеля (2024) как способ блокировки правосудия судьей Холбаном.",
+      "title": "SABOTAGE-NODE: Устранение свидетеля Еремина"
+    },
+    {
+      "num": "08.2026",
+      "id": "financial_blockade_victoriabank_2026",
+      "icon": "🏦",
+      "body": "Электронное подтверждение `Victoria bank.pdf` от 07.08.2026: транзакция № 621901657131 в ATM VICTORIABANK 106 по карте 5100xxxxxxxx6089 показывает 0.00 MDL и комиссию -11.98 MDL, фиксируя искусственное создание технической задолженности и заморозку доступа к средствам.",
+      "title": "FINANCIAL-BLOCKADE: Victoriabank 07.08.2026"
+    },
+    {
+      "num": "MED",
+      "id": "medical_control_arkhip_silvia",
+      "icon": "🩺",
+      "body": "Принудительный перевод к врачу Архип Сильвия (6-я поликлиника), ранее связанной с оформлением смерти Марковой Галины, указывает на попытку централизовать и изолировать медицинские доказательства.",
+      "title": "MEDICAL-CONTROL: Архип Сильвия / 6-я поликлиника"
+    },
+    {
+      "num": "INHERIT",
+      "id": "inheritance_retention_markova_vb",
+      "icon": "🧾",
+      "body": "Жалоба `Victoriabank.pdf` фиксирует удержание вкладов умершей Марковой Галины Ивановны и связывает личную блокировку карты с блокировкой наследственной массы.",
+      "title": "INHERITANCE-RETENTION: Маркова / Victoriabank"
+    },
+    {
+      "num": "TRAMADOL",
+      "id": "tramadol_incrimination_xml_2009",
+      "icon": "💊",
+      "body": "XML-слой `В Суд сектор Центр - приобщение копия пдф .xml` фиксирует, что истцу вменялось хранение `2-х капсул «трамадол»`, при этом в том же корпусе текста указано, что никакого трамадола у истца и его жены найдено не было, а сам трамадол описан как лекарственный анальгетик.",
+      "title": "TRAMADOL-CHAIN: Инкриминирование и медицинский контекст"
+    },
+    {
+      "num": "DISABILITY",
+      "id": "disability_severe_2021",
+      "icon": "♿",
+      "body": "Документ `инвалидное пожизненое первая группа (1).pdf` фиксирует `Certificat de incadrare in grad de dizabilitate`, `MACERET ALEXEI`, `IDNP: 2000001159655`, степень `Sever` и период `de la 01.03.2021 pana la fara termen`.",
+      "title": "DISABILITY-ANCHOR: Бессрочная тяжелая инвалидность"
+    },
+    {
+      "num": "CNAS",
+      "id": "cnas_registry_exclusion_2023",
+      "icon": "📚",
+      "body": "Жалоба `Жалоба на рум. В CNAS.подписан.pdf` требует зарегистрировать трудовой стаж до 1999 года, исправить ошибочные идентификационные записи и восстановить исключенные из учета периоды учебы и временного отсутствия.",
+      "title": "CNAS-EXCLUSION: Искажение стажа и идентичности"
+    },
+    {
+      "num": "MIL-1991",
+      "id": "military_registration_1991_grab_vvk",
+      "icon": "🪖",
+      "body": "OCR `адеверинца военная.jpg` фиксирует воинский учет с `17.12.1991`, а в извлеченном тексте `Управление Верховного комиссара ООН...Human.pdf` присутствует фрагмент: `Обследован в ПКБ с 10.10.91 г по 9.11.91 г. Акт № 734... Члены комиссии: райвоенком Граб В.В.`",
+      "title": "MILITARY-1991: Воинский учет и ВВК / Граб В.В."
+    },
+    {
+      "num": "HOLBAN",
+      "id": "sabotage_judicial_fraud_holban",
+      "icon": "⚖️",
+      "body": "Блокировка доступа к правосудию через аннулирование дела после устранения свидетеля.",
+      "title": "SABOTAGE-NODE: Саботаж судьи Холбана"
+    },
+    {
+      "title": "SABOTAGE-NODE: Кириллическая-Латинская подмена",
+      "num": "L-FORGERY",
+      "body": "Систематическая конвертация кириллических имен в латинские для нарушения идентификации в судебных реестрах (Дело Марковой/Мачерет).",
+      "icon": "🔡",
+      "id": "identity_forgery_cyrillic_latin"
+    }
+  ],
+  "forensicData": {
+    "subject": "A©tor · IDNP: 2000001159655",
+    "theftAmount": "25 210 256,15 MDL",
+    "subjects": "FinComPay · Moldindconbank · Victoriabank",
+    "method": "Принудительная смена карты + обнуление баланса + создание комиссии при нулевом остатке",
+    "timestamp": "2026-08-07T07:39:26Z",
+    "merkleRoot": "CFC 9a2465bd...e77"
+  },
+  "projectionNodes": [
+    {
+      "id": "projection-jus-cogens-proof",
+      "title": "JUS COGENS PROOF STREAM",
+      "kind": "html",
+      "source": "jus-cogens-proof-macheret.html",
+      "preview": "Open the proof stream and legal-equation view.",
+      "download": null,
+      "badge": "STREAM"
+    },
+    {
+      "id": "projection-registry-fixed",
+      "title": "APOSTILLE REGISTRY",
+      "kind": "html",
+      "source": "apostille-registry-fixed.html",
+      "preview": "Registry of 90 apostilled records.",
+      "download": null,
+      "badge": "90"
+    },
+    {
+      "id": "projection-timeline",
+      "title": "FORENSIC TIMELINE",
+      "kind": "html",
+      "source": "timeline.html",
+      "preview": "Chronological evidence walk-through.",
+      "download": null,
+      "badge": "1997–2026"
+    },
+    {
+      "id": "projection-pdf-report",
+      "title": "FINAL REPORT PDF",
+      "kind": "pdf",
+      "source": "../Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf",
+      "preview": "Local report PDF mirrored beside the worktree.",
+      "download": "../Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf",
+      "badge": "PDF"
+    },
+    {
+      "id": "projection-image-apostille",
+      "title": "APOSTILLE IMAGE MIRROR",
+      "kind": "image",
+      "source": "F:/Мой диск/ACTOR_DEV_ENV/apostille-mirror/mirrors/Verified_Apostilles_PNG/3S6V078ZELJK9_EVIDENCE-1.png",
+      "preview": "Real mirrored apostille image from the Google Drive sync area.",
+      "download": "F:/Мой диск/ACTOR_DEV_ENV/apostille-mirror/mirrors/Verified_Apostilles_PNG/3S6V078ZELJK9_EVIDENCE-1.png",
+      "badge": "IMG"
+    },
+    {
+      "id": "projection-victoriabank-atm",
+      "title": "VICTORIABANK ATM EVIDENCE",
+      "kind": "pdf",
+      "source": "google-drive-mirror/actual/Victoria bank.pdf",
+      "preview": "ATM confirmation: transaction 621901657131, 0.00 MDL, commission -11.98 MDL.",
+      "download": "google-drive-mirror/actual/Victoria bank.pdf",
+      "badge": "ATM"
+    },
+    {
+      "id": "projection-victoriabank-complaint",
+      "title": "VICTORIABANK COMPLAINT DOSSIER",
+      "kind": "pdf",
+      "source": "google-drive-mirror/actual/Victoriabank.pdf",
+      "preview": "Complaint on blocked card and withheld inheritance deposits of Markova Galina Ivanovna.",
+      "download": "google-drive-mirror/actual/Victoriabank.pdf",
+      "badge": "CLAIM"
+    },
+    {
+      "id": "projection-military-1991",
+      "title": "MILITARY 1991 / VVK VERIFICATION",
+      "kind": "pdf",
+      "source": "https://drive.google.com/file/d/1lA3Uk1gnUD2yDuSXKrMtZ9oMBIXApe4k/view",
+      "preview": "Verification layer for the 1991 military-registration anchor, PKB act № 734, and the commission fragment naming райвоенком Граб В.В.",
+      "download": "https://drive.google.com/uc?export=download&id=1lA3Uk1gnUD2yDuSXKrMtZ9oMBIXApe4k",
+      "badge": "VVK"
+    },
+    {
+      "id": "projection-disability-severe",
+      "title": "SEVERE DISABILITY CERTIFICATE",
+      "kind": "pdf",
+      "source": "google-drive-mirror/инвалидное пожизненое первая группа (1).pdf",
+      "preview": "Direct certificate fixing MACERET ALEXEI, IDNP 2000001159655, severe disability, and the no-term period from 01.03.2021.",
+      "download": "google-drive-mirror/инвалидное пожизненое первая группа (1).pdf",
+      "badge": "SEVERE"
+    },
+    {
+      "id": "projection-cnas-exclusion",
+      "title": "CNAS REGISTRY EXCLUSION CLAIM",
+      "kind": "pdf",
+      "source": "https://drive.google.com/file/d/1a44J7t87pIKILO8A21PrHe1unmg2XkyN/view",
+      "preview": "Request to restore pre-1999 labor record, correct identity mismatches, and reverse excluded periods in the social-insurance registry.",
+      "download": "https://drive.google.com/uc?export=download&id=1a44J7t87pIKILO8A21PrHe1unmg2XkyN",
+      "badge": "CNAS"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "identity_sabotage_nodes": {
+    "node_001": { "alias": "Maciret", "source": "Sentinta 2006", "impact": "property_block" },
+    "node_002": { "alias": "Maciaret", "source": "CPT_2012_Letter", "impact": "international_isolation" },
+    "node_003": { "alias": "Maceret", "source": "ASP_2018_Notice", "impact": "passport_denial" }
+  }
+}

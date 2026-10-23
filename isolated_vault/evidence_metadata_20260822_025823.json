@@ -1,0 +1,29 @@
+[
+  {
+    "file": "viber_evidence_1.jpg",
+    "sha256": "39d16194105e441692e246313386a673cd7a9aec661ef0a1255d7439b0b9c79c",
+    "datetime_original": null,
+    "create_date": null,
+    "device_make": null,
+    "device_model": null,
+    "gps_latitude": null,
+    "gps_longitude": null,
+    "extracted_at": "2026-08-22T02:58:23.514652"
+  },
+  {
+    "file": "H:\\ACTOR_DEV_ENV\\isolated_vault\\sync_inbox\\viber_evidence_2.jpg",
+    "error": "File not found"
+  },
+  {
+    "file": "H:\\ACTOR_DEV_ENV\\isolated_vault\\sync_inbox\\viber_evidence_3.jpg",
+    "error": "File not found"
+  },
+  {
+    "file": "H:\\ACTOR_DEV_ENV\\isolated_vault\\sync_inbox\\viber_evidence_4.jpg",
+    "error": "File not found"
+  },
+  {
+    "file": "H:\\ACTOR_DEV_ENV\\isolated_vault\\sync_inbox\\viber_evidence_5.jpg",
+    "error": "File not found"
+  }
+]

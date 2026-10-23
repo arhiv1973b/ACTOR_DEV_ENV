@@ -1,0 +1,31 @@
+{
+    "timestamp": "2026-09-01T14:00:21.431934Z",
+    "case_id": "CASE-MACHERET-1997-2026",
+    "legal_basis": "Jus Cogens / Erga Omnes",
+    "drive_mirrors": {
+        "nota_verbale": "https://drive.google.com/file/d/1ePuz0oillkS9KtAOfMIjctETFnCrO774/view?usp=sharing",
+        "balance_screenshot_25210256_15_mdl": "https://drive.google.com/file/d/1WbILWzDP52Jar4N4BWH3Bg2e-7TQlBG4/view?usp=sharing"
+    },
+    "anchors": [
+        {
+            "file": "FORENSIC_FINCOM_ANALYSIS.md",
+            "sha256": "3175fd5c6d872a8e9b5bfe9a12e6248fa00f22554e45509a713feabacf0f5513",
+            "ed25519_signature": "935ddcd01cea947b5bfab9cffdee5885cb1574d008ff1d0f2ec1325002dbe1c33d787817a600766e4ef7af8dddc556fb5cd148d54acf76ed495a2079a7078b03"
+        },
+        {
+            "file": "JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md",
+            "sha256": "53d6620de1c36fe5127ec673c9cb9b22e86c222d22811541f376217762b50b14",
+            "ed25519_signature": "817f2c2f8675646b4b44fca227d74f573d7acef04592563f032586a32a96b29933d294a650889f8e92e78a6063a153fba1a304d781e623032d28eb64b8ae6104"
+        },
+        {
+            "file": "IDENTITY_DISTORTION_GRAPH.md",
+            "sha256": "2f2cfff2a1567c17ba08098208bdd1e734b622b343eb1059c07dd0cf1493b595",
+            "ed25519_signature": "dc96dcad00a01cbed516eae195a107f96b180155c22664f28856444b8d51c4845a180a0e1a5318a6213642ba463c5b5df7f3aeb5462a290a07ff7c95f982f105"
+        },
+        {
+            "file": "actor_jus_cogens_engine.json",
+            "sha256": "85851c0d1ff96449038ab9ed9d2e63b94e324ef4e91b7512b8dad1270ee07e54",
+            "ed25519_signature": "234b905d1ffdd7a34fbbde50686e4a3f38b98aba887f6352f592db4c9399e1323db10fb0b6be78af19e069a057a5addeac60c964c0d2a9565c51e4670893d301"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+  "package_id": "UN_CAT_SUBMISSION_VECTOR_2_2026",
+  "protocol": "TI-ULA Cryptographic Evidence Vault",
+  "recipient": "United Nations Committee Against Torture (UN CAT) - Article 22 Procedure",
+  "author": "Alexei Macheret (A©tor)",
+  "state_party": "Republic of Moldova",
+  "timestamp": "2026-09-20 21:55:14 UTC",
+  "total_files": 6,
+  "missing_files": [],
+  "files": [
+    {
+      "filename": "UN_CAT_COVER_LETTER_2026.md",
+      "size_bytes": 3440,
+      "sha256": "58c3059f41ccbf641fd95a8484c27e277b047531fa787b7c0f02f1d3c49fa0a1",
+      "status": "verified_present"
+    },
+    {
+      "filename": "UN_CAT_QUESTIONNAIRE_MAPPING.yaml",
+      "size_bytes": 2010,
+      "sha256": "1012402a453c05a55c6dba905a24a0f7c0ee858b1fcffb23b6498498248786d5",
+      "status": "verified_present"
+    },
+    {
+      "filename": "CASE_MACHERET_1997_2026_DOSSIER.pdf",
+      "size_bytes": 20355,
+      "sha256": "79842243c5ab96c3b26336cec30b68c855397fadb8ffef138ac8873c758ac6e6",
+      "status": "verified_present"
+    },
+    {
+      "filename": "CASE_MACHERET_1997_2026_DOSSIER.md",
+      "size_bytes": 16387,
+      "sha256": "6db455acd7491d3851114d80eb09c12aa9d51b27d7b4d556f8931662bae1d1ee",
+      "status": "verified_present"
+    },
+    {
+      "filename": "INTEGRITY_WITNESS.json",
+      "size_bytes": 54808,
+      "sha256": "8205bc1fa5b0d1f0f3d4498fc8ee10f40e46c19c80ef79c8039be9e931ae5cf9",
+      "status": "verified_present"
+    },
+    {
+      "filename": "TI_ULA_Master.dot",
+      "size_bytes": 4486,
+      "sha256": "4bdb0522409b09dce4e452592fdcb0f2a2287ebfe67779aceff5da93c1957a74",
+      "status": "verified_present"
+    }
+  ],
+  "submission_status": "ready_for_ohchr_upload"
+}

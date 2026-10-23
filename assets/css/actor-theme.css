@@ -1,0 +1,86 @@
+﻿body { background-color: #0a0a0f; color: #e8e8e0; font-family: 'Courier New', monospace; margin: 40px; }
+h1, h2, h3 { color: #c8a951; font-family: 'Times New Roman', serif; border-bottom: 1px solid #2a2a3e; padding-bottom: 10px; }
+.donation-banner { background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1px solid #c8a951; border-radius: 8px; padding: 20px; text-align: center; margin: 30px 0; }
+.btn-donate { display: inline-block; background: #c8a951; color: #0a0a0f; padding: 10px 20px; text-decoration: none; font-weight: bold; margin: 5px; border-radius: 4px; }
+.hash-link { color: #4ecdc4; text-decoration: none; border-bottom: 1px dashed #4ecdc4; font-size: 0.9em; }
+.jus-cogens-badge { background: #e74c3c; color: white; padding: 2px 8px; font-weight: bold; border-radius: 3px; }
+/* Search Bar Styling */
+#hub-search { 
+    width: 100%; padding: 15px; background: #12121a; border: 1px solid #c8a951; 
+    color: #e8e8e0; font-family: 'Courier New', monospace; border-radius: 4px; margin-bottom: 20px;
+    font-size: 1.1em;
+}
+#hub-search:focus { outline: none; box-shadow: 0 0 10px rgba(200, 169, 81, 0.3); }
+
+/* Timeline Widget */
+.timeline { border-left: 2px solid #c8a951; margin: 40px 0; padding-left: 20px; }
+.timeline-item { position: relative; margin-bottom: 30px; }
+.timeline-item::before { 
+    content: ''; position: absolute; left: -27px; top: 5px; 
+    width: 12px; height: 12px; background: #c8a951; border-radius: 50%; 
+}
+.timeline-date { color: #c8a951; font-weight: bold; margin-bottom: 5px; }
+.timeline-event { font-size: 0.9em; color: #aaa; }
+/* Integrity & Feed Styles */
+.verified-badge { color: #27ae60; font-weight: bold; border: 1px solid #27ae60; padding: 5px 10px; border-radius: 4px; background: rgba(39, 174, 96, 0.1); }
+#live-feed { 
+    background: #050508; border: 1px solid #2a2a3e; padding: 15px; 
+    height: 150px; overflow-y: auto; font-family: monospace; font-size: 0.85em; color: #4ecdc4;
+    margin: 20px 0; border-radius: 4px;
+}
+.feed-entry { margin-bottom: 5px; border-bottom: 1px solid #1a1a2e; padding-bottom: 3px; }
+#sovereign-seal { margin-top: 10px; display: inline-block; }
+/* Deep Audit UI */
+.deep-meta-box { 
+    background: #0d1117; border-left: 2px solid #4ecdc4; 
+    padding: 10px; margin: 10px 0; font-family: 'Courier New', monospace; 
+    color: #8b949e; font-size: 0.85em; 
+}
+/* Deep Audit UI */
+.deep-meta-box { 
+    background: #0d1117; border-left: 2px solid #4ecdc4; 
+    padding: 10px; margin: 10px 0; font-family: 'Courier New', monospace; 
+    color: #8b949e; font-size: 0.85em; 
+}
+/* Deep Audit UI */
+.deep-meta-box { 
+    background: #0d1117; border-left: 2px solid #4ecdc4; 
+    padding: 10px; margin: 10px 0; font-family: 'Courier New', monospace; 
+    color: #8b949e; font-size: 0.85em; 
+}
+/* Deep Audit UI */
+.deep-meta-box { 
+    background: #0d1117; border-left: 2px solid #4ecdc4; 
+    padding: 10px; margin: 10px 0; font-family: 'Courier New', monospace; 
+    color: #8b949e; font-size: 0.85em; 
+}
+/* Deep Audit UI */
+.deep-meta-box { 
+    background: #0d1117; border-left: 2px solid #4ecdc4; 
+    padding: 10px; margin: 10px 0; font-family: 'Courier New', monospace; 
+    color: #8b949e; font-size: 0.85em; 
+}
+/* Deep Audit UI */
+.deep-meta-box { 
+    background: #0d1117; border-left: 2px solid #4ecdc4; 
+    padding: 10px; margin: 10px 0; font-family: 'Courier New', monospace; 
+    color: #8b949e; font-size: 0.85em; 
+}
+/* Deep Audit UI */
+.deep-meta-box { 
+    background: #0d1117; border-left: 2px solid #4ecdc4; 
+    padding: 10px; margin: 10px 0; font-family: 'Courier New', monospace; 
+    color: #8b949e; font-size: 0.85em; 
+}
+/* Deep Audit UI */
+.deep-meta-box { 
+    background: #0d1117; border-left: 2px solid #4ecdc4; 
+    padding: 10px; margin: 10px 0; font-family: 'Courier New', monospace; 
+    color: #8b949e; font-size: 0.85em; 
+}
+/* Deep Audit UI */
+.deep-meta-box { 
+    background: #0d1117; border-left: 2px solid #4ecdc4; 
+    padding: 10px; margin: 10px 0; font-family: 'Courier New', monospace; 
+    color: #8b949e; font-size: 0.85em; 
+}

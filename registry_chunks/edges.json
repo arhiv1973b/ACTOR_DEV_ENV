@@ -1,0 +1,19 @@
+{
+  "edges": [
+    {
+      "source": "NODE-326",
+      "target": "NODE-320",
+      "relation": "shared_participant_role"
+    },
+    {
+      "source": "NODE-376",
+      "target": "NODE-375",
+      "relation": "shared_event_date"
+    },
+    {
+      "source": "NODE-379",
+      "target": "NODE-331",
+      "relation": "shared_event_date"
+    }
+  ]
+}

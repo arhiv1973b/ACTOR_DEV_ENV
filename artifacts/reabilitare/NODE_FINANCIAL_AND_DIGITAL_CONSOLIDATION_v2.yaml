@@ -1,0 +1,26 @@
+id: NODE_FINANCIAL_AND_DIGITAL_CONSOLIDATION_v2
+type: evidence_node
+parent_nodes:
+  - NODE_COMPREHENSIVE_FINANCIAL_AND_FAMILY_TERROR_2026
+  - CASCADE_CANCELLATION_MATRIX
+legal_framework:
+  basis: UDHR Art. 8, 17; VCLT Art. 53; ARSIWA (State Responsibility); Moldovan Constitution Art. 53
+  vector: digital_asset_fixation (FinComPay, Apple Wallet, 25,210,256.15 MDL) -> official_bank_denials (FinComBank S.A., Victoriabank, Moldindconbank) -> inheritance_and_identity_nexus (Galina Markova, Pavlina Baskova) -> integrity_witness_v2
+master_files:
+  - filename: fincombank_25m_trace.json
+    sha256: "fincom_trace_anchor_2026"
+    size_bytes: 4200
+    role: Cryptographic trace of the 25,210,256.15 MDL financial asset blockade and decoupling incident.
+  - filename: Legal_Reply_FinComBank.pdf
+    sha256: "fincom_legal_reply_anchor"
+    size_bytes: 350000
+    role: Official bank reply denying operations while maintaining administrative asset freeze.
+  - filename: .подписан.pdf_Справка_о_смерти_Басковой.подписан.pdf
+    sha256: "baskova_death_anchor"
+    size_bytes: 512000
+    role: Death certificate and inheritance nexus for Pavlina Baskova.
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

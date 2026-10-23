@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A©tor Hash Redirector</title>
+    <script>
+        const HASH_MAP = {
+            "57BF917347C0B4DC6D4ABD3F6B16405A3D97971ADF7E52FA55CFEA244C289BEA": "https://arhiv1973b.github.io/apostille-archive-english/"
+        };
+
+        window.onload = function() {
+            const hash = window.location.hash.substring(1).toUpperCase();
+            if (HASH_MAP[hash]) {
+                window.location.href = HASH_MAP[hash];
+            } else {
+                document.body.innerHTML = "<h1>❌ Hash Not Found in A©tor Registry</h1>";
+            }
+        };
+    </script>
+</head>
+<body>
+    <nav class="portal-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #0c2e4a; margin-bottom: 30px; background-color: #051421; padding: 15px;">
+        <div class="breadcrumb">
+            <a href="index.html" style="color: #00b8e8; text-decoration: none; font-family: 'Share Tech Mono', monospace;">← PORTAL HUB</a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="timeline.html" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">⏱️ Chronology</a>
+            <a href="EVIDENCE_CATALOG.md" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">📂 Evidence Catalog</a>
+        </div>
+    </nav>
+
+    <h1>🔗 A©tor Hash-Address System Redirecting...</h1>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://actor.schema/v1/interactive-timeline",
+  "meta": {
+    "caseId": "CASE-MACHERET-1997-2026",
+    "operator": "A©tor",
+    "mode": "diagnostic_audit"
+  },
+  "neuro_link": {
+    "context": "PowerShell && Error Solutions - Google Gemini",
+    "hash_algo": "SHA-256",
+    "hash_vector": "5b3f9a7d2c1e8b4f0a6d9c3e2b1f8a7d5c4e3f2b1a0d9c8e7f6a5b4c3d2e1f0a",
+    "status": "established"
+  },
+  "diagnostic_parameters": {
+    "syntax_traps": [
+      "&&",
+      "||"
+    ],
+    "memory_pressure_limits": {
+      "scavenge_limit_mb": 500,
+      "buffer_bypass": true
+    },
+    "vulnerability_scan": {
+      "target_extensions": [".ps1", ".sh", ".bat"],
+      "action_on_match": "isolate_and_convert_to_json"
+    }
+  },
+  "cli_instructions": {
+    "execute": "Scan local directory for files matching 'diagnostic_parameters'. Do NOT execute files. Generate list of vulnerable scripts.",
+    "output_format": "Append list to pactum_matrix.json under 'pending_conversions'."
+  }
+}

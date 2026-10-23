@@ -1,0 +1,50 @@
+name: Jus Cogens Singularity Deploy & Timestamp Injection
+
+on:
+  push:
+    branches: [ "feature/cyber-sabotage-audit-10-2026", "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  inject-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Generate UTC Timestamp & Inject into Front Matter
+        run: |
+          UTC_TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          echo "Generated UTC Timestamp: $UTC_TIMESTAMP"
+          
+          FILE_PATH="evidence/financial_sabotage/JusCogensSingularityVector.md"
+          if [ -f "$FILE_PATH" ]; then
+            # Replace current_build_timestamp line in YAML front matter
+            sed -i "s/^current_build_timestamp: \".*\"/current_build_timestamp: \"$UTC_TIMESTAMP\"/" "$FILE_PATH"
+            echo "Successfully updated timestamp in $FILE_PATH"
+          else
+            echo "Error: $FILE_PATH not found!"
+            exit 1
+          fi
+
+      - name: Regenerate Integrity Witness L0
+        run: |
+          python generate_integrity_witness.py
+
+      - name: Commit & Push Updated Manifests & Singularity Vector
+        run: |
+          git config --global user.name "A©tor Sovereign Automation"
+          git config --global user.email "arhiv240@gmail.com"
+          git add evidence/financial_sabotage/JusCogensSingularityVector.md INTEGRITY_WITNESS.json evidence/INTEGRITY_WITNESS.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore(singularity): update current_build_timestamp to $(date -u +"%Y-%m-%dT%H:%M:%SZ") and refresh L0 witness"
+          git push

@@ -1,0 +1,46 @@
+{
+  "manifest_id": "EXECUTIVE_MEMORANDUM_PACKAGE_VECTOR_3_2026",
+  "protocol": "TI-ULA Cryptographic Evidence Vault",
+  "scope": "CASE-MACHERET-1997-2026",
+  "targets": [
+    "National Prosecutor General's Office & Ministry of Justice (RM)",
+    "UN Special Rapporteurs (Torture & Independence of Judges)"
+  ],
+  "author": "Alexei Macheret (A©tor)",
+  "timestamp": "2026-09-20 21:59:51 UTC",
+  "total_documents": 5,
+  "missing_documents": [],
+  "documents": [
+    {
+      "filename": "MEMORANDUM_IMPUTED_LIABILITY_RM_2026.md",
+      "size_bytes": 5557,
+      "sha256": "cacdc61279578caf380d41a5a91dbf1a546a8f33061f7ca0822489c3822b33b3",
+      "status": "verified_present"
+    },
+    {
+      "filename": "UN_SPECIAL_RAPPORTEURS_SUBMISSIONS_2026.md",
+      "size_bytes": 4387,
+      "sha256": "94b393d749103350a60296c3ab3ba3a01ca1ce6689252f8646d0b53e266dc559",
+      "status": "verified_present"
+    },
+    {
+      "filename": "CASE_MACHERET_1997_2026_DOSSIER.pdf",
+      "size_bytes": 20355,
+      "sha256": "79842243c5ab96c3b26336cec30b68c855397fadb8ffef138ac8873c758ac6e6",
+      "status": "verified_present"
+    },
+    {
+      "filename": "INTEGRITY_WITNESS.json",
+      "size_bytes": 54808,
+      "sha256": "8205bc1fa5b0d1f0f3d4498fc8ee10f40e46c19c80ef79c8039be9e931ae5cf9",
+      "status": "verified_present"
+    },
+    {
+      "filename": "UN_CAT_SUBMISSION_MANIFEST_2026.json",
+      "size_bytes": 1727,
+      "sha256": "7f85b55655948b15a447076190a22fb923bcfdddf024b8b2aa1b612a85458159",
+      "status": "verified_present"
+    }
+  ],
+  "deployment_status": "ready_for_dispatch"
+}

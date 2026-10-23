@@ -1,0 +1,21 @@
+id: DIVORCE_CERTIFICATE_MATIUK_STANISLAV_GALINA
+type: evidence_node
+parent_nodes:
+  - NODE_TI_ULA_GRAPHVIZ_ARCHITECTURE
+legal_framework:
+  basis: Civil Status Registry (Starea Civilă) verification standards, UDHR Art. 6, 12
+  vector: divorce_record_search (Stanislav Matiuk & Galina Ivanovna Matiuk/Markova, 1975-1977, Chisinau)
+search_parameters:
+  query: "Акт о расторжении брака Матиюк Станислав и Матиюк (Маркова) Галина Ивановна"
+  filters: ["Кишинёв", "Молдавская ССР", "1975", "1976", "1977"]
+  strict: "Primary civil status act records, notarized copies"
+master_files:
+  - filename: divorce_matiuk_search_prompt.yaml
+    sha256: "divorce_search_anchor_2026"
+    size_bytes: 450
+    role: Strict search prompt and verification anchor for the divorce record of Stanislav Matiuk and Galina Markova.
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_TI_ULA_GRAPHVIZ_ARCHITECTURE

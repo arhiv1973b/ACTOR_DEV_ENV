@@ -1,0 +1,23 @@
+id: TI_ULA_MASTER_DAG_REGISTRY_2026
+version: 1.0.0
+scope: CASE-MACHERET-1997-2026
+legal_basis: UDHR Art. 3, 5, 9, 17 + Jus Cogens + Erga Omnes
+sealed_nodes:
+- filename: FINANCIAL_MODEL_DAMNUM_EMERGENS_LUCRUM_CESSANS_2026.yaml
+  path: H:\ACTOR_DEV_ENV\artifacts\reabilitare\FINANCIAL_MODEL_DAMNUM_EMERGENS_LUCRUM_CESSANS_2026.yaml
+  size_bytes: 1115
+  sha256: c9f14640ce0c5832e9441e749c440cd35a4576b84fb0ff0f2e0f36e0551be46d
+- filename: NODE_FINANCIAL_MODEL_1997_2026.yaml
+  path: H:\ACTOR_DEV_ENV\artifacts\reabilitare\NODE_FINANCIAL_MODEL_1997_2026.yaml
+  size_bytes: 1285
+  sha256: 72f3036bea998b4d1b1226b644e689509c8f69918d97c2b7cebad3f435f341f2
+- filename: NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml
+  path: H:\ACTOR_DEV_ENV\artifacts\reabilitare\NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml
+  size_bytes: 1453
+  sha256: bd445b2c1cb8f3934176ba0d4296b116db3cafa40c051a19fb4a14be27f556c1
+- filename: NODE_TORTURE_AND_COVERUP_1997_1998.yaml
+  path: H:\ACTOR_DEV_ENV\artifacts\reabilitare\NODE_TORTURE_AND_COVERUP_1997_1998.yaml
+  size_bytes: 1195
+  sha256: 876ee74adf4acf3515ef7c02575f1116c21d09ab0ce38805c7322a6df002ef5e
+integrity_status: verified_immutable
+timestamp: '2026-09-20'

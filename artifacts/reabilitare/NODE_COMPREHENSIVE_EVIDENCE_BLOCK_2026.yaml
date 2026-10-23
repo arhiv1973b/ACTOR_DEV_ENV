@@ -1,0 +1,30 @@
+id: NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026
+type: evidence_node
+parent_nodes:
+  - NODE_TI_ULA_MASTER_TOPOLOGY
+  - CASCADE_CANCELLATION_MATRIX
+legal_framework:
+  basis: UDHR Art. 6, 8, 9, 12, 17; VCLT (1969) Art. 53; Moldovan Constitution Art. 53; UN GA Resolution 40/34
+  vector: comprehensive_evidence_block (genealogical foundation 1973-1976 -> Odessa adoption 1977 -> ZhSK-39 property chain 1987-2003 -> Riscani search order 2007 by Judge Gheorghe Morozan -> Hasdeu Institute linguistic conclusion 2023 -> Closed Neuroprotocol 2025)
+artifacts_summary:
+  - name: "Notarized Birth Certificate Copy (12.06.1976 / Entry No. 4057, 28.06.1973)"
+    role: "Proof of initial birth registration for Alexei Stanislavovich Matiuk"
+  - name: "Archive Photographs (January 1976)"
+    role: "Visual proof of continuous family living with Ivan Markov and Pavlina Baskova in Chisinau"
+  - name: "Odessa Executive Committee Decision No. 061 (06.05.1977)"
+    role: "Adoption act by Artur Borisovich Macheret and Galina Ivanovna Matiuk"
+  - name: "ZhSK-39 Personal Account No. 87 / Apt. 64 Documents (1987-1989)"
+    role: "Proof of property allocation and permanent residence at Miron Costin 13/3, apt. 64"
+  - name: "Statement to Judge V. Holban (Case No. 2p/s-704/22)"
+    role: "Legal fact establishment of permanent residence from 1987 to 1993"
+  - name: "Ruling No. 337/07 (24.07.2007) by Judge Gheorghe Morozan"
+    role: "Judicial confirmation of residence and investigative action at Miron Costin 13/3, apt. 64"
+  - name: "B.P. Hasdeu Institute of Romanian Philology Scientific Conclusion No. 157 (09.11.2023)"
+    role: "Anthroponomic equivalence of MACERET / МАЧЕРЕТ / MACHERET across jurisdictions"
+  - name: "Closed Neuroprotocol (NP-A©t0r/SC-1125-2025, 10.11.2025)"
+    role: "Diplomatic and legal memorandum submitted to top RM state authorities regarding Jus Cogens and Erga Omnes"
+ti_ula_status:
+  isolation: true
+  verified: true
+  anchor_date: "2026-09-20"
+next_node: NODE_CONTINUING_CONSEQUENCES_1997_2026

@@ -1,0 +1,43 @@
+{
+  "manifest_version": "2.0",
+  "case_reference": "CASE-MACHERET-1997-2026",
+  "author": {
+    "name": "Alexei Macheret",
+    "location": "Chişinău, Republica Moldova",
+    "idnp": "2000001159655",
+    "emails": ["arhiv240@gmail.com", "arhiv1973b@outlook.com"]
+  },
+  "recipient": "President Donald J. Trump",
+  "subject": {
+    "ro": "Apel în sprijinul Inițiativei TI-ULA și solicitare de condamnare a blocadei financiare",
+    "ru": "Обращение в поддержку инициативы TI-ULA и запрос на осуждение финансовой блокады"
+  },
+  "financial_claim": {
+    "amount_mdl": "25,210,256.15",
+    "amount_usd": "1,430,000",
+    "involved_banks": ["FinComBank", "Victoriabank", "Moldindconbank"],
+    "qualification": "Blocaj ilegal și presupus 'furt privat' protejat de elemente corupte"
+  },
+  "bilingual_text_blocks": {
+    "ro": "Exprim recunoștința pentru sprijinul acordat inițiativei mele pașnice bazate pe normele imperative jus cogens. Solicit ferm condamnarea blocadei financiare și a acțiunilor băncilor comerciale care au blocato resursele alocate, încălcând statul de drept.",
+    "ru": "Выражаю признательность за поддержку моей мирной инициативы, основанной на императивных нормах jus cogens. Решительно прошу осудить финансовую блокаду и действия коммерческих банков, заблокировавших выделенные ресурсы в нарушение верховенства закона."
+  },
+  "verified_references": {
+    "github_raw_sources": [
+      "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/main/evidence/fincombank-financial-traces/JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md",
+      "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/main/evidence/fincombank-financial-traces/FORENSIC_FINCOM_ANALYSIS.md",
+      "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/main/evidence/fincombank-financial-traces/LEGAL_MEMORANDUM_ECHR.md",
+      "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/main/evidence/fincombank-financial-traces/ti_ula_crypto_manifest.json",
+      "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/main/evidence/fincombank-financial-traces/BANK_REFUSAL_6387.md"
+    ],
+    "google_drive_exhibits": [
+      "https://drive.google.com/file/d/1ePuz0oillkS9KtAOfMIjctETFnCrO774/view?usp=sharing",
+      "https://drive.google.com/file/d/1vhZWfpWFAFrd_yYEY1rRnPx7Z6NMdQIJ/view?usp=sharing",
+      "https://drive.google.com/file/d/1PFtJGRIJA2Lg8OShLluKthG6fm5BSwjz/view?usp=sharing",
+      "https://drive.google.com/file/d/1wGYRbliseB9eDXOelyftUw-Ssyf2pet3/view?usp=sharing",
+      "https://drive.google.com/file/d/14HHqS2AQE4p4PHagtAjH6JcKOC6jujaX/view?usp=sharing",
+      "https://drive.google.com/file/d/1WbILWzDP52Jar4N4BWH3Bg2e-7TQIBG4/view?usp=sharing",
+      "https://drive.google.com/file/d/1rqN3ySGNlydkqQSyDmT6E3F4dhkJsgY0/view?usp=sharing"
+    ]
+  }
+}

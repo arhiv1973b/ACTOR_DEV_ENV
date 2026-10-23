@@ -1,0 +1,39 @@
+name: Verify Forensic Evidence Ledger
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Verify Forensic Artifacts Integrity
+        run: |
+          echo "Verifying forensic artifacts and mapping files..."
+          python -c "
+          import json, os
+          artifacts = [
+              'macheret_identity_mapping_forensic.json',
+              'macheret_identity_mapping_forensic.yaml',
+              'artifacts/reabilitare/macheret_identity_mapping_forensic.json',
+              'artifacts/reabilitare/macheret_identity_mapping_forensic.yaml',
+              'artifacts/reabilitare/FINANCIAL_TRANSACTION_UN_SUPPORT_02MAY2025.yaml',
+              'artifacts/reabilitare/EVIDENCE_POINTER_UN_SUPPORT_02MAY2025.json'
+          ]
+          for f in artifacts:
+              if os.path.exists(f):
+                  print(f'[OK] Found artifact: {f}')
+              else:
+                  raise FileNotFoundError(f'[ERROR] Missing artifact: {f}')
+          "

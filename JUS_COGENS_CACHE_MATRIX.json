@@ -1,0 +1,43 @@
+{
+  "actor_declaration": "Jus Cogens Cache Integrity Matrix",
+  "project_context": "CASE-MACHERET-1997-2026",
+  "repository_lock": "arhiv1973b/apostille-mirror",
+  "baseline_enforcement": "UDHR 1948 Absolute Framework",
+  "anti_sabotage_safeguards": {
+    "prevent_drive_f_erasure": true,
+    "block_generic_depersonalization": true,
+    "prevent_echr_derogation_injections": true,
+    "strict_path_preservation": [
+      "🏛️_EVIDENCE/OCR_TEXT_LAYER/RAW_WITH_ERRORS/",
+      "🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING/",
+      "ACTOR_DEV_ENV/GOOGLE_DRIVE_F_INDEX.json"
+    ]
+  },
+  "github_actions_cache_strategy": {
+    "layer_1_bridge_dependencies": {
+      "target": "Python Environment",
+      "cache_path": "~/.cache/pip",
+      "cache_key": "${{ runner.os }}-actor-pip-CASE-MACHERET-${{ hashFiles('requirements_unlocked.txt') }}",
+      "restore_keys": [
+        "${{ runner.os }}-actor-pip-CASE-MACHERET-"
+      ]
+    },
+    "layer_2_zero_weight_artifacts": {
+      "description": "Cache pre-calculated SYNC defect fingerprints to accelerate browser matching",
+      "cache_path": "🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING/",
+      "cache_key": "${{ runner.os }}-udhr-index-matrix-v1",
+      "cache_mode": "read",
+      "eviction_policy": "Bypass 7-day rule (Persistent for Jus Cogens)"
+    }
+  },
+  "security_and_isolation": {
+    "secret_leak_guard": "ACTIVE",
+    "banned_cache_paths": [
+      "**/credentials.json",
+      "**/.env",
+      "F:/*_wipe_attempt",
+      "**/id_rsa"
+    ],
+    "cache_poisoning_defense": "Enforce strict SHA-256 match before restoring graph state"
+  }
+}

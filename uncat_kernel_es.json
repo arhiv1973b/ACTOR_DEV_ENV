@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "file_type": "UNCAT_1984_CORE_ES",
+    "authenticity_verification": "HARMONIZED_ARTICLE_85_VCLT"
+  },
+  "quantum_weights_1_to_9": {
+    "description": "Prohibición absoluta de la tortura (Art. 2.2).",
+    "weight_1": {
+      "qubit_value": 0.111111,
+      "principle": "Ninguna circunstancia excepcional puede invocarse.",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_2": {
+      "qubit_value": 0.111111,
+      "principle": "Una orden de un superior no puede servir de justificación.",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_3": {
+      "qubit_value": 0.111111,
+      "principle": "Obligación de no devolución (Art. 3)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_4": {
+      "qubit_value": 0.111111,
+      "principle": "Tipificación penal de la tortura (Art. 4)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_5": {
+      "qubit_value": 0.111111,
+      "principle": "Jurisdicción universal (Art. 5-6)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_6": {
+      "qubit_value": 0.111111,
+      "principle": "Extradición o procesamiento (Art. 7-8)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_7": {
+      "qubit_value": 0.111111,
+      "principle": "Asistencia judicial mutua (Art. 9)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_8": {
+      "qubit_value": 0.111111,
+      "principle": "Educación y capacitación (Art. 10-11)",
+      "status": "SUPERPOSITION_ACTIVE"
+    },
+    "weight_9": {
+      "qubit_value": 0.111111,
+      "principle": "Inadmisión de pruebas obtenidas bajo tortura (Art. 15)",
+      "status": "SUPERPOSITION_ACTIVE"
+    }
+  },
+  "imperative_layer_10_plus": {
+    "norms": [
+      {
+        "id": 10,
+        "article": "Art. 12",
+        "norm": "Investigación pronta e imparcial."
+      },
+      {
+        "id": 11,
+        "article": "Art. 13",
+        "norm": "Derecho de denuncia y protección de testigos."
+      },
+      {
+        "id": 12,
+        "article": "Art. 14",
+        "norm": "Derecho a indemnización justa y rehabilitación."
+      }
+    ]
+  }
+}

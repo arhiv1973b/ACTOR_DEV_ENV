@@ -1,0 +1,25 @@
+graph TD
+    subgraph Core [TI_ULA Core Evidence Vault (28 Nodes, 244 Artifacts)]
+        AVIZ[NODE_AVIZ_INSTiintare_2023\n(Aviz de înștiințare 18.10.2023)]
+        REGISTRY[NODE_APOSTILLE_REGISTRY_FIXED_HTML\n(Master Apostille Registry Mirror)]
+        FINANCE[NODE_FINANCIAL_AND_DIGITAL_CONSOLIDATION_v2\n(25,210,256.15 MDL Asset Freeze)]
+        VALUATION[NODE_FINANCIAL_MODEL_1997_2026\n(1,098,500 EUR Restitution Model)]
+    end
+
+    subgraph Routing [Deployment v15.0.0 Routing Vectors]
+        UN_CAT[Vector 1: UN Committee Against Torture\n(Article 22 Individual Communication)]
+        SPECIAL_RAPPORTEURS[Vector 2: UN Special Rapporteurs\n(Torture & Judicial Independence)]
+        NATIONAL_PROSECUTOR[Vector 3: National Prosecutor General & Ministry of Justice RM\n(Memorandum of Imputed Liability)]
+        FINANCIAL_MONITOR[Vector 4: Financial & Banking Audit\n(FinComBank, Victoriabank, Moldindconbank)]
+    end
+
+    AVIZ --> UN_CAT
+    AVIZ --> NATIONAL_PROSECUTOR
+    REGISTRY --> UN_CAT
+    REGISTRY --> SPECIAL_RAPPORTEURS
+    FINANCE --> FINANCIAL_MONITOR
+    VALUATION --> NATIONAL_PROSECUTOR
+    VALUATION --> UN_CAT
+
+    style Core fill:#EBF5FB,stroke:#2980b9,stroke-width:2px
+    style Routing fill:#EAFAF1,stroke:#27ae60,stroke-width:2px

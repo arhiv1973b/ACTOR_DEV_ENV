@@ -1,0 +1,23 @@
+digraph TI_ULA_Search_Prompts {
+    rankdir=TB;
+    node [shape=box, style="rounded,filled", fontname="Arial", fontsize=10, fillcolor="#FDFEFE", color="#333333"];
+    edge [fontname="Arial", fontsize=9, color="#555555"];
+
+    subgraph cluster_prompts {
+        label = "Поисковые и архивные векторы (1973–1977)";
+        style=filled;
+        fillcolor="#EBDEF0";
+
+        CHILD_REGISTRATION_BIRTH_CERTIFICATE_1973 [label="Свидетельство о рождении\nАлексей (акт № 4057, 23.06.1973, Кишинёв)", fillcolor="#D6EAF8"];
+
+        DIVORCE_SEARCH_PROMPT [label="PROMPT: Поиск акта о разводе\nМатиюк Станислав & Маркова (Матиюк) Галина\n(1975–1977, Кишинёв)\nSOURCE: Google Drive / OneDrive", fillcolor="#F9EBEA"];
+
+        MARRIAGE_SEARCH_PROMPT [label="PROMPT: Поиск свидетельства о браке\nМаркова (Матиюк) Галина & Мачерет Артур\n(1976–1977, Кишинёв)\nSOURCE: Google Drive / OneDrive", fillcolor="#F9EBEA"];
+
+        ADOPTION_REASON_SEARCH_PROMPT [label="PROMPT: Поиск решения об усыновлении\nАлексей Матиюк → Мачерет Алексей Артурович\n(1977, Одесса/Кишинёв)\nSOURCE: Google Drive / OneDrive", fillcolor="#F9EBEA"];
+
+        CHILD_REGISTRATION_BIRTH_CERTIFICATE_1973 -> DIVORCE_SEARCH_PROMPT [label="Расторжение брака\nи сохранение фамилии"];
+        DIVORCE_SEARCH_PROMPT -> MARRIAGE_SEARCH_PROMPT [label="Брак с Артуром Мачеретом\nбез смены фамилии"];
+        MARRIAGE_SEARCH_PROMPT -> ADOPTION_REASON_SEARCH_PROMPT [label="Причина усыновления\nи переписывание фамилии"];
+    }
+}

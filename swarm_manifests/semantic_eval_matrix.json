@@ -1,0 +1,17 @@
+{
+  "directive": "DIR-EVIDENCE-MAP-2026-09",
+  "case_id": "CASE-MACHERET-1997-2026",
+  "status": "executed",
+  "timestamp": "2026-09-08T15:00:00Z",
+  "semantic_weights": {
+    "continuing-consequences": 0.9852,
+    "non-rehabilitation": 0.9431,
+    "ECHR_Art_3_Art_5": 0.9124
+  },
+  "evaluated_artifacts": [
+    "DAS_Riscani_Cert_4410_15",
+    "Guzun_Fines_4B_824_1409",
+    "IDNP_Substitution_Node"
+  ],
+  "convergence_status": "stable"
+}

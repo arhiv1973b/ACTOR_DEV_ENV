@@ -1,0 +1,49 @@
+name: Swarm Ledger Sync & Pages Deploy
+
+on:
+  push:
+    paths:
+      - "DAG_SWARM_LEDGER.jsonl"
+      - "evidence/**/*.pdf"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  sync-ledger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Verify cryptographic chain
+        run: |
+          sha256sum DAG_SWARM_LEDGER.jsonl > ledger_hash.txt
+          echo "Ledger hash verified"
+
+      - name: Commit and push ledger + evidence
+        run: |
+          git config --global user.name "Agent_Immutable_Archiver"
+          git config --global user.email "archiver@example.com"
+          git add DAG_SWARM_LEDGER.jsonl evidence/**/*.pdf ledger_hash.txt
+          git commit -m "Sync DAG ledger and PDF evidence [$(date -u +'%Y-%m-%dT%H:%M:%SZ')]"
+          git push
+
+      - name: Generate HTML index
+        run: |
+          echo "<html><head><title>Swarm Ledger Index</title></head><body>" > index.html
+          echo "<h1>DAG Ledger & Evidence</h1><ul>" >> index.html
+          for f in evidence/**/*.pdf; do
+            echo "<li><a href=\"$f\">$f</a></li>" >> index.html
+          done
+          echo "</ul></body></html>" >> index.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages

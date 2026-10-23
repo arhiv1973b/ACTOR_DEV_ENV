@@ -1,0 +1,50 @@
+name: TI-ULA DAG Log Registration
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Причина ручного запуска регистрации'
+        required: false
+        default: 'Manual log entry registration with Ed25519 signature'
+
+jobs:
+  register-node:
+    runs-on: ubuntu-24.04
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install cryptography
+
+      - name: Execute DAG Registration Script
+        run: python register_log_to_dag.py
+
+      - name: Commit and Push Updated DAG
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dag_manifest.json crypto_keys/
+          git commit -m "chore(dag): register forensic node with Ed25519 signature [skip ci]" || echo "No changes to commit"
+          git push
+
+      - name: Create Immutable Release via GitHub CLI
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG_NAME="dag-update-$(date +'%Y%m%d%H%M%S')"
+          gh release create "$TAG_NAME" \
+            --title "DAG Node: ${{ env.NEW_NODE_HASH }}" \
+            --notes "Автоматическая регистрация доказательного узла с цифровой подписью Ed25519. Нейропротокол A©tor Key / TI-ULA. CASE-MACHERET-1997-2026."

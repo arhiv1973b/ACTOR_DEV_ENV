@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORTURE 1997 — JUS COGENS VIOLATION | CASE MACHERET</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Playfair+Display:ital,wght@0,700;0,900&family=Orbitron:wght@600;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background: linear-gradient(135deg, #0a0e1a 0%, #1a0f2e 100%);
+            color: #c0d8ec;
+            font-family: 'Share Tech Mono', monospace;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        
+        header {
+            border-bottom: 3px solid #cc1133;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5em;
+            color: #ff2244;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(204, 17, 51, 0.5);
+        }
+
+        .breadcrumb {
+            font-size: 0.9em;
+            color: #8ab0cc;
+            margin-top: 15px;
+        }
+
+        .breadcrumb a {
+            color: #00b8e8;
+            text-decoration: none;
+            border-bottom: 1px solid #00b8e8;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 50px;
+            background: rgba(6, 15, 26, 0.4);
+            padding: 30px;
+            border-left: 5px solid #cc1133;
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #cc1133;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #cc1133;
+            padding-bottom: 10px;
+        }
+
+        .fact-meta {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            background: rgba(204, 17, 51, 0.1);
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .meta-item {
+            border-left: 3px solid #00b8e8;
+            padding-left: 15px;
+        }
+
+        .meta-label {
+            color: #8ab0cc;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .meta-value {
+            color: #00b8e8;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .evidence-box {
+            background: rgba(0, 184, 232, 0.05);
+            border: 2px solid #00b8e8;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .evidence-box h3 {
+            color: #00b8e8;
+            margin-bottom: 15px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .evidence-item {
+            margin: 12px 0;
+            padding-left: 20px;
+            border-left: 2px solid #00d870;
+            color: #c0d8ec;
+        }
+
+        .reference {
+            background: rgba(200, 150, 10, 0.05);
+            border-left: 4px solid #c8960a;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .reference-title {
+            color: #c8960a;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .document-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(0, 184, 232, 0.1);
+            border: 1px solid #00b8e8;
+            color: #00b8e8;
+            padding: 12px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin: 10px 5px 10px 0;
+            transition: all 0.3s ease;
+        }
+
+        .document-link:hover {
+            background: rgba(0, 184, 232, 0.2);
+            box-shadow: 0 0 15px rgba(0, 184, 232, 0.3);
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            border: 2px solid #00b8e8;
+            color: #00b8e8;
+            padding: 12px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .back-button:hover {
+            background: rgba(0, 184, 232, 0.1);
+            box-shadow: 0 0 15px rgba(0, 184, 232, 0.3);
+        }
+
+        .related-facts {
+            background: rgba(153, 51, 204, 0.05);
+            border: 2px solid #9933cc;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 40px;
+        }
+
+        .related-facts h3 {
+            color: #bb55ff;
+            margin-bottom: 15px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .fact-link {
+            display: block;
+            padding: 12px;
+            margin: 8px 0;
+            background: rgba(185, 85, 255, 0.05);
+            border-left: 3px solid #bb55ff;
+            color: #bb55ff;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .fact-link:hover {
+            background: rgba(185, 85, 255, 0.15);
+            padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            .fact-meta { grid-template-columns: 1fr; }
+            h2 { font-size: 1.3em; }
+        }
+    </style>
+<!-- Portal OpenGraph metadata -->
+<meta name="description" content="Evidence portal — Case Maceret 1997–2026">
+<meta property="og:title" content="Case Maceret — Evidence Portal">
+<meta property="og:description" content="Evidence portal — Case Maceret 1997–2026">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arhiv1973b.github.io/apostille-mirror/">
+<meta name="twitter:card" content="summary_large_image">
+<!-- End Portal OpenGraph metadata -->
+<link rel="stylesheet" href="/portal-global.css"></head>
+<body>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href='https://arhiv1973b.github.io/apostille-mirror/'>← EVIDENCE PORTAL</a> / TORTURE 1997
+        </div>
+
+        <header>
+            <h1>🔴 TORTURE 1997 & JUS COGENS VIOLATION</h1>
+        </header>
+
+        <a href='https://arhiv1973b.github.io/apostille-mirror/' class="back-button">← Back to Portal</a>
+
+        <section>
+            <h2>📋 FACT PROFILE</h2>
+            <div class="fact-meta">
+                <div class="meta-item">
+                    <div class="meta-label">⚠️ SEVERITY</div>
+                    <div class="meta-value">CRITICAL</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">📅 DATE OCCURRED</div>
+                    <div class="meta-value">15 March 1997</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">📍 LOCATION</div>
+                    <div class="meta-value">Chişinău, Republic of Moldova</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">👤 PRIMARY VICTIM</div>
+                    <div class="meta-value">Alexei Macheret</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>📖 DETAILED ACCOUNT</h2>
+            <p>
+                On 15 March 1997, Alexei Macheret was detained in a state facility in Chişinău. During detention, 
+                he was subjected to systematic torture and inhuman treatment in violation of fundamental international law.
+            </p>
+            <p style="margin-top: 15px;">
+                <strong>Methods documented:</strong>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Physical violence and beatings</li>
+                    <li>Sleep deprivation</li>
+                    <li>Psychological torture and threats</li>
+                    <li>Denial of medical care</li>
+                    <li>Conditions amounting to cruel and degrading treatment</li>
+                </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>⚖️ INTERNATIONAL LAW VIOLATIONS</h2>
+            <div class="evidence-box">
+                <h3>Jus Cogens Norms Breached</h3>
+                <div class="evidence-item">
+                    <strong>Convention Against Torture (CAT)</strong><br>
+                    Article 1 & 4: States must prevent and punish torture under all circumstances
+                </div>
+                <div class="evidence-item">
+                    <strong>International Covenant on Civil and Political Rights (ICCPR)</strong><br>
+                    Article 5: Prohibition of torture and cruel, inhuman, degrading treatment (non-derogable)
+                </div>
+                <div class="evidence-item">
+                    <strong>European Convention on Human Rights (ECHR)</strong><br>
+                    Article 3: Absolute prohibition on torture (cannot be suspended even in emergency)
+                </div>
+                <div class="evidence-item">
+                    <strong>UN Convention Against Torture & Other Cruel, Inhuman or Degrading Treatment</strong><br>
+                    Signature: CRITICAL proof that Moldova acknowledged this obligation
+                </div>
+            </div>
+            
+            <div class="reference">
+                <div class="reference-title">🔍 JUS COGENS STATUS</div>
+                Jus cogens (peremptory norms of international law) are absolute and cannot be derogated from. 
+                The prohibition on torture is universally recognized as jus cogens — binding all states regardless 
+                of treaty ratification or state claims.
+            </div>
+        </section>
+
+        <section>
+            <h2>🧬 EVIDENCE & DOCUMENTATION</h2>
+            <div class="evidence-box">
+                <h3>Primary Evidence</h3>
+                <div class="evidence-item">
+                    ✓ Medical documentation from detention facility (injuries consistent with torture)
+                </div>
+                <div class="evidence-item">
+                    ✓ Witness testimony (fellow detainees, medical staff)
+                </div>
+                <div class="evidence-item">
+                    ✓ Official detention records showing isolation and denial of rights
+                </div>
+                <div class="evidence-item">
+                    ✓ Psychological evaluation documenting trauma consistent with torture
+                </div>
+                <div class="evidence-item">
+                    ✓ International human rights organization reports
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px; color: #00b8e8;">📚 Related Documents</h3>
+            <a href="doc-apostila.html" class="document-link">
+                <span>📄</span> Apostila Attestation (2022)
+            </a>
+            <a href="doc-timeline.html" class="document-link">
+                <span>📅</span> Full Chronology (1997–2026)
+            </a>
+            <a href="https://archive.example.com/torture-evidence" class="document-link">
+                <span>🌐</span> External Archive
+            </a>
+            <a href="EVIDENCE_CATALOG.md" class="document-link">
+                <span>📂</span> Evidence Catalog
+            </a>
+            <a href="https://arhiv1973b.github.io/apostille-mirror/jus-cogens-proof-macheret.html" class="document-link">
+                <span>🌐</span> Original Source (Jus Cogens Proof)
+            </a>
+        </section>
+
+        <section>
+            <h2>📌 STATE RESPONSIBILITY</h2>
+            <p>
+                The Republic of Moldova, as a state party to CAT and ICCPR, bears full responsibility for:
+            </p>
+            <ul style="margin-left: 20px; margin-top: 15px;">
+                <li><strong>Absolute prohibition:</strong> Torture committed by state agents is prohibited without exception</li>
+                <li><strong>Prevention duty:</strong> States must prevent torture from occurring</li>
+                <li><strong>Investigation duty:</strong> Independent investigation is mandatory when torture allegations arise</li>
+                <li><strong>Prosecution duty:</strong> Perpetrators must be prosecuted or extradited</li>
+                <li><strong>Reparation duty:</strong> Victims have right to restitution and rehabilitation</li>
+            </ul>
+            
+            <div class="reference" style="margin-top: 30px; border-left-color: #ff2244;">
+                <div class="reference-title" style="color: #ff2244;">⚠️ CRITICAL FINDING</div>
+                The Moldovan state has failed in all these duties. The perpetrators remain unprosecuted, 
+                victims remain uncompensated, and the investigation was never conducted. This constitutes 
+                a continuing violation of international law.
+            </div>
+        </section>
+
+        <section class="related-facts">
+            <h3>🔗 Related Facts in This Case</h3>
+            <a href='https://arhiv1973b.github.io/apostille-mirror//fact-state-duty.html' class="fact-link">
+                → STATE DUTY BREACH (1997–2026)
+            </a>
+            <a href='https://arhiv1973b.github.io/apostille-mirror//fact-impunity.html' class="fact-link">
+                → MECHANISM OF IMPUNITY
+            </a>
+            <a href="timeline.html#1997" class="fact-link">
+                → FULL TIMELINE: 1997 Entry
+            </a>
+        </section>
+
+        <footer style='margin-top:30px;border-top:1px solid #0c2e4a;padding-top:12px;color:#3a6080;font-size:0.85em;'>
+  <p>SHA256: B12BCE4F1169864726E2CAE8699D011BCA7946C77B04E4709D5BB4E577A50377 | Verified: ✓ | Updated: 2026-07-03 22:04:57 +03:00</p>
+  <p><a href='wrappers/donate.html'>Поддержать проект (донаты)</a> • <a href='wrappers/wrapper-ilc-guide.html'>UN ILC Guide</a> • <a href='wrappers/wrapper-jus-cogens-proof.html'>Original</a></p>
+</footer>
+    </div>
+<script src="wrappers/portal-enhancements.js"></script>
+
+<!-- PORTAL_FOOTER_START -->
+<div class="portal-footer" style="text-align:center;padding:16px;margin-top:20px;border-top:1px solid #103c60;color:#8ab0cc;font-size:0.85em;font-family:monospace">SHA256: EA9056668D737C7973C4102B94AFE1C1A4D6F1894843253EBC1E3FBDC82444FA | Verified: ✓ | Updated: 2026-07-04T08:01:15.782837Z</div>
+<!-- PORTAL_FOOTER_END -->
+</body>
+</html>
+
+

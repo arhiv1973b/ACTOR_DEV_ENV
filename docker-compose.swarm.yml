@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  orchestrator:
+    image: python:3.11-slim
+    container_name: swarm_orchestrator
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: python build_entity_graph.py
+
+  legal_draftsman:
+    image: python:3.11-slim
+    container_name: swarm_legal_draftsman
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: python generate_legal_draft_bundle.py
+    depends_on:
+      - orchestrator
+
+  evidence_crosschecker:
+    image: python:3.11-slim
+    container_name: swarm_crosschecker
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: bash verify_deployment_hash.sh
+    depends_on:
+      - legal_draftsman
+
+  immutable_archiver:
+    image: python:3.11-slim
+    container_name: swarm_archiver
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: python agent_final_consensus.py
+    depends_on:
+      - evidence_crosschecker

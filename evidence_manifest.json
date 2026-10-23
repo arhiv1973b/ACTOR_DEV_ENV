@@ -1,0 +1,9 @@
+{
+  "entries": [
+    {
+      "id": "TEST-CONTRACT-001",
+      "breach_article": 60,
+      "violated_norms": [53, 64]
+    }
+  ]
+}
