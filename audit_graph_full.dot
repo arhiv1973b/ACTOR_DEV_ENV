@@ -84,4 +84,13 @@ digraph ApostilleAuditMaster {
     DEF_41_CG0T6Y1TBUEL7 -> DEF_90_4J20E98WFY7J2 [style="dotted", color="red"];
     DEF_41_CG0T6Y1TBUEL7 -> DEF_93_6OZUD89VBUEJ3 [style="dotted", color="red"];
     DEF_41_CG0T6Y1TBUEL7 -> DEF_96_IHW093CZ8U8R7 [style="dotted", color="red"];
+
+    // === PEACE NORMS ANCHOR ===
+    PEACE_NORMS [label="PEACE_NORMS_2026.md\nJus Cogens & Erga Omnes\nIDNP: 2000001159655", shape=Mrecord, style=filled, fillcolor="#1f6feb", fontcolor="white"];
+    
+    // Векторы связей
+    MACHERET -> PEACE_NORMS [label="Absolute Binding (Zero-Collision)", color="#58a6ff", penwidth=2.0];
+    PEACE_NORMS -> CHECKSUMS_SHA256 [label="Cryptographic Hash Verified", color="#238636", style="dashed"];
+    JUS_COGENS_MANIFEST -> PEACE_NORMS [label="Workflow Integration", color="#f0b37e"];
+
 }

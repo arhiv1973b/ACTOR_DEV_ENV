@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
     <style>
         .node { font-family: Arial, sans-serif; font-size: 12px; }
         .title { font-family: Arial, sans-serif; font-weight: bold; font-size: 16px; fill: #333; }
@@ -118,5 +118,17 @@
 
     <!-- Signature 2 -> Status -->
     <path d="M 860 440 L 860 490" class="edge"/>
+
+    <!-- PEACE_NORMS ANCHOR NODE -->
+    <g transform="translate(400, 650)">
+        <rect width="400" height="110" fill="#E1F5FE" stroke="#0288D1" stroke-width="2" rx="8" ry="8"/>
+        <text x="15" y="25" class="text-bold" fill="#01579B">PEACE_NORMS_2026.md (Jus Cogens Anchor)</text>
+        <text x="15" y="45" class="node">Субъект: Macheret (IDNP: 2000001159655)</text>
+        <text x="15" y="65" class="node">Реестр: CHECKSUMS_SHA256.txt</text>
+        <text x="15" y="90" class="text-sm" fill="#0288D1">SHA256: 25d5f7f320b47660... [Zero-Collision State]</text>
+    </g>
+
+    <!-- Peace Norms Edges -->
+    <path d="M 600 590 L 600 640" class="edge" stroke="#0288D1" stroke-width="2"/>
 
 </svg>
