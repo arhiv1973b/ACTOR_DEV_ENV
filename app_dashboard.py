@@ -12,13 +12,14 @@ from flask import Flask, render_template_string, send_file, abort
 
 app = Flask(__name__)
 
-# Core Artifacts in workspace
+# Core Artifacts in workspace (PEACE_NORMS_2026.md добавлен)
 ARTIFACTS = {
     "svg_graph": r"H:\ACTOR_DEV_ENV\03_GRAPH_GRAPHICS\signature_evidence_graph.svg",
     "dot_graph": r"H:\ACTOR_DEV_ENV\03_GRAPH_GRAPHICS\audit_graph_full.dot",
     "manifest": r"H:\ACTOR_DEV_ENV\05_CRYPTO_MANIFESTS\ACTOR_MANIFEST_SIGNATURE.json",
     "checksums": r"H:\ACTOR_DEV_ENV\05_CRYPTO_MANIFESTS\CHECKSUMS_SHA256.txt",
     "pubkey": r"H:\ACTOR_DEV_ENV\05_CRYPTO_MANIFESTS\GPG_PUBLIC_KEY.asc",
+    "peace_norms": r"H:\ACTOR_DEV_ENV\PEACE_NORMS_2026.md",
 }
 
 # Scan F:\Мой диск for case files without moving/duplicating
@@ -28,7 +29,19 @@ case_files = {}
 if os.path.exists(F_DRIVE_ROOT):
     for root, dirs, files in os.walk(F_DRIVE_ROOT):
         for f in files:
-            if f.lower().endswith(('.pdf', '.docx', '.doc', '.txt')) and any(kw in f.lower() for kw in ['mach', 'reviz', 'demers', 'sesiz', 'galina', 'cerere', 'scrisoare', 'statut']):
+            if f.lower().endswith((".pdf", ".docx", ".doc", ".txt")) and any(
+                kw in f.lower()
+                for kw in [
+                    "mach",
+                    "reviz",
+                    "demers",
+                    "sesiz",
+                    "galina",
+                    "cerere",
+                    "scrisoare",
+                    "statut",
+                ]
+            ):
                 rel_name = os.path.relpath(os.path.join(root, f), F_DRIVE_ROOT)
                 case_files[rel_name] = os.path.join(root, f)
 
@@ -83,17 +96,24 @@ HTML_TEMPLATE = """
 </html>
 """
 
+
 def check_github_ssh():
     try:
-        res = subprocess.run(["ssh", "-T", "git@github.com"], capture_output=True, text=True, timeout=5)
+        res = subprocess.run(
+            ["ssh", "-T", "git@github.com"], capture_output=True, text=True, timeout=5
+        )
         return res.stdout.strip() or res.stderr.strip()
     except Exception as e:
         return f"SSH Error: {e}"
 
+
 @app.route("/")
 def index():
     ssh_out = check_github_ssh()
-    return render_template_string(HTML_TEMPLATE, artifacts=ARTIFACTS, case_files=case_files, ssh_status=ssh_out)
+    return render_template_string(
+        HTML_TEMPLATE, artifacts=ARTIFACTS, case_files=case_files, ssh_status=ssh_out
+    )
+
 
 @app.route("/artifact/<name>")
 def get_artifact(name):
@@ -101,17 +121,18 @@ def get_artifact(name):
         return send_file(ARTIFACTS[name])
     abort(404)
 
+
 @app.route("/fdrive")
 def get_fdrive():
     from flask import request
-    rel_path = request.args.get('path')
+
+    rel_path = request.args.get("path")
     if rel_path and rel_path in case_files:
         full_path = case_files[rel_path]
         if os.path.exists(full_path):
             return send_file(full_path)
     abort(404)
 
+
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5050, debug=False)
-"""
-filePath: H:\ACTOR_DEV_ENV\app_dashboard.py
