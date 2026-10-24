@@ -13,10 +13,12 @@
     "status": "VERIFIED & ANCHORED",
     "jurisdiction": "Jus Cogens & Erga Omnes",
     "Core_Artifacts": [
-        "PEACE_NORMS_2026.md"
+        "PEACE_NORMS_2026.md",
+        "ERGA_OMNES_AUDIT_REPORT_2026.txt",
+        "ipfs_decentralized_anchor.json"
     ],
     "Cryptography": {
-        "Verified_Nodes": 12
+        "Verified_Nodes": 14
     },
     "Signature": {
         "Timestamp": "2026-10-24T15:04:52Z"
