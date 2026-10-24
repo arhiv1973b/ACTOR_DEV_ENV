@@ -25,42 +25,52 @@ for fname in payloads:
         cid = "Qm" + digest[:42]
         cids[fname] = {"sha256": digest, "cid": cid}
 
-# Update manifests with commented metadata
+# Update manifests with structured commented metadata
 for mp in manifest_paths:
     if os.path.exists(mp):
         with open(mp, "r", encoding="utf-8") as f:
             lines = f.readlines()
 
-        new_lines = []
-        # Filter out old IPFS comments for these files
+        # Filter out existing IPFS comments and payload lines to rebuild cleanly
+        cleaned_lines = []
         i = 0
         while i < len(lines):
             line = lines[i]
-            if "# IPFS_CID:" in line or "# IPFS_Gateway:" in line:
+            if "# File:" in line or "# IPFS_CID:" in line or "# IPFS_Gateway:" in line:
                 i += 1
                 continue
-            new_lines.append(line)
-            i += 1
-
-        # Now insert comments before the file entries
-        final_lines = []
-        for line in new_lines:
-            matched_file = None
+            # Also skip payload lines if they are present so we can place them correctly
+            is_payload = False
             for fname in payloads:
                 if fname in line and not line.strip().startswith("#"):
-                    matched_file = fname
+                    is_payload = True
                     break
-            if matched_file:
-                cid = cids[matched_file]["cid"]
+            if is_payload:
+                i += 1
+                continue
+            cleaned_lines.append(line)
+            i += 1
+
+        # Append structured IPFS blocks at the end of the manifest (before or after standard entries)
+        final_lines = cleaned_lines.copy()
+        if not final_lines[-1].endswith("\n"):
+            final_lines[-1] += "\n"
+
+        final_lines.append("\n# --- Decentralized IPFS Anchors (Erga Omnes) ---\n")
+        for fname in payloads:
+            if fname in cids:
+                cid = cids[fname]["cid"]
+                sha = cids[fname]["sha256"]
+                final_lines.append(f"# File: {fname}\n")
                 final_lines.append(f"# IPFS_CID: ipfs://{cid}\n")
                 final_lines.append(
                     f"# IPFS_Gateway: https://gateway.pinata.cloud/ipfs/{cid}\n"
                 )
-            final_lines.append(line)
+                final_lines.append(f"{sha}  {fname}\n")
 
         with open(mp, "w", encoding="utf-8") as f:
             f.writelines(final_lines)
-        print(f"[+] Updated manifest comments: {mp}")
+        print(f"[+] Updated manifest comments with structured format: {mp}")
 
 # Update ACTOR_MANIFEST_SIGNATURE.json
 if os.path.exists(json_path):

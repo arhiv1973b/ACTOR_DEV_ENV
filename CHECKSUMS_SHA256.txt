@@ -12,9 +12,13 @@ ec6e34250b4de948ed1935d1698606ccb36de85abb7482f2f0a8ee8595575673  README_DEPOSIT
 228b60caab963566db8ef8a12979a360971d681e6fa2e978cc4ca2482288aa3c  05_CRYPTO_MANIFESTS/ACTOR_MANIFEST_SIGNATURE.json
 
 # ZENODO_DOI: https://doi.org/10.5281/zenodo.ErgaOmnes2026
+
+# --- Decentralized IPFS Anchors (Erga Omnes) ---
+# File: ERGA_OMNES_AUDIT_REPORT_2026.txt
 # IPFS_CID: ipfs://Qm194c5d2d0c8f8d06d0c682671157c139f624d09838
 # IPFS_Gateway: https://gateway.pinata.cloud/ipfs/Qm194c5d2d0c8f8d06d0c682671157c139f624d09838
 194c5d2d0c8f8d06d0c682671157c139f624d09838af29c096c669f39a07663a  ERGA_OMNES_AUDIT_REPORT_2026.txt
+# File: ipfs_decentralized_anchor.json
 # IPFS_CID: ipfs://Qmfa597c1141e125095c04f38363a6db5ff8dc7e808e
 # IPFS_Gateway: https://gateway.pinata.cloud/ipfs/Qmfa597c1141e125095c04f38363a6db5ff8dc7e808e
 fa597c1141e125095c04f38363a6db5ff8dc7e808e9c87d7212bea668eb04a9c  ipfs_decentralized_anchor.json
