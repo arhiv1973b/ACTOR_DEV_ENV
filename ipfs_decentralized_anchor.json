@@ -1,0 +1,15 @@
+{
+    "protocol": "IPFS/ErgaOmnes-ZeroCollision",
+    "subject": "Macheret",
+    "idnp": "2000001159655",
+    "artifacts": {
+        "ERGA_OMNES_AUDIT_REPORT_2026.txt": {
+            "sha256": "194c5d2d0c8f8d06d0c682671157c139f624d09838af29c096c669f39a07663a",
+            "simulated_cid": "Qm194c5d2d0c8f8d06d0c682671157c139f624d09838"
+        },
+        "ACTOR_MANIFEST_SIGNATURE.json": {
+            "sha256": "fa5d297b0aeda06bc73ccd42653ef3db55bd4c552903749c5daf789324c7920a",
+            "simulated_cid": "Qmfa5d297b0aeda06bc73ccd42653ef3db55bd4c5529"
+        }
+    }
+}

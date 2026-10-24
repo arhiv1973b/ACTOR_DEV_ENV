@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+"""
+generate_cytoscape_web.py
+Generates an interactive Cytoscape.js HTML visualization for GitHub Pages (docs/index.html).
+"""
+
+import os
+
+BASE_DIR = r"H:\ACTOR_DEV_ENV"
+DOCS_DIR = os.path.join(BASE_DIR, "docs")
+INDEX_HTML = os.path.join(DOCS_DIR, "index.html")
+
+HTML_CONTENT = """<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CASE-MACHERET | Erga Omnes Interactive Topology Viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
+    <style>
+        body { font-family: monospace; background: #0d1117; color: #c9d1d9; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; }
+        header { background: #161b22; border-bottom: 1px solid #30363d; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        h1 { color: #58a6ff; font-size: 1.4em; margin: 0; }
+        .badge { background: #238636; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.8em; }
+        #cy { flex: 1; width: 100%; background: #0d1117; }
+        footer { background: #161b22; border-top: 1px solid #30363d; padding: 10px 20px; font-size: 0.85em; color: #8b949e; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CASE-MACHERET | Erga Omnes Topology Viewer</h1>
+        <div>IDNP: <strong>2000001159655</strong> | Status: <span class="badge">ZERO-COLLISION</span></div>
+    </header>
+    <div id="cy"></div>
+    <footer>
+        Cryptographically anchored via SHA-256 ledger and Jus Cogens standards. Powered by Cytoscape.js &amp; GitHub Pages.
+    </footer>
+    <script>
+        var cy = cytoscape({
+            container: document.getElementById('cy'),
+            elements: [
+                { data: { id: 'MACHERET', label: 'Macheret\\n(IDNP: 2000001159655)' }, classes: 'subject' },
+                { data: { id: 'PEACE_NORMS', label: 'PEACE_NORMS_2026.md\\nJus Cogens Anchor' }, classes: 'norm' },
+                { data: { id: 'CHECKSUMS', label: 'CHECKSUMS_SHA256.txt\\n(12 Verified Nodes)' }, classes: 'ledger' },
+                { data: { id: 'MANIFEST', label: 'ACTOR_MANIFEST_SIGNATURE.json' }, classes: 'ledger' },
+                { data: { id: 'REPORT', label: 'ERGA_OMNES_AUDIT_REPORT_2026.txt' }, classes: 'report' },
+                { data: { source: 'MACHERET', target: 'PEACE_NORMS', label: 'Absolute Binding' } },
+                { data: { source: 'PEACE_NORMS', target: 'CHECKSUMS', label: 'SHA-256 Verified' } },
+                { data: { source: 'MANIFEST', target: 'CHECKSUMS', label: 'Registry Link' } },
+                { data: { source: 'REPORT', target: 'CHECKSUMS', label: 'Audit Proof' } }
+            ],
+            style: [
+                {
+                    selector: 'node',
+                    style: {
+                        'background-color': '#1f6feb',
+                        'label': 'data(label)',
+                        'color': '#ffffff',
+                        'text-valign': 'center',
+                        'text-halign': 'center',
+                        'font-family': 'monospace',
+                        'font-size': '12px',
+                        'shape': 'round-rectangle',
+                        'padding': '15px',
+                        'text-wrap': 'wrap'
+                    }
+                },
+                {
+                    selector: '.subject',
+                    style: { 'background-color': '#8957e5' }
+                },
+                {
+                    selector: '.norm',
+                    style: { 'background-color': '#238636' }
+                },
+                {
+                    selector: '.ledger',
+                    style: { 'background-color': '#da3633' }
+                },
+                {
+                    selector: '.report',
+                    style: { 'background-color': '#d29922', 'color': '#000' }
+                },
+                {
+                    selector: 'edge',
+                    style: {
+                        'width': 2,
+                        'line-color': '#30363d',
+                        'target-arrow-color': '#30363d',
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier',
+                        'label': 'data(label)',
+                        'font-size': '10px',
+                        'color': '#8b949e',
+                        'text-background-color': '#0d1117',
+                        'text-background-opacity': 0.8
+                    }
+                }
+            ],
+            layout: {
+                name: 'cose',
+                padding: 50
+            }
+        });
+    </script>
+</body>
+</html>
+"""
+
+
+def main():
+    os.makedirs(DOCS_DIR, exist_ok=True)
+    with open(INDEX_HTML, "w", encoding="utf-8") as f:
+        f.write(HTML_CONTENT)
+    print(f"[+] GitHub Pages Cytoscape web viewer generated at: {INDEX_HTML}")
+
+
+if __name__ == "__main__":
+    main()

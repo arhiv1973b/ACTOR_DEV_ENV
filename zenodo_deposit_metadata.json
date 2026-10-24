@@ -1,0 +1,24 @@
+{
+    "metadata": {
+        "title": "Global Cryptographic Audit Report & Erga Omnes Anchor (Case Macheret)",
+        "upload_type": "publication",
+        "publication_type": "report",
+        "description": "Mathematical Zero-Collision audit report and Jus Cogens compliance proof for Subject Macheret (IDNP: 2000001159655). Anchored via SHA-256 ledger and Erga Omnes standards.",
+        "creators": [
+            {
+                "name": "Macheret, Alexei",
+                "affiliation": "Independent Human Rights Claimant"
+            }
+        ],
+        "access_right": "open",
+        "license": "cc-by-4.0",
+        "keywords": [
+            "Jus Cogens",
+            "Erga Omnes",
+            "Human Rights",
+            "Cryptographic Ledger",
+            "SHA-256",
+            "UDHR 1948"
+        ]
+    }
+}
