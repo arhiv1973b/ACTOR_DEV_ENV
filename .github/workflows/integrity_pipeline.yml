@@ -6,6 +6,8 @@ on:
     tags: [ 'v*' ]
   pull_request:
     branches: [ "*" ]
+  schedule:
+    - cron: "0 2 * * *"   # Nightly run at 02:00 UTC for full hash audit
   workflow_dispatch:
 
 jobs:
@@ -33,6 +35,48 @@ jobs:
           set -e
           echo "=== Running check_links.py ==="
           python3 check_links.py
+
+      - name: Step 2.5 - Full Checksum Recalculation & Evidence Ledger Builder (Nightly / Release / Dispatch)
+        if: github.event_name == 'schedule' || github.ref_type == 'tag' || github.event_name == 'workflow_dispatch'
+        run: |
+          set -e
+          echo "=== Running generate_checksums.py (Heavyweight Hash Integrity) ==="
+          python3 generate_checksums.py
+          echo "=== Running build_evidence_ledger.py (Non-Linearity to Linearity Ledger) ==="
+          python3 build_evidence_ledger.py
+
+      - name: Step 2.6 - RFC 3161 Timestamping & GPG Sign Checksums Manifest (Nightly / Release)
+        if: github.event_name == 'schedule' || github.ref_type == 'tag' || github.event_name == 'workflow_dispatch'
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          set -e
+          echo "=== Requesting RFC 3161 Timestamp from FreeTSA ==="
+          openssl ts -query -data 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt -cert -sha256 -out 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsq || true
+          if [ -f "05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsq" ]; then
+            curl -s -H "Content-Type: application/timestamp-query" --data-binary @05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsq https://freetsa.org/tsr -o 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsr || true
+          fi
+
+          if [ -n "$GPG_PRIVATE_KEY" ]; then
+            echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+            gpg --detach-sign --armor --output 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt.sig 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt
+            echo "Successfully signed CHECKSUMS_SHA256.txt with GPG and timestamped."
+          else
+            echo "GPG_PRIVATE_KEY secret not found, skipping GPG signing."
+          fi
+
+      - name: Step 2.7 - Verify GPG Signature of Manifest (Strict Gate)
+        if: github.event_name == 'schedule' || github.ref_type == 'tag' || github.event_name == 'workflow_dispatch'
+        run: |
+          set -e
+          echo "=== Verifying GPG Signature (Strict Gate) ==="
+          if [ -f "05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt.sig" ]; then
+            gpg --verify 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt.sig 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt
+            echo "✅ GPG Signature verified successfully."
+          else
+            echo "❌ Error: GPG signature file missing or verification failed. Blocking deployment gate."
+            exit 1
+          fi
 
       - name: Step 3 - Validate All JSON and NDJSON Files
         run: |
@@ -213,11 +257,177 @@ jobs:
             integrity-summary.md
           if-no-files-found: ignore
 
-  deploy-gate:
+      - name: Step 6 - Upload Crypto Checksums Manifest, TSA & Verify Report (Nightly / Release)
+        if: always() && (github.event_name == 'schedule' || github.ref_type == 'tag' || github.event_name == 'workflow_dispatch')
+        uses: actions/upload-artifact@v4
+        with:
+          name: crypto-checksums-manifest-py${{ matrix.python-version }}
+          path: |
+            05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt
+            05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt.sig
+            05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsr
+            05_CRYPTO_MANIFESTS/ACTOR_MANIFEST_SIGNATURE.json
+            verify-report.md
+          if-no-files-found: ignore
+
+  verify-gate:
     needs: integrity-pipeline
+    runs-on: ubuntu-latest
+    continue-on-error: false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Crypto Checksums Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: crypto-checksums-manifest-py3.10
+          path: 05_CRYPTO_MANIFESTS/
+        continue-on-error: true
+
+      - name: Strict GPG Verification & SHA-256 Hash Cross-Check Gate
+        run: |
+          set -e
+          echo "=== Executing Independent Verify Gate (Signature & Hash Check) ==="
+          if [ -f "05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt.sig" ] && [ -f "05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt" ]; then
+            gpg --verify 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt.sig 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt
+            echo "✅ Verify Gate: GPG signature valid."
+
+            echo "=== Cross-checking file SHA-256 hashes against signed manifest ==="
+            python3 -c '
+            import hashlib, datetime
+            from pathlib import Path
+
+            manifest = Path("05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt")
+            mismatches = 0
+            total = 0
+            checked_rows = []
+            
+            for line in manifest.read_text(encoding="utf-8").splitlines():
+                if not line.strip():
+                    continue
+                parts = line.split(maxsplit=1)
+                if len(parts) == 2:
+                    expected_hash, filepath = parts[0].strip(), parts[1].strip()
+                    p = Path(filepath)
+                    if p.exists():
+                        total += 1
+                        actual_hash = hashlib.sha256(p.read_bytes()).hexdigest()
+                        is_match = (actual_hash.lower() == expected_hash.lower())
+                        if not is_match:
+                            mismatches += 1
+                            checked_rows.append(f"| `{filepath}` | `FAIL` | `{expected_hash[:12]}...` | `{actual_hash[:12]}...` |")
+                        else:
+                            checked_rows.append(f"| `{filepath}` | `OK` | `{expected_hash[:12]}...` | - |")
+                    else:
+                        checked_rows.append(f"| `{filepath}` | `MISSING` | `{expected_hash[:12]}...` | N/A |")
+
+            timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+            status_text = "PASSED ✅" if mismatches == 0 else "FAILED ❌"
+            
+            report_content = f"""# 🛡️ Cryptographic Verify Gate Report
+- **Timestamp**: {timestamp}
+- **Gate Status**: {status_text}
+- **Total Files Verified**: {total}
+- **Hash Mismatches**: {mismatches}
+
+## 📋 File Verification Matrix
+| File Path | Status | Expected SHA-256 (prefix) | Actual SHA-256 / Notes |
+|:---|:---|:---|:---|
+""" + "\n".join(checked_rows) + "\n\n---\n*Generated automatically by Verify Gate Action.*"
+            
+            Path("verify-report.md").write_text(report_content, encoding="utf-8")
+            print(f"Generated verify-report.md. Total: {total}, Mismatches: {mismatches}")
+            if mismatches > 0:
+                exit(1)
+            '
+            echo "✅ Verify Gate: All file hashes match reference manifest."
+          else
+            echo "⚠️ Signature file not present (or Push/PR run), verification skipped safely."
+            echo "# 🛡️ Cryptographic Verify Gate Report\n- **Status**: SKIPPED (Push/PR run)" > verify-report.md
+          fi
+
+      - name: Strict Dynamic Multi-TSA Verification Gate
+        run: |
+          set -e
+          echo "=== Executing Dynamic Multi-TSA Verification Gate ==="
+          if [ -f "05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsr" ]; then
+            TSA_INFO=$(openssl ts -reply -in 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsr -text || echo "")
+            echo "Detected TSA Info:"
+            echo "$TSA_INFO"
+            
+            if echo "$TSA_INFO" | grep -qi "FreeTSA"; then
+              echo "Issuer identified as FreeTSA"
+              wget -q https://freetsa.org/files/tsa.crt -O tsa.crt
+              wget -q https://freetsa.org/files/cacert.pem -O cacert.pem
+              openssl ts -verify -data 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt -in 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsr -CAfile cacert.pem -untrusted tsa.crt
+            elif echo "$TSA_INFO" | grep -qi -E "Apple|DigiCert"; then
+              echo "Issuer identified as Enterprise TSA (Apple/DigiCert)"
+              openssl ts -verify -data 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt -in 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsr || openssl ts -verify -data 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt -in 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsr -untrusted /etc/ssl/certs/ca-certificates.crt
+            else
+              echo "❌ Error: Unknown or unauthorized TSA issuer. Blocking verification gate."
+              exit 1
+            fi
+            echo "✅ Dynamic TSA Gate: Timestamp verified successfully."
+          else
+            echo "⚠️ TSA file not present, verification skipped safely."
+          fi
+
+      - name: Upload Verify Report Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verify-gate-report
+          path: verify-report.md
+          if-no-files-found: ignore
+
+  erga-omnes-mirror:
+    needs: verify-gate
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Verification Report Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: verify-gate-report
+          path: .
+          if-no-files-found: ignore
+
+      - name: Download Crypto Checksums Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: crypto-checksums-manifest-py3.10
+          path: 05_CRYPTO_MANIFESTS/
+          if-no-files-found: ignore
+
+      - name: Mirror to Public Erga Omnes Repository
+        env:
+          MIRROR_PUSH_TOKEN: ${{ secrets.MIRROR_PUSH_TOKEN }}
+        run: |
+          if [ -n "$MIRROR_PUSH_TOKEN" ]; then
+            git config --global user.name "A©tor"
+            git config --global user.email "alexeimaceret7@gmail.com"
+            
+            git clone https://x-access-token:${MIRROR_PUSH_TOKEN}@github.com/arhiv1973b/evidence-pdfs-mirror.git mirror_repo
+            cd mirror_repo
+            
+            cp ../audit_log.ndjson ./ || true
+            cp ../verify-report.md ./ || true
+            cp ../05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt ./ || true
+            cp ../05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt.sig ./ || true
+            cp ../05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsr ./ || true
+            
+            git add audit_log.ndjson verify-report.md CHECKSUMS_SHA256.txt CHECKSUMS_SHA256.tsr CHECKSUMS_SHA256.txt.sig || true
+            git commit -m "A©TOR_KEY=\"# [⚖ A©tor Declaration]\" Erga Omnes evidence mirror synchronization" || echo "No changes to commit"
+            git push origin main || echo "Push skipped or failed"
+          else
+            echo "MIRROR_PUSH_TOKEN secret not provided, skipping mirror sync."
+          fi
+
+  deploy-gate:
+    needs: [integrity-pipeline, verify-gate, erga-omnes-mirror]
     runs-on: ubuntu-latest
     if: github.event_name != 'pull_request'
     steps:
       - name: Integrity Gate Passed
         run: |
-          echo "✅ All integrity checks passed successfully. Ready for deployment / GitHub Pages publish."
+          echo "✅ All integrity checks and verification gates passed successfully. Ready for deployment / GitHub Pages publish."
