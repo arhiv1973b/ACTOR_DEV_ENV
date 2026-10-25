@@ -1,0 +1,30 @@
+{
+  "header": {
+    "case_id": "CASE-MACHERET-1997-2026",
+    "protocol": "TI-ULA"
+  },
+  "subject": {
+    "identity_marker_machine": "A©t0r",
+    "declaration_key": "A©TOR_KEY=\"# [⚖ A©tor Declaration]\""
+  },
+  "payload": {
+    "entity_graph": {
+      "nodes": [
+        { "id": "N-ACTOR", "type": "Subject", "label": "A©t0r (Macheret Alexei)", "properties": {"status": "Rights Holder"} },
+        { "id": "N-FACT-1", "type": "Event", "label": "Detention (1997)", "properties": {"nature": "Primary Violation"} },
+        { "id": "N-DOC-2026", "type": "Evidence", "label": "Institutional Denial (2026)", "properties": {"hash": "a4d3b161c5..."} },
+        { "id": "N-CONSEQ", "type": "Legal_State", "label": "Continuing Consequences", "properties": {"status": "Active"} },
+        { "id": "N-UDHR-6", "type": "Norm", "label": "UDHR Art. 6 (Правосубъектность)", "properties": {"level": "Jus Cogens"} },
+        { "id": "N-UDHR-8", "type": "Norm", "label": "UDHR Art. 8 (Реабилитация)", "properties": {"level": "Jus Cogens"} }
+      ],
+      "edges": [
+        { "source": "N-ACTOR", "target": "N-FACT-1", "relation": "SUBJECT_OF", "description": "Пострадавший от изначального произвола" },
+        { "source": "N-DOC-2026", "target": "N-FACT-1", "relation": "DENIES_REHABILITATION_FOR", "description": "Отказ в признании факта" },
+        { "source": "N-DOC-2026", "target": "N-CONSEQ", "relation": "GENERATES", "description": "Бездействие создает длящиеся последствия" },
+        { "source": "N-CONSEQ", "target": "N-UDHR-6", "relation": "VIOLATES_CONTINUOUSLY", "description": "Непрерывное лишение правосубъектности" },
+        { "source": "N-DOC-2026", "target": "N-UDHR-8", "relation": "PARALYZES", "description": "Блокировка механизма защиты" },
+        { "source": "N-CONSEQ", "target": "N-ACTOR", "relation": "IMPACTS", "description": "Поражение в правах в реальном времени" }
+      ]
+    }
+  }
+}
