@@ -4,6 +4,7 @@ from pathlib import Path
 files = [
     ".github/workflows/integrity_pipeline.yml",
     ".github/workflows/tsa_watcher.yml",
+    ".github/workflows/docker-deploy.yml",
     "05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt",
     "audit_log.ndjson",
     "build_evidence_ledger.py",
@@ -31,4 +32,4 @@ for f in files:
 Path("session_manifest.json").write_text(
     json.dumps(manifest, indent=2, sort_keys=True), encoding="utf-8"
 )
-print("✅ session_manifest.json successfully updated with new modules.")
+print("✅ session_manifest.json synchronized.")
