@@ -45,17 +45,44 @@ jobs:
           echo "=== Running build_evidence_ledger.py (Non-Linearity to Linearity Ledger) ==="
           python3 build_evidence_ledger.py
 
-      - name: Step 2.6 - RFC 3161 Timestamping & GPG Sign Checksums Manifest (Nightly / Release)
+      - name: Step 2.6 - RFC 3161 Timestamp & GPG Sign (Nightly / Release)
         if: github.event_name == 'schedule' || github.ref_type == 'tag' || github.event_name == 'workflow_dispatch'
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          TSA_POOL_VAR: ${{ vars.TSA_POOL }}
         run: |
           set -e
-          echo "=== Requesting RFC 3161 Timestamp from FreeTSA ==="
-          openssl ts -query -data 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt -cert -sha256 -out 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsq || true
-          if [ -f "05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsq" ]; then
-            curl -s -H "Content-Type: application/timestamp-query" --data-binary @05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsq https://freetsa.org/tsr -o 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsr || true
+          echo "=== Acquiring TSA Timestamp (Redundant Pool) ==="
+          openssl ts -query -data 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt -cert -sha256 -out request.tsq
+          
+          if [ -n "$TSA_POOL_VAR" ]; then
+            read -r -a TSA_SERVERS <<< "$TSA_POOL_VAR"
+          else
+            TSA_SERVERS=(
+              "https://freetsa.org/tsr"
+              "http://timestamp.apple.com/ts01"
+              "http://timestamp.digicert.com"
+            )
           fi
+          
+          TSA_SUCCESS=0
+          for TSA in "${TSA_SERVERS[@]}"; do
+            echo "📡 Requesting timestamp from: $TSA"
+            if curl -s -S -f -H "Content-Type: application/timestamp-query" --data-binary @request.tsq "$TSA" -o 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsr; then
+              if openssl ts -reply -in 05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.tsr -text > /dev/null 2>&1; then
+                echo "✅ Valid TSA Timestamp acquired from $TSA"
+                TSA_SUCCESS=1
+                break
+              fi
+            fi
+            echo "⚠️ $TSA unreachable or invalid response. Switching to fallback..."
+          done
+          
+          if [ $TSA_SUCCESS -eq 0 ]; then
+            echo "❌ Error: All TSA pool servers failed. Jus Cogens linearity compromised. Blocking execution."
+            exit 1
+          fi
+          rm -f request.tsq
 
           if [ -n "$GPG_PRIVATE_KEY" ]; then
             echo "$GPG_PRIVATE_KEY" | gpg --batch --import

@@ -1,0 +1,31 @@
+name: A©t0r TSA Health Check
+on:
+  schedule:
+    - cron: "0 1 * * *"   # Запуск за час до основного integrity_pipeline
+  workflow_dispatch:
+
+jobs:
+  audit-tsa-nodes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Health Check & Prioritization
+        run: |
+          set -e
+          python3 utils/tsa_health_check.py
+      - name: Update Repository Variable (TSA_POOL)
+        env:
+          GH_TOKEN: ${{ secrets.ACTOR_PAT }}
+        run: |
+          set -e
+          gh api \
+            --method PATCH \
+            -H "Accept: application/vnd.github+json" \
+            /repos/${{ github.repository }}/actions/variables/TSA_POOL \
+            -f name='TSA_POOL' -f value="$TSA_POOL" || \
+          gh api \
+            --method POST \
+            -H "Accept: application/vnd.github+json" \
+            /repos/${{ github.repository }}/actions/variables \
+            -f name='TSA_POOL' -f value="$TSA_POOL"
+          echo "✅ Repository Variable TSA_POOL successfully updated."

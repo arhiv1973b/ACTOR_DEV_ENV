@@ -2,14 +2,18 @@
   "author": "Macheret Alexei (A\u00a9tor)",
   "context": "CASE-MACHERET-1997-2026",
   "files": {
-    ".github/workflows/integrity_pipeline.yml": "096901d617417f83ff5fef9d2fd24d49a1f71fe86817c4b080170ac62b175f89",
+    ".github/workflows/integrity_pipeline.yml": "c6e1174a83d7dcefb3d6e14e7313983f2f20e0c9360bd9008e64b78f9fc0adff",
+    ".github/workflows/tsa_watcher.yml": "8f2434f3f7a032f5d2954a96d173f35e801b02f0b8e5d8813e6e048fe3808b5e",
     "05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt": "cca03f61fc951f2da313715ce9e6569b6e6b75020615a26b0d9a293903bee745",
-    "audit_log.json": "620688051084a77ea15f929bcad2d6c6f9330715e944c6b04cd0aed5ea79acbf",
-    "audit_log.ndjson": "0162b7e00958a756ae9c2d86e2dd4a35b5baf2552c14c66aad67be231f52f586",
+    "append_error.py": "aa1888a3976d8d6e077e49f2f9306ab25981771efb55ee50df892a8c4bf39a84",
+    "append_evidence.py": "ea520638515345a5d0032aaff1da6e3852ce28c72c43ad06b8da8d8ac417f4b5",
+    "audit_log.ndjson": "67a253ea30cc3b948f720d4469efd20c4eab6dd3668b96ea62a709594cc7a9b0",
     "build_evidence_ledger.py": "caaf6fc21b00d6035f60c83eb4fd0fffe651e2c410d50eb3c9d4a66c474f9091",
-    "verify-report.md": "14221ee16ac8bd4af55521634f3c83a307749d35584f2b77db5e4c350aa0d366"
+    "utils/tsa_health_check.py": "d78479f6ff9a22414515a6cea53814628c710e927f7da0ab3a10efd114d0d7af",
+    "verify-report.md": "14221ee16ac8bd4af55521634f3c83a307749d35584f2b77db5e4c350aa0d366",
+    "verify_ledger.py": "660360d852097b63433ed43f8ff41e0dc746bd9e1a38b6e387114f7e939d9434"
   },
   "protocol": "A\u00a9tor Jus Cogens Ledger",
   "signature_key": "A\u00a9TOR_KEY=\"# [\u2696 A\u00a9tor Declaration]\"",
-  "timestamp": "2026-10-25T11:02:17.976501+00:00"
+  "timestamp": "2026-10-25T15:47:08.325796+00:00"
 }

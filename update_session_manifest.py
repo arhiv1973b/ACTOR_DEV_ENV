@@ -3,10 +3,14 @@ from pathlib import Path
 
 files = [
     ".github/workflows/integrity_pipeline.yml",
+    ".github/workflows/tsa_watcher.yml",
     "05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt",
-    "audit_log.json",
     "audit_log.ndjson",
     "build_evidence_ledger.py",
+    "append_evidence.py",
+    "append_error.py",
+    "verify_ledger.py",
+    "utils/tsa_health_check.py",
     "verify-report.md",
 ]
 
@@ -27,4 +31,4 @@ for f in files:
 Path("session_manifest.json").write_text(
     json.dumps(manifest, indent=2, sort_keys=True), encoding="utf-8"
 )
-print("✅ session_manifest.json successfully generated.")
+print("✅ session_manifest.json successfully updated with new modules.")
