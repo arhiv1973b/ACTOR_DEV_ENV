@@ -1,8 +1,15 @@
 {
-  "protocol": "A©tor Jus Cogens Ledger",
+  "author": "Macheret Alexei (A\u00a9tor)",
   "context": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-10-25T00:00:00Z",
-  "author": "Macheret Alexei (A©tor)",
-  "signature_key": "A©TOR_KEY=\"# [⚖ A©tor Declaration]\"",
-  "files": {}
+  "files": {
+    ".github/workflows/integrity_pipeline.yml": "096901d617417f83ff5fef9d2fd24d49a1f71fe86817c4b080170ac62b175f89",
+    "05_CRYPTO_MANIFESTS/CHECKSUMS_SHA256.txt": "cca03f61fc951f2da313715ce9e6569b6e6b75020615a26b0d9a293903bee745",
+    "audit_log.json": "620688051084a77ea15f929bcad2d6c6f9330715e944c6b04cd0aed5ea79acbf",
+    "audit_log.ndjson": "0162b7e00958a756ae9c2d86e2dd4a35b5baf2552c14c66aad67be231f52f586",
+    "build_evidence_ledger.py": "caaf6fc21b00d6035f60c83eb4fd0fffe651e2c410d50eb3c9d4a66c474f9091",
+    "verify-report.md": "14221ee16ac8bd4af55521634f3c83a307749d35584f2b77db5e4c350aa0d366"
+  },
+  "protocol": "A\u00a9tor Jus Cogens Ledger",
+  "signature_key": "A\u00a9TOR_KEY=\"# [\u2696 A\u00a9tor Declaration]\"",
+  "timestamp": "2026-10-25T11:02:17.976501+00:00"
 }
