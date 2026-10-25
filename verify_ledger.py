@@ -1,5 +1,6 @@
 import json
 import hashlib
+import datetime
 from pathlib import Path
 
 LEDGER_NDJSON = "audit_log.ndjson"
@@ -22,7 +23,15 @@ def verify_ledger():
 
     expected_prev_hash = "GENESIS_BLOCK_CASE_MACHERET_1997_2026"
     errors_count = 0
-    defects_count = 0
+
+    stats = {
+        "evidence_blocks": 0,
+        "error_defect_blocks": 0,
+        "tsa_audit_blocks": 0,
+        "git_commit_blocks": 0,
+        "other_blocks": 0,
+    }
+
     checkpoints = {}
 
     for idx, line in enumerate(lines, start=1):
@@ -39,7 +48,15 @@ def verify_ledger():
         subject = record.get("subject", "")
 
         if "System Error Defect Ingestion" in subject or "error_code" in record:
-            defects_count += 1
+            stats["error_defect_blocks"] += 1
+        elif "Evidence Ingestion" in subject or "evidence_file" in record:
+            stats["evidence_blocks"] += 1
+        elif "TSA Health Audit" in subject or "metrics" in record:
+            stats["tsa_audit_blocks"] += 1
+        elif "commit" in record or "subject" in record:
+            stats["git_commit_blocks"] += 1
+        else:
+            stats["other_blocks"] += 1
 
         if prev_hash != expected_prev_hash:
             print(
@@ -47,7 +64,6 @@ def verify_ledger():
             )
             errors_count += 1
 
-        # Re-compute block hash without block_hash field
         rec_copy = dict(record)
         rec_copy.pop("block_hash", None)
         computed_hash = hashlib.sha256(
@@ -60,15 +76,54 @@ def verify_ledger():
             )
             errors_count += 1
 
-        # Checkpoints recording
         if block_index and block_index % CHECKPOINT_INTERVAL == 0:
             checkpoints[block_index] = stored_block_hash
 
         expected_prev_hash = stored_block_hash
 
+    timestamp = datetime.datetime.now(datetime.timezone.utc).strftime(
+        "%Y-%m-%d %H:%M:%S UTC"
+    )
+    status_badge = "PASSED ✅" if errors_count == 0 else "COMPROMISED ❌"
+
+    total_lines = len(lines) if len(lines) > 0 else 1
+
+    dashboard_content = f"""# 🛡️ A©tor Integrity Dashboard & Ledger Audit Report
+
+- **Timestamp (UTC)**: {timestamp}
+- **Ledger Status**: {status_badge}
+- **Total Blocks Verified**: {len(lines)}
+- **Validation Errors**: {errors_count}
+
+## 📊 Block Type Statistics
+| Block Category | Count | Percentage |
+|:---|:---|:---|
+| 📂 Evidence Ingestion Blocks | {stats["evidence_blocks"]} | {stats["evidence_blocks"] / total_lines * 100:.2f}% |
+| ❌ System Error / Defect Blocks | {stats["error_defect_blocks"]} | {stats["error_defect_blocks"] / total_lines * 100:.2f}% |
+| 📡 TSA Health Audit Blocks | {stats["tsa_audit_blocks"]} | {stats["tsa_audit_blocks"] / total_lines * 100:.2f}% |
+| 📜 Git Commit & Standard Blocks | {stats["git_commit_blocks"]} | {stats["git_commit_blocks"] / total_lines * 100:.2f}% |
+| 📦 Other / Unclassified | {stats["other_blocks"]} | {stats["other_blocks"] / total_lines * 100:.2f}% |
+
+## 🔐 Cryptographic Checkpoints (Every {CHECKPOINT_INTERVAL} Blocks)
+| Block Index | Checkpoint Block Hash (SHA-256) |
+|:---|:---|
+"""
+    for cp_idx, cp_hash in sorted(checkpoints.items()):
+        dashboard_content += f"| #{cp_idx} | `{cp_hash}` |\n"
+
+    dashboard_content += f"""
+---
+*Generated automatically by A©tor Integrity Verification Agent under Jus Cogens & Erga Omnes protocols.*
+"""
+
+    Path("integrity_dashboard.md").write_text(dashboard_content, encoding="utf-8")
+    print("✅ integrity_dashboard.md successfully generated.")
+
     print(f"\n--- Ledger Verification Summary ---")
     print(f"Total Verified Blocks: {len(lines)}")
-    print(f"Defect / Error Blocks: {defects_count}")
+    print(f"Evidence Blocks: {stats['evidence_blocks']}")
+    print(f"Error / Defect Blocks: {stats['error_defect_blocks']}")
+    print(f"TSA Audit Blocks: {stats['tsa_audit_blocks']}")
     print(f"Checkpoints Established: {len(checkpoints)}")
     print(f"Validation Errors: {errors_count}")
 
