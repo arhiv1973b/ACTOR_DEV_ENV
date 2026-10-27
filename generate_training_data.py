@@ -23,7 +23,7 @@ training_data = [
         "messages": [
             {"role": "system", "content": "Ты автономный локальный агент. Вызывай функции в формате JSON."},
             {"role": "user", "content": "Сформируй манифест для нового узла"},
-            {"role": "assistant", "content": "", "tool_calls": [{"function": {"name": "create_manifest", "arguments": {"node_id": "Aйtor_01", "status": "verified"}}}]}
+            {"role": "assistant", "content": "", "tool_calls": [{"function": {"name": "create_manifest", "arguments": {"node_id": "A©tor_01", "status": "verified"}}}]}
         ]
     }
 ]

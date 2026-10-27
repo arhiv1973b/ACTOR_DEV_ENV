@@ -14,16 +14,6 @@ services:
       MCP_LOG_LEVEL: debug
     restart: unless-stopped
 
-  gemini-cli-docker:
-    build:
-      context: .
-      dockerfile: Dockerfile.gemini
-    container_name: gemini-cli
-    environment:
-      - GEMINI_API_KEY=${GEMINI_API_KEY}
-    stdin_open: true
-    tty: true
-
   gemini-dockerfile-bridge:
     build:
       context: .
@@ -34,7 +24,7 @@ services:
       - OLLAMA_HOST=http://host.docker.internal:11434
     ports:
       - "8001:8001"
-    command: ["python", "-c", "import time; print('Gemini Dockerfile Bridge ready.'); while True: time.sleep(3600)"]
+    command: ["python", "-c", "import time; print('Gemini Dockerfile Bridge ready.'); time.sleep(86400)"]
     stdin_open: true
     tty: true
     restart: unless-stopped

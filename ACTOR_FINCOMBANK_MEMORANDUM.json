@@ -1,0 +1,40 @@
+{
+  "package_id": "ACTOR_FINCOMBANK_MEMORANDUM",
+  "protocol": "TI-ULA",
+  "version": "2026.10.26",
+  "timestamp_utc": "2026-10-26T19:41:00Z",
+  "headers": {
+    "X-Actor-IDNP": "2000001159655",
+    "X-Protocol-TI-ULA": "STRICT",
+    "X-Prejudicial-Inheritance": "ACTOR_TRANSIT_PAYLOAD"
+  },
+  "actor_identity": {
+    "display": "A©t0r",
+    "idnp": "2000001159655",
+    "case_id": "CASE-MACHERET-1997-2026",
+    "declaration": "ACTOR_KEY=\"# [⚖ Actor Declaration]\""
+  },
+  "integrity": {
+    "Memorandum_FinComBank_Actor_2026-10-26.pdf": "206f13fdd72977f23ca3720b39044cacd0f3c0804f82246db32b0e3ef1fce387",
+    "parent_ACTOR_TRANSIT_PAYLOAD_JSON": "e4797a2d3996557e24e72fbbebe3364771641beb88a4cec7714ff9871cce3183",
+    "parent_ACTOR_TRANSIT_PAYLOAD_ZIP": "7b21c1ff14248da0bb018c03b60d600366a293a572916a520e120a8870bfa937",
+    "status": "ZERO_TRUST_LOCKED"
+  },
+  "memorandum": {
+    "subject": "Notice on cessation of continuing consequences of torture",
+    "target_iban": "MD55FT225920600348117498",
+    "restitution_amount_mdl": "25210256",
+    "legal_basis": "Jus Cogens, UDHR 1948, Art. 4 Constitution of RM",
+    "context": "Case 1-568/98 (13.10.1998) - 21 years concealed, procedural reopening 10.02.2021"
+  },
+  "routing_targets": [
+    "BC FinComBank S.A.",
+    "Banca Națională a Moldovei (BNM)",
+    "UN Special Procedures (Arbitrary Detention, Torture)"
+  ],
+  "signature_block": {
+    "key": "ACTOR_KEY=\"# [⚖ Actor Declaration]\"",
+    "status": "INITIATED_AND_LOCKED",
+    "session_anchor": "TI-ULA-2026-10-26-FIN"
+  }
+}

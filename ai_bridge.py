@@ -15,30 +15,39 @@ from enum import Enum
 
 API_KEY = os.environ.get("SECRET_VAR")
 
+
 class AIProvider(Enum):
     """Available AI providers."""
+
     GEMINI = "gemini"
     OLLAMA = "ollama"
     LM_STUDIO = "lm_studio"
 
+
 class CrossPlatformAIBridge:
     """Routes AI requests across Windows, WSL, local, and cloud."""
-    
+
     def __init__(self):
         self.api_key = os.environ.get("GEMINI_API_KEY", API_KEY)
         self.ollama_host = os.environ.get("OLLAMA_HOST", "http://127.0.0.1:11434")
+        if self.ollama_host and not self.ollama_host.startswith(
+            ("http://", "https://", "s3://")
+        ):
+            self.ollama_host = "http://" + self.ollama_host
         self.lm_studio_host = os.environ.get("LM_STUDIO_HOST", "http://127.0.0.1:1234")
+        if self.lm_studio_host and not self.lm_studio_host.startswith(
+            ("http://", "https://", "s3://")
+        ):
+            self.lm_studio_host = "http://" + self.lm_studio_host
         self.timeout = 30
 
     async def query_gemini(self, prompt: str, model: str = "gemini-3.5-flash") -> str:
         """Query Google Gemini API (cloud)."""
         try:
             from google import genai
+
             client = genai.Client(api_key=self.api_key)
-            response = client.models.generate_content(
-                model=model,
-                contents=prompt
-            )
+            response = client.models.generate_content(model=model, contents=prompt)
             return response.text
         except Exception as e:
             return f"Gemini error: {e}"
@@ -49,7 +58,7 @@ class CrossPlatformAIBridge:
             async with httpx.AsyncClient(timeout=self.timeout) as client:
                 response = await client.post(
                     f"{self.ollama_host}/api/generate",
-                    json={"model": model, "prompt": prompt, "stream": False}
+                    json={"model": model, "prompt": prompt, "stream": False},
                 )
                 if response.status_code == 200:
                     return response.json().get("response", "No response")
@@ -67,8 +76,8 @@ class CrossPlatformAIBridge:
                     json={
                         "messages": [{"role": "user", "content": prompt}],
                         "temperature": 0.7,
-                        "max_tokens": 256
-                    }
+                        "max_tokens": 256,
+                    },
                 )
                 if response.status_code == 200:
                     data = response.json()
@@ -82,7 +91,7 @@ class CrossPlatformAIBridge:
         self,
         prompt: str,
         provider: AIProvider = AIProvider.GEMINI,
-        model: Optional[str] = None
+        model: Optional[str] = None,
     ) -> Dict[str, Any]:
         """Route query to appropriate provider."""
         result = {
@@ -90,19 +99,17 @@ class CrossPlatformAIBridge:
             "provider": provider.value,
             "model": model or "default",
             "response": None,
-            "error": None
+            "error": None,
         }
 
         try:
             if provider == AIProvider.GEMINI:
                 result["response"] = await self.query_gemini(
-                    prompt,
-                    model=model or "gemini-3.5-flash"
+                    prompt, model=model or "gemini-3.5-flash-lite"
                 )
             elif provider == AIProvider.OLLAMA:
                 result["response"] = await self.query_ollama(
-                    prompt,
-                    model=model or "mistral"
+                    prompt, model=model or "mistral"
                 )
             elif provider == AIProvider.LM_STUDIO:
                 result["response"] = await self.query_lm_studio(prompt)
@@ -111,19 +118,21 @@ class CrossPlatformAIBridge:
 
         return result
 
-    async def hybrid_query(self, prompt: str, prioritize_local: bool = False) -> Dict[str, Any]:
+    async def hybrid_query(
+        self, prompt: str, prioritize_local: bool = False
+    ) -> Dict[str, Any]:
         """Try multiple providers in priority order."""
         if prioritize_local:
             providers = [
                 (AIProvider.OLLAMA, "mistral"),
                 (AIProvider.LM_STUDIO, None),
-                (AIProvider.GEMINI, "gemini-3.5-flash")
+                (AIProvider.GEMINI, "gemini-3.5-flash-lite"),
             ]
         else:
             providers = [
-                (AIProvider.GEMINI, "gemini-3.5-flash"),
+                (AIProvider.GEMINI, "gemini-3.5-flash-lite"),
                 (AIProvider.OLLAMA, "mistral"),
-                (AIProvider.LM_STUDIO, None)
+                (AIProvider.LM_STUDIO, None),
             ]
 
         results = []
@@ -137,8 +146,9 @@ class CrossPlatformAIBridge:
             "prompt": prompt,
             "prioritize_local": prioritize_local,
             "attempts": results,
-            "winner": results[0] if results else None
+            "winner": results[0] if results else None,
         }
+
 
 async def main():
     """Demo and CLI."""
@@ -146,9 +156,9 @@ async def main():
 
     bridge = CrossPlatformAIBridge()
 
-    print("═"*60)
+    print("═" * 60)
     print("🌉 Cross-Platform AI Handshake Bridge")
-    print("═"*60)
+    print("═" * 60)
 
     if len(sys.argv) < 2:
         print("\nUsage:")
@@ -184,7 +194,8 @@ async def main():
         print(f"\n🤖 Provider: {result['provider']}")
         print(f"   Response: {result['response'][:200]}...")
 
-    print("\n" + "═"*60)
+    print("\n" + "═" * 60)
+
 
 if __name__ == "__main__":
     asyncio.run(main())
