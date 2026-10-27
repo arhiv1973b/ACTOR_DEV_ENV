@@ -21,3 +21,12 @@ jobs:
       - name: Run A©tor validator
         run: |
           python3 validate_ator.py
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Test A©tor MCP Server
+        run: |
+          cd mcp_server
+          npm install
+          node -e "import('./index.js').then(() => console.log('MCP Server module loaded successfully')).catch(err => { console.error(err); process.exit(1); })"
