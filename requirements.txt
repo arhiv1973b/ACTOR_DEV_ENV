@@ -1,12 +1,4 @@
-# Python dependencies for Automated Legal OCR and Evidence Audit Pipeline
-# CASE-MACHERET-1997-2026
-
-PyMuPDF==1.23.26
-pytesseract==0.3.10
-opencv-python-headless==4.9.0.80
-Pillow==10.2.0
-PyYAML==6.0.1
-requests==2.31.0
 google-genai
 tenacity
+requests
 psutil

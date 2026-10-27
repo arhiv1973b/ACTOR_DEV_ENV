@@ -184,55 +184,6 @@
       "title": "SABOTAGE-NODE: Устранение свидетеля Еремина"
     },
     {
-      "num": "08.2026",
-      "id": "financial_blockade_victoriabank_2026",
-      "icon": "🏦",
-      "body": "Электронное подтверждение `Victoria bank.pdf` от 07.08.2026: транзакция № 621901657131 в ATM VICTORIABANK 106 по карте 5100xxxxxxxx6089 показывает 0.00 MDL и комиссию -11.98 MDL, фиксируя искусственное создание технической задолженности и заморозку доступа к средствам.",
-      "title": "FINANCIAL-BLOCKADE: Victoriabank 07.08.2026"
-    },
-    {
-      "num": "MED",
-      "id": "medical_control_arkhip_silvia",
-      "icon": "🩺",
-      "body": "Принудительный перевод к врачу Архип Сильвия (6-я поликлиника), ранее связанной с оформлением смерти Марковой Галины, указывает на попытку централизовать и изолировать медицинские доказательства.",
-      "title": "MEDICAL-CONTROL: Архип Сильвия / 6-я поликлиника"
-    },
-    {
-      "num": "INHERIT",
-      "id": "inheritance_retention_markova_vb",
-      "icon": "🧾",
-      "body": "Жалоба `Victoriabank.pdf` фиксирует удержание вкладов умершей Марковой Галины Ивановны и связывает личную блокировку карты с блокировкой наследственной массы.",
-      "title": "INHERITANCE-RETENTION: Маркова / Victoriabank"
-    },
-    {
-      "num": "TRAMADOL",
-      "id": "tramadol_incrimination_xml_2009",
-      "icon": "💊",
-      "body": "XML-слой `В Суд сектор Центр - приобщение копия пдф .xml` фиксирует, что истцу вменялось хранение `2-х капсул «трамадол»`, при этом в том же корпусе текста указано, что никакого трамадола у истца и его жены найдено не было, а сам трамадол описан как лекарственный анальгетик.",
-      "title": "TRAMADOL-CHAIN: Инкриминирование и медицинский контекст"
-    },
-    {
-      "num": "DISABILITY",
-      "id": "disability_severe_2021",
-      "icon": "♿",
-      "body": "Документ `инвалидное пожизненое первая группа (1).pdf` фиксирует `Certificat de incadrare in grad de dizabilitate`, `MACERET ALEXEI`, `IDNP: 2000001159655`, степень `Sever` и период `de la 01.03.2021 pana la fara termen`.",
-      "title": "DISABILITY-ANCHOR: Бессрочная тяжелая инвалидность"
-    },
-    {
-      "num": "CNAS",
-      "id": "cnas_registry_exclusion_2023",
-      "icon": "📚",
-      "body": "Жалоба `Жалоба на рум. В CNAS.подписан.pdf` требует зарегистрировать трудовой стаж до 1999 года, исправить ошибочные идентификационные записи и восстановить исключенные из учета периоды учебы и временного отсутствия.",
-      "title": "CNAS-EXCLUSION: Искажение стажа и идентичности"
-    },
-    {
-      "num": "MIL-1991",
-      "id": "military_registration_1991_grab_vvk",
-      "icon": "🪖",
-      "body": "OCR `адеверинца военная.jpg` фиксирует воинский учет с `17.12.1991`, а в извлеченном тексте `Управление Верховного комиссара ООН...Human.pdf` присутствует фрагмент: `Обследован в ПКБ с 10.10.91 г по 9.11.91 г. Акт № 734... Члены комиссии: райвоенком Граб В.В.`",
-      "title": "MILITARY-1991: Воинский учет и ВВК / Граб В.В."
-    },
-    {
       "num": "HOLBAN",
       "id": "sabotage_judicial_fraud_holban",
       "icon": "⚖️",
@@ -250,9 +201,9 @@
   "forensicData": {
     "subject": "A©tor · IDNP: 2000001159655",
     "theftAmount": "25 210 256,15 MDL",
-    "subjects": "FinComPay · Moldindconbank · Victoriabank",
-    "method": "Принудительная смена карты + обнуление баланса + создание комиссии при нулевом остатке",
-    "timestamp": "2026-08-07T07:39:26Z",
+    "subjects": "FinComPay · Moldindconbank",
+    "method": "Принудительная смена карты + обнуление баланса",
+    "timestamp": "2026-04-25T13:37Z",
     "merkleRoot": "CFC 9a2465bd...e77"
   },
   "projectionNodes": [
@@ -300,51 +251,6 @@
       "preview": "Real mirrored apostille image from the Google Drive sync area.",
       "download": "F:/Мой диск/ACTOR_DEV_ENV/apostille-mirror/mirrors/Verified_Apostilles_PNG/3S6V078ZELJK9_EVIDENCE-1.png",
       "badge": "IMG"
-    },
-    {
-      "id": "projection-victoriabank-atm",
-      "title": "VICTORIABANK ATM EVIDENCE",
-      "kind": "pdf",
-      "source": "google-drive-mirror/actual/Victoria bank.pdf",
-      "preview": "ATM confirmation: transaction 621901657131, 0.00 MDL, commission -11.98 MDL.",
-      "download": "google-drive-mirror/actual/Victoria bank.pdf",
-      "badge": "ATM"
-    },
-    {
-      "id": "projection-victoriabank-complaint",
-      "title": "VICTORIABANK COMPLAINT DOSSIER",
-      "kind": "pdf",
-      "source": "google-drive-mirror/actual/Victoriabank.pdf",
-      "preview": "Complaint on blocked card and withheld inheritance deposits of Markova Galina Ivanovna.",
-      "download": "google-drive-mirror/actual/Victoriabank.pdf",
-      "badge": "CLAIM"
-    },
-    {
-      "id": "projection-military-1991",
-      "title": "MILITARY 1991 / VVK VERIFICATION",
-      "kind": "pdf",
-      "source": "https://drive.google.com/file/d/1lA3Uk1gnUD2yDuSXKrMtZ9oMBIXApe4k/view",
-      "preview": "Verification layer for the 1991 military-registration anchor, PKB act № 734, and the commission fragment naming райвоенком Граб В.В.",
-      "download": "https://drive.google.com/uc?export=download&id=1lA3Uk1gnUD2yDuSXKrMtZ9oMBIXApe4k",
-      "badge": "VVK"
-    },
-    {
-      "id": "projection-disability-severe",
-      "title": "SEVERE DISABILITY CERTIFICATE",
-      "kind": "pdf",
-      "source": "google-drive-mirror/инвалидное пожизненое первая группа (1).pdf",
-      "preview": "Direct certificate fixing MACERET ALEXEI, IDNP 2000001159655, severe disability, and the no-term period from 01.03.2021.",
-      "download": "google-drive-mirror/инвалидное пожизненое первая группа (1).pdf",
-      "badge": "SEVERE"
-    },
-    {
-      "id": "projection-cnas-exclusion",
-      "title": "CNAS REGISTRY EXCLUSION CLAIM",
-      "kind": "pdf",
-      "source": "https://drive.google.com/file/d/1a44J7t87pIKILO8A21PrHe1unmg2XkyN/view",
-      "preview": "Request to restore pre-1999 labor record, correct identity mismatches, and reverse excluded periods in the social-insurance registry.",
-      "download": "https://drive.google.com/uc?export=download&id=1a44J7t87pIKILO8A21PrHe1unmg2XkyN",
-      "badge": "CNAS"
     }
   ]
 }

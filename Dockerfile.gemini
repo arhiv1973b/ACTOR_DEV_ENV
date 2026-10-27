@@ -1,5 +1,0 @@
-FROM python:3.11-slim
-WORKDIR /workspace
-RUN pip install --no-cache-dir google-genai requests pydantic tenacity
-COPY gemini_cli.py /workspace/gemini_cli.py
-ENTRYPOINT ["python", "gemini_cli.py"]

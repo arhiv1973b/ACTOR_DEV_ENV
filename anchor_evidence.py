@@ -1,81 +1,59 @@
-#!/usr/bin/env python3
-import hashlib
-import json
-import os
-from datetime import datetime
-from cryptography.hazmat.primitives.asymmetric import ed25519
-from cryptography.hazmat.primitives import serialization
+import hashlib, json, os, subprocess
+from pathlib import Path
 
-# Целевые файлы для крипто-фиксации (content-addressing)
-FILES_TO_ANCHOR = [
-    "FORENSIC_FINCOM_ANALYSIS.md",
-    "JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md",
-    "IDENTITY_DISTORTION_GRAPH.md",
-    "actor_jus_cogens_engine.json",
-    "🏛️ EVIDENCE/New_Submissions/[⚖ A©tor Declaration] .pdf",
-    "🏛️ EVIDENCE/New_Submissions/Навстречу к Справедливому Возврату - последнее предупреждение в досудебном порядке.pdf",
+# Files to anchor (normalized to first 13 images from archive)
+files = [
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_001.png",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_002.png",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_003.png",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_004.png",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_005.png",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_006.jpg",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_007.jpg",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_008.png",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_009.png",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_010.png",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_011.jpg",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_012.png",
+    r"H:\ACTOR_DEV_ENV\📦 ARCHIVE\Downolde\apostila - 2026-04-24T174117.076_files\Image_013.jpg"
 ]
 
+def get_hash(path):
+    sha256 = hashlib.sha256()
+    with open(path, "rb") as f:
+        while chunk := f.read(8192):
+            sha256.update(chunk)
+    return sha256.hexdigest()
 
-def generate_sha256(filepath):
-    if not os.path.exists(filepath):
-        return None
-    sha256_hash = hashlib.sha256()
-    with open(filepath, "rb") as f:
-        for byte_block in iter(lambda: f.read(4096), b""):
-            sha256_hash.update(byte_block)
-    return sha256_hash.hexdigest()
+# Step 1: Hashes
+hashes = {Path(f).name: get_hash(f) for f in files}
 
-
-def main():
-    print("=== TI-ULA: Cryptographic Anchoring (Ed25519/SHA-256) ===")
-
-    # Инициализация или загрузка ключа A©tor
-    key_path = "actor_ed25519_key.pem"
-    if not os.path.exists(key_path):
-        print("[+] Генерируем новый приватный ключ Ed25519...")
-        private_key = ed25519.Ed25519PrivateKey.generate()
-        with open(key_path, "wb") as f:
-            f.write(
-                private_key.private_bytes(
-                    encoding=serialization.Encoding.PEM,
-                    format=serialization.PrivateFormat.PKCS8,
-                    encryption_algorithm=serialization.NoEncryption(),
-                )
-            )
-    else:
-        print("[+] Загрузка существующего ключа Ed25519...")
-        with open(key_path, "rb") as f:
-            private_key = serialization.load_pem_private_key(f.read(), password=None)
-
-    manifest = {
-        "timestamp": datetime.utcnow().isoformat() + "Z",
-        "case_id": "CASE-MACHERET-1997-2026",
-        "legal_basis": "Jus Cogens / Erga Omnes",
-        "anchors": [],
-    }
-
-    for filepath in FILES_TO_ANCHOR:
-        file_hash = generate_sha256(filepath)
-        if file_hash:
-            # Подпись хеша ключом Ed25519
-            signature = private_key.sign(file_hash.encode("utf-8"))
-            manifest["anchors"].append(
-                {
-                    "file": filepath,
-                    "sha256": file_hash,
-                    "ed25519_signature": signature.hex(),
-                }
-            )
-            print(f"Locked: {filepath}\n -> SHA-256: {file_hash}")
+# Step 2: Merkle Root
+def compute_merkle_root(hash_list):
+    if len(hash_list) == 1:
+        return hash_list[0]
+    
+    new_level = []
+    for i in range(0, len(hash_list), 2):
+        if i + 1 < len(hash_list):
+            combined = hash_list[i] + hash_list[i+1]
+            new_level.append(hashlib.sha256(combined.encode()).hexdigest())
         else:
-            print(f"[!] Файл не найден: {filepath}")
+            new_level.append(hash_list[i])
+    return compute_merkle_root(new_level)
 
-    # Сохранение криптографического манифеста
-    with open("ti_ula_crypto_manifest.json", "w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=4)
-    print("\n[✓] Манифест ti_ula_crypto_manifest.json успешно сгенерирован.")
+merkle_root = compute_merkle_root(list(hashes.values()))
 
+# Step 3: Bundle
+bundle = {
+    "bundle_id": "BUNDLE-3R-222-26-FINAL",
+    "hashes": hashes,
+    "merkle_root": merkle_root,
+    "timestamp": "2026-06-30T12:35:47+03:00"
+}
 
-if __name__ == "__main__":
-    main()
+bundle_path = Path(r"H:\ACTOR_DEV_ENV\apostille-mirror\BUNDLE-3R-222-26-FINAL.json")
+bundle_path.parent.mkdir(parents=True, exist_ok=True)
+bundle_path.write_text(json.dumps(bundle, indent=2))
+
+print(f"Bundle anchored: {merkle_root}")

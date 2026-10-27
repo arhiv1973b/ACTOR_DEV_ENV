@@ -1,46 +1,345 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apostille Archive - Redirect</title>
-    <meta
-      http-equiv="refresh"
-      content="0;url=https://arhiv1973b.github.io/apostille-archive-english/"
-    />
-    <link
-      rel="canonical"
-      href="https://arhiv1973b.github.io/apostille-archive-english/"
-    />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        color: #e4e4e4;
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVIDENCE PORTAL | CASE MACHERET</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@600;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    /* ... existing styles ... */
+    :focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+    /* ... rest of styles ... */
+      --bg: #050a0f;
+      --panel: #060f1a;
+      --border: #0c2e4a;
+      --border-active: #103c60;
+      --cyan: #00b8e8;
+      --cyan-bright: #40d4ff;
+      --gold: #c8960a;
+      --gold-bright: #f0c040;
+      --text: #c0d8ec;
+      --text-muted: #8ab0cc;
+      --font-mono: 'Share Tech Mono', monospace;
+      --font-head: 'Orbitron', sans-serif;
+      --font-body: 'Rajdhani', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* scanlines effect */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      pointer-events: none;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 184, 232, 0.01) 2px, rgba(0, 184, 232, 0.01) 4px);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, rgba(12, 46, 74, 0.8) 0%, rgba(5, 10, 15, 0.9) 60%);
+      border: 1px solid var(--gold);
+      padding: 40px;
+      margin-bottom: 30px;
+      position: relative;
+      clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold-bright), transparent);
+    }
+
+    h1 {
+      font-family: var(--font-head);
+      color: #fff;
+      font-size: 2.2em;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    h1 em {
+      color: var(--gold-bright);
+      font-style: normal;
+    }
+
+    .subtitle {
+      font-family: var(--font-mono);
+      color: var(--cyan);
+      font-size: 0.9em;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      background: #070e16;
+      border-bottom: 2px solid var(--gold);
+      padding: 12px 20px;
+      font-family: var(--font-mono);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      font-size: 0.85em;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 4px 8px;
+      border: 1px solid transparent;
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--gold-bright);
+      border-color: var(--gold);
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
+
+    @media (max-width: 800px) {
+      .main-grid {
+        grid-template-columns: 1fr;
       }
-      .container {
-        text-align: center;
-      }
-      a {
-        color: #4fc3f7;
-        font-size: 1.5em;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Redirecting to Apostille Archive...</h1>
-      <p>
-        If you are not redirected,
-        <a href="https://arhiv1973b.github.io/apostille-archive-english/"
-          >click here</a
-        >
-      </p>
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      padding: 24px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .panel-title {
+      font-family: var(--font-head);
+      font-size: 1.2em;
+      color: #fff;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    ul.evidence-list {
+      list-style: none;
+    }
+
+    ul.evidence-list li {
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(12, 46, 74, 0.5);
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+    }
+
+    ul.evidence-list li::before {
+      content: '⚡';
+      margin-right: 10px;
+      font-size: 0.8em;
+    }
+
+    ul.evidence-list li:hover {
+      background: rgba(0, 184, 232, 0.05);
+      padding-left: 18px;
+    }
+
+    ul.evidence-list a {
+      color: var(--text);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.9em;
+      word-break: break-all;
+    }
+
+    ul.evidence-list a:hover {
+      color: var(--cyan-bright);
+    }
+
+    .side-links a {
+      display: block;
+      padding: 12px;
+      margin-bottom: 10px;
+      background: rgba(12, 46, 74, 0.3);
+      border: 1px solid var(--border);
+      color: var(--cyan-bright);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.85em;
+      transition: all 0.3s;
+    }
+
+    .side-links a:hover {
+      background: rgba(0, 184, 232, 0.1);
+      border-color: var(--cyan);
+      transform: translateX(5px);
+    }
+
+    .footer {
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      margin-top: 40px;
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 0.75em;
+      color: var(--text-muted);
+    }
+
+    .proj-card {
+      background: rgba(6, 15, 26, 0.92);
+      border: 1px solid var(--border);
+      padding: 14px 16px;
+      min-width: 220px;
+      max-width: 320px;
+    }
+
+    .proj-badge {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 3px 8px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--gold-bright);
+      border: 1px solid var(--gold);
+    }
+
+    .proj-title {
+      font-family: var(--font-head);
+      font-size: 0.95em;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+
+    .proj-preview {
+      font-size: 0.85em;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .proj-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .proj-btn {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--cyan);
+      color: var(--cyan-bright);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.75em;
+    }
+  </style>
+</head>
+<body>
+    <a href="#main-content" style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">Перейти к основному контенту</a>
+    <nav class="portal-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #0c2e4a; margin-bottom: 30px; background-color: #051421; padding: 15px;">
+        <div class="breadcrumb">
+            <a href="index.html" style="color: #00b8e8; text-decoration: none; font-family: 'Share Tech Mono', monospace;">← PORTAL HUB</a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="doc-timeline.html" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">⏱️ Chronology</a>
+            <a href="EVIDENCE_CATALOG.md" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">📂 Evidence Catalog</a>
+        </div>
+    </nav>
+
+
+  <nav>
+    <div style="font-weight: bold; color: var(--gold-bright);">⚖️ A©t0r Integrity Engine v6.9</div>
+    <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+      <a href="index.html" data-i18n="nav-core">[Core Vault]</a>
+      <a href="doc-timeline.html" data-i18n="nav-chronology">[Chronology]</a>
+      <a href="jus-cogens-proof-macheret.html" data-i18n="nav-jus">[Jus Cogens]</a>
+      <a href="forensic-lock-theft-evidence.html" data-i18n="nav-theft">[Theft Evidence]</a>
+      <a href="google-drive-mirror.html">[Google Drive Mirror]</a>
+      <a href="evidence-mosaic.html" data-i18n="nav-mosaic">[HTML Mosaic]</a>
     </div>
-  </body>
+  </nav>
+
+  <div style="display:flex; justify-content:flex-end; margin: 0 0 16px; gap: 8px; flex-wrap: wrap;">
+    <span style="font-family: 'Share Tech Mono', monospace; color: var(--text-muted);" data-i18n="lang">Language</span>
+    <button type="button" data-lang-switch="ru" aria-pressed="true" style="padding:6px 10px; background:#07151d; color:#fff; border:1px solid #0c2e4a; cursor:pointer;">RU</button>
+    <button type="button" data-lang-switch="ro" aria-pressed="false" style="padding:6px 10px; background:#07151d; color:#fff; border:1px solid #0c2e4a; cursor:pointer;">RO</button>
+    <button type="button" data-lang-switch="en" aria-pressed="false" style="padding:6px 10px; background:#07151d; color:#fff; border:1px solid #0c2e4a; cursor:pointer;">EN</button>
+  </div>
+
+    <div class="container" id="main-content">
+        <header>
+      <div class="subtitle">// CASE-MACHERET-1997-2026</div>
+      <h1 data-i18n="portal-title">EVIDENCE PORTAL & <em>MASTER VAULT</em></h1>
+      <p style="color: var(--text-muted); margin-top: 10px;" data-i18n="portal-subtitle">Криптографическая фиксация и защита Jus Cogens / Erga Omnes норм.</p>
+    </header>
+
+    <div class="main-grid">
+      <div class="panel">
+        <div class="panel-title" data-i18n="evidence-nodes">📂 EVIDENCE NODES (Доказательные узлы)</div>
+        <ul class="evidence-list" id="dynamic-node-list"></ul>
+      </div>
+
+      <div class="side-panel">
+        <div class="panel">
+          <div class="panel-title" data-i18n="navigation">🧭 НАВИГАЦИЯ</div>
+          <div class="side-links">
+            <a href="doc-timeline.html">⏰ ХРОНОЛОГИЯ (1997–2026)</a>
+            <a href="jus-cogens-proof-macheret.html">⚖️ JUS COGENS PROOF</a>
+            <a href="projection-stream.html">🎞️ PROJECTION STREAM</a>
+            <a href="forensic-lock-theft-evidence.html">🔒 FORENSIC LOCK: THEFT</a>
+            <a href="apostille-registry-fixed.html">📂 РЕЕСТР АПОСТИЛЕЙ (90)</a>
+            <a href="evidence-roadmap.html">🗺️ ROADMAP РЕАБИЛИТАЦИИ</a>
+          </div>
+        </div>
+
+        <div class="panel" style="border-color: var(--gold);">
+          <div class="panel-title" style="color: var(--gold-bright);" data-i18n="integrity">🔒 INTEGRITY VERIFICATION</div>
+          <p style="font-size: 0.8em; font-family: var(--font-mono); color: var(--text-muted); word-break: break-all;">
+            SHA256: 73791BBA234EDD342CC807CABE3D45238E81ACBCD91B89909980A5D4E2B73A04<br><br>
+            <span data-i18n="site-status">Status: Verified ✓</span><br>
+            Updated: 2026-07-04
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p data-i18n="portal-foot">CASE-MACHERET-1997-2026 | Master Evidence Archive</p>
+    </footer>
+  </div>
+
+  <div id="dynamic-projection" style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin: 8px 0 28px;"></div>
+  <script src="wrappers/portal-enhancements.js"></script>
+  <script src="app.js"></script>
+  <script src="lang.js"></script>
+</body>
 </html>

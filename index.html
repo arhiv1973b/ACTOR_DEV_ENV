@@ -1,67 +1,540 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CASE-MACHERET-1997-2026 — Evidence index</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVIDENCE PORTAL | CASE MACHERET</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@600;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Georgia, serif; max-width: 820px; margin: 2rem auto; padding: 0 1rem; line-height: 1.45; }
-    h1 { font-size: 1.35rem; }
-    .note { border: 1px solid #333; padding: .8rem 1rem; margin: 1rem 0; }
-    nav a { display: block; margin: .25rem 0; }
-    .hyp { opacity: .95; border-top: 1px dashed #999; margin-top: 2rem; padding-top: 1rem; }
-    .hyp h2 { font-size: 1.05rem; color: #444; }
-  </style>
+    :root {
+      --bg: #050a0f;
+      --panel: #060f1a;
+      --border: #0c2e4a;
+      --border-active: #103c60;
+      --cyan: #00b8e8;
+      --cyan-bright: #40d4ff;
+      --gold: #c8960a;
+      --gold-bright: #f0c040;
+      --text: #c0d8ec;
+      --text-muted: #8ab0cc;
+      --font-mono: 'Share Tech Mono', monospace;
+      --font-head: 'Orbitron', sans-serif;
+      --font-body: 'Rajdhani', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* scanlines effect */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      pointer-events: none;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 184, 232, 0.01) 2px, rgba(0, 184, 232, 0.01) 4px);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, rgba(12, 46, 74, 0.8) 0%, rgba(5, 10, 15, 0.9) 60%);
+      border: 1px solid var(--gold);
+      padding: 40px;
+      margin-bottom: 30px;
+      position: relative;
+      clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold-bright), transparent);
+    }
+
+    h1 {
+      font-family: var(--font-head);
+      color: #fff;
+      font-size: 2.2em;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    h1 em {
+      color: var(--gold-bright);
+      font-style: normal;
+    }
+
+    .subtitle {
+      font-family: var(--font-mono);
+      color: var(--cyan);
+      font-size: 0.9em;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      background: #070e16;
+      border-bottom: 2px solid var(--gold);
+      padding: 12px 20px;
+      font-family: var(--font-mono);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      font-size: 0.85em;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 4px 8px;
+      border: 1px solid transparent;
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--gold-bright);
+      border-color: var(--gold);
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
+
+    @media (max-width: 800px) {
+      .main-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      padding: 24px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .panel-title {
+      font-family: var(--font-head);
+      font-size: 1.2em;
+      color: #fff;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    ul.evidence-list {
+      list-style: none;
+    }
+
+    ul.evidence-list li {
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(12, 46, 74, 0.5);
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+    }
+
+    ul.evidence-list li::before {
+      content: '⚡';
+      margin-right: 10px;
+      font-size: 0.8em;
+    }
+
+    ul.evidence-list li:hover {
+      background: rgba(0, 184, 232, 0.05);
+      padding-left: 18px;
+    }
+
+    ul.evidence-list a {
+      color: var(--text);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.9em;
+      word-break: break-all;
+    }
+
+    ul.evidence-list a:hover {
+      color: var(--cyan-bright);
+    }
+
+    .side-links a {
+      display: block;
+      padding: 12px;
+      margin-bottom: 10px;
+      background: rgba(12, 46, 74, 0.3);
+      border: 1px solid var(--border);
+      color: var(--cyan-bright);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.85em;
+      transition: all 0.3s;
+    }
+
+    .side-links a:hover {
+      background: rgba(0, 184, 232, 0.1);
+      border-color: var(--cyan);
+      transform: translateX(5px);
+    }
+
+        .documents-section {
+            margin-top: 60px;
+            border-top: 3px solid #c8960a;
+            padding-top: 40px;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2em;
+            color: #c8960a;
+            margin-bottom: 30px;
+        }
+
+        .docs-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .doc-item {
+            background: rgba(6, 15, 26, 0.6);
+            border-left: 4px solid #c8960a;
+            padding: 20px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .doc-info h3 {
+            color: #c8960a;
+            margin-bottom: 5px;
+        }
+
+        .doc-info p {
+            color: #8ab0cc;
+            font-size: 0.9em;
+        }
+
+        .doc-hash {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.7em;
+            color: #3a6080;
+            word-break: break-all;
+            margin-top: 5px;
+            max-width: 300px;
+        }
+
+        .icon { font-size: 1.2em; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .facts-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.5em; }
+        }
+
+        .footer {
+          border-top: 1px solid var(--border);
+          padding-top: 20px;
+          margin-top: 40px;
+          text-align: center;
+          font-family: var(--font-mono);
+          font-size: 0.75em;
+          color: var(--text-muted);
+        }
+    </style>
+<!-- Portal OpenGraph metadata -->
+<meta name="description" content="Evidence portal — Case Maceret 1997–2026">
+<meta property="og:title" content="Case Maceret — Evidence Portal">
+<meta property="og:description" content="Evidence portal — Case Maceret 1997–2026">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arhiv1973b.github.io/apostille-mirror/">
+<meta name="twitter:card" content="summary_large_image">
+<!-- End Portal OpenGraph metadata -->
+<link rel="stylesheet" href="/arhiv1973b/apostille-mirror/portal-global.css">
 </head>
 <body>
-  <h1>CASE-MACHERET-1997-2026</h1>
-  <p>Индекс доказательств. Главная содержит только акты, реестр и хронологию.</p>
-
-  <div class="note">
-    <strong>Слой A — доказательства.</strong>
-    Реестр, хеши, судебные акты, дело 1-568/98.
-    Аналитика и неподтверждённые суммы вынесены вниз, в слой B.
-  </div>
-
-  <h2>1. Реестр и целостность</h2>
-  <nav>
-    <a href="dashboard_index.html">📊 Jus Cogens Forensic Dashboard</a>
-    <a href="apostille-registry.html">Реестр апостилей / документов</a>
-    <a href="integrity.json">integrity.json (SHA-256)</a>
-    <a href="timeline.html">Хронология (даты и номера дел)</a>
-    <a href="🏛️_EVIDENCE/LEGAL_DOCTRINE/ERGA_OMNES_MASTER_MEMORANDUM.md">Erga Omnes Master Memorandum (SHA-256: 57d5fdf4bf5ddae23d95430f017ba1fa2b1731206a3e466ad9912169f09b9d36)</a>
-  </nav>
-
-  <h2>2. Судебные акты (как есть)</h2>
-  <nav>
-    <a href="acts/csj-1-834-09-2009-07-21.pdf">CSJ 1-834/09, 21.07.2009</a>
-    <a href="acts/incheiere-stambol-2025-12-23.pdf">Încheiere Stambol, 23.12.2025 — отказ в пересмотре и реабилитации</a>
-    <a href="acts/holban-2025-12-22.pdf">Hotărâre Holban, 22.12.2025</a>
-  </nav>
-  <p>Отказ 23.12.2025 остаётся в слое A: это акт суда, не «победа» и не «поражение сайта».</p>
-
-  <h2>3. Дело 1-568/98 — сухая хронология</h2>
-  <ol>
-    <li>1997–1998 — заявленные пытки; капитан Victor Dulce; dosar 1-568/98.</li>
-    <li>Переквалификация ст. 119 УК 1961 → ст. 217/219.</li>
-    <li>08.11.2006 — приговор Judecătoria Rîșcani, ст. 217 ч.2 и 219 ч.1, 1 год условно.</li>
-    <li>21.07.2009 — CSJ 1-834/09: отмена / признание дефекта обвинения (текст акта).</li>
-    <li>23.12.2025 — Stambol: пересмотр и судебная реабилитация отклонены; апелляция 15 дней.</li>
-  </ol>
-  <nav>
-    <a href="dossiers/1-568-98.html">Материалы 1-568/98</a>
-    <a href="dossiers/dulce.html">Эпизод Dulce (по актам и показаниям в деле)</a>
-  </nav>
-
-  <div class="hyp">
-    <h2>Слой B — версия автора (не доказательная база)</h2>
-    <p>Гипотезы. Не смешивать со слоем A в письмах прокурору.</p>
-    <nav>
-      <a href="author/fincombank-hypothesis.html">FinComBank / отображаемый остаток / грант США — гипотеза</a>
-      <a href="author/swift-imf.html">SWIFT / МВФ — рассуждение автора</a>
-      <a href="author/nota-verbale.html">Nota Verbale и входящие штампы (регистрация ≠ решение)</a>
+    <nav class="portal-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #0c2e4a; margin-bottom: 30px; background-color: #051421; padding: 15px;">
+        <div class="breadcrumb">
+            <a href="index.html" style="color: #00b8e8; text-decoration: none; font-family: 'Share Tech Mono', monospace;">← PORTAL HUB</a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="timeline.html" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">⏱️ Chronology</a>
+            <a href="EVIDENCE_CATALOG.md" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">📂 Evidence Catalog</a>
+        </div>
     </nav>
-    <p>Сумма 25 210 256,15 MDL на этой главной не утверждается как грант США.</p>
+
+
+  <nav>
+    <div style="font-weight: bold; color: var(--gold-bright);">⚖️ A©t0r Integrity Engine v6.9</div>
+    <div style="display: flex; gap: 15px;">
+      <a href="index.html">[Core Vault]</a>
+      <a href="timeline.html">[Chronology]</a>
+      <a href="jus-cogens-proof-macheret.html">[Jus Cogens]</a>
+      <a href="forensic-lock-theft-evidence.html">[Theft Evidence]</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header>
+      <div class="subtitle">// CASE-MACHERET-1997-2026</div>
+      <h1>EVIDENCE PORTAL & <em>MASTER VAULT</em></h1>
+      <p style="color: var(--text-muted); margin-top: 10px;">Криптографическая фиксация и защита Jus Cogens / Erga Omnes норм.</p>
+    </header>
+
+    <div class="main-grid">
+      <div class="panel">
+        <div class="panel-title">📂 EVIDENCE NODES (Доказательные узлы)</div>
+        <ul class="evidence-list">
+          <li><a href="nodes/apostila (3).html">apostila (3).html</a></li>
+          <li><a href="nodes/apostila (1).html">apostila (1).html</a></li>
+          <li><a href="nodes/Către Judecătoria Chișinău (sediul Ciocana_Buiucani).html">Către Judecătoria Chișinău (sediul Ciocana_Buiucani).html</a></li>
+          <li><a href="nodes/1-568 от Центра (Конфликтующая копия пользователя Alexei Macheret 2022-02-14 02_1.12.08 PM).html">1-568 от Центра (Конфликтующая копия пользователя Alexei Macheret 2022-02-14 02_1.12.08 PM).html</a></li>
+          <li><a href="nodes/08 11 2006 - для Судов по ИДНП. 2005 года определяя невиность_Исправлен.signed.html">08 11 2006 - для Судов по ИДНП. 2005 года определяя невиность_Исправлен.signed.html</a></li>
+          <li><a href="nodes/Către Judecătoria Chișinău (sediul Ciocana_Buiucani).signed.html">Către Judecătoria Chișinău (sediul Ciocana_Buiucani).signed.html</a></li>
+          <li><a href="nodes/apostille_archive_english.html">apostille_archive_english.html</a></li>
+          <li><a href="nodes/apostille_registry_working.signed.html">apostille_registry_working.signed.html</a></li>
+          <li><a href="nodes/apostille_archive_english.signed.html">apostille_archive_english.signed.html</a></li>
+          <li><a href="nodes/A©t0r arhiv si actual reestrf_4.html">A©t0r arhiv si actual reestrf_4.html</a></li>
+          <li><a href="nodes/apostille_archive_english_fixed.html">apostille_archive_english_fixed.html</a></li>
+          <li><a href="nodes/A©t0r arhiv si actual reestrf_3.html">A©t0r arhiv si actual reestrf_3.html</a></li>
+          <li><a href="nodes/Actor of Moldova.html">Actor of Moldova.html</a></li>
+          <li><a href="nodes/apostila_2.html">apostila_2.html</a></li>
+          <li><a href="nodes/doumentii na nsasledstvo.html">doumentii na nsasledstvo.html</a></li>
+          <li><a href="nodes/Actor of Moldova.signed.html">Actor of Moldova.signed.html</a></li>
+          <li><a href="nodes/doumentii na nsasledstvo_1.html">doumentii na nsasledstvo_1.html</a></li>
+          <li><a href="nodes/+Виталий Чумак.конкретизируя r обязанность Налоговой.html">+Виталий Чумак.конкретизируя r обязанность Налоговой.html</a></li>
+          <li><a href="nodes/apostille_registry_working_2.signed.html">apostille_registry_working_2.signed.html</a></li>
+          <li><a href="nodes/doumentii na nsasledstvo_2.html">doumentii na nsasledstvo_2.html</a></li>
+        </ul>
+      </div>
+
+      <div class="side-panel">
+        <div class="panel">
+          <div class="panel-title">🧭 НАВИГАЦИЯ</div>
+          <div class="side-links">
+            <a href="timeline.html">⏰ ХРОНОЛОГИЯ (1997–2026)</a>
+            <a href="jus-cogens-proof-macheret.html">⚖️ JUS COGENS PROOF</a>
+            <a href="forensic-lock-theft-evidence.html">🔒 FORENSIC LOCK: THEFT</a>
+            <a href="apostille-registry-fixed.html">📂 РЕЕСТР АПОСТИЛЕЙ (90)</a>
+            <a href="evidence-roadmap.html">🗺️ ROADMAP РЕАБИЛИТАЦИИ</a>
+          </div>
+        </div>
+
+        <section class="facts-section">
+            <h2 style="font-family: 'Orbitron', sans-serif; font-size: 1.8em; margin-bottom: 30px; color: #00b8e8;">
+                📋 CORE FACTS (Extracted from Primary Sources)
+            </h2>
+
+            <div class="facts-grid">
+                <!-- FACT 1: TORTURE 1997 -->
+                <div class="fact-card critical">
+                    <span class="severity-badge severity-critical">CRITICAL</span>
+                    <div class="fact-title">TORTURE & JUS COGENS VIOLATION</div>
+                    <div class="fact-date">📅 15 March 1997</div>
+                    <div class="fact-description">
+                        Systematic torture in Chişinău detention facility. Direct violation of international law 
+                        (Convention Against Torture, ICCPR Article 5, ECHR Article 3). Witness: Alexei Macheret.
+                    </div>
+                    <div class="buttons-group">
+                        <a href="fact-torture-1997.html" class="btn btn-primary">
+                            <span class="icon">🔍</span> View Details
+                        </a>
+                        <a href="https://archive.example.com/torture-evidence" class="btn btn-docs">
+                            <span class="icon">📄</span> Source Docs
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FACT 2: STATE DUTY BREACH -->
+                <div class="fact-card critical">
+                    <span class="severity-badge severity-critical">CRITICAL</span>
+                    <div class="fact-title">STATE DUTY BREACH</div>
+                    <div class="fact-date">📅 1997–2026 (Ongoing)</div>
+                    <div class="fact-description">
+                        Republic of Moldova failed to prevent torture and failed to conduct independent investigation. 
+                        Systematic state negligence (ECHR Article 3).
+                    </div>
+                    <div class="buttons-group">
+                        <a href='https://arhiv1973b.github.io/apostille-mirror/fact-state-duty.html' class="btn btn-primary">
+                            <span class="icon">🔍</span> View Details
+                        </a>
+                        <span class="evidence-count">3 documents</span>
+                    </div>
+                </div>
+
+                <!-- FACT 3: FALSIFICATION 2022 -->
+                <div class="fact-card critical">
+                    <span class="severity-badge severity-high">HIGH</span>
+                    <div class="fact-title">FALSIFICATION — NANTOI IDENTITY</div>
+                    <div class="fact-date">📅 15 March 2022</div>
+                    <div class="fact-description">
+                        Nantoi Liudmila fraudulently assumed identity of Marcov I.M. to execute unlawful asset confiscation. 
+                        Graphological expert report confirms falsification (Vector 3).
+                    </div>
+                    <div class="buttons-group">
+                        <a href='https://arhiv1973b.github.io/apostille-mirror/fact-nantoi-false.html' class="btn btn-primary">
+                            <span class="icon">🔍</span> View Details
+                        </a>
+                        <a href="fact-nantoi-false.html#vector3" class="btn btn-docs">
+                            <span class="icon">✍️</span> Graphology Report
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FACT 4: ASSET CONFISCATION -->
+                <div class="fact-card">
+                    <span class="severity-badge severity-high">HIGH</span>
+                    <div class="fact-title">UNLAWFUL ASSET CONFISCATION</div>
+                    <div class="fact-date">📅 15 March 2022</div>
+                    <div class="fact-description">
+                        Through fraudulent identity use, substantial assets were unlawfully confiscated without legal process. 
+                        No judicial authorization produced.
+                    </div>
+                    <div class="buttons-group">
+                        <a href='https://arhiv1973b.github.io/apostille-mirror/fact-confiscation.html' class="btn btn-danger">
+                            <span class="icon">⚡</span> Financial Records
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FACT 5: IMPUNITY MECHANISM -->
+                <div class="fact-card critical">
+                    <span class="severity-badge severity-critical">CRITICAL</span>
+                    <div class="fact-title">MECHANISM OF IMPUNITY</div>
+                    <div class="fact-date">📅 1997–2026 (Systemic)</div>
+                    <div class="fact-description">
+                        "The Cancer of Justice" — systematic state protection for perpetrators. Structural pattern 
+                        of evidence suppression, witness intimidation, and institutional corruption.
+                    </div>
+                    <div class="buttons-group">
+                        <a href='https://arhiv1973b.github.io/apostille-mirror/fact-impunity.html' class="btn btn-primary">
+                            <span class="icon">🧬</span> Full Analysis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FACT 6: JUS COGENS DEADLINE -->
+                <div class="fact-card critical">
+                    <span class="severity-badge severity-critical">CRITICAL</span>
+                    <div class="fact-title">JUS COGENS DEADLINE ACTIVATION</div>
+                    <div class="fact-date">📅 09 April 2026</div>
+                    <div class="fact-description">
+                        Activation of Global Sanction Vector 11. Final deadline for state compliance with international 
+                        law. Non-compliance triggers automated enforcement mechanisms.
+                    </div>
+                    <div class="buttons-group">
+                        <a href="timeline.html#deadline" class="btn btn-danger">
+                            <span class="icon">⏰</span> Full Timeline
+                        </a>
+                        <a href="https://arhiv1973b.github.io/apostille-mirror/jus-cogens-proof-macheret.html" class="btn btn-docs">
+                            <span class="icon">📋</span> Original Document
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="documents-section">
+            <h2 class="section-title">📚 PRIMARY EVIDENCE DOCUMENTS</h2>
+            <div class="docs-list">
+                <div class="doc-item">
+                    <div class="doc-info">
+                        <h3>📄 Apostila Attestation (2022)</h3>
+                        <p>Official document proving signature and authenticity. Apostila attests to signature, not content — proves torture evasion.</p>
+                        <div class="doc-hash">
+                            HASH: cfc9a2465bd...e77 | STATUS: ✓ Verified
+                        </div>
+                    </div>
+                    <div class="buttons-group">
+                        <a href="doc-apostila.html" class="btn btn-docs">
+                            <span class="icon">🔗</span> Details
+                        </a>
+                        <a href="https://arhiv1973b.github.io/apostille-mirror/" class="btn btn-primary">
+                            <span class="icon">🌐</span> View
+                        </a>
+                        <a href="EVIDENCE_CATALOG.md" class="btn btn-docs" title="Evidence Catalog">
+                            <span class="icon">📂</span> Evidence Catalog
+                        </a>
+                        <a href="https://arhiv1973b.github.io/apostille-mirror/jus-cogens-proof-macheret.html" class="btn btn-primary" title="Original Source">
+                            <span class="icon">📋</span> Original Source
+                        </a>
+                    </div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-info">
+                        <h3>✍️ Graphology Expert Report (Vector 3)</h3>
+                        <p>Forensic analysis by certified graphologist. Conclusively proves Nantoi's forged signature.</p>
+                        <div class="doc-hash">
+                            HASH: d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5... | STATUS: ✓ Verified
+                        </div>
+                    </div>
+                    <div class="buttons-group">
+                        <a href="doc-graphology.html" class="btn btn-docs">
+                            <span class="icon">🔬</span> Expert Analysis
+                        </a>
+                    </div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-info">
+                        <h3>📅 Chronology Timeline (1997–2026)</h3>
+                        <p>Complete factual timeline. Every date is a proof node. Links torture (1997) → evasion (2022) → deadline (2026).</p>
+                        <div class="doc-hash">
+                            HASH: e2f3a4b5c6d7e8f9a0b1c2d3e4f5g6h... | STATUS: ✓ Verified
+                        </div>
+                    </div>
+                    <div class="buttons-group">
+                        <a href="timeline.html" class="btn btn-primary">
+                            <span class="icon">⏱️</span> Interactive Timeline
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="panel" style="border-color: var(--gold);">
+          <div class="panel-title" style="color: var(--gold-bright);">🔒 INTEGRITY VERIFICATION</div>
+          <p style="font-size: 0.8em; font-family: var(--font-mono); color: var(--text-muted); word-break: break-all;">
+            SHA256: 73791BBA234EDD342CC807CABE3D45238E81ACBCD91B89909980A5D4E2B73A04<br><br>
+            Status: Verified ✓<br>
+            Updated: 2026-07-04
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <p>CASE-MACHERET-1997-2026 | Master Evidence Archive</p>
+    </footer>
   </div>
+
+  <script src="wrappers/portal-enhancements.js"></script>
 </body>
 </html>

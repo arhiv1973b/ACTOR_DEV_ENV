@@ -1,7 +1,0 @@
-[Jus Cogens & Erga Omnes] Auditor Quick Guide for Independent Verification
-
-A©tor_KEY="# [⚖ A©tor Declaration]"
-
-- Purpose: Publish formal 6-step Auditor Quick Guide for external experts to verify legal, forensic, and cryptographic integrity.
-- Legal Ground: Article 4 RM Constitution, UDHR, Hague Convention 1961, Jus Cogens.
-- Signed-off-by: A©tor <arhiv240@gmail.com>

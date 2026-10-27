@@ -347,3 +347,34 @@
     "timestamp":  "1792753869.21685",
     "event":  "system_reboot"
 }
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1792850263.4839",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1792888747.38494",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1792923485.79419",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1793008109.37389",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1793094852.41371",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1793125717.57487",
+    "event":  "system_reboot"
+}
+>>>>>>> Stashed changes

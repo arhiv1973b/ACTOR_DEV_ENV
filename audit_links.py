@@ -1,75 +1,87 @@
 import os
 import re
-import urllib.request
-import urllib.error
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import sys
+import json
+import pathlib
+import requests
+from datetime import datetime
 
-EXTENSIONS = (".md", ".json", ".html", ".js")
-URL_REGEX = re.compile(r'https?://[^\s\)`"\'<>]+')
+BASE_DIR = pathlib.Path(__file__).resolve().parent
+REPORTS_DIR = BASE_DIR / "audit_reports"
+REPORTS_DIR.mkdir(exist_ok=True)
 
+HTML_GLOB = "**/*.html"
 
-def collect_urls():
-    urls = set()
-    for root, _, files in os.walk("."):
-        if any(p in root for p in [".git", ".venv", "node_modules", ".llm_cache"]):
-            continue
-        for file in files:
-            if file.endswith(EXTENSIONS):
-                filepath = os.path.join(root, file)
-                try:
-                    with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
-                        content = f.read()
-                        found = URL_REGEX.findall(content)
-                        for u in found:
-                            if "raw.githubusercontent.com" in u or "github.io" in u:
-                                urls.add(u)
-                except Exception:
-                    pass
-    return sorted(list(urls))
+def is_external(url: str) -> bool:
+    return url.startswith('http://') or url.startswith('https://') or url.startswith('//')
 
-
-def check_url(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+def check_external(url: str) -> bool:
     try:
-        with urllib.request.urlopen(req, timeout=4) as response:
-            return url, response.status
-    except urllib.error.HTTPError as e:
-        return url, e.code
+        if url.startswith('//'):
+            url = 'https:' + url
+        resp = requests.head(url, timeout=5, allow_redirects=True)
+        return resp.status_code < 400
     except Exception:
-        return url, "ERR"
+        return False
 
+def resolve_internal(base_path: pathlib.Path, href: str) -> pathlib.Path:
+    href = href.split('#')[0].split('?')[0]
+    tgt = (base_path.parent / href).resolve()
+    return tgt
+
+def audit_html_file(html_path: pathlib.Path):
+    broken_ext = []
+    broken_int = []
+    content = html_path.read_text(encoding='utf-8')
+    for i, line in enumerate(content.splitlines(), start=1):
+        for match in re.finditer(r'href\s*=\s*"([^"]+)"', line, re.IGNORECASE):
+            url = match.group(1).strip()
+            if is_external(url):
+                if not check_external(url):
+                    broken_ext.append((i, url))
+            else:
+                tgt = resolve_internal(html_path, url)
+                if not tgt.exists():
+                    broken_int.append((i, url, str(tgt)))
+    return broken_ext, broken_int
+
+def generate_report(all_broken_ext, all_broken_int):
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    report_path = REPORTS_DIR / f"audit_{timestamp}.md"
+    with report_path.open('w', encoding='utf-8') as f:
+        f.write(f"# Audit Report – {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+        f.write('## Битые внешние ссылки\n')
+        f.write('| Файл | Строка | Ссылка |\n|------|--------|--------|\n')
+        for file, line, url in all_broken_ext:
+            f.write(f"| {file} | {line} | {url} |\n")
+        f.write('\n## Битые внутренние ссылки\n')
+        f.write('| Файл | Строка | Ссылка | Ожидаемый путь |\n|------|--------|--------|----------------|\n')
+        for file, line, url, expect in all_broken_int:
+            f.write(f"| {file} | {line} | {url} | {expect} |\n")
+    return report_path
 
 def main():
-    urls = collect_urls()
-    print(f"Total unique raw/github.io URLs found: {len(urls)}")
-
-    status_counts = {"200": 0, "404": 0, "401/403": 0, "ERR": 0}
-    problematic = []
-
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        future_to_url = {executor.submit(check_url, url): url for url in urls}
-        for future in as_completed(future_to_url):
-            url, code = future.result()
-            if code == 200:
-                status_counts["200"] += 1
-            elif code in (401, 403):
-                status_counts["401/403"] += 1
-                problematic.append((str(code), url))
-            elif code == 404:
-                status_counts["404"] += 1
-                problematic.append(("404", url))
-            else:
-                status_counts["ERR"] += 1
-                problematic.append(("ERR", url))
-
-    print("\n--- STATISTICS ---")
-    for k, v in status_counts.items():
-        print(f"{k}: {v}")
-
-    print("\n--- PROBLEMATIC URLS ---")
-    for status, url in problematic:
-        print(f"{status}  {url}")
-
+    all_broken_ext = []
+    all_broken_int = []
+    for html_path in BASE_DIR.glob(HTML_GLOB):
+        if html_path.is_file():
+            be, bi = audit_html_file(html_path)
+            if be:
+                for line, url in be:
+                    all_broken_ext.append((html_path.relative_to(BASE_DIR), line, url))
+            if bi:
+                for line, url, expect in bi:
+                    all_broken_int.append((html_path.relative_to(BASE_DIR), line, url, expect))
+    report = generate_report(all_broken_ext, all_broken_int)
+    print(f"[Audit] Report generated: {report}")
+    result = {
+        "report": str(report),
+        "broken_internal": [
+            {"file": str(item[0]), "line": item[1], "href": item[2], "expected": item[3]}
+            for item in all_broken_int
+        ]
+    }
+    print(json.dumps(result, ensure_ascii=False))
 
 if __name__ == "__main__":
     main()

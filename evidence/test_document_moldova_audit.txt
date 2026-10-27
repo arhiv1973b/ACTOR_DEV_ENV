@@ -1,4 +1,0 @@
-TEST EVIDENCE: Moldova Financial Pressure & Torture Continuation Audit Record.
-Date: 17.10.2026
-Case: CASE-MACHERET-1997-2026
-Description: Test document added to verify audit detection mechanism for new evidence.
