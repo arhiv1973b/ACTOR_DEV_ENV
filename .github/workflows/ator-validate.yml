@@ -24,3 +24,9 @@ jobs:
       - name: Audit Encoding & Typographic Matrix (A©tor)
         run: |
           python3 audit_encoding.py
+      - name: Upload Encoding Audit Log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: encoding-audit-log
+          path: encoding_audit.log
