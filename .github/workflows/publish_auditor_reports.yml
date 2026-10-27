@@ -4,6 +4,7 @@ on:
     paths:
       - 'Evidence_Ledger.json'
       - 'DeliveryStatus_PointDiff_Log.md'
+      - 'verify-report.md'
   workflow_dispatch:
   schedule:
     - cron: "0 5 * * *" # 05:00 UTC ежедневно
