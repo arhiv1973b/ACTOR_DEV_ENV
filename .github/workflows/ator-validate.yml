@@ -21,3 +21,6 @@ jobs:
       - name: Run A©tor validator
         run: |
           python3 validate_ator.py
+      - name: Audit Encoding & Typographic Matrix (A©tor)
+        run: |
+          python3 audit_encoding.py
