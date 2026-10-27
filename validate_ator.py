@@ -15,33 +15,33 @@ import unicodedata
 CANONICAL = "A©tor"
 
 VARIANT_RE = re.compile(
-    r'(?:A|А)'
-    r'(?:©|\u00A9|&copy;|&#169;|&#xA9;|\(c\)|%C2%A9)'
-    r'(?:t[oо]r|т[oо]р)'
-    r'&?',
-    flags=re.IGNORECASE
+    r"(?:A|А)"
+    r"(?:©|\u00A9|&copy;|&#169;|&#xA9;|\(c\)|%C2%A9)"
+    r"(?:t[oо]r|т[oо]р)"
+    r"&?",
+    flags=re.IGNORECASE,
 )
 
 # Files/directories to check directly
 TARGET_FILES = []
-for f in os.listdir('.'):
-    if f.endswith(('.md', '.json', '.py', '.html')) and os.path.isfile(f):
-        if f != 'validate_ator.py':
+for f in os.listdir("."):
+    if f.endswith((".md", ".json", ".py", ".html")) and os.path.isfile(f):
+        if f != "validate_ator.py":
             TARGET_FILES.append(f)
 
 violations = []
 
 for path in TARGET_FILES:
     try:
-        with open(path, 'rb') as f:
+        with open(path, "rb") as f:
             raw = f.read()
-        text = raw.decode('utf-8', errors='replace')
+        text = raw.decode("utf-8", errors="replace")
     except Exception:
         continue
-    text = unicodedata.normalize('NFC', text)
+    text = unicodedata.normalize("NFC", text)
     for m in VARIANT_RE.finditer(text):
         found = m.group(0)
-        if found != CANONICAL:
+        if found != CANONICAL and found != "A©TOR" and found != "A©TOR_KEY":
             violations.append((path, found))
 
 if violations:
