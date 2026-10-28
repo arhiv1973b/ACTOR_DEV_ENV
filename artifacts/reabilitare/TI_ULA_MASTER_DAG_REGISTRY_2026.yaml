@@ -34,3 +34,28 @@ dag_nodes:
         description: "Экстратерриториальная фиксация финансового саботажа и удержания средств (1168 MDL / 123 MDL)"
     timestamp_utc: "2026-10-28T19:49:00Z"
     actor_signature: "A©TOR_KEY=\"# [⚖ A©tor Declaration]\""
+  - node_id: fincombank_blockade_123_mdl_20261015
+    type: forensic_financial_evidence
+    jurisdiction_override: JUS_COGENS
+    subject_idnp: "2000001159655"
+    document_name: "FinComBank confirmare de plată (15.10.2026)"
+    amount_withheld_mdl: 123.00
+    status: "BLOCAT / TRANZACTIE RESPINSA"
+    sha256_hash: "8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a"
+    relations:
+      - target_node: "min_muncii_cerere_clarificare_20261023"
+        relation_type: EVIDENTIARY_SUPPORT
+        description: "Подтверждение факта несанкционированного удержания пособия Ajutor Social за октябрь 2026 года"
+
+  - node_id: min_muncii_cerere_clarificare_20261023
+    type: administrative_petition
+    jurisdiction_override: JUS_COGENS
+    subject_idnp: "2000001159655"
+    document_name: "Cerere de clarificare adresată Ministerului Muncii și Protecției Sociale"
+    date: "2023-10-23"
+    baseline_entitlement_mdl: 1167.84
+    actual_received_mdl: 123.00
+    relations:
+      - target_node: "decizia_asistenta_sociala_riscani_20260814"
+        relation_type: LEGAL_BASIS
+        description: "Ссылка на решение Управления социальной помощи сектора Рышкань № A013794400034 от 14.08.2026"
