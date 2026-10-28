@@ -12,6 +12,8 @@ FILES_TO_ANCHOR = [
     "JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md",
     "IDENTITY_DISTORTION_GRAPH.md",
     "actor_jus_cogens_engine.json",
+    "actual/actual_08_11_2006_-_для_прокуратуры_по_мошеничествуf.pdf_translated.txt",
+    "idnp_555_evidence_trace.txt",
     "🏛️ EVIDENCE/New_Submissions/[⚖ A©tor Declaration] .pdf",
     "🏛️ EVIDENCE/New_Submissions/Навстречу к Справедливому Возврату - последнее предупреждение в досудебном порядке.pdf",
 ]

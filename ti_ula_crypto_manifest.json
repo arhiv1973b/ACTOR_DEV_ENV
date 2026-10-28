@@ -1,5 +1,5 @@
 {
-    "timestamp": "2026-09-01T14:00:21.431934Z",
+    "timestamp": "2026-10-28T14:19:38.844129Z",
     "case_id": "CASE-MACHERET-1997-2026",
     "legal_basis": "Jus Cogens / Erga Omnes",
     "anchors": [
@@ -22,6 +22,16 @@
             "file": "actor_jus_cogens_engine.json",
             "sha256": "85851c0d1ff96449038ab9ed9d2e63b94e324ef4e91b7512b8dad1270ee07e54",
             "ed25519_signature": "234b905d1ffdd7a34fbbde50686e4a3f38b98aba887f6352f592db4c9399e1323db10fb0b6be78af19e069a057a5addeac60c964c0d2a9565c51e4670893d301"
+        },
+        {
+            "file": "actual/actual_08_11_2006_-_\u0434\u043b\u044f_\u043f\u0440\u043e\u043a\u0443\u0440\u0430\u0442\u0443\u0440\u044b_\u043f\u043e_\u043c\u043e\u0448\u0435\u043d\u0438\u0447\u0435\u0441\u0442\u0432\u0443f.pdf_translated.txt",
+            "sha256": "98a15644496121d470981e61308df66c98c8ac88015f3c2c79b3c9e8938995c3",
+            "ed25519_signature": "1609ec5b9ebee3ae0f44f23d9a0cffb8b20e31d941141b45c3b94c6852d1695641f641e2c6fe6b31ff4fd5e7084425801c3f5e0515605477a4e5b6732b53f705"
+        },
+        {
+            "file": "idnp_555_evidence_trace.txt",
+            "sha256": "008efc7343ca989741c40a378149ae99734f815e2558ad91ab78b7043a46f651",
+            "ed25519_signature": "00ec1dce545bf99d23d9145dd9ab536e1211ba7597bdc444479f0cad8ace348f38e327d5b98a24fd2236fa1ed2473ef6ebc48798f4788c14d7ba309500156403"
         },
         {
             "file": "\ud83c\udfdb\ufe0f EVIDENCE/New_Submissions/[\u2696 A\u00a9tor Declaration] .pdf",
