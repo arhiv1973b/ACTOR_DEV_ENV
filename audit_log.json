@@ -378,3 +378,8 @@
     "event":  "system_reboot"
 }
 >>>>>>> Stashed changes
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1793180618.30194",
+    "event":  "system_reboot"
+}
