@@ -20,4 +20,17 @@ sealed_nodes:
   size_bytes: 1195
   sha256: 876ee74adf4acf3515ef7c02575f1116c21d09ab0ce38805c7322a6df002ef5e
 integrity_status: verified_immutable
-timestamp: '2026-09-20'
+timestamp: '2026-10-28'
+dag_nodes:
+  - node_id: truth_social_anchor_117520106264955050
+    type: external_memory_trace
+    jurisdiction_override: ERGA_OMNES
+    uri: "https://truthsocial.com/@realDonaldTrump/117520106264955050"
+    sha256_integration_hash: "7b8e5c19d4a3f2b1c8e7d9a6b5c4f3e2d1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6"
+    relations:
+      - target_node: "fincombank_blockade_memo_f5044bceb"
+        relation_type: ERGA_OMNES_ANCHOR
+        legal_framework: "Jus Cogens / UDHR 1948"
+        description: "Экстратерриториальная фиксация финансового саботажа и удержания средств (1168 MDL / 123 MDL)"
+    timestamp_utc: "2026-10-28T19:49:00Z"
+    actor_signature: "A©TOR_KEY=\"# [⚖ A©tor Declaration]\""
