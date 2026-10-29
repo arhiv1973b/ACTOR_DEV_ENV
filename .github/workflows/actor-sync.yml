@@ -1,0 +1,31 @@
+name: A©tor Legal & Integrity Sync
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches: [ '**' ]
+
+jobs:
+  harden-and-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run Harden & Verification
+        run: |
+          python3 actor_unified_repos.py harden --force || true
+
+      - name: Commit Integrity Updates
+        run: |
+          git config --global user.name 'A©tor Bot'
+          git config --global user.email 'actor@case-macheret.local'
+          git add CHECKSUMS_SHA256.txt TI_ULA_STATE.json integrity.json ACTOR_DECLARATION.md
+          git commit -m 'Automated Legal & Integrity Harden [Jus Cogens + Erga Omnes]' || echo 'No changes to commit'
+          git push || true
