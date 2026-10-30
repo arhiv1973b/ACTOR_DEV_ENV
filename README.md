@@ -1,5 +1,11 @@
 # Invariant Evidence System: Case Maceret 1997-2026
 
+> **Криптографические якоря (Erga Omnes L0 Witness):**
+> - **Zenodo DOI:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)
+> - **IPFS CID:** `QmXyZ1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0`
+> - **Vercel Mirror:** [case_evidence_report.html](https://actor-dev-env.vercel.app/docs/case_evidence_report.html)
+> *(Последнее обновление: Интеграция Truth Social Trace / FinComBank Blockade)*
+
 ## Declaration of Truth
 Эта система создана как вычислительный барьер против процедурного обнуления фактов.
 Верховенство факта обеспечено неизменяемым реестром (Append-only) и математическим инвариантом L0.

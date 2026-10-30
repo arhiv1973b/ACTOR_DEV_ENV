@@ -1,0 +1,27 @@
+# Recommended secure proxy configuration for Docker socket access.
+# Usage: docker compose -f docker-compose.yml -f docker-compose.proxy.yml up -d
+
+services:
+  docker-proxy:
+    image: tecnativa/docker-socket-proxy:latest
+    container_name: docker-proxy
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      CONTAINERS: 1
+      IMAGES: 1
+      NETWORKS: 0
+      VOLUMES: 0
+      EXEC: 0
+      INFO: 1
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+  mcp-docker:
+    environment:
+      - DOCKER_HOST=tcp://docker-proxy:2375
+    depends_on:
+      - docker-proxy

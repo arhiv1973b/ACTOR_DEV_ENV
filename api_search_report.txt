@@ -1,0 +1,11 @@
+=== ОТЧЕТ ПО ПОИСКУ GOOGLE API КЛЮЧЕЙ И ТОКЕНОВ ===
+
+📁 НАЙДЕНО: F:\Мой диск\credentials.json
+📁 НАЙДЕНО: F:\Мой диск\A©torVault\CASE-MACHERET-1997-2026\apostille-mirror\nodes\chuk-mcp-client-oauth.html
+📁 НАЙДЕНО: F:\Мой диск\A©torVault\CASE-MACHERET-1997-2026\apostille-mirror\nodes\curl -H Authorization OAuth 89a229c.html
+📁 НАЙДЕНО: F:\Мой диск\EvidenceVault\curl -H Authorization OAuth 89a229c.md
+📁 НАЙДЕНО: F:\Мой диск\A©t0r_Archive\Evidence (1)\curl -H Authorization OAuth 89a229c.md.gdoc
+📁 НАЙДЕНО: F:\Мой диск\ACTOR_DEV_ENV\keys\credentials.json
+📁 НАЙДЕНО: F:\Мой диск\ACTOR_DEV_ENV\.venv\Scripts\chuk-mcp-client-oauth.exe
+📁 НАЙДЕНО: F:\Мой диск\ACTOR_DEV_ENV\nodes\curl -H Authorization OAuth 89a229c.html
+📁 НАЙДЕНО: F:\Мой диск\ACTOR_DEV_ENV\nodes\chuk-mcp-client-oauth.html

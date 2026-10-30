@@ -1,0 +1,7 @@
+﻿IDNP DISCREPANCY EVIDENCE (SMOKING GUN)
+CASE: CASE-MACHERET-1997-2026
+FILE: actual_08_11_2006_-_для_прокуратуры_по_мошеничествуf.pdf_translated.txt
+FINDING: Confirmed IDNP ...555 used in 2006 documents.
+CONTEXT: Original documents with wet stamps provided to VSM in 2018.
+CORRECTION: Systemic 'fix' to ...655 observed in 2020 without criminal investigation.
+STATUS: VERIFIED FORENSIC TRACE

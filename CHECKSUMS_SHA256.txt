@@ -1,7 +1,0 @@
-# Master Evidence Package Integrity SHA-256 Manifest
-# Generated under A©tor Jurisdiction / Jus Cogens Standard
-
-a8f1d...29e10  01_LEGAL_MEMORANDUM/ACTOR_MEMORANDUM_JUS_COGENS.pdf
-47d0d...1804f  04_EVIDENCE_ARCHIVE/JUDICIAL_REHABILITATION_2009/apostila_CG0T6Y1TBUEL7.pdf
-92e2f...16f54  04_EVIDENCE_ARCHIVE/CNDDCM_DISABILITY_RECORDS/apostila_90VS71FRKM4S3.pdf
-e9b20...91a21  03_GRAPH_GRAPHICS/signature_evidence_graph.svg

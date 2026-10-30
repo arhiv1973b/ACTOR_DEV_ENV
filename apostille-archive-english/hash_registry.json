@@ -1,0 +1,9 @@
+{
+  "ACTOR_FINCOMBANK_MEMORANDUM": {
+    "json_sha256": "07f3d95285bd418aa1b1c4c5a7da92f2b5caa732c87c32c6730a9903130fa144",
+    "zip_sha256": "74ee909253ac15fe40c833fdcf38b0e3b7df2d8e559fd2eaf086a5d50f20c0bf",
+    "pdf_sha256": "415117020e5c52250a450f5128325e3372d3b32beeaa3f9971e9791813d3d822",
+    "status": "ZERO_TRUST_LOCKED",
+    "timestamp_utc": "2026-10-26T19:41:00Z"
+  }
+}
