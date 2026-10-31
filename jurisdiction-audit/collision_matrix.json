@@ -1,0 +1,22 @@
+{
+  "audit_version": "1.0.0",
+  "case_tag": "CASE-MACHERET-1997-2026",
+  "actor_key": "# [⚖ A©tor Declaration]",
+  "normative_supremacy": "UDHR 1948 + Jus Cogens + Erga Omnes + Art. 4 Const. RM",
+  "collisions": [
+    {
+      "id": "COLL-01",
+      "barrier_type": "Procedural refusal / data protection pretext",
+      "local_practice": "Denial of access to complete case evidence archive",
+      "normative_conflict": "Direct violation of UDHR Art. 8 (Effective Remedy) and Art. 10 (Fair Trial)",
+      "status": "Declared Null and Void in conflict part"
+    },
+    {
+      "id": "COLL-02",
+      "barrier_type": "Regional jurisdiction insulation",
+      "local_practice": "Ignoring international human rights supremacy obligations",
+      "normative_conflict": "Violation of Jus Cogens and Art. 4 Constitution of RM",
+      "status": "Declared Null and Void in conflict part"
+    }
+  ]
+}
