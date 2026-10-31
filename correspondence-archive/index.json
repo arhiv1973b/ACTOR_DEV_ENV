@@ -10,6 +10,13 @@
       "subject": "Submission of Evidence Matrix - CASE-MACHERET-1997-2026",
       "meta_file": "correspondence/001_evidence_matrix_submission.json",
       "sha256": "158e0760c251ee315ec92f2bb430d2a1c9d0143df72ef076bb1829bb2bb7a012"
+    },
+    {
+      "id": "CORR-2026-10-31-02",
+      "date": "2026-10-31",
+      "subject": "Case Reference Substantiation - CASE-MACHERET-1997-2026",
+      "meta_file": "correspondence/002_notice_response.json",
+      "sha256": "f401b448e517bf121ece189cea543997e60947fac82d64b73458188e6ab43ec4"
     }
   ]
 }
