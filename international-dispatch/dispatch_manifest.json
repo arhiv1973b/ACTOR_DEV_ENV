@@ -1,0 +1,21 @@
+{
+  "dispatch_version": "1.0.0",
+  "case_tag": "CASE-MACHERET-1997-2026",
+  "created_at": "2026-10-31T00:00:00Z",
+  "actor_key": "# [⚖ A©tor Declaration]",
+  "normative_basis": "Jus Cogens + Erga Omnes + UDHR Art. 5, 8, 10, 25",
+  "recipients": [
+    {
+      "entity": "UN Human Rights Council / Special Procedures",
+      "dispatch_id": "DISP-UN-2026-01",
+      "status": "notified",
+      "sha256": "158e0760c251ee315ec92f2bb430d2a1c9d0143df72ef076bb1829bb2bb7a012"
+    },
+    {
+      "entity": "European Court of Human Rights (Registry)",
+      "dispatch_id": "DISP-ECHR-2026-01",
+      "status": "notified",
+      "sha256": "f401b448e517bf121ece189cea543997e60947fac82d64b73458188e6ab43ec4"
+    }
+  ]
+}
