@@ -51,8 +51,18 @@ def main():
                 if code:
                     leaves.append(sha256_hex(f"{code}:{sec}".encode("utf-8")))
 
+    evidence_path = "evidence"
+    if os.path.exists(evidence_path):
+        for fname in os.listdir(evidence_path):
+            if fname.endswith(".md"):
+                fpath = os.path.join(evidence_path, fname)
+                with open(fpath, "rb") as ef:
+                    leaves.append(sha256_hex(ef.read()))
+
     merkle_root = compute_merkle_root(leaves)
-    print(f"[*] Computed Merkle Root: {merkle_root} (from {len(leaves)} leaves)")
+    print(
+        f"[*] Re-computed Merkle Root (with evidence leaves): {merkle_root} (from {len(leaves)} leaves)"
+    )
 
     merkle_data = {
         "merkle_version": "1.0.0",
@@ -65,7 +75,7 @@ def main():
     merkle_json_path = os.path.join(root, "merkle.json")
     with open(merkle_json_path, "w", encoding="utf-8") as f:
         json.dump(merkle_data, f, indent=2)
-    print(f"[+] Wrote {merkle_json_path}")
+    print(f"[+] Updated {merkle_json_path}")
 
     if os.path.exists(integrity_path):
         with open(integrity_path, "r", encoding="utf-8") as f:
@@ -73,7 +83,7 @@ def main():
         integ["merkle_root"] = merkle_root
         with open(integrity_path, "w", encoding="utf-8") as f:
             json.dump(integ, f, indent=2)
-        print(f"[+] Updated {integrity_path} with merkle_root")
+        print(f"[+] Updated {integrity_path} with new merkle_root")
 
 
 if __name__ == "__main__":
