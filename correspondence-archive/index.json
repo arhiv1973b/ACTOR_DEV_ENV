@@ -17,6 +17,13 @@
       "subject": "Case Reference Substantiation - CASE-MACHERET-1997-2026",
       "meta_file": "correspondence/002_notice_response.json",
       "sha256": "f401b448e517bf121ece189cea543997e60947fac82d64b73458188e6ab43ec4"
+    },
+    {
+      "id": "CORR-2026-10-31-03",
+      "date": "2026-10-31",
+      "subject": "Formal Appeal & Judicial Negligence Notice - CASE-MACHERET-1997-2026",
+      "meta_file": "correspondence/003_judicial_appeal_notice.json",
+      "sha256": "5142fbafcea95c68d8d759b9ae290d815527a9760bd6c13986d7b5034ed7af64"
     }
   ]
 }
