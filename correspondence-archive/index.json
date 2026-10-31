@@ -3,5 +3,13 @@
   "owner": "arhiv240@gmail.com",
   "case_id": "CASE-MACHERET-1997-2026",
   "normative_basis": "Jus Cogens + Erga Omnes + UDHR Art. 5, 8, 25",
-  "items": []
+  "items": [
+    {
+      "id": "CORR-2026-10-31-01",
+      "date": "2026-10-31",
+      "subject": "Submission of Evidence Matrix - CASE-MACHERET-1997-2026",
+      "meta_file": "correspondence/001_evidence_matrix_submission.json",
+      "sha256": "158e0760c251ee315ec92f2bb430d2a1c9d0143df72ef076bb1829bb2bb7a012"
+    }
+  ]
 }
