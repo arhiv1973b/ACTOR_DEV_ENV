@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EvidenceDriveManifest",
+  "description": "Schema for heavy evidence files stored on Google Drive with cryptographic integrity verification.",
+  "type": "object",
+  "properties": {
+    "manifest_version": { "type": "string" },
+    "case_tag": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "path": { "type": "string" },
+          "sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
+          "size_bytes": { "type": "integer" },
+          "drive_id": { "type": "string" },
+          "public_url": { "type": "string", "format": "uri" },
+          "case_tag": { "type": "string" },
+          "date": { "type": "string" },
+          "mime_type": { "type": "string" }
+        },
+        "required": ["id", "path", "sha256", "size_bytes", "drive_id", "public_url", "case_tag"]
+      }
+    }
+  },
+  "required": ["manifest_version", "case_tag", "created_at", "items"]
+}

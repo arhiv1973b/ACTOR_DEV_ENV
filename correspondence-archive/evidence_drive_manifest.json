@@ -1,0 +1,42 @@
+{
+  "manifest_version": "1.0.0",
+  "case_tag": "CASE-MACHERET-1997-2026",
+  "created_at": "2026-10-31T13:30:00Z",
+  "actor_key": "# [⚖ A©tor Declaration]",
+  "normative_basis": "Jus Cogens + Erga Omnes + UDHR Art. 5, 8, 25",
+  "items": [
+    {
+      "id": "SCAN-2026-10-31-01",
+      "path": "evidence/Scanner_X_2026-10-31_132139/Scanner_X_2026-10-31_132139_1.jpg",
+      "sha256": "158e0760c251ee315ec92f2bb430d2a1c9d0143df72ef076bb1829bb2bb7a012",
+      "size_bytes": 935548,
+      "drive_id": "OFFLINE_VAULT_DRIVE_ID_PENDING_SYNC_01",
+      "public_url": "https://drive.google.com/file/d/OFFLINE_VAULT_DRIVE_ID_PENDING_SYNC_01/view",
+      "case_tag": "CASE-MACHERET-1997-2026",
+      "date": "2026-10-31",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "id": "SCAN-2026-10-31-02",
+      "path": "evidence/Scanner_X_2026-10-31_132139/Scanner_X_2026-10-31_132139_2.jpg",
+      "sha256": "f401b448e517bf121ece189cea543997e60947fac82d64b73458188e6ab43ec4",
+      "size_bytes": 251252,
+      "drive_id": "OFFLINE_VAULT_DRIVE_ID_PENDING_SYNC_02",
+      "public_url": "https://drive.google.com/file/d/OFFLINE_VAULT_DRIVE_ID_PENDING_SYNC_02/view",
+      "case_tag": "CASE-MACHERET-1997-2026",
+      "date": "2026-10-31",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "id": "SCAN-2026-10-31-03",
+      "path": "evidence/Scanner_X_2026-10-31_132139/Scanner_X_2026-10-31_132139_3.jpg",
+      "sha256": "5142fbafcea95c68d8d759b9ae290d815527a9760bd6c13986d7b5034ed7af64",
+      "size_bytes": 802290,
+      "drive_id": "OFFLINE_VAULT_DRIVE_ID_PENDING_SYNC_03",
+      "public_url": "https://drive.google.com/file/d/OFFLINE_VAULT_DRIVE_ID_PENDING_SYNC_03/view",
+      "case_tag": "CASE-MACHERET-1997-2026",
+      "date": "2026-10-31",
+      "mime_type": "image/jpeg"
+    }
+  ]
+}

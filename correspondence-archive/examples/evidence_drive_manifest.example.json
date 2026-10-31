@@ -1,0 +1,18 @@
+{
+  "manifest_version": "1.0.0",
+  "case_tag": "CASE-MACHERET-1997-2026",
+  "created_at": "2026-10-30T00:00:00Z",
+  "items": [
+    {
+      "id": "ev_0dbe7fd3",
+      "path": "evidence_vault/evidence_0dbe7fd3_CERERE_scutire_taxa_timbru.pdf",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 1048576,
+      "drive_id": "1AbC_ExampleDriveIdXYZ123",
+      "public_url": "https://drive.google.com/file/d/1AbC_ExampleDriveIdXYZ123/view?usp=sharing",
+      "case_tag": "CASE-MACHERET-1997-2026",
+      "date": "2026-05-24",
+      "mime_type": "application/pdf"
+    }
+  ]
+}
