@@ -5,6 +5,33 @@
     "status": "Disk space / platform resource constraints bypassed via zero-copy hardlinking/symlinking (L1 Evidence)",
     "offline_fallback": "Active",
     "verified_files_count": 146,
-    "linked_files_count": 60
+    "linked_files_count": 160
+  },
+  {
+    "timestamp": "2026-10-31",
+    "action": "import_scanned_evidence",
+    "files": [
+      "evidence\\Scanner_X_2026-10-31_132139\\Scanner_X_2026-10-31_132139_1.jpg",
+      "evidence\\Scanner_X_2026-10-31_132139\\Scanner_X_2026-10-31_132139_2.jpg",
+      "evidence\\Scanner_X_2026-10-31_132139\\Scanner_X_2026-10-31_132139_3.jpg"
+    ]
+  },
+  {
+    "timestamp": "2026-10-29",
+    "normative_basis": "Jus Cogens + UDHR Art 5, 8, 25",
+    "status": "Disk space / platform resource constraints bypassed via zero-copy hardlinking/symlinking (L1 Evidence)",
+    "offline_fallback": "Active",
+    "verified_files_count": 146,
+    "linked_files_count": 0
+  },
+  {
+    "timestamp": "2026-10-31",
+    "message": "System rebooted. Gemini CLI auto-audit activated.",
+    "event": "system_reboot"
   }
 ]
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1793529840.44456",
+    "event":  "system_reboot"
+}

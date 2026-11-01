@@ -1,0 +1,41 @@
+services:
+  actor-context-server:
+    build: ./actor-mcp
+    image: actor-context-server:latest
+    # Изоляция сети: только внутренний контур
+    networks:
+      - actor_internal
+    
+    # Блокировка файловой системы контейнера
+    read_only: true
+    
+    # Сброс привилегий
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    
+    # Запуск от непривилегированного пользователя
+    user: "1000:1000"
+    
+    # Монтирование
+    volumes:
+      - ./actor-mcp:/app:ro
+      # Точечное монтирование непубличного слоя в режиме Read-Only
+      - ./meta.json:/app/meta.json:ro
+      # Монтирование файла логов с правом на запись (rw)
+      - ./audit_log.json:/app/audit_log.json:rw
+    
+    # Временная память для операций сервера без доступа к диску
+    tmpfs:
+      - /tmp:size=50M,noexec,nosuid,nodev
+    
+    environment:
+      - PYTHONUNBUFFERED=1
+      - ACTOR_KEY="# [⚖ A©tor Declaration]"
+      # Передаем путь лога для MCP-сервера
+      - ACTOR_AUDIT_LOG=/app/audit_log.json
+
+networks:
+  actor_internal:
+    internal: true

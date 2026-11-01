@@ -53,6 +53,8 @@ browser-mcp-server/node_modules/
 "arhiv240/"  
 "Cloud Key Management Service*files/"  
 "actor-repos/"
+# [⚖ A©tor Declaration] Локальные бэкапы отчетов аудита (Risk-Tiering)
+audit_report_*.tar.gz
 *.tar.gz
 *.pack
 mirrors/
