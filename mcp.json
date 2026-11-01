@@ -17,6 +17,19 @@
         "-v", "C:\\Users\\arhiv\\AppData\\Roaming\\rclone:/root/.config/rclone",
         "mcp-docker-server-mcp-docker"
       ]
+    },
+    "actor-gemini-sovereign": {
+      "command": "python",
+      "args": [
+        "H:\\ACTOR_DEV_ENV\\actor-mcp\\actor_context_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONUTF8": "1",
+        "GEMINI_MODEL": "gemini-3.5-flash-lite",
+        "ACTOR_SOVEREIGN_MODE": "true",
+        "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+      }
     }
   }
 }
