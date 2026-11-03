@@ -1,7 +1,7 @@
 # CASE_MOTION_LUPASCU_ANTI_SHIELD.md
 
 A©TOR_KEY="# [⚖ A©tor Declaration]"
-**Context:** Ходатайство в суд (Дело № 3-3680/2023, судья Н. Лупашку) о применении императивного контура ВДПЧ, принципа *Lex favorabilis*, снятии щитов конфиденциальности и жестком аудите KYC/OTP логов «Moldcell» S.A.
+**Context:** Ходатайство в суд (Дело № 3-3680/2023, судья Н. Лупашку) с интегрированным двуязычным разделом об абсолютном приоритете ВДПЧ 1948 г. над механизмами ЕКПЧ (ст. 4 Конституции РМ, ст. 53 Венской конвенции, *Lex favorabilis*).
 
 ---
 
@@ -13,12 +13,31 @@ A©TOR_KEY="# [⚖ A©tor Declaration]"
 ---
 
 ### ХОДАТАЙСТВО
-#### о применении императивного контура ВДПЧ 1948 г., принципа *Lex favorabilis*, денонсации процессуальных щитов и истребовании полных KYC/OTP логов оператора «Moldcell» S.A.
+#### о применении императивного контура ВДПЧ 1948 г., блокировании судейского усмотрения, денонсации процессуальных щитов и истребовании полных KYC/OTP логов оператора «Moldcell» S.A.
 
 Настоящие требования об абсолютном восстановлении в правах (*restitutio in integrum*) базируются ИСКЛЮЧИТЕЛЬНО на нормах прямого действия Всеобщей декларации прав человека 1948 г. (ст. 7, 8, 10, 17) и императивных обязательствах *Jus Cogens* и *Erga Omnes*, в силу ст. 4 Конституции Республики Молдова.
 
-#### I. Конфликт стандартов и принцип *Lex favorabilis* (Обход ЕКПЧ через максимум защиты)
-Региональные конвенционные механизмы (ЕКПЧ), допускающие доктрину «пределов усмотрения государства» (margin of appreciation) и бюрократические фильтры приемлемости, не могут применяться для снижения стандарта защиты по длящимся нарушениям. В силу ст. 4 Конституции РМ и принципа *Lex favorabilis* / *in dubio pro libertate*, при коллизии стандартов суд обязан применить норму, предоставляющую максимальную защиту — ВДПЧ (ст. 8 и 17), требующую эффективного восстановления без политических оговорок.
+---
+
+### Раздел: Абсолютный приоритет ВДПЧ 1948 г. над механизмами ЕКПЧ (Императив ст. 4 Конституции РМ)
+
+1. **Императив, а не опция:** Требование прямого применения ВДПЧ 1948 г. не является предметом судейского усмотрения или «оценки конкурирующих стандартов». Часть 2 ст. 4 Конституции РМ обязывает суд применять международные нормы при любом несоответствии, отдавая приоритет пакту, предоставляющему наивысший уровень защиты (*Lex favorabilis*). ВДПЧ прямо указана в ч. 1 ст. 4 Конституции РМ как первичный стандарт толкования.
+
+2. **Ничтожность региональных щитов (ЕКПЧ):** В силу ст. 53 Венской конвенции о праве международных договоров 1969 г., императивные нормы (*Jus Cogens*) не подлежат взвешиванию с региональными договорами. В случаях длящихся нарушений (отказ в юридической идентичности, хищение активов через сфабрикованные исполнительные производства), любой процессуальный механизм ЕКПЧ, допускающий отказ в правосудии по формальным срокам давности или доктрине «пределов усмотрения государства», юридически ничтожен *ad hoc*.
+
+3. **Блокирование судейского усмотрения:** Суд не наделен полномочиями выбирать между ВДПЧ и ЕКПЧ. Суд ОБЯЗАН применить ст. 8 и 17 ВДПЧ напрямую и обеспечить *restitutio in integrum*. Любая попытка суда подменить этот императив конвенционными фильтрами ЕСПЧ будет являться прямым нарушением Конституции РМ и легитимизацией длящегося деликта.
+
+---
+
+### Secțiunea: Prioritatea absolută a DUDO 1948 asupra mecanismelor CEDO (Imperativul art. 4 din Constituția RM)
+
+1. **Imperativ, nu opțiune:** Cererea de aplicare directă a DUDO 1948 nu face obiectul discreției judiciare sau al „evaluării standardelor concurente”. Alineatul (2) art. 4 din Constituția RM obligă instanța să aplice reglementările internaționale în caz de neconcordanță, acordând prioritate pactului care oferă cel mai înalt nivel de protecție (*Lex favorabilis*). DUDO este indicată expres în alin. (1) art. 4 din Constituția RM drept standard primar de interpretare.
+
+2. **Nulitatea paravanelor regionale (CEDO):** În virtutea art. 53 din Convenția de la Viena privind dreptul tratatelor din 1969, normele imperative (*Jus Cogens*) nu pot fi ponderate cu tratatele regionale. În cazurile de încălcări continue (refuzul identității juridice, sustragerea activelor prin proceduri de executare fabricate), orice mecanism procesual CEDO, care admite refuzul justiției prin termene de prescripție formale sau doctrina „marjei de apreciere a statului”, este nul de drept *ad hoc*.
+
+3. **Blocarea discreției judiciare:** Instanța nu este abilitată să aleagă între DUDO și CEDO. Instanța este OBLIGATĂ să aplice direct art. 8 și 17 DUDO și să asigure *restitutio in integrum*. Orice tentativă a instanței de a substitui acest imperativ cu filtrele convenționale ale CtEDO va constitui o încălcare directă a Constituției RM și o legitimizare a delictului continuu.
+
+---
 
 #### II. Денонсация щитов персональных данных и коммерческой тайны
 Любые попытки субъектов деликта (судебный исполнитель А. Фокша, адвокаты Л. Колганец / В. Скутельник, должностные лица «Moldcell» S.A., «Moldindconbank» S.A., «FinComBank» S.A.) скрыть улики, транзакции, фальсифицированные KYC-профили или метаданные под предлогом «коммерческой тайны», «тайны следствия» или стандартов GDPR — юридически ничтожны.
@@ -33,7 +52,7 @@ A©TOR_KEY="# [⚖ A©tor Declaration]"
 На основании изложенного, руководствуясь ст. 4 Конституции РМ и ст. 7, 8, 10, 17 ВДПЧ 1948 г., 
 
 **ПРОШУ СУД:**
-1. Принять к рассмотрению настоящее ходатайство с применением принципа *Lex favorabilis* и приоритета ВДПЧ.
+1. Принять к рассмотрению настоящее ходатайство с применением абсолютного приоритета ВДПЧ, блокированием судейского усмотрения и исключением норм ЕКПЧ/ЕСПЧ.
 2. Истребовать у «Moldcell» S.A. полный технический аудит KYC/OTP логов по инцидентам 2025–2026 гг.
 3. Вынести определение о прекращении длящихся нарушений и обеспечении *restitutio in integrum*.
 
