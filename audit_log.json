@@ -62,4 +62,13 @@
     "linked_files_count": 0,
     "A©TOR_KEY": "# [⚖ A©tor Declaration]"
   }
-]
+]{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1793613598.3878",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1793694619.09982",
+    "event":  "system_reboot"
+}
