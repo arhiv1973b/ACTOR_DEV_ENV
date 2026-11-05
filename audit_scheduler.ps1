@@ -15,7 +15,7 @@ function Write-AuditLog {
     param([string]$Message, [string]$Level = "INFO")
     $LogEntry = "[$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))] [$Level] $Message"
     Write-Output $LogEntry
-    Add-Content -Path $LogFile -Value $LogEntry -Encoding utf8NoBOM
+    Add-Content -Path $LogFile -Value $LogEntry -Encoding utf8
 }
 
 if (-not (Test-Path $LogDirectory)) {
@@ -57,11 +57,11 @@ try {
     }
 
     if (Test-Path "$LogDirectory\temp_audit.tmp") {
-        Get-Content "$LogDirectory\temp_audit.tmp" | Add-Content -Path $LogFile -Encoding utf8NoBOM
+        Get-Content "$LogDirectory\temp_audit.tmp" | Add-Content -Path $LogFile -Encoding utf8
         Remove-Item "$LogDirectory\temp_audit.tmp" -Force
     }
     if (Test-Path "$LogDirectory\temp_audit_err.tmp") {
-        Get-Content "$LogDirectory\temp_audit_err.tmp" | Add-Content -Path $LogFile -Encoding utf8NoBOM
+        Get-Content "$LogDirectory\temp_audit_err.tmp" | Add-Content -Path $LogFile -Encoding utf8
         Remove-Item "$LogDirectory\temp_audit_err.tmp" -Force
     }
     Write-AuditLog "Аудит указателей завершен."
@@ -103,7 +103,7 @@ $SuccessLines = ""
 try {
     Write-AuditLog "Запуск диспетчера исправлений (repair_dispatcher.py)..."
     $RepairLog = & $PythonExec repair_dispatcher.py $LogFile 2>&1
-    $RepairLog | Add-Content -Path $LogFile -Encoding utf8NoBOM
+    $RepairLog | Add-Content -Path $LogFile -Encoding utf8
     
     if ($RepairLog -match "УСПЕШНЫЙ РЕМОНТ") {
         $RepairSuccessful = $true
@@ -126,7 +126,7 @@ if (Test-Path $PrivateKeyPath) {
 # Сборка манифеста INTEGRITY_WITNESS.json
 try {
     $ManifestResult = & $PythonExec generate_integrity_witness.py 2>&1
-    $ManifestResult | Add-Content -Path $LogFile -Encoding utf8NoBOM
+    $ManifestResult | Add-Content -Path $LogFile -Encoding utf8
 } catch {
     Write-AuditLog "Ошибка сборки манифеста: $_" "ERROR"
 }
@@ -136,7 +136,7 @@ $IpfsCidInfo = ""
 $CidHash = ""
 try {
     $IpfsResult = & $PythonExec pinata_ipfs_sync.py 2>&1
-    $IpfsResult | Add-Content -Path $LogFile -Encoding utf8NoBOM
+    $IpfsResult | Add-Content -Path $LogFile -Encoding utf8
     
     $CidLine = $IpfsResult | Where-Object { $_ -match "IPFS CID =" }
     if ($CidLine) {
@@ -152,7 +152,7 @@ $ZenodoDoiInfo = ""
 try {
     Write-AuditLog "Запуск резервирования Draft DOI в Zenodo (zenodo_draft.py)..."
     $ZenodoResult = & $PythonExec zenodo_draft.py 2>&1
-    $ZenodoResult | Add-Content -Path $LogFile -Encoding utf8NoBOM
+    $ZenodoResult | Add-Content -Path $LogFile -Encoding utf8
     
     $DoiLine = $ZenodoResult | Where-Object { $_ -match "ЗАРЕГИСТРИРОВАННЫЙ DOI:" }
     if ($DoiLine) {
