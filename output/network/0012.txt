@@ -1,0 +1,4 @@
+URL: https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=632124876.1793866378&dt=%E2%80%8EGemini%20-%20direct%20access%20to%20Google%20AI&en=page_view&dl=https%3A%2F%2Fgemini.google.com%2Fshare%2Fac8c21abf82e%3Fsocial_preview%3Dtrue%26skid%3D4873e32b-3e52-4569-9f91-7cf752167876&scrsrc=www.googletagmanager.com&rnd=1151750130.1793866378&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6b31v9113054662za200zd9113054662xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~117776796~118897920~118897930~120412528~120420414~120469145~120469153~121049589~121191155~121246026~121246034~123814185&tft=1793866378041&tfd=1713&fmt=8
+STATUS: 200
+CONTENT_TYPE: 
+

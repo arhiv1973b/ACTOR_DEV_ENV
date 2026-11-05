@@ -1,0 +1,60 @@
+{
+  "url": "https://share.gemini.google/bdpo1CWmSqzG",
+  "title": "‎Gemini - direct access to Google AI",
+  "html_length": 1198295,
+  "body_length": 4555,
+  "request_count": 61,
+  "response_count": 61,
+  "network_count": 39,
+  "candidate_script_count": 7,
+  "candidateScripts": [
+    {
+      "index": 2,
+      "length": 145527
+    },
+    {
+      "index": 5,
+      "length": 176
+    },
+    {
+      "index": 6,
+      "length": 21425
+    },
+    {
+      "index": 7,
+      "length": 112
+    },
+    {
+      "index": 9,
+      "length": 48644
+    },
+    {
+      "index": 10,
+      "length": 385
+    },
+    {
+      "index": 15,
+      "length": 2295
+    }
+  ],
+  "globals": {
+    "onformdata": "[OBJECT]",
+    "onloadeddata": "[OBJECT]",
+    "onloadedmetadata": "[OBJECT]",
+    "WIZ_global_data": "[OBJECT]",
+    "_F_toggles_default_BardChatUi": "[OBJECT]",
+    "dataLayer": "[OBJECT]",
+    "AF_initDataKeys": "[OBJECT]",
+    "AF_dataServiceRequests": "[OBJECT]",
+    "AF_initDataChunkQueue": "[OBJECT]",
+    "AF_initDataCallback": "[OBJECT]",
+    "AF_initDataInitializeCallback": "[OBJECT]",
+    "default_BardChatUi": "[OBJECT]",
+    "__BG3_DATA__": "[OBJECT]",
+    "__njri_BardChatUi": "[OBJECT]",
+    "google_tag_data": "[OBJECT]",
+    "sendDynamoIosEventToGeminiWeb": "[OBJECT]",
+    "sendImmersiveViewIosEventToGeminiWeb": "[OBJECT]"
+  },
+  "errors": []
+}

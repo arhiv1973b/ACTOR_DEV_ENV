@@ -1,0 +1,5 @@
+URL: https://grok.com/api/auth/session
+STATUS: 200
+CONTENT_TYPE: application/json
+
+{"status":"unauthenticated"}

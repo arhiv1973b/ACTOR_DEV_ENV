@@ -1,0 +1,5 @@
+URL: https://grok.com/rest/app-chat/conversations/95530641-cec5-43fa-83d5-d53c099a7fe8/sharing?responseId=272a9b2d-86a0-40f9-88b9-a3cb43030d87
+STATUS: 401
+CONTENT_TYPE: application/json
+
+{"code":16, "message":"No credentials presented. [WKE=unauthenticated:no-credentials]", "details":[]}

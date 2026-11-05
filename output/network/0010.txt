@@ -1,0 +1,10 @@
+URL: https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=DYBcR&source-path=%2Fshare%2Fac8c21abf82e&bl=boq_gemini-web-uiserver_20261103.01_p0&f.sid=5165938720778714146&hl=en-US&_reqid=136778&rt=c
+STATUS: 200
+CONTENT_TYPE: application/json; charset=utf-8
+
+)]}'
+
+106
+[["wrb.fr","DYBcR","[]",null,null,null,"generic"],["di",188],["af.httprm",188,"4737498474488497089",44]]
+25
+[["e",4,null,null,142]]

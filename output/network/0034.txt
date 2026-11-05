@@ -1,0 +1,10 @@
+URL: https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=GPRiHf&source-path=%2Fshare%2Fac8c21abf82e&bl=boq_gemini-web-uiserver_20261103.01_p0&f.sid=5165938720778714146&hl=en-US&_reqid=436778&rt=c
+STATUS: 200
+CONTENT_TYPE: application/json; charset=utf-8
+
+)]}'
+
+103
+[["wrb.fr","GPRiHf",null,null,null,[7],"generic"],["di",34],["af.httprm",34,"379988482957549262",46]]
+25
+[["e",4,null,null,139]]

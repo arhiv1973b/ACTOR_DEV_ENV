@@ -1,0 +1,5 @@
+URL: https://grok.com/rest/conversations/files/list?path=%2F&shareLinkId=c2hhcmQtNA_fa129e1f-c6bf-42cc-9756-8fa4c4bae1ec
+STATUS: 200
+CONTENT_TYPE: application/json
+
+{"files":[], "path":"/", "nextPageToken":""}

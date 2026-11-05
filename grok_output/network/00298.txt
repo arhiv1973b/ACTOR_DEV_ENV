@@ -1,0 +1,5 @@
+URL: https://accounts.google.com/gsi/fedcm/listaccounts
+STATUS: 200
+CONTENT_TYPE: application/json; charset=utf-8
+
+{"accounts":[],"site_salt":"48885e12661fa64a1f4cbc400779f655"}

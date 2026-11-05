@@ -1,0 +1,5 @@
+URL: https://grok.com/api/log_metric
+STATUS: 200
+CONTENT_TYPE: application/json
+
+{"partialSuccess":{"rejectedCount":0}}

@@ -1,0 +1,5 @@
+URL: https://m.stripe.com/6
+STATUS: 200
+CONTENT_TYPE: application/json;charset=utf-8
+
+{"muid":"c60b8a44-631b-4c12-bd91-50065fc0dfad9d9db2","guid":"33157bff-e4f2-4f91-bcab-18e3af106a9768218a","sid":"b8bb6dc8-a439-4672-bb21-04bd92144d89a34345"}

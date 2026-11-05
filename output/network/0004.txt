@@ -1,0 +1,4 @@
+URL: https://gemini.google.com/_/BardChatUi/cspreport/fine-allowlist
+STATUS: 204
+CONTENT_TYPE: text/html; charset=utf-8
+
