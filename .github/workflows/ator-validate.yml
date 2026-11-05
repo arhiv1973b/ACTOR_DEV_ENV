@@ -12,21 +12,75 @@ jobs:
   validate-ator:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout repository with submodules
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
+
       - name: Run A©tor validator
         run: |
           python3 validate_ator.py
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
       - name: Test A©tor MCP Server
         run: |
           cd mcp_server
           npm install
           node -e "import('./index.js').then(() => console.log('MCP Server module loaded successfully')).catch(err => { console.error(err); process.exit(1); })"
+
+      - name: Verify Submodules Status (-dirty check)
+        run: |
+          echo "[TI-ULA] Проверка целостности подмодулей..."
+          git submodule status
+          if git status --porcelain | grep -q ' M '; then
+            echo "[ОШИБКА] Обнаружены измененные или несинхронизированные подмодули!"
+            exit 1
+          fi
+          echo "[УСПЕХ] Все подмодули находятся в чистом и актуальном состоянии."
+
+      - name: Verify Integrity Manifests
+        run: |
+          echo "[TI-ULA] Проверка наличия обязательных файлов целостности..."
+          if [ -f "CHECKSUMS_SHA256.txt" ]; then
+            echo "[УСПЕХ] Манифест контрольных сумм CHECKSUMS_SHA256.txt найден."
+          else
+            echo "[ОШИБКА] Манифест контрольных сумм CHECKSUMS_SHA256.txt обязателен!"
+            exit 1
+          fi
+
+      - name: Audit NPM Dependencies for Vulnerabilities
+        run: |
+          echo "[TI-ULA] Запуск проверки безопасности npm-зависимостей..."
+          mkdir -p secure_logs
+          AUDIT_REPORT="secure_logs/npm_audit_report.txt"
+          
+          if [ -f "package.json" ]; then
+            echo "Аудит корневого package.json..." >> "$AUDIT_REPORT"
+            npm audit --audit-level=high >> "$AUDIT_REPORT" 2>&1 || true
+          fi
+          
+          for pkg in $(find . -name "package.json" -not -path "*/node_modules/*" -not -path "*/\.venv/*"); do
+            dir=$(dirname "$pkg")
+            echo "--- Отчет для: $dir ---" >> "$AUDIT_REPORT"
+            (cd "$dir" && npm audit --audit-level=high >> "../../$AUDIT_REPORT" 2>&1 || true)
+          done
+          echo "[УСПЕХ] Аудит безопасности завершен. Отчет сохранен в $AUDIT_REPORT."
+
+      - name: Upload Security Audit Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ti-ula-security-audit-logs
+          path: |
+            secure_logs/
+            CHECKSUMS_SHA256.txt
+            INTEGRITY_WITNESS.json
+          retention-days: 30
