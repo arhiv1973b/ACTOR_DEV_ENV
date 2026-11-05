@@ -862,168 +862,18 @@
     "verification_status": "cryptographically_sealed_immutable",
     "actor_identity": "A©t0r (arhiv1973b)",
     "legal_scope": "Erga Omnes, ВДПЧ 1948",
-    "last_verification_utc": "2026-11-05T03:17:19.447545+00:00",
-    "secure_logs_merkle_root": "3391687b9df994d0e92df2b5efdcbb9c76d85f3f7f65b71060de6ffd6a1ed756",
+    "last_verification_utc": "2026-11-05T22:42:56.809115+00:00",
+    "secure_logs_merkle_root": "eb9e96471001e883ad970dc23b1026192008410fd7a7058a7fdbcb633ecfd16a",
     "audit_files": [
         {
-            "filename": "audit_links_20261104_085418.log",
-            "sha256": "4a9aa3ecccd4aec900962cbc1816c10843fc55a91f7c8d03debd894177b0a4b1",
-            "timestamp": "2026-11-04T06:54:35.663627+00:00"
+            "filename": "audit_links_20261106_004113.log",
+            "sha256": "579c3409cc525407a6ceafc5fd9ac89f768992dc5c89216f4ab1f05ed3c11c73",
+            "timestamp": "2026-11-05T22:42:56.632995+00:00"
         },
         {
-            "filename": "audit_links_20261104_085846.log",
-            "sha256": "837a81b61afa33cb273f3f6e459fb228d3a158efe7f8d57d2162aab685f7e3aa",
-            "timestamp": "2026-11-04T06:59:02.066832+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_085953.log",
-            "sha256": "e6d724b3f6b0ef9829f4c52749926eafadb2cdbfa29847c5fa185ec99fc93527",
-            "timestamp": "2026-11-04T07:00:08.183428+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_085953.log.sig",
-            "sha256": "0e540a0d34889c45cf2d6111bb1eb4fd51e8596d0a914810d129a14da1b8eb30",
-            "timestamp": "2026-11-04T07:00:08.175915+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_090329.log",
-            "sha256": "b0c6fa8aeb0b46027c5a2c08c8c88515ad0ec6c22b9fbd232760aa657a1d243d",
-            "timestamp": "2026-11-04T07:03:41.265234+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_090329.log.sig",
-            "sha256": "75a0e52f932c8710b9529ae69b88cb65a6e72612747ada5a6cb01b02ddb6a38e",
-            "timestamp": "2026-11-04T07:03:41.045503+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_091025.log",
-            "sha256": "613ea6e96f6674380bc6f95451b5a5b419d68230b186d303d461c5583b0c7592",
-            "timestamp": "2026-11-04T07:10:45.428304+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_091025.log.sig",
-            "sha256": "1aa3775b458599f6723db8063c79160b8ab1797c155ec133823fbda090e79b81",
-            "timestamp": "2026-11-04T07:10:45.244316+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_091539.log",
-            "sha256": "708fc7db5d51798388af0f8caf63f8cacecf2cf49d6386bc15dc9a0fe291b13f",
-            "timestamp": "2026-11-04T07:15:51.707094+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_091539.log.sig",
-            "sha256": "4488fcbb786b2eb63ddd95506d99b4a369988c7efde71baa5cf99025486b2d50",
-            "timestamp": "2026-11-04T07:15:51.526390+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_091751.log",
-            "sha256": "367a9fd2a23bc8bfad763f0fda4cd6e4bafe7586cee6d7048dae98ab33147916",
-            "timestamp": "2026-11-04T07:18:04.270076+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_091751.log.sig",
-            "sha256": "ac7b0d36d09cad7b918c6e13fc4175d7305e5ad46fb220a49db26e62ffaa664e",
-            "timestamp": "2026-11-04T07:18:02.502536+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_092002.log",
-            "sha256": "13620d9f5bc345083d870c8f56d6c63f70e478eff1caf47cea57ba697211aabe",
-            "timestamp": "2026-11-04T07:20:15.299752+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_092002.log.sig",
-            "sha256": "4917b7f38114e9606f96d4686ae379db993c2faa72aa3dbb59417a3558fa247c",
-            "timestamp": "2026-11-04T07:20:13.784867+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_092445.log",
-            "sha256": "4ee0d2977433c2519f5bf195109caee10cbdb6b2589f807741970696924bc777",
-            "timestamp": "2026-11-04T07:25:13.948837+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_092445.log.sig",
-            "sha256": "87ef0c95e3a02208763f6b849eae12df6723138af9c25a10bc89a36c74f91702",
-            "timestamp": "2026-11-04T07:25:12.417190+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_093240.log",
-            "sha256": "899854588f9c04eeda2762666fd190d24a51be77a3d8f17e8e45f2c2a2cee01b",
-            "timestamp": "2026-11-04T07:33:07.731971+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_093240.log.sig",
-            "sha256": "efbe7161ae290a90c091c02d538473ad38481e4a577abe60f8c9f7b191880a88",
-            "timestamp": "2026-11-04T07:33:06.207786+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_093334.log",
-            "sha256": "b70a0e246a4b4201288a59fc2e4b0bd2cbf9a7c438764fc5308803b82236d110",
-            "timestamp": "2026-11-04T07:33:58.078393+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_093334.log.sig",
-            "sha256": "fba00e8713a367a6e2886f7c619434225ebe042b9aeaababe13d95298b3498ba",
-            "timestamp": "2026-11-04T07:33:56.627517+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_093821.log",
-            "sha256": "492db9471ad7b612c0a7bf37ff3997bbf5fe4df62a45734144bdd64e86a33f46",
-            "timestamp": "2026-11-04T07:38:47.627171+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_093821.log.sig",
-            "sha256": "7358325741f3d1a1b9aec94d6b43c9c03c8541a904378163a9beee1e7384b7f6",
-            "timestamp": "2026-11-04T07:38:46.163729+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_095125.log",
-            "sha256": "deacee47530e5aac52b51c4524f7feedb01f600822499585bcade9e1816c112e",
-            "timestamp": "2026-11-04T07:51:54.772876+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_095125.log.sig",
-            "sha256": "05d859b376ec00acac33f0aa1e1e86f4f9563197cd524a7cebc9241dcbe478ca",
-            "timestamp": "2026-11-04T07:51:52.661468+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_133952.log",
-            "sha256": "96525770c00f95df8e4042e962b468196f3ad0aad5c14edf954cab9290463c70",
-            "timestamp": "2026-11-04T11:40:58.517379+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_133952.log.sig",
-            "sha256": "4b0829ec63e9399c88136119faaba6b472644d7bae12b79b90b997d44aad21b5",
-            "timestamp": "2026-11-04T11:40:56.375253+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_143850.log",
-            "sha256": "8b3ec292dc74848b170d8263c4b8fc81e87fabbed95c3db84a165112f3c4925c",
-            "timestamp": "2026-11-04T12:39:20.233060+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_143850.log.sig",
-            "sha256": "85aed9afedb15ce697b958f6927898a851e56c74b2a8603834232d53d1938c76",
-            "timestamp": "2026-11-04T12:39:18.024466+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_175758.log",
-            "sha256": "64ef1f3e711880aafdca06a879703809693f98075139db05082a89b05d36d753",
-            "timestamp": "2026-11-04T15:58:50.414171+00:00"
-        },
-        {
-            "filename": "audit_links_20261104_175758.log.sig",
-            "sha256": "6aaa788e8b475314d8cc53f8154c17e31f0fcc6cab4623dc5bae4eec10ffdc3b",
-            "timestamp": "2026-11-04T15:58:48.516141+00:00"
-        },
-        {
-            "filename": "audit_links_20261105_050021.log",
-            "sha256": "acb82657748cb8ca1338a0c759b8c2547c8dba5114e7fc803190886b28e7899d",
-            "timestamp": "2026-11-05T03:02:21.907907+00:00"
-        },
-        {
-            "filename": "audit_links_20261105_051118.log",
-            "sha256": "4d283e90a7cc9a6ae970709ca1584781c6a63970ecbc8ae626360f1e6e58c63f",
-            "timestamp": "2026-11-05T03:12:50.484853+00:00"
+            "filename": "audit_links_20261106_004113.log.sig",
+            "sha256": "ff49f5e49015f304f41d642ebb7f8bdf9f950b3b34a5937861cd0730166c9eef",
+            "timestamp": "2026-11-05T22:42:56.591459+00:00"
         }
     ]
 }

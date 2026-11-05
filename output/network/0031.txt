@@ -1,10 +1,10 @@
-URL: https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=whPPme&source-path=%2Fshare%2Fac8c21abf82e&bl=boq_gemini-web-uiserver_20261103.01_p0&f.sid=5165938720778714146&hl=en-US&_reqid=336778&rt=c
+URL: https://gemini.google.com/_/BardChatUi/data/batchexecute?rpcids=GPRiHf&source-path=%2Fshare%2Fa103080d994b&bl=boq_gemini-web-uiserver_20261103.01_p0&f.sid=-664045252460787911&hl=en-US&_reqid=458575&rt=c
 STATUS: 200
 CONTENT_TYPE: application/json; charset=utf-8
 
 )]}'
 
-105
-[["wrb.fr","whPPme","[]",null,null,null,"generic"],["di",71],["af.httprm",71,"-207701718403231598",47]]
+104
+[["wrb.fr","GPRiHf",null,null,null,[7],"generic"],["di",42],["af.httprm",41,"4229495548764481557",48]]
 25
-[["e",4,null,null,141]]
+[["e",4,null,null,140]]

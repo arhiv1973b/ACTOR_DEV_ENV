@@ -1,16 +1,16 @@
 {
-  "url": "https://share.gemini.google/bdpo1CWmSqzG",
+  "url": "https://share.gemini.google/LR2ljxn55vBY",
   "title": "‎Gemini - direct access to Google AI",
-  "html_length": 1198295,
-  "body_length": 4555,
-  "request_count": 61,
-  "response_count": 61,
-  "network_count": 39,
+  "html_length": 1791928,
+  "body_length": 31812,
+  "request_count": 89,
+  "response_count": 89,
+  "network_count": 42,
   "candidate_script_count": 7,
   "candidateScripts": [
     {
       "index": 2,
-      "length": 145527
+      "length": 145861
     },
     {
       "index": 5,
@@ -18,18 +18,18 @@
     },
     {
       "index": 6,
-      "length": 21425
+      "length": 21411
     },
     {
       "index": 7,
       "length": 112
     },
     {
-      "index": 9,
+      "index": 10,
       "length": 48644
     },
     {
-      "index": 10,
+      "index": 11,
       "length": 385
     },
     {
@@ -54,7 +54,8 @@
     "__njri_BardChatUi": "[OBJECT]",
     "google_tag_data": "[OBJECT]",
     "sendDynamoIosEventToGeminiWeb": "[OBJECT]",
-    "sendImmersiveViewIosEventToGeminiWeb": "[OBJECT]"
+    "sendImmersiveViewIosEventToGeminiWeb": "[OBJECT]",
+    "module$third_party$javascript$highlightjs$v10$src$languages$lib$css_shared": "[OBJECT]"
   },
   "errors": []
 }

@@ -4,7 +4,7 @@ const path = require("path");
 const { URL } = require("url");
 
 const TARGET_INPUT =
-  "https://share.gemini.google/bdpo1CWmSqzG";
+  "https://share.gemini.google/LR2ljxn55vBY";
 
 function normalizeUrl(input) {
   if (!input || typeof input !== "string") {
