@@ -18,6 +18,8 @@ except ImportError:
         )
         sys.exit(1)
 
+from audit_guard import load_audit_log_safely
+
 AUDIT_LOG_PATH = "audit_log.json"
 FIX_LOG_PATH = "fix_log.json"
 
@@ -25,18 +27,7 @@ FIX_LOG_PATH = "fix_log.json"
 def analyze_and_repair():
     print("[Диспетчер Ремонта] Запуск автоматического анализа логов...")
 
-    if not os.path.exists(AUDIT_LOG_PATH):
-        print(f"[ИНФО] Лог {AUDIT_LOG_PATH} не найден. Нет задач для ремонта.")
-        return
-
-    with open(AUDIT_LOG_PATH, "r", encoding="utf-8") as f:
-        try:
-            audit_data = json.load(f)
-        except json.JSONDecodeError:
-            print(
-                f"[КРИТИЧЕСКАЯ ОШИБКА] Файл {AUDIT_LOG_PATH} поврежден или имеет неверный формат."
-            )
-            return
+    audit_data = load_audit_log_safely(AUDIT_LOG_PATH)
 
     # Извлечение инцидентов со статусом error или critical
     errors = [
