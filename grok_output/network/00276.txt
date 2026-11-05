@@ -1,0 +1,5 @@
+URL: https://grok.com/rest/workspaces?pageSize=50&orderBy=ORDER_BY_LAST_USE_TIME&kind=WORKSPACE_KIND_ALL
+STATUS: 401
+CONTENT_TYPE: application/json
+
+{"code":16, "message":"No credentials presented. [WKE=unauthenticated:no-credentials]", "details":[]}

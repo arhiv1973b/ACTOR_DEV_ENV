@@ -1,0 +1,6 @@
+URL: https://cdn.grok.com/_next/static/chunks/0c-d5t8wyinmo.css
+STATUS: 200
+CONTENT_TYPE: text/css
+
+body{--cookie-consent-surface:var(--background);--cookie-consent-on-primary:var(--background)}
+#onetrust-consent-sdk,#onetrust-banner-sdk,#onetrust-pc-sdk,#onetrust-consent-sdk .onetrust-pc-dark-filter,#ot-sdk-btn,#ot-sdk-btn-floating,#ot-sdk-btn-container,#ot-floating-button,.ot-floating-button,[id^=onetrust-][id$=-handler],[id^=onetrust-][id$=-button]{visibility:hidden!important;pointer-events:none!important;display:none!important}

@@ -1,0 +1,5 @@
+URL: https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
+STATUS: 200
+CONTENT_TYPE: application/json
+
+{"country":"MD","state":"CU","stateName":"Chișinău Municipality","continent":"EU"}

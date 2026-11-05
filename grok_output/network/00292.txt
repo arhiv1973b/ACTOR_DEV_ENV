@@ -1,0 +1,5 @@
+URL: https://sgtm-prod-985009374134.us-central1.run.app/data?v=2&event=page_view
+STATUS: 200
+CONTENT_TYPE: application/json
+
+{"timestamp":1793868136,"unique_event_id":"1793868135513_601964968"}

@@ -1,0 +1,5 @@
+URL: https://grok.com/api/auth/oauth/id-token/nonce
+STATUS: 200
+CONTENT_TYPE: application/json
+
+{"nonce":"rzc9kzIk-_cjGLiyG1SU__JJ8mC54vM4xNDDPUSGIKk","lastLoggedInWith":null}

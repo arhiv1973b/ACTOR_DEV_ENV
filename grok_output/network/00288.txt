@@ -1,0 +1,5 @@
+URL: blob:https://grok.com/a863fa26-f8a9-4623-a6dd-42422d1bab38
+STATUS: 200
+CONTENT_TYPE: application/javascript
+
+self.onmessage=function(){try{var e="undefined"!=typeof performance&&"function"==typeof performance.now,n=e?performance.now():Date.now();debugger;var r=e?performance.now():Date.now(),o=new Array(3);o[0]=4,o[1]=!1,o[2]=r-n,self.postMessage(o)}catch(e){var a=new Array(3);a[0]=5,a[1]=!1,a[2]=e,self.postMessage(a)}};

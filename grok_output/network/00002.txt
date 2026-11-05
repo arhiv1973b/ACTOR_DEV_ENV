@@ -1,0 +1,5 @@
+URL: https://cdn.grok.com/_next/static/chunks/04fx73_34obf_.css
+STATUS: 200
+CONTENT_TYPE: text/css
+
+[data-desktop-ui-placeholder]{z-index:10100;background-color:#fff;position:fixed;inset:0}:root.dark [data-desktop-ui-placeholder],:root[data-desktop-ui=dark] [data-desktop-ui-placeholder]{background-color:#282726}:root[data-desktop-ui=light] [data-desktop-ui-placeholder],:root[data-desktop-ui]{background-color:#fff}:root[data-desktop-ui=dark],:root[data-desktop-ui=""].dark{background-color:#282726}@media (prefers-color-scheme:dark){:root[data-desktop-ui=""]:not(.light),:root[data-desktop-ui=""]:not(.light) [data-desktop-ui-placeholder]{background-color:#282726}}:root[data-desktop-ui] body{background-color:#0000}
