@@ -1,7 +1,16 @@
 [
-  {
-    "timestamp": "2026-11-03T14:12:13.083917+00:00",
-    "event": "orchestrator_self_repair",
-    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
-  }
+    {
+        "id": "ERR-TEST-001",
+        "timestamp": "2026-11-05T04:30:00Z",
+        "module": "file_validator",
+        "status": "error",
+        "severity": "critical",
+        "message": "File encoding mismatch. Expected UTF-8 without BOM, found ANSI.",
+        "target": "H:\\ACTOR_DEV_ENV\\config.yaml"
+    }
 ]
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1793871241.27157",
+    "event":  "system_reboot"
+}

@@ -1,0 +1,1 @@
+{"@context" : "https://schema.org", "@type" : "WebSite", "name" : "Gemini", "url" : "https://gemini.google.com"}

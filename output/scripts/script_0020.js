@@ -1,0 +1,1 @@
+window.__BG3_DATA__ = {locale: 'en-US'};
