@@ -1,0 +1,4 @@
+# Restored State Checksums (SHA-256)
+4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945  audit_log.json
+937226c011e52c524745f04091ea44aa34da36c36ae02cb6163900101d2eafcf  actor_jus_cogens_orchestrator.py
+c04c9b0b1c33c2664da626ee41a990e20567b965beff3f407a63bfa164d358d1  repair_dispatcher.py
