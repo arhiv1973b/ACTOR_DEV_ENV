@@ -862,7 +862,7 @@
     "verification_status": "cryptographically_sealed_immutable",
     "actor_identity": "A©t0r (arhiv1973b)",
     "legal_scope": "Erga Omnes, ВДПЧ 1948",
-    "last_verification_utc": "2026-11-05T03:15:03.830310+00:00",
+    "last_verification_utc": "2026-11-05T03:17:19.447545+00:00",
     "secure_logs_merkle_root": "3391687b9df994d0e92df2b5efdcbb9c76d85f3f7f65b71060de6ffd6a1ed756",
     "audit_files": [
         {

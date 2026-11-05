@@ -65,3 +65,6 @@ tarballs/
 .actor_socket/
 .actor_socket
 
+"secure_logs/"  
+"grok_output/"  
+"output/" 
