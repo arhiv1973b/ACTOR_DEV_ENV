@@ -1,105 +1,94 @@
+# A©TOR_KEY="# [⚖ A©tor Declaration]"
+# A©t0r Identity: arhiv1973b
+# Legal Scope: Erga Omnes, ВДПЧ 1948, TI-ULA
+
 import os
-import hashlib
 import json
-from datetime import datetime
+import hashlib
+from datetime import datetime, timezone
 
-TARGET_FILES = [
-    "TI_ULA_Master.dot",
-    "TI_ULA_Architecture.dot",
-    "TI_ULA_Search_Prompts.dot",
-    "CASE_MACHERET_1997_2026_DOSSIER.md",
-    "CASE_MACHERET_1997_2026_DOSSIER.pdf",
-    "UN_CAT_COVER_LETTER_2026.md",
-    "UN_CAT_QUESTIONNAIRE_MAPPING.yaml",
-    "UN_SPECIAL_RAPPORTEURS_SUBMISSIONS_2026.md",
-    "MEMORANDUM_IMPUTED_LIABILITY_RM_2026.md",
-    "NODE_LEGAL_BASIS_JUS_COGENS.json",
-]
+WORKSPACE_DIR = r"H:\ACTOR_DEV_ENV"
+LOGS_DIR = os.path.join(WORKSPACE_DIR, "secure_logs")
+MANIFEST_FILE = os.path.join(WORKSPACE_DIR, "INTEGRITY_WITNESS.json")
 
 
-def scan_dir(directory):
-    records = []
-    if not os.path.exists(directory):
-        return records
-    for root, _, files in os.walk(directory):
-        for f in files:
-            if f.endswith((".yaml", ".yml", ".json", ".dot", ".md", ".pdf")):
-                path = os.path.join(root, f)
-                try:
-                    size = os.path.getsize(path)
-                    sha = hashlib.sha256()
-                    with open(path, "rb") as bf:
-                        while chunk := bf.read(65536):
-                            sha.update(chunk)
-                    records.append(
+def compute_sha256(file_path):
+    """Вычисляет SHA-256 для файла потоковым методом."""
+    sha256_hash = hashlib.sha256()
+    try:
+        with open(file_path, "rb") as f:
+            for byte_block in iter(lambda: f.read(4096), b""):
+                sha256_hash.update(byte_block)
+        return sha256_hash.hexdigest()
+    except Exception:
+        return None
+
+
+def build_merkle_root(hash_list):
+    """Вычисляет детерминированный Merkle root из списка хэшей."""
+    if not hash_list:
+        return None
+    # Сортировка обязательна для иммутабельной последовательности
+    sorted_hashes = sorted(hash_list)
+    combined = "".join(sorted_hashes).encode("utf-8")
+    return hashlib.sha256(combined).hexdigest()
+
+
+def update_integrity_witness():
+    print(
+        f"[{datetime.now(timezone.utc).isoformat()}] A©t0r: Инициализация генерации Merkle root для доказательной базы."
+    )
+
+    log_files_metadata = []
+    hashes_for_merkle = []
+
+    if os.path.exists(LOGS_DIR):
+        for filename in os.listdir(LOGS_DIR):
+            if filename.endswith(".log") or filename.endswith(".sig"):
+                filepath = os.path.join(LOGS_DIR, filename)
+                file_hash = compute_sha256(filepath)
+                if file_hash:
+                    log_files_metadata.append(
                         {
-                            "filename": f,
-                            "path": path,
-                            "size_bytes": size,
-                            "sha256": sha.hexdigest(),
+                            "filename": filename,
+                            "sha256": file_hash,
+                            "timestamp": datetime.fromtimestamp(
+                                os.path.getmtime(filepath), timezone.utc
+                            ).isoformat(),
                         }
                     )
-                except Exception as e:
-                    pass
-    return records
+                    hashes_for_merkle.append(file_hash)
 
+    merkle_root = build_merkle_root(hashes_for_merkle)
 
-def main():
-    all_artifacts = []
-    all_artifacts.extend(scan_dir("evidence"))
-    all_artifacts.extend(scan_dir("artifacts/reabilitare"))
-
-    # Also include specific root files
-    for rf in TARGET_FILES:
-        if os.path.exists(rf):
-            size = os.path.getsize(rf)
-            sha = hashlib.sha256()
-            with open(rf, "rb") as bf:
-                while chunk := bf.read(65536):
-                    sha.update(chunk)
-            all_artifacts.append(
-                {
-                    "filename": rf,
-                    "path": os.path.abspath(rf),
-                    "size_bytes": size,
-                    "sha256": sha.hexdigest(),
-                }
-            )
-
-    # Deduplicate by sha256 or path
-    seen_paths = set()
-    unique_artifacts = []
-    for art in all_artifacts:
-        if art["path"] not in seen_paths:
-            seen_paths.add(art["path"])
-            unique_artifacts.append(art)
-
-    witness = {
-        "id": "TI_ULA_INTEGRITY_WITNESS_2026",
-        "version": "1.0.0",
-        "protocol": "TI-ULA Cryptographic Cross-Verification",
-        "scope": "CASE-MACHERET-1997-2026",
-        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC"),
-        "total_verified_nodes_and_artifacts": len(unique_artifacts),
-        "artifacts": unique_artifacts,
-        "verification_status": "cryptographically_sealed_immutable",
+    # Структура обновления манифеста
+    witness_update = {
+        "actor_identity": "A©t0r (arhiv1973b)",
+        "legal_scope": "Erga Omnes, ВДПЧ 1948",
+        "last_verification_utc": datetime.now(timezone.utc).isoformat(),
+        "secure_logs_merkle_root": merkle_root,
+        "audit_files": log_files_metadata,
     }
 
-    out_path = "INTEGRITY_WITNESS.json"
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(witness, f, indent=2, ensure_ascii=False)
+    # Безопасное слияние с существующим манифестом, чтобы не затереть другие узлы (например, графы файлов)
+    if os.path.exists(MANIFEST_FILE):
+        try:
+            with open(MANIFEST_FILE, "r", encoding="utf-8") as f:
+                manifest_data = json.load(f)
+            manifest_data.update(witness_update)
+        except Exception:
+            manifest_data = witness_update
+    else:
+        manifest_data = witness_update
 
-    # Also copy to evidence/
-    os.makedirs("evidence", exist_ok=True)
-    with open(
-        os.path.join("evidence", "INTEGRITY_WITNESS.json"), "w", encoding="utf-8"
-    ) as f:
-        json.dump(witness, f, indent=2, ensure_ascii=False)
+    with open(MANIFEST_FILE, "w", encoding="utf-8") as f:
+        json.dump(manifest_data, f, indent=4, ensure_ascii=False)
 
     print(
-        f"Success: Generated {out_path} with {len(unique_artifacts)} verified artifacts."
+        f"[{datetime.now(timezone.utc).isoformat()}] INTEGRITY_WITNESS.json алгоритмически запечатан."
     )
+    print(f"Merkle Root (secure_logs): {merkle_root}")
 
 
 if __name__ == "__main__":
-    main()
+    update_integrity_witness()
