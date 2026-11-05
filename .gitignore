@@ -59,3 +59,12 @@ audit_report_*.tar.gz
 *.pack
 mirrors/
 tarballs/  
+
+# Локальные секреты API (A©t0r)
+.env
+.actor_socket/
+.actor_socket
+
+"secure_logs/"  
+"grok_output/"  
+"output/" 

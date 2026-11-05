@@ -1,0 +1,20 @@
+{
+  "artifact": "CASE_MOTIVATIONAL_PART_ART4_UDHR.md",
+  "sha256": "715f257298cc505b421d8f3529cc0f9de01f6c5d247bf3d90acda979d1bb803e",
+  "commit": "9e01d36892e850ef5cbb3bf309665fdfd91898a2",
+  "branch": "main",
+  "pr": "24",
+  "repository": "arhiv1973b/ACTOR_DEV_ENV",
+  "head_sha": "6c1771a59560835f96153e59e5f260ad6676ca30",
+  "origin_main_sha": "6c1771a59560835f96153e59e5f260ad6676ca30",
+  "synced": true,
+  "pr_info": {
+    "mergeCommit": {
+      "oid": "6c1771a59560835f96153e59e5f260ad6676ca30"
+    },
+    "mergedAt": "2026-11-03T00:00:45Z",
+    "state": "MERGED",
+    "url": "https://github.com/arhiv1973b/ACTOR_DEV_ENV/pull/24"
+  },
+  "timestamp": "2026-11-03T00:21:54.281149Z"
+}
