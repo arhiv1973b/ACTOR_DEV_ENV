@@ -7,7 +7,6 @@ Author: Alexei Macheret (A©tor) | IDNP: 2000001159655
 Scope: Jus Cogens, Erga Omnes, UDHR 1948, Hague Convention 1961
 """
 
-import os
 import json
 import hashlib
 import time
@@ -86,7 +85,6 @@ def process_transnational_record(apostille_code, security_code, proxy_url=None):
                     success = True
                     break
                 else:
-                    # Non-PDF response is likely a permanent error page, stop retrying
                     return {
                         "apostille_code": apostille_code,
                         "security_code": security_code,
@@ -99,7 +97,7 @@ def process_transnational_record(apostille_code, security_code, proxy_url=None):
             print(f"[!] Request exception on attempt {attempt + 1}: {e}")
             time.sleep(2**attempt)
 
-    if not success or not response or response.status_code != 200:
+    if not success or not response:
         return {
             "apostille_code": apostille_code,
             "security_code": security_code,
