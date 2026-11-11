@@ -2,32 +2,47 @@
 # -*- coding: utf-8 -*-
 """
 # [⚖ A©tor Declaration]
-Transnational Verification & Certificate Differential Engine (Enhanced)
-Author: Alexei Macheret (A©tor) | IDNP: 2000001159655
+Transnational Verification & Certificate Differential Engine
+Author: Alexei Macheret (A©tor)
+IDNP: 2000001159655
 Scope: Jus Cogens, Erga Omnes, UDHR 1948, Hague Convention 1961
 """
 
-import os
 import json
 import hashlib
 import time
-import requests
 from pathlib import Path
 from datetime import datetime, timezone
-from pyhanko.pdf_utils.reader import PdfFileReader
+import requests
 
-# Paths configuration
+try:
+    from pyhanko.pdf_utils.reader import PdfFileReader
+
+    PYHANKO_AVAILABLE = True
+except Exception:
+    PYHANKO_AVAILABLE = False
+
 DOWNLOADS = Path("downloads")
 REPORTS = Path("reports")
 MANIFESTS = Path("05_CRYPTO_MANIFESTS")
 
-for p in [DOWNLOADS, REPORTS, MANIFESTS]:
-    p.mkdir(parents=True, exist_ok=True)
+for folder in (DOWNLOADS, REPORTS, MANIFESTS):
+    folder.mkdir(parents=True, exist_ok=True)
+
+
+def build_apostille_url(apostille_code, security_code):
+    """Constructs a clean, valid URL for the official Apostille download endpoint without HTML artifacts."""
+    return (
+        "https://apostila.gov.md/apostila/site/"
+        f"downloadApostila/apostileCode/{apostille_code}"
+        f"/securityCode/{security_code}"
+    )
 
 
 def quick_signature_check(pdf_path):
-    """Inspects PDF for embedded digital signatures using pyhanko."""
     result = {"signed": False, "signature_count": 0}
+    if not PYHANKO_AVAILABLE:
+        return result
     try:
         with open(pdf_path, "rb") as f:
             reader = PdfFileReader(f)
@@ -40,116 +55,91 @@ def quick_signature_check(pdf_path):
 
 
 def process_transnational_record(apostille_code, security_code, proxy_url=None):
-    """
-    Downloads, validates MIME and PDF magic bytes, computes SHA-256 hash,
-    inspects digital signatures, tracks redirects and TLS, and generates manifest.
-    """
-    url = (
-        "https://apostila.gov.md/apostila/site/"
-        f"downloadApostila/apostileCode/{apostille_code}"
-        f"/securityCode/{security_code}"
-    )
+    url = build_apostille_url(apostille_code, security_code)
 
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) International-Apostille-Verifier/3.4",
-        "Accept": "application/pdf,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 International-Apostille-Verifier/4.0",
+        "Accept": "application/pdf,application/xhtml+xml,*/*",
     }
 
     proxies = {"http": proxy_url, "https": proxy_url} if proxy_url else None
-
     response = None
     success = False
 
-    # Exponential backoff retries
     for attempt in range(5):
         try:
             response = requests.get(
-                url, headers=headers, proxies=proxies, timeout=45, allow_redirects=True
+                url, headers=headers, timeout=45, allow_redirects=True, proxies=proxies
             )
-            if response.status_code == 200:
-                content_type = response.headers.get("Content-Type", "").lower()
-                if "pdf" in content_type:
-                    success = True
-                    break
-                else:
-                    print(
-                        f"[!] Warning: Unexpected content type '{content_type}' for {apostille_code}"
-                    )
-            time.sleep(2**attempt)
-        except requests.RequestException as e:
-            print(f"[!] Request exception on attempt {attempt + 1}: {e}")
+            if response.status_code != 200:
+                time.sleep(2**attempt)
+                continue
+
+            content_type = response.headers.get("Content-Type", "").lower()
+            if "pdf" not in content_type:
+                raise ValueError(f"Unexpected content type: {content_type}")
+
+            success = True
+            break
+        except Exception as ex:
+            print(f"[!] Attempt {attempt + 1}: {ex}")
             time.sleep(2**attempt)
 
-    # Handle failure cases
-    if not success or not response or response.status_code != 200:
+    if not success or not response:
         return {
             "apostille_code": apostille_code,
             "security_code": security_code,
             "download_timestamp": datetime.now(timezone.utc).isoformat(),
-            "http_status": response.status_code if response else 0,
             "verification_state": "download_failed",
         }
 
     content = response.content
-
-    # Validate PDF magic bytes signature before processing
     if not content.startswith(b"%PDF"):
-        raise ValueError("Downloaded file is not a valid PDF binary stream.")
+        raise ValueError("Downloaded object is not a PDF.")
 
-    # Handle redirects & redirect chain
     final_url = response.url
     redirected = final_url != url
-    redirect_chain = [h.url for h in response.history]
-
-    # Compute cryptographic SHA-256 hash
     sha256_hash = hashlib.sha256(content).hexdigest()
     file_size = len(content)
 
-    pdf_path = DOWNLOADS / f"{apostille_code}_transnational.pdf"
+    pdf_path = DOWNLOADS / f"{apostille_code}.pdf"
     pdf_path.write_bytes(content)
 
-    # Perform digital signature verification on the downloaded file
     signature_info = quick_signature_check(pdf_path)
 
-    # Construct enhanced manifest structure
     manifest = {
         "apostille_code": apostille_code,
         "security_code": security_code,
         "download_timestamp": datetime.now(timezone.utc).isoformat(),
         "http_status": response.status_code,
         "redirected": redirected,
-        "redirect_chain": redirect_chain,
+        "redirect_chain": [h.url for h in response.history],
         "final_url": final_url,
         "sha256": sha256_hash,
         "file_size": file_size,
         "pdf_signature": signature_info,
-        "tls": {"scheme": "https", "verified": True},
-        "verification_state": "download_success",
+        "local_file": str(pdf_path),
         "network_mode": "direct_https_request",
+        "verification_state": "download_success",
     }
 
-    manifest_path = MANIFESTS / f"{apostille_code}_transnational_manifest.json"
+    manifest_path = MANIFESTS / f"{apostille_code}_manifest.json"
     manifest_path.write_text(
         json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
-    # Safe cleanup of temporary PDF file
-    try:
-        if pdf_path.exists():
-            pdf_path.unlink()
-    except OSError:
-        pass
-
-    print(
-        f"[+] Success. Apostille: {apostille_code} | SHA-256: {sha256_hash} | Signed: {signature_info.get('signed')}"
-    )
+    print(f"[+] SUCCESS {apostille_code}")
+    print(f"[+] SHA256 {sha256_hash}")
     return manifest
 
 
-if __name__ == "__main__":
+def main():
     sample_apostille = "IMWM44AZGX6N6"
-    sample_sec_code = "2013073817848"
-
-    result = process_transnational_record(sample_apostille, sample_sec_code)
+    sample_security = "2013073817848"
+    result = process_transnational_record(sample_apostille, sample_security)
     print(json.dumps(result, indent=2, ensure_ascii=False))
+    return result
+
+
+if __name__ == "__main__":
+    main()
