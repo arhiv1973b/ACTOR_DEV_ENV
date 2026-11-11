@@ -1,0 +1,21 @@
+# Используем официальный образ Python
+FROM python:3.11-slim
+
+# Установка системных зависимостей для работы с сетью и браузерными воркерами
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Рабочая директория внутри контейнера
+WORKDIR /app
+
+# Установка зависимостей Python
+RUN pip install --no-cache-dir requests beautifulsoup4
+
+# Копируем скрипт воркера и реестр
+COPY worker.py /app/worker.py
+COPY apostille_registry_working.html /app/apostille_registry_working.html
+
+# Команда по умолчанию при запуске контейнера
+CMD ["python", "worker.py"]

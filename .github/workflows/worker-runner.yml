@@ -1,0 +1,22 @@
+name: Apostille Worker Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch: 
+
+jobs:
+  run-docker-worker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Клонирование репозитория
+        uses: actions/checkout@v4
+
+      - name: Сборка Docker-образа
+        run: |
+          docker build -t apostille-worker -f Dockerfile.worker .
+
+      - name: Запуск воркера внутри Docker-контейнера в GitHub Actions
+        run: |
+          docker run --rm apostille-worker
