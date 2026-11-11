@@ -3,9 +3,14 @@ import sys
 import json
 import time
 import multiprocessing as mp
-from audit_guard import load_audit_log_safely, append_audit_entry_safely, atomic_write_json
+from audit_guard import (
+    load_audit_log_safely,
+    append_audit_entry_safely,
+    atomic_write_json,
+)
 
 AUDIT_LOG = "audit_log.json"
+
 
 def mp_writer_worker(idx, count=20):
     for i in range(count):
@@ -13,6 +18,7 @@ def mp_writer_worker(idx, count=20):
             append_audit_entry_safely({"process": idx, "op": i, "status": "OK"})
         except Exception as e:
             print(f"Writer {idx} error: {e}")
+
 
 def mp_reader_worker(idx, count=20):
     for i in range(count):
@@ -22,6 +28,7 @@ def mp_reader_worker(idx, count=20):
         except Exception as e:
             print(f"Reader {idx} error: {e}")
 
+
 def mp_repair_worker(idx):
     try:
         data = load_audit_log_safely(AUDIT_LOG)
@@ -29,10 +36,11 @@ def mp_repair_worker(idx):
     except Exception as e:
         print(f"Repair worker {idx} error: {e}")
 
+
 def test_multiprocess_append():
     print("=== SCENARIO: MULTIPROCESS_APPEND (20 processes × 10 ops) ===")
-    atomic_write_json(AUDIT_LOG, [])
-    
+    atomic_write_json(AUDIT_LOG, [], use_lock=True)
+
     procs = []
     for i in range(20):
         p = mp.Process(target=mp_writer_worker, args=(i, 10))
@@ -43,17 +51,37 @@ def test_multiprocess_append():
         p.join()
 
     data = load_audit_log_safely(AUDIT_LOG)
-    print(f"Total entries recorded: {len(data)} (Expected: 200)")
-    assert len(data) == 200, f"Expected 200 entries, got {len(data)}"
+    expected = 200
 
-    unique_ids = {(item.get("process"), item.get("op")) for item in data if "process" in item}
-    print(f"Unique process/op pairs: {len(unique_ids)} (Expected: 200)")
-    assert len(unique_ids) == 200, f"Expected 200 unique pairs, got {len(unique_ids)}"
-    print("[SUCCESS] MULTIPROCESS_APPEND with unique ID validation passed.")
+    from collections import Counter
+
+    ids = [
+        (item.get("process"), item.get("op"))
+        for item in data
+        if isinstance(item, dict) and "process" in item
+    ]
+    counter = Counter(ids)
+    duplicates = {key: count for key, count in counter.items() if count > 1}
+    missing = []
+    for p in range(20):
+        for op in range(10):
+            if (p, op) not in counter:
+                missing.append((p, op))
+
+    print(f"Total entries recorded: {len(data)} (Expected: {expected})")
+    print(f"Unique entries found: {len(counter)}")
+
+    assert not duplicates, f"Duplicates found: {duplicates}"
+    assert not missing, f"Missing entries: {missing}"
+    assert len(data) == expected, f"Expected {expected} entries, got {len(data)}"
+    print("[SUCCESS] MULTIPROCESS_APPEND passed (no losses, no duplicates).")
+
 
 def test_multiprocess_append_heavy():
-    print("=== SCENARIO: MULTIPROCESS_APPEND_HEAVY (20 processes × 50 ops = 1000 records) ===")
-    atomic_write_json(AUDIT_LOG, [])
+    print(
+        "=== SCENARIO: MULTIPROCESS_APPEND_HEAVY (20 processes × 50 ops = 1000 records) ==="
+    )
+    atomic_write_json(AUDIT_LOG, [], use_lock=True)
 
     procs = []
     for i in range(20):
@@ -65,17 +93,35 @@ def test_multiprocess_append_heavy():
         p.join()
 
     data = load_audit_log_safely(AUDIT_LOG)
-    print(f"Total heavy entries recorded: {len(data)} (Expected: 1000)")
-    assert len(data) == 1000, f"Expected 1000 entries, got {len(data)}"
+    expected = 1000
 
-    unique_ids = {(item.get("process"), item.get("op")) for item in data if "process" in item}
-    print(f"Unique heavy process/op pairs: {len(unique_ids)} (Expected: 1000)")
-    assert len(unique_ids) == 1000, f"Expected 1000 unique pairs, got {len(unique_ids)}"
+    from collections import Counter
+
+    ids = [
+        (item.get("process"), item.get("op"))
+        for item in data
+        if isinstance(item, dict) and "process" in item
+    ]
+    counter = Counter(ids)
+    duplicates = {key: count for key, count in counter.items() if count > 1}
+    missing = []
+    for p in range(20):
+        for op in range(50):
+            if (p, op) not in counter:
+                missing.append((p, op))
+
+    print(f"Total heavy entries recorded: {len(data)} (Expected: {expected})")
+    assert not duplicates, f"Duplicates found: {duplicates}"
+    assert not missing, f"Missing entries: {missing}"
+    assert len(data) == expected, f"Expected {expected} entries, got {len(data)}"
     print("[SUCCESS] MULTIPROCESS_APPEND_HEAVY passed.")
 
+
 def test_multiprocess_read_write_race():
-    print("=== SCENARIO: MULTIPROCESS_READ_WRITE_RACE (5 writers, 5 readers × 30 ops) ===")
-    atomic_write_json(AUDIT_LOG, [])
+    print(
+        "=== SCENARIO: MULTIPROCESS_READ_WRITE_RACE (5 writers, 5 readers × 30 ops) ==="
+    )
+    atomic_write_json(AUDIT_LOG, [], use_lock=True)
 
     procs = []
     for i in range(5):
@@ -89,15 +135,34 @@ def test_multiprocess_read_write_race():
         p.join()
 
     data = load_audit_log_safely(AUDIT_LOG)
-    print(f"Total entries after race: {len(data)} (Expected: 150)")
-    assert len(data) == 150, f"Expected 150 entries, got {len(data)}"
+    expected = 150
 
-    unique_ids = {(item.get("process"), item.get("op")) for item in data if "process" in item}
-    assert len(unique_ids) == 150, f"Expected 150 unique pairs, got {len(unique_ids)}"
-    print("[SUCCESS] MULTIPROCESS_READ_WRITE_RACE passed.")
+    from collections import Counter
+
+    ids = [
+        (item.get("process"), item.get("op"))
+        for item in data
+        if isinstance(item, dict) and "process" in item
+    ]
+    counter = Counter(ids)
+    duplicates = {key: count for key, count in counter.items() if count > 1}
+    missing = []
+    for p in range(5):
+        for op in range(30):
+            if (p, op) not in counter:
+                missing.append((p, op))
+
+    print(f"Total entries after race: {len(data)} (Expected: {expected})")
+    assert not duplicates, f"Duplicates found: {duplicates}"
+    assert not missing, f"Missing entries: {missing}"
+    assert len(data) == expected, f"Expected {expected} entries, got {len(data)}"
+    print("[SUCCESS] MULTIPROCESS_READ_WRITE_RACE passed (all writes preserved).")
+
 
 def test_multiprocess_repair_race():
-    print("=== SCENARIO: MULTIPROCESS_REPAIR_RACE (Corrupted Log Hit by 10 Processes) ===")
+    print(
+        "=== SCENARIO: MULTIPROCESS_REPAIR_RACE (Corrupted Log Hit by 10 Processes) ==="
+    )
     corrupt_file = AUDIT_LOG + ".corrupt"
     if os.path.exists(corrupt_file):
         os.remove(corrupt_file)
@@ -123,21 +188,24 @@ def test_multiprocess_repair_race():
     print(f"Backup verified: {corrupt_file} exists and size > 0.")
     print("[SUCCESS] MULTIPROCESS_REPAIR_RACE with backup verification passed.")
 
+
 def locker_holder(lock_path, hold_duration):
     import portalocker
+
     try:
         with portalocker.Lock(lock_path, timeout=20, mode="a+", encoding="utf-8"):
             time.sleep(hold_duration)
     except Exception as e:
         print(f"Locker holder error: {e}")
 
+
 def test_forced_lock_contention():
     print("=== SCENARIO: FORCED_LOCK_CONTENTION ===")
     lock_path = AUDIT_LOG + ".lock"
-    
+
     holder_p = mp.Process(target=locker_holder, args=(lock_path, 3))
     holder_p.start()
-    
+
     time.sleep(0.5)
 
     start_time = time.time()
@@ -147,8 +215,11 @@ def test_forced_lock_contention():
     holder_p.join()
 
     print(f"Lock contention wait time: {elapsed:.2f}s (Expected >= 2s)")
-    assert elapsed >= 1.8, f"Expected append to block for at least 1.8s, took {elapsed:.2f}s"
+    assert elapsed >= 1.8, (
+        f"Expected append to block for at least 1.8s, took {elapsed:.2f}s"
+    )
     print("[SUCCESS] FORCED_LOCK_CONTENTION passed.")
+
 
 if __name__ == "__main__":
     mp.freeze_support()
@@ -158,4 +229,6 @@ if __name__ == "__main__":
     test_multiprocess_read_write_race()
     test_multiprocess_repair_race()
     test_forced_lock_contention()
-    print("\nAll multi-process concurrency, heavy load, repair backup, and lock contention scenarios passed successfully!")
+    print(
+        "\nAll multi-process concurrency, heavy load, repair backup, and lock contention scenarios passed successfully!"
+    )

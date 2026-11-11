@@ -1,0 +1,110 @@
+[
+  {
+    "STATUS": "OK",
+    "HTTP_STATUS": 200,
+    "CONTENT_LENGTH": 127,
+    "CONTENT_TYPE": "text/plain; charset=utf-8",
+    "LAST_MODIFIED": "2026-11-06T10:26:46.7806228+02:00",
+    "ETAG": "\"9eb1a813ced3fe30637d8b638e7047bf690942ed669bacecedb6c80f38316104\"",
+    "FILE": "Молдчелл.privind tehnologia informaţiei Capitalul social 190001000 Lei.pdf",
+    "SIZE": 127,
+    "SHA256": "A05373A7D2C1FC824EA64389A22449D809AB5B8DC6864068958165608906FF50",
+    "URL": "https://raw.githubusercontent.com/arhiv1973b/ACTOR_EVIDENCE_MOLDCELL/main/docs/Молдчелл.privind%20tehnologia%20informaţiei%20Capitalul%20social%20190001000%20Lei.pdf"
+  },
+  {
+    "STATUS": "OK",
+    "HTTP_STATUS": 200,
+    "CONTENT_LENGTH": 127,
+    "CONTENT_TYPE": "text/plain; charset=utf-8",
+    "LAST_MODIFIED": "2026-11-06T10:26:47.2539396+02:00",
+    "ETAG": "\"876b24402d9000ee7d9a9d52b9e98c72839151f8ef30b313ab265573e4de5608\"",
+    "FILE": "Moldcell.pdf",
+    "SIZE": 127,
+    "SHA256": "6C9150D18EF4BC11AF735FA8A84C632EE7D7C2DCA2326B324E258B754DE12CC4",
+    "URL": "https://raw.githubusercontent.com/arhiv1973b/ACTOR_EVIDENCE_MOLDCELL/main/docs/Moldcell.pdf"
+  },
+  {
+    "STATUS": "OK",
+    "HTTP_STATUS": 200,
+    "CONTENT_LENGTH": 127,
+    "CONTENT_TYPE": "text/plain; charset=utf-8",
+    "LAST_MODIFIED": "2026-11-06T10:26:47.7528597+02:00",
+    "ETAG": "\"a8dba3a03d9c7f87ae73c1d2da62c6de3fdf265dad1f4c7d8a0a3faec9db3f2a\"",
+    "FILE": "Stimate Judecator V. Dodon si ai Moldcell.подписан.pdf",
+    "SIZE": 127,
+    "SHA256": "9B35416D9BB6FAADE8AC5E4F7AAE65ED8C148D813640312926C478946F3D405A",
+    "URL": "https://raw.githubusercontent.com/arhiv1973b/ACTOR_EVIDENCE_MOLDCELL/main/docs/Stimate%20Judecator%20V.%20Dodon%20si%20ai%20Moldcell.подписан.pdf"
+  },
+  {
+    "STATUS": "OK",
+    "HTTP_STATUS": 200,
+    "CONTENT_LENGTH": 200,
+    "CONTENT_TYPE": "text/plain; charset=utf-8",
+    "LAST_MODIFIED": "2026-11-06T10:26:48.1878807+02:00",
+    "ETAG": "\"7f4b0fcfeefda025ed75f0740de1aa6abe0a9c625be52a702127bdfb371f44d7\"",
+    "FILE": "Судье Додон исполнительные листы.html",
+    "SIZE": 200,
+    "SHA256": "C2AC0B9FC55F66228840F89C6B0B262A3382062BC7E0BFF34EDE48756D553C69",
+    "URL": "https://raw.githubusercontent.com/arhiv1973b/ACTOR_EVIDENCE_MOLDCELL/main/docs/Судье%20Додон%20исполнительные%20листы.html"
+  },
+  {
+    "STATUS": "OK",
+    "HTTP_STATUS": 200,
+    "CONTENT_LENGTH": 223,
+    "CONTENT_TYPE": "text/plain; charset=utf-8",
+    "LAST_MODIFIED": "2026-11-06T10:26:48.6334002+02:00",
+    "ETAG": "\"470ecf2137cae24aafd55ee1bc50e24e2c34a80a3236244f3ce36c72b280b760\"",
+    "FILE": "Citație MACERET ALEXEI vs. CONSILIUL PENTRU EGALITATE, SA Moldcell - Acţiuni pri.html",
+    "SIZE": 223,
+    "SHA256": "0074D356F3CB3806F84A20BA42FB22DE4C2CCBCC1CD390A05F5C044A65BA05ED",
+    "URL": "https://raw.githubusercontent.com/arhiv1973b/ACTOR_EVIDENCE_MOLDCELL/main/docs/Citație%20MACERET%20ALEXEI%20vs.%20CONSILIUL%20PENTRU%20EGALITATE,%20SA%20Moldcell%20-%20Acţiuni%20pri.html"
+  },
+  {
+    "STATUS": "OK",
+    "HTTP_STATUS": 200,
+    "CONTENT_LENGTH": 256,
+    "CONTENT_TYPE": "text/plain; charset=utf-8",
+    "LAST_MODIFIED": "2026-11-06T10:26:49.0622477+02:00",
+    "ETAG": "\"24eaac4079da429d073bc8b32d4e9b55cd6a822fb71ebca70d69db70cd5d8645\"",
+    "FILE": "Macheret împotriva Consiliului pentru Egalitate și Protecție Discriminării - Moldcell_pdf.html",
+    "SIZE": 256,
+    "SHA256": "C86C6556E249923E1AFA07FD2671805C48642FA9EC738F537132E637B5FFFECA",
+    "URL": "https://raw.githubusercontent.com/arhiv1973b/ACTOR_EVIDENCE_MOLDCELL/main/docs/Macheret%20împotriva%20Consiliului%20pentru%20Egalitate%20și%20Protecție%20Discriminării%20-%20Moldcell_pdf.html"
+  },
+  {
+    "STATUS": "OK",
+    "HTTP_STATUS": 200,
+    "CONTENT_LENGTH": 128,
+    "CONTENT_TYPE": "text/plain; charset=utf-8",
+    "LAST_MODIFIED": "2026-11-06T10:26:49.4905752+02:00",
+    "ETAG": "\"565a7841124c11fecc630b666b34bfc20bdb4b55c84b4d63f082c866c37a60be\"",
+    "FILE": "Moldcell_подписан_pdf.html",
+    "SIZE": 128,
+    "SHA256": "773E82BC287F9DBD82B59AF1C66F82125CC80C2CCF9D163979F3FF1242BA930A",
+    "URL": "https://raw.githubusercontent.com/arhiv1973b/ACTOR_EVIDENCE_MOLDCELL/main/docs/Moldcell_подписан_pdf.html"
+  },
+  {
+    "STATUS": "OK",
+    "HTTP_STATUS": 200,
+    "CONTENT_LENGTH": 10137,
+    "CONTENT_TYPE": "text/plain; charset=utf-8",
+    "LAST_MODIFIED": "2026-11-06T10:26:50.0174866+02:00",
+    "ETAG": "\"db9b9fcea7d39ed518815bd19517107dfe2e134228f1b2e2025277f6079ab6fe\"",
+    "FILE": "iCloudPhotos_Photos_Pregătirea_declaraţiei_pentru_instanţ.pdf_translated.txt",
+    "SIZE": 10137,
+    "SHA256": "1633F62ABCFC9CE424A45B2166FE9469E1ED10EEB3E6786C3FC1184FA3B97F8D",
+    "URL": "https://raw.githubusercontent.com/arhiv1973b/ACTOR_EVIDENCE_MOLDCELL/main/docs/iCloudPhotos_Photos_Pregătirea_declaraţiei_pentru_instanţ.pdf_translated.txt"
+  },
+  {
+    "STATUS": "OK",
+    "HTTP_STATUS": 200,
+    "CONTENT_LENGTH": 267570,
+    "CONTENT_TYPE": "text/plain; charset=utf-8",
+    "LAST_MODIFIED": "2026-11-06T10:26:50.6287530+02:00",
+    "ETAG": "\"88fbed9e1a3de191cc50ce325858aa8c5d119d59400fdfd572e29443283dce9c\"",
+    "FILE": "Донос.pdf_translated.txt",
+    "SIZE": 267570,
+    "SHA256": "5FB2AE132369FF8AD836950BA850D69FFB05F4202235F1696F5363B2F5F47C44",
+    "URL": "https://raw.githubusercontent.com/arhiv1973b/ACTOR_EVIDENCE_MOLDCELL/main/docs/Донос.pdf_translated.txt"
+  }
+]

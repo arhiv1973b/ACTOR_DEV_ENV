@@ -67,4 +67,11 @@ tarballs/
 
 "secure_logs/"  
 "grok_output/"  
-"output/" 
+"output/"
+
+# Evidence vault artifacts
+downloads_evidence/
+evidence-vault/*.jpg
+evidence-vault-tmp/
+*.lock
+*.corrupt 

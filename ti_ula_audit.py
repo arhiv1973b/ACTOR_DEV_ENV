@@ -31,7 +31,10 @@ def generate_manifest(target_dir):
     }
 
     for root, dirs, files in os.walk(target_dir):
-        dirs[:] = [d for d in dirs if not d.startswith('.')]
+        # Exclude hidden directories AND node_modules
+        dirs[:] = [d for d in dirs if not d.startswith('.') and d != 'node_modules']
+        
+        all_hashes = []
         for file in files:
             if file.startswith('.'):
                 continue
@@ -39,14 +42,16 @@ def generate_manifest(target_dir):
             rel_path = os.path.relpath(filepath, target_dir)
             try:
                 stat = os.stat(filepath)
+                file_hash = calculate_sha256(filepath)
                 file_info = {
                     "path": rel_path,
-                    "sha256": calculate_sha256(filepath),
+                    "sha256": file_hash,
                     "size_bytes": stat.st_size,
                     "mtime_utc": datetime.fromtimestamp(stat.st_mtime, timezone.utc).isoformat()
                 }
                 manifest["payload"]["files"].append(file_info)
-                print(f"[OK] {rel_path} -> {file_info['sha256'][:8]}...")
+                all_hashes.append(file_hash)
+                print(f"[OK] {rel_path} -> {file_hash[:8]}...")
             except PermissionError:
                 print(f"[ACCESS DENIED] Пропуск файла: {rel_path}")
                 manifest["payload"]["files"].append({
@@ -55,6 +60,23 @@ def generate_manifest(target_dir):
                 })
             except Exception as e:
                 print(f"[ERROR] {rel_path}: {e}")
+
+    # Simple Merkle Root calculation
+    def calculate_merkle_root(hashes):
+        if not hashes: return "0" * 64
+        hashes.sort()
+        while len(hashes) > 1:
+            new_hashes = []
+            for i in range(0, len(hashes), 2):
+                if i + 1 < len(hashes):
+                    combined = hashes[i] + hashes[i+1]
+                else:
+                    combined = hashes[i]
+                new_hashes.append(hashlib.sha256(combined.encode()).hexdigest())
+            hashes = new_hashes
+        return hashes[0]
+
+    manifest["ti_ula_header"]["merkle_root"] = calculate_merkle_root([f['sha256'] for f in manifest["payload"]["files"] if 'sha256' in f])
     manifest_path = os.path.join(target_dir, "evidence_manifest.json")
     with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2, sort_keys=True)

@@ -862,18 +862,38 @@
     "verification_status": "cryptographically_sealed_immutable",
     "actor_identity": "A©t0r (arhiv1973b)",
     "legal_scope": "Erga Omnes, ВДПЧ 1948",
-    "last_verification_utc": "2026-11-05T22:42:56.809115+00:00",
-    "secure_logs_merkle_root": "eb9e96471001e883ad970dc23b1026192008410fd7a7058a7fdbcb633ecfd16a",
+    "last_verification_utc": "2026-11-06T08:30:49.380117+00:00",
+    "secure_logs_merkle_root": "b8f39c86e7b4e350ad0dc43c67f8564ee877cb21b2be2a719bb7cb246997dcac",
     "audit_files": [
         {
             "filename": "audit_links_20261106_004113.log",
-            "sha256": "579c3409cc525407a6ceafc5fd9ac89f768992dc5c89216f4ab1f05ed3c11c73",
-            "timestamp": "2026-11-05T22:42:56.632995+00:00"
+            "sha256": "a0ccba3d4b86fc35149e522cf6a29909b45292ed41585f0f4c3d2f92bac282c4",
+            "timestamp": "2026-11-05T22:42:58.830367+00:00"
         },
         {
             "filename": "audit_links_20261106_004113.log.sig",
             "sha256": "ff49f5e49015f304f41d642ebb7f8bdf9f950b3b34a5937861cd0730166c9eef",
             "timestamp": "2026-11-05T22:42:56.591459+00:00"
+        },
+        {
+            "filename": "audit_links_20261106_094045.log",
+            "sha256": "85cf1f489315173261c8d7e3901df41e738e7daba25de3667cc26bbf3e5ee4d2",
+            "timestamp": "2026-11-06T07:42:23.815328+00:00"
+        },
+        {
+            "filename": "audit_links_20261106_094045.log.sig",
+            "sha256": "d86856268edb0736130c7b58876a8d4771f2986cbd7492d2ffaac88e560165e9",
+            "timestamp": "2026-11-06T07:42:20.383348+00:00"
+        },
+        {
+            "filename": "audit_links_20261106_103016.log",
+            "sha256": "7136d1c8787b703bb2bfaf72b0643ff1f5c4494dfdb22c2a4292df5f1ebe0876",
+            "timestamp": "2026-11-06T08:30:49.190150+00:00"
+        },
+        {
+            "filename": "audit_links_20261106_103016.log.sig",
+            "sha256": "28f9a3bca380c5b05b747cb0c8d191c6161d2741f130710a968fb9e1b8015762",
+            "timestamp": "2026-11-06T08:30:49.151286+00:00"
         }
     ]
 }

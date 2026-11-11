@@ -1,0 +1,10 @@
+{
+  "module": "Edge_Print_Developer_Mode",
+  "version": "1.0",
+  "functions": [
+    "trace_page_render",
+    "intercept_print_stream",
+    "debug_print_pipeline"
+  ],
+  "security_policy": "restricted"
+}
