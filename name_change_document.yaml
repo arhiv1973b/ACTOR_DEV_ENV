@@ -1,0 +1,38 @@
+schema_version: "3.4.0-TI-ULA"
+document_metadata:
+  document_type: "Extras de pe actul de schimbare a numelui şi/sau prenumelui"
+  document_type_ru: "Выписка из акта о перемене фамилии и/или имени"
+  issuer:
+    state: "Republica Moldova"
+    authority: "Agenţia Servicii Publice"
+    ecosystem: "EVO / Portalul guvernamental al cetățeanului (mcabinet.gov.md)"
+  identifier_references:
+    extract_number: "SN2026003728"
+    civil_status_record_number: "26327379"
+    date_of_issue: "09.11.2026"
+
+holder_personal_data:
+  identification_number_idnp: "2000001159655"
+  date_of_birth: "23.06.1973"
+  place_of_birth: "CHIŞINĂU"
+  before_change:
+    surname: "MACERET"
+    forename: "ALEXEI"
+  after_change:
+    surname: "MACHERET"
+    forename: "ALEXEI"
+  date_of_change: "09.11.2026"
+
+legal_and_cryptographic_compliance:
+  electronic_signature_framework:
+    law_reference: "Legea Republicii Moldova nr. 124/2022 privind identificarea electronică şi serviciile de încredere"
+    verification_service: "MSign"
+    verification_url: "https://msign.gov.md"
+    portal_url: "https://mcabinet.gov.md"
+  issuance_basis:
+    law_reference: "Legea Republicii Moldova nr. 100/2001 privind actele de stare civilă"
+    record_status: "Copie exactă a înregistrărilor efectuate în Sistemul informaţional „Acte de stare civilă”"
+  cryptographic_witness:
+    algorithm: "SHA-256"
+    content_addressing_standard: "Ed25519 / Merkle-Tree Root Anchoring"
+    verification_method: "QR-code status validation & MSign integration"
