@@ -1,0 +1,18 @@
+{
+  "apostille_code": "IJ1S0403JYEH8",
+  "security_code": "2013073967857",
+  "download_timestamp": "2026-11-11T22:07:18.858728+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/IJ1S0403JYEH8/securityCode/2013073967857",
+  "sha256": "1f3fb0a8109fd581e457af92471a67aca3045c3092150648133ba5e704396602",
+  "file_size": 824491,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\IJ1S0403JYEH8.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

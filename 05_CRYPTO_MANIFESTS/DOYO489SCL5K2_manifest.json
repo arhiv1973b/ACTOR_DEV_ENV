@@ -1,0 +1,18 @@
+{
+  "apostille_code": "DOYO489SCL5K2",
+  "security_code": "2013074137051",
+  "download_timestamp": "2026-11-11T21:51:07.930407+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/DOYO489SCL5K2/securityCode/2013074137051",
+  "sha256": "3cdf4ddcf416781bc3474dee8b662cd13d5781ac399d9ad0232ad5fcbabd8b79",
+  "file_size": 1318677,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\DOYO489SCL5K2.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

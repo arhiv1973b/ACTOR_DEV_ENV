@@ -1,0 +1,18 @@
+{
+  "apostille_code": "IQVY40CXISHM2",
+  "security_code": "2013075043962",
+  "download_timestamp": "2026-11-11T22:12:16.840067+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/IQVY40CXISHM2/securityCode/2013075043962",
+  "sha256": "1c0506624ec595c486154cb548dac31b5d5989b7d7a20a1f213382053ba70b04",
+  "file_size": 944713,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\IQVY40CXISHM2.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

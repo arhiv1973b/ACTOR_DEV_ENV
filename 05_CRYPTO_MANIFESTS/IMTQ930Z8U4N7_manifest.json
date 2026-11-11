@@ -1,0 +1,18 @@
+{
+  "apostille_code": "IMTQ930Z8U4N7",
+  "security_code": "2013074678387",
+  "download_timestamp": "2026-11-11T22:10:14.038607+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/IMTQ930Z8U4N7/securityCode/2013074678387",
+  "sha256": "d1c477ad28f2fff52b79c96cfd99cabde6342118d43980d5ef1e0e96de9dec2b",
+  "file_size": 2889369,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\IMTQ930Z8U4N7.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

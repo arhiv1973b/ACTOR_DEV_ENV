@@ -1,0 +1,18 @@
+{
+  "apostille_code": "3SUU150WIRBO8",
+  "security_code": "2013075137333",
+  "download_timestamp": "2026-11-11T22:12:42.360763+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/3SUU150WIRBO8/securityCode/2013075137333",
+  "sha256": "7f3a2e3e2b8789252410e43465a93c8f73a2fc11511f981bfbe109fbacf878a5",
+  "file_size": 992006,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\3SUU150WIRBO8.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

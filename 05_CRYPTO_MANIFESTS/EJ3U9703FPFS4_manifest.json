@@ -1,0 +1,18 @@
+{
+  "apostille_code": "EJ3U9703FPFS4",
+  "security_code": "2013074155734",
+  "download_timestamp": "2026-11-11T21:47:40.988161+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/EJ3U9703FPFS4/securityCode/2013074155734",
+  "sha256": "a5b50719ed9063c111315318f2d1060381779e9add6549156d117b73424b6cfc",
+  "file_size": 1017883,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\EJ3U9703FPFS4.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

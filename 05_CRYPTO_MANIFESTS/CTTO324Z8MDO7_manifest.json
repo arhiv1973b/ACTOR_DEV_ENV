@@ -1,0 +1,18 @@
+{
+  "apostille_code": "CTTO324Z8MDO7",
+  "security_code": "2013074147166",
+  "download_timestamp": "2026-11-11T21:48:34.278834+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/CTTO324Z8MDO7/securityCode/2013074147166",
+  "sha256": "d88d86ed17894d2261189fb69d4306971d0d6a18087a1024983ffa63275e9fbc",
+  "file_size": 2554893,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\CTTO324Z8MDO7.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

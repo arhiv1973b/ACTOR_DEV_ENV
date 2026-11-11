@@ -1,0 +1,18 @@
+{
+  "apostille_code": "5G2T615VCPFG1",
+  "security_code": "2013073969189",
+  "download_timestamp": "2026-11-11T21:46:36.157004+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/5G2T615VCPFG1/securityCode/2013073969189",
+  "sha256": "ec37be28c4ca695f325161d742b51ed3a3acc634e330b45cf15d9ae32cc32831",
+  "file_size": 633206,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\5G2T615VCPFG1.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

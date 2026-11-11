@@ -1,0 +1,18 @@
+{
+  "apostille_code": "FJXU588SHPDP2",
+  "security_code": "2013074127359",
+  "download_timestamp": "2026-11-11T21:59:56.413318+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/FJXU588SHPDP2/securityCode/2013074127359",
+  "sha256": "a502290a881d675528902a31f05d56392b3825d54df9220a953cb8337be5e78d",
+  "file_size": 7638525,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\FJXU588SHPDP2.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

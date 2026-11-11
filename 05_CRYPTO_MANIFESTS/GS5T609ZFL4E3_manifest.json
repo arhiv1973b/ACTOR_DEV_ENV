@@ -1,0 +1,18 @@
+{
+  "apostille_code": "GS5T609ZFL4E3",
+  "security_code": "2013074077739",
+  "download_timestamp": "2026-11-11T22:02:23.006122+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/GS5T609ZFL4E3/securityCode/2013074077739",
+  "sha256": "fc97307f82c8f5de540dbd1670f99e4a77d9e48cb1ce1ea31d253d7452d2f878",
+  "file_size": 1319745,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\GS5T609ZFL4E3.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

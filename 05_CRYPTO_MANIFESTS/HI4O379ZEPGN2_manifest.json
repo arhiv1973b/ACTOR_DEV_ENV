@@ -1,0 +1,18 @@
+{
+  "apostille_code": "HI4O379ZEPGN2",
+  "security_code": "2013074469061",
+  "download_timestamp": "2026-11-11T22:12:29.804376+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/HI4O379ZEPGN2/securityCode/2013074469061",
+  "sha256": "8ef55a320172d272140b6a3104094c67b1a8229fd9404c7ea4ba8a994d98e87e",
+  "file_size": 3916059,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\HI4O379ZEPGN2.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

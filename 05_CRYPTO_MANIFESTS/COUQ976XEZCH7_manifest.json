@@ -1,0 +1,18 @@
+{
+  "apostille_code": "COUQ976XEZCH7",
+  "security_code": "2013074010279",
+  "download_timestamp": "2026-11-11T21:43:18.240225+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/COUQ976XEZCH7/securityCode/2013074010279",
+  "sha256": "e562ef6a905b9cd7d063f9c7b9f8629ed5a5e47f53729489039024055ef0026b",
+  "file_size": 1426546,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\COUQ976XEZCH7.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

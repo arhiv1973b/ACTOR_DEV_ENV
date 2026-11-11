@@ -1,0 +1,18 @@
+{
+  "apostille_code": "EJ2077249VEH8",
+  "security_code": "2013074821707",
+  "download_timestamp": "2026-11-11T22:10:40.424080+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/EJ2077249VEH8/securityCode/2013074821707",
+  "sha256": "783544c0f3bab9950028fc78997eca7111b06cccd3cd89e3caf94585a65715f9",
+  "file_size": 692534,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\EJ2077249VEH8.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

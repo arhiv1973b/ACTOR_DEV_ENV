@@ -1,0 +1,18 @@
+{
+  "apostille_code": "HS5N558YBNEK3",
+  "security_code": "2013074004858",
+  "download_timestamp": "2026-11-11T21:42:53.473298+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/HS5N558YBNEK3/securityCode/2013074004858",
+  "sha256": "d29aacbe7050087d7d21f41ac5570ef88635685e179e7ce7424ff03a397265e3",
+  "file_size": 1583911,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\HS5N558YBNEK3.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

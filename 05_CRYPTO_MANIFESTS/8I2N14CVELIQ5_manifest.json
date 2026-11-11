@@ -1,0 +1,18 @@
+{
+  "apostille_code": "8I2N14CVELIQ5",
+  "security_code": "2013073980269",
+  "download_timestamp": "2026-11-11T21:45:58.855045+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/8I2N14CVELIQ5/securityCode/2013073980269",
+  "sha256": "f7e033be9feddcf46679faade6850577290160c6cd4fdd7db0a760e14c70283e",
+  "file_size": 9501374,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\8I2N14CVELIQ5.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

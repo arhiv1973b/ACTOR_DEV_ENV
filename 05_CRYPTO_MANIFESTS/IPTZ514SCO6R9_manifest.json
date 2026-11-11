@@ -1,0 +1,18 @@
+{
+  "apostille_code": "IPTZ514SCO6R9",
+  "security_code": "2013074007644",
+  "download_timestamp": "2026-11-11T21:59:18.985206+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/IPTZ514SCO6R9/securityCode/2013074007644",
+  "sha256": "72a44af1c8e0bc17a94d50a49e6735b86865c851465efd323aeaf3adb0fe9505",
+  "file_size": 819136,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\IPTZ514SCO6R9.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

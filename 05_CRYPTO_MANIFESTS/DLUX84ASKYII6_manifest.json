@@ -1,0 +1,18 @@
+{
+  "apostille_code": "DLUX84ASKYII6",
+  "security_code": "2013074013836",
+  "download_timestamp": "2026-11-11T21:43:23.894489+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/DLUX84ASKYII6/securityCode/2013074013836",
+  "sha256": "f55b6507108a060adc0e80bc1fb735f830578775a866344dd40d700255e82629",
+  "file_size": 625397,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\DLUX84ASKYII6.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

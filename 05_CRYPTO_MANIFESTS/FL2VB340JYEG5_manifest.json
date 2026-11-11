@@ -1,0 +1,18 @@
+{
+  "apostille_code": "FL2VB340JYEG5",
+  "security_code": "2013073998714",
+  "download_timestamp": "2026-11-11T22:05:35.136644+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/FL2VB340JYEG5/securityCode/2013073998714",
+  "sha256": "fa91a1e4e45de29120cad719b36734f7a79ac5101821b74edd47c2c5adda9c61",
+  "file_size": 3363826,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\FL2VB340JYEG5.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

@@ -1,0 +1,18 @@
+{
+  "apostille_code": "CK5O133ZKLJE8",
+  "security_code": "2013074127359",
+  "download_timestamp": "2026-11-11T21:50:46.167159+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/CK5O133ZKLJE8/securityCode/2013074127359",
+  "sha256": "07d7064fe72020b0317ee24f358e1826a24175aac249e21e2454b4acdd1c63ff",
+  "file_size": 2932843,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\CK5O133ZKLJE8.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

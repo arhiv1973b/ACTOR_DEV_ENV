@@ -1,0 +1,18 @@
+{
+  "apostille_code": "CI6P9821GWFR5",
+  "security_code": "2013074232763",
+  "download_timestamp": "2026-11-11T22:02:53.569829+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/CI6P9821GWFR5/securityCode/2013074232763",
+  "sha256": "e79df00321e26cba37f4c4e4930f4c36206e70c4e3100a5109abdaa5abd41a01",
+  "file_size": 9999431,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\CI6P9821GWFR5.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}

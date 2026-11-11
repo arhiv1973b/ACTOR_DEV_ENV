@@ -1,0 +1,18 @@
+{
+  "apostille_code": "CFYN438ZLLFN2",
+  "security_code": "2013074127359",
+  "download_timestamp": "2026-11-11T21:50:40.559027+00:00",
+  "http_status": 200,
+  "redirected": false,
+  "redirect_chain": [],
+  "final_url": "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/CFYN438ZLLFN2/securityCode/2013074127359",
+  "sha256": "c2bd7a87ffe6d91f93763105251426f8c74874cd4058a430fe763d82b6eae64b",
+  "file_size": 4705189,
+  "pdf_signature": {
+    "signed": true,
+    "signature_count": 1
+  },
+  "local_file": "downloads\\CFYN438ZLLFN2.pdf",
+  "network_mode": "direct_https_request",
+  "verification_state": "download_success"
+}
