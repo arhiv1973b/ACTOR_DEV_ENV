@@ -1,0 +1,21 @@
+{
+  "audit_manifest": {
+    "case_reference": "1га-834/09",
+    "critical_date": "21.07.2009",
+    "mvd_fraudulent_mechanism": {
+      "type": "REGISTRY_FALSIFICATION",
+      "description": "Manipulation of MVD Cazier to reclassify rehabilitation (via CSJ Decision 21.07.2009) as 'served sentence' (26 days).",
+      "purpose": "Denial of rehabilitation and obstruction of claims to facilitate financial alienation."
+    },
+    "financial_nexus": {
+      "mechanism": "Registry-enabled defamation of legal status",
+      "impact": "Obstruction of justice and asset recovery; Alienation of 25M+ MDL",
+      "causal_link": "The fraudulent registry entry directly blocked rehabilitation claims and enabled unauthorized fund alienation."
+    },
+    "evidence_references": {
+      "primary_pdf": "cazier_counter_registry_full_97.pdf",
+      "manifest_json": "cazier_evidence_manifest_full.json",
+      "registry_item": "Case 1га-834/09"
+    }
+  }
+}
