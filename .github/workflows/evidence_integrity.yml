@@ -1,0 +1,97 @@
+name: Verify Archive Integrity
+
+on:
+  push:
+    branches:
+      - main
+      - evidence-mvd-dec-2025
+  pull_request:
+    branches:
+      - main
+      - evidence-mvd-dec-2025
+  workflow_dispatch:
+
+jobs:
+  integrity-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify INTEGRITY_WITNESS.json checksum
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          WITNESS_FILE="INTEGRITY_WITNESS.json"
+          CHECKSUM_FILE="INTEGRITY_WITNESS.json.sha256"
+
+          if [ ! -f "$WITNESS_FILE" ]; then
+            echo "ERROR: Не найден эталонный манифест $WITNESS_FILE" >&2
+            exit 1
+          fi
+
+          if [ ! -f "$CHECKSUM_FILE" ]; then
+            echo "ERROR: Не найден файл эталонной контрольной суммы $CHECKSUM_FILE" >&2
+            exit 1
+          fi
+
+          EXPECTED_HASH="$(awk '{print tolower($1)}' "$CHECKSUM_FILE")"
+          ACTUAL_HASH="$(sha256sum "$WITNESS_FILE" | awk '{print tolower($1)}')"
+
+          if ! [[ "$EXPECTED_HASH" =~ ^[0-9a-f]{64}$ ]]; then
+            echo "ERROR: Некорректный формат SHA-256 в $CHECKSUM_FILE: '$EXPECTED_HASH'" >&2
+            exit 1
+          fi
+
+          if [ "$ACTUAL_HASH" != "$EXPECTED_HASH" ]; then
+            echo "ERROR: Нарушена целостность $WITNESS_FILE! Expected: $EXPECTED_HASH, Actual: $ACTUAL_HASH" >&2
+            exit 1
+          fi
+
+          echo "OK: Контрольная сумма $WITNESS_FILE подтверждена ($ACTUAL_HASH)"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run integrity verification and enforce zero Missing/Failed
+        shell: bash
+        run: |
+          set -euo pipefail
+          LOG_FILE="verify_integrity.log"
+
+          python scripts/verify_integrity.py | tee "$LOG_FILE"
+
+          python - "$LOG_FILE" <<'PY'
+          import re
+          import sys
+          from pathlib import Path
+
+          text = Path(sys.argv[1]).read_text(encoding="utf-8", errors="replace")
+
+          missing_matches = [int(m) for m in re.findall(r"\bMissing:\s*(\d+)", text, flags=re.IGNORECASE)]
+          failed_matches = [int(m) for m in re.findall(r"\bFailed:\s*(\d+)", text, flags=re.IGNORECASE)]
+
+          if not missing_matches or not failed_matches:
+              print("ERROR: Не удалось извлечь счётчики Missing/Failed из вывода verify_integrity.py", file=sys.stderr)
+              sys.exit(1)
+
+          missing = missing_matches[-1]
+          failed = failed_matches[-1]
+          print(f"Parsed counters -> Missing: {missing}, Failed: {failed}")
+
+          if missing > 0 or failed > 0:
+              print(f"ERROR: Блокировка сборки — обнаружены расхождения (Missing={missing}, Failed={failed})", file=sys.stderr)
+              sys.exit(1)
+          PY
+
+      - name: Upload verification log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verify-integrity-log-${{ github.run_id }}-${{ github.run_attempt }}
+          path: verify_integrity.log
+          if-no-files-found: ignore
+          retention-days: 30
