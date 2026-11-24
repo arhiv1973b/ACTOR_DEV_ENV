@@ -28,14 +28,38 @@ class AliasRouter:
 
     def _load_manifest(self, manifest_path):
         try:
-            with open(manifest_path, "r") as f:
+            with open(manifest_path, "r", encoding="utf-8", errors="ignore") as f:
                 data = json.load(f)
-            self.available_models = data.get("available_models", [])
-            logging.info(f"Загружено {len(self.available_models)} моделей из манифеста.")
+
+            manifest_models = data.get("available_models", [])
+
+            if isinstance(manifest_models, list):
+                self.available_models = [
+                    m.strip()
+                    for m in manifest_models
+                    if isinstance(m, str) and m.strip()
+                ]
+            else:
+                self.available_models = []
+
+            logging.info(
+                f"Загружено {len(self.available_models)} моделей из манифеста."
+            )
+
         except Exception as e:
             logging.error(f"Ошибка загрузки манифеста: {e}")
             self.available_models = []
 
+        if not self.available_models:
+            self.available_models = [
+                self.alias_name,
+                *self.fallback_models,
+            ]
+
+            logging.warning(
+                "available_models отсутствует или пуст. "
+                f"Используются модели по умолчанию: {self.available_models}"
+            )
     def classify_task(self, prompt):
         """Простейшая классификация задач"""
         local_keywords = ["статус", "лог", "интеграция", "проверка"]
@@ -165,3 +189,4 @@ if __name__ == "__main__":
 
     print("=== Статистика моделей ===")
     print(json.dumps(router.report_stats(), indent=2, ensure_ascii=False))
+

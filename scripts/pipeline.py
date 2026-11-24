@@ -1,184 +1,283 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
+import argparse
 import json
-import hashlib
-import requests
-import time
-import re
 import logging
+import re
 from pathlib import Path
-from concurrent.futures import ThreadPoolExecutor
-from pypdf import PdfReader
 
-# Configuration
-PDF_FILE = "apostille_registry_working_18.signed.pdf"
-DOWNLOADS = Path("downloads")
-REPORTS = Path("reports")
-DOCS = Path("docs")
-OUTPUT = Path("output")
+import fitz
 
-DOWNLOADS.mkdir(exist_ok=True)
-REPORTS.mkdir(exist_ok=True)
-DOCS.mkdir(exist_ok=True)
-OUTPUT.mkdir(exist_ok=True)
-
-MAX_STORAGE = 2147483648  # 2 GB
-MAX_WORKERS = 8
-MAX_RETRIES = 5
-REQUEST_TIMEOUT = 60
+LOGGER = logging.getLogger(__name__)
 
 logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
+
+CODE_RE = re.compile(
+    r"apostileCode/([A-Z0-9]+)/securityCode/(\d+)",
+    re.IGNORECASE,
 )
 
 URL_RE = re.compile(
-    r"https://apostila\.gov\.md/"
-    r"apostila/site/downloadApostila/"
-    r"apostileCode/([A-Z0-9]+)/securityCode/(\d+)"
+    r"https://apostila\.gov\.md/[^\s<>\"']+",
+    re.IGNORECASE,
 )
 
 
-def extract_registry():
-    reader = PdfReader(PDF_FILE)
-    records = []
-    num = 1
-    for page in reader.pages:
-        text = page.extract_text() or ""
-        for apostille, security in URL_RE.findall(text):
-            records.append(
-                {
-                    "num": num,
-                    "apostille": apostille,
-                    "security_code": security,
-                    "url": f"https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/{apostille}/securityCode/{security}",
-                }
-            )
-            num += 1
-
-    # Deduplicate
-    seen = set()
-    unique = []
-    for record in records:
-        key = (record["apostille"], record["security_code"])
-        if key not in seen:
-            seen.add(key)
-            unique.append(record)
-    return unique
-
-
-def verify_record(record):
-    result = record.copy()
-    result.update(
-        {"status": 0, "sha256": None, "size": 0, "final_url": None, "error": None}
+def build_url(
+    apostille_code: str,
+    security_code: str,
+) -> str:
+    return (
+        "https://apostila.gov.md/apostila/site/downloadApostila/"
+        f"apostileCode/{apostille_code}/"
+        f"securityCode/{security_code}"
     )
+
+
+def save_registry_json(
+    registry: list,
+    output_dir: Path,
+    pretty: bool = False,
+) -> Path:
+    output_path = output_dir / "registry.json"
+
+    with output_path.open(
+        "w",
+        encoding="utf-8",
+    ) as f:
+        json.dump(
+            registry,
+            f,
+            ensure_ascii=False,
+            indent=2 if pretty else None,
+        )
+
+    return output_path
+
+
+def save_manifest(
+    registry: list,
+    registry_path: Path,
+    output_dir: Path,
+) -> Path:
+    manifest = {
+        "entries": len(registry),
+        "registry_file": str(registry_path),
+    }
+
+    manifest_path = output_dir / "manifest.json"
+
+    with manifest_path.open(
+        "w",
+        encoding="utf-8",
+    ) as f:
+        json.dump(
+            manifest,
+            f,
+            indent=2,
+            ensure_ascii=False,
+        )
+
+    return manifest_path
+
+
+def extract_codes(text: str):
+    """
+    Primary extraction method.
+    """
+
+    for match in CODE_RE.finditer(text):
+        yield (
+            match.group(1).upper(),
+            match.group(2),
+        )
+
+
+def extract_codes_from_urls(text: str):
+    """
+    Fallback extraction via full URLs.
+    """
+
+    for url in URL_RE.findall(text):
+        m = CODE_RE.search(url)
+
+        if not m:
+            continue
+
+        yield (
+            m.group(1).upper(),
+            m.group(2),
+        )
+
+
+def process_registry_pdf(
+    pdf_path: str | Path,
+    output_dir: Path,
+    pretty: bool = False,
+) -> list:
+    pdf_path = Path(pdf_path)
+
+    if not pdf_path.exists():
+        raise FileNotFoundError(f"PDF not found: {pdf_path}")
+
+    registry = []
+    seen = set()
+
+    LOGGER.info(
+        "Opening PDF: %s",
+        pdf_path,
+    )
+
+    doc = fitz.open(pdf_path)
 
     try:
-        response = requests.get(
-            record["url"], timeout=REQUEST_TIMEOUT, stream=True, allow_redirects=True
+        for page_number, page in enumerate(
+            doc,
+            start=1,
+        ):
+            text: str = page.get_text("text") or ""
+
+            # --------------------------------------------------
+            # Main extraction
+            # --------------------------------------------------
+
+            for apostille_code, security_code in extract_codes(text):
+                key = (
+                    apostille_code,
+                    security_code,
+                )
+
+                if key in seen:
+                    continue
+
+                seen.add(key)
+
+                registry.append(
+                    {
+                        "apostille": apostille_code,
+                        "security_code": security_code,
+                        "url": build_url(
+                            apostille_code,
+                            security_code,
+                        ),
+                        "page": page_number,
+                    }
+                )
+
+            # --------------------------------------------------
+            # Fallback extraction from full URLs
+            # --------------------------------------------------
+
+            for apostille_code, security_code in extract_codes_from_urls(text):
+                key = (
+                    apostille_code,
+                    security_code,
+                )
+
+                if key in seen:
+                    continue
+
+                seen.add(key)
+
+                registry.append(
+                    {
+                        "apostille": apostille_code,
+                        "security_code": security_code,
+                        "url": build_url(
+                            apostille_code,
+                            security_code,
+                        ),
+                        "page": page_number,
+                    }
+                )
+
+    finally:
+        doc.close()
+
+    # Контрольная проверка количества записей
+    MIN_EXPECTED_RECORDS = 80
+    if len(registry) < MIN_EXPECTED_RECORDS:
+        raise RuntimeError(
+            f"Unexpected registry size: {len(registry)}. Expected at least {MIN_EXPECTED_RECORDS}."
         )
-        result["status"] = response.status_code
-        result["final_url"] = response.url
 
-        if response.status_code != 200:
-            return result
-
-        filename = DOWNLOADS / f"{record['apostille']}.pdf"
-        sha = hashlib.sha256()
-
-        with open(filename, "wb") as f:
-            for chunk in response.iter_content(chunk_size=65536):
-                if chunk:
-                    f.write(chunk)
-                    sha.update(chunk)
-
-        result["sha256"] = sha.hexdigest()
-        result["size"] = filename.stat().st_size
-
-    except Exception as ex:
-        result["error"] = str(ex)
-        with open(REPORTS / "anomalies.jsonl", "a", encoding="utf-8") as log:
-            log.write(json.dumps(result, ensure_ascii=False) + "\n")
-
-    return result
-
-
-def current_storage():
-    return sum(f.stat().st_size for f in DOWNLOADS.glob("*.pdf"))
-
-
-def cleanup_fifo():
-    while current_storage() > MAX_STORAGE:
-        pdfs = list(DOWNLOADS.glob("*.pdf"))
-        if not pdfs:
-            break
-        oldest = min(pdfs, key=lambda p: p.stat().st_mtime)
-        logging.info("DELETE %s", oldest.name)
-        oldest.unlink()
-
-
-def build_page(records):
-    rows = []
-    for item in records:
-        rows.append(f"""
-        <tr>
-            <td>{item["num"]}</td>
-            <td>{item["apostille"]}</td>
-            <td>{item["security_code"]}</td>
-            <td>{item["status"]}</td>
-            <td>{item["sha256"] or ""}</td>
-            <td><a href="{item["url"]}" target="_blank" rel="noopener noreferrer">Download</a></td>
-        </tr>
-        """)
-    html = f"""<!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><title>Apostille Archive</title>
-<style>body{{font-family:Arial,sans-serif;margin:20px;}}table{{width:100%;border-collapse:collapse;}}th{{background:#244a86;color:white;}}td,th{{border:1px solid #d0d0d0;padding:8px;}}</style>
-</head>
-<body>
-<h1>Apostille Archive</h1>
-<p># [⚖ A©tor Declaration]</p>
-<table>
-<thead><tr><th>No</th><th>Apostille</th><th>Security Code</th><th>HTTP</th><th>SHA256</th><th>Download</th></tr></thead>
-<tbody>{"".join(rows)}</tbody>
-</table>
-</body>
-</html>"""
-    (DOCS / "apostille_archive_english.html").write_text(html, encoding="utf-8")
-
-
-def build_info(records):
-    online = len([r for r in records if r["status"] == 200])
-    info = {
-        "records": len(records),
-        "online": online,
-        "offline": len(records) - online,
-        "storage": current_storage(),
-    }
-    (OUTPUT / "build_info.json").write_text(
-        json.dumps(info, indent=2, ensure_ascii=False), encoding="utf-8"
+    LOGGER.info(
+        "Extracted %s unique records",
+        len(registry),
     )
+
+    registry_path = save_registry_json(
+        registry,
+        output_dir,
+        pretty,
+    )
+
+    if not registry_path.exists():
+        raise RuntimeError("registry.json was not created")
+
+    manifest_path = save_manifest(
+        registry,
+        registry_path,
+        output_dir,
+    )
+
+    if not manifest_path.exists():
+        raise RuntimeError("manifest.json was not created")
+
+    return registry
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Extract apostille registry from PDF")
+
+    parser.add_argument(
+        "pdf",
+        help="Registry PDF file",
+    )
+
+    parser.add_argument(
+        "-o",
+        "--output",
+        default="output",
+        help="Output directory",
+    )
+
+    parser.add_argument(
+        "--pretty",
+        action="store_true",
+        help="Pretty JSON formatting",
+    )
+
+    return parser.parse_args()
 
 
 def main():
-    logging.info("START PIPELINE")
-    if not Path(PDF_FILE).exists():
-        logging.error("PDF not found: %s", PDF_FILE)
-        return
+    args = parse_args()
 
-    records = extract_registry()
-    logging.info("EXTRACTED %s RECORDS", len(records))
+    pdf_path = Path(args.pdf)
 
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-        verified = list(pool.map(verify_record, records))
-
-    (OUTPUT / "registry_verified.json").write_text(
-        json.dumps(verified, ensure_ascii=False, indent=2), encoding="utf-8"
+    output_dir = Path(args.output)
+    output_dir.mkdir(
+        parents=True,
+        exist_ok=True,
     )
-    cleanup_fifo()
-    build_page(verified)
-    build_info(verified)
-    logging.info("PIPELINE FINISHED")
+
+    registry = process_registry_pdf(
+        pdf_path=pdf_path,
+        output_dir=output_dir,
+        pretty=args.pretty,
+    )
+
+    print(f"[OK] Extracted {len(registry)} unique records")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:
+        LOGGER.exception("Pipeline failed")
+        raise

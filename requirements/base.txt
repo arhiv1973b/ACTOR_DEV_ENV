@@ -1,0 +1,12 @@
+pyhanko
+requests
+urllib3
+python-dateutil
+pypdf>=5.1.0
+cryptography
+pydantic
+pytesseract
+pdf2image
+Pillow
+reportlab
+fonttools>=4.0

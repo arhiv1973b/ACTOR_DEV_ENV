@@ -1,0 +1,47 @@
+name: TLS Chain Validation
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 3 * * 1"
+
+jobs:
+  tls-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install OpenSSL
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openssl ca-certificates
+
+      - name: Verify intermediate CA
+        run: |
+          openssl verify \
+            -x509_strict \
+            -CAfile /etc/ssl/certs/ca-certificates.crt \
+            certs/certum-intermediate.crt
+
+      - name: Verify apostila.gov.md hostname and chain
+        run: |
+          echo | openssl s_client \
+            -connect apostila.gov.md:443 \
+            -servername apostila.gov.md \
+            -verify_hostname apostila.gov.md \
+            -verify_return_error \
+            -CAfile /etc/ssl/certs/ca-certificates.crt \
+            > s_client.log
+
+      - name: Check verification result
+        run: |
+          grep -q "Verify return code: 0 (ok)" s_client.log
+
+      - name: Store TLS diagnostic
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tls-diagnostics
+          path: s_client.log

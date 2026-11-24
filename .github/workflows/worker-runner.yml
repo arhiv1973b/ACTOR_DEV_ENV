@@ -2,8 +2,10 @@ name: Apostille Worker Pipeline
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, master, evidence-mvd-dec-2025 ]
   workflow_dispatch: 
+  schedule:
+    - cron: '0 2 * * *' # Запуск каждый день в 02:00 UTC
 
 jobs:
   run-docker-worker:
@@ -13,10 +15,24 @@ jobs:
       - name: Клонирование репозитория
         uses: actions/checkout@v4
 
+      - name: Настройка Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
       - name: Сборка Docker-образа
         run: |
           docker build -t apostille-worker -f Dockerfile.worker .
 
       - name: Запуск воркера внутри Docker-контейнера в GitHub Actions
+        id: run-worker
         run: |
           docker run --rm apostille-worker
+
+      - name: Создать Issue при сбое
+        if: failure() && steps.run-worker.outcome == 'failure'
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/ISSUE_TEMPLATE/worker_failure.md

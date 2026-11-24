@@ -1,37 +1,42 @@
 services:
-  mcp-docker:
-    build: mcp-docker-server
-    container_name: mcp-docker
-    security_opt:
-      - no-new-privileges:true
-    cap_drop:
-      - ALL
+  postgres:
+    image: postgres:15-alpine
+    container_name: actor_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: actor
     volumes:
-      - ./mcp-docker-server/run:/run
-      - ./mcp-docker-server/forensic_air_gapped_audit.py:/app/forensic_air_gapped_audit.py:ro
-      - ${AUDIT_DATA_PATH:-./audit_data}:/audit_data:ro
-    ports:
-      - "8082:8080"
-    environment:
-      NODE_ENV: production
-      MCP_LOG_LEVEL: debug
-    restart: unless-stopped
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - actor-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d actor"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
-  gemini-dockerfile-bridge:
-    build:
-      context: .
-      dockerfile: Dockerfile.bridge
-    container_name: gemini-dockerfile-bridge
-    security_opt:
-      - no-new-privileges:true
-    cap_drop:
-      - ALL
+  worker:
+    build: .
+    container_name: actor_worker
     environment:
-      - GEMINI_API_KEY=${GEMINI_API_KEY}
-      - OLLAMA_HOST=http://host.docker.internal:11434
-    ports:
-      - "8001:8001"
-    command: ["python", "-c", "import time; print('Gemini Dockerfile Bridge ready.'); time.sleep(86400)"]
-    stdin_open: true
-    tty: true
-    restart: unless-stopped
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/actor
+      - REGISTRY_PDF=registry/apostille_registry_working_18.signed.pdf
+    volumes:
+      - ./downloaded_apostilles:/app/downloaded_apostilles
+      - ./registry:/app/registry
+      - ./artifacts:/app/artifacts
+      - ./quarantine:/app/quarantine
+      - ./processing:/app/processing
+    networks:
+      - actor-net
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+
+networks:
+  actor-net:
+    driver: bridge

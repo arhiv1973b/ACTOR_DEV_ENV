@@ -1,0 +1,28 @@
+{
+  "host": "arhiv1973b.github.io",
+  "port": 443,
+  "checked_at_utc": "2026-11-23T22:26:23.441292+00:00",
+  "strict_verify_ok": true,
+  "strict_verify_error": null,
+  "protocol": "TLSv1.3",
+  "cipher": [
+    "TLS_AES_128_GCM_SHA256",
+    "TLSv1.3",
+    128
+  ],
+  "peer_cert": {
+    "subject": {
+      "commonName": "*.github.io"
+    },
+    "issuer": {
+      "countryName": "US",
+      "organizationName": "Let's Encrypt",
+      "commonName": "YR1"
+    },
+    "notBefore": "Sep 30 23:44:46 2026 GMT",
+    "notAfter": "Dec 29 23:44:45 2026 GMT",
+    "serialNumber": "06A65E5D3279BA564A4DE74EB5D64478DBB8",
+    "sha256_der": "f2f9a159ce50a0a168b3eaeaf2fced5addd49ba38e2bf63248f057a139fc7856"
+  },
+  "chain_note": "Python ssl exposes peer cert and verification error; use openssl s_client for full intermediate PEM chain if needed."
+}

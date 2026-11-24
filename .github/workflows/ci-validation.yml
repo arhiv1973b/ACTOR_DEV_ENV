@@ -1,0 +1,95 @@
+name: Workflow Lint
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  workflow-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install yamllint
+        run: |
+          python -m pip install --upgrade pip
+          pip install yamllint
+
+      - name: Detect Changed Workflow Files
+        id: changed
+        uses: tj-actions/changed-files@v46
+        with:
+          separator: "\n"
+          files: |
+            .github/workflows/**/*.yml
+            .github/workflows/**/*.yaml
+
+      - name: Lint Changed Workflows
+        if: steps.changed.outputs.any_changed == 'true'
+        shell: bash
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+        run: |
+          while IFS= read -r file
+          do
+            [ -z "$file" ] && continue
+            [ -f "$file" ] || continue
+
+            echo "yamllint => $file"
+            yamllint --strict -c .yamllint-workflows.yml "$file"
+          done <<< "$CHANGED_FILES"
+
+      - name: Detect Dangerous Commands
+        if: steps.changed.outputs.any_changed == 'true'
+        shell: bash
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+        run: |
+          FAIL=0
+          while IFS= read -r file
+          do
+            [ -z "$file" ] && continue
+            [ -f "$file" ] || continue
+
+            echo "Scanning $file for dangerous patterns..."
+            if grep -En 'curl.*\|.*(sh|bash)|wget.*\|.*(sh|bash)|chmod[[:space:]]+777|sudo[[:space:]]+(bash|sh)' "$file"
+            then
+              echo "Dangerous pattern found in $file"
+              FAIL=1
+            fi
+          done <<< "$CHANGED_FILES"
+          exit $FAIL
+
+      - name: Run actionlint
+        uses: raven-actions/actionlint@v2
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: No Workflow Changes
+        if: steps.changed.outputs.any_changed != 'true'
+        run: |
+          echo "No workflow files changed."

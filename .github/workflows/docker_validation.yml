@@ -1,0 +1,48 @@
+name: Docker Validation
+
+on:
+  pull_request:
+  push:
+    branches: [main, develop]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  docker-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Image
+        run: docker build -t actor:test .
+      - name: Generate Test Apostille
+        run: docker run --rm -v ${{ github.workspace }}:/app actor:test python tests/generate_sample_apostille.py
+      - name: Verify Document Detection
+        run: docker run --rm -v ${{ github.workspace }}:/app actor:test pytest tests/test_apostille_detector.py
+      - name: OCR Smoke Test
+        run: docker run --rm -v ${{ github.workspace }}:/app actor:test python workflows/process_pdf.py --input tests/data/sample_apostille.pdf --output artifacts/test_run
+      - name: Verify Artifact Structure and Sizes
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/app actor:test sh -c '
+          test -s artifacts/test_run/ocr/images/page_002.png &&
+          test -s artifacts/test_run/ocr/images/page_004.png &&
+          test -f artifacts/test_run/ocr/text/page_002.txt &&
+          test -f artifacts/test_run/ocr/text/page_004.txt &&
+          test -f artifacts/test_run/ocr/ocr_report.json
+          '
+      - name: Verify OCR Report
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/app actor:test python -c "
+import json
+with open('artifacts/test_run/ocr/ocr_report.json') as f:
+    r = json.load(f)
+    assert r['document_type'] == 'apostille'
+    assert r['ocr_strategy'] == 'force_even_pages'
+    methods = {p['page']: p['method'] for p in r['pages']}
+    assert methods[2] == 'forced_ocr'
+    assert methods[4] == 'forced_ocr'
+"
+      - name: Verify SHA256 Manifest
+        run: docker run --rm -v ${{ github.workspace }}:/app actor:test test -f artifacts/test_run/ocr/sha256.json
